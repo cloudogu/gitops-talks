@@ -300,6 +300,11 @@ li::before {content: "•"; color:#23A3DD;
   margin-right: auto !important
 }
 
+/* Avoid title being printed into Cloudogu logo in background */
+html.print-pdf h1.title {
+  font-size: 1.3em;
+}
+
 .title {
   font-weight: bold;
   text-transform: uppercase;

@@ -4,7 +4,7 @@
 <br/>
 <br/>
 <br/>
-<font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i></i>&nbsp;<i class="fas fa-cogs"></i></font>
+<font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i>&nbsp;<i class="fas fa-cogs"></i></font>
 <img data-src="images/k8s_logo.svg" width="5%;" />
 <h1 class="title">
     <span class="title-accent">//</span> 
@@ -16,7 +16,7 @@
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
 
 <div class="title-version">
-Version: 202010131336-73121ac
+Version: 202010131422-4874169
 </div>
 
 <h5><a href="pdf/Hands-on GitOps with K8s - a field report.pdf">
