@@ -86,31 +86,6 @@ node('docker') {
                 echo "Skipping deploy to GH pages, because not on master branch"
             }
         }
-
-        stage('Deploy Nexus') {
-            if (params.deployToNexus) {
-                mvn.useDeploymentRepository([
-                        // Must match the one in pom.xml!
-                        id           : 'ecosystem.cloudogu.com',
-                        credentialsId: 'ces-nexus'
-                ])
-                mvn.deploySiteToNexus(
-                        "-Dgroup=${mavenGroupId} " +
-                        "-Dartifact=${mavenArtifactId} " + 
-                        "-DsiteUrl=${mavenSiteUrl} "
-                )
-            } else {
-                echo "Skipping deployment to Nexus because parameter is set to false."
-            }
-        }
-
-        stage('Deploy Kubernetes') {
-            if (params.deployToK8s) {
-                deployToKubernetes(dockerRegistry, dockerRegistryCredentials, kubeconfigCredentials, image)
-            } else {
-                echo "Skipping deployment to Kubernetes because parameter is set to false."
-            }
-        }
     }
 
     mailIfStatusChanged(git.commitAuthorEmail)
