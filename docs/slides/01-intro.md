@@ -1,76 +1,24 @@
 <!-- .slide: class="title"  -->
 <!-- .slide: data-background-image="images/title.svg"  -->
-<h2>
+<img src="images/logo-itzbund.svg" class="floatLeft"/>
+<br/>
+<br/>
+<br/>
+<font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i></i>&nbsp;<i class="fas fa-cogs"></i></font>
+<img data-src="images/k8s_logo.svg" width="5%;" />
+<h1>
     <span class="title-accent">//</span> 
-    Welcome
-</h2>
+    GitOps mit K8s in der Praxis<br/> — ein Erfahrungsbericht
+</h1>
 
-to cloudogu/reveal.js-docker
+<font size="5">Gerd Huber<br>ITZBund</font>
+
+<font size="5">Johannes Schnatterer<br>Cloudogu GmbH</font>
 
 <div class="title-version">
 <!--VERSION-->
 </div>
 
-
-
-### Slide 1
-Realised using [reveal.js](https://github.com/hakimel/reveal.js/).
-
-Write your slides in [GitHub-flavored markdown](https://guides.github.com/features/mastering-markdown/).
-
-
-<h2 class="state-background">PDF Version <a href="pdf/Cloudogu%20-%20reveal.js-docker.pdf">
+<h5><a href="pdf/Hands-on GitOps with K8s - a field report.pdf">
    <i class="far fa-file-pdf"></i>
-</a></h2>
-
-
-## Hotkeys
-
-* `S`: show Speaker Notes 
-* `?`: show all Hotkeys 
-* `Esc`: show slide overview ("grid")
-* Cursors: Navigation (on slides "grid")
-* `Space`: next slide
-* `,`: toggle presenter Mode (➡ becomes next slide - helpful for some presenters)
-* `Ctrl` + `Shift` + `F`: Search slides
-* `Ctrl` + `Alt` + Click: Zoom
-
-Note:
-* Speaker notes go here 
-
-
-
-### Bellow (separated by three empty lines)
-
-Emojis 👤 🛠️ 🚢 ❤ 👤 🌐 📋 🐋 📦 🐕 🐈 🇬🇧 🇩🇪 ⌨ ℹ️ 📕 ➡ 🥚 🏍 🕮 🌩️ <font color="red">⚠</font> 🚀 🔑 🔄 🗣 ️🎧 ⏪
-
-<br/>
-
-[Font Awesome](https://fontawesome.com/icons?d=gallery): 
-
-<i class="fas fa-coffee"></i>
-<i class='fas fa-thumbtack'></i>
-<i class='fas fa-code-branch'></i>
-
-<a href='https://twitter.com/cloudogu' class="social" target="_blank">
-    <i class='fab fa-twitter'></i>
-    twitter.com/cloudogu
-</a>
-<br/>
-<a href='https://github.com/cloudogu' class="social" target="_blank">
-    <i class='fab fa-github'></i>
-    github.com/cloudogu
-</a>
-
----
-
-## To the right (separeted by `---`)
-
-Syntax highlighting 
-
-```java
-String hello = "world";
-```
- 
-Quotes: 
-> A container image is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings.
+</a></h5>
