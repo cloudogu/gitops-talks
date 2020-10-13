@@ -16,7 +16,7 @@
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
 
 <div class="title-version">
-Version: 202010131422-4874169
+Version: 202010131423-ed976f5
 </div>
 
 <h5><a href="pdf/Hands-on GitOps with K8s - a field report.pdf">
