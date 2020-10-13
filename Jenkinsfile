@@ -34,7 +34,7 @@ node('docker') {
     String mavenSiteUrl = "https://ecosystem.cloudogu.com/nexus/content/sites/Cloudogu-Docs"
 
     // Used for PDF printing - latest version does not have a docker tag (commit: 9edd0d3, pupeteer: 3.3.0)
-    headlessChromeImage = 'buildkite/puppeteer@sha256:a23da563975ab5e9a50567ba5bf754b56ab288a18b206d45105c6782e9421b70'
+    headlessChromeVersion = 'yukinying/chrome-headless-browser:87.0.4280.11'
     String mavenVersion = "3.6.2-jdk-8"
     
     Git git = new Git(this, ghPageCredentials)
@@ -52,7 +52,7 @@ node('docker') {
 
         String versionName = createVersion(mvn)
         String imageName = "${imageBaseName}:${versionName}"
-        String packagePath = 'dist'
+        String packagePath = 'target'
         forceDeployGhPages = Boolean.valueOf(params.forceDeployGhPages)
         def image
 
@@ -130,41 +130,19 @@ void printPdfAndPackageWebapp(def image, String pdfName, String distPath) {
     image.withRun("-v ${WORKSPACE}:/workspace -w /workspace") { revealContainer ->
 
         // Extract rendered reveal webapp from container for further processing
-        sh "docker cp ${revealContainer.id}:/reveal '${distPath}'"
+        sh "docker cp ${revealContainer.id}:/reveal '${distPath}/'"
 
         def revealIp = docker.findIp(revealContainer)
         
-        docker.image(headlessChromeImage)
+        docker.image(headlessChromeVersion)
                 // Chromium writes to $HOME/local, so we need an entry in /etc/pwd for the current user
                 .mountJenkinsUser()
                 // Try to avoid OOM for larger presentations by setting larger shared memory
                 .inside("--shm-size=4G") {
-                    // --no-optional -> Don't install chrome, it's already inside the image
-                    sh 'npm install --no-optional puppeteer-cli'
-                    sh "wait-for-it.sh ${revealIp}:8080 -- node_modules/.bin/puppeteer --sandbox=false print http://${revealIp}:8080/?print-pdf '${distPath}/${pdfName}'"
+                    // If more flags should ever be neccessary: https://peter.sh/experiments/chromium-command-line-switches
+                    sh "/usr/bin/google-chrome-unstable --headless --no-sandbox --disable-gpu --disable-web-security --print-to-pdf='${distPath}/${pdfName}' " +
+                            "http://${revealIp}:8080/?print-pdf"
                 }
-    }
-}
-
-void deployToKubernetes(String dockerRegistry, String dockerRegistryCredentials, String kubeconfigCredentials, image) {
-
-    docker.withRegistry(dockerRegistry ? "https://${dockerRegistry}" : '', dockerRegistryCredentials) {
-        image.push()
-        image.push('latest')
-    }
-
-    withCredentials([file(credentialsId: kubeconfigCredentials, variable: 'kubeconfig')]) {
-
-        withEnv(["IMAGE_NAME=${image.imageName()}"]) {
-
-            kubernetesDeploy(
-                    credentialsType: 'KubeConfig',
-                    kubeConfig: [path: kubeconfig],
-
-                    configs: 'k8s.yaml',
-                    enableConfigSubstitution: true
-            )
-        }
     }
 }
 
