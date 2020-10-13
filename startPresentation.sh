@@ -15,6 +15,7 @@ if [[ "${ARGUMENT}" == "internal" ]]; then
 fi
 
 CONTAINER_ID=$(docker run  --detach \
+    -v $(pwd)/dist/theme:/reveal/dist/theme \
     -v $(pwd)/docs/slides:/reveal/docs/slides \
     -v $(pwd)/images:/reveal/images \
     -v $(pwd)/resources:/resources \
