@@ -33,6 +33,7 @@ node('docker') {
     String mavenArtifactId = "reveal.js-docker-example"
     String mavenSiteUrl = "https://ecosystem.cloudogu.com/nexus/content/sites/Cloudogu-Docs"
 
+    // Used for PDF printing - latest version does not have a docker tag (commit: 9edd0d3, pupeteer: 3.3.0)
     headlessChromeVersion = 'yukinying/chrome-headless-browser:87.0.4280.11'
     String mavenVersion = "3.6.2-jdk-8"
     
@@ -134,9 +135,9 @@ void printPdfAndPackageWebapp(def image, String pdfName, String distPath) {
         def revealIp = docker.findIp(revealContainer)
         
         docker.image(headlessChromeVersion)
-        // Chromium writes to $HOME/local, so we need an entry in /etc/pwd for the current user
+                // Chromium writes to $HOME/local, so we need an entry in /etc/pwd for the current user
                 .mountJenkinsUser()
-        // Try to avoid OOM for larger presentations by setting larger shared memory
+                // Try to avoid OOM for larger presentations by setting larger shared memory
                 .inside("--shm-size=4G") {
                     // If more flags should ever be neccessary: https://peter.sh/experiments/chromium-command-line-switches
                     sh "/usr/bin/google-chrome-unstable --headless --no-sandbox --disable-gpu --disable-web-security --print-to-pdf='${distPath}/${pdfName}' " +

@@ -4,7 +4,7 @@ $imageVersion=(sls 'FROM cloudogu/reveal.js' Dockerfile) -replace ".*:([^ ]*) .*
 
 # TODO stop container before running, in order to allow convenient "restart"?
 docker run `
-    -v ${PWD}css/cloudogu-black.css:/reveal/css/cloudogu-black.css  `
+    -v ${PWD}/dist/theme:/reveal/dist/theme  `
     -v ${PWD}/docs/slides:/reveal/docs/slides  `
     -v ${PWD}/images:/reveal/images  `
     -v ${PWD}/resources:/resources `

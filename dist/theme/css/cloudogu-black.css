@@ -11,14 +11,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 /** From League Plugin */
-body {
-  /*background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+.reveal-viewport {
+/*  background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
   background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);*/
-  background-color: #444;
+  background: #444;
 }
 
 .reveal {
