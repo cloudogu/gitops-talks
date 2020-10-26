@@ -305,6 +305,15 @@ html.print-pdf h1.title {
   font-size: 1.3em;
 }
 
+html.print-pdf .printOnly {
+  display: block !important;
+}
+
+
+.printOnly {
+  display: none !important;
+}
+
 .title {
   font-weight: bold;
   text-transform: uppercase;
