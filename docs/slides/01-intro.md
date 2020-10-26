@@ -14,11 +14,18 @@
 <font size="5">Gerd Huber, ITZBund</font>
 
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
+<p class="printOnly">
+    <a href='https://twitter.com/jschnatterer' class="social" target="_blank">
+        <i class='fab fa-twitter'></i>
+        @jschnatterer
+    </a>
+</p>
 
 <div class="title-version">
 <!--VERSION-->
 </div>
 
-<h5><a href="pdf/Hands-on GitOps with K8s - a field report.pdf">
-   <i class="far fa-file-pdf"></i>
-</a></h5>
+<p class="state-background" style="font-size: 0.9em">
+    <a href="pdf/Hands-on GitOps with K8s - a field report.pdf">
+       <i class="far fa-file-pdf"></i>
+</a></p>
