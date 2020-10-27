@@ -4,17 +4,19 @@ Gerd Huber, ITZBund
 
 Johannes Schnatterer, Cloudogu GmbH
 
-🌐  [cloudogu.com/schulungen](https://cloudogu.com/schulungen/)
+🌐 [cloudogu.com/schulungen](https://cloudogu.com/schulungen/)
 <br/>
-🌐  [cloudogu.com/consulting](https://cloudogu.com/consulting/)
+🌐 [cloudogu.com/gitops](https://cloudogu.com/gitops/)
 
 <br/>
-🔥 Unsere Lösung <i class="fab fa-jenkins"></i> (WIP) 
+
+🔥 GitOps-Jenkins Library (WIP)   
+<i class='fab fa-github'></i> [github.com/cloudogu/k8s-gitops-playground](https://github.com/cloudogu/k8s-gitops-playground)
 <br/>
-<a href='https://github.com/cloudogu/k8s-gitops-playground' class="social" target="_blank">
-    <i class='fab fa-github'></i>
-    github.com/cloudogu/k8s-gitops-playground
-</a>
+
+🔥 GitOps-Artikel Java aktuell 2/21  
+🌐 [cloudogu.com/blog](https://cloudogu.com/blog/)
+
 <p class="printOnly">
     <a href='https://twitter.com/cloudogu' class="social" target="_blank">
         <i class='fab fa-twitter'></i>
