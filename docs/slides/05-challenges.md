@@ -1,2 +1,1 @@
-TODO challenges during implementation
-
+# Herausforderungen in der Praxis
