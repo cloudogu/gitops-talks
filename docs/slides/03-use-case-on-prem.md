@@ -8,7 +8,6 @@
 <!-- .slide: style="color: black; margin: 0 0 0 0.9em !important;"  -->
 <!-- .slide: data-background-size="100% 100%"  -->
 
-
 GitOps mit K8s – Ausgangslage
 
 <h3 style="color: black"> ITZBund  –  IT-Dienstleister für Bundesverwaltungen</h3>
@@ -31,8 +30,8 @@ GitOps mit K8s – Ausgangslage
 <!-- Important for PDF -->
 <!-- .slide: style="color: black; margin: 0 0 0 0.9em !important;font-size: 30px;"  -->
 <!-- .slide: data-background-size="100% 100%"  -->
-GitOps mit K8s  -  Motivation
 
+GitOps mit K8s  -  Motivation
 
 **Motivation für GitOps**
 
@@ -41,13 +40,4 @@ GitOps mit K8s  -  Motivation
 * automatisiertes Stagen
 * unter Berücksichtigung der Umgebungskonfiguration
 
-<img data-src="images/graphic-itz.svg" width=80% />
-<!-- Without these the image is not printed on the PDF page :-(-->
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img data-src="images/graphic-itz.svg" width=70% />
