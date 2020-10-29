@@ -4,25 +4,35 @@
 
 <!-- .slide: data-background-color="white"  -->
 <!-- .slide: data-background-image="images/itz-background.png"  -->
-<!-- .slide: style="color: black"  -->
-<h4 style="color: black"> GitOps mit K8s – Ausgangslage</h4>
+<!-- Important for PDF -->
+<!-- .slide: style="color: black; margin: 0 0 0 0.9em !important;"  -->
+<!-- .slide: data-background-size="100% 100%"  -->
 
-<h2 style="color: black"> ITZBund  –  IT-Dienstleister für Bundesverwaltungen</h2>
 
-**Dienstleistungen (u.a.)** 
+GitOps mit K8s – Ausgangslage
+
+<h3 style="color: black"> ITZBund  –  IT-Dienstleister für Bundesverwaltungen</h3>
+
+<h4 style="color: black"> Dienstleistungen (u.a.)</h4>
+
 * bietet IT-Infrastruktur (z.B. Einwahlplattformen, Client-Virtualisierung, Cloud-Lösungen)
 * Hosting von Anwendungen
 
-**Anforderung**
+<h4 style="color: black"> Anforderung</h4>
+
 * Continuous Delivery/Staging
   * Forderung, fertige SWE-Produkte schnell zu stagen
   * Abstimmung der Konfiguration → Infrastructure as Code
 
 
 
-<!-- .slide: data-background-color="white"  -->
 <!-- .slide: data-background-image="images/itz-background.png"  -->
-<!-- .slide: style="color: black"  -->
+<!-- .slide: data-background-color="white"  -->
+<!-- Important for PDF -->
+<!-- .slide: style="color: black; margin: 0 0 0 0.9em !important;font-size: 30px;"  -->
+<!-- .slide: data-background-size="100% 100%"  -->
+GitOps mit K8s  -  Motivation
+
 
 **Motivation für GitOps**
 
@@ -31,4 +41,13 @@
 * automatisiertes Stagen
 * unter Berücksichtigung der Umgebungskonfiguration
 
-<img data-src="images/graphic-itz.svg" width="90%;" />
+<img data-src="images/graphic-itz.svg" width=80% />
+<!-- Without these the image is not printed on the PDF page :-(-->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
