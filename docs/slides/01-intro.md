@@ -40,3 +40,4 @@
   * Neueinführung von GitOps (OnPrem)
   * Migration CI/CD ➡️ GitOps (Public Cloud)
 * Herausforderungen in der Praxis
+* Fazit und Empfehlung

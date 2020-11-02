@@ -5,7 +5,7 @@
 <!-- .slide: data-background-color="white"  -->
 <!-- .slide: data-background-image="images/itz-background.png"  -->
 <!-- Important for PDF -->
-<!-- .slide: style="color: black; margin: 0 0 0 0.9em !important;"  -->
+<!-- .slide: style="color: black; font-size: 0.8em; margin: 0 0 0 0.9em !important;"  -->
 <!-- .slide: data-background-size="100% 100%"  -->
 
 GitOps mit K8s – Ausgangslage
@@ -17,8 +17,10 @@ GitOps mit K8s – Ausgangslage
 * bietet IT-Infrastruktur (z.B. Einwahlplattformen, Client-Virtualisierung, Cloud-Lösungen)
 * Hosting von Anwendungen
 
-<h4 style="color: black"> Anforderung</h4>
+<h4 style="color: black"> Anforderungen</h4>
 
+* Staging von SW-Entwicklungen im Haus (mittels standardisierter Entwicklungsumgebung)
+* Staging für SW-Entwicklungen außerhalb des Hauses
 * Continuous Delivery/Staging
   * Forderung, fertige SWE-Produkte schnell zu stagen
   * Abstimmung der Konfiguration → Infrastructure as Code
@@ -31,13 +33,15 @@ GitOps mit K8s – Ausgangslage
 <!-- .slide: style="color: black; margin: 0 0 0 0.9em !important;font-size: 30px;"  -->
 <!-- .slide: data-background-size="100% 100%"  -->
 
-GitOps mit K8s  -  Motivation
+GitOps mit K8s  -  Motivation  
+<br/>
+  
 
 **Motivation für GitOps**
 
-* SW-Entwicklungen im Haus: standardisierte Entwicklungsumgebung
-* SW-Entwicklungen außerhalb des Hauses
 * automatisiertes Stagen
-* unter Berücksichtigung der Umgebungskonfiguration
+* Berücksichtigung der Umgebungskonfiguration
+* pull-Operationen von einem höheren Security-Level
+* kein Veröffentlichen von credentials der Staging-Umgebungen an Dev
 
 <img data-src="images/graphic-itz.svg" width=70% />

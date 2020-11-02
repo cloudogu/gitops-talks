@@ -13,6 +13,7 @@
 !includeurl CLOUDOGUURL/tools/k8s.puml
 
 !define CLOUDOGU_BLUE #23a3dd
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
 
 skinparam actorStyle awesome
 
@@ -35,12 +36,14 @@ gitRepo <- k8s : pull
 k8s -> k8s : deploy
 
 skinparam arrow {
-    Color BLACK
+    Color COLOR_ABOVE_TRANSPARENT_BACKGROUND
+    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 }
 
 skinparam actor {
     BackgroundColor CLOUDOGU_BLUE
     BorderColor #16688d
+    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 }
 
 skinparam rectangle {
