@@ -19,7 +19,8 @@ skinparam actorStyle awesome
 
 together {
     actor Developer as user
-    rectangle "<$git>\nGit Repo" as gitRepo
+    rectangle "<$git>\nApp Repo" as appRepo
+    rectangle "<$git>\nGitOps Repo" as configRepo
     rectangle "<$jenkins>\nCI Server" as ciServer
 }
 
@@ -28,11 +29,13 @@ rectangle "<$k8s>\nK8s Cluster" as k8s {
 }
 rectangle "<$docker>\nOCI Registry" as registry
 
-user -> gitRepo : push
-gitRepo <-- ciServer : pull
+user -> appRepo : push
+appRepo -[hidden]> configRepo
+appRepo <-- ciServer : pull
+configRepo <-- ciServer : push
 ciServer -> registry : push
 k8s --> registry : pull
-gitRepo <- k8s : pull
+configRepo <- k8s : pull
 k8s -> k8s : deploy
 
 skinparam arrow {

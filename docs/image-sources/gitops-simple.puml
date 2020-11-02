@@ -27,7 +27,7 @@ together {
 
 user -> gitRepo : push
 gitRepo <-- ciServer : pull
-gitRepo <- operator : pull
+gitRepo <- k8s : pull
 k8s -> k8s : deploy
 
 skinparam arrow {

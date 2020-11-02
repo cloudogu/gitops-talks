@@ -23,7 +23,7 @@
 </p>
 
 <div class="title-version">
-Version: 202010291453-5363a07
+Version: 202011022259-7b05fd1
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
@@ -40,3 +40,4 @@ Version: 202010291453-5363a07
   * Neueinführung von GitOps (OnPrem)
   * Migration CI/CD ➡️ GitOps (Public Cloud)
 * Herausforderungen in der Praxis
+* Fazit und Empfehlung
