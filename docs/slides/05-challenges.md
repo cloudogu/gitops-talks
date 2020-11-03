@@ -1,4 +1,4 @@
-# Herausforderungen in der Praxis
+# Herausforderungen und <br/>Erkenntnisse aus der Praxis
 
 
 
@@ -9,7 +9,7 @@
 * JenkinsX (CDF)
 * Spinnaker (CDF)
 * viele weitere:   
-  <i class="fab fa-github"></i> https://github.com/weaveworks/awesome-gitops
+  <i class="fab fa-github"></i> [weaveworks/awesome-gitops](https://github.com/weaveworks/awesome-gitops)
 
 <div class="floatRight" >
 <img data-src="images/flux.png" width="100px" style="display: block;margin-bottom: 20px;"/>
@@ -17,12 +17,6 @@
 <img data-src="images/jenkinsx.svg" width="100px" style="display: block;margin-bottom: 20px;"/>
 <img data-src="images/spinnaker.svg" width="80px" style="display: block;margin-bottom: 20px;"/>
 </div>
-
-Note:
-* Flux vom Namensgeber gestartet, wirkt schon ausgereift und leichtgewichtig (integriert gut mit bestehender CI/CD Lösung)
-* Da argo auch Flux verwendet planten beide Teams ein [Joint Venture](https://github.com/argoproj/gitops-engine/tree/ef4dcd6c122ffa40c44dde42f4fef11133b6af76):
- argoproj/gitops-engine - jetzt wohl aber [doch getrennt](https://github.com/fluxcd/flux2/blob/815dad18f4ddc231600054830e224ca3c542ed47/docs/faq/index.md#is-the-gitops-toolkit-related-to-the-gitops-engine), 
- Flux v2 im GitOps Toolkit
 
 
 
@@ -46,8 +40,11 @@ Note:
     * Wie Staging implementieren?
     * Infrastruktur im Applikations-Repo oder im GitOps-Repo?
     * Lokale Entwicklung?
-    * Zukunft: Flux v2 / GitOps Toolkit / GitOps Engine?
+    * Zukunft von Flux?
     * ...
+
+Note: Weitere interessante Erketnnisse:
+* Eventual consistence: Push yaml with CR and CRD - Which one applied first? CR fails, next time might succeed. 
 
 
 
@@ -75,6 +72,7 @@ Je nach verwendeten Tools, mehr Operators notwendig
 * Was tun bei anderen Templating-Tools?
 
 Note:
+* Werden mit CustomResource, zB `HelmRelease` 
 * Neue Herausforderungen, z.B. Helm Client Version durch Operator festgelegt.
 * Was tun, wenn Chart neuere Client Version braucht, als neueste Operator Version fest legt
 
@@ -86,44 +84,45 @@ Note:
 * 😰
 * ... oder doch lieber manuell löschen
 
-Note:
-* Klingt riskant, wenn noch nicht alle Anwendungen migriert
-* Oder mehrere Flux-Instanzen deployt sind
-
 
 
 ## Fehlerbehandlung
 
-* Push, Build und Deployment entkoppelt
+* Build und Deployment entkoppelt
 * Fehlermeldung asynchron ➡️ Fehler werden später bemerkt
 * Abhilfe:
-  * Fail early mit CI Server - wenn Pipeline vorhanden
-  * Monitoring und Alerting - schwer wartbar
+  * Statische Code Analyse mit CI Server - wenn Pipeline vorhanden
+  * Monitoring und Alerting - mit Flux gewöhnungsbedürftig
 
 
 
-### Herausforderungen Flux Monitoring und Alerting
-<!-- .slide: style="font-size: 0.9em;"  -->
+### Herausforderungen Monitoring und Alerting mit Flux (1)
 
 ```
 delta(flux_daemon_sync_duration_seconds_count{success='true'}[6m]) < 1
 ```
 
+🌐 [docs.fluxcd.io/en/1.21.0/references/monitoring](https://docs.fluxcd.io/en/1.21.0/references/monitoring/)
+
+Note:
 * Monitoring-Queries in Doku nicht intuitiv
+
+
+
+### Herausforderungen Monitoring und Alerting mit Flux (2)
+
 * Betroffene Anwendung und Ursache muss im Log gesucht werden
 * Ursachen im Flux und Helm Operator Log schwer zu finden 
-* Erzeugt viele Alerts
-* Alerts und Neustarts schwierig zu differenzieren von "echten" Deployment-Fehlern. Beispiele:
+* Viele Alerts: Schwierig zu differenzieren von "echten" Deployment-Fehlern. Beispiele:
   * Alerts während Wartungsfenster von Git Server
   * Operator Pod Neustarts
   * Operator Pod OOM Kills
-
-➡ Betriebsaufwände der Operator nicht vernachlässigbar  
-➡ Umgewöhnung bei Entwicklern notwendig 
-
+  
 Note:
 * Flux und Helm Operator brauchen jeweils fast 1GB RAM  
 * Docs: https://docs.fluxcd.io/en/1.21.0/references/monitoring/
+
+➡ Betriebsaufwände der Operator nicht vernachlässigbar  
 
 
 
@@ -185,7 +184,7 @@ Note: Branching führt zu Konflikten beim Merge, Develop und Master laufen ausei
 
 
 
-### Resultat
+**Resultat**
 
 <!-- .slide: style="font-size: 0.9em;"  -->
 > My gitops workflow might be turing complete  
@@ -204,36 +203,31 @@ Mehr Kritik:
 
 
 
-### Nachteile
+**Nachteile** 
 
 * Komplexität
 * Entwicklungsaufwand für Logik der CI-Pipeline
 * Viele Fehlerfälle. Beispiele:
   * Git Conflicts durch Concurrency
   * Dadurch Gefahr von Inkonsistenz
-  * Ohne reproducible build: Jeder Build erstellt GitOps PR
 
-<p class="fragment">
-➡ Abhilfe: Wiederverwendung
-<br/>
-<br/>
-Unser Beispiel: <i class='fab fa-github'></i> <a href="https://github.com/cloudogu/k8s-gitops-playground">github.com/cloudogu/k8s-gitops-playground</a>
-</p>
+➡ Empfehlung: Plugin, Library dafür nutzen
 
 Note:
+
 * Ohne reproducible build - zB Versionsnummer mit Datum oder Docker Image RepoDigest in YAML verwenden
+* Abhilfe: Wiederverwendung
 
 
 
-### Vorteile
+**Vorteile**  
 
 * Fail early: statische YAML-Analyse durch CI-Server (yamlint, kubeval)
 * Automatische PR-Erstellung
 * Arbeit auf echten Dateien ➡ CI-Server erzeugt inline YAML
 * Test-Deployment von Feature Branch möglich
 * Lokale Entwicklung ohne GitOps weiterhin möglich
-* Erleichterung von Reviews durch Anreicherung Commit Message:  
-  Autor, original Commit, Issue-ID und Build-Nummer 
+* Erleichterung von Reviews durch Anreicherung Commit Message  
 
 <br/>
 <br/>
@@ -241,6 +235,9 @@ Note:
 <a href="https://scm-manager.org/"><img data-src="images/scm-manager_logo.png" width="26%" class="floatRight"/></a>
 <img data-src="images/PR.png" width="70%"/>
 </div>
+
+Note:
+* Anreicherung Commit Message:Autor, original Commit, Issue-ID und Build-Nummer 
 
 
 
@@ -252,23 +249,23 @@ Note:
 
 
 
-## Zukunft: Flux v2 / GitOps Toolkit / GitOps Engine?
+## Zukunft von Flux
 
 * August 2019: Flux + Argo GitOps Engine = Flux v2
 * Juli 2020: Flux v2 ➡ ~~GitOps Engine~~ GitOps Toolkit
 * Egal wie: Breaking Changes
 * Dafür viele neue Features:
-  * Flux aktualisiert sich selbst mit GitOps
-  * Mehrere Git Repos
-  * Mandanten 
   * Alerting
   * Webhook Receiver eingebaut
-  * Helm und Kustomize
+  * Helm und Kustomize Operators 
+  * Mehrere Git Repos
+  * Mandanten 
+  * Flux aktualisiert sich selbst mit GitOps
   * ... 🌐 [toolkit.fluxcd.io](https://toolkit.fluxcd.io)
 
 
 
-**Stand 11/2020**
+**Das Flux-Dillema (Stand 11/2020)**
 <!-- .slide: style="font-size: 0.95em;"  -->
 
 > ⚠️ This also means that Flux v1 is in maintenance mode.  
@@ -279,5 +276,11 @@ Note:
 
 * Flux v2 hat aber noch nicht alle Features von Flux:  
   🌐 [toolkit.fluxcd.io/roadmap](https://toolkit.fluxcd.io/roadmap/)
-* Und liegt noch in einer `0.x` Version vor:   
+* und ist nicht stable - Version `0.x`  
   <i class="fab fa-github"></i> [github.com/fluxcd/flux2/releases](https://github.com/fluxcd/flux2/releases)
+
+Note:
+* Flux vom Namensgeber gestartet, wirkt schon ausgereift und leichtgewichtig (integriert gut mit bestehender CI/CD Lösung)
+* Da argo auch Flux verwendet planten beide Teams ein [Joint Venture](https://github.com/argoproj/gitops-engine/tree/ef4dcd6c122ffa40c44dde42f4fef11133b6af76):
+ argoproj/gitops-engine - jetzt wohl aber [doch getrennt](https://github.com/fluxcd/flux2/blob/815dad18f4ddc231600054830e224ca3c542ed47/docs/faq/index.md#is-the-gitops-toolkit-related-to-the-gitops-engine), 
+ Flux v2 im GitOps Toolkit

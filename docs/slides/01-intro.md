@@ -39,5 +39,5 @@
 * Anwendungsbeispiele
   * Neueinführung von GitOps (OnPrem)
   * Migration CI/CD ➡️ GitOps (Public Cloud)
-* Herausforderungen in der Praxis
+* Herausforderungen und Erkenntnisse aus der Praxis
 * Fazit und Empfehlung
