@@ -5,7 +5,7 @@
 > use developer tooling to drive operations  
 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
 
-* Funktioniert gut mit k8s ist aber nicht darauf beschränkt
+* Funktioniert gut mit K8s ist aber nicht darauf beschränkt
 
 
 

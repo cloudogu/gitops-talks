@@ -72,6 +72,7 @@ Je nach verwendeten Tools, mehr Operators notwendig
 * Was tun bei anderen Templating-Tools?
 
 Note:
+* Werden mit CustomResource, zB `HelmRelease` 
 * Neue Herausforderungen, z.B. Helm Client Version durch Operator festgelegt.
 * Was tun, wenn Chart neuere Client Version braucht, als neueste Operator Version fest legt
 
@@ -87,11 +88,11 @@ Note:
 
 ## Fehlerbehandlung
 
-* Push, Build und Deployment entkoppelt
+* Build und Deployment entkoppelt
 * Fehlermeldung asynchron ➡️ Fehler werden später bemerkt
 * Abhilfe:
-  * Fail early mit CI Server - wenn Pipeline vorhanden
-  * Monitoring und Alerting - mit Flux ineffizient
+  * Statische Code Analyse mit CI Server - wenn Pipeline vorhanden
+  * Monitoring und Alerting - mit Flux gewöhnungsbedürftig
 
 
 
@@ -110,12 +111,11 @@ Note:
 
 ### Herausforderungen Monitoring und Alerting mit Flux (2)
 
-* Erzeugt viele Alerts
 * Betroffene Anwendung und Ursache muss im Log gesucht werden
 * Ursachen im Flux und Helm Operator Log schwer zu finden 
-* Alerts und Neustarts schwierig zu differenzieren von "echten" Deployment-Fehlern. Beispiele:
-  * Operator Pod Neustarts
+* Viele Alerts: Schwierig zu differenzieren von "echten" Deployment-Fehlern. Beispiele:
   * Alerts während Wartungsfenster von Git Server
+  * Operator Pod Neustarts
   * Operator Pod OOM Kills
   
 Note:
@@ -210,6 +210,8 @@ Mehr Kritik:
 * Viele Fehlerfälle. Beispiele:
   * Git Conflicts durch Concurrency
   * Dadurch Gefahr von Inkonsistenz
+
+➡ Empfehlung: Plugin, Library dafür nutzen
 
 Note:
 

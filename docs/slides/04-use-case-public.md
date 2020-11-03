@@ -26,5 +26,3 @@ Continuous Delivery funktionert gut. Aber:
   ➡️ Zusätzliche Gefahr: "ausversehen etwas deployt"
 * Erneuter Build für jede Stage  
   ➡️ langsam
-* Helm: Chart URL und Version in CD Pipeline festlegen? 🤔  
-  ➡️ Helm Operator
