@@ -34,7 +34,7 @@ GitOps mit K8s – Ausgangslage
 <!-- .slide: data-background-size="100% 100%"  -->
 
 GitOps mit K8s  -  Motivation  
-<br/>
+<br class="state-background" />
   
 
 **Motivation für GitOps**
