@@ -1,6 +1,6 @@
 # Anwendungsfall:<br/>Migration CI/CD ➡️ GitOps (Public Cloud)
 <br/>
-<img src="/dist/theme/images/cloudogu.png" class="centered"/>
+<img src="images/logo-cloudogu.png" class="centered"/>
 
 
 
