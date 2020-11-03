@@ -2,6 +2,8 @@
  
 * ITZBund
   * Vereinfacht / beschleunigt Prozesse
+  * Konfiguration liegt an definierter zentraler Stelle vor
+  * Konventionen über viele Projekte gleichartig implementierbar
   * Vorteile bei Security
 * Cloudogu
   * CI/CD-Prozess "runder" - Git und Cluster immer in Sync; schnelleres Deployment in Produktion  
