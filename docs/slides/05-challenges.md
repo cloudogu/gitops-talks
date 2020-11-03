@@ -32,23 +32,22 @@ Note:
 * Flux: Reiner GitOps-Operator   
  ➡ Integriert gut mit bestehender CI/CD Lösung - **<i class="fab fa-jenkins" style="font-weight: bold;"></i>**
 * Einfach deployt und konfiguriert
-* Technischer Durchstich schnell erreicht
 
 
 
 ### Offene Fragen bei Flux
 
-Aber: Es warten viele Detailfragen
-
-* Git-sync via Polling?
-* Wie Helm/Kustomize deployen?
-* Ressourcen löschen?
-* Umgang mit Fehlern?
-* Wie Staging implementieren?
-* Infrastruktur im Applikations-Repo oder im GitOps-Repo?
-* Lokale Entwicklung?
-* Zukunft: Flux v2 / GitOps Toolkit / GitOps Engine?
-* ...
+* Technischer Durchstich schnell erreicht 
+* Direkt danach warten viele Detailfragen
+    * Git-sync via Polling?
+    * Wie Helm/Kustomize deployen?
+    * Ressourcen löschen?
+    * Umgang mit Fehlern?
+    * Wie Staging implementieren?
+    * Infrastruktur im Applikations-Repo oder im GitOps-Repo?
+    * Lokale Entwicklung?
+    * Zukunft: Flux v2 / GitOps Toolkit / GitOps Engine?
+    * ...
 
 
 
@@ -56,11 +55,12 @@ Aber: Es warten viele Detailfragen
 
 * Flux pollt Git alle 5 Minuten ➡️ langsameres Deployment
 * Alternativen
-  * Mehr Infra: <i class="fab fa-github"></i> fluxcd/flux-recv
-  * Manuell anstoßen: 
+  * Mehr Infra: <i class="fab fa-github"></i> [fluxcd/flux-recv](https://github.com/fluxcd/flux-recv)
+  * Manuell anstoßen 
    ```shell script
    fluxctl sync --k8s-fwd-ns kube-system
    ```
+  * Warten ⏱️ 
 
 Note: Teaser - wird mit Fluxv2 besser.
 
@@ -72,11 +72,11 @@ Je nach verwendeten Tools, mehr Operators notwendig
 
 * Helm Operator
 * Kustomize Operator
-* was tun bei anderen Templating Tools?
+* Was tun bei anderen Templating-Tools?
 
 Note:
-* Neue Herausforderungen, z.B. Helm Client Version durch Operator festgelgt.
-* Was tun wenn Chart neuere Client Version braucht als neueste Opertor Version fest legt
+* Neue Herausforderungen, z.B. Helm Client Version durch Operator festgelegt.
+* Was tun, wenn Chart neuere Client Version braucht, als neueste Operator Version fest legt
 
 
 
@@ -86,13 +86,16 @@ Note:
 * 😰
 * ... oder doch lieber manuell löschen
 
+Note:
+* Klingt riskant, wenn noch nicht alle Anwendungen migriert
+* Oder mehrere Flux-Instanzen deployt sind
+
 
 
 ## Fehlerbehandlung
 
 * Push, Build und Deployment entkoppelt
 * Fehlermeldung asynchron ➡️ Fehler werden später bemerkt
-* Ursachen im Flux und Helm Operator Log schwer zu finden 
 * Abhilfe:
   * Fail early mit CI Server - wenn Pipeline vorhanden
   * Monitoring und Alerting - schwer wartbar
@@ -100,14 +103,16 @@ Note:
 
 
 ### Herausforderungen Flux Monitoring und Alerting
+<!-- .slide: style="font-size: 0.9em;"  -->
 
 ```
 delta(flux_daemon_sync_duration_seconds_count{success='true'}[6m]) < 1
 ```
 
 * Monitoring-Queries in Doku nicht intuitiv
-* Erzeugt viele Alerts
 * Betroffene Anwendung und Ursache muss im Log gesucht werden
+* Ursachen im Flux und Helm Operator Log schwer zu finden 
+* Erzeugt viele Alerts
 * Alerts und Neustarts schwierig zu differenzieren von "echten" Deployment-Fehlern. Beispiele:
   * Alerts während Wartungsfenster von Git Server
   * Operator Pod Neustarts
@@ -185,7 +190,7 @@ Note: Branching führt zu Konflikten beim Merge, Develop und Master laufen ausei
 <!-- .slide: style="font-size: 0.9em;"  -->
 > My gitops workflow might be turing complete  
 > ― Darren Shepherd, CTO Rancher Labs  
-<a href="https://twitter.com/ibuildthecloud/status/1311474999148961798"><i class="fab fa-twitter"></i> https://twitter.com/ibuildthecloud/status/1311474999148961798</a>
+<a href="https://twitter.com/ibuildthecloud/status/1311474999148961798"><i class="fab fa-twitter"></i> twitter.com/ibuildthecloud/status/1311474999148961798</a>
 
 Note: 
 Mehr Kritik:
@@ -222,7 +227,7 @@ Note:
 
 ### Vorteile
 
-* Fail early: statische YAML-Analyse durch CI-Server (kubeval, yamlint)
+* Fail early: statische YAML-Analyse durch CI-Server (yamlint, kubeval)
 * Automatische PR-Erstellung
 * Arbeit auf echten Dateien ➡ CI-Server erzeugt inline YAML
 * Test-Deployment von Feature Branch möglich
@@ -248,4 +253,31 @@ Note:
 
 
 ## Zukunft: Flux v2 / GitOps Toolkit / GitOps Engine?
-TODO
+
+* August 2019: Flux + Argo GitOps Engine = Flux v2
+* Juli 2020: Flux v2 ➡ ~~GitOps Engine~~ GitOps Toolkit
+* Egal wie: Breaking Changes
+* Dafür viele neue Features:
+  * Flux aktualisiert sich selbst mit GitOps
+  * Mehrere Git Repos
+  * Mandanten 
+  * Alerting
+  * Webhook Receiver eingebaut
+  * Helm und Kustomize
+  * ... 🌐 [toolkit.fluxcd.io](https://toolkit.fluxcd.io)
+
+
+
+**Stand 11/2020**
+<!-- .slide: style="font-size: 0.95em;"  -->
+
+> ⚠️ This also means that Flux v1 is in maintenance mode.  
+> <i class="fab fa-github"></i> [github.com/fluxcd/flux/blob/738d47/README.md](https://github.com/fluxcd/flux/blob/738d47/README.md)
+
+> Once we have reached feature-parity [..], we will continue to support Flux v1 and Helm Operator v1 for 6 more months  
+<i class="fab fa-github"></i> [github.com/fluxcd/flux/issues/3320](https://github.com/fluxcd/flux/issues/3320)
+
+* Flux v2 hat aber noch nicht alle Features von Flux:  
+  🌐 [toolkit.fluxcd.io/roadmap](https://toolkit.fluxcd.io/roadmap/)
+* Und liegt noch in einer `0.x` Version vor:   
+  <i class="fab fa-github"></i> [github.com/fluxcd/flux2/releases](https://github.com/fluxcd/flux2/releases)

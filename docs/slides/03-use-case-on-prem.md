@@ -1,4 +1,6 @@
 # Anwendungsfall:<br/>Neueinführung von GitOps (OnPrem)
+<br/>
+<img src="images/logo-itzbund.svg" class="centered"/>
 
 
 

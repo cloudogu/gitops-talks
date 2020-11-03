@@ -1,13 +1,15 @@
 # Anwendungsfall:<br/>Migration CI/CD ➡️ GitOps (Public Cloud)
+<br/>
+<img src="/dist/theme/images/cloudogu.png" class="centered"/>
 
 
 
 ## Ausgangslage
 
-<img data-src="images/mycloudogu_logo.svg" width="25%" class="floatRight"/>
+<a href="https://my.cloudogu.com/"><img data-src="images/mycloudogu_logo.svg" width="25%" class="floatRight"/></a>
 
 * Kleines, junges Unternehmen
-* Ziel: Quick Time to Market, geringe Aufwände
+* Prio: Quick Time to Market
 * Seit 2017 Continuous Delivery nach K8s in public Cloud
 
 
