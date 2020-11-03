@@ -23,7 +23,7 @@
 </p>
 
 <div class="title-version">
-Version: 202011031736-5d3232e
+Version: 202011032223-c18862f
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
@@ -39,5 +39,5 @@ Version: 202011031736-5d3232e
 * Anwendungsbeispiele
   * Neueinführung von GitOps (OnPrem)
   * Migration CI/CD ➡️ GitOps (Public Cloud)
-* Herausforderungen in der Praxis
+* Herausforderungen und Erkenntnisse aus der Praxis
 * Fazit und Empfehlung

@@ -3,13 +3,13 @@
 * ITZBund
   * Vereinfacht / beschleunigt Prozesse
   * Konfiguration liegt an definierter, zentraler Stelle vor
-  * Konventionen über viele Projekte gleichartig implementierbar
+  * GitOps-Prozess als Konvention ➡️ einheitlich über viele Projekte
   * Vorteile bei Security
 * Cloudogu
   * CI/CD-Prozess "runder"
     * schnelleres Deployment in Produktion 
     * Git und Cluster immer in Sync 
-  * Aber: Security Vorteile tragen erst nach vollständiger Migration
+  * Aber: Security-Vorteile tragen erst nach vollständiger Migration
 
 
 
@@ -23,18 +23,17 @@
 
 # Empfehlung für Flux?
 
-Technologisch noch viel im Umbruch.
-
-Empfehlung *vor* dem stable Release von Flux v2: 
+Dilemma: Flux v1 in maintenance, Flux v2 noch nicht stable. 
 
 * Bei bestehendem CI/CD-Prozess:  
   Nur mit gutem Grund migrieren bevor Flux v2 stable ist 
 * Bei Neueinführung von Kubernetes:   
-  Flux v2 ausprobieren, ggf. noch warten bis stable
+  Flux v2 ausprobieren
+
 
 Note: 
 * Eigene "Technology Radar" Einkategorisierung: Trial.
-* Wird sicher sehr wahrscheinlich ändern wenn v2 stable
+➡️ Mit einem stabilen Flux v2 wird ein klarere Empfehlung wahrscheinlicher
 
 
 

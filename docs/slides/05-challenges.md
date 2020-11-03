@@ -1,4 +1,4 @@
-# Herausforderungen in der Praxis
+# Herausforderungen und <br/>Erkenntnisse aus der Praxis
 
 
 
@@ -45,6 +45,7 @@
 
 Note: Weitere interessante Erketnnisse:
 * Eventual consistence: Push yaml with CR and CRD - Which one applied first? CR fails, next time might succeed. 
+
 
 
 ## Mehr Infrastruktur 2 - webhook receiver
@@ -209,7 +210,6 @@ Mehr Kritik:
 * Viele Fehlerfälle. Beispiele:
   * Git Conflicts durch Concurrency
   * Dadurch Gefahr von Inkonsistenz
-  * Ohne reproducible build: Jeder Build erstellt GitOps PR
 
 Note:
 
@@ -253,17 +253,17 @@ Note:
 * Juli 2020: Flux v2 ➡ ~~GitOps Engine~~ GitOps Toolkit
 * Egal wie: Breaking Changes
 * Dafür viele neue Features:
-  * Flux aktualisiert sich selbst mit GitOps
-  * Mehrere Git Repos
-  * Mandanten 
   * Alerting
   * Webhook Receiver eingebaut
   * Helm und Kustomize Operators 
+  * Mehrere Git Repos
+  * Mandanten 
+  * Flux aktualisiert sich selbst mit GitOps
   * ... 🌐 [toolkit.fluxcd.io](https://toolkit.fluxcd.io)
 
 
 
-**Stand 11/2020**
+**Das Flux-Dillema (Stand 11/2020)**
 <!-- .slide: style="font-size: 0.95em;"  -->
 
 > ⚠️ This also means that Flux v1 is in maintenance mode.  
@@ -274,7 +274,7 @@ Note:
 
 * Flux v2 hat aber noch nicht alle Features von Flux:  
   🌐 [toolkit.fluxcd.io/roadmap](https://toolkit.fluxcd.io/roadmap/)
-* Und liegt noch in einer `0.x` Version vor:   
+* und ist nicht stable - Version `0.x`  
   <i class="fab fa-github"></i> [github.com/fluxcd/flux2/releases](https://github.com/fluxcd/flux2/releases)
 
 Note:
