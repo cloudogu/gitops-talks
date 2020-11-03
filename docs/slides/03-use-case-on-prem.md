@@ -36,7 +36,7 @@ GitOps mit K8s – Ausgangslage
 <!-- .slide: data-background-size="100% 100%"  -->
 
 GitOps mit K8s  -  Motivation  
-<br class="state-background" />
+<br/>
   
 
 **Motivation für GitOps**
@@ -45,5 +45,8 @@ GitOps mit K8s  -  Motivation
 * Berücksichtigung der Umgebungskonfiguration
 * pull-Operationen von einem höheren Security-Level
 * kein Veröffentlichen von credentials der Staging-Umgebungen an Dev
+
+<br/>
+<br/>
 
 <img data-src="images/graphic-itz.svg" width=70% />
