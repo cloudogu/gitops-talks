@@ -8,6 +8,7 @@
 * Argo (CNCF Incubator)
 * JenkinsX (CDF)
 * Spinnaker (CDF)
+* Carvel kapp (VMWare)
 * viele weitere:   
   <i class="fab fa-github"></i> [weaveworks/awesome-gitops](https://github.com/weaveworks/awesome-gitops)
 
@@ -69,7 +70,7 @@ Je nach verwendeten Tools, mehr Operators notwendig
 
 * Helm Operator
 * Kustomize Operator
-* Was tun bei anderen Templating-Tools?
+* Kein direkter Support für andere Templating-Tools 
 
 Note:
 * Werden mit CustomResource, zB `HelmRelease` 

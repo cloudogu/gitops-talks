@@ -10,7 +10,7 @@
 
 
 
-Continuous Delivery
+"Klassisches" Continuous Delivery ("CIOps" 😕)
 
 <img data-src="images/cicd.svg" width="48%"/>
 
