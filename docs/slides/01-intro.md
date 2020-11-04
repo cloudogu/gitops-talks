@@ -23,7 +23,7 @@
 </p>
 
 <div class="title-version">
-Version: 202011032306-c80e456
+Version: 202011041123-6e66023
 </div>
 
 <p class="state-background" style="font-size: 0.9em">

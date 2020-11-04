@@ -16,7 +16,7 @@ GitOps mit K8s – Ausgangslage
 
 <h4 style="color: black"> Dienstleistungen (u.a.)</h4>
 
-* bietet IT-Infrastruktur (z.B. Einwahlplattformen, Client-Virtualisierung, Cloud-Lösungen)
+* bietet IT-Infrastruktur (z.B. Client-Virtualisierung, Cloud-Lösungen, Entwicklungsplattformen)
 * Hosting von Anwendungen
 
 <h4 style="color: black"> Anforderungen</h4>
