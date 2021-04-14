@@ -1,7 +1,7 @@
 #!groovy
 
 //Keep this version in sync with the one used in Maven.pom-->
-@Library('github.com/cloudogu/ces-build-lib@1.35.1')
+@Library('github.com/cloudogu/ces-build-lib@1.46.1')
 import com.cloudogu.ces.cesbuildlib.*
 
 node('docker') {
@@ -12,10 +12,6 @@ node('docker') {
             // Don't run concurrent builds for a branch, because they use the same workspace directory
             disableConcurrentBuilds(),
             parameters([
-                    booleanParam(name: 'deployToNexus', defaultValue: false,
-                            description: 'Deploying to Nexus takes about 3 Min since Nexus 3. That\'s why we skip it be default'),
-                    booleanParam(name: 'deployToK8s', defaultValue: false,
-                            description: 'Deploys to Kubernetes. We deploy to GitHub pages, so skip deploying to k8s by default.'),
                     booleanParam(defaultValue: false, name: 'forceDeployGhPages',
                             description: 'GH Pages are deployed on Master Branch only. If this box is checked it\'s deployed no what Branch is built.')
             ])
@@ -23,23 +19,12 @@ node('docker') {
 
     def introSlidePath = 'docs/slides/01-intro.md'
 
-    String dockerRegistry = ""
-    String imageBaseName = "cloudogu/reveal.js-example"
-    String dockerRegistryCredentials = 'hub.docker.com-cesmarvin'
     String ghPageCredentials = 'cesmarvin'
-    String kubeconfigCredentials = 'kubeconfig-oss-deployer'
-    
-    String mavenGroupId = "com.cloudogu.slides"
-    String mavenArtifactId = "reveal.js-docker-example"
-    String mavenSiteUrl = "https://ecosystem.cloudogu.com/nexus/content/sites/Cloudogu-Docs"
 
-    // Used for PDF printing - latest version does not have a docker tag (commit: 9edd0d3, pupeteer: 3.3.0)
-    headlessChromeVersion = 'yukinying/chrome-headless-browser:87.0.4280.11'
-    String mavenVersion = "3.6.2-jdk-8"
+    headlessChromeVersion = 'yukinying/chrome-headless-browser:91.0.4469.4'
     
     Git git = new Git(this, ghPageCredentials)
     Docker docker = new Docker(this)
-    Maven mvn = new MavenInDocker(this, mavenVersion)
 
     catchError {
 
@@ -48,10 +33,12 @@ node('docker') {
             git.clean('')
         }
 
+        String conferenceName = '2021-04-26-softwerkskammer-koeln'
+        
         String pdfName = createPdfName()
 
-        String versionName = createVersion(mvn)
-        String imageName = "${imageBaseName}:${versionName}"
+        String versionName = createVersion()
+        String imageName = "${env.JOB_NAME}:${versionName}"
         String packagePath = 'target'
         forceDeployGhPages = Boolean.valueOf(params.forceDeployGhPages)
         def image
@@ -80,18 +67,16 @@ node('docker') {
 
         stage('Deploy GH Pages') {
 
-            if (env.BRANCH_NAME == 'master' || forceDeployGhPages) {
-                git.pushGitHubPagesBranch(packagePath, versionName)
+            if (env.BRANCH_NAME in [ 'master', 'main' ] || forceDeployGhPages) {
+                git.pushGitHubPagesBranch(packagePath, versionName, conferenceName)
             } else {
-                echo "Skipping deploy to GH pages, because not on master branch"
+                echo "Skipping deploy to GH pages, because not on default branch"
             }
         }
     }
 
     mailIfStatusChanged(git.commitAuthorEmail)
 }
-
-String headlessChromeImage
 
 String createPdfName(boolean includeDate = true) {
     String title = sh (returnStdout: true, script: 'grep -r \'TITLE\' Dockerfile | sed "s/.*TITLE=\'\\(.*\\)\'.*/\\1/" ').trim()
@@ -103,12 +88,11 @@ String createPdfName(boolean includeDate = true) {
     return pdfName
 }
 
-String createVersion(Maven mvn) {
+String createVersion() {
     // E.g. "201708140933-1674930"
     String versionName = "${new Date().format('yyyyMMddHHmm')}-${new Git(this).commitHashShort}"
 
-    if (env.BRANCH_NAME == "master") {
-        mvn.additionalArgs = "-Drevision=${versionName} "
+    if (env.BRANCH_NAME in [ 'master', 'main' ]) {
         currentBuild.description = versionName
         echo "Building version $versionName on branch ${env.BRANCH_NAME}"
     } else {
@@ -158,3 +142,5 @@ String filterFile(String filePath, String expression, String replace) {
     sh "cat ${filePath} | sed 's/${expression}/${replace}/g' > ${filteredFilePath}"
     return filteredFilePath
 }
+
+String headlessChromeVersion
