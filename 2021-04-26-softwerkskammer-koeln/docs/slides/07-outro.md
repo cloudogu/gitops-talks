@@ -40,19 +40,12 @@ Note:
 Johannes Schnatterer, Cloudogu GmbH
 <br/><br/>
 
+
 🌐 [cloudogu.com/gitops](https://cloudogu.com/gitops/)
  * ℹ️ GitOps Resources (intro, tool comparison, etc.)
+ * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib <i class="fab fa-jenkins"></i>
  * 💬 Discussions
  * 🧑‍🏫 Training
+[<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/#/)
 
-
-<br/>
-
-[<img data-src="images/qr-slides.png" class="floatRight" style="margin-right: 200px" width="25%"/>](https://cloudogu.github.io/gitops-talks/#/)
-
-<br/>
-
-<i class='fab fa-github'></i> [cloudogu/k8s-gitops-playground](https://github.com/cloudogu/k8s-gitops-playground)
-
-<i class='fab fa-github'></i> [cloudogu/gitops-build-lib](https://github.com/cloudogu/gitops-build-lib) <i class="fab fa-jenkins"></i>
 
