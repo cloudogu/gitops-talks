@@ -35,9 +35,9 @@ Note:
 
 
 <!-- .slide: data-background-image="images/title.svg"-->
+<!-- .slide: id="last" -->
 
 Johannes Schnatterer, Cloudogu GmbH
-<img data-src="images/qr-slides.png" class="floatRight" width="24%"/>
 <br/><br/>
 
 🌐 [cloudogu.com/gitops](https://cloudogu.com/gitops/)
@@ -45,7 +45,11 @@ Johannes Schnatterer, Cloudogu GmbH
  * 💬 Discussions
  * 🧑‍🏫 Training
 
+
 <br/>
+
+[<img data-src="images/qr-slides.png" class="floatRight" style="margin-right: 200px" width="25%"/>](https://cloudogu.github.io/gitops-talks/#/)
+
 <br/>
 
 <i class='fab fa-github'></i> [cloudogu/k8s-gitops-playground](https://github.com/cloudogu/k8s-gitops-playground)

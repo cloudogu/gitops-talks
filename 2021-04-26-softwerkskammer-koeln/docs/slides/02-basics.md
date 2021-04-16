@@ -34,7 +34,7 @@ GitOps
 
 # GitOps Principles
 
-<a href="https://github.com/gitops-working-group"><img data-src="images/gitops-wg.png" width="15%;" style="border-radius: 50%" class="floatRight"/></a>
+[<img data-src="images/gitops-wg.png" width="15%;" style="border-radius: 50%" class="floatRight"/>](https://github.com/gitops-working-group)
 
 1. The principle of declarative desired state
 2. The principle of immutable desired state versions
