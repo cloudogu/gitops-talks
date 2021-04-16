@@ -46,6 +46,6 @@ Johannes Schnatterer, Cloudogu GmbH
  * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib <i class="fab fa-jenkins"></i>
  * 💬 Discussions
  * 🧑‍🏫 Training
-[<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/#/)
+[<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/)
 
 

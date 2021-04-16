@@ -17,16 +17,17 @@
 </p>
 
 <div class="title-version">
-Version: 202104161146-d6ae7ca
+Version: 202104161337-035c88f
 </div>
-<br/>
-
-<img class="state-background" data-src="images/qr-slides.png"  width="15%"/>
 
 <p class="state-background" style="font-size: 0.9em">
     <a href="pdf/Introduction%20to%20GitOps.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
+
+<a class="state-background" href="https://cloudogu.github.io/gitops-talks/"><img data-src="images/qr-slides.png" width="15%"/></a>
+
+<br/>
 
 
 
