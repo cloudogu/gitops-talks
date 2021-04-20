@@ -5,6 +5,7 @@ Note:
 * Source: https://pixabay.com/illustrations/question-mark-important-sign-1872665/
 
 
+
 * Term (August 2017):
 
 > Use developer tooling to drive operations  
@@ -32,7 +33,7 @@ GitOps
 
 
 
-# GitOps Principles
+## GitOps Principles
 
 [<img data-src="images/gitops-wg.png" width="15%;" style="border-radius: 50%" class="floatRight"/>](https://github.com/gitops-working-group)
 
@@ -54,7 +55,14 @@ Note:
 
 
 
-# Advantages of GitOps
+## GitOps vs DevOps
+TODO
+
+<span style="font-size: 30px;"><i class="fas fa-newspaper"></i> https://www.heise.de/select/ix/2021/4/2032116550453239806 🇩🇪</span>
+
+
+
+## Advantages of GitOps
 <!-- .slide: style="font-size: 0.9em;"  -->
 
 <img data-src="images/gitops-simple.svg" width="34%" class="floatRight"/>

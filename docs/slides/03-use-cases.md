@@ -11,7 +11,25 @@ Note:
 
 
 
+## 📜 GitOps History in a nutshell 
+
+* grew up operating applications on Kubernetes,
+* is now rising above it, operating clusters   
+  and other (cloud) infrastructure
+
+<br/>
+<br/>
+<br/>
+More on the history of GitOps:  
+
+🎥 https://youtu.be/lvLqJWOixDI
 
 
-* grew up operating applications on Kubernetes and
-* is now rising above it, operating clusters and other cloud infrastructure
+
+## A GitOps Dream
+<img data-src="images/gitops-tool-maturity.svg"  width="68%"/>
+
+
+
+## GitOps reality
+<img data-src="images/gitops-tool-maturity2.svg"  width="68%"/>

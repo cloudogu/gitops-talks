@@ -32,7 +32,7 @@
 
 
 
-# Agenda
+## Agenda
 
 - What is GitOps?
 - Where can it be used?
