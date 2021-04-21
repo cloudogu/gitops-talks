@@ -1,3 +1,8 @@
+<!-- .slide: data-background-image="images/conclusion.jpg"  -->
+Note:
+* Source: https://pixabay.com/photos/conclusion-reason-final-end-5859031/
+
+
 # Personal Conclusion
 
 After migrating to and operating with GitOps in production for > 1 year
