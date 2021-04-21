@@ -6,6 +6,7 @@ Note:
 
 
 
+* operating model  
 * Term (August 2017):
 
 > Use developer tooling to drive operations  
@@ -14,20 +15,18 @@ Note:
 > "The right way to do DevOps" (Alexis Richardson)  
   🎥 [youtu.be/lvLqJWOixDI](https://youtu.be/lvLqJWOixDI)
 
-* operating model  
-* a completely declarative way to do Continuous Delivery
 
 
 
 
 "Classic" Continuous Delivery ("CIOps")
 
-<img data-src="images/cicd.svg" width="48%"/>
+<img data-src="images/cicd.svg" width="60%"/>
 
 <p class="fragment">
 GitOps
 <br/>
-<img data-src="images/gitops-simple.svg" width="48%" />
+<img data-src="images/gitops-simple.svg" width="60%" />
 
 </p>
 
@@ -50,6 +49,7 @@ GitOps
 
 Note:
 1. and 2. -> Git, but could also be a different system with theses attributes
+   Fun Fact: GitOps is possible without Git
 3. Continuously! Not only when a change is triggered, also when the actual state "drifts"
 4. No more tinkering!
 

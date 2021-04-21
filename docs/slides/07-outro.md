@@ -1,3 +1,9 @@
+<!-- .slide: data-background-image="images/conclusion.jpg"  -->
+Note:
+* Source: https://pixabay.com/photos/conclusion-reason-final-end-5859031/
+
+
+
 # Personal Conclusion
 
 After migrating to and operating with GitOps in production for > 1 year
@@ -28,7 +34,7 @@ After migrating to and operating with GitOps in production for > 1 year
 
 Note:
 * Greenfield - Cloud Infra:
-  * single cluster: overkill,
+  * single cluster: overkill?,
   * at scale: automation provides advantages
 * Brownfield: It might solve certain problems, but migration can cause a lot of effort
 

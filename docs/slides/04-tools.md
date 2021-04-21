@@ -1,9 +1,7 @@
 <!-- .slide: data-background-image="images/tools.jpg"  -->
-<!-- .slide: style="text-align: center !important;"  -->
+<!-- .slide: style="text-align: center !important"  -->
 
-# How can GitOps be used?
-## Tools
-<br/><br/><br/><br/>
+# How can GitOps be used?<br/>Tools
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
 
@@ -33,8 +31,8 @@ Note:
 <a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
 <a title="Fleet" href="https://github.com/rancher/fleet"><img data-src="images/fleet-icon.svg" width="9%"/></a>
 <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
-<a title="JenkinsX" href=""><img data-src="images/jenkinsx-icon.svg" width="9%"/></a>
-<a title="Werf" href=""><img data-src="images/werf-icon.svg" width="9%"/></a>
+<a title="JenkinsX" href="https://github.com/jenkins-x/jx"><img data-src="images/jenkinsx-icon.svg" width="9%"/></a>
+<a title="Werf" href="https://github.com/werf/werf"><img data-src="images/werf-icon.svg" width="9%"/></a>
 
 Note:
 * AFAIK the most well known tools. There are more of course! 
@@ -54,32 +52,12 @@ Note:
 ## Operate Kubernetes with Kubernetes
 
 <div style="text-align: center !important;">
-  <img data-src="images/infra-cluster-target-clusters.svg" width="40%"/>
+  <img data-src="images/infra-cluster-target-clusters.svg" width="50%"/>
 </div>
 
-<!--
-<br/>
-<div>
-  ➡️
-  <div class="floatLeft">
-  <ul>
-  <li>Management Cluster</li>
-  <li>Infrastructure Cluster</li>
-  <li>Controller Cluster</li>
-  </ul>
-  </div>
-  <div class="floatRight">
-  <ul>
-  <li>Target Cluster</li>
-  <li>Workload Cluster</li>
-  <li>Downstream Cluster</li>
-  </ul>
-  </div>
-</div>
--->
 Note: 
 * Management Cluster, aka Infrastructure Cluster, Controller Cluster
-* Target Cluster, aka
+* Target Cluster, aka Workload Cluster, Downstream Cluster
 
 
 
@@ -161,12 +139,7 @@ Notes:
     <li><i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a></li>
   </ul>
 </ul>
-<!--
-<a title="Vault Operator" href="https://github.com/ricoberger/vault-secrets-operators"><img data-src="https://raw.githubusercontent.com/hashicorp/vault/master/ui/public/vault-logo.svg" class="floatRight" width="10%" /></a>
-<a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="https://avatars.githubusercontent.com/u/68335991?s=200&v=4" class="floatRight" width="10%" /></a>
-<a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="https://kamus.soluto.io/logo/logo.png" class="floatRight" width="10%" /></a>
-<a title="Flux v2 with SOPS integration" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
--->
+
 </div>
 
 
@@ -176,7 +149,8 @@ Notes:
   <a title="Flagger" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/flagger-icon.svg" width="9%"/></a>
   <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
 * Backups  
-  😞
+* Horizontal Pod Autoscaler
+* ...
 
 Notes:
 * Sources:
@@ -186,9 +160,11 @@ Notes:
 
 ## See also
 
-* ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools) ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
+  <a title="CNCF Tech Radar 2021-02" href="https://radar.cncf.io/2021-02-secrets-management"><img data-src="images/2021-02-secrets-management.svg"  class="floatRight" width="27%"/></a>
+* ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools)  ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
   * General tool comparison,   
-  * tips on criteria for tool selection,   
+  * tips on criteria for tool selection,  
   * comparison of ArgoCD v1 and Flux v2  
-* <i class='fab fa-github'></i> [weaveworks/awesome-gitops](https://github.com/weaveworks/awesome-gitops)
+* 🌐 [radar.cncf.io/2021-02-secrets-management](https://radar.cncf.io/2021-02-secrets-managemen)
+*  <i class='fab fa-github'></i> [weaveworks/awesome-gitops](https://github.com/weaveworks/awesome-gitops)
 * 🌐 [gitops.tech](https://www.gitops.tech/)

@@ -3,8 +3,18 @@
 !define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
 !includeurl CLOUDOGUURL/tools/k8s.puml
 
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
+!includeurl ICONURL/devicons/git.puml
+
 !define CLOUDOGU_BLUE #23a3dd
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
+
+    
+together {
+    rectangle "<$git>\nGitOps Repo" as configRepo
+    rectangle " " as repo2
+    hide repo2
+}
 
 together {
     rectangle "<$k8s>\nManagement Cluster" as mgmt
@@ -18,6 +28,8 @@ together {
     rectangle "<$k8s>\nTarget Cluster" as t3
 }
 
+configRepo -[hidden]-> repo2
+configRepo <- mgmt
 mgmt -[hidden]-> mgmt2
 mgmt -> t1
 mgmt -> t2
