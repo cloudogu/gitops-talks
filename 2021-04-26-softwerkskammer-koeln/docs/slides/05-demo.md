@@ -2,9 +2,8 @@
 <!-- .slide: style="text-align: center !important"  -->
 
 <h1 style=";color: black "> How can GitOps be used?<br/> Design Decisions</h1>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
 Note:
 Source: https://unsplash.com/photos/wWQ760meyWI
