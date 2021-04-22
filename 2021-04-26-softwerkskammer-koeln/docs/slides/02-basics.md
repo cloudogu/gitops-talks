@@ -6,16 +6,11 @@ Note:
 
 
 
-* operating model  
+* Operating model  
 * Term (August 2017):
 
 > Use developer tooling to drive operations  
 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
- 
-> "The right way to do DevOps" (Alexis Richardson)  
-  🎥 [youtu.be/lvLqJWOixDI](https://youtu.be/lvLqJWOixDI)
-
-
 
 
 
@@ -56,9 +51,23 @@ Note:
 
 
 ## GitOps vs DevOps
-TODO
 
-<span style="font-size: 30px;"><i class="fas fa-newspaper"></i> https://www.heise.de/select/ix/2021/4/2032116550453239806 🇩🇪</span>
+* DevOps is about collaboration of formerly separate groups (mindset)
+* GitOps focuses on ops (operations model)
+* GitOps can be used with or without DevOps 
+
+
+
+> "The right way to do DevOps" (Alexis Richardson)  
+ 
+<img data-src="images/gitops-map.svg" width="40%" />
+
+<span style="font-size: 20px;"><ul>
+<li>🎥 <a href="https://youtu.be/lvLqJWOixDI">youtu.be/lvLqJWOixDI</a></li>
+<li><i class="fas fa-newspaper"></i> <a href="https://www.heise.de/select/ix/2021/4/2032116550453239806">heise.de/select/ix/2021/4/2032116550453239806</a><br/> 
+(iX 4/2021) 🇩🇪</li>
+<li>🌐 <a href="https://schlomo.schapiro.org">schlomo.schapiro.org</a></li>
+</ul></span>
 
 
 
