@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="application/ecmascript"
+   contentStyleType="text/css"
+   height="709px"
+   preserveAspectRatio="none"
+   style="width:1016px;height:709px;"
+   version="1.1"
+   viewBox="0 0 1016 709"
+   width="1016px"
+   zoomAndPan="magnify"
+   id="svg153"
+   sodipodi:docname="gitops-playground.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata157">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1866"
+     inkscape:window-height="1016"
+     id="namedview155"
+     showgrid="false"
+     inkscape:zoom="0.60366714"
+     inkscape:cx="439.25372"
+     inkscape:cy="241.01001"
+     inkscape:window-x="1974"
+     inkscape:window-y="52"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg153" />
+  <defs
+     id="defs19">
+    <filter
+       height="300%"
+       id="f1q7k8dpcc4n71"
+       width="300%"
+       x="-1"
+       y="-1">
+      <feGaussianBlur
+         result="blurOut"
+         stdDeviation="2.0"
+         id="feGaussianBlur10" />
+      <feColorMatrix
+         in="blurOut"
+         result="blurOut2"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
+         id="feColorMatrix12" />
+      <feOffset
+         dx="4.0"
+         dy="4.0"
+         in="blurOut2"
+         result="blurOut3"
+         id="feOffset14" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut3"
+         mode="normal"
+         id="feBlend16" />
+    </filter>
+  </defs>
+  <polygon
+     id="polygon21"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     points="999,6 999,692 989,702 16,702 16,16 26,6 " />
+  <line
+     id="line23"
+     y2="6"
+     y1="16"
+     x2="999"
+     x1="989"
+     style="stroke:#23a3dd;stroke-width:1.5" />
+  <line
+     id="line25"
+     y2="16"
+     y1="16"
+     x2="989"
+     x1="16"
+     style="stroke:#23a3dd;stroke-width:1.5" />
+  <line
+     id="line27"
+     y2="702"
+     y1="16"
+     x2="989"
+     x1="989"
+     style="stroke:#23a3dd;stroke-width:1.5" />
+  <image
+     id="image29"
+     y="19"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAtUlEQVR4Xu2Xyw3EIAwFaYGeaIEWKJ8WslYiS8bKkw8riA9vjnw0oygHXK5kFL/wNQyKYFAEgyJ80JyztVaOICLRuYAlSLZrrf7eTkTnmpag3ru/sR+R2oYl6PDneRCpbViC7Dm7vgPkYpCCXAxSkItBCnIxSEEuBinIxSAFuRikIBeDFORikIJcuYPSPfLHGP74fkRqG5agdIPidTcdGxdF9DJKE/Iv7p/6HAZFMCiCQRHpgn6x3znS2I7hMgAAAABJRU5ErkJggg=="
+     x="479.5"
+     width="48"
+     height="48" />
+  <text
+     style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000"
+     id="text31"
+     y="79.995102"
+     x="463.5"
+     textLength="80"
+     lengthAdjust="spacing"
+     font-weight="bold"
+     font-size="14">Your Host</text>
+  <rect
+     id="rect33"
+     y="102"
+     x="40"
+     width="791"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="576" />
+  <image
+     id="image35"
+     y="104"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+     x="411.5"
+     width="48"
+     height="48" />
+  <text
+     style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text37"
+     y="164.9951"
+     x="389.5"
+     textLength="92"
+     lengthAdjust="spacing"
+     font-weight="bold"
+     font-size="14">K3s Cluster</text>
+  <rect
+     id="rect39"
+     y="332"
+     x="64"
+     width="271"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="183" />
+  <a
+     id="a229"
+     xlink:href="http://localhost:9091/scm/repos"
+     xlink:title="SCM-Manager">
+    <image
+       height="48"
+       width="48"
+       x="175.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4ElEQVR4Xu2VTUrEQBCF597ewBt4Am/gDQRXboIrV2bjYhjwD2EQaR95pKhUOumfdMdZ9KMJlZoO9eVVdebgLkwHm/hvNaCQGlBIDSgkP9D7+dem9pIHCDTd6dx//tgfdpEHCALN/es3yLjszzXlB6JJWPu75QdyAxNMAoq4ZXfU0SIQRJMAxCvWDlhrQNokIavNtAbkhunWJu0wTwEgGWrpGk2q51MAyA2TNO8arnZfIYWBjEkEqnfuwkBuNMk4tAQkeey5e/nizCHZxx3SKCC2zDRuXgCZ2+cP5hEwxgLW9ePp5ulNXmOFLApIurYExFsSIEZt9hRXxMgThXDIXD0cce19BzYNyGARiN8qFCCBGEMUbsN+xOTgfltjVBSQm46RBG5kRTHSwAAxhq7QMLRM5mldsUCaQwMh4BsLDeAY0CQ9OjHKB2KNbvi/68YDJeU5K1365yoWiG/M2mRikrekkelBkP2hygRikuU1jQz19OkE5QDJqzMjTDJG00fTlAbEJUkCcaiBgkA9kalkIG2ATDRQMubXqwQg3SyKKAVpXBKQsYeIXGrjViUAGXsESCe3KwHIZDjR8/xGxQLNZU5cKW0CsqkSygcq3iwqH6iSGlBIDSikBhRSAwrp4oD+AGyZmNJHN/KJAAAAAElFTkSuQmCC"
+       y="334"
+       id="image41" />
+  </a>
+  <text
+     style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text43"
+     y="394.99509"
+     x="144.5"
+     textLength="110"
+     lengthAdjust="spacing"
+     font-weight="bold"
+     font-size="14">SCM-Manager</text>
+  <rect
+     id="rect45"
+     y="578"
+     x="847"
+     width="136"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image47"
+     y="588"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACWklEQVR4Xu2WQUpcQRCGvYs3yA08gTfIDXKC3GBukLULIStXs3IVEFxlI1kFwQyBIQQhk4ggEtqP/mPZU6/fq/eciQnaP4X0VPfr/l5VdT130n+mHe/412pAkRpQpAYUqQFFeo5Aq5vf8y9XZvz0K6ZoC0BAvPnwbfbxEnt7+p2ffsUUbQdINNi7Tz9eNtDh559dI19kChQMpmGgsMImALHX6+Mlp4qDsQZ4RgKxw/78K4v9RKHJQMqLgCxNI1PGU2eXNyxgmZ+715MCkVwNCNLi1+365B/FQHYYuxBw+2lA+Mtrb37MVYwBESdmYTpZXjuyGIgDeAxTv+FvOcaI1iyXjnJhxQ4cB5db4TFEK0e9G3vKHwNxsAoWUyS6KeMkG9tPFjsgTq1Wj6Kl8VMD7R0tSg8BYzG7macOBK8OwNjCxmUN2bisGyCsnnCqRWkBYztYZacpB10HUkGAxRtsbm5z4gSuc5rWgFb5u50ykFVZ3/3EX73hZfxLGZzdtVRb/ADE7mRh9+CcHDFQSM3DO/Gw3SlSgB9T4nStGLx6fyG/kmiPsJWm8OsR87hSq6eMFbqiWzeA/GHrH7g6UMp9wrs2VreEu+oFIqp9D69yqXXTPyw1C+/tqBdoILxq+X24Vak/eW9NvUApX4Hyw6S2MSu66ki51jesIaCU36x6t0eKKJbfqTEKgFJmGuhjfSKKatl+IlIMlPKLqvGX97MqOHgBJTpcXNUoIInI6xtkHU93TV9T/OKYlKCuJgCVImb6r0jX7XHBqOqRQH9PDShSA4rUgCI1oEgNKNIdd6X3L4lTCWgAAAAASUVORK5CYII="
+     x="857"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text49"
+     y="648.99512"
+     x="857"
+     textLength="116"
+     lengthAdjust="spacing"
+     font-size="14">Docker Daemon</text>
+  <rect
+     id="rect51"
+     y="185"
+     x="320"
+     width="142"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <a
+     id="a91"
+     xlink:href="https://localhost:9092/"
+     xlink:title="argoCD">
+    <image
+       height="48"
+       width="48"
+       x="330"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACs0lEQVR4Xu2YT4oUMRTG5y51A2/gCbyBN/AE3qBv4NqF4MpVr1wNCLNyI65E0EEYRAacUQYGkfJHvzbE9yUvSXUx0ws/PpqmKnn58v4klZzMR4YT/+C+sYKgq9vf5z9+Qf74dxVsP/98+Oo88dH2C93t1RJB7y5vN28vH7++ePDy0/T8oyPWn559Y8hA35PTr64X7e3VgCAGePb+OxNSETUyMOq9oXlGsWs5LAgpOl4n8aWThYNdmwFB2BrySo2ISDaXC3rx4VpNLybpZYml/u4SpN0OJ3VAQek824JiNdgtlhLxZTCSRrvkfdV4Q5DOIJF8Sp0DIFQTJWAkiFlqByMz861DEB3yRu0oI0HFmsLPxRWlB7rqKKuCNLrT30x0LYfQDF9ZEIHXpnCxb3LodtEWVHTPUN68ubjBndC2TMoNIoWoxYErC9Ls4UneoIlmaGosCCoWV0+F51hTkMYLz6e3nVhTkC6vRD297cSagrQKFpR6sMTHTIXsyz4xfz6K3E4P875+Ybx3/BfUwrEKYsmnYkdJTf1rrQt2ikp0W9NekG4ancxtdUJPc7gjvT1UkCvaJhg7NnLXgnTPd/v3nQq6Kn1vbbLz2ny4oNxWE7o7TbJBtQXZ6Y5uVAckCdgIqS+YJ2MT9FLj7OiuWVvQtGjbd2A+anYqfRx3CZok0kNAjZb6tLsb8U37BdX6N2Ff2WqNh8WCGBA07Uq0P28Yr5jFxpqdsiA7OagVI2kef2uTGbre5AxOMlVBtcDntNs7rFNx/JJnuKTZK07HsqBpt8CgSZ8fyMA3hkjQvMsD/fhfzDjQhoYgAxFpBiImoSzWlKIqSPtvFh1x9MYzRlVQ7QzUvCAzYpAJ1IwE2AvSayX1kIPd3tktAhGxGwVydiv3fEPYC2IqGEoccvK62As6HhydoD+shTEjmtuP+QAAAABJRU5ErkJggg=="
+       y="195"
+       id="image53" />
+  </a>
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text55"
+     y="255.9951"
+     x="330"
+     textLength="122"
+     lengthAdjust="spacing"
+     font-size="14">GitOps-Operator</text>
+  <rect
+     id="rect57"
+     y="578"
+     x="77"
+     width="148"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <a
+     id="a3935"
+     xlink:href="http://localhost:9090/"
+     xlink:title="Jenkins">
+    <image
+       height="48"
+       width="48"
+       x="87"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEW0lEQVR4Xs2YS4plRRCGey93B3cHtYLaQe+gVnB34A4cOyhw5KhHjgTBkRNxJIIWQiPSYKkIjUj6mR8nzIp8nHNLsfvncDg3bj7+iIyIjMwX5T3Diyx41/i3hB7f/nn/zS+XL356+enr21c/3HzywJtvJMgffv0jd9jD8wkxH3OfPvo2HqlIK4R80zJ3nuM5hD78+ufzx9+1PD5//Xtqg+Veff8bdgpaB611HSF0hQoM+JAWs+ZGTwGzUOCrN2/z3x2OEkI/10JjoPrdZz8yWW43AS1d396WCYcIYQbG+uDLN/6ECko/bXIIclrbaZ8Q/RklHBNyVzlpC+zE2vEsTLtPCLWwDUNgbf00t7gGDIJ62Dj/sWGHkP0NY94oN3QCiEJ6HUdYuo3NWeMVIZbGzlqo1IDvvUfPYDKSUPqrBaS1seqFRyZMCcHAaVofhGIaCBI8C58Ygi7QytKKKSHNkxYoWQizz8ZdQ22HakwJmWR7YUsRQkOXOgIWehj/U0LuSr1wqFaLXYpmDXff/N+CEGx6Qr2kR8oL/Z5PA7TCF/v4KAtCMwslSY+UOTFYoqgENsNAmxKiDyFGBovdtNRNI7drEJagS2sVHF93gQojmM+uJmR24U1PHdyP3K7BLO+Ze0pl7D5oCXAFIRO0i81wUULwXvhsbC+948MjLfd1hGhtzNPH9Ihyqj4MjV1AESO1Br7OqWmqRzMQyrlVof3CPLtAJRQLq0BuWNyNCVkZlq3eKweyyxFYV/l9XWJ0gXTM/4SKQM/YamZV0ZhQqbG6DvJdtB6DMRgtrPJYK7V/mjaYEtK84cLP2LYu9bBm4oGKHmMkMuxM2ymhUmPVVOTH0Ad7xF7B3NgjHAUhHm3AQnQWrStCpTmCHdk0RFSGvLEND4Oo0qnWM9Yez6kYA7f1SJqlI0Q5YKZwhzblRNmpPPfccIiQ6TEJhzZnSjgtvE13Xqz+IUJmgTSKG1MrEW47Op9OzTv64ukL85SDhMoWMknYl9jCdEoXHlO8crkOTRs4SsjjYp9bL5PCr4dbh5bL/zU4ROihHuxnY7Eo67KkVB836KxkGGeYpssuIbo5hKOcJucp2sQ9RAJU7HjeTlT39TxjQsqt14TcYiWhQqYTUwujRxh7znKay1ae3tVqU2XikbScTiMfGBOKNbrr7lyU32/XeC6EqSVmfVlPjzJTbpUodceJYEzjDwiZdc6TY3zZqiUj2WpJuVOe6/2GydCwjyn16xjH7TIZ6QmhyPqRcGdofSuNaMyfa717Uy8YW185NQnWyF1ZCB6atxUu8FjvxXpC+niptkwBGPVQ2a5Nmz//xhNCKt1KdsGgw32AmS71IMW7tVDL4G50E/eE0JFMmmBRkYSqzmT+68re1ivKdrcZRn52ansm4RqpvdHuxCwfU7KmkubjZjs0PkxuTjIhV8065uBzqtmFCaJ48n1TT6j+NDso8dtITLOXnhDj4hP/zzMM5EzoneO9I/QXR43ZPLOxpDAAAAAASUVORK5CYII="
+       y="588"
+       id="image59" />
+  </a>
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text61"
+     y="648.99512"
+     x="87"
+     textLength="128"
+     lengthAdjust="spacing"
+     font-size="14">Jenkins Controller</text>
+  <rect
+     id="rect63"
+     y="578"
+     x="315"
+     width="102"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image65"
+     y="588"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEW0lEQVR4Xs2YS4plRRCGey93B3cHtYLaQe+gVnB34A4cOyhw5KhHjgTBkRNxJIIWQiPSYKkIjUj6mR8nzIp8nHNLsfvncDg3bj7+iIyIjMwX5T3Diyx41/i3hB7f/nn/zS+XL356+enr21c/3HzywJtvJMgffv0jd9jD8wkxH3OfPvo2HqlIK4R80zJ3nuM5hD78+ufzx9+1PD5//Xtqg+Veff8bdgpaB611HSF0hQoM+JAWs+ZGTwGzUOCrN2/z3x2OEkI/10JjoPrdZz8yWW43AS1d396WCYcIYQbG+uDLN/6ECko/bXIIclrbaZ8Q/RklHBNyVzlpC+zE2vEsTLtPCLWwDUNgbf00t7gGDIJ62Dj/sWGHkP0NY94oN3QCiEJ6HUdYuo3NWeMVIZbGzlqo1IDvvUfPYDKSUPqrBaS1seqFRyZMCcHAaVofhGIaCBI8C58Ygi7QytKKKSHNkxYoWQizz8ZdQ22HakwJmWR7YUsRQkOXOgIWehj/U0LuSr1wqFaLXYpmDXff/N+CEGx6Qr2kR8oL/Z5PA7TCF/v4KAtCMwslSY+UOTFYoqgENsNAmxKiDyFGBovdtNRNI7drEJagS2sVHF93gQojmM+uJmR24U1PHdyP3K7BLO+Ze0pl7D5oCXAFIRO0i81wUULwXvhsbC+948MjLfd1hGhtzNPH9Ihyqj4MjV1AESO1Br7OqWmqRzMQyrlVof3CPLtAJRQLq0BuWNyNCVkZlq3eKweyyxFYV/l9XWJ0gXTM/4SKQM/YamZV0ZhQqbG6DvJdtB6DMRgtrPJYK7V/mjaYEtK84cLP2LYu9bBm4oGKHmMkMuxM2ymhUmPVVOTH0Ad7xF7B3NgjHAUhHm3AQnQWrStCpTmCHdk0RFSGvLEND4Oo0qnWM9Yez6kYA7f1SJqlI0Q5YKZwhzblRNmpPPfccIiQ6TEJhzZnSjgtvE13Xqz+IUJmgTSKG1MrEW47Op9OzTv64ukL85SDhMoWMknYl9jCdEoXHlO8crkOTRs4SsjjYp9bL5PCr4dbh5bL/zU4ROihHuxnY7Eo67KkVB836KxkGGeYpssuIbo5hKOcJucp2sQ9RAJU7HjeTlT39TxjQsqt14TcYiWhQqYTUwujRxh7znKay1ae3tVqU2XikbScTiMfGBOKNbrr7lyU32/XeC6EqSVmfVlPjzJTbpUodceJYEzjDwiZdc6TY3zZqiUj2WpJuVOe6/2GydCwjyn16xjH7TIZ6QmhyPqRcGdofSuNaMyfa717Uy8YW185NQnWyF1ZCB6atxUu8FjvxXpC+niptkwBGPVQ2a5Nmz//xhNCKt1KdsGgw32AmS71IMW7tVDL4G50E/eE0JFMmmBRkYSqzmT+68re1ivKdrcZRn52ansm4RqpvdHuxCwfU7KmkubjZjs0PkxuTjIhV8065uBzqtmFCaJ48n1TT6j+NDso8dtITLOXnhDj4hP/zzMM5EzoneO9I/QXR43ZPLOxpDAAAAAASUVORK5CYII="
+     x="325"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text67"
+     y="648.99512"
+     x="325"
+     textLength="82"
+     lengthAdjust="spacing"
+     font-size="14">Agent Pods</text>
+  <rect
+     id="rect69"
+     y="415"
+     x="375.5"
+     width="109"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image71"
+     y="425"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABfklEQVR4Xu2YMU4DMRBFc5e5QW7ACbgBN8hFcoPUKZCoqLaiikRLE1GhSBAhRSkiQUBIUYTCwJq1PePsJDNR1oVHr1qvx0/+W9jb22VWPfqg69ordL/4GkyWF7dzkerls55yWb3yUQK+M3xYvW++49V8pYVGj28wnh3I9dO6ntW/eeajSdBsn1NCaP6x5S1aUAghuP3xsq4SQrilfH4LOiEkuUkJoWP7qoWaiWFRoelqw2e2oxa6ulvEi/8WFTo2LzAIQSo1KqRoahHiqUVCirzAJsRTi4QUeYFNCFhqkZCuo1GIpOaFdHmBWYik5oV0eYFZCOLUvJC6nV0oTM0JqfOCUwiFqTkhdV5wCiEIUvM7hMcaHXg6qJvgEYqPHggVyqdyFcKTJX4BHVL9n4OdEJ4p+Yd2ToqQRBGSKEISRUiiCEkUIYkiJFGEJIqQRPZCg8mSv3ROmsudE7Jcpe2Ev4id0O7v3tk33IXVkB/WXqguy3VYQZNUU1So88pO6AfRZ2ysFtxE8AAAAABJRU5ErkJggg=="
+     x="385.5"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text73"
+     y="485.99509"
+     x="385.5"
+     textLength="89"
+     lengthAdjust="spacing"
+     font-size="14">OCI Registry</text>
+  <rect
+     id="rect75"
+     y="415"
+     x="695"
+     width="96"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image77"
+     y="425"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+     x="705"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text79"
+     y="485.99509"
+     x="705"
+     textLength="76"
+     lengthAdjust="spacing"
+     font-size="14">API-Server</text>
+  <rect
+     id="rect81"
+     y="415"
+     x="543"
+     width="76"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image83"
+     y="425"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+     x="553"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text85"
+     y="485.99509"
+     x="553"
+     textLength="56"
+     lengthAdjust="spacing"
+     font-size="14">kubelet</text>
+  <rect
+     id="rect87"
+     y="415"
+     x="80"
+     width="92"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image89"
+     y="425"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
+     x="90"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text91"
+     y="485.99509"
+     x="90"
+     textLength="72"
+     lengthAdjust="spacing"
+     font-size="14">App Repo</text>
+  <rect
+     id="rect93"
+     y="415"
+     x="207"
+     width="112"
+     style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f1q7k8dpcc4n71)"
+     height="84.296898" />
+  <image
+     id="image95"
+     y="425"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
+     x="217"
+     width="48"
+     height="48" />
+  <text
+     style="font-size:14px;font-family:sans-serif;fill:#23a3dd"
+     id="text97"
+     y="485.99509"
+     x="217"
+     textLength="92"
+     lengthAdjust="spacing"
+     font-size="14">GitOps Repo</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="appRepo-backto-jenkinsNode"
+     d="m 165.775,502.723 c 7.369,7.186 15.263,14.237 23.225,20.277 39.27,29.791 88.976,55.888 125.71,73.322" />
+  <polygon
+     id="polygon100"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="165.7561,502.7059 171.4128,502.6762 162.202,499.189 165.7858,508.3627 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text102"
+     y="544.06689"
+     x="227"
+     textLength="22"
+     lengthAdjust="spacing"
+     font-size="13">pull</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="configRepo-backto-jenkinsNode"
+     d="m 292.011,503.347 c 14.95,23.369 33.047,51.656 47.6,74.405" />
+  <polygon
+     id="polygon105"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="291.9536,503.2552 297.4789,504.4677 289.258,499.044 290.7411,508.7806 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text107"
+     y="544.06689"
+     x="318"
+     textLength="31"
+     lengthAdjust="spacing"
+     font-size="13">push</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="registry-backto-jenkinsNode"
+     d="M 398.449,503.956 C 393.408,512.669 388.657,521.91 385,531 c -5.951,14.79 -10.176,31.765 -13.106,46.835" />
+  <polygon
+     id="polygon110"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="398.7304,503.4776 400.1391,508.9563 401.274,499.173 393.2517,504.8864 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text112"
+     y="544.06689"
+     x="386"
+     textLength="31"
+     lengthAdjust="spacing"
+     font-size="13">push</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="kubelet-to-docker"
+     d="m 619.31,486.845 c 17.325,12.197 38.424,25.918 58.69,36.155 32.249,16.29 119.716,40.944 153,55 3.679,1.554 7.427,3.187 11.196,4.872" />
+  <polygon
+     id="polygon115"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="842.4213,582.974 837.1303,584.9754 846.979,585.03 840.4199,577.683 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text117"
+     y="544.06689"
+     x="744"
+     textLength="92"
+     lengthAdjust="spacing"
+     font-size="13">run containers</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="jenkins-to-jenkinsNode"
+     d="m 225.292,620 c 27.651,0 58.553,0 84.338,0" />
+  <polygon
+     id="polygon120"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="309.716,620 305.716,624 314.716,620 305.716,616 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text122"
+     y="613.06689"
+     x="243.5"
+     textLength="53"
+     lengthAdjust="spacing"
+     font-size="13">manage</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="jenkinsNode-to-docker"
+     d="m 417.156,620 c 97.737,0 311.324,0 424.337,0" />
+  <polygon
+     id="polygon125"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="841.798,620 837.798,624 846.798,620 837.798,616 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text127"
+     y="598.06689"
+     x="586"
+     textLength="92"
+     lengthAdjust="spacing"
+     font-size="13">run containers</text>
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text129"
+     y="613.19971"
+     x="591.5"
+     textLength="81"
+     lengthAdjust="spacing"
+     font-size="13">build images</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="gitops-to-configRepo"
+     d="m 367.968,269.025 c -22.361,39.832 -56.235,100.169 -79.415,141.459" />
+  <polygon
+     id="polygon132"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="288.5092,410.5598 286.9789,405.1139 286.062,414.92 293.9552,409.0295 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text134"
+     y="312.06689"
+     x="350"
+     textLength="22"
+     lengthAdjust="spacing"
+     font-size="13">pull</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="gitops-to-apiServer"
+     d="M 462.131,245.084 C 514.077,259.979 584.333,285.346 637,324 c 31.712,23.275 59.239,58.293 78.288,86.413" />
+  <polygon
+     id="polygon137"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="715.4876,410.711 709.9377,409.6161 718.272,414.864 716.5825,405.1611 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text139"
+     y="312.06689"
+     x="626"
+     textLength="102"
+     lengthAdjust="spacing"
+     font-size="13">apply resources</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="kubelet-to-registry"
+     d="m 542.652,457 c -16.121,0 -35.253,0 -53.132,0" />
+  <polygon
+     id="polygon142"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="489.514,457 493.514,453 484.514,457 493.514,461 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text144"
+     y="450.06689"
+     x="502.75"
+     textLength="22"
+     lengthAdjust="spacing"
+     font-size="13">pull</text>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     id="kubelet-to-apiServer"
+     d="m 619.392,457 c 20.964,0 47.25,0 70.187,0" />
+  <polygon
+     id="polygon147"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     points="689.722,457 685.722,461 694.722,457 685.722,453 " />
+  <text
+     style="font-size:13px;font-family:sans-serif;fill:#000000"
+     id="text149"
+     y="450.06689"
+     x="637.5"
+     textLength="39"
+     lengthAdjust="spacing"
+     font-size="13">watch</text>
+</svg>

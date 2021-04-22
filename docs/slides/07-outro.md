@@ -40,6 +40,14 @@ Note:
 
 
 
+
+<img data-src="images/tec-radar-gitops.png" width="65%"/>
+<span class="floatRight;" style="font-size: 120px">🧐 🤔</span>
+
+🌐 [thoughtworks.com/radar/techniques/gitops](https://www.thoughtworks.com/radar/techniques/gitops)
+
+
+
 <!-- .slide: data-background-image="images/title.svg"-->
 <!-- .slide: id="last" -->
 
@@ -49,7 +57,7 @@ Johannes Schnatterer, Cloudogu GmbH
 
 🌐 [cloudogu.com/gitops](https://cloudogu.com/gitops/)
  * ℹ️ GitOps Resources (intro, tool comparison, etc.)
- * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib <i class="fab fa-jenkins"></i>
+ * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib
  * 💬 Discussions
  * 🧑‍🏫 Training
 [<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/)
