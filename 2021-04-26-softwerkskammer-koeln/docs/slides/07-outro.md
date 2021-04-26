@@ -63,3 +63,16 @@ Johannes Schnatterer, Cloudogu GmbH
 [<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/)
 
 
+
+# Image sources
+
+* What is GitOps?
+  https://pixabay.com/illustrations/question-mark-important-sign-1872665/
+* What can GitOps be used for?
+  https://pixabay.com/photos/hammer-nails-wood-board-tool-work-1629587/ 
+* How can GitOps be used? Tools: 
+  https://pixabay.com/photos/tools-knives-wrenches-drills-1845426/
+* How can GitOps be used? Design Decisions: 
+  https://unsplash.com/photos/wWQ760meyWI
+* What challenges arise with GitOps? 
+  https://unsplash.com/photos/bJhT_8nbUA0
