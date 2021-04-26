@@ -36,14 +36,13 @@ Note:
 
 ## ... higher cost
 
+* Maintenance/patching (vendor dependency)
+* Resource consumption
 * Error handling 
    * failing late and silently
    * monitoring/alerting required
    * reason might be difficult to pinpoint 
    * operators cause alerts (OOM errors, on Git/API server down, etc.)
-* Resource consumption
-* Maintenance/patching 
-* Vendor support necessary
 
 Note:
 * Fail earlier using validation in CI, for example

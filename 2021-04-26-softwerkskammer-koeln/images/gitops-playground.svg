@@ -155,7 +155,7 @@
      height="183" />
   <a
      id="a229"
-     xlink:href="http://localhost:9091/scm/repos"
+     xlink:href="http://localhost:9091/scm/repos/"
      xlink:title="SCM-Manager">
     <image
        height="48"
@@ -205,7 +205,7 @@
      height="84.296898" />
   <a
      id="a91"
-     xlink:href="https://localhost:9092/"
+     xlink:href="http://localhost:9092/"
      xlink:title="argoCD">
     <image
        height="48"

@@ -16,6 +16,8 @@ Note:
 
 ## Categories
 
+<img data-src="images/gitops-tool-maturity2.svg" class="floatRight" width="50%"/>
+
 * Tools for Kubernetes AppOps
 * Tools for Kubernetes ClusterOps
 * Tools Close to Infrastructure
@@ -77,8 +79,11 @@ Note:
 <span style="font-size: 60px;" class="floatLeft">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
 <img title="Terraform + Operator" data-src="images/terraform-icon.svg" width="9%" class="floatLeft"/>
 <span style="font-size: 60px;" class="floatLeft">+</span>
+Operator
 * <i class='fab fa-github'></i> <a title="Terraform Cloud Operator" href="https://github.com/hashicorp/terraform-k8s">hashicorp/terraform-k8s</a>
 * <i class='fab fa-github'></i> <a title="Terraform Controller" href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
+* <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
+
 
 Notes:
 * Operators use different ways to connect to target Cluster
@@ -98,7 +103,7 @@ Notes:
   <a title="Crossplane" href="https://github.com/crossplane/crossplane"><img data-src="images/crossplane-icon.svg" width="10%" /></a>
   <span style="font-size: 60px;" >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
   <img title="Terraform + Operator" data-src="images/terraform-icon.svg" width="15%" />
-  <span style="font-size: 60px;" >+</span> Operators
+  <span style="font-size: 60px;" >+</span> Operator
 * without Kubernetes  
   <a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="images/atlantis-logo.png" width="15%" /></a>
   <a title="AWX/Ansible Tower" href="https://github.com/ansible/awx"><img data-src="images/awx-logo.svg" width="20%" /></a>
@@ -146,13 +151,14 @@ Notes:
 
 ### Others
 * Deployment Strategies - Progressive Delivery  
-  <a title="Flagger" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/flagger-icon.svg" width="9%"/></a>
+  <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
   <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
 * Backups  
 * Horizontal Pod Autoscaler
 * ...
 
 Notes:
+* Progressive Delivery = canary releases, A/B tests, and blue/green deployments 
 * Sources:
   * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
 
