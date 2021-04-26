@@ -40,13 +40,13 @@ Note:
 
 Note:
 * Branching might lead to merge conflicts, develop and master lose sync
+* One operator per namespace necessary (flux v1)
 
 
 
 #### Idea 2: Staging folders
 
 * On the same branch: One folder per stage
-* Explicit namespace in resource YAMLs, if necessary
 * Process: Just commit to staging folder, create PRs for prod
 * Risky, but can be automized
   <br/>
@@ -60,6 +60,8 @@ Note:
     <li>Supports arbitrary number of stages</li>
 <ul/>
 </div>
+Note:
+* Stages as namespace: Explicit namespace in resource YAMLs
 
 
 
@@ -72,12 +74,12 @@ Note:
 ### Application repo vs GitOps repo
 
 * Good pratice: Keeping everything in app repo (code, docs, infra)  
-* GitOps: Put infra in separate repo?   
-  Disadvantages:
-  * Separated maintenance
-  * Separated versioning
-  * Review spans across multiple repos
-  * Local dev more difficult
+* GitOps: Put infra in separate repo!
+  * Advantage: All cluster infra in one repo
+  * Disadvantages:
+    * Separated maintenance & versioning off app and infra code
+    * Review spans across multiple repos
+    * Local dev more difficult
 <br/><br/>
 
 <div class="fragment" data-fragment-index="1">
@@ -99,8 +101,7 @@ Note:
 
 **Disadvantages**
 
-* Complexity
-* Efforts for developing CI pipelines
+* Complexity in CI pipelines ➡ efforts for development
 * A lot can go wrong. Examples
   * Git Conflicts caused by concurrency
   * Danger of inconsistencies
@@ -128,7 +129,7 @@ Notes:
 * Fail early: static YAML analysis on CI server,  
   e.g. yamlint, kubeval, helm lint
 * Automated staging (e.g. PR creation, namespaces)
-* Use IaC for development environment
+* Use IaC for local dev
 * Write config files not inline YAML  
   ➡ Automatically converted to configMap
 * Simplify review by adding info to PRs 
@@ -145,6 +146,7 @@ Note:
 
 
 # Demo
+<!-- .slide: id="demo" -->
 
 <object data="images/gitops-playground.svg" type="image/svg+xml" width="60%">
         <span>Your browser doesn't support SVG images</span>
@@ -156,7 +158,7 @@ Notes:
 * Preparation: 
   * Start k3s cluster. In playground repo: ` scripts/apply.sh --argocd`
   * Speedup build for presentation 8min -> 1min
-    * Uncomment   Build & test stages  
+    * Comment Build & test stages an `junit` line  
       http://localhost:9091/scm/repo/argocd/petclinic-plain/code/sourceext/edit/main/Jenkinsfile
     * Run build (warm up maven and docker cache). Note that "maven cache" for jenkins pods is cleared on host restart (/tmp)  
       http://localhost:9090/job/argocd-applications/job/petclinic-plain/
@@ -198,7 +200,7 @@ Notes:
   * Back to Argo
     * Sync
     * Wait for success
-    * Reload prod applicationm
+    * Reload prod application
     * -> Change in welcome message shows
  
 Image sources:

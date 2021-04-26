@@ -13,7 +13,7 @@ After migrating to and operating with GitOps in production for > 1 year
   * faster deployment 
   * force sync desired state ↔️ actual state 
 * But: security advantages only when finished migration
-* A lot of potential ahead!
+* A new age of automation? Not yet, but lots of innovation ahead!
 
 
 
