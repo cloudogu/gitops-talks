@@ -17,16 +17,9 @@ Note:
 * is now rising above it, operating clusters   
   and other (cloud) infrastructure
 
-<br/>
-<br/>
-<br/>
-More on the history of GitOps:  
-
-🎥 https://youtu.be/lvLqJWOixDI
 
 
-
-## A GitOps Dream
+## A GitOps Vision
 <img data-src="images/gitops-tool-maturity.svg"  width="68%"/>
 
 
