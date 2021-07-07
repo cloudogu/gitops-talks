@@ -3,9 +3,9 @@
 <font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i>&nbsp;<i class="fas fa-sync"></i></font>
 <img data-src="images/k8s_logo.svg" width="5%;" />
 
-<h1 class="title">
+<h1  class="title">
     <span class="title-accent">//</span> 
-    Introduction to GitOps<br/> — a new age of automation?
+    GitOps - <br/>Continuous Operations <br/>with Kubernetes
 </h1>
 
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
@@ -21,12 +21,13 @@
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
-    <a href="pdf/Introduction%20to%20GitOps.pdf">
+    <a href="pdf/GitOps-Continuous%20Operations%20with%20Kubernetes.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 
 <a class="state-background" href="https://cloudogu.github.io/gitops-talks/"><img data-src="images/qr-slides.png" width="15%"/></a>
 
+<br/>
 <br/>
 
 
