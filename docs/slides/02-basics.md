@@ -7,7 +7,7 @@ Note:
 
 
 * Operating model  
-* Term (August 2017):
+* Origin: blog post by Weaveworks, August 2017
 
 > Use developer tooling to drive operations  
 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
@@ -29,18 +29,18 @@ GitOps
 
 ## GitOps Principles
 
-[<img data-src="images/gitops-wg.png" width="15%;" style="border-radius: 50%" class="floatRight"/>](https://github.com/gitops-working-group)
+[<img data-src="images/gitops-wg.png" width="10%;" style="border-radius: 50%" class="floatRight"/>](https://github.com/gitops-working-group)
+
+[<img data-src="images/opengitops.png" width="10%;" style="border-radius: 50%" class="floatRight"/>](https://github.com/open-gitops)
+
 
 1. The principle of declarative desired state
 2. The principle of immutable desired state versions
-3. The principle of state reconciliation
+3. The principle of continuous state reconciliation
 4. The principle of operations through declaration
 
-♨️ WIP!
 
-<i class='fab fa-github'></i> [github.com/gitops-working-group/gitops-working-group/pull/48](https://github.com/gitops-working-group/gitops-working-group/pull/48)
-
-<i class="fas fa-file-alt"></i> [hackmd.io/arwvV8NUQX683uBM3HzyNQem](hackmd.io/arwvV8NUQX683uBM3HzyNQem)
+<i class='fab fa-github'></i> [github.com/open-gitops/documents/blob/main/PRINCIPLES.md](https://github.com/open-gitops/documents/blob/v0.1.0/PRINCIPLES.md)
 
 Note:
 1. and 2. -> Git, but could also be a different system with theses attributes
@@ -56,17 +56,18 @@ Note:
 * GitOps focuses on ops (operations model)
 * GitOps can be used with or without DevOps 
 
+Note:
 
+Some other opinions
 
 > "The right way to do DevOps" (Alexis Richardson)  
- 
+
+<li>🌐 <a href="https://schlomo.schapiro.org/2021/04/the-gitops-journey.html">schlomo.schapiro.org/2021/04/the-gitops-journey.html</a></li>: 
 <img data-src="images/gitops-map.svg" width="40%" />
 
+See also:
 <span style="font-size: 20px;"><ul>
 <li>🎥 <a href="https://youtu.be/lvLqJWOixDI">youtu.be/lvLqJWOixDI</a></li>
-<li><i class="fas fa-newspaper"></i> <a href="https://www.heise.de/select/ix/2021/4/2032116550453239806">heise.de/select/ix/2021/4/2032116550453239806</a><br/> 
-(iX 4/2021) 🇩🇪</li>
-<li>🌐 <a href="https://schlomo.schapiro.org">schlomo.schapiro.org</a></li>
 </ul></span>
 
 

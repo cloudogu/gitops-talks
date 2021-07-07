@@ -1,7 +1,7 @@
 <!-- .slide: data-background-image="images/tools.jpg"  -->
 <!-- .slide: style="text-align: center !important"  -->
 
-# How can GitOps be used?<br/>Tools
+# How can GitOps be used?
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
 
@@ -20,9 +20,6 @@ Note:
 
 * Tools for Kubernetes AppOps
 * Tools for Kubernetes ClusterOps
-* Tools Close to Infrastructure
-  * with or
-  * without Kubernetes  
 * Supplementary GitOps tools
 
 
@@ -77,13 +74,12 @@ Note:
 <a title="ClusterAPI" href="https://github.com/kubernetes-sigs/cluster-api"><img data-src="images/capi-icon.svg" width="9%" class="floatLeft"/></a>
 <a title="Crossplane" href="https://github.com/crossplane/crossplane"><img data-src="images/crossplane-icon.svg" width="9%" class="floatLeft"/></a>
 <span style="font-size: 60px;" class="floatLeft">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-<img title="Terraform + Operator" data-src="images/terraform-icon.svg" width="9%" class="floatLeft"/>
-<span style="font-size: 60px;" class="floatLeft">+</span>
-Operator
-* <i class='fab fa-github'></i> <a title="Terraform Cloud Operator" href="https://github.com/hashicorp/terraform-k8s">hashicorp/terraform-k8s</a>
-* <i class='fab fa-github'></i> <a title="Terraform Controller" href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
+<img title="Terraform" data-src="images/terraform-icon.svg" width="9%" class="floatLeft"/>
+<span style="font-size: 60px;" class="floatLeft">-</span>
+Cloud or Operator
+* <a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="images/atlantis-logo.png" width="7%" /></a>
 * <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
-
+* <i class='fab fa-github'></i> <a title="Terraform Controller" href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
 
 Notes:
 * Operators use different ways to connect to target Cluster
@@ -97,32 +93,6 @@ Notes:
 
 
 
-## Tools Close to Infrastructure
-* with Kubernetes  
-  <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="15%" /></a>
-  <a title="Crossplane" href="https://github.com/crossplane/crossplane"><img data-src="images/crossplane-icon.svg" width="10%" /></a>
-  <span style="font-size: 60px;" >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-  <img title="Terraform + Operator" data-src="images/terraform-icon.svg" width="15%" />
-  <span style="font-size: 60px;" >+</span> Operator
-* without Kubernetes  
-  <a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="images/atlantis-logo.png" width="15%" /></a>
-  <a title="AWX/Ansible Tower" href="https://github.com/ansible/awx"><img data-src="images/awx-logo.svg" width="20%" /></a>
-  <a title="Ignite" href="https://github.com/weaveworks/ignite"><img data-src="images/ignite-logo.png" width="15%" /></a>
-  
-Notes:
-* *few* tools for managing lower level infra / cloud accounts 
-* even *fewer* tools without Kubernetes
-* without a platform such as Kubernetes it's more difficult to define what is GitOps.  
-  e.g.
-  * AWX/Ansible Tower: https://www.ansible.com/blog/ops-by-pull-request-an-ansible-gitops-story
-  * Pulumi: Triggered by CI-Server on Push -> CIOps?! Pulumi [calls it GitOps](https://www.pulumi.com/product/github-actions/).
-* Sources:
-  * https://raw.githubusercontent.com/runatlantis/atlantis/master/runatlantis.io/.vuepress/public/hero.png
-  * https://raw.githubusercontent.com/ansible/awx-logos/master/awx/ui/client/assets/logo-login.svg?sanitize=true
-  * https://raw.githubusercontent.com/weaveworks/ignite/master/docs/logo.png
-
-
-
 ## Supplementary GitOps tools
 
 ### Secrets
@@ -130,31 +100,19 @@ Notes:
 <div style="font-size: 26px">
 <ul>
 <li><i class='fab fa-github'></i> <a href="https://github.com/bitnami-labs/sealed-secrets">bitnami-labs/sealed-secrets</a></li>
-<li><i class='fab fa-github'></i> <a href="https://github.com/mozilla/sops">mozilla/sops</a> + K8s integration </li>
-  <ul>
-      <li><i class='fab fa-github'></i> <a href="https://github.com/isindir/sops-secrets-operator">isindir/sops-secrets-operator</a></li>
-      <li><i class='fab fa-github'></i> <a href="https://github.com/jkroepke/helm-secrets">jkroepke/helm-secrets</a> (plugin)</li>
-      <li>flux v2 (native support)</li>
-  </ul>
 <li><i class='fab fa-github'></i> <a href="https://github.com/Soluto/kamus">Soluto/kamus</a> </li>
+<li><i class='fab fa-github'></i> <a href="https://github.com/mozilla/sops">mozilla/sops</a> + K8s integration </li>
 <li>Operators for Key Management Systems</li>
-  <ul>
-    <li><i class='fab fa-github'></i> <a href="https://github.com/external-secrets/kubernetes-external-secrets">external-secrets/kubernetes-external-secrets</a></li>
-    <li><i class='fab fa-github'></i> <a href="https://github.com/ContainerSolutions/externalsecret-operator">ContainerSolutions/externalsecret-operator</a></li>
-    <li><i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a></li>
-  </ul>
-</ul>
 
 </div>
 
 
 
 ### Others
+* Backups  
 * Deployment Strategies - Progressive Delivery  
   <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
   <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-* Backups  
-* Horizontal Pod Autoscaler
 * ...
 
 Notes:
@@ -166,11 +124,7 @@ Notes:
 
 ## See also
 
-  <a title="CNCF Tech Radar 2021-02" href="https://radar.cncf.io/2021-02-secrets-management"><img data-src="images/2021-02-secrets-management.svg"  class="floatRight" width="27%"/></a>
-* ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools)  ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
-  * General tool comparison,   
-  * tips on criteria for tool selection,  
-  * comparison of ArgoCD v1 and Flux v2  
-* 🌐 [radar.cncf.io/2021-02-secrets-management](https://radar.cncf.io/2021-02-secrets-managemen)
-*  <i class='fab fa-github'></i> [weaveworks/awesome-gitops](https://github.com/weaveworks/awesome-gitops)
-* 🌐 [gitops.tech](https://www.gitops.tech/)
+ ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools)  ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
+* General tool comparison,   
+* tips on criteria for tool selection,  
+* comparison of ArgoCD v1 and Flux v2  
