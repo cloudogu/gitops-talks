@@ -3,13 +3,13 @@
 
 <img data-src="images/gitops-playground.svg" width="65%" />
 
-<i class='fab fa-github'></i> [cloudogu/k8s-gitops-playground](https://github.com/cloudogu/k8s-gitops-playground)
+<i class='fab fa-github'></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
 
 Notes:
 * Preparation:
   * Start k3s cluster. In playground repo: ` scripts/apply.sh --argocd`
   * Speedup build for presentation 8min -> 1min
-    * Comment Build & test stages an `junit` line  
+    * Comment Build & test stages and `junit` line  
       http://localhost:9091/scm/repo/argocd/petclinic-plain/code/sourceext/edit/main/Jenkinsfile
     * Run build (warm up maven and docker cache). Note that "maven cache" for jenkins pods is cleared on host restart (/tmp)  
       http://localhost:9090/job/argocd-applications/job/petclinic-plain/
