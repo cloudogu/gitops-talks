@@ -17,7 +17,7 @@
 </p>
 
 <div class="title-version">
-Version: 202107071547-4dcedc1
+Version: 202107141319-8052d90
 </div>
 
 <p class="state-background" style="font-size: 0.9em">

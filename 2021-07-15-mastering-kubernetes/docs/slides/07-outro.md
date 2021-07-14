@@ -11,7 +11,6 @@ After migrating to and operating with GitOps in production for > 1 year
 * Smoother CI/CD,
   * *everything* declarative
   * faster deployment 
-  * force sync desired state ↔️ actual state 
 * But: security advantages only when finished migration
 
 
