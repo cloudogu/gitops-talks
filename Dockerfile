@@ -1,4 +1,4 @@
-FROM cloudogu/reveal.js:4.0.2-r4 as base
+FROM cloudogu/reveal.js:4.1.0-r2 as base
 
 FROM base as aggregator
 ENV TITLE='GitOps-Continuous Operations with Kubernetes' 
