@@ -5,7 +5,7 @@
 
 <h1  class="title">
     <span class="title-accent">//</span> 
-    Continuous Operations with GitOps<br/> an Introduction
+    Continuous Operations <br/> with GitOps<br/> - an Introduction
 </h1>
 
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
@@ -17,7 +17,7 @@
 </p>
 
 <div class="title-version">
-Version: 202109091647-766d7fc
+Version: 202109091652-aea87fe
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
