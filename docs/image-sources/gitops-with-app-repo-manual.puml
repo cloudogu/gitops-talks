@@ -16,6 +16,7 @@
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
 
 skinparam actorStyle awesome
+skinparam backgroundcolor TRANSPARENT
 
 together {
     actor Developer as user
@@ -30,9 +31,9 @@ rectangle "<$k8s>\nK8s Cluster" as k8s {
 rectangle "<$docker>\nOCI Registry" as registry
 
 user -> appRepo : push
+user -> configRepo : push
 appRepo -[hidden]> configRepo
 appRepo <-- ciServer : pull
-configRepo <-- ciServer : push
 ciServer -> registry : push
 k8s --> registry : pull
 configRepo <- k8s : pull

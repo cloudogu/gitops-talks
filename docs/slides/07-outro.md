@@ -30,7 +30,9 @@ After migrating to and operating with GitOps in production for > 1 year
   * ClusterOps: Depends
 * Brownfield: Depends
 
+
 Note:
+* Important: IaC always definitely
 * Greenfield - Cloud Infra:
   * single cluster: overkill?,
   * at scale: automation provides advantages

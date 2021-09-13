@@ -16,6 +16,7 @@
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
 
 skinparam actorStyle awesome
+skinparam backgroundcolor TRANSPARENT
 
 together {
     actor Developer as user

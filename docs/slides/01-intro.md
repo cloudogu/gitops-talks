@@ -36,7 +36,7 @@
 ## Agenda
 
 - What is GitOps?
-- Where can it be used?
+- What it be used for?
 - How can it be used? 
 - What challenges arise?
 

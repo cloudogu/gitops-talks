@@ -22,6 +22,8 @@
 !define CLOUDOGU_BLUE #23a3dd
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND BLACK
 
+skinparam backgroundcolor TRANSPARENT
+
 together {
     rectangle "<$git>\n K8s Resources" as k8sAppOpsRepo
     

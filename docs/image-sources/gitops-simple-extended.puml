@@ -3,8 +3,10 @@
 !includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-25pct.iuml
 
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
+!includeurl ICONURL/common.puml
 !includeurl ICONURL/devicons/git.puml
 !includeurl ICONURL/font-awesome-5/jenkins.puml
+!includeurl ICONURL/font-awesome-5/sync.puml
 
 !define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
 !includeurl CLOUDOGUURL/tools/k8s.puml
@@ -12,23 +14,29 @@
 !define CLOUDOGU_BLUE #23a3dd
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
 
-skinparam backgroundcolor TRANSPARENT
 skinparam actorStyle awesome
+skinparam backgroundcolor TRANSPARENT
 
 together {
     actor Developer as user
     rectangle "<$git>\nGit Repo" as gitRepo
     rectangle "<$jenkins>\nCI Server" as ciServer
-    note bottom: Continuous Integration +\nContinuous Delivery
-    rectangle "<$k8s>\nK8s Cluster" as k8s
+    note right: Continuous Integration 
+    rectangle "<$k8s>\nK8s Cluster" as k8s {
+        rectangle "<$sync>\nGitOps\noperator" as operator
+    }
+    
+    Note "Continuous Delivery" as note
+    operator .. note
 }
 
 user -> gitRepo : push
-gitRepo <- ciServer : pull
-ciServer -> k8s : deploy
+gitRepo <-- ciServer : pull
+gitRepo <- k8s : pull
+k8s -> k8s : deploy
 note bottom on link
- imperative,
- <b>once</b>
+    declarative,
+    <b>continuously</b>
 end note
 
 skinparam arrow {
