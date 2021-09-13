@@ -12,19 +12,24 @@
 !define CLOUDOGU_BLUE #23a3dd
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
 
+skinparam backgroundcolor TRANSPARENT
 skinparam actorStyle awesome
 
 together {
     actor Developer as user
     rectangle "<$git>\nGit Repo" as gitRepo
     rectangle "<$jenkins>\nCI Server" as ciServer
+    note bottom: Continuous Integration +\nContinuous Delivery
     rectangle "<$k8s>\nK8s Cluster" as k8s
 }
 
 user -> gitRepo : push
 gitRepo <- ciServer : pull
 ciServer -> k8s : deploy
-
+note bottom on link
+ imperative,
+ <b>once</b>
+end note
 
 skinparam arrow {
     Color COLOR_ABOVE_TRANSPARENT_BACKGROUND
@@ -51,8 +56,10 @@ skinparam interface {
 }
 
 skinparam note {
-    BackgroundColor WHITE
+    BackgroundColor TRANSPARENT
+    FontColor WHITE
     BorderColor #16688d
+    BorderThickness 2
 }
 
 @enduml

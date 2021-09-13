@@ -36,8 +36,9 @@ Note:
 
 ## ... higher cost
 
-* Maintenance/patching (vendor dependency)
+* Maintenance/patching (vendor lock-in)
 * Resource consumption
+* Learning curve
 * Error handling
   * failing late and silently
   * monitoring/alerting required
@@ -54,10 +55,10 @@ Note:
 * POC is simple
 * Operations in prod has its challenges
   * How to realize staging?
+  * How to structure repos and how many of them?
   * Role of CI server?
-  * How to structure repos?
-  * How to delete resources?
   * How to realize local dev env?
+  * How to delete resources?
   * ...
 
 Note:
@@ -94,11 +95,20 @@ Note:
 #### Idea 2: Staging folders
 
 * On the same branch: One folder per stage
+  ```text
+  ├── production
+  │   └── application
+  │       ├── deployment.yaml
+  │       └── ...
+  └── staging
+      └── application
+          ├── deployment.yaml
+          └── ...
+  ```
 * Process:
-  * Commit to staging folder only,
+  * commit to staging folder only,
   * create short lived branches and pull requests for prod
-* Risky, but can be automized
-  <br/>
+* Duplication is tedious, but can be automized
   <br/>
 
 <div class="fragment" data-fragment-index="1">
@@ -110,6 +120,7 @@ Note:
 <ul/>
 </div>
 Note:
+* production branch: Protect via SCM
 * Stages as namespace: Explicit namespace in resource YAMLs
 
 
@@ -122,24 +133,36 @@ Note:
 
 ### Number of repositories: application vs GitOps repo
 
-* Good pratice: Keeping everything in app repo (code, docs, infra)
-* GitOps: Put infra in separate repo!
-  * Advantage: All cluster infra in one repo
-  * Disadvantages:
-    * Separated maintenance & versioning of app and infra code
-    * Review spans across multiple repos
-    * Local dev more difficult
-      <br/><br/>
+GitOps tools: Put infra in separate repo!
+
+<img data-src="images/gitops-with-app-repo-manual.svg" width="65%"/>
+
+
+
+### Advantages
+* Audit: All cluster infra (and only infra) in one repo
+* 🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/)
+
+### Disadvantages
+* Separated maintenance & versioning of app and infra code
+* Review spans across multiple repos
+* Local dev more difficult
+  <br/><br/>
 
 <div class="fragment" data-fragment-index="1">
 <strong>Can't we have both?</strong>
 </div>
 
+Note:
+* Good pratice: Keeping everything in app repo (code, docs, infra)
+* GitOps Repo aka Config Repo
+* App Repo aka Source Code Repo
+
 
 
 **Yes, we can! Using a CI-Server**
 
-<img data-src="images/gitops-with-app-repo.svg" />
+<img data-src="images/gitops-with-app-repo-ci.svg" />
 
 
 Note:
@@ -175,12 +198,10 @@ Notes:
 
 **Advantages**
 
-* Fail early: static code analysis + policy check on CI server,  
+* Shift left: static code analysis + policy check on CI server,  
   e.g. yamlint, kubeval, helm lint, conftest
 * Automated staging (e.g. PR creation, namespaces)
 * Use IaC for local dev
-* Write config files not inline YAML  
-  ➡ Automatically converted to configMap
 * Simplify review by adding info to PRs
 
 <br/>
@@ -190,15 +211,10 @@ Notes:
 </div>
 
 Note:
+* Shift left (Fail Early) Validation - OPA Gatekeeper, Image Signature, etc
+  * Plus: Layered approach -> "If we dont find it here, we're gonna find it there"
+  * See also: Shifting Policy Enforcement to the Left using GitOps von Sandeep Parikh
 * Enrich commit message: Author, original commit, issue ID and build number
-
-
-
-## How to delete resources?
-
-* "garbage collection" (Flux) / "resource pruning" (ArgoCD)   
-  disabled by default
-* <i class="fas fa-thumbtack"></i> Enable from beginning ➡️ avoid manual interaction
 
 
 
@@ -208,3 +224,11 @@ Note:
   ➡ complicated
 * Option 2: Just carry on without GitOps.  
   Easy, when IaC remains in app repo
+
+
+
+## How to delete resources?
+
+* "garbage collection" (Flux) / "resource pruning" (ArgoCD)   
+  disabled by default
+* <i class="fas fa-thumbtack"></i> Enable from beginning ➡️ avoid manual interaction

@@ -32,12 +32,14 @@ Note:
 <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
 <a title="JenkinsX" href="https://github.com/jenkins-x/jx"><img data-src="images/jenkinsx-icon.svg" width="9%"/></a>
 <a title="Werf" href="https://github.com/werf/werf"><img data-src="images/werf-icon.svg" width="9%"/></a>
+<a title="GitLab K8s Agent" href="https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent"><img data-src="images/GitLab_logo.svg" width="9%"/></a>
 
 Note:
 * AFAIK the most well known tools. There are more of course! 
 * Flux + Argo: First tools on the market
 * Fleet and PipeCD: Wider scope - multi cluster
 * JenkinsX + Werf: Wider scope - CI/Builds
+* GitLab Agent: [premium use only](https://docs.gitlab.com/ee/user/clusters/agent/), though the agent itself is OSS 
 * Sources:
   * https://raw.githubusercontent.com/fluxcd/flux2/main/docs/_files/flux-icon.svg
   * https://raw.githubusercontent.com/argoproj/argoproj/master/docs/assets/argo.svg
@@ -45,6 +47,7 @@ Note:
   * https://raw.githubusercontent.com/rancher/fleet/master/docs/assets/logo.svg
   * https://raw.githubusercontent.com/pipe-cd/pipe/master/docs/assets/icons/logo1.svg
   * https://raw.githubusercontent.com/werf/werf/master/docs/site/images/werf-logo.svg
+  * https://upload.wikimedia.org/wikipedia/commons/e/e1/GitLab_logo.svg
 
 
 
@@ -77,9 +80,9 @@ Note:
 <img title="Terraform" data-src="images/terraform-icon.svg" width="9%" class="floatLeft"/>
 <span style="font-size: 60px;" class="floatLeft">-</span>
 Cloud or Operator
-* <a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="images/atlantis-logo.png" width="7%" /></a>
 * <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
 * <i class='fab fa-github'></i> <a title="Terraform Controller" href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
+* <a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="images/atlantis-logo.png" width="7%" /></a>
 
 Notes:
 * Operators use different ways to connect to target Cluster
