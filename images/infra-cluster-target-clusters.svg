@@ -1,17 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="376px" preserveAspectRatio="none" style="width:798px;height:376px;background:#00000000;" version="1.1" viewBox="0 0 798 376" width="798px" zoomAndPan="magnify"><defs><filter height="300%" id="fxicm8ce7bym8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[36f7e31f1efc37fd105c1a31b95a88b5]
-cluster mgmt--><rect fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" height="200" style="stroke:#16688D;stroke-width:1.5;" width="543" x="169" y="7"/><image height="48" width="48" x="416.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg==" y="9"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="166" x="357.5" y="69.9951">Management Cluster</text><!--MD5=[9db040bd2a9e8d2c667e615e4bf3a348]
-entity configRepo--><rect fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" height="100.5938" style="stroke:#16688D;stroke-width:1.5;" width="98" x="7" y="90"/><image height="48" width="48" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII=" y="100"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="17" y="160.9951">Cloud Infra</text><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="17" y="177.292">Repo</text><!--MD5=[4956c46b4aaa4df0e7da7ff57610b9f4]
-entity gitops--><rect fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" height="100.5938" style="stroke:#16688D;stroke-width:1.5;" width="82" x="185" y="90"/><image height="48" width="48" x="195" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACtUlEQVR4Xu2YTWpVQRCFs5fegTvICtyBO3AF7iA7cOxAcOQoo4wEISMn4kgEDUIQCSRRhCBy/Xj1bDp1+v9dXt7AwyGEd7vrft1Vdf+OlgPTkf/hobUC0M3dn4sfvzH/+GMFnX75efz6Ivrx6Vem26EZoPdXd88/XD85u3z06nN48cmZ6M/Ov3PKCh8D3KyXH2/t0AAQJ4CDBSlEyU/ffIPeB1oFCBQ9X6fZS4d18u7KjRkAItbQrpQMRIypy+sFYpyGnjblZYWlYbuAdB27mz6goWaA6jTEpTDfXv5yrUR+CU3R6JR0rgZvAOkKotl2WtpPEAGqlVtxDYhV6gQzK/OjqyI7LEDjqGtA2Z5in7NXlB7pVUddBNLshn+V6EYOqZm+PBCJ16F4em9ScdXWyA2g7PYM1Q19x3Ziu2XSbhgUslZPXB5Iq4df0gFNNVNTcgYo21w9HZ5qTSDNFzsfj3ZqTSC9vJL1eLRTawJp0U20OinWk/U4NrK/DtH5Zvf7kGKQTqdzPdCD6z9QS4cKxCWfjh117NUh0VBpEHdr2gLpTaPTrkd6pG9zbEc8um+g7A0qDbJvIL38uvv3XoFucs9bJ8n72rI7UBqrKd2eIDeoNpC93TGN9GMKkBsW/YXTYmyKwdngblgbKEzd9p1YjzZXuN9fpi6gIJkeUomGBx4/tB8obL6t3J/bJXvK1mih0BADQGHzDKmbXBLny1axufRwnAeyNweNYra36ez6TNR+BSVU32SKQKXEp7avd0Sn4/hLnZHW5qwKzVICCpsLDEz6+46u0yx1oGVTB/rwP+1S3aRqAJnISDMRdbOqSs2lKgLpfEpkAos662/MpQJUegdi23uSSEAWUApS0RZIPyvpDjnZ1zvOSqPRXPZFgZqtXxGa2gKxFAJFr/L9ZU5boMPRwQH9BeeAMD6U2eBhAAAAAElFTkSuQmCC" y="100"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="195" y="160.9951">GitOps</text><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="195" y="177.292">operator</text><!--MD5=[238cf00dfb6b677c1a4ce9de11b3f5e8]
-entity apiServer--><rect fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" height="84.2969" style="stroke:#16688D;stroke-width:1.5;" width="94" x="407" y="98.5"/><image height="48" width="48" x="417" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg==" y="108.5"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="417" y="169.4951">API-Server</text><!--MD5=[1bf6c14d8b468624c8bf6af0e2bcba95]
-entity infra--><rect fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" height="84.2969" style="stroke:#16688D;stroke-width:1.5;" width="119" x="576.5" y="98.5"/><image height="48" width="48" x="586.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAADEElEQVR4Xu2YTWpUQRSFs5fegTvICtyBO+gVZAfuwLEDwZGjjBwFBEdOxJEI2ghBJGCiCCFIeegTz7t9b9Wtei8d0gMvB2lf1av66v5U1ctROTA78g8e2vYDdHn9xz9aakuA7PRvzn8fv9qsnn+CTt5+vzvZPKBnH35g+tMvv/jfFx+viCI9Pv0qJvxen317f3E9vT9go0BAefTyM6Z88vqcTzY/bxwNBQh2AAqf4JVxrD4QxlJQIA0NB0QaSi4EnB4+fXcxDdq2DhCGtjMBgs+ROpFDwgKq3WxAW5YBYU1uJiQNmxL3UEBhT+tdCHFHrKc5gjWBIg3Eplb2WCmT4jg5Ux0ols/KpDMSPLZGsbNS20oxjVYBqg4BgYMduvGiFDWWp5OW56wC5KIusb6QlbGpKuyTHNDWmpWK0ZoHSsLBDnl9WakkW2PCc7HoPFDVvSOjV8VXkjUoDWQ7QAgK3FuVCh4/YmtLdAD+jU2UwirzHnpwO2Ag5Hx0qaStLDYlUqCRK7FVEkOxQOtGcVIEGq95SpPlg9u7wATU2n4oAo0cGlba/ZC8sVWSI4sFiv2sWC+tTbwlAcUTzcreTG6BurFgt2RHqUq7Vw5ki/8WqBsLdnPXo650iObbqc3r+/XQcqDSyyH2mZtDgyGr5FDpAd0xqfMqsyfaBJTfcpaV/eA+pJtTsUD5IuZehqjulYiyl5CdswwOaGmkT5Rmwo/YKmnwctCHa0nXMbhWJ40cm2If2g5QUkSD9eLEZWzapaB9QeZDhonja6vt/Zcdql9IVemVZH+39UXzQMlqust16p6s1S8hD1Ta7+ffWVHd7zhb7bIKUGkMMbipSEzY1tZV/SgrLSCMEt0wkhOSjtVq5+RPM3Wgss2VyKS7ZmxyUryiOxOakgCVLZO71ypqrTyTmB8xXjlNyYFobol8GGeyEre7BrXyxlofqGzzQDFSLFpOsl/semv97yu2a0NANP3dU0NXi1FuoHtm/cWzzAKiYT5NCTLHZD9oABSPqq7NBooGCCQNIrhg+mh7ANqv/Qfq2V/YGuCi+QRazAAAAABJRU5ErkJggg==" y="108.5"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="586.5" y="169.4951">Infra operator</text><!--MD5=[8da875ec3a30fba0e772ed75d73757ad]
-entity t1--><rect fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" height="80.2969" style="stroke:#23A3DD;stroke-width:1.5;" width="124" x="483" y="284"/><rect fill="#FFFFFF" height="80.2969" style="stroke:#23A3DD;stroke-width:1.5;" width="124" x="479" y="280"/><image height="48" width="48" x="487" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg==" y="288"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="487" y="348.9951">Target Clusters</text><!--MD5=[a8db0c08a6d12b9c2a377dcfd5abeb06]
-entity t3--><path d="M651.6372,307.423 C655.2984,301.2163 660.535,300.6996 664.566,307.042 C668.3522,301.3842 671.9855,302.1173 675.7452,307.0699 C679.0137,299.6196 685.1854,300.455 689.6381,305.7823 C693.384,299.2009 697.6117,299.9815 702.2844,304.7496 C705.7638,299.3408 711.4556,299.4277 714.3857,305.3369 C718.7764,300.0846 723.6091,299.3321 727.6977,305.6835 C731.1631,300.0876 734.9474,301.1792 738.3021,305.7984 C743.3083,299.0187 747.8446,300.0531 752.363,306.324 C756.4264,299.6791 762.1371,301.4337 765.4309,307.1384 C768.7412,301.5643 774.1702,300.5666 777.4596,307.1591 C787.0165,308.3805 791.2307,314.1269 786.3143,323.2921 C791.3437,331.5975 785.9061,337.7296 777.5842,338.2342 C774.2831,345.1303 769.2999,344.9726 764.7964,339.4748 C761.2518,346.1039 756.7175,347.1722 751.7825,340.8744 C748.0525,347.1991 744.0529,347.2952 738.9191,342.498 C734.9982,348.691 730.4187,348.4028 725.7264,343.4077 C721.8422,349.6738 718.046,350.0315 713.7846,343.7672 C710.5174,349.5255 705.3326,349.8572 702.1785,343.6574 C698.1058,348.3044 691.4651,349.0576 689.3001,341.6238 C685.8752,346.7235 679.9006,346.1575 677.2485,340.7385 C673.5511,346.2109 667.0143,345.823 664.1243,339.8154 C659.4049,346.4511 653.3796,344.8129 650.5699,337.9042 C642.1939,336.5193 640.8931,330.7343 645.0752,324.2833 C638.7389,315.695 641.9116,309.76 651.6372,307.423 " fill="#FFFFFF" filter="url(#fxicm8ce7bym8)" style="stroke:#16688D;stroke-width:1.5;"/><text fill="#23A3DD" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="657" y="326.9951">Cloud providers</text><!--MD5=[33a5e2dd74224868ee00d43b7d19a8d6]
-reverse link configRepo to gitops--><path d="M110.44,140.5 C135.27,140.5 160.1,140.5 184.93,140.5 " fill="none" id="configRepo-backto-gitops" style="stroke:#23A3DD;stroke-width:1.0;"/><polygon fill="#23A3DD" points="105.14,140.5,114.14,144.5,110.14,140.5,114.14,136.5,105.14,140.5" style="stroke:#23A3DD;stroke-width:1.0;"/><!--MD5=[4fd82d423b2eaf8fb6da63bf46e8b821]
-link apiServer to infra--><!--MD5=[48656cf3b17490057a456340b703fde2]
-link infra to apiServer--><path d="M576.17,140.5 C553.67,140.5 528.29,140.5 506.51,140.5 " fill="none" id="infra-to-apiServer" style="stroke:#23A3DD;stroke-width:1.0;"/><polygon fill="#23A3DD" points="501.34,140.5,510.34,144.5,506.34,140.5,510.34,136.5,501.34,140.5" style="stroke:#23A3DD;stroke-width:1.0;"/><text fill="#23A3DD" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="519.25" y="133.5669">watch</text><!--MD5=[4ae5632e4d473fc0a203a7abc7aaabdb]
-link gitops to apiServer--><path d="M267.03,140.5 C304.57,140.5 360.34,140.5 401.2,140.5 " fill="none" id="gitops-to-apiServer" style="stroke:#23A3DD;stroke-width:1.0;"/><polygon fill="#23A3DD" points="406.61,140.5,397.61,136.5,401.61,140.5,397.61,144.5,406.61,140.5" style="stroke:#23A3DD;stroke-width:1.0;"/><text fill="#23A3DD" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="285.5" y="133.5669">apply resources</text><!--MD5=[6697ff8f781e9f17323eae5fe0a8cb0c]
-link infra to t1--><path d="M614.66,182.68 C600.36,210.29 581.51,246.67 566.73,275.19 " fill="none" id="infra-to-t1" style="stroke:#23A3DD;stroke-width:1.0;"/><polygon fill="#23A3DD" points="564.4,279.7,572.0898,273.5464,566.6987,275.2597,564.9854,269.8686,564.4,279.7" style="stroke:#23A3DD;stroke-width:1.0;"/><!--MD5=[6cf3710c8f4ca39c304b2b8de7254f50]
-link infra to t3--><path d="M653.67,182.68 C668.27,216.73 688.6,264.13 701.27,293.66 " fill="none" id="infra-to-t3" style="stroke:#23A3DD;stroke-width:1.0;"/><polygon fill="#23A3DD" points="703.39,298.6,703.5213,288.752,701.4204,294.0043,696.1681,291.9034,703.39,298.6" style="stroke:#23A3DD;stroke-width:1.0;"/><!--MD5=[582a7c34647e23f27706c393ce390a60]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="816px" preserveAspectRatio="none" style="width:1036px;height:816px;background:#00000000;" version="1.1" viewBox="0 0 1036 816" width="1036px" zoomAndPan="magnify"><defs><filter height="300%" id="f1edrdvb1aktma" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="4.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="8.0" dy="8.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9db040bd2a9e8d2c667e615e4bf3a348]
+entity configRepo--><rect fill="#23A3DD" filter="url(#f1edrdvb1aktma)" height="201.1875" style="stroke:#16688D;stroke-width:3.0;" width="196" x="14" y="14"/><image height="96" width="96" x="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg==" y="34"/><text fill="#FFFFFF" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="156" x="34" y="155.9902">Cloud Infra</text><text fill="#FFFFFF" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="74" x="34" y="188.584">Repo</text><!--MD5=[7daec57375d54fbd4fdbee41f91c157c]
+entity repo2--><!--MD5=[52025288e216a85a7b6b26f1ab881e5a]
+entity mgmt--><rect fill="#23A3DD" filter="url(#f1edrdvb1aktma)" height="168.5938" style="stroke:#16688D;stroke-width:3.0;" width="336" x="322" y="31"/><image height="96" width="96" x="342" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg==" y="51"/><text fill="#FFFFFF" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="296" x="342" y="172.9902">Management Cluster</text><!--MD5=[6e1eb20b146a2c55f578b917fb23f4f3]
+entity mgmt2--><!--MD5=[8da875ec3a30fba0e772ed75d73757ad]
+entity t1--><rect fill="#23A3DD" filter="url(#f1edrdvb1aktma)" height="168.5938" style="stroke:#16688D;stroke-width:3.0;" width="242" x="771" y="31"/><image height="96" width="96" x="791" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg==" y="51"/><text fill="#FFFFFF" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="202" x="791" y="172.9902">Target Cluster</text><!--MD5=[cd26f8a7bb78c9ddd4855f332713079c]
+entity t2--><rect fill="#23A3DD" filter="url(#f1edrdvb1aktma)" height="168.5938" style="stroke:#16688D;stroke-width:3.0;" width="242" x="771" y="336"/><image height="96" width="96" x="791" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg==" y="356"/><text fill="#FFFFFF" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="202" x="791" y="477.9902">Target Cluster</text><!--MD5=[a8db0c08a6d12b9c2a377dcfd5abeb06]
+entity t3--><rect fill="#23A3DD" filter="url(#f1edrdvb1aktma)" height="168.5938" style="stroke:#16688D;stroke-width:3.0;" width="242" x="771" y="624"/><image height="96" width="96" x="791" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg==" y="644"/><text fill="#FFFFFF" font-family="sans-serif" font-size="28" lengthAdjust="spacing" textLength="202" x="791" y="765.9902">Target Cluster</text><!--MD5=[feda7789a25ecc23edcdbafbb21abc38]
+link configRepo to repo2--><!--MD5=[f5d92b4d85d44cf43d1f38f5c1823517]
+reverse link configRepo to mgmt--><path d="M220.64,115 C254.32,115 288,115 321.68,115 " fill="none" id="configRepo-backto-mgmt" style="stroke:#23A3DD;stroke-width:2.0;"/><polygon fill="#23A3DD" points="210.2,115,228.2,123,220.2,115,228.2,107,210.2,115" style="stroke:#23A3DD;stroke-width:2.0;"/><!--MD5=[a85f562bf387620fff757589942bc49c]
+link mgmt to mgmt2--><!--MD5=[a6ca85cf6ed49fcc0cfaa4c185ff22fc]
+link mgmt to t1--><path d="M658.02,115 C691.98,115 725.94,115 759.9,115 " fill="none" id="mgmt-to-t1" style="stroke:#23A3DD;stroke-width:2.0;"/><polygon fill="#23A3DD" points="770.44,115,752.44,107,760.44,115,752.44,123,770.44,115" style="stroke:#23A3DD;stroke-width:2.0;"/><!--MD5=[cd8330821d19bed4d6fc62cad99dc374]
+link mgmt to t2--><path d="M599.84,199.24 C653.92,239.74 719.14,288.56 774.24,329.82 " fill="none" id="mgmt-to-t2" style="stroke:#23A3DD;stroke-width:2.0;"/><polygon fill="#23A3DD" points="782.28,335.84,772.68,318.64,774.28,329.84,763.08,331.44,782.28,335.84" style="stroke:#23A3DD;stroke-width:2.0;"/><!--MD5=[3f370ab2febd7e472da00eebbe4179f2]
+link mgmt to t3--><path d="M539.24,199.2 C587.46,278.54 663.98,401.36 736,504 C762.04,541.12 792.2,580.84 819,615.14 " fill="none" id="mgmt-to-t3" style="stroke:#23A3DD;stroke-width:2.0;"/><polygon fill="#23A3DD" points="825.74,623.74,820.9465,604.6344,819.5769,615.8649,808.3464,614.4954,825.74,623.74" style="stroke:#23A3DD;stroke-width:2.0;"/><!--MD5=[f285889b065f53387083d0d5ff560350]
+link t1 to t2--><!--MD5=[46014972cc69ba017efe052241cd0c9d]
+link t2 to t3--><!--MD5=[debe0c41ef431a69def2b429b830e514]
 @startuml
 
 !define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
@@ -19,8 +21,6 @@ link infra to t3--><path d="M653.67,182.68 C668.27,216.73 688.6,264.13 701.27,29
 
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
 !includeurl ICONURL/devicons/git.puml
-!includeurl ICONURL/font-awesome-5/sync.puml
-!includeurl ICONURL/font-awesome-5/globe.puml
 
 !define CLOUDOGU_BLUE #23a3dd
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
@@ -29,27 +29,31 @@ skinparam backgroundcolor TRANSPARENT
     
 together {
     rectangle "<$git>\nCloud Infra\nRepo" as configRepo
+    rectangle " " as repo2
+    hide repo2
 }
 
 together {
-    rectangle "<$k8s>\nManagement Cluster" as mgmt {
-        rectangle "<$sync>\nGitOps\noperator" as gitops
-        rectangle "<$k8s>\nAPI-Server" as apiServer
-        rectangle "<$globe>\nInfra operator" as infra
-    }
+    rectangle "<$k8s>\nManagement Cluster" as mgmt
+    rectangle " " as mgmt2
+    hide mgmt2
 }
 
 together {
-    collections "<$k8s>\nTarget Clusters" as t1
-    cloud "Cloud providers" as t3
+    rectangle "<$k8s>\nTarget Cluster" as t1
+    rectangle "<$k8s>\nTarget Cluster" as t2
+    rectangle "<$k8s>\nTarget Cluster" as t3
 }
 
-configRepo <- gitops
-apiServer -[hidden]> infra
-gitops -> apiServer : apply resources
-infra -> apiServer : watch
-infra - -> t1
-infra - -> t3
+configRepo -[hidden]-> repo2
+configRepo <- mgmt
+mgmt -[hidden]-> mgmt2
+mgmt -> t1
+mgmt -> t2
+mgmt -> t3
+
+t1 -[hidden]-> t2
+t2 -[hidden]-> t3
 
 
 skinparam arrow {
@@ -57,22 +61,11 @@ skinparam arrow {
     FontColor CLOUDOGU_BLUE
 }
 
+
 skinparam rectangle {
-    BackgroundColor WHITE
+    BackgroundColor CLOUDOGU_BLUE
     BorderColor #16688d
-    FontColor CLOUDOGU_BLUE
-}
-
-skinparam cloud {
-    BackgroundColor WHITE
-    BorderColor #16688d
-    FontColor CLOUDOGU_BLUE
-}
-
-skinparam collections {
-    BackgroundColor WHITE
-    BorderColor CLOUDOGU_BLUE
-    FontColor CLOUDOGU_BLUE
+    FontColor WHITE
 }
 
 @enduml
@@ -186,139 +179,37 @@ sprite $git [48x48/16] {
 
 
 skinparam folderBackgroundColor<<DEV GIT>> White
-sprite $sync [48x48/16] {
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-0000000000000000000000122100000000000005DDDDC200
-0000000000000000037BEFFFFFFC951000000009FFFFF600
-0000000000000017DFFFFFFFFFFFFFFA30000009FFFFF600
-00000000000007FFFFFFFFFFFFFFFFFFFB300008FFFFF600
-000000000003DFFFFFFFFFFFFFFFFFFFFFF80007FFFFF600
-00000000006FFFFFFFFFFFFFFFFFFFFFFFFFC106FFFFF600
-0000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFE26FFFFF600
-000000007FFFFFFFFFE941000036BFFFFFFFFFE7FFFFF600
-00000006FFFFFFFFC50000000000018FFFFFFFFFFFFFF600
-0000003FFFFFFFF70000000000000002CFFFFFFFFFFFF600
-000000DFFFFFFE30000000000000000009FFFFFFFFFFF600
-000007FFFFFFE2000000000000000000008FFFFFFFFFF600
-00001FFFFFFF30000000000000000000000AFFFFFFFFF600
-00007FFFFFF7000000000000004EEDCBBA99FFFFFFFFF600
-0000DFFFFFD0000000000000008FFFFFFFFFFFFFFFFFF600
-0003FFFFFF50000000000000008FFFFFFFFFFFFFFFFFF600
-0007FFFFFE00000000000000008FFFFFFFFFFFFFFFFFF600
-000BFFFFF900000000000000008FFFFFFFFFFFFFFFFFF600
-0009FFFFF200000000000000005FFFFFFFFFFFFFFFFFF300
-000001110000000000000000000011111111111111110000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-004888888888888888886000000000000000003888870000
-00DFFFFFFFFFFFFFFFFFF10000000000000000EFFFFF4000
-00DFFFFFFFFFFFFFFFFFF10000000000000003FFFFFF1000
-00DFFFFFFFFFFFFFFFFFF10000000000000009FFFFFD0000
-00DFFFFFFFFFFFFFFFFFF1000000000000001FFFFFF80000
-00DFFFFFFFFFFFFFFFFFF0000000000000009FFFFFF20000
-00DFFFFFFFFC123345664000000000000004FFFFFFC00000
-00DFFFFFFFFF90000000000000000000002EFFFFFF400000
-00DFFFFFFFFFF800000000000000000002EFFFFFFB000000
-00DFFFFFFFFFFFA000000000000000004EFFFFFFF1000000
-00DFFFFFFFFFFFFE4000000000000019FFFFFFFF50000000
-00DFFFFEEFFFFFFFFC510000000039FFFFFFFFF700000000
-00DFFFFE2EFFFFFFFFFFC97678AEFFFFFFFFFF7000000000
-00DFFFFF02DFFFFFFFFFFFFFFFFFFFFFFFFFF70000000000
-00DFFFFF001BFFFFFFFFFFFFFFFFFFFFFFFF500000000000
-00DFFFFF00006EFFFFFFFFFFFFFFFFFFFFB1000000000000
-00DFFFFF1000008EFFFFFFFFFFFFFFFFC400000000000000
-00DFFFFF200000005BFFFFFFFFFFFD820000000000000000
-00CFFFFF100000000003689AA97510000000000000000000
-002555530000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-}
-
-
-skinparam folderBackgroundColor<<FA5 SYNC>> White
-sprite $globe [48x48/16] {
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-000000000000000000000001000000000000000000000000
-0000000000000000010004DFF91000000000000000000000
-0000000000000007D5006FFFFFC100CA3000000000000000
-00000000000007EFB002FFFFFFFA003FFB30000000000000
-000000000003DFFF300CFFFFFFFF500AFFF8000000000000
-00000000005FFFFC004FFFFFFFFFD004FFFFC10000000000
-0000000008FFFFF600CFFFFFFFFFF400DFFFFE2000000000
-000000008FFFFFF002FFFFFFFFFFFA008FFFFFE200000000
-00000006FFFFFFB007FFFFFFFFFFFF003FFFFFFD00000000
-0000003FFFFFFF700CFFFFFFFFFFFF400EFFFFFFB0000000
-000000DFFFFFFF301FFFFFFFFFFFFF900AFFFFFFF5000000
-000007FFFFFFFF004FFFFFFFFFFFFFC007FFFFFFFE100000
-00000EFFFFFFFC007FFFFFFFFFFFFFF004FFFFFFFF700000
-00003AAAAAAAA6006AAAAAAAAAAAAAA101AAAAAAAA900000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-0005AAAAAAAAA200AAAAAAAAAAAAAAA6007AAAAAAAAA0000
-000AFFFFFFFFF201FFFFFFFFFFFFFFFA00AFFFFFFFFF3000
-000DFFFFFFFFF202FFFFFFFFFFFFFFFB009FFFFFFFFF6000
-000FFFFFFFFFF103FFFFFFFFFFFFFFFB008FFFFFFFFF8000
-001FFFFFFFFFF004FFFFFFFFFFFFFFFC008FFFFFFFFF9000
-002FFFFFFFFFF005FFFFFFFFFFFFFFFD007FFFFFFFFFA000
-001FFFFFFFFFF004FFFFFFFFFFFFFFFD007FFFFFFFFFA000
-000FFFFFFFFFF003FFFFFFFFFFFFFFFC008FFFFFFFFF8000
-000FFFFFFFFFF103FFFFFFFFFFFFFFFB009FFFFFFFFF7000
-000CFFFFFFFFF202FFFFFFFFFFFFFFFA00AFFFFFFFFF4000
-0009FFFFFFFFF301FFFFFFFFFFFFFFF900AFFFFFFFFF1000
-000022222222200022222222222222210012222222220000
-000000000000000000000000000000000000000000000000
-000012222222210012222222222222200022222222200000
-00003FFFFFFFFB009FFFFFFFFFFFFFF102FFFFFFFFC00000
-00000BFFFFFFFE006FFFFFFFFFFFFFE005FFFFFFFF400000
-000002FFFFFFFF102FFFFFFFFFFFFFB008FFFFFFFB000000
-0000008FFFFFFF400EFFFFFFFFFFFF700CFFFFFFF1000000
-0000000CFFFFFF900AFFFFFFFFFFFF201FFFFFFF50000000
-00000001EFFFFFE005FFFFFFFFFFFD005FFFFFF800000000
-000000002EFFFFF300EFFFFFFFFFF700AFFFFF8000000000
-0000000002DFFFF9008FFFFFFFFFF101FFFFF80000000000
-00000000000AFFFF001FFFFFFFFF9007FFFF500000000000
-0000000000005EFF7008FFFFFFFE100EFFA1000000000000
-000000000000007EF100CFFFFFF5007FB300000000000000
-000000000000000055001CFFFF6000720000000000000000
-000000000000000000000069820000000000000000000000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-000000000000000000000000000000000000000000000000
-}
-
-
-skinparam folderBackgroundColor<<FA5 GLOBE>> White
 
 
 skinparam backgroundcolor TRANSPARENT
     
 together {
     rectangle "<$git>\nCloud Infra\nRepo" as configRepo
+    rectangle " " as repo2
+    hide repo2
 }
 
 together {
-    rectangle "<$k8s>\nManagement Cluster" as mgmt {
-        rectangle "<$sync>\nGitOps\noperator" as gitops
-        rectangle "<$k8s>\nAPI-Server" as apiServer
-        rectangle "<$globe>\nInfra operator" as infra
-    }
+    rectangle "<$k8s>\nManagement Cluster" as mgmt
+    rectangle " " as mgmt2
+    hide mgmt2
 }
 
 together {
-    collections "<$k8s>\nTarget Clusters" as t1
-    cloud "Cloud providers" as t3
+    rectangle "<$k8s>\nTarget Cluster" as t1
+    rectangle "<$k8s>\nTarget Cluster" as t2
+    rectangle "<$k8s>\nTarget Cluster" as t3
 }
 
-configRepo <- gitops
-apiServer -[hidden]> infra
-gitops -> apiServer : apply resources
-infra -> apiServer : watch
-infra - -> t1
-infra - -> t3
+configRepo -[hidden]-> repo2
+configRepo <- mgmt
+mgmt -[hidden]-> mgmt2
+mgmt -> t1
+mgmt -> t2
+mgmt -> t3
+
+t1 -[hidden]-> t2
+t2 -[hidden]-> t3
 
 
 skinparam arrow {
@@ -326,22 +217,11 @@ skinparam arrow {
     FontColor #23a3dd
 }
 
+
 skinparam rectangle {
-    BackgroundColor WHITE
+    BackgroundColor #23a3dd
     BorderColor #16688d
-    FontColor #23a3dd
-}
-
-skinparam cloud {
-    BackgroundColor WHITE
-    BorderColor #16688d
-    FontColor #23a3dd
-}
-
-skinparam collections {
-    BackgroundColor WHITE
-    BorderColor #23a3dd
-    FontColor #23a3dd
+    FontColor WHITE
 }
 
 @enduml

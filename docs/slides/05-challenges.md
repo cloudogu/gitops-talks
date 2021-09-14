@@ -168,7 +168,7 @@ Note:
 
 **Advantages**
 
-* All code in one repo: More efficient development
+* Single repo for development: higher efficiency
 * Automated staging (e.g. PR creation, namespaces)
 * Shift left: static code analysis + policy check on CI server,  
   e.g. yamlint, kubeval, helm lint, conftest

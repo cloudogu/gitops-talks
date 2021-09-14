@@ -1,7 +1,7 @@
 # Demo
 <!-- .slide: id="demo" -->
 
-<img data-src="images/gitops-playground.svg" width="65%" />
+<img data-src="images/gitops-playground.svg" width="60%" />
 
 <i class='fab fa-github'></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
 
