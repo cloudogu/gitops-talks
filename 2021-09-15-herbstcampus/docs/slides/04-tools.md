@@ -70,10 +70,13 @@ Note:
 
 
 ### Others
+* Backup
 * Deployment Strategies - Progressive Delivery  
   <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
   <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-* ... **GitOps loves operators**
+* ... 
+
+**➡ GitOps loves operators**
 
 Notes:
 * Progressive Delivery = canary releases, A/B tests, and blue/green deployments
@@ -84,13 +87,26 @@ Notes:
 
 ## Operate Kubernetes with Kubernetes
 
-<div style="text-align: center !important;">
-  <img data-src="images/infra-cluster-target-clusters.svg" width="80%"/>
+<div class="fragment" style="text-align: center !important;">
+  <img data-src="images/infra-cluster-target-clusters.svg" width="70%"/>
 </div>
 
 Note: 
 * Management Cluster, aka Infrastructure Cluster, Controller Cluster
 * Target Cluster, aka Workload Cluster, Downstream Cluster
+
+
+
+<div style="text-align: center !important;">
+  <img data-src="images/infra-cluster-target-clusters-detail.svg" width="95%"/>
+</div>
+Note:
+* Infra operator: Depending on the setting create VMs (e.g. EC2) or clusters directly (e.g. EKS) via cloud providers.
+  In case of VMs the infra operator create control plane e.g. with kubeadm 
+* gitops operator might deploy resources (apps) into target clusters
+* See also
+  * https://cluster-api.sigs.k8s.io/user/concepts.html
+  * https://www.weave.works/blog/manage-thousands-of-clusters-with-gitops-and-the-cluster-api
 
 
 
