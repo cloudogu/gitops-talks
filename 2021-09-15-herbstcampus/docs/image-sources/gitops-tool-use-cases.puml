@@ -1,0 +1,106 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-25pct.iuml
+
+!define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
+!includeurl CLOUDOGUURL/tools/k8s.puml
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.2.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/docker.puml
+!includeurl ICONURL/material/computer.puml
+!includeurl ICONURL/devicons/git.puml
+!includeurl ICONURL/font-awesome-5/globe.puml
+!includeurl ICONURL/font-awesome-5/user.puml
+!includeurl ICONURL/font-awesome-5/hdd.puml
+!includeurl ICONURL/font-awesome-5/server.puml
+!includeurl ICONURL/font-awesome-5/tools.puml
+
+!define CLOUDOGU_BLUE #23a3dd
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND BLACK
+
+skinparam backgroundcolor TRANSPARENT
+
+together {
+    rectangle "<$git>\n K8s Resources /\napplications" as k8sAppOpsRepo
+    
+    rectangle "<$git>\n Cloud Infra" as infraRepo
+    
+    k8sAppOpsRepo --[hidden]> infraRepo
+}
+
+rectangle "1 " <<Hidden>> as p3 
+rectangle "2 " <<Hidden>> as p2
+p2 -[hidden]> k8sAppOpsRepo
+
+
+cloud "Cloud" as cloud {
+    rectangle "<$k8s>\nCluster" as cluster1 {
+        rectangle "<$pod>\nPods" <<K8sResource>>  as pods
+        rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "..." <<K8sResource>> as k8sEtc
+        pods -[hidden]> svcs
+        svcs -[hidden]> k8sEtc
+    }
+    rectangle "<$user>\nIAM" as iam
+    rectangle "<$globe>\nDNS" as dns
+    rectangle "..." as cloudEtc
+    cluster1 --[hidden]> iam
+    iam -[hidden]> dns
+    dns -[hidden]> cloudEtc
+}
+
+skinparam rectangle<<Hidden>> {
+  textColor White
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
+
+skinparam rectangle<<NoBorder>> {
+    BorderColor transparent
+    borderColor Transparent
+    backgroundColor Transparent
+    stereotypeFontColor Transparent
+}
+
+skinparam arrow {
+    Color CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam actor {
+    BackgroundColor CLOUDOGU_BLUE
+    BorderColor #16688d
+    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+}
+
+skinparam rectangle {
+    BackgroundColor WHITE
+    BorderColor #16688d
+    FontColor CLOUDOGU_BLUE
+}
+skinparam rectangle<<K8sResource>> {
+    BackgroundColor CLOUDOGU_BLUE
+    BorderColor #16688d
+    FontColor WHITE
+}
+
+skinparam cloud {
+    BackgroundColor TRANSPARENT
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam node {
+  BorderColor CLOUDOGU_BLUE
+  FontColor CLOUDOGU_BLUE
+}
+
+skinparam note {
+    BackgroundColor WHITE
+    BorderColor #16688d
+}
+
+@enduml

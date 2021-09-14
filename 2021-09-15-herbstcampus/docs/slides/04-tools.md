@@ -14,17 +14,20 @@ Note:
 
 
 
-## Categories
+# What can GitOps be used for?
+<img data-src="images/gitops-tool-use-cases.svg"/>
 
-<img data-src="images/gitops-tool-maturity2.svg" class="floatRight" width="50%"/>
 
-* Tools for Kubernetes AppOps
-* Tools for Kubernetes ClusterOps
+
+## GitOps tool categories
+
+* GitOps operators/controllers
 * Supplementary GitOps tools
+* Tools for operating k8s clusters + cloud infra with GitOps
 
 
 
-## GitOps Tools for Kubernetes AppOps
+## GitOps operators/controllers
 
 <a title="Flux v2" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
 <a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
@@ -51,10 +54,38 @@ Note:
 
 
 
+## Supplementary GitOps tools
+
+### Secrets
+
+<div style="font-size: 26px">
+<ul>
+<li><i class='fab fa-github'></i> <a href="https://github.com/bitnami-labs/sealed-secrets">bitnami-labs/sealed-secrets</a></li>
+<li><i class='fab fa-github'></i> <a href="https://github.com/Soluto/kamus">Soluto/kamus</a> </li>
+<li><i class='fab fa-github'></i> <a href="https://github.com/mozilla/sops">mozilla/sops</a> + K8s integration </li>
+<li>Operators for Key Management Systems</li>
+
+</div>
+
+
+
+### Others
+* Deployment Strategies - Progressive Delivery  
+  <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
+  <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
+* ... **GitOps loves operators**
+
+Notes:
+* Progressive Delivery = canary releases, A/B tests, and blue/green deployments
+* Sources:
+  * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
+
+
+
 ## Operate Kubernetes with Kubernetes
 
 <div style="text-align: center !important;">
-  <img data-src="images/infra-cluster-target-clusters.svg" width="50%"/>
+  <img data-src="images/infra-cluster-target-clusters.svg" width="80%"/>
 </div>
 
 Note: 
@@ -63,7 +94,7 @@ Note:
 
 
 
-## GitOps Tools for Kubernetes ClusterOps
+## Tools for operating k8s clusters + cloud infra
 
 <a title="Flux v2" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
 <a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
@@ -71,6 +102,7 @@ Note:
 <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
 <a title="JenkinsX" href="https://github.com/jenkins-x/jx"><img data-src="images/jenkinsx-icon.svg" width="9%"/></a>
 <a title="Werf" href="https://github.com/werf/werf"><img data-src="images/werf-icon.svg" width="9%"/></a>
+<a title="GitLab K8s Agent" href="https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent"><img data-src="images/GitLab_logo.svg" width="9%"/></a>
 
 <span style="font-size: 60px;">+</span>
 
@@ -93,35 +125,6 @@ Notes:
   * https://raw.githubusercontent.com/kubernetes-sigs/cluster-api/master/logos/kubernetes-cluster-logos_final-02.svg
   * https://raw.githubusercontent.com/crossplane/crossplane/master/docs/media/logo.svg
   * https://www.terraform.io/assets/images/product-icons/terraform-icon-color-7fbc9ecc.svg
-
-
-
-## Supplementary GitOps tools
-
-### Secrets
-
-<div style="font-size: 26px">
-<ul>
-<li><i class='fab fa-github'></i> <a href="https://github.com/bitnami-labs/sealed-secrets">bitnami-labs/sealed-secrets</a></li>
-<li><i class='fab fa-github'></i> <a href="https://github.com/Soluto/kamus">Soluto/kamus</a> </li>
-<li><i class='fab fa-github'></i> <a href="https://github.com/mozilla/sops">mozilla/sops</a> + K8s integration </li>
-<li>Operators for Key Management Systems</li>
-
-</div>
-
-
-
-### Others
-* Backups  
-* Deployment Strategies - Progressive Delivery  
-  <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
-  <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-* ...
-
-Notes:
-* Progressive Delivery = canary releases, A/B tests, and blue/green deployments 
-* Sources:
-  * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
 
 
 

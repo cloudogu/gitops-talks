@@ -93,17 +93,14 @@ Note:
 
 
 #### Idea 2: Staging folders
-
 * On the same branch: One folder per stage
   ```text
   ├── production
   │   └── application
-  │       ├── deployment.yaml
-  │       └── ...
+  │       └── deployment.yaml
   └── staging
       └── application
-          ├── deployment.yaml
-          └── ...
+          └── deployment.yaml
   ```
 * Process:
   * commit to staging folder only,
@@ -125,7 +122,7 @@ Note:
 
 
 
-### Role of CI server
+### Basic role of CI server
 <!-- .slide: style="text-align: center !important;"  -->
 <img data-src="images/gitops-with-image.svg" width="70%"/>
 
@@ -133,34 +130,32 @@ Note:
 
 ### Number of repositories: application vs GitOps repo
 
-GitOps tools: Put infra in separate repo!
+GitOps tools: Put infra in separate repo! See
+
+🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/) 
 
 <img data-src="images/gitops-with-app-repo-manual.svg" width="65%"/>
 
 
 
-### Advantages
-* Audit: All cluster infra (and only infra) in one repo
-* 🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/)
-
-### Disadvantages
+**Disadvantages**
 * Separated maintenance & versioning of app and infra code
 * Review spans across multiple repos
 * Local dev more difficult
   <br/><br/>
 
 <div class="fragment" data-fragment-index="1">
-<strong>Can't we have both?</strong>
+<strong>How to avoid those?</strong>
 </div>
 
 Note:
-* Good pratice: Keeping everything in app repo (code, docs, infra)
+* Good practice: Keeping everything in app repo (code, docs, infra)
 * GitOps Repo aka Config Repo
 * App Repo aka Source Code Repo
 
 
 
-**Yes, we can! Using a CI-Server**
+### Extended role of CI server
 
 <img data-src="images/gitops-with-app-repo-ci.svg" />
 
@@ -171,18 +166,34 @@ Note:
 
 
 
-**Disadvantages**
+**Advantages**
 
-* Complexity in CI pipelines ➡ efforts for development
-* A lot can go wrong. Examples
-  * Git Conflicts caused by concurrency
-  * Danger of inconsistencies
+* All code in one repo: More efficient development
+* Automated staging (e.g. PR creation, namespaces)
+* Shift left: static code analysis + policy check on CI server,  
+  e.g. yamlint, kubeval, helm lint, conftest
+* Simplify review by adding info to PRs
 
-➡ Recommendation: Use a plugin or library
+<br/>
+<br/>
+<div class="fragment">
+<img data-src="images/PR.png" width="70%"/>
+</div>
 
-Example: <i class='fab fa-github'></i> [cloudogu/gitops-build-lib](https://github.com/cloudogu/gitops-build-lib) <i class="fab fa-jenkins"></i>
+<div class="fragment">
+<i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-build-lib">cloudogu/gitops-build-lib</a> <i class="fab fa-jenkins"></i>
+</div>
 
 Notes:
+* Shift left (Fail Early) Validation - OPA Gatekeeper, Image Signature, etc
+  * Plus: Layered approach -> "If we dont find it here, we're gonna find it there"
+  * See also: Shifting Policy Enforcement to the Left using GitOps von Sandeep Parikh
+* Enrich commit message: Author, original commit, issue ID and build number
+* Disadvantages
+  * Complexity in CI pipelines ➡ efforts for development
+  * A lot can go wrong. Examples
+    * Git Conflicts caused by concurrency
+    * Danger of inconsistencies
 * More critics:
   * "I'm really starting to get irritated with "GitOps." Why does CI have to be reinvented for k8s. It's a simple problem. On git commit run "kubectl" Every CI system today can do this, do we have to reinvent "git clone" with ArgoCD/Flux. I question that this is the right approach."   
     https://twitter.com/ibuildthecloud/status/1263131200484372485
@@ -193,28 +204,6 @@ Notes:
     🌐 https://blog.container-solutions.com/gitops-limitations
   * Carlos Sanchez - GitOps: The Bad and the Ugly "Not designed for programmatic updates" totally agree, we had to do some ugly logic to work around git conflicts (more about it at https://buff.ly/3euUG29 )
     https://mobile.twitter.com/csanchez/status/1303371275168083968
-
-
-
-**Advantages**
-
-* Shift left: static code analysis + policy check on CI server,  
-  e.g. yamlint, kubeval, helm lint, conftest
-* Automated staging (e.g. PR creation, namespaces)
-* Use IaC for local dev
-* Simplify review by adding info to PRs
-
-<br/>
-<br/>
-<div class="fragment">
-<img data-src="images/PR.png" width="70%"/>
-</div>
-
-Note:
-* Shift left (Fail Early) Validation - OPA Gatekeeper, Image Signature, etc
-  * Plus: Layered approach -> "If we dont find it here, we're gonna find it there"
-  * See also: Shifting Policy Enforcement to the Left using GitOps von Sandeep Parikh
-* Enrich commit message: Author, original commit, issue ID and build number
 
 
 

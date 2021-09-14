@@ -53,7 +53,8 @@ Notes:
     * Wait for success
     * Reload prod application
     * -> Change in welcome message shows
-
+      eu.gcr.io/cloudogu-trainings/gitops-playground
+    * /cloudogu-trainings/global/gitops-playground
 Image sources:
 * https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cloudogu/k8s-gitops-playground/de7ba71/docs/gitops-playground.puml&fmt=svg  
   Manually edited:

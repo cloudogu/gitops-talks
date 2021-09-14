@@ -1,642 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   contentScriptType="application/ecmascript"
-   contentStyleType="text/css"
-   height="919"
-   preserveAspectRatio="none"
-   version="1.1"
-   viewBox="0 0 1200 919"
-   width="1200"
-   zoomAndPan="magnify"
-   id="svg246"
-   sodipodi:docname="gitops-playground.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
-  <metadata
-     id="metadata250">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1866"
-     inkscape:window-height="1043"
-     id="namedview248"
-     showgrid="false"
-     inkscape:zoom="1.2030488"
-     inkscape:cx="243.19352"
-     inkscape:cy="459.5"
-     inkscape:window-x="3894"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg246" />
-  <defs
-     id="defs101">
-    <filter
-       height="3"
-       id="f5mw8z4v66c17"
-       width="3"
-       x="-1"
-       y="-1">
-      <feGaussianBlur
-         result="blurOut"
-         stdDeviation="2.0"
-         id="feGaussianBlur92" />
-      <feColorMatrix
-         in="blurOut"
-         result="blurOut2"
-         type="matrix"
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
-         id="feColorMatrix94" />
-      <feOffset
-         dx="4.0"
-         dy="4.0"
-         in="blurOut2"
-         result="blurOut3"
-         id="feOffset96" />
-      <feBlend
-         in="SourceGraphic"
-         in2="blurOut3"
-         mode="normal"
-         id="feBlend98" />
-    </filter>
-  </defs>
-  <g
-     id="g244">
-    <!--MD5=[c8375d0abf05781a4d00ac7db9cff037]
-cluster host-->
-    <polygon
-       points="1176,6 1176,902 1166,912 16,912 16,16 26,6 "
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       id="polygon103" />
-    <line
-       style="stroke:#23a3dd;stroke-width:1.5"
-       x1="1166"
-       x2="1176"
-       y1="16"
-       y2="6"
-       id="line105" />
-    <line
-       style="stroke:#23a3dd;stroke-width:1.5"
-       x1="16"
-       x2="1166"
-       y1="16"
-       y2="16"
-       id="line107" />
-    <line
-       style="stroke:#23a3dd;stroke-width:1.5"
-       x1="1166"
-       x2="1166"
-       y1="16"
-       y2="912"
-       id="line109" />
-    <image
-       height="48"
-       width="48"
-       x="568"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAtUlEQVR4Xu2Xyw3EIAwFaYGeaIEWKJ8WslYiS8bKkw8riA9vjnw0oygHXK5kFL/wNQyKYFAEgyJ80JyztVaOICLRuYAlSLZrrf7eTkTnmpag3ru/sR+R2oYl6PDneRCpbViC7Dm7vgPkYpCCXAxSkItBCnIxSEEuBinIxSAFuRikIBeDFORikIJcuYPSPfLHGP74fkRqG5agdIPidTcdGxdF9DJKE/Iv7p/6HAZFMCiCQRHpgn6x3znS2I7hMgAAAABJRU5ErkJggg=="
-       y="19"
-       id="image111" />
-    <text
-       font-size="14"
-       font-weight="bold"
-       lengthAdjust="spacing"
-       textLength="79"
-       x="552.5"
-       y="79.995102"
-       id="text113"
-       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#000000">Your Host</text>
-    <!--MD5=[81d16cdabbe89c1a39395d00a8354929]
-cluster k8s-->
-    <rect
-       height="765"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="952"
-       x="48"
-       y="115"
-       id="rect115" />
-    <image
-       height="48"
-       width="48"
-       x="500"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
-       y="117"
-       id="image117" />
-    <text
-       font-size="14"
-       font-weight="bold"
-       lengthAdjust="spacing"
-       textLength="114"
-       x="467"
-       y="177.9951"
-       id="text119"
-       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#23a3dd">K3d Container</text>
-    <!--MD5=[dd609d8abf8dbddcb524f08664a21696]
-cluster scmm-->
-    <rect
-       height="250"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="264"
-       x="169"
-       y="420"
-       id="rect121" />
-    <image
-       height="48"
-       width="48"
-       x="277"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4ElEQVR4Xu2VTUrEQBCF597ewBt4Am/gDQRXboIrV2bjYhjwD2EQaR95pKhUOumfdMdZ9KMJlZoO9eVVdebgLkwHm/hvNaCQGlBIDSgkP9D7+dem9pIHCDTd6dx//tgfdpEHCALN/es3yLjszzXlB6JJWPu75QdyAxNMAoq4ZXfU0SIQRJMAxCvWDlhrQNokIavNtAbkhunWJu0wTwEgGWrpGk2q51MAyA2TNO8arnZfIYWBjEkEqnfuwkBuNMk4tAQkeey5e/nizCHZxx3SKCC2zDRuXgCZ2+cP5hEwxgLW9ePp5ulNXmOFLApIurYExFsSIEZt9hRXxMgThXDIXD0cce19BzYNyGARiN8qFCCBGEMUbsN+xOTgfltjVBSQm46RBG5kRTHSwAAxhq7QMLRM5mldsUCaQwMh4BsLDeAY0CQ9OjHKB2KNbvi/68YDJeU5K1365yoWiG/M2mRikrekkelBkP2hygRikuU1jQz19OkE5QDJqzMjTDJG00fTlAbEJUkCcaiBgkA9kalkIG2ATDRQMubXqwQg3SyKKAVpXBKQsYeIXGrjViUAGXsESCe3KwHIZDjR8/xGxQLNZU5cKW0CsqkSygcq3iwqH6iSGlBIDSikBhRSAwrp4oD+AGyZmNJHN/KJAAAAAElFTkSuQmCC"
-       y="422"
-       id="image123" />
-    <text
-       font-size="14"
-       font-weight="bold"
-       lengthAdjust="spacing"
-       textLength="109"
-       x="246.5"
-       y="482.99509"
-       id="text125"
-       style="font-weight:bold;font-size:14px;font-family:sans-serif;fill:#23a3dd">SCM-Manager</text>
-    <!--MD5=[7c0f197cad09c4d86c8b8989e1030b9e]
-entity docker-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="136"
-       x="1024"
-       y="748"
-       id="rect127" />
-    <image
-       height="48"
-       width="48"
-       x="1034"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACWklEQVR4Xu2WQUpcQRCGvYs3yA08gTfIDXKC3GBukLULIStXs3IVEFxlI1kFwQyBIQQhk4ggEtqP/mPZU6/fq/eciQnaP4X0VPfr/l5VdT130n+mHe/412pAkRpQpAYUqQFFeo5Aq5vf8y9XZvz0K6ZoC0BAvPnwbfbxEnt7+p2ffsUUbQdINNi7Tz9eNtDh559dI19kChQMpmGgsMImALHX6+Mlp4qDsQZ4RgKxw/78K4v9RKHJQMqLgCxNI1PGU2eXNyxgmZ+715MCkVwNCNLi1+365B/FQHYYuxBw+2lA+Mtrb37MVYwBESdmYTpZXjuyGIgDeAxTv+FvOcaI1iyXjnJhxQ4cB5db4TFEK0e9G3vKHwNxsAoWUyS6KeMkG9tPFjsgTq1Wj6Kl8VMD7R0tSg8BYzG7macOBK8OwNjCxmUN2bisGyCsnnCqRWkBYztYZacpB10HUkGAxRtsbm5z4gSuc5rWgFb5u50ykFVZ3/3EX73hZfxLGZzdtVRb/ADE7mRh9+CcHDFQSM3DO/Gw3SlSgB9T4nStGLx6fyG/kmiPsJWm8OsR87hSq6eMFbqiWzeA/GHrH7g6UMp9wrs2VreEu+oFIqp9D69yqXXTPyw1C+/tqBdoILxq+X24Vak/eW9NvUApX4Hyw6S2MSu66ki51jesIaCU36x6t0eKKJbfqTEKgFJmGuhjfSKKatl+IlIMlPKLqvGX97MqOHgBJTpcXNUoIInI6xtkHU93TV9T/OKYlKCuJgCVImb6r0jX7XHBqOqRQH9PDShSA4rUgCI1oEgNKNIdd6X3L4lTCWgAAAAASUVORK5CYII="
-       y="758"
-       id="image129" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="116"
-       x="1034"
-       y="818.99512"
-       id="text131"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">Docker Daemon</text>
-    <!--MD5=[4956c46b4aaa4df0e7da7ff57610b9f4]
-entity gitops-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="136"
-       x="436"
-       y="273"
-       id="rect133" />
-    <image
-       height="48"
-       width="48"
-       x="446"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACs0lEQVR4Xu2YT4oUMRTG5y51A2/gCbyBN/AE3qBv4NqF4MpVr1wNCLNyI65E0EEYRAacUQYGkfJHvzbE9yUvSXUx0ws/PpqmKnn58v4klZzMR4YT/+C+sYKgq9vf5z9+Qf74dxVsP/98+Oo88dH2C93t1RJB7y5vN28vH7++ePDy0/T8oyPWn559Y8hA35PTr64X7e3VgCAGePb+OxNSETUyMOq9oXlGsWs5LAgpOl4n8aWThYNdmwFB2BrySo2ISDaXC3rx4VpNLybpZYml/u4SpN0OJ3VAQek824JiNdgtlhLxZTCSRrvkfdV4Q5DOIJF8Sp0DIFQTJWAkiFlqByMz861DEB3yRu0oI0HFmsLPxRWlB7rqKKuCNLrT30x0LYfQDF9ZEIHXpnCxb3LodtEWVHTPUN68ubjBndC2TMoNIoWoxYErC9Ls4UneoIlmaGosCCoWV0+F51hTkMYLz6e3nVhTkC6vRD297cSagrQKFpR6sMTHTIXsyz4xfz6K3E4P875+Ybx3/BfUwrEKYsmnYkdJTf1rrQt2ikp0W9NekG4ancxtdUJPc7gjvT1UkCvaJhg7NnLXgnTPd/v3nQq6Kn1vbbLz2ny4oNxWE7o7TbJBtQXZ6Y5uVAckCdgIqS+YJ2MT9FLj7OiuWVvQtGjbd2A+anYqfRx3CZok0kNAjZb6tLsb8U37BdX6N2Ff2WqNh8WCGBA07Uq0P28Yr5jFxpqdsiA7OagVI2kef2uTGbre5AxOMlVBtcDntNs7rFNx/JJnuKTZK07HsqBpt8CgSZ8fyMA3hkjQvMsD/fhfzDjQhoYgAxFpBiImoSzWlKIqSPtvFh1x9MYzRlVQ7QzUvCAzYpAJ1IwE2AvSayX1kIPd3tktAhGxGwVydiv3fEPYC2IqGEoccvK62As6HhydoD+shTEjmtuP+QAAAABJRU5ErkJggg=="
-       y="283"
-       id="image135" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="116"
-       x="446"
-       y="343.99509"
-       id="text137"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">GitOps-Operator</text>
-    <!--MD5=[9d43cf96047e378adcca12cb04008485]
-entity jenkins-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="145"
-       x="72.5"
-       y="748"
-       id="rect139" />
-    <image
-       height="48"
-       width="48"
-       x="82.5"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEW0lEQVR4Xs2YS4plRRCGey93B3cHtYLaQe+gVnB34A4cOyhw5KhHjgTBkRNxJIIWQiPSYKkIjUj6mR8nzIp8nHNLsfvncDg3bj7+iIyIjMwX5T3Diyx41/i3hB7f/nn/zS+XL356+enr21c/3HzywJtvJMgffv0jd9jD8wkxH3OfPvo2HqlIK4R80zJ3nuM5hD78+ufzx9+1PD5//Xtqg+Veff8bdgpaB611HSF0hQoM+JAWs+ZGTwGzUOCrN2/z3x2OEkI/10JjoPrdZz8yWW43AS1d396WCYcIYQbG+uDLN/6ECko/bXIIclrbaZ8Q/RklHBNyVzlpC+zE2vEsTLtPCLWwDUNgbf00t7gGDIJ62Dj/sWGHkP0NY94oN3QCiEJ6HUdYuo3NWeMVIZbGzlqo1IDvvUfPYDKSUPqrBaS1seqFRyZMCcHAaVofhGIaCBI8C58Ygi7QytKKKSHNkxYoWQizz8ZdQ22HakwJmWR7YUsRQkOXOgIWehj/U0LuSr1wqFaLXYpmDXff/N+CEGx6Qr2kR8oL/Z5PA7TCF/v4KAtCMwslSY+UOTFYoqgENsNAmxKiDyFGBovdtNRNI7drEJagS2sVHF93gQojmM+uJmR24U1PHdyP3K7BLO+Ze0pl7D5oCXAFIRO0i81wUULwXvhsbC+948MjLfd1hGhtzNPH9Ihyqj4MjV1AESO1Br7OqWmqRzMQyrlVof3CPLtAJRQLq0BuWNyNCVkZlq3eKweyyxFYV/l9XWJ0gXTM/4SKQM/YamZV0ZhQqbG6DvJdtB6DMRgtrPJYK7V/mjaYEtK84cLP2LYu9bBm4oGKHmMkMuxM2ymhUmPVVOTH0Ad7xF7B3NgjHAUhHm3AQnQWrStCpTmCHdk0RFSGvLEND4Oo0qnWM9Yez6kYA7f1SJqlI0Q5YKZwhzblRNmpPPfccIiQ6TEJhzZnSjgtvE13Xqz+IUJmgTSKG1MrEW47Op9OzTv64ukL85SDhMoWMknYl9jCdEoXHlO8crkOTRs4SsjjYp9bL5PCr4dbh5bL/zU4ROihHuxnY7Eo67KkVB836KxkGGeYpssuIbo5hKOcJucp2sQ9RAJU7HjeTlT39TxjQsqt14TcYiWhQqYTUwujRxh7znKay1ae3tVqU2XikbScTiMfGBOKNbrr7lyU32/XeC6EqSVmfVlPjzJTbpUodceJYEzjDwiZdc6TY3zZqiUj2WpJuVOe6/2GydCwjyn16xjH7TIZ6QmhyPqRcGdofSuNaMyfa717Uy8YW185NQnWyF1ZCB6atxUu8FjvxXpC+niptkwBGPVQ2a5Nmz//xhNCKt1KdsGgw32AmS71IMW7tVDL4G50E/eE0JFMmmBRkYSqzmT+68re1ivKdrcZRn52ansm4RqpvdHuxCwfU7KmkubjZjs0PkxuTjIhV8065uBzqtmFCaJ48n1TT6j+NDso8dtITLOXnhDj4hP/zzMM5EzoneO9I/QXR43ZPLOxpDAAAAAASUVORK5CYII="
-       y="758"
-       id="image141" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="125"
-       x="82.5"
-       y="818.99512"
-       id="text143"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">Jenkins Controller</text>
-    <!--MD5=[be54a0a1a1e8fc81c54b99bbcc0dd4cb]
-entity jenkinsNode-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="99"
-       x="307.5"
-       y="748"
-       id="rect145" />
-    <image
-       height="48"
-       width="48"
-       x="317.5"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEW0lEQVR4Xs2YS4plRRCGey93B3cHtYLaQe+gVnB34A4cOyhw5KhHjgTBkRNxJIIWQiPSYKkIjUj6mR8nzIp8nHNLsfvncDg3bj7+iIyIjMwX5T3Diyx41/i3hB7f/nn/zS+XL356+enr21c/3HzywJtvJMgffv0jd9jD8wkxH3OfPvo2HqlIK4R80zJ3nuM5hD78+ufzx9+1PD5//Xtqg+Veff8bdgpaB611HSF0hQoM+JAWs+ZGTwGzUOCrN2/z3x2OEkI/10JjoPrdZz8yWW43AS1d396WCYcIYQbG+uDLN/6ECko/bXIIclrbaZ8Q/RklHBNyVzlpC+zE2vEsTLtPCLWwDUNgbf00t7gGDIJ62Dj/sWGHkP0NY94oN3QCiEJ6HUdYuo3NWeMVIZbGzlqo1IDvvUfPYDKSUPqrBaS1seqFRyZMCcHAaVofhGIaCBI8C58Ygi7QytKKKSHNkxYoWQizz8ZdQ22HakwJmWR7YUsRQkOXOgIWehj/U0LuSr1wqFaLXYpmDXff/N+CEGx6Qr2kR8oL/Z5PA7TCF/v4KAtCMwslSY+UOTFYoqgENsNAmxKiDyFGBovdtNRNI7drEJagS2sVHF93gQojmM+uJmR24U1PHdyP3K7BLO+Ze0pl7D5oCXAFIRO0i81wUULwXvhsbC+948MjLfd1hGhtzNPH9Ihyqj4MjV1AESO1Br7OqWmqRzMQyrlVof3CPLtAJRQLq0BuWNyNCVkZlq3eKweyyxFYV/l9XWJ0gXTM/4SKQM/YamZV0ZhQqbG6DvJdtB6DMRgtrPJYK7V/mjaYEtK84cLP2LYu9bBm4oGKHmMkMuxM2ymhUmPVVOTH0Ad7xF7B3NgjHAUhHm3AQnQWrStCpTmCHdk0RFSGvLEND4Oo0qnWM9Yez6kYA7f1SJqlI0Q5YKZwhzblRNmpPPfccIiQ6TEJhzZnSjgtvE13Xqz+IUJmgTSKG1MrEW47Op9OzTv64ukL85SDhMoWMknYl9jCdEoXHlO8crkOTRs4SsjjYp9bL5PCr4dbh5bL/zU4ROihHuxnY7Eo67KkVB836KxkGGeYpssuIbo5hKOcJucp2sQ9RAJU7HjeTlT39TxjQsqt14TcYiWhQqYTUwujRxh7znKay1ae3tVqU2XikbScTiMfGBOKNbrr7lyU32/XeC6EqSVmfVlPjzJTbpUodceJYEzjDwiZdc6TY3zZqiUj2WpJuVOe6/2GydCwjyn16xjH7TIZ6QmhyPqRcGdofSuNaMyfa717Uy8YW185NQnWyF1ZCB6atxUu8FjvxXpC+niptkwBGPVQ2a5Nmz//xhNCKt1KdsGgw32AmS71IMW7tVDL4G50E/eE0JFMmmBRkYSqzmT+68re1ivKdrcZRn52ansm4RqpvdHuxCwfU7KmkubjZjs0PkxuTjIhV8065uBzqtmFCaJ48n1TT6j+NDso8dtITLOXnhDj4hP/zzMM5EzoneO9I/QXR43ZPLOxpDAAAAAASUVORK5CYII="
-       y="758"
-       id="image147" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="79"
-       x="317.5"
-       y="818.99512"
-       id="text149"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">Agent Pods</text>
-    <!--MD5=[aff0e67a1692f4b0d96c087fa0872bfd]
-entity registry-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="107"
-       x="533.5"
-       y="570"
-       id="rect151" />
-    <image
-       height="48"
-       width="48"
-       x="543.5"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABfklEQVR4Xu2YMU4DMRBFc5e5QW7ACbgBN8hFcoPUKZCoqLaiikRLE1GhSBAhRSkiQUBIUYTCwJq1PePsJDNR1oVHr1qvx0/+W9jb22VWPfqg69ordL/4GkyWF7dzkerls55yWb3yUQK+M3xYvW++49V8pYVGj28wnh3I9dO6ntW/eeajSdBsn1NCaP6x5S1aUAghuP3xsq4SQrilfH4LOiEkuUkJoWP7qoWaiWFRoelqw2e2oxa6ulvEi/8WFTo2LzAIQSo1KqRoahHiqUVCirzAJsRTi4QUeYFNCFhqkZCuo1GIpOaFdHmBWYik5oV0eYFZCOLUvJC6nV0oTM0JqfOCUwiFqTkhdV5wCiEIUvM7hMcaHXg6qJvgEYqPHggVyqdyFcKTJX4BHVL9n4OdEJ4p+Yd2ToqQRBGSKEISRUiiCEkUIYkiJFGEJIqQRPZCg8mSv3ROmsudE7Jcpe2Ev4id0O7v3tk33IXVkB/WXqguy3VYQZNUU1So88pO6AfRZ2ysFtxE8AAAAABJRU5ErkJggg=="
-       y="580"
-       id="image153" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="87"
-       x="543.5"
-       y="640.99512"
-       id="text155"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">OCI Registry</text>
-    <!--MD5=[238cf00dfb6b677c1a4ce9de11b3f5e8]
-entity apiServer-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="94"
-       x="850"
-       y="570"
-       id="rect157" />
-    <image
-       height="48"
-       width="48"
-       x="860"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
-       y="580"
-       id="image159" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="74"
-       x="860"
-       y="640.99512"
-       id="text161"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">API-Server</text>
-    <!--MD5=[d31e3d09029a7347f80c3157fb77757b]
-entity kubelet-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="73"
-       x="701.5"
-       y="570"
-       id="rect163" />
-    <image
-       height="48"
-       width="48"
-       x="711.5"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
-       y="580"
-       id="image165" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="53"
-       x="711.5"
-       y="640.99512"
-       id="text167"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">kubelet</text>
-    <!--MD5=[0f88696c0171d2e9db3651e277d18a7c]
-entity containerd-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="160"
-       x="658"
-       y="748"
-       id="rect169" />
-    <image
-       height="48"
-       width="48"
-       x="668"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACWklEQVR4Xu2WQUpcQRCGvYs3yA08gTfIDXKC3GBukLULIStXs3IVEFxlI1kFwQyBIQQhk4ggEtqP/mPZU6/fq/eciQnaP4X0VPfr/l5VdT130n+mHe/412pAkRpQpAYUqQFFeo5Aq5vf8y9XZvz0K6ZoC0BAvPnwbfbxEnt7+p2ffsUUbQdINNi7Tz9eNtDh559dI19kChQMpmGgsMImALHX6+Mlp4qDsQZ4RgKxw/78K4v9RKHJQMqLgCxNI1PGU2eXNyxgmZ+715MCkVwNCNLi1+365B/FQHYYuxBw+2lA+Mtrb37MVYwBESdmYTpZXjuyGIgDeAxTv+FvOcaI1iyXjnJhxQ4cB5db4TFEK0e9G3vKHwNxsAoWUyS6KeMkG9tPFjsgTq1Wj6Kl8VMD7R0tSg8BYzG7macOBK8OwNjCxmUN2bisGyCsnnCqRWkBYztYZacpB10HUkGAxRtsbm5z4gSuc5rWgFb5u50ykFVZ3/3EX73hZfxLGZzdtVRb/ADE7mRh9+CcHDFQSM3DO/Gw3SlSgB9T4nStGLx6fyG/kmiPsJWm8OsR87hSq6eMFbqiWzeA/GHrH7g6UMp9wrs2VreEu+oFIqp9D69yqXXTPyw1C+/tqBdoILxq+X24Vak/eW9NvUApX4Hyw6S2MSu66ki51jesIaCU36x6t0eKKJbfqTEKgFJmGuhjfSKKatl+IlIMlPKLqvGX97MqOHgBJTpcXNUoIInI6xtkHU93TV9T/OKYlKCuJgCVImb6r0jX7XHBqOqRQH9PDShSA4rUgCI1oEgNKNIdd6X3L4lTCWgAAAAASUVORK5CYII="
-       y="758"
-       id="image171" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="140"
-       x="668"
-       y="818.99512"
-       id="text173"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">containerd daemon</text>
-    <!--MD5=[240a9df32f30199f91de18cac3e3b376]
-entity appRepo-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="89"
-       x="184.5"
-       y="570"
-       id="rect175" />
-    <image
-       height="48"
-       width="48"
-       x="194.5"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
-       y="580"
-       id="image177" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="69"
-       x="194.5"
-       y="640.99512"
-       id="text179"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">App Repo</text>
-    <!--MD5=[9db040bd2a9e8d2c667e615e4bf3a348]
-entity configRepo-->
-    <rect
-       height="84.296898"
-       style="fill:#ffffff;stroke:#23a3dd;stroke-width:1.5;filter:url(#f5mw8z4v66c17)"
-       width="108"
-       x="309"
-       y="570"
-       id="rect181" />
-    <image
-       height="48"
-       width="48"
-       x="319"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
-       y="580"
-       id="image183" />
-    <text
-       font-size="14"
-       lengthAdjust="spacing"
-       textLength="88"
-       x="319"
-       y="640.99512"
-       id="text185"
-       style="font-size:14px;font-family:sans-serif;fill:#23a3dd">GitOps Repo</text>
-    <!--MD5=[54eb7255166ff5a37326ea6c7fead32d]
-link docker to k8s-->
-    <path
-       d="m 1083.25,747.63 c -12.065,-57.08 -34.56,-163.48 -54.195,-256.3525 -9.8175,-46.4363 -18.92,-89.4906 -25.6462,-121.3072 -0.8408,-3.9771 -1.6445,-7.7785 -2.4078,-11.3891 -0.1908,-0.9026 -0.3791,-1.7933 -0.5648,-2.6719 -0.093,-0.4392 -0.1851,-0.8754 -0.2766,-1.3086"
-       id="docker-to-k8s"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="1001.1937,359.4926 1005.9345,362.5788 1000.1596,354.6007 998.1075,364.2334 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon188" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="21"
-       x="1068"
-       y="616.56689"
-       id="text190"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">run</text>
-    <!--MD5=[62ebd5612a452eef3996131dff0429ad]
-link appRepo to configRepo-->
-    <!--MD5=[cc7c54083c0009d8f594fa2b5ac577eb]
-reverse link appRepo to jenkinsNode-->
-    <path
-       d="m 233.24,659.58 c 3.53,19.38 9.99,41.31 21.76,58.42 13.21,19.2 33.43,34.83 52.39,46.5"
-       id="appRepo-backto-jenkinsNode"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="233.1605,659.1189 237.7759,662.3896 232.32,654.19 229.8898,663.7343 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon193" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="24"
-       x="256"
-       y="706.56689"
-       id="text195"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">pull</text>
-    <!--MD5=[795fead94e5bcf74c9fc534ce9126403]
-reverse link configRepo to jenkinsNode-->
-    <path
-       d="m 309.24,658.14 c -7.02,8.49 -13.18,17.87 -17.24,27.86 -8.75,21.55 2.02,43.6 17.15,61.74"
-       id="configRepo-backto-jenkinsNode"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="309.496,657.8463 309.9299,663.4865 312.75,654.05 303.8559,658.2801 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon198" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="31"
-       x="293"
-       y="706.56689"
-       id="text200"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">push</text>
-    <!--MD5=[5cd19aba9c89d68a4964ae79a1c35c93]
-reverse link registry to jenkinsNode-->
-    <path
-       d="M 528.36,642.8 C 500.22,655.77 465.6,669.85 433,678 c -19.05,4.76 -74.76,-6.5 -88,8 -14.99,16.42 -12.73,40.97 -6.37,61.98"
-       id="registry-backto-jenkinsNode"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="528.6494,642.6752 526.7172,647.9918 533.18,640.56 523.3328,640.7429 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon203" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="31"
-       x="346"
-       y="706.56689"
-       id="text205"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">push</text>
-    <!--MD5=[b490a7044f76a8ba36559da392480c34]
-link kubelet to containerd-->
-    <path
-       d="m 738,654.26 c 0,26.59 0,61.2 0,88.69"
-       id="kubelet-to-containerd"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="738,742.99 734,738.99 738,747.99 742,738.99 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon208" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="93"
-       x="739"
-       y="706.56689"
-       id="text210"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">run containers</text>
-    <!--MD5=[15c6ac35fcb1e731cd5e0d5d2bb57d94]
-link jenkins to jenkinsNode-->
-    <path
-       d="m 217.66,790 c 27.76,0 58.91,0 84.71,0"
-       id="jenkins-to-jenkinsNode"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="302.45,790 298.45,794 307.45,790 298.45,786 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon213" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="53"
-       x="236"
-       y="783.06689"
-       id="text215"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">manage</text>
-    <!--MD5=[78f8e12b041618947ca46784ea973f2c]
-link jenkinsNode to docker-->
-    <path
-       d="m 366.83,747.92 c 7.25,-20.96 19.48,-44.44 39.67,-56.92 8.98,-5.55 84.46,-0.65 95,0 204.95,12.69 257.92,13.02 458.5,57 19.38,4.25 39.98,10.12 59,16.13"
-       id="jenkinsNode-to-docker"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="1019.0356,764.1434 1014.0107,766.7417 1023.8,765.66 1016.4373,759.1186 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon218" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="93"
-       x="407.5"
-       y="699.06689"
-       id="text220"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">run containers</text>
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="84"
-       x="412"
-       y="714.19971"
-       id="text222"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">build images</text>
-    <!--MD5=[28831c1e52ce3f1d797fb76d998d21be]
-link gitops to configRepo-->
-    <path
-       d="m 484.39,357.02 c -26.12,54.66 -72.22,151.11 -99.47,208.12"
-       id="gitops-to-configRepo"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="384.8258,565.3486 382.9413,560.0149 382.67,569.86 390.1595,563.4641 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon225" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="24"
-       x="471"
-       y="400.06689"
-       id="text227"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">pull</text>
-    <!--MD5=[4ae5632e4d473fc0a203a7abc7aaabdb]
-link gitops to apiServer-->
-    <path
-       d="m 561.48,357.03 c 28.05,17.76 63.1,36.79 97.52,46.97 28.39,8.4 108.12,-8.04 133,8 53.37,34.41 81.3,105.38 94.58,152.59"
-       id="gitops-to-apiServer"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="886.6399,564.8302 881.7199,562.0384 887.97,569.65 889.4317,559.9102 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon230" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="103"
-       x="660"
-       y="400.06689"
-       id="text232"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">apply resources</text>
-    <!--MD5=[22709b06756109b0d79c4dd9acb4bd63]
-link kubelet to registry-->
-    <path
-       d="m 701.08,612 c -16.61,0 -36.62,0 -55.21,0"
-       id="kubelet-to-registry"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="645.66,612 649.66,608 640.66,612 649.66,616 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon235" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="24"
-       x="659"
-       y="605.06689"
-       id="text237"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">pull</text>
-    <!--MD5=[38a41783ac9f82ad36678b3dce3dabf9]
-link kubelet to apiServer-->
-    <path
-       d="m 774.88,612 c 20.72,0 46.93,0 69.76,0"
-       id="kubelet-to-apiServer"
-       style="fill:none;stroke:#000000;stroke-width:1"
-       inkscape:connector-curvature="0" />
-    <polygon
-       points="844.75,612 840.75,616 849.75,612 840.75,608 "
-       style="fill:#000000;stroke:#000000;stroke-width:1"
-       id="polygon240" />
-    <text
-       font-size="13"
-       lengthAdjust="spacing"
-       textLength="39"
-       x="792.75"
-       y="605.06689"
-       id="text242"
-       style="font-size:13px;font-family:sans-serif;fill:#000000">watch</text>
-    <!--MD5=[9e27516bab452b5539bebaa8a4df6f24]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="405.6px" preserveAspectRatio="none" style="width:511px;height:405px;background:#00000000;" version="1.1" viewBox="0 0 511 405" width="511.2px" zoomAndPan="magnify"><defs><filter height="300%" id="f19dudwb2blsnz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.2"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="2.4" dy="2.4" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c8375d0abf05781a4d00ac7db9cff037]
+cluster host--><polygon fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" points="9.6,9.6,15.6,3.6,501,3.6,501,395.4,495,401.4,9.6,401.4,9.6,9.6" style="stroke:#23A3DD;stroke-width:0.8999999999999999;"/><line style="stroke:#23A3DD;stroke-width:0.8999999999999999;" x1="495" x2="501" y1="9.6" y2="3.6"/><line style="stroke:#23A3DD;stroke-width:0.8999999999999999;" x1="9.6" x2="495" y1="9.6" y2="9.6"/><line style="stroke:#23A3DD;stroke-width:0.8999999999999999;" x1="495" x2="495" y1="9.6" y2="401.4"/><image height="28.8" width="28.8" x="238.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAtUlEQVR4Xu2Xyw3EIAwFaYGeaIEWKJ8WslYiS8bKkw8riA9vjnw0oygHXK5kFL/wNQyKYFAEgyJ80JyztVaOICLRuYAlSLZrrf7eTkTnmpag3ru/sR+R2oYl6PDneRCpbViC7Dm7vgPkYpCCXAxSkItBCnIxSEEuBinIxSAFuRikIBeDFORikIJcuYPSPfLHGP74fkRqG5agdIPidTcdGxdF9DJKE/Iv7p/6HAZFMCiCQRHpgn6x3znS2I7hMgAAAABJRU5ErkJggg==" y="11.4"/><text fill="#000000" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="47.4" x="229.2" y="47.9971">Your Host</text><!--MD5=[81d16cdabbe89c1a39395d00a8354929]
+cluster k8s--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="316.2" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="351" x="130.8" y="66"/><image height="28.8" width="28.8" x="291.9" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg==" y="67.2"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="68.4" x="272.1" y="103.7971">K3d Container</text><!--MD5=[dd609d8abf8dbddcb524f08664a21696]
+cluster scmm--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="109.8" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="167.4" x="169.2" y="139.8"/><image height="28.8" width="28.8" x="238.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4ElEQVR4Xu2VTUrEQBCF597ewBt4Am/gDQRXboIrV2bjYhjwD2EQaR95pKhUOumfdMdZ9KMJlZoO9eVVdebgLkwHm/hvNaCQGlBIDSgkP9D7+dem9pIHCDTd6dx//tgfdpEHCALN/es3yLjszzXlB6JJWPu75QdyAxNMAoq4ZXfU0SIQRJMAxCvWDlhrQNokIavNtAbkhunWJu0wTwEgGWrpGk2q51MAyA2TNO8arnZfIYWBjEkEqnfuwkBuNMk4tAQkeey5e/nizCHZxx3SKCC2zDRuXgCZ2+cP5hEwxgLW9ePp5ulNXmOFLApIurYExFsSIEZt9hRXxMgThXDIXD0cce19BzYNyGARiN8qFCCBGEMUbsN+xOTgfltjVBSQm46RBG5kRTHSwAAxhq7QMLRM5mldsUCaQwMh4BsLDeAY0CQ9OjHKB2KNbvi/68YDJeU5K1365yoWiG/M2mRikrekkelBkP2hygRikuU1jQz19OkE5QDJqzMjTDJG00fTlAbEJUkCcaiBgkA9kalkIG2ATDRQMubXqwQg3SyKKAVpXBKQsYeIXGrjViUAGXsESCe3KwHIZDjR8/xGxQLNZU5cKW0CsqkSygcq3iwqH6iSGlBIDSikBhRSAwrp4oD+AGyZmNJHN/KJAAAAAElFTkSuQmCC" y="141"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" font-weight="bold" lengthAdjust="spacing" textLength="65.4" x="220.2" y="177.5971">SCM-Manager</text><!--MD5=[7c0f197cad09c4d86c8b8989e1030b9e]
+entity docker--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="50.5781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="81.6" x="19.2" y="189.6"/><image height="28.8" width="28.8" x="25.2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACWklEQVR4Xu2WQUpcQRCGvYs3yA08gTfIDXKC3GBukLULIStXs3IVEFxlI1kFwQyBIQQhk4ggEtqP/mPZU6/fq/eciQnaP4X0VPfr/l5VdT130n+mHe/412pAkRpQpAYUqQFFeo5Aq5vf8y9XZvz0K6ZoC0BAvPnwbfbxEnt7+p2ffsUUbQdINNi7Tz9eNtDh559dI19kChQMpmGgsMImALHX6+Mlp4qDsQZ4RgKxw/78K4v9RKHJQMqLgCxNI1PGU2eXNyxgmZ+715MCkVwNCNLi1+365B/FQHYYuxBw+2lA+Mtrb37MVYwBESdmYTpZXjuyGIgDeAxTv+FvOcaI1iyXjnJhxQ4cB5db4TFEK0e9G3vKHwNxsAoWUyS6KeMkG9tPFjsgTq1Wj6Kl8VMD7R0tSg8BYzG7macOBK8OwNjCxmUN2bisGyCsnnCqRWkBYztYZacpB10HUkGAxRtsbm5z4gSuc5rWgFb5u50ykFVZ3/3EX73hZfxLGZzdtVRb/ADE7mRh9+CcHDFQSM3DO/Gw3SlSgB9T4nStGLx6fyG/kmiPsJWm8OsR87hSq6eMFbqiWzeA/GHrH7g6UMp9wrs2VreEu+oFIqp9D69yqXXTPyw1C+/tqBdoILxq+X24Vak/eW9NvUApX4Hyw6S2MSu66ki51jesIaCU36x6t0eKKJbfqTEKgFJmGuhjfSKKatl+IlIMlPKLqvGX97MqOHgBJTpcXNUoIInI6xtkHU93TV9T/OKYlKCuJgCVImb6r0jX7XHBqOqRQH9PDShSA4rUgCI1oEgNKNIdd6X3L4lTCWgAAAAASUVORK5CYII=" y="195.6"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="69.6" x="25.2" y="232.1971">Docker Daemon</text><!--MD5=[4956c46b4aaa4df0e7da7ff57610b9f4]
+entity gitops--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="48.1781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="42.6" x="365.7" y="192"/><rect fill="#FFFFFF" height="48.1781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="42.6" x="363.3" y="189.6"/><image height="28.8" width="28.8" x="368.1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACs0lEQVR4Xu2YT4oUMRTG5y51A2/gCbyBN/AE3qBv4NqF4MpVr1wNCLNyI65E0EEYRAacUQYGkfJHvzbE9yUvSXUx0ws/PpqmKnn58v4klZzMR4YT/+C+sYKgq9vf5z9+Qf74dxVsP/98+Oo88dH2C93t1RJB7y5vN28vH7++ePDy0/T8oyPWn559Y8hA35PTr64X7e3VgCAGePb+OxNSETUyMOq9oXlGsWs5LAgpOl4n8aWThYNdmwFB2BrySo2ISDaXC3rx4VpNLybpZYml/u4SpN0OJ3VAQek824JiNdgtlhLxZTCSRrvkfdV4Q5DOIJF8Sp0DIFQTJWAkiFlqByMz861DEB3yRu0oI0HFmsLPxRWlB7rqKKuCNLrT30x0LYfQDF9ZEIHXpnCxb3LodtEWVHTPUN68ubjBndC2TMoNIoWoxYErC9Ls4UneoIlmaGosCCoWV0+F51hTkMYLz6e3nVhTkC6vRD297cSagrQKFpR6sMTHTIXsyz4xfz6K3E4P875+Ybx3/BfUwrEKYsmnYkdJTf1rrQt2ikp0W9NekG4ancxtdUJPc7gjvT1UkCvaJhg7NnLXgnTPd/v3nQq6Kn1vbbLz2ny4oNxWE7o7TbJBtQXZ6Y5uVAckCdgIqS+YJ2MT9FLj7OiuWVvQtGjbd2A+anYqfRx3CZok0kNAjZb6tLsb8U37BdX6N2Ff2WqNh8WCGBA07Uq0P28Yr5jFxpqdsiA7OagVI2kef2uTGbre5AxOMlVBtcDntNs7rFNx/JJnuKTZK07HsqBpt8CgSZ8fyMA3hkjQvMsD/fhfzDjQhoYgAxFpBiImoSzWlKIqSPtvFh1x9MYzRlVQ7QzUvCAzYpAJ1IwE2AvSayX1kIPd3tktAhGxGwVydiv3fEPYC2IqGEoccvK62As6HhydoD+shTEjmtuP+QAAAABJRU5ErkJggg==" y="194.4"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="33" x="368.1" y="230.9971">ArgoCD</text><!--MD5=[240a9df32f30199f91de18cac3e3b376]
+entity appRepo--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="48.1781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="55.2" x="181.2" y="192"/><rect fill="#FFFFFF" height="48.1781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="55.2" x="178.8" y="189.6"/><image height="28.8" width="28.8" x="183.6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII=" y="194.4"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="45.6" x="183.6" y="230.9971">App Repos</text><!--MD5=[9db040bd2a9e8d2c667e615e4bf3a348]
+entity configRepo--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="48.1781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="66.6" x="260.1" y="192"/><rect fill="#FFFFFF" height="48.1781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="66.6" x="257.7" y="189.6"/><image height="28.8" width="28.8" x="262.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII=" y="194.4"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="57" x="262.5" y="230.9971">GitOps Repos</text><!--MD5=[aff0e67a1692f4b0d96c087fa0872bfd]
+entity registry--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="50.5781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="46.8" x="354" y="303"/><image height="28.8" width="28.8" x="360" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABfklEQVR4Xu2YMU4DMRBFc5e5QW7ACbgBN8hFcoPUKZCoqLaiikRLE1GhSBAhRSkiQUBIUYTCwJq1PePsJDNR1oVHr1qvx0/+W9jb22VWPfqg69ordL/4GkyWF7dzkerls55yWb3yUQK+M3xYvW++49V8pYVGj28wnh3I9dO6ntW/eeajSdBsn1NCaP6x5S1aUAghuP3xsq4SQrilfH4LOiEkuUkJoWP7qoWaiWFRoelqw2e2oxa6ulvEi/8WFTo2LzAIQSo1KqRoahHiqUVCirzAJsRTi4QUeYFNCFhqkZCuo1GIpOaFdHmBWYik5oV0eYFZCOLUvJC6nV0oTM0JqfOCUwiFqTkhdV5wCiEIUvM7hMcaHXg6qJvgEYqPHggVyqdyFcKTJX4BHVL9n4OdEJ4p+Yd2ToqQRBGSKEISRUiiCEkUIYkiJFGEJIqQRPZCg8mSv3ROmsudE7Jcpe2Ev4id0O7v3tk33IXVkB/WXqguy3VYQZNUU1So88pO6AfRZ2ysFtxE8AAAAABJRU5ErkJggg==" y="309"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="34.8" x="360" y="345.5971">Registry</text><!--MD5=[9d43cf96047e378adcca12cb04008485]
+entity jenkins--><rect fill="#FFFFFF" filter="url(#f19dudwb2blsnz)" height="50.5781" style="stroke:#23A3DD;stroke-width:0.8999999999999999;" width="42" x="271.2" y="303"/><image height="28.8" width="28.8" x="277.2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEW0lEQVR4Xs2YS4plRRCGey93B3cHtYLaQe+gVnB34A4cOyhw5KhHjgTBkRNxJIIWQiPSYKkIjUj6mR8nzIp8nHNLsfvncDg3bj7+iIyIjMwX5T3Diyx41/i3hB7f/nn/zS+XL356+enr21c/3HzywJtvJMgffv0jd9jD8wkxH3OfPvo2HqlIK4R80zJ3nuM5hD78+ufzx9+1PD5//Xtqg+Veff8bdgpaB611HSF0hQoM+JAWs+ZGTwGzUOCrN2/z3x2OEkI/10JjoPrdZz8yWW43AS1d396WCYcIYQbG+uDLN/6ECko/bXIIclrbaZ8Q/RklHBNyVzlpC+zE2vEsTLtPCLWwDUNgbf00t7gGDIJ62Dj/sWGHkP0NY94oN3QCiEJ6HUdYuo3NWeMVIZbGzlqo1IDvvUfPYDKSUPqrBaS1seqFRyZMCcHAaVofhGIaCBI8C58Ygi7QytKKKSHNkxYoWQizz8ZdQ22HakwJmWR7YUsRQkOXOgIWehj/U0LuSr1wqFaLXYpmDXff/N+CEGx6Qr2kR8oL/Z5PA7TCF/v4KAtCMwslSY+UOTFYoqgENsNAmxKiDyFGBovdtNRNI7drEJagS2sVHF93gQojmM+uJmR24U1PHdyP3K7BLO+Ze0pl7D5oCXAFIRO0i81wUULwXvhsbC+948MjLfd1hGhtzNPH9Ihyqj4MjV1AESO1Br7OqWmqRzMQyrlVof3CPLtAJRQLq0BuWNyNCVkZlq3eKweyyxFYV/l9XWJ0gXTM/4SKQM/YamZV0ZhQqbG6DvJdtB6DMRgtrPJYK7V/mjaYEtK84cLP2LYu9bBm4oGKHmMkMuxM2ymhUmPVVOTH0Ad7xF7B3NgjHAUhHm3AQnQWrStCpTmCHdk0RFSGvLEND4Oo0qnWM9Yez6kYA7f1SJqlI0Q5YKZwhzblRNmpPPfccIiQ6TEJhzZnSjgtvE13Xqz+IUJmgTSKG1MrEW47Op9OzTv64ukL85SDhMoWMknYl9jCdEoXHlO8crkOTRs4SsjjYp9bL5PCr4dbh5bL/zU4ROihHuxnY7Eo67KkVB836KxkGGeYpssuIbo5hKOcJucp2sQ9RAJU7HjeTlT39TxjQsqt14TcYiWhQqYTUwujRxh7znKay1ae3tVqU2XikbScTiMfGBOKNbrr7lyU32/XeC6EqSVmfVlPjzJTbpUodceJYEzjDwiZdc6TY3zZqiUj2WpJuVOe6/2GydCwjyn16xjH7TIZ6QmhyPqRcGdofSuNaMyfa717Uy8YW185NQnWyF1ZCB6atxUu8FjvxXpC+niptkwBGPVQ2a5Nmz//xhNCKt1KdsGgw32AmS71IMW7tVDL4G50E/eE0JFMmmBRkYSqzmT+68re1ivKdrcZRn52ansm4RqpvdHuxCwfU7KmkubjZjs0PkxuTjIhV8065uBzqtmFCaJ48n1TT6j+NDso8dtITLOXnhDj4hP/zzMM5EzoneO9I/QXR43ZPLOxpDAAAAAASUVORK5CYII=" y="309"/><text fill="#23A3DD" font-family="sans-serif" font-size="8.4" lengthAdjust="spacing" textLength="30" x="277.2" y="345.5971">Jenkins</text><!--MD5=[54eb7255166ff5a37326ea6c7fead32d]
+link docker to k8s--><path d="M100.896,214.8 C108.969,214.8 116.8515,214.8 123.0585,214.8 C124.6102,214.8 126.0573,214.8 127.3764,214.8 C128.0359,214.8 128.6635,214.8 129.2562,214.8 C129.5526,214.8 129.8402,214.8 130.1187,214.8 C130.258,214.8 130.395,214.8 130.5297,214.8 C130.597,214.8 130.6638,214.8 130.73,214.8 " fill="none" id="docker-to-k8s" style="stroke:#000000;stroke-width:0.6;"/><polygon fill="#000000" points="130.73,214.8,125.33,212.4,127.73,214.8,125.33,217.2,130.73,214.8" style="stroke:#000000;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="12.6" x="111.792" y="210.6401">run</text><!--MD5=[62ebd5612a452eef3996131dff0429ad]
+link appRepo to configRepo--><!--MD5=[bfb73bab2370e33b3fa82b61d08a598d]
+reverse link appRepo to jenkins--><path d="M227.76,242.754 C233.97,251.13 240.846,260.364 247.2,268.8 C255.63,279.99 265.038,292.314 273.066,302.772 " fill="none" id="appRepo-backto-jenkins" style="stroke:#000000;stroke-width:0.6;"/><polygon fill="#000000" points="225.858,240.186,227.1417,245.9542,227.6429,242.5973,230.9998,243.0984,225.858,240.186" style="stroke:#000000;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="14.4" x="258.6" y="281.4401">pull</text><!--MD5=[48c7695495790019ea35b0195d4ecde7]
+reverse link configRepo to jenkins--><path d="M292.2,243.138 C292.2,261.432 292.2,285.186 292.2,302.844 " fill="none" id="configRepo-backto-jenkins" style="stroke:#000000;stroke-width:0.6;"/><polygon fill="#000000" points="292.2,240.024,289.8,245.424,292.2,243.024,294.6,245.424,292.2,240.024" style="stroke:#000000;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="18.6" x="292.8" y="281.4401">push</text><!--MD5=[2fe7a98b81673473be5475021e6c49b8]
+link jenkins to registry--><path d="M313.26,328.2 C324.618,328.2 338.748,328.2 350.85,328.2 " fill="none" id="jenkins-to-registry" style="stroke:#000000;stroke-width:0.6;"/><polygon fill="#000000" points="353.88,328.2,348.48,325.8,350.88,328.2,348.48,330.6,353.88,328.2" style="stroke:#000000;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="18.6" x="324.3" y="324.0401">push</text><!--MD5=[33a5e2dd74224868ee00d43b7d19a8d6]
+reverse link configRepo to gitops--><path d="M329.952,214.8 C341.256,214.8 353.286,214.8 363.276,214.8 " fill="none" id="configRepo-backto-gitops" style="stroke:#000000;stroke-width:0.6;"/><polygon fill="#000000" points="326.79,214.8,332.19,217.2,329.79,214.8,332.19,212.4,326.79,214.8" style="stroke:#000000;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="14.4" x="337.8" y="210.6401">pull</text><!--MD5=[3fac2b5a7f64322a2e4c41ff56b479bf]
+link gitops to gitops--><path d="M408.402,203.196 C419.478,201.678 429.3,205.548 429.3,214.8 C429.3,223.188 421.23,227.148 411.48,226.692 " fill="none" id="gitops-to-gitops" style="stroke:#000000;stroke-width:0.6;"/><polygon fill="#000000" points="408.402,226.404,413.5596,229.2884,411.3894,226.6787,413.9991,224.5085,408.402,226.404" style="stroke:#000000;stroke-width:0.6;"/><text fill="#000000" font-family="sans-serif" font-size="7.8" lengthAdjust="spacing" textLength="26.4" x="432.9" y="217.5401">deploy</text><!--MD5=[c65bb53a6c05dad8311af3b630391b22]
+link registry to gitops--><!--MD5=[50ddcf556f05daa7fc37782c286399b0]
 @startuml
 
 !includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-full.iuml
@@ -656,43 +35,40 @@ link kubelet to apiServer-->
 
 !define CLOUDOGU_BLUE #23a3dd
 
+skinparam backgroundcolor TRANSPARENT
+
 node "Your Host" as host <<$computer>> #ffffff {
 
     rectangle "<$docker>\nDocker Daemon" as docker
     
     rectangle "<$k8s>\nK3d Container" as k8s {
-        rectangle "<$sync>\nGitOps-Operator" as gitops
         
         together {
-            rectangle "<$box>\nOCI Registry" as registry
-            rectangle "<$k8s>\nAPI-Server" as apiServer
-            rectangle "<$k8s>\nkubelet" as kubelet
-            rectangle "<$docker>\ncontainerd daemon" as containerd
+            rectangle "<$scm>\nSCM-Manager" as scmm {
+                collections "<$git>\nApp Repos" as appRepo
+                collections "<$git>\nGitOps Repos" as configRepo
+            }
+            collections "<$sync>\nArgoCD" as gitops
         }
         
-        rectangle "<$scm>\nSCM-Manager" as scmm {
-            rectangle "<$git>\nApp Repo" as appRepo
-            rectangle "<$git>\nGitOps Repo" as configRepo
+        together {
+            rectangle "<$box>\nRegistry" as registry
+            rectangle "<$jenkins>\nJenkins" as jenkins
         }
         
-        rectangle "<$jenkins>\nJenkins Controller" as jenkins
-        rectangle "<$jenkins>\nAgent Pods" as jenkinsNode
     }
 }
 
 docker -> k8s : run
 appRepo -[hidden]> configRepo
-appRepo <- - jenkinsNode : pull
-configRepo <- - jenkinsNode : push
-registry <- - jenkinsNode : push
+appRepo <- - jenkins : pull
+configRepo <- - jenkins : push
+jenkins -> registry : push
 
-kubelet - -> containerd : run containers
-jenkins -> jenkinsNode : manage
-jenkinsNode -> docker: run containers\nbuild images
-gitops - -> configRepo : pull
-gitops -> apiServer : apply resources
-kubelet -> registry : pull
-kubelet -> apiServer : watch
+
+configRepo <- gitops : pull
+gitops -> gitops : deploy
+registry -[hidden]> gitops
 
 skinparam arrow {
   Color BLACK
@@ -719,6 +95,12 @@ skinparam rectangle {
     FontColor CLOUDOGU_BLUE
 }
 
+skinparam collections {
+    BackgroundColor WHITE
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
 skinparam interface {
     BackgroundColor WHITE
     BorderColor #16688d
@@ -728,6 +110,7 @@ skinparam note {
     BackgroundColor WHITE
     BorderColor #16688d
 }
+
 
 @enduml
 
@@ -1804,43 +1187,40 @@ sprite $scm [48x48/16] {
 skinparam folderBackgroundColor<<DOGU SCM>> White
 
 
+skinparam backgroundcolor TRANSPARENT
+
 node "Your Host" as host <<$computer>> #ffffff {
 
     rectangle "<$docker>\nDocker Daemon" as docker
     
     rectangle "<$k8s>\nK3d Container" as k8s {
-        rectangle "<$sync>\nGitOps-Operator" as gitops
         
         together {
-            rectangle "<$box>\nOCI Registry" as registry
-            rectangle "<$k8s>\nAPI-Server" as apiServer
-            rectangle "<$k8s>\nkubelet" as kubelet
-            rectangle "<$docker>\ncontainerd daemon" as containerd
+            rectangle "<$scm>\nSCM-Manager" as scmm {
+                collections "<$git>\nApp Repos" as appRepo
+                collections "<$git>\nGitOps Repos" as configRepo
+            }
+            collections "<$sync>\nArgoCD" as gitops
         }
         
-        rectangle "<$scm>\nSCM-Manager" as scmm {
-            rectangle "<$git>\nApp Repo" as appRepo
-            rectangle "<$git>\nGitOps Repo" as configRepo
+        together {
+            rectangle "<$box>\nRegistry" as registry
+            rectangle "<$jenkins>\nJenkins" as jenkins
         }
         
-        rectangle "<$jenkins>\nJenkins Controller" as jenkins
-        rectangle "<$jenkins>\nAgent Pods" as jenkinsNode
     }
 }
 
 docker -> k8s : run
 appRepo -[hidden]> configRepo
-appRepo <- - jenkinsNode : pull
-configRepo <- - jenkinsNode : push
-registry <- - jenkinsNode : push
+appRepo <- - jenkins : pull
+configRepo <- - jenkins : push
+jenkins -> registry : push
 
-kubelet - -> containerd : run containers
-jenkins -> jenkinsNode : manage
-jenkinsNode -> docker: run containers\nbuild images
-gitops - -> configRepo : pull
-gitops -> apiServer : apply resources
-kubelet -> registry : pull
-kubelet -> apiServer : watch
+
+configRepo <- gitops : pull
+gitops -> gitops : deploy
+registry -[hidden]> gitops
 
 skinparam arrow {
   Color BLACK
@@ -1867,6 +1247,12 @@ skinparam rectangle {
     FontColor #23a3dd
 }
 
+skinparam collections {
+    BackgroundColor WHITE
+    BorderColor #23a3dd
+    FontColor #23a3dd
+}
+
 skinparam interface {
     BackgroundColor WHITE
     BorderColor #16688d
@@ -1877,6 +1263,7 @@ skinparam note {
     BorderColor #16688d
 }
 
+
 @enduml
 
 PlantUML version 1.2021.7(Sun May 23 14:40:07 CEST 2021)
@@ -1886,6 +1273,4 @@ JVM: OpenJDK 64-Bit Server VM
 Default Encoding: UTF-8
 Language: en
 Country: US
--->
-  </g>
-</svg>
+--></g></svg>

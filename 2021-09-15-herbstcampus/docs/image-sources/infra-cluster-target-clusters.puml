@@ -5,6 +5,8 @@
 
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.0.0
 !includeurl ICONURL/devicons/git.puml
+!includeurl ICONURL/font-awesome-5/sync.puml
+!includeurl ICONURL/font-awesome-5/globe.puml
 
 !define CLOUDOGU_BLUE #23a3dd
 !define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
@@ -12,32 +14,28 @@
 skinparam backgroundcolor TRANSPARENT
     
 together {
-    rectangle "<$git>\nGitOps Repo" as configRepo
-    rectangle " " as repo2
-    hide repo2
+    rectangle "<$git>\nCloud Infra\nRepo" as configRepo
 }
 
 together {
-    rectangle "<$k8s>\nManagement Cluster" as mgmt
-    rectangle " " as mgmt2
-    hide mgmt2
+    rectangle "<$k8s>\nManagement Cluster" as mgmt {
+        rectangle "<$sync>\nGitOps\noperator" as gitops
+        rectangle "<$k8s>\nAPI-Server" as apiServer
+        rectangle "<$globe>\nInfra operator" as infra
+    }
 }
 
 together {
-    rectangle "<$k8s>\nTarget Cluster" as t1
-    rectangle "<$k8s>\nTarget Cluster" as t2
-    rectangle "<$k8s>\nTarget Cluster" as t3
+    collections "<$k8s>\nTarget Clusters" as t1
+    cloud "Cloud providers" as t3
 }
 
-configRepo -[hidden]-> repo2
-configRepo <- mgmt
-mgmt -[hidden]-> mgmt2
-mgmt -> t1
-mgmt -> t2
-mgmt -> t3
-
-t1 -[hidden]-> t2
-t2 -[hidden]-> t3
+configRepo <- gitops
+apiServer -[hidden]> infra
+gitops -> apiServer : apply resources
+infra -> apiServer : watch
+infra --> t1
+infra --> t3
 
 
 skinparam arrow {
@@ -45,11 +43,22 @@ skinparam arrow {
     FontColor CLOUDOGU_BLUE
 }
 
-
 skinparam rectangle {
-    BackgroundColor CLOUDOGU_BLUE
+    BackgroundColor WHITE
     BorderColor #16688d
-    FontColor WHITE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam cloud {
+    BackgroundColor WHITE
+    BorderColor #16688d
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam collections {
+    BackgroundColor WHITE
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
 }
 
 @enduml

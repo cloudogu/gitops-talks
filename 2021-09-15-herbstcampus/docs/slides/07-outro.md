@@ -48,7 +48,7 @@ Johannes Schnatterer, Cloudogu GmbH
 
 
 🌐 [cloudogu.com/gitops](https://cloudogu.com/gitops/)
- * ℹ️ GitOps Resources (intro, tool comparison, etc.)
+ * ℹ️ GitOps Resources (intro, our articles, etc.)
  * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib
  * 💬 Discussions
  * 🧑‍🏫 Trainings
@@ -60,8 +60,6 @@ Johannes Schnatterer, Cloudogu GmbH
 
 * What is GitOps?
   https://pixabay.com/illustrations/question-mark-important-sign-1872665/
-* What can GitOps be used for?
-  https://pixabay.com/photos/hammer-nails-wood-board-tool-work-1629587/ 
 * How can GitOps be used? Tools: 
   https://pixabay.com/photos/tools-knives-wrenches-drills-1845426/
 * What challenges arise with GitOps? 
