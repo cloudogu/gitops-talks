@@ -1,8 +1,5 @@
 @startuml
 
-' This is only the basis for gitops-tools-maturity.svg
-' Which was modified manually (as SVG), because plantuml wasn't capable of realizing the ideas
-
 !includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-25pct.iuml
 
 !define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
@@ -25,56 +22,33 @@
 skinparam backgroundcolor TRANSPARENT
 
 together {
-    rectangle "<$git>\n K8s Resources" as k8sAppOpsRepo
-    
-    rectangle "<$git>\n K8s Clusters" as k8sClustersRepo
+    rectangle "<$git>\n K8s Resources /\napplications" as k8sAppOpsRepo
     
     rectangle "<$git>\n Cloud Infra" as infraRepo
     
-    rectangle "<$git>\n Physical Layer" as hwRepo
-    
-    k8sAppOpsRepo --[hidden]> k8sClustersRepo
-    k8sClustersRepo --[hidden]> infraRepo
-    infraRepo --[hidden]> hwRepo
+    k8sAppOpsRepo --[hidden]> infraRepo
 }
 
 rectangle "1 " <<Hidden>> as p3 
 rectangle "2 " <<Hidden>> as p2
-p2 -> p3: GitOps tool maturity
 p2 -[hidden]> k8sAppOpsRepo
-p3 -[hidden]> hwRepo
-rectangle "<$tools>\nGitOps tool\nmaturity" as infraRepo
 
 
-node "Physical Layer" as hardware <<$computer>> #ffffff {
-    cloud "Cloud Infra" as cloud {
-        rectangle "<$k8s>\nCluster" <<NoBackground>> as cluster1 {
-            rectangle "<$pod>\nPods" as pods
-            rectangle "<$svc>\nServices" as svcs
-            rectangle "..." as k8sEtc
-            pods -[hidden]> svcs
-            svcs -[hidden]> k8sEtc
-        }
-        rectangle "<$user>\nIAM" as iam
-        rectangle "<$globe>\nDNS" as dns
-        rectangle "..." as cloudEtc
-        cluster1 --[hidden]> iam
-        iam -[hidden]> dns
-        dns -[hidden]> cloudEtc
+cloud "Cloud" as cloud {
+    rectangle "<$k8s>\nCluster" as cluster1 {
+        rectangle "<$pod>\nPods" <<K8sResource>>  as pods
+        rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "..." <<K8sResource>> as k8sEtc
+        pods -[hidden]> svcs
+        svcs -[hidden]> k8sEtc
     }
-    
-    rectangle  "<$server>\nServers" as servers
-    rectangle "<$hdd>\nSwitches" as switches
-    rectangle "..." as hwEtc
-    cloud ---[hidden]> servers
-    servers -[hidden]> switches
-    switches -[hidden]> hwEtc
+    rectangle "<$user>\nIAM" as iam
+    rectangle "<$globe>\nDNS" as dns
+    rectangle "..." as cloudEtc
+    cluster1 --[hidden]> iam
+    iam -[hidden]> dns
+    dns -[hidden]> cloudEtc
 }
-
-'k8sAppOpsRepo <- pods
-'k8sClustersRepo <- cluster1
-'infraRepo <- cloud
-hwRepo <- hardware
 
 skinparam rectangle<<Hidden>> {
   textColor White
@@ -103,18 +77,18 @@ skinparam actor {
 }
 
 skinparam rectangle {
+    BackgroundColor WHITE
+    BorderColor #16688d
+    FontColor CLOUDOGU_BLUE
+}
+skinparam rectangle<<K8sResource>> {
     BackgroundColor CLOUDOGU_BLUE
     BorderColor #16688d
     FontColor WHITE
 }
-skinparam rectangle<<NoBackground>> {
-    BackgroundColor Transparent
-    BorderColor CLOUDOGU_BLUE
-    FontColor CLOUDOGU_BLUE
-}
 
 skinparam cloud {
-    BackgroundColor WHITE
+    BackgroundColor TRANSPARENT
     BorderColor CLOUDOGU_BLUE
     FontColor CLOUDOGU_BLUE
 }

@@ -18,7 +18,7 @@ Note:
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 contentScriptType="application/ecmascript" contentStyleType="text/css" height="232px" preserveAspectRatio="none"
-style="background:#00000000;" version="1.1" viewBox="0 0 626 232" zoomAndPan="magnify" width="60%" >
+style="background:#00000000;" version="1.1" viewBox="0 0 626 232" zoomAndPan="magnify" width="55%" >
 <defs>
 <filter height="300%" id="f1ocnou988k1ak" width="300%" x="-1" y="-1">
 <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
@@ -116,7 +116,7 @@ GitOps
 <br/>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      contentScriptType="application/ecmascript" contentStyleType="text/css" preserveAspectRatio="none"
-     style="background:#00000000;" version="1.1" viewBox="0 0 701 390" zoomAndPan="magnify" width="60%">
+     style="background:#00000000;" version="1.1" viewBox="0 0 701 390" zoomAndPan="magnify" width="55%">
     <defs>
         <filter height="300%" id="f28rmzu5vsmjt" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
@@ -283,7 +283,7 @@ See also:
 
 ## Advantages of GitOps
 
-<img class="floatRight" style="clear: right; margin-bottom: 40px" data-src="images/gitops-simple.svg" width="36%"/>
+<img class="floatRight" data-src="images/gitops-simple.svg" width="35%"/>
 
 <!-- With more time: More info on hands-off ops
 <img class="floatRight" style="clear: right;" data-src="images/gitops-map.svg" width="30%" />
@@ -292,14 +292,9 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 </div>
 -->
 
-* (Almost) no access to cluster from outside
-* No credentials on CI server
-* Forces 100% declarative description 
-  * auditable
-  * automatic sync of cluster and git 
-* Scalability 
-  * one git repo many applications/clusters
-  * uniform way of deployment
-* Hands-off ops / Self healing
-* Enterprise: No new firewall rules  
-  (depending on environment)
+* No access to cluster from outside   
+  ➡ No credentials on CI server
+* Forces declarative description 
+* IaC is auditable
+* Scalability - one repo many applications
+* Self-healing / Hands-off ops 
