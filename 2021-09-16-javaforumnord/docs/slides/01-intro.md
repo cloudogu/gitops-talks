@@ -18,11 +18,11 @@
 </p>
 
 <div class="title-version">
-Version: 202109151556-fc14ba4
+Version: 202109151604-e522de2
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
-    <a href="pdf/Continuous Operations with GitOps – an Introduction.pdf">
+    <a href="pdf/GitOps:%20Introduction%20to%20Continuous%20Operations%20with%20Kubernetes.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 
