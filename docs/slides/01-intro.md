@@ -5,8 +5,9 @@
 
 <h1  class="title">
     <span class="title-accent">//</span> 
-    Continuous Operations <br/> with GitOps<br/> - an Introduction
+    GitOps: Introduction<br/>to Continuous Operations<br/>with Kubernetes
 </h1>
+
 
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
 <p class="printOnly">
@@ -21,7 +22,7 @@
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
-    <a href="pdf/Continuous Operations with GitOps – an Introduction.pdf">
+    <a href="pdf/GitOps:%20Introduction%20to%20Continuous%20Operations%20with%20Kubernetes.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 
