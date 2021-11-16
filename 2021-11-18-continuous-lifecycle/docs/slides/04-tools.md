@@ -84,6 +84,7 @@ Note:
 
 Notes:
 * Progressive Delivery = canary releases, A/B tests, and blue/green deployments
+* ... -> e.g. Datbase Schema (Schema Hero)
 * Sources:
   * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
 
@@ -95,7 +96,8 @@ Notes:
   <img data-src="images/infra-cluster-target-clusters.svg" width="70%"/>
 </div>
 
-Note: 
+Note:
+* Deployment also possible without dedicated cluster:  https://www.cncf.io/blog/2021/08/12/august-2021-update/
 * Management Cluster, aka Infrastructure Cluster, Controller Cluster
 * Target Cluster, aka Workload Cluster, Downstream Cluster
 

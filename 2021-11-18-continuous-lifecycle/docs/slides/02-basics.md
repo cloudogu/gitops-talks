@@ -271,7 +271,8 @@ link k8s to k8s-->
 
 Note:
 1. and 2. -> Git, but could also be a different system with theses attributes
-   Fun Fact: GitOps is possible without Git
+   Fun Fact: GitOps is possible without Git  
+   e.g. flux with S3 bucket: https://www.cncf.io/blog/2021/08/12/august-2021-update/
 3. Continuously! Not only when a change is triggered, also when the actual state "drifts"
 4. No more tinkering!
 
