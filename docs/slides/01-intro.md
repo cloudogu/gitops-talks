@@ -5,7 +5,7 @@
 
 <h1  class="title">
     <span class="title-accent">//</span> 
-    GitOps: Introduction<br/>to Continuous Operations<br/>with Kubernetes
+    GitOps: Hands-on<br/>Continuous Operations<br/>with Kubernetes
 </h1>
 
 
