@@ -70,16 +70,21 @@ Note:
 
 
 ### Others
-* Backup
+* Backup / **restore**
+* ~~Horizontal Pod Autoscaler~~  
+  🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/#leaving-room-for-imperativeness)
 * Deployment Strategies - Progressive Delivery  
   <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
   <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-* ... 
+* ...
+ 
+<br/>
 
-**➡ GitOps loves operators**
+<strong style="font-size: 200%">➡ GitOps loves operators</strong>
 
 Notes:
 * Progressive Delivery = canary releases, A/B tests, and blue/green deployments
+* ... -> e.g. Datbase Schema (Schema Hero)
 * Sources:
   * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
 
@@ -91,7 +96,8 @@ Notes:
   <img data-src="images/infra-cluster-target-clusters.svg" width="70%"/>
 </div>
 
-Note: 
+Note:
+* Deployment also possible without dedicated cluster:  https://www.cncf.io/blog/2021/08/12/august-2021-update/
 * Management Cluster, aka Infrastructure Cluster, Controller Cluster
 * Target Cluster, aka Workload Cluster, Downstream Cluster
 

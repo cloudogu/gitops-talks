@@ -6,19 +6,36 @@ Note:
 
 
 
-* Operating model  
-* Origin: blog post by Weaveworks, August 2017
+<tagcloud large>
+    <a style="color: inherit" href="https://thenewstack.io/argocd-gets-devsecops-nod-with-cncf/">(Operating) model</a>
+    Pattern
+    Way
+    Approach
+    (good) practice
+    methodology
+    <a style="color: inherit" href="https://blog.argoproj.io/getting-started-with-applicationsets-9c961611bcf0">Philosophy</a>
+    <a style="color: inherit" href="https://medium.com/google-cloud/ci-cd-pipeline-using-cloud-build-with-gitops-technique-68b0e9d3b53)">Technique</a>
+    <a style="color: inherit" href="https://www.cncf.io/blog/2021/09/28/gitops-101-whats-it-all-about/">Framework</a>
+    <a style="color: inherit" href="https://www.cncf.io/blog/2021/09/28/gitops-101-whats-it-all-about/">Standardized Workflow</a>
+    Cloud-native continuous delivery
+</tagcloud>
+
+Note:
+
+
+
+Origin: blog post by Weaveworks, August 2017
 
 > Use developer tooling to drive operations  
 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
 
 
 
-"Classic" Continuous Delivery ("CIOps")
 
+"Classic" Continuous Delivery ("CIOps")
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 contentScriptType="application/ecmascript" contentStyleType="text/css" height="232px" preserveAspectRatio="none"
-style="background:#00000000;" version="1.1" viewBox="0 0 626 232" zoomAndPan="magnify" width="55%" >
+style="background:#00000000;" version="1.1" viewBox="0 0 626 232" zoomAndPan="magnify" width="58%" >
 <defs>
 <filter height="300%" id="f1ocnou988k1ak" width="300%" x="-1" y="-1">
 <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
@@ -102,21 +119,22 @@ y="69.6328">deploy
 filter="url(#f1ocnou988k1ak)" style="stroke:#16688D;stroke-width:2.0;fill:none;"/>
 <path class="fragment" data-fragment-index="2"       d="m 397,90.6987 v 40 h 92 v -30 l -10,-10 h -82"
 style="stroke:#16688D;stroke-width:2.0;fill:none;"/>
-<text class="fragment" data-fragment-index="2" fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="403"
+<text class="fragment" data-fragment-index="2" fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85" x="403"
       y="105">imperative,
 </text>
-<text class="fragment" data-fragment-index="4" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing"
-      textLength="35" x="403" y="120">once
+<text class="fragment" data-fragment-index="4" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+textLength="45" x="403" y="120">once
 </text>
 </g>
 </svg>
+
 
 <p class="fragment" data-fragment-index="1">
 GitOps
 <br/>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
      contentScriptType="application/ecmascript" contentStyleType="text/css" preserveAspectRatio="none"
-     style="background:#00000000;" version="1.1" viewBox="0 0 701 390" zoomAndPan="magnify" width="55%">
+     style="background:#00000000;" version="1.1" viewBox="0 0 701 390" zoomAndPan="magnify" width="60%">
     <defs>
         <filter height="300%" id="f28rmzu5vsmjt" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
@@ -225,11 +243,11 @@ link k8s to k8s-->
               filter="url(#f28rmzu5vsmjt)" style="stroke:#16688D;stroke-width:2.0;fill:none;"/>
         <path class="fragment" data-fragment-index="3" d="M682.08,140.1328 L682.08,150.1328 L692.08,150.1328 L682.08,140.1328 "
               style="stroke:#16688D;stroke-width:2.0;fill:none;"/>
-        <text class="fragment" data-fragment-index="3" fill="#FFFFFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="595.08"
+        <text class="fragment" data-fragment-index="3" fill="#FFFFFF" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="87" x="595.08"
               y="157.1997">declarative,
         </text>
-        <text class="fragment" data-fragment-index="5" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing"
-              textLength="92" x="595.08" y="172.3325">continuously
+        <text class="fragment" data-fragment-index="5" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing"
+              textLength="99" x="595.08" y="172.3325">continuously
         </text>
     </g>
 </svg>
@@ -253,7 +271,8 @@ link k8s to k8s-->
 
 Note:
 1. and 2. -> Git, but could also be a different system with theses attributes
-   Fun Fact: GitOps is possible without Git
+   Fun Fact: GitOps is possible without Git  
+   e.g. flux with S3 bucket: https://www.cncf.io/blog/2021/08/12/august-2021-update/
 3. Continuously! Not only when a change is triggered, also when the actual state "drifts"
 4. No more tinkering!
 
@@ -293,8 +312,10 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 -->
 
 * No access to cluster from outside   
-  ➡ No credentials on CI server
-* Forces declarative description 
+  (might also solve firewall/zone issues)
+* No credentials on CI server  
+  (neither cluster access nor for apps)
+* Forces declarative description
 * IaC is auditable
 * Scalability - one repo many applications
 * Self-healing / Hands-off ops 

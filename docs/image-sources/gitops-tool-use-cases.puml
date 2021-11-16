@@ -38,16 +38,22 @@ cloud "Cloud" as cloud {
     rectangle "<$k8s>\nCluster" as cluster1 {
         rectangle "<$pod>\nPods" <<K8sResource>>  as pods
         rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "<$crd>\nCRDs" <<K8sResource>> as crds
         rectangle "..." <<K8sResource>> as k8sEtc
         pods -[hidden]> svcs
-        svcs -[hidden]> k8sEtc
+        svcs -[hidden]> crds
+        crds -[hidden]> k8sEtc
     }
     rectangle "<$user>\nIAM" as iam
     rectangle "<$globe>\nDNS" as dns
+    rectangle "<$server>\nVMs" as vm
+    rectangle "<$k8s>\nClusters" as k8s
     rectangle "..." as cloudEtc
     cluster1 --[hidden]> iam
     iam -[hidden]> dns
-    dns -[hidden]> cloudEtc
+    dns -[hidden]> vm
+    vm -[hidden]> k8s
+    k8s -[hidden]> cloudEtc
 }
 
 skinparam rectangle<<Hidden>> {
