@@ -4,17 +4,6 @@ Note:
 
 
 
-# Personal Conclusion
-
-After migrating to and operating with GitOps in production for > 1 year
-
-* Smoother CI/CD,
-  * *everything* declarative
-  * faster deployment 
-* But: security advantages only when finished migration
-
-
-
 # GitOps experience distilled
 
 <i class="fas fa-plus"></i> Has advantages, once established
@@ -25,9 +14,7 @@ After migrating to and operating with GitOps in production for > 1 year
 
 # Adopt GitOps?
 
-* Greenfield
-  * AppOps: Definitely
-  * ClusterOps: Depends
+* Greenfield: Definitely
 * Brownfield: Depends
 
 
@@ -51,7 +38,8 @@ Johannes Schnatterer, Cloudogu GmbH
  * ℹ️ GitOps Resources (intro, our articles, etc.)
  * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib
  * 💬 Discussions
- * 🧑‍🏫 Trainings
+ * 🧑‍🏫 Trainings / Consulting
+ * 🔨 Jobs
 [<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/)
 
 

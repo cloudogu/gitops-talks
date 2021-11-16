@@ -10,18 +10,18 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    contentScriptType="application/ecmascript"
    contentStyleType="text/css"
-   height="439px"
+   height="446px"
    preserveAspectRatio="none"
-   style="width:714px;height:439px;background:#00000000;"
+   style="width:833px;height:446px;background:#00000000;"
    version="1.1"
-   viewBox="0 0 714 439"
-   width="714px"
+   viewBox="0 0 833 446"
+   width="833px"
    zoomAndPan="magnify"
-   id="svg1319"
+   id="svg1085"
    sodipodi:docname="gitops-tool-use-cases.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
   <metadata
-     id="metadata1323">
+     id="metadata1089">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -41,57 +41,57 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
+     inkscape:window-width="1866"
      inkscape:window-height="1043"
-     id="namedview1321"
+     id="namedview1087"
      showgrid="false"
-     inkscape:zoom="1.4617502"
-     inkscape:cx="424.75121"
-     inkscape:cy="288.02768"
-     inkscape:window-x="1920"
+     inkscape:zoom="0.62646435"
+     inkscape:cx="-44.854155"
+     inkscape:cy="419.24052"
+     inkscape:window-x="1974"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1319" />
+     inkscape:current-layer="svg1085" />
   <defs
-     id="defs1255">
+     id="defs1003">
     <filter
        height="300%"
-       id="f2odmju74ej10"
+       id="fgly2vi9kfbxc"
        width="300%"
        x="-1"
        y="-1">
       <feGaussianBlur
          result="blurOut"
          stdDeviation="2.0"
-         id="feGaussianBlur1246" />
+         id="feGaussianBlur994" />
       <feColorMatrix
          in="blurOut"
          result="blurOut2"
          type="matrix"
          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
-         id="feColorMatrix1248" />
+         id="feColorMatrix996" />
       <feOffset
          dx="4.0"
          dy="4.0"
          in="blurOut2"
          result="blurOut3"
-         id="feOffset1250" />
+         id="feOffset998" />
       <feBlend
          in="SourceGraphic"
          in2="blurOut3"
          mode="normal"
-         id="feBlend1252" />
+         id="feBlend1000" />
     </filter>
   </defs>
   <g
-     id="g1317">
+     id="g1083">
     <!--MD5=[bfeb4e40a9e05244ea0843bb1cef058f]
 cluster cloud-->
     <path
-       d="M269.0991,22.6333 C277.69,11.4546 288.9871,12.9587 294.1799,26.133 C302.9735,13.6561 313.9271,12.3419 323.6353,25.0639 C330.7001,13.7625 338.7441,10.7611 348.8726,21.5664 C358.5545,9.8176 365.7169,10.4356 372.6458,24.1379 C380.9318,12.0775 396.0872,9.945 403.1628,25.4767 C408.3118,10.7394 419.6541,9.2714 429.3375,20.9906 C436.8769,10.3709 446.6389,8.6583 454.2344,20.9297 C462.7388,6 475.164,6.6268 482.99,21.5825 C490.5203,12.9247 500.2397,12.2002 505.4282,24.1343 C513.341,8.9896 524.2942,8.5712 534.413,21.8876 C545.1614,7.9824 556.2461,9.7149 562.4412,26.1007 C567.5302,13.4884 577.8521,13.0308 584.7805,24.3863 C592.0641,11.283 605.8237,6.4716 615.1572,22.2286 C628.1849,12.8369 637.7648,13.4624 644.5,29.4919 C648.2005,28.1569 650.0402,30.2265 649.1648,33.8215 C661.3158,42.4522 658.2095,55.024 645.7447,60.4989 C658.9331,67.0755 656.6014,76.5792 647.1074,84.4465 C659.9578,91.8376 658.3028,102.8848 647.444,110.5813 C659.85,116.4627 660.8246,129.1889 650.0828,137.352 C663.4368,144.7971 661.6244,157.3064 649.3212,164.0188 C663.9352,172.587 665.0482,184.8537 649.6419,193.7456 C662.8365,199.1476 660.2632,210.6752 651.0321,217.3955 C663.4524,224.5844 666.2005,236.0232 653.2646,245.2446 C664.4521,254.5779 665.4848,265.941 651.4276,273.6412 C661.577,279.4949 663.2746,290.4268 651.5752,296.4219 C664.0619,307.3852 660.9174,315.2775 648.5768,323.4907 C660.2579,332.4689 659.7475,340.6856 648.1802,349.3067 C661.5801,356.7464 661.7328,370.1033 649.7165,378.8642 C659.9626,394.9786 654.1927,403.4852 637.5,408.4919 C639.9383,408.6077 641.1045,409.8201 640.0141,412.2787 C631.584,423.4601 621.1837,423.2271 612.7745,412.2532 C604.8603,425.6426 595.8516,423.2826 587.3874,412.839 C582.067,428.3015 568.3969,430.3869 559.3714,416.359 C551.9351,427.5902 541.1716,427.778 533.2445,416.94 C525.2538,426.453 516.4778,425.8494 509.8496,415.3474 C502.8046,428.4243 489.1669,428.9931 481.12,416.4719 C476.2015,429.5901 464.0527,429.1364 456.9187,418.7534 C448.2768,432.3646 435.5899,432.4243 426.6635,419.0725 C416.3975,429.8337 407.4948,427.9989 402.484,413.9507 C394.9414,427.7876 384.9957,428.3981 376.1895,415.1787 C366.3832,428.5831 356.5983,427.6829 346.468,415.5558 C336.1905,426.8506 329.3078,423.5712 322.8827,411.6432 C315.5742,422.2915 302.3218,422.2121 295.8208,410.6589 C282.0591,426.7605 264.3612,420.6549 259.5,401.4919 C261.1904,400.8767 262.4755,401.7612 262.0943,403.6437 C247.619,395.5847 249.3561,385.5497 260.9399,376.387 C249.666,369.9552 250.7914,358.6808 261.9159,353.1915 C250.0908,346.0747 247.4105,333.1037 260.9861,325.1447 C248.1893,316.7358 247.7752,306.7661 260.8871,298.2619 C249.7829,291.0873 248.8722,281.9775 259.3708,273.481 C246.8517,264.9146 246.0442,251.8669 260.7194,244.5691 C247.9607,236.3969 248.1493,225.9683 260.2989,217.4104 C249.3579,211.0182 248.0983,200.8047 258.4039,192.778 C245.5258,183.8816 243.9704,174.4621 258.6573,165.8249 C248.4964,156.6402 246.2814,145.5836 261.5137,139.1144 C246.0677,131.7182 248.2429,116.8472 261.4086,109.35 C249.2539,102.1314 251.1253,89.8357 262.9192,84.0469 C251.0774,76.7529 247.1466,65.1212 261.0421,56.0986 C247.4207,43.7222 246.6307,29.4292 266.5,22.4919 C267.4088,21.3147 268.3252,21.3316 269.0991,22.6333 "
-       filter="url(#f2odmju74ej10)"
+       d="M268.3827,31.2895 C275.8644,13.2461 289.2177,13.0223 301.9059,25.5871 C313.0954,9.5099 331.0668,6.7165 340.6327,27.3021 C350.9811,9.123 367.6696,9.8468 376.2671,28.9745 C388.4921,10.9227 398.8572,11.6799 410.3994,29.622 C420.314,14.0924 436.2385,10.3153 447.2028,28.4753 C453.393,9.9798 469.8316,11.1635 480.1338,24.1779 C490.787,9.657 500.3225,8.7085 511.6036,23.504 C525.7318,6 536.9655,11.5586 546.9177,27.8657 C557.5928,12.1035 570.1035,8.0435 583.4014,24.9354 C594.7631,12.4372 608.7076,9.631 616.5936,28.6015 C630.4307,10.7199 643.9384,10.8564 655.7649,30.6896 C666.4406,15.1973 677.7766,12.1959 689.9234,29.1404 C700.672,14.0903 711.5651,8.9046 724.3092,27.0749 C738.2978,10.8363 754.4819,12.4977 763.5,32.4564 C766.4234,31.3701 767.6483,33.2485 767.349,35.8343 C785.1949,44.6553 785.9036,62.0054 769.1475,72.5226 C785.8969,84.5415 787.1881,101.3309 768.7124,112.9708 C787.7191,120.128 785.0769,136.0584 772.2286,146.551 C790.2189,155.6425 790.8593,169.9923 776.3421,182.7753 C797.6806,195.3187 792.5738,215.3446 773.2808,224.9378 C790.3049,234.3902 786.8491,249.5158 771.479,257.1566 C791.0731,266.0299 795.3104,285.2324 774.6746,297.3076 C788.2332,309.0843 787.882,321.301 771.9104,330.628 C786.515,344.2239 788.6919,359.1196 768.1346,369.2808 C785.7971,388.7055 781.1385,403.701 756.5,411.4564 C757.1078,411.632 757.1577,412.0453 756.8036,412.5006 C746.6919,426.8709 737.3518,429.5572 725.2127,414.6914 C712.9361,432.5216 700.5533,430.469 688.4471,414.5059 C681.1821,434.5413 666.2125,435.4525 653.3035,420.113 C641.9534,438.185 631.1338,436.2494 619.7593,420.1368 C609.058,434.3337 591.3094,431.8931 583.9233,416.1665 C575.5167,429.5712 562.4933,430.1882 552.5188,418.0978 C543.5435,437.7265 529.5439,435.389 517.5195,421.2589 C504.858,437.5607 492.5261,436.422 482.9959,418.1335 C473.5428,439.5351 458.9668,437.898 445.6337,422.0223 C432.104,433.674 421.3902,434.8272 412.7513,416.6337 C399.0357,433.884 385.7226,433.8268 374.0482,414.4753 C366.1797,432.1681 349.6771,430.7763 341.0732,415.2041 C329.183,431.1111 314.964,435.6733 303.1754,415.0986 C285.0285,435.2445 266.5045,430.0387 259.5,404.4564 C263.7292,403.7247 265.4284,405.9329 263.9399,409.881 C243.111,399.1721 243.3733,383.5844 261.2342,370.2351 C242.1567,359.9611 245.9417,341.2577 262.6132,332.2827 C243.0468,321.6767 244.1154,306.1821 261.9895,294.9506 C244.3316,286.733 243.0489,272.4356 259.3901,261.5704 C236.9048,251.7402 237.2488,234.0387 255.762,220.5797 C239.7498,208.6428 244.3926,192.5628 260.1793,184.5214 C241.4968,172.151 241.9291,160.0807 257.6255,145.4624 C243.8617,134.4342 239.701,121.2208 258.5169,111.0363 C240.6076,95.2858 244.2715,82.9973 262.3457,70.6589 C243.5467,56.5295 247.0997,36.0751 266.5,25.4564 C269.4117,26.4093 270.6829,28.6543 268.3827,31.2895 "
+       filter="url(#fgly2vi9kfbxc)"
        style="stroke:#23A3DD;stroke-width:1.5;fill:none;"
-       id="path1257" />
+       id="path1005" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -99,27 +99,27 @@ cluster cloud-->
        font-weight="bold"
        lengthAdjust="spacing"
        textLength="45"
-       x="429.5"
-       y="40.487"
-       id="text1259">Cloud</text>
+       x="489"
+       y="43.4515"
+       id="text1007">Cloud</text>
     <!--MD5=[3261b5d1b5d4f1e855e4fa567c4b1999]
 cluster cluster1-->
     <rect
        fill="#FFFFFF"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="214"
        style="stroke:#16688D;stroke-width:1.5;"
-       width="337"
+       width="456"
        x="283.5"
-       y="65.4919"
-       id="rect1261" />
+       y="68.4564"
+       id="rect1009" />
     <image
        height="48"
        width="48"
-       x="428"
+       x="487.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
-       y="67.4919"
-       id="image1263" />
+       y="70.4564"
+       id="image1011" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -127,27 +127,27 @@ cluster cluster1-->
        font-weight="bold"
        lengthAdjust="spacing"
        textLength="57"
-       x="423.5"
-       y="128.487"
-       id="text1265">Cluster</text>
+       x="483"
+       y="131.4515"
+       id="text1013">Cluster</text>
     <!--MD5=[34f8174a618535b2cae10d93ac6db705]
 entity k8sAppOpsRepo-->
     <rect
        fill="#FFFFFF"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="100.5938"
        style="stroke:#16688D;stroke-width:1.5;"
        width="136"
        x="75.5"
-       y="155.4919"
-       id="rect1267" />
+       y="158.4564"
+       id="rect1015" />
     <image
        height="48"
        width="48"
        x="85.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
-       y="165.4919"
-       id="image1269" />
+       y="168.4564"
+       id="image1017" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -155,8 +155,8 @@ entity k8sAppOpsRepo-->
        lengthAdjust="spacing"
        textLength="112"
        x="89.5"
-       y="226.487"
-       id="text1271">K8s Resources /</text>
+       y="229.4515"
+       id="text1019">K8s Resources /</text>
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -164,26 +164,26 @@ entity k8sAppOpsRepo-->
        lengthAdjust="spacing"
        textLength="86"
        x="85.5"
-       y="242.7838"
-       id="text1273">applications</text>
+       y="245.7484"
+       id="text1021">applications</text>
     <!--MD5=[9a561514b4013589368d6947870941b7]
 entity infraRepo-->
     <rect
        fill="#FFFFFF"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="84.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="102"
        x="92.5"
-       y="316.4919"
-       id="rect1275" />
+       y="319.4564"
+       id="rect1023" />
     <image
        height="48"
        width="48"
        x="102.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
-       y="326.4919"
-       id="image1277" />
+       y="329.4564"
+       id="image1025" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -191,26 +191,26 @@ entity infraRepo-->
        lengthAdjust="spacing"
        textLength="78"
        x="106.5"
-       y="387.487"
-       id="text1279">Cloud Infra</text>
+       y="390.4515"
+       id="text1027">Cloud Infra</text>
     <!--MD5=[e14bfcad9336735f4435ed6c525b255e]
 entity iam-->
     <rect
        fill="#FFFFFF"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="84.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="68"
        x="267.5"
-       y="316.4919"
-       id="rect1281" />
+       y="319.4564"
+       id="rect1029" />
     <image
        height="48"
        width="48"
        x="277.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACFElEQVR4Xu2YTUoEMRBG5y7ewBt4Am/gDTyBN/AGrl0IrlzNypUguHIjrkTQQRhEBsYfhEEkPiYgPVVJupJ0Oz3gx7eQppN6Viqp9IzcwDSSD9atKqDL6efB1cve+XR3/IT3L56PbueT9y/5Xo4KgU7u3rZPH7aO74MG8Wa2kGNsygZ6XXyTDA2hTbbkYIPygKBJJEb78Homp2hTHpAxN02zuHKWpDKAWAIdz2LyKueKywrEpDqS0exEOV1cViAyryPZLaeLywrETtZh7ObEkjNGZAXK2lza9iPACqRjZNm+/zcWaOdsosPYbT+NrEA0Th3G7u6LumbbsyHkdHFZgVzFRrMXkMsCGlbr8Co4HsePH3KWpPKA+F+ztpv9PPxVHpCXMU+5ufEqAUIES6SKMyKrbpoqBPLi4syiEJ6cYa4ZnA7FKF5VQH1oY4H42qJuWCBOOdz6lcPL/k0Wkb5hX8d2ICCC9ctDXzTEgw/zBy/H9iDPLR0tBcT44nYRM1jpbEWBihtFq0lt4nM7DFTT2y0m8bE8BYCoBj1F52btZOClAkCxquzcwd4igf4mPd4Uk4juNBA7WY/sz7q6JVDwyOnP+vIvgfSYXq1vtytANb8olJmbQhPArR1Ib/5/oFUPDqilhlzF12CZ9WeJBOq7rTYdbLESCHE26MGdmxM4eO0MALllMXE7o/n15CCKVxhojRoc0A8BXJqUlXui3QAAAABJRU5ErkJggg=="
-       y="326.4919"
-       id="image1283" />
+       y="329.4564"
+       id="image1031" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -218,26 +218,26 @@ entity iam-->
        lengthAdjust="spacing"
        textLength="26"
        x="277.5"
-       y="387.487"
-       id="text1285">IAM</text>
+       y="390.4515"
+       id="text1033">IAM</text>
     <!--MD5=[30e382dc68ab04d49d3ef5ad3266e605]
 entity dns-->
     <rect
        fill="#FFFFFF"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="84.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="68"
        x="370.5"
-       y="316.4919"
-       id="rect1287" />
+       y="319.4564"
+       id="rect1035" />
     <image
        height="48"
        width="48"
        x="380.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAADEElEQVR4Xu2YTWpUQRSFs5fegTvICtyBO+gVZAfuwLEDwZGjjBwFBEdOxJEI2ghBJGCiCCFIeegTz7t9b9Wtei8d0gMvB2lf1av66v5U1ctROTA78g8e2vYDdHn9xz9aakuA7PRvzn8fv9qsnn+CTt5+vzvZPKBnH35g+tMvv/jfFx+viCI9Pv0qJvxen317f3E9vT9go0BAefTyM6Z88vqcTzY/bxwNBQh2AAqf4JVxrD4QxlJQIA0NB0QaSi4EnB4+fXcxDdq2DhCGtjMBgs+ROpFDwgKq3WxAW5YBYU1uJiQNmxL3UEBhT+tdCHFHrKc5gjWBIg3Eplb2WCmT4jg5Ux0ols/KpDMSPLZGsbNS20oxjVYBqg4BgYMduvGiFDWWp5OW56wC5KIusb6QlbGpKuyTHNDWmpWK0ZoHSsLBDnl9WakkW2PCc7HoPFDVvSOjV8VXkjUoDWQ7QAgK3FuVCh4/YmtLdAD+jU2UwirzHnpwO2Ag5Hx0qaStLDYlUqCRK7FVEkOxQOtGcVIEGq95SpPlg9u7wATU2n4oAo0cGlba/ZC8sVWSI4sFiv2sWC+tTbwlAcUTzcreTG6BurFgt2RHqUq7Vw5ki/8WqBsLdnPXo650iObbqc3r+/XQcqDSyyH2mZtDgyGr5FDpAd0xqfMqsyfaBJTfcpaV/eA+pJtTsUD5IuZehqjulYiyl5CdswwOaGmkT5Rmwo/YKmnwctCHa0nXMbhWJ40cm2If2g5QUkSD9eLEZWzapaB9QeZDhonja6vt/Zcdql9IVemVZH+39UXzQMlqust16p6s1S8hD1Ta7+ffWVHd7zhb7bIKUGkMMbipSEzY1tZV/SgrLSCMEt0wkhOSjtVq5+RPM3Wgss2VyKS7ZmxyUryiOxOakgCVLZO71ypqrTyTmB8xXjlNyYFobol8GGeyEre7BrXyxlofqGzzQDFSLFpOsl/semv97yu2a0NANP3dU0NXi1FuoHtm/cWzzAKiYT5NCTLHZD9oABSPqq7NBooGCCQNIrhg+mh7ANqv/Qfq2V/YGuCi+QRazAAAAABJRU5ErkJggg=="
-       y="326.4919"
-       id="image1289" />
+       y="329.4564"
+       id="image1037" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
@@ -245,46 +245,100 @@ entity dns-->
        lengthAdjust="spacing"
        textLength="30"
        x="380.5"
-       y="387.487"
-       id="text1291">DNS</text>
+       y="390.4515"
+       id="text1039">DNS</text>
+    <!--MD5=[feb13187a4e12c0f7e43ab86a34517b0]
+entity vm-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#fgly2vi9kfbxc)"
+       height="84.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="68"
+       x="473.5"
+       y="319.4564"
+       id="rect1041" />
+    <image
+       height="48"
+       width="48"
+       x="483.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABVklEQVR4Xu2XTUrEQBCFc5fcYG7gCbyBN8gJvIE3cO1CcOVqVq4EYVZuxJUMaBCCDIHxh4EwDO3DjjWdakNAsfotunibborko6u6uqpwZFbojdSWgaZsAPTa7er3rbFCABcCHV015dkyieZPHxroeLGK/SyF4AyADufPsZOl5JB6oIPLOnb6u2YXj+cPbzfNRvIBocDy5LZVnkZAoPHfhwEOcZClShIjoLu2EwL8orp+kSVYQ08jICFAmPyO3HOVtUZA5VcaqX9jiU3lpoESFiEvCW4PJEeaRGGy7ys1GJH5iLqxTu/XwuDYH1cGYw0ZXVLTXXu6wvhPQNXI04HuR/3RCIjucaVrP8YaNFx15amB6FpYuiYf64Sl6IcxyBvXoEhixCfElUN0t4yuDhlX6jxKf4vutR/rh1yUtUZA5a87xoRFyEv31HRTh2Oby3gsA01ZBpqyTxmvBhvABK9XAAAAAElFTkSuQmCC"
+       y="329.4564"
+       id="image1043" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="29"
+       x="483.5"
+       y="390.4515"
+       id="text1045">VMs</text>
+    <!--MD5=[4c2941fc370d514d93699c1b32a2ff4b]
+entity k8s-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#fgly2vi9kfbxc)"
+       height="84.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="77"
+       x="577"
+       y="319.4564"
+       id="rect1047" />
+    <image
+       height="48"
+       width="48"
+       x="587"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+       y="329.4564"
+       id="image1049" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="57"
+       x="587"
+       y="390.4515"
+       id="text1051">Clusters</text>
     <!--MD5=[6509961f2b10d552b393726d905ed0c7]
 entity cloudEtc-->
     <rect
        fill="#FFFFFF"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="36.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="32"
-       x="473.5"
-       y="340.4919"
-       id="rect1293" />
+       x="689.5"
+       y="343.4564"
+       id="rect1053" />
     <text
        fill="#23A3DD"
        font-family="sans-serif"
        font-size="14"
        lengthAdjust="spacing"
        textLength="12"
-       x="483.5"
-       y="363.487"
-       id="text1295">...</text>
+       x="699.5"
+       y="366.4515"
+       id="text1055">...</text>
     <!--MD5=[4a871386e993fb7e45d2daf54efd7104]
 entity pods-->
     <rect
        fill="#23A3DD"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="99.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="84"
        x="326.5"
-       y="156.4919"
-       id="rect1297" />
+       y="159.4564"
+       id="rect1057" />
     <image
        height="63"
        width="64"
        x="336.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA/CAIAAADff1mdAAACZElEQVR4Xu2YTUrEMBiG5y6eYG7gDTyBN/AGnmBu4N5FceXKlStXrty5EkREEBFBPEF8mY+J8XubnybpNNZ+PMhMJ03eJ0mhcWVqV/fwFUC3Lq6VvlBQHNeHvrOg6ghwxBR0L1lVKsCxhqJ7HFj5AhylBN17cuUI8PC10CMl1DABHnIM9KjBShXgYcZGJ/BUXIC73ic6DVVIgLubCp3MqX4B7qIFdMpt/RLge9rEzbwITIGbeUYC3K5lFoGpmZ0Atyhkc/dxevt+fP0K8AFfuU0h9QXO7j8R9OTm7ejq5fDyeX3xZMFXXMRPaIBmfG8G1QQQSCbbhj44f3TTq4toJstSaFIq4JvsdNxl4f6jlAqoWc/Drgb3H+VHgH+LItsdf+3+wVxyPh9obHeR7YpHiZIvgHVXz2XgCRbC7fGBR4lSJLD2PJfusuB64Ce5VzqZRoCxce0028kOPzP5Anw1BZ+AC/aGpE95PPIEwIgCABMP+DqzCAxkEdAsAgNZBDSLwED+vADeCzgEky6Q90bdZQvgBSHwYmNJEZDXp7Os1+kuW0BAOIzNmSxRAdy+yTqOWYoEBKy+73UtIIBbsreNSwWBbneu5x3VK4Bm5Sd6Sx0BAZlOtie19e6YYgXkq5y8akUXVnW763bPN69A+XbvJfNEFkWebznQjBS9s0fKkRzGRpLP5Z+7UtyuTdzM8xIwf8FBBdYCpm0HnbVXwLTqoFNuq1/AtOeg8+1qvgKmJQedzKmQgGnDQWf6XREBM7WDTkMVFzDTOegcffU/BMwUDjqBp1IFzH4d9Nj+GiBg9uWgRw3WN2eqo20F5PEdAAAAAElFTkSuQmCC"
-       y="166.4919"
-       id="image1299" />
+       y="169.4564"
+       id="image1059" />
     <text
        fill="#FFFFFF"
        font-family="sans-serif"
@@ -292,26 +346,26 @@ entity pods-->
        lengthAdjust="spacing"
        textLength="33"
        x="336.5"
-       y="242.487"
-       id="text1301">Pods</text>
+       y="245.4515"
+       id="text1061">Pods</text>
     <!--MD5=[bed510ef7b739508306ebf3627537b92]
 entity svcs-->
     <rect
        fill="#23A3DD"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="99.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="84"
        x="445.5"
-       y="156.4919"
-       id="rect1303" />
+       y="159.4564"
+       id="rect1063" />
     <image
        height="63"
        width="64"
        x="455.5"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA/CAIAAADff1mdAAACY0lEQVR4Xu2Yu00DQRCG3QsVXAd04ArcAR24AnfgnMAiInJERERERoSEELKEEEJCVLCMbmBZz3/7Xt8t9o6+AJ33Zv/vXnvHTJWuzeOXAzk6u2ZyQ0ZhXBtyz4wqI4ARQ5BdkipXAGPFIjtGVroARslBdg+uFAGcvhRypoCKE8ApD4Gc1VmhAjjNoZEJLOUXwNZjItNAuQSw3VTIZEYNC2CLGpAp+9oTwH3qxMzcBKbAzHxEAjiuZprAPsu79/l2FwXtgn3CKSywuHk9u3yKgnbBPuFIARwRxcXtW3f1HAXtgn2iaAIGTSCFkgJ8E2NKG/k38cYUwN9iocN5fv2CcFzcTuSfgU3vUEaAWD98Clb3H5yV/sBfsUMCJQUQSskCpeIiRyGAW0sxggDRBOxUKkCPFHqEB8KPUdxug5rjjG6iBRaRa1Y4aatbikDXH1R6oXfDq1vXvzXgrwLdFmd0kyiwDPgciboHqGETCKMJDNMEnKz7V0tmvt3xg0VvMfOZI/XbKIXzDuZPImo+ONKBX4APZAePbY152CirYzDL6MF8Mm0Enjq/AB0M7K4Rqw9fCQ6EgHtNXAUszLkCHZwBHGASfga6UxHwXme1C3i/yGoW+PmkdDuwgO1uO9BNzNvdApzc/89dusboIb2Ad3eNmYmf6DiG4dVDD172L6E2aLDj8tax/wSU3aE2zMzHJaD+g4MILAVU3Q4y66CAqtVBpuxrWEDV5yDz/dbxCqiaHGQyo1wCqg4HmWm/PAJqageZBsovoKZzkDmG6jQE1BQOMoGlQgXUuA5ybntFCKixHOSszvoGqAiuwYo3H8AAAAAASUVORK5CYII="
-       y="166.4919"
-       id="image1305" />
+       y="169.4564"
+       id="image1065" />
     <text
        fill="#FFFFFF"
        font-family="sans-serif"
@@ -319,63 +373,96 @@ entity svcs-->
        lengthAdjust="spacing"
        textLength="60"
        x="455.5"
-       y="242.487"
-       id="text1307">Services</text>
+       y="245.4515"
+       id="text1067">Services</text>
+    <!--MD5=[826995da42a5abda3f049f2e2c94b9c2]
+entity crds-->
+    <rect
+       fill="#23A3DD"
+       filter="url(#fgly2vi9kfbxc)"
+       height="99.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="84"
+       x="564.5"
+       y="159.4564"
+       id="rect1069" />
+    <image
+       height="63"
+       width="64"
+       x="574.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA/CAIAAADff1mdAAACk0lEQVR4Xu2ZPU4DMRCFcxdOkBtwA07ADbgBJ+AG9BQRFRUVFRUVHRUSQggJIYSEOIF5WkPizNsd22Nv1iEZvSqxPe9zZv2zmbnasXj8ViRbF8dMflAQbHdIsmdB1AFgiymSo5iiFIBt5UqOmBl2ALZSIjl6clgAOH0tyUwJkQfAKceQzKpGKgCnGVvSwUDEAXjoTUq6odAAeLipJJ0F0Q/AQ7Qg6bKLNQDu06ZCzyMCnN1/nty+Q6d3H+cPX9zArNDzWADwfXj1Mr989jq6fq3IEHoeBQBTvrQ+BkPoeQXA7WyCS3g9uHhiBhQVt7dpXICweEKhrri9TSMCYJrZ+h5ASgJwi6j8Knl888Zi6154NrixeZ0tAuhdZ0oEklwGO4B/THvXmRLlFpgdoPr0Q5gO/AicS1FzAHhCOJeiFQB/p6sRgEXHsAeopB0G4E+jagcAsgAsbyp+Jx46uuUKABjZK31TswAIIR9ys6ESYVIwOykYFQAWHUOt3yFUytZWB2DR3SHZQbnwvHGuUNUAlFN0iaIHpNYBolVUDWC7S8hf5Dl9ifzOEF2IKgAgh3ILM8tvC5xOyAIAx8sdB5VTa+792u+Vfsm0AGz9UWJXAFAS/r1DSo01ByBOMuiinzXaAujdPvXzkh0g8WEPpQPA5dCYymprB6h+I1M2f6WjDeD3SpnLoB97FAC9Y2/hKfLOjS93fTFg2lhRAO4yz//7Y2l7BeByGJAM9YCsLOX45e9urNwXo6FnI8C0Cj2vAbhtYBCGJYBrm0F67QVwrTJIl130A7j2GKS/v/i/AK4lBuksCA3AtcEgPa1HBMBNzSDdUMQB3HQM0kdf7AaAm4JBOhiIVAC3WQaZezgyANymGGRWNX4AzCG73FMN2kkAAAAASUVORK5CYII="
+       y="169.4564"
+       id="image1071" />
+    <text
+       fill="#FFFFFF"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="38"
+       x="574.5"
+       y="245.4515"
+       id="text1073">CRDs</text>
     <!--MD5=[a282f4bcd12b3793cac5011501751739]
 entity k8sEtc-->
     <rect
        fill="#23A3DD"
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="36.2969"
        style="stroke:#16688D;stroke-width:1.5;"
        width="32"
-       x="564.5"
-       y="187.9919"
-       id="rect1309" />
+       x="683.5"
+       y="190.9564"
+       id="rect1075" />
     <text
        fill="#FFFFFF"
        font-family="sans-serif"
        font-size="14"
        lengthAdjust="spacing"
        textLength="12"
-       x="574.5"
-       y="210.987"
-       id="text1311">...</text>
+       x="693.5"
+       y="213.9515"
+       id="text1077">...</text>
     <!--MD5=[e37156ec2c7d0a63c8d30e6af773044e]
 entity p3-->
     <rect
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="36.2969"
        style="stroke:#00000000;stroke-width:1.5;fill:none;"
        width="33"
-       x="669"
-       y="187.9919"
-       id="rect1313" />
+       x="788"
+       y="190.9564"
+       id="rect1079" />
     <!--MD5=[f3929e065b321440b4eee273bd9781ea]
 entity p2-->
     <rect
-       filter="url(#f2odmju74ej10)"
+       filter="url(#fgly2vi9kfbxc)"
        height="36.2969"
        style="stroke:#00000000;stroke-width:1.5;fill:none;"
        width="33"
        x="7"
-       y="187.9919"
-       id="rect1315" />
+       y="190.9564"
+       id="rect1081" />
     <!--MD5=[1274d2f73257d8a260767351fbdcfb2e]
 link k8sAppOpsRepo to infraRepo-->
     <!--MD5=[69de34178f70aedb464fe2b85bae9163]
 link p2 to k8sAppOpsRepo-->
     <!--MD5=[2346b4487aafb8b0dfc204236113a35a]
 link pods to svcs-->
-    <!--MD5=[cd333777b05cdbc3432d878267fa46c3]
-link svcs to k8sEtc-->
+    <!--MD5=[592a98b066abb9926a9398cf1f6fb414]
+link svcs to crds-->
+    <!--MD5=[7b7045cc1fd467bae4300b7433a650cd]
+link crds to k8sEtc-->
     <!--MD5=[ef581357589d84300ee89253b43f88b1]
 link cluster1 to iam-->
     <!--MD5=[32df8b8e2aee11960012608867a5e33d]
 link iam to dns-->
-    <!--MD5=[8e303e24913b2871532362fc04340d0a]
-link dns to cloudEtc-->
-    <!--MD5=[d1071aadfcd76892a478ac048079c720]
+    <!--MD5=[2297327e9d05e4268f991d293601de9d]
+link dns to vm-->
+    <!--MD5=[80952462eebdea968f83ba2f3295ee69]
+link vm to k8s-->
+    <!--MD5=[f9a7923f894493519ad831797a71e43c]
+link k8s to cloudEtc-->
+    <!--MD5=[93f93f66f831610e3d987e2aa4ea8286]
 @startuml
 
 !includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-25pct.iuml
@@ -416,16 +503,22 @@ cloud "Cloud" as cloud {
     rectangle "<$k8s>\nCluster" as cluster1 {
         rectangle "<$pod>\nPods" <<K8sResource>>  as pods
         rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "<$crd>\nCRDs" <<K8sResource>> as crds
         rectangle "..." <<K8sResource>> as k8sEtc
         pods -[hidden]> svcs
-        svcs -[hidden]> k8sEtc
+        svcs -[hidden]> crds
+        crds -[hidden]> k8sEtc
     }
     rectangle "<$user>\nIAM" as iam
     rectangle "<$globe>\nDNS" as dns
+    rectangle "<$server>\nVMs" as vm
+    rectangle "<$k8s>\nClusters" as k8s
     rectangle "..." as cloudEtc
     cluster1 - -[hidden]> iam
     iam -[hidden]> dns
-    dns -[hidden]> cloudEtc
+    dns -[hidden]> vm
+    vm -[hidden]> k8s
+    k8s -[hidden]> cloudEtc
 }
 
 skinparam rectangle<<Hidden>> {
@@ -1239,16 +1332,22 @@ cloud "Cloud" as cloud {
     rectangle "<$k8s>\nCluster" as cluster1 {
         rectangle "<$pod>\nPods" <<K8sResource>>  as pods
         rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "<$crd>\nCRDs" <<K8sResource>> as crds
         rectangle "..." <<K8sResource>> as k8sEtc
         pods -[hidden]> svcs
-        svcs -[hidden]> k8sEtc
+        svcs -[hidden]> crds
+        crds -[hidden]> k8sEtc
     }
     rectangle "<$user>\nIAM" as iam
     rectangle "<$globe>\nDNS" as dns
+    rectangle "<$server>\nVMs" as vm
+    rectangle "<$k8s>\nClusters" as k8s
     rectangle "..." as cloudEtc
     cluster1 - -[hidden]> iam
     iam -[hidden]> dns
-    dns -[hidden]> cloudEtc
+    dns -[hidden]> vm
+    vm -[hidden]> k8s
+    k8s -[hidden]> cloudEtc
 }
 
 skinparam rectangle<<Hidden>> {
@@ -1319,20 +1418,20 @@ Country: US
      inkscape:connector-curvature="0"
      style="fill:none;stroke:#23a3dd;stroke-width:1.2050997"
      id="hwRepo-backto-hardware"
-     d="m 219.23358,219.23023 c 12.44591,0 24.89182,0 37.33773,0 6.22297,0 12.44592,0 18.66888,0 1.55581,0 3.11148,0 4.66729,0 0.77784,0 1.55566,0 2.33349,0 0.19448,0 0.38893,0 0.58338,0" />
+     d="m 220.0187,212.35366 c 12.44591,0 24.89182,0 37.33773,0 6.22297,0 12.44592,0 18.66888,0 1.55581,0 3.11148,0 4.66729,0 0.77784,0 1.55566,0 2.33349,0 0.19448,0 0.38893,0 0.58338,0" />
   <polygon
      id="polygon147"
      style="fill:#23a3dd;stroke:#23a3dd;stroke-width:1"
-     points="276.99,759.5 267.99,763.5 276.99,767.5 272.99,763.5 "
-     transform="translate(-54.51391,-544.26977)" />
+     points="267.99,763.5 276.99,767.5 272.99,763.5 276.99,759.5 "
+     transform="translate(-53.728791,-551.14634)" />
   <path
      inkscape:connector-curvature="0"
-     style="fill:none;stroke:#23a3dd;stroke-width:1.08192158"
+     style="fill:none;stroke:#23a3dd;stroke-width:1.02848327"
      id="hwRepo-backto-hardware-7"
-     d="m 202.18628,366.41764 c 10.03165,0 20.06329,0 30.09494,0 5.01584,0 10.03166,0 15.04748,0 1.25402,0 2.50792,0 3.76193,0 0.62695,0 1.25389,0 1.88084,0 0.15675,0 0.31348,0 0.47021,0" />
+     d="m 202.20095,354.64371 c 9.06516,0 18.1303,0 27.19546,0 4.53259,0 9.06516,0 13.59773,0 1.13321,0 2.2663,0 3.39949,0 0.56655,0 1.13309,0 1.69963,0 0.14165,0 0.28328,0 0.42491,0" />
   <polygon
      id="polygon147-5"
      style="fill:#23a3dd;stroke:#23a3dd;stroke-width:1"
-     points="276.99,759.5 267.99,763.5 276.99,767.5 272.99,763.5 "
-     transform="translate(-71.561214,-397.08235)" />
+     points="276.99,767.5 272.99,763.5 276.99,759.5 267.99,763.5 "
+     transform="translate(-71.546542,-408.85628)" />
 </svg>

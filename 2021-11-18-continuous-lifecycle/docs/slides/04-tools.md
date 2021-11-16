@@ -70,13 +70,17 @@ Note:
 
 
 ### Others
-* Backup
+* Backup / **restore**
+* ~~Horizontal Pod Autoscaler~~  
+  🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/#leaving-room-for-imperativeness)
 * Deployment Strategies - Progressive Delivery  
   <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
   <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-* ... 
+* ...
+ 
+<br/>
 
-**➡ GitOps loves operators**
+<strong style="font-size: 200%">➡ GitOps loves operators</strong>
 
 Notes:
 * Progressive Delivery = canary releases, A/B tests, and blue/green deployments
