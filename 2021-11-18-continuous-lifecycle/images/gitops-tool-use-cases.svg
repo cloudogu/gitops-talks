@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="application/ecmascript"
+   contentStyleType="text/css"
+   height="439px"
+   preserveAspectRatio="none"
+   style="width:714px;height:439px;background:#00000000;"
+   version="1.1"
+   viewBox="0 0 714 439"
+   width="714px"
+   zoomAndPan="magnify"
+   id="svg1319"
+   sodipodi:docname="gitops-tool-use-cases.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata1323">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     id="namedview1321"
+     showgrid="false"
+     inkscape:zoom="1.4617502"
+     inkscape:cx="424.75121"
+     inkscape:cy="288.02768"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1319" />
+  <defs
+     id="defs1255">
+    <filter
+       height="300%"
+       id="f2odmju74ej10"
+       width="300%"
+       x="-1"
+       y="-1">
+      <feGaussianBlur
+         result="blurOut"
+         stdDeviation="2.0"
+         id="feGaussianBlur1246" />
+      <feColorMatrix
+         in="blurOut"
+         result="blurOut2"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
+         id="feColorMatrix1248" />
+      <feOffset
+         dx="4.0"
+         dy="4.0"
+         in="blurOut2"
+         result="blurOut3"
+         id="feOffset1250" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut3"
+         mode="normal"
+         id="feBlend1252" />
+    </filter>
+  </defs>
+  <g
+     id="g1317">
+    <!--MD5=[bfeb4e40a9e05244ea0843bb1cef058f]
+cluster cloud-->
+    <path
+       d="M269.0991,22.6333 C277.69,11.4546 288.9871,12.9587 294.1799,26.133 C302.9735,13.6561 313.9271,12.3419 323.6353,25.0639 C330.7001,13.7625 338.7441,10.7611 348.8726,21.5664 C358.5545,9.8176 365.7169,10.4356 372.6458,24.1379 C380.9318,12.0775 396.0872,9.945 403.1628,25.4767 C408.3118,10.7394 419.6541,9.2714 429.3375,20.9906 C436.8769,10.3709 446.6389,8.6583 454.2344,20.9297 C462.7388,6 475.164,6.6268 482.99,21.5825 C490.5203,12.9247 500.2397,12.2002 505.4282,24.1343 C513.341,8.9896 524.2942,8.5712 534.413,21.8876 C545.1614,7.9824 556.2461,9.7149 562.4412,26.1007 C567.5302,13.4884 577.8521,13.0308 584.7805,24.3863 C592.0641,11.283 605.8237,6.4716 615.1572,22.2286 C628.1849,12.8369 637.7648,13.4624 644.5,29.4919 C648.2005,28.1569 650.0402,30.2265 649.1648,33.8215 C661.3158,42.4522 658.2095,55.024 645.7447,60.4989 C658.9331,67.0755 656.6014,76.5792 647.1074,84.4465 C659.9578,91.8376 658.3028,102.8848 647.444,110.5813 C659.85,116.4627 660.8246,129.1889 650.0828,137.352 C663.4368,144.7971 661.6244,157.3064 649.3212,164.0188 C663.9352,172.587 665.0482,184.8537 649.6419,193.7456 C662.8365,199.1476 660.2632,210.6752 651.0321,217.3955 C663.4524,224.5844 666.2005,236.0232 653.2646,245.2446 C664.4521,254.5779 665.4848,265.941 651.4276,273.6412 C661.577,279.4949 663.2746,290.4268 651.5752,296.4219 C664.0619,307.3852 660.9174,315.2775 648.5768,323.4907 C660.2579,332.4689 659.7475,340.6856 648.1802,349.3067 C661.5801,356.7464 661.7328,370.1033 649.7165,378.8642 C659.9626,394.9786 654.1927,403.4852 637.5,408.4919 C639.9383,408.6077 641.1045,409.8201 640.0141,412.2787 C631.584,423.4601 621.1837,423.2271 612.7745,412.2532 C604.8603,425.6426 595.8516,423.2826 587.3874,412.839 C582.067,428.3015 568.3969,430.3869 559.3714,416.359 C551.9351,427.5902 541.1716,427.778 533.2445,416.94 C525.2538,426.453 516.4778,425.8494 509.8496,415.3474 C502.8046,428.4243 489.1669,428.9931 481.12,416.4719 C476.2015,429.5901 464.0527,429.1364 456.9187,418.7534 C448.2768,432.3646 435.5899,432.4243 426.6635,419.0725 C416.3975,429.8337 407.4948,427.9989 402.484,413.9507 C394.9414,427.7876 384.9957,428.3981 376.1895,415.1787 C366.3832,428.5831 356.5983,427.6829 346.468,415.5558 C336.1905,426.8506 329.3078,423.5712 322.8827,411.6432 C315.5742,422.2915 302.3218,422.2121 295.8208,410.6589 C282.0591,426.7605 264.3612,420.6549 259.5,401.4919 C261.1904,400.8767 262.4755,401.7612 262.0943,403.6437 C247.619,395.5847 249.3561,385.5497 260.9399,376.387 C249.666,369.9552 250.7914,358.6808 261.9159,353.1915 C250.0908,346.0747 247.4105,333.1037 260.9861,325.1447 C248.1893,316.7358 247.7752,306.7661 260.8871,298.2619 C249.7829,291.0873 248.8722,281.9775 259.3708,273.481 C246.8517,264.9146 246.0442,251.8669 260.7194,244.5691 C247.9607,236.3969 248.1493,225.9683 260.2989,217.4104 C249.3579,211.0182 248.0983,200.8047 258.4039,192.778 C245.5258,183.8816 243.9704,174.4621 258.6573,165.8249 C248.4964,156.6402 246.2814,145.5836 261.5137,139.1144 C246.0677,131.7182 248.2429,116.8472 261.4086,109.35 C249.2539,102.1314 251.1253,89.8357 262.9192,84.0469 C251.0774,76.7529 247.1466,65.1212 261.0421,56.0986 C247.4207,43.7222 246.6307,29.4292 266.5,22.4919 C267.4088,21.3147 268.3252,21.3316 269.0991,22.6333 "
+       filter="url(#f2odmju74ej10)"
+       style="stroke:#23A3DD;stroke-width:1.5;fill:none;"
+       id="path1257" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="45"
+       x="429.5"
+       y="40.487"
+       id="text1259">Cloud</text>
+    <!--MD5=[3261b5d1b5d4f1e855e4fa567c4b1999]
+cluster cluster1-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#f2odmju74ej10)"
+       height="214"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="337"
+       x="283.5"
+       y="65.4919"
+       id="rect1261" />
+    <image
+       height="48"
+       width="48"
+       x="428"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+       y="67.4919"
+       id="image1263" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="57"
+       x="423.5"
+       y="128.487"
+       id="text1265">Cluster</text>
+    <!--MD5=[34f8174a618535b2cae10d93ac6db705]
+entity k8sAppOpsRepo-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#f2odmju74ej10)"
+       height="100.5938"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="136"
+       x="75.5"
+       y="155.4919"
+       id="rect1267" />
+    <image
+       height="48"
+       width="48"
+       x="85.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
+       y="165.4919"
+       id="image1269" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="112"
+       x="89.5"
+       y="226.487"
+       id="text1271">K8s Resources /</text>
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="86"
+       x="85.5"
+       y="242.7838"
+       id="text1273">applications</text>
+    <!--MD5=[9a561514b4013589368d6947870941b7]
+entity infraRepo-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#f2odmju74ej10)"
+       height="84.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="102"
+       x="92.5"
+       y="316.4919"
+       id="rect1275" />
+    <image
+       height="48"
+       width="48"
+       x="102.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
+       y="326.4919"
+       id="image1277" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="78"
+       x="106.5"
+       y="387.487"
+       id="text1279">Cloud Infra</text>
+    <!--MD5=[e14bfcad9336735f4435ed6c525b255e]
+entity iam-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#f2odmju74ej10)"
+       height="84.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="68"
+       x="267.5"
+       y="316.4919"
+       id="rect1281" />
+    <image
+       height="48"
+       width="48"
+       x="277.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACFElEQVR4Xu2YTUoEMRBG5y7ewBt4Am/gDTyBN/AGrl0IrlzNypUguHIjrkTQQRhEBsYfhEEkPiYgPVVJupJ0Oz3gx7eQppN6Viqp9IzcwDSSD9atKqDL6efB1cve+XR3/IT3L56PbueT9y/5Xo4KgU7u3rZPH7aO74MG8Wa2kGNsygZ6XXyTDA2hTbbkYIPygKBJJEb78Homp2hTHpAxN02zuHKWpDKAWAIdz2LyKueKywrEpDqS0exEOV1cViAyryPZLaeLywrETtZh7ObEkjNGZAXK2lza9iPACqRjZNm+/zcWaOdsosPYbT+NrEA0Th3G7u6LumbbsyHkdHFZgVzFRrMXkMsCGlbr8Co4HsePH3KWpPKA+F+ztpv9PPxVHpCXMU+5ufEqAUIES6SKMyKrbpoqBPLi4syiEJ6cYa4ZnA7FKF5VQH1oY4H42qJuWCBOOdz6lcPL/k0Wkb5hX8d2ICCC9ctDXzTEgw/zBy/H9iDPLR0tBcT44nYRM1jpbEWBihtFq0lt4nM7DFTT2y0m8bE8BYCoBj1F52btZOClAkCxquzcwd4igf4mPd4Uk4juNBA7WY/sz7q6JVDwyOnP+vIvgfSYXq1vtytANb8olJmbQhPArR1Ib/5/oFUPDqilhlzF12CZ9WeJBOq7rTYdbLESCHE26MGdmxM4eO0MALllMXE7o/n15CCKVxhojRoc0A8BXJqUlXui3QAAAABJRU5ErkJggg=="
+       y="326.4919"
+       id="image1283" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="26"
+       x="277.5"
+       y="387.487"
+       id="text1285">IAM</text>
+    <!--MD5=[30e382dc68ab04d49d3ef5ad3266e605]
+entity dns-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#f2odmju74ej10)"
+       height="84.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="68"
+       x="370.5"
+       y="316.4919"
+       id="rect1287" />
+    <image
+       height="48"
+       width="48"
+       x="380.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAADEElEQVR4Xu2YTWpUQRSFs5fegTvICtyBO+gVZAfuwLEDwZGjjBwFBEdOxJEI2ghBJGCiCCFIeegTz7t9b9Wtei8d0gMvB2lf1av66v5U1ctROTA78g8e2vYDdHn9xz9aakuA7PRvzn8fv9qsnn+CTt5+vzvZPKBnH35g+tMvv/jfFx+viCI9Pv0qJvxen317f3E9vT9go0BAefTyM6Z88vqcTzY/bxwNBQh2AAqf4JVxrD4QxlJQIA0NB0QaSi4EnB4+fXcxDdq2DhCGtjMBgs+ROpFDwgKq3WxAW5YBYU1uJiQNmxL3UEBhT+tdCHFHrKc5gjWBIg3Eplb2WCmT4jg5Ux0ols/KpDMSPLZGsbNS20oxjVYBqg4BgYMduvGiFDWWp5OW56wC5KIusb6QlbGpKuyTHNDWmpWK0ZoHSsLBDnl9WakkW2PCc7HoPFDVvSOjV8VXkjUoDWQ7QAgK3FuVCh4/YmtLdAD+jU2UwirzHnpwO2Ag5Hx0qaStLDYlUqCRK7FVEkOxQOtGcVIEGq95SpPlg9u7wATU2n4oAo0cGlba/ZC8sVWSI4sFiv2sWC+tTbwlAcUTzcreTG6BurFgt2RHqUq7Vw5ki/8WqBsLdnPXo650iObbqc3r+/XQcqDSyyH2mZtDgyGr5FDpAd0xqfMqsyfaBJTfcpaV/eA+pJtTsUD5IuZehqjulYiyl5CdswwOaGmkT5Rmwo/YKmnwctCHa0nXMbhWJ40cm2If2g5QUkSD9eLEZWzapaB9QeZDhonja6vt/Zcdql9IVemVZH+39UXzQMlqust16p6s1S8hD1Ta7+ffWVHd7zhb7bIKUGkMMbipSEzY1tZV/SgrLSCMEt0wkhOSjtVq5+RPM3Wgss2VyKS7ZmxyUryiOxOakgCVLZO71ypqrTyTmB8xXjlNyYFobol8GGeyEre7BrXyxlofqGzzQDFSLFpOsl/semv97yu2a0NANP3dU0NXi1FuoHtm/cWzzAKiYT5NCTLHZD9oABSPqq7NBooGCCQNIrhg+mh7ANqv/Qfq2V/YGuCi+QRazAAAAABJRU5ErkJggg=="
+       y="326.4919"
+       id="image1289" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="30"
+       x="380.5"
+       y="387.487"
+       id="text1291">DNS</text>
+    <!--MD5=[6509961f2b10d552b393726d905ed0c7]
+entity cloudEtc-->
+    <rect
+       fill="#FFFFFF"
+       filter="url(#f2odmju74ej10)"
+       height="36.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="32"
+       x="473.5"
+       y="340.4919"
+       id="rect1293" />
+    <text
+       fill="#23A3DD"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="12"
+       x="483.5"
+       y="363.487"
+       id="text1295">...</text>
+    <!--MD5=[4a871386e993fb7e45d2daf54efd7104]
+entity pods-->
+    <rect
+       fill="#23A3DD"
+       filter="url(#f2odmju74ej10)"
+       height="99.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="84"
+       x="326.5"
+       y="156.4919"
+       id="rect1297" />
+    <image
+       height="63"
+       width="64"
+       x="336.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA/CAIAAADff1mdAAACZElEQVR4Xu2YTUrEMBiG5y6eYG7gDTyBN/AGnmBu4N5FceXKlStXrty5EkREEBFBPEF8mY+J8XubnybpNNZ+PMhMJ03eJ0mhcWVqV/fwFUC3Lq6VvlBQHNeHvrOg6ghwxBR0L1lVKsCxhqJ7HFj5AhylBN17cuUI8PC10CMl1DABHnIM9KjBShXgYcZGJ/BUXIC73ic6DVVIgLubCp3MqX4B7qIFdMpt/RLge9rEzbwITIGbeUYC3K5lFoGpmZ0Atyhkc/dxevt+fP0K8AFfuU0h9QXO7j8R9OTm7ejq5fDyeX3xZMFXXMRPaIBmfG8G1QQQSCbbhj44f3TTq4toJstSaFIq4JvsdNxl4f6jlAqoWc/Drgb3H+VHgH+LItsdf+3+wVxyPh9obHeR7YpHiZIvgHVXz2XgCRbC7fGBR4lSJLD2PJfusuB64Ce5VzqZRoCxce0028kOPzP5Anw1BZ+AC/aGpE95PPIEwIgCABMP+DqzCAxkEdAsAgNZBDSLwED+vADeCzgEky6Q90bdZQvgBSHwYmNJEZDXp7Os1+kuW0BAOIzNmSxRAdy+yTqOWYoEBKy+73UtIIBbsreNSwWBbneu5x3VK4Bm5Sd6Sx0BAZlOtie19e6YYgXkq5y8akUXVnW763bPN69A+XbvJfNEFkWebznQjBS9s0fKkRzGRpLP5Z+7UtyuTdzM8xIwf8FBBdYCpm0HnbVXwLTqoFNuq1/AtOeg8+1qvgKmJQedzKmQgGnDQWf6XREBM7WDTkMVFzDTOegcffU/BMwUDjqBp1IFzH4d9Nj+GiBg9uWgRw3WN2eqo20F5PEdAAAAAElFTkSuQmCC"
+       y="166.4919"
+       id="image1299" />
+    <text
+       fill="#FFFFFF"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="33"
+       x="336.5"
+       y="242.487"
+       id="text1301">Pods</text>
+    <!--MD5=[bed510ef7b739508306ebf3627537b92]
+entity svcs-->
+    <rect
+       fill="#23A3DD"
+       filter="url(#f2odmju74ej10)"
+       height="99.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="84"
+       x="445.5"
+       y="156.4919"
+       id="rect1303" />
+    <image
+       height="63"
+       width="64"
+       x="455.5"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA/CAIAAADff1mdAAACY0lEQVR4Xu2Yu00DQRCG3QsVXAd04ArcAR24AnfgnMAiInJERERERoSEELKEEEJCVLCMbmBZz3/7Xt8t9o6+AJ33Zv/vXnvHTJWuzeOXAzk6u2ZyQ0ZhXBtyz4wqI4ARQ5BdkipXAGPFIjtGVroARslBdg+uFAGcvhRypoCKE8ApD4Gc1VmhAjjNoZEJLOUXwNZjItNAuQSw3VTIZEYNC2CLGpAp+9oTwH3qxMzcBKbAzHxEAjiuZprAPsu79/l2FwXtgn3CKSywuHk9u3yKgnbBPuFIARwRxcXtW3f1HAXtgn2iaAIGTSCFkgJ8E2NKG/k38cYUwN9iocN5fv2CcFzcTuSfgU3vUEaAWD98Clb3H5yV/sBfsUMCJQUQSskCpeIiRyGAW0sxggDRBOxUKkCPFHqEB8KPUdxug5rjjG6iBRaRa1Y4aatbikDXH1R6oXfDq1vXvzXgrwLdFmd0kyiwDPgciboHqGETCKMJDNMEnKz7V0tmvt3xg0VvMfOZI/XbKIXzDuZPImo+ONKBX4APZAePbY152CirYzDL6MF8Mm0Enjq/AB0M7K4Rqw9fCQ6EgHtNXAUszLkCHZwBHGASfga6UxHwXme1C3i/yGoW+PmkdDuwgO1uO9BNzNvdApzc/89dusboIb2Ad3eNmYmf6DiG4dVDD172L6E2aLDj8tax/wSU3aE2zMzHJaD+g4MILAVU3Q4y66CAqtVBpuxrWEDV5yDz/dbxCqiaHGQyo1wCqg4HmWm/PAJqageZBsovoKZzkDmG6jQE1BQOMoGlQgXUuA5ybntFCKixHOSszvoGqAiuwYo3H8AAAAAASUVORK5CYII="
+       y="166.4919"
+       id="image1305" />
+    <text
+       fill="#FFFFFF"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="60"
+       x="455.5"
+       y="242.487"
+       id="text1307">Services</text>
+    <!--MD5=[a282f4bcd12b3793cac5011501751739]
+entity k8sEtc-->
+    <rect
+       fill="#23A3DD"
+       filter="url(#f2odmju74ej10)"
+       height="36.2969"
+       style="stroke:#16688D;stroke-width:1.5;"
+       width="32"
+       x="564.5"
+       y="187.9919"
+       id="rect1309" />
+    <text
+       fill="#FFFFFF"
+       font-family="sans-serif"
+       font-size="14"
+       lengthAdjust="spacing"
+       textLength="12"
+       x="574.5"
+       y="210.987"
+       id="text1311">...</text>
+    <!--MD5=[e37156ec2c7d0a63c8d30e6af773044e]
+entity p3-->
+    <rect
+       filter="url(#f2odmju74ej10)"
+       height="36.2969"
+       style="stroke:#00000000;stroke-width:1.5;fill:none;"
+       width="33"
+       x="669"
+       y="187.9919"
+       id="rect1313" />
+    <!--MD5=[f3929e065b321440b4eee273bd9781ea]
+entity p2-->
+    <rect
+       filter="url(#f2odmju74ej10)"
+       height="36.2969"
+       style="stroke:#00000000;stroke-width:1.5;fill:none;"
+       width="33"
+       x="7"
+       y="187.9919"
+       id="rect1315" />
+    <!--MD5=[1274d2f73257d8a260767351fbdcfb2e]
+link k8sAppOpsRepo to infraRepo-->
+    <!--MD5=[69de34178f70aedb464fe2b85bae9163]
+link p2 to k8sAppOpsRepo-->
+    <!--MD5=[2346b4487aafb8b0dfc204236113a35a]
+link pods to svcs-->
+    <!--MD5=[cd333777b05cdbc3432d878267fa46c3]
+link svcs to k8sEtc-->
+    <!--MD5=[ef581357589d84300ee89253b43f88b1]
+link cluster1 to iam-->
+    <!--MD5=[32df8b8e2aee11960012608867a5e33d]
+link iam to dns-->
+    <!--MD5=[8e303e24913b2871532362fc04340d0a]
+link dns to cloudEtc-->
+    <!--MD5=[d1071aadfcd76892a478ac048079c720]
+@startuml
+
+!includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-25pct.iuml
+
+!define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
+!includeurl CLOUDOGUURL/tools/k8s.puml
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.2.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/docker.puml
+!includeurl ICONURL/material/computer.puml
+!includeurl ICONURL/devicons/git.puml
+!includeurl ICONURL/font-awesome-5/globe.puml
+!includeurl ICONURL/font-awesome-5/user.puml
+!includeurl ICONURL/font-awesome-5/hdd.puml
+!includeurl ICONURL/font-awesome-5/server.puml
+!includeurl ICONURL/font-awesome-5/tools.puml
+
+!define CLOUDOGU_BLUE #23a3dd
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND BLACK
+
+skinparam backgroundcolor TRANSPARENT
+
+together {
+    rectangle "<$git>\n K8s Resources /\napplications" as k8sAppOpsRepo
+    
+    rectangle "<$git>\n Cloud Infra" as infraRepo
+    
+    k8sAppOpsRepo - -[hidden]> infraRepo
+}
+
+rectangle "1 " <<Hidden>> as p3 
+rectangle "2 " <<Hidden>> as p2
+p2 -[hidden]> k8sAppOpsRepo
+
+
+cloud "Cloud" as cloud {
+    rectangle "<$k8s>\nCluster" as cluster1 {
+        rectangle "<$pod>\nPods" <<K8sResource>>  as pods
+        rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "..." <<K8sResource>> as k8sEtc
+        pods -[hidden]> svcs
+        svcs -[hidden]> k8sEtc
+    }
+    rectangle "<$user>\nIAM" as iam
+    rectangle "<$globe>\nDNS" as dns
+    rectangle "..." as cloudEtc
+    cluster1 - -[hidden]> iam
+    iam -[hidden]> dns
+    dns -[hidden]> cloudEtc
+}
+
+skinparam rectangle<<Hidden>> {
+  textColor White
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
+
+skinparam rectangle<<NoBorder>> {
+    BorderColor transparent
+    borderColor Transparent
+    backgroundColor Transparent
+    stereotypeFontColor Transparent
+}
+
+skinparam arrow {
+    Color CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam actor {
+    BackgroundColor CLOUDOGU_BLUE
+    BorderColor #16688d
+    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+}
+
+skinparam rectangle {
+    BackgroundColor WHITE
+    BorderColor #16688d
+    FontColor CLOUDOGU_BLUE
+}
+skinparam rectangle<<K8sResource>> {
+    BackgroundColor CLOUDOGU_BLUE
+    BorderColor #16688d
+    FontColor WHITE
+}
+
+skinparam cloud {
+    BackgroundColor TRANSPARENT
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam node {
+  BorderColor CLOUDOGU_BLUE
+  FontColor CLOUDOGU_BLUE
+}
+
+skinparam note {
+    BackgroundColor WHITE
+    BorderColor #16688d
+}
+
+@enduml
+
+@startuml
+
+sprite $master [64x63/16z] {
+jLVRiiCW23G8Wa_v_xyjn5oCyP8qBNEcSzBfhkm2QkQv6N6F-Ok8ftY7VieGg_4EVPSXTkCTUiGGRyKxT8iXFeftw88XVXb_nqlmo5_Z5Jrf-21zV1VTPMZZ
+XM3Aei7GmaiuePiCTNoM-O2X1c-WwmnNl1HeXCbDkngK4JwSuHG5CGXkppp2unaVL0zdh660BzCdgmGUw-C5V_w2puK3zivMHRTPU36W9z-pB7oqqy80JwLx
+QVsE0UTdloQAYmyGEEa_y5JWY-hhhy6RJR9cJAmSYBijlhiZy59YrZuJM3BnQfXGLXIG7ZuaXO526a2Ch0b8NbNkuRNEBbKRHHYSDoxUnLGCkDeNU5r7lRTi
+xG_SrEYWmZu7MwrO0je3UhHFeXi6y6GPssgwifce_U2SMtBUDN3VFYJRVNHb2gaUgnXgTD2r-xnQ9pOAjBSZPdFPCJ2rkIfatVT9_y5zt_2j2QgCJ-3azx4-
+AUCsaN7G0FQZJMWgd3FGsaEXVwHbdGRc_w98pMHEscXq9cORYFUWSsIzh3e0XkAlEuYpOiinrY0tJkLy2r5001r_R7edBGzNX9M2rZhMl9kx7gwoeJavrUEJ
+eNfwjGxGleU7b0SN21sxCzhLnBVlBu9G1FMkSBL6BEBtDy3VtJ-_8PX_Z7zv_tv8y8VtXmS4yv_mBz-VRXByzltl0m00
+}
+
+sprite $etcd [64x63/16z] {
+jPT95eCW44I5dd3b_MyRY8g2qA1eBVAYoI_fIN5PgfgZbWUQ4utHTntceiReNeTPrHZTSfYxD4RN7EPR6gCpX_cXlkS5WTrZdi5urHrKtAsqwb3dJtIG9NU7
+p-YgGvalq1M78bwcomvNtg5H1Ax5Yr75BPvqdbfykdmRT3gUuC9duST_MoGH5oICnzbB0YhXhwaE-5hItK5qdhVBS60Gm2yV_4By4LGIK0oVV1tz5QT_pFuJ
+P5yPPdpM431jPQ8LZdbpMsQiq-u8U_euwoFW-9Del9pQH0ZXNpyWSMThHHnvYVaFNvn47ZKU8uyMUIs_hp-1tUE_Z40IFXpyjBTVuAQ3rn8Oku-pFZO7hoL0
+J0TFxVIfF7R4Bsly9Tvg3I2no7pklycWwwh_7e5Vusbe3VXfv6Rqvmx0q75CX8Z4ePUs0GRNuFSK9CySFygcOtgI59Wm-1n4CH8rTvSYDk- -_wLTJrLlmQNA
+ByeKDHuUnHjmqaPf2qdb0Qhai0Sl6IJTjtOWtTg_aCr4sXQkr4UPtjy1lhV_V6AmlCmFxhzl6dpm_d33OFc87tn_wZHuz_tl1m00
+}
+
+sprite $node [64x63/16z] {
+jPVT6eCW28OL4F2e-x_RKQkqKlhRE77Ri_TBFa5j6BgHrnWUHDx4E_gkGcx6E_ggGdRZ7Nsca2_5Exgda6_5Etgda1_6ttbb8ddCAsEqG5QVT-aOGb-Xpsk2
+YGO4PmuzNdccaxXPjFc5ZZ49CylyjQ7GmfUyn-2S3T95xgXmvBNG1pv6qZEUApocYPV2HpdZgUOZ2Kk2xOnSVZDzM_m8i1KyyDiVobmnoVHe6CTL5Gy6TD97
+5bLRElYEYm2SyAbOfyogY3gEnHRsUGp5Uh5d8TeebQrfn-zM7ogZHkx0exiZo6eq91LHI-SxhhgW7bzN3n9D513LYoeUNwede608yHZ9up5K_sES9e3aLL3R
+FX0hcddPk5Rr3LZj0r48O_iBekG4n73502xPsyTWtMCR6I9ntSFSvrF9VcmapYmqRQ2IBXbOkeUjvcLitjcquY7gbVK7iC9FLlzXzeDfSIPVAm1x9XLU5sds
+ZxJj_W7plCtERotwrREru5k4jeos2_4y3pVvnWRAMUm0GfvN1lJ2gPpgPX4Qjo_hGUXufww7007KQWUmvzrmvc5aTZgdUNmADFgswLtd_EK6tag-Uu58SRTr
+X5Ro_VkB4ko2lIjSgn1tyViRuE_kdqy4XX_pB-_VDmN-yFvmGs3u4__o_UcYm6_V_pu0
+}
+
+sprite $group [64x63/16z] {
+tPVTaeCW38KnX91SyVvlMvNQAifFG7Tszrn5nk-KQM888MGb7uKEoK5ZjDP1BZL6jpf8KMDqpK6QD4Rd74IbCJfna4xzHjvJKVw2toyvc8e2TpRO_pgOCc_0
+btYQgg8Ix-gyItdfv-KVyvOe5WCu8fldvPgtl9R3Z2y9PtlDIvRtstDytojvu0sBHWnTF6trbkKbi_-8uJHXKjYkz4L_UI0MNX_T711e-Ja3zWs1XLp-2xnP
+z0dLF5Z4RGTpfDi_8At_FpDXHEO0cddaVKkoxnfWREGF-99w4tCO3Uey9OjexAwxrNcVBcwy_naUapF36eW1gkglfV_yVPu7-MC3KPv_fmQiF7_F1o3Lpd-g
+311SdZ_uYVad3E9z1lVDdpq6uMP-SFvM6ZnmVr0OX8VumVjJey6zzxyN
+}
+
+sprite $sa [64x63/16z] {
+jPVDeeGW28LL97Jb-x_jjRfZLg2OTHQpQFoE2lvWIg9YKNgWUD8SFUeGMStHMeVOr1pTSuWgpT6IGnpI77rnY0_rEHyMW2KyvGE2pG8CRPx_az3PVpcabW5B
+-q9l3fu6-3njUnCN29PdQTw1mz5PKGuPWqllpbGz8X5Mep4kzFcZkTzQ1ryDO8J_DMO-gVWoMMpnKUINtxT5vEENl6ByJLuHltXRl7N-OCyVoFbZDgqxhJUY
+qteSv4tvUSPRbsM7-0YcMlqXgze11lg7eh_lrcD7-pwFzTuf3lwo96GHtz5kG7r-JpUnjX2YRWBtE6zvGSsjGaxY7Qck9I_nNdUjKJu2cVaRPVTR1AwHMgEA
+IdnhVC-_AlX726k3Z4kZ3s88e004ykHJ8udxnHsmaJhv-ivzhbV_MWJKO-bVWALwM8-ElFtpVfOgY7RzGJde9jEUdjO_-UW0f7u9rrWAuRCAyBtwyub1UfcV
+hBy73JvuFmmOf8_uoVUJqk3TzzyV
+}
+
+sprite $user [64x63/16z] {
+vPVH3iCW24LRK8Gd__zljonRqrfKb7PPilCeEVUXMDISgyX6da0E-EpH157nsTO4QUApUmbYmcVN4cG8drqao2I_w3CrOSNVBn6iJO3E0Rk514lRNo2rV5gx
+KCkFVJ-MlhHyW9Ol7JyGCuLfFpOM3Jw-cyquvvFQbTANghzrEbLzkTCdTTNk6xwV5F_kiLNX5S2Xth-IOlzWJ2dYEkttzl-N_6NA1uoKdb146FTnF-gOSCn7
+AYjRWiL7FfS-kyZW0sir1giVz6Bu6vzLpFvpwcke_MFd_tCS88Fdtsa03vw_Sidvxxr_kEy_sQdF1Lnt_vm9o1VxplltOC0DxuU1W7oJxtm_6GEkVVyz0000
+}
+
+sprite $pv [64x63/16z] {
+xPVHZiCW30HZR8pznF__xL5GUXTQ2CI9gaOtBv68PbN5Q0inDj4dyG2wmMRF9kXRRFPeWdQnsNi9EeJDRYNe53QxIj23tCHNjGLykQzg2xYZBn82-nNc8DBo
+Nrtsw1p0yWi0EAIKyYQWMWZa_feR0Bti-Buf5r3wFlRr1KBbl_xydeqitNb8-aXCsu-tkWxJ88ZxlWD7QLnfTeHf2Xb48fyN4S3l-L26bGH-E24_FH6MLppY
+mm8rwygOt-RVx_kBoLTsq4qWsMaKuRnHwf3I0HH6IYaL2EK6UUBoXWmoqMoF1YjxDpr5H2_26XoDkht_pV-_7p__HAD-BE2yy-UHW7YoRpn_JmPSS7-O28WN
+-SRxqs30kVU_7m00
+}
+
+sprite $job [64x63/16z] {
+tPVB4eCW34L1UIIh_F_V5WcrKofjJ71Hpoh3S6ujoJX2D0HtI06-ORFF9k0XDbkQW5-nsRyIK8JD7YNWAMnsbo3P3fc1WmY9l_hAahI-uu0BVDJwU0jVDYvX
+OTB74CbyQA3I7m_nN1zIhAJof3cskgodmEJUxnApRuDUDaOktJew_otWptsq-JZVhnkTL_eGkSznwt_hUUr_cuMCzmPM9fJ_dreTotfiTHQU_rBywBWE-_ax
+UVzXxvyFclcvZ- -c_BuNpdzEbLpVXQ_wkGpzVkEyaL6tl__9gEi3Q99FHbqNCE_xKnD0attZz_V9W0lk3oS2w2BVU7yI1ioz_pq0
+}
+
+sprite $pod [64x63/16z] {
+xPVD3eGW38IbG6bFlF_RRdMpYWQmM3tiPkUYndnJEb5-ScwAL-KBufrizAW3LsMZjGxSbOq-Ss2LR7JBWOTaemyEV54_mZFR3BwSxxnF60Ac4uF6AqhHWnE1
+Zua6US8WxEGMoGK2afh_5Dvh7eQENsfN30BM-4hZ9CFtUzXB0rI9eSB79J3QkjYUeuh_13OF0zQREKSbl_OhPQNmbaU5voQ_j4rK1X4r7sN9kvJSd__p8pos
+UTJmLFx-9G-1TDDg2ZK-9Ft4ZFx8UnoQsGcXv05fT6sW239Z23yvY6sQUa6-wtSRp_qWYVgncPQ_ymNmsGt4NVkVRCIl6Tot_xnYa6_cZVllGOC7pWy31laX
+tdX-KXhSU_vx0G00
+}
+
+sprite $crb [64x63/16z] {
+xPVRaeGW34I9NFk9___RZO1M3U8OZ5DRUpbFY7P3Ob38-HJiv1lW1PrwrW53T6gf0zwYKryvG8HEVUQ0ANJgpW4t-ILwG6Vmm_M0pk2FwuVzqRj2049j-NXY
+C59R8bDmWAij8Xk5-h0GFrxmW6zDGqiKwTDYo8POI7nPMy6IMT9HVxHqHExu8DBQBqWf3pyOvzsDBddRCDxk-6rYyLeVIjOOQtPiDIGA4tf7IsERa4ZFOTeI
+PajyUmryRKNnyxpR13eyjJWk4sZ8nLGeunQYu-ueMXH-BRyQ-Lf_BGTqCYsC2xYlVoxV85wMYT_zw_XS0sbgPVVnuvzndfJwh9Jhl__g_- -txt-oKdxFuBdz
+vns3_B1UkV-UDFZ0-M7287z8hpm_2GsUFVzz0G00
+}
+
+sprite $sts [64x63/16z] {
+tPVBeeGW28PJ573L-x_j0QmcxMPPc_ElcAOF425h70-L5eqFb0hrqNSzf5trqQqUqgdww2iFgKbzz967T4jzTEKXFTG_uLFgS_0DpnX591R5B1ORfslNF3hH
+4CIAWpEXs21sAFc3tAA368F53pa-MNnOyUcKZmTvjV6Cz9Hd4gb1a-PhMa7oLpnxAPRdoH21s3GRYRdWj-7bLW2zbGEOD201U7DQTy0U3xnR4T_CfnD-dN_D
+iueYSgrSUgphboey-0FzLbJitoP3QSzXi7vLobfOVmxMl0syaI4YvRG9CS3I_4tn0NcfH5utXSopZU15_C0wkP2JbtK7RMFClDN_WgU4VYYaBc7DmpbFO4LR
+S1yNtaNzEvxpzkYPErShgO-DYTVSEPto78dBOPIWCmzu-ZmqNiP4uoBAvcaYMhlL-g_vwN7tqqtUxV5HUW4nFUIrWyBrUM0yLFaF5j_vDXwbNNC6UOoac6ZN
+cLlumMkXI8wPeChRps4rFpMocJ_0eW5a_xqxviVD_5lESkIWddK1l2ldTtE2hd-2Ev2dumEuFZbsXFJ52yHRxpzZ9_xCmNlldqySZ2_pdU_VDnryyFrmmy7u
+4T_v_TJeuDtllpy0
+}
+
+sprite $ing [64x63/16z] {
+jLTB5iCW2An_xCRxtxPDeb4K6epfxF9UPiGH45DY4K-a6uW8Q-nPXKXYZIrLY3-nnhvIY2AiiJc5E8KrTgSW-XzSu2HaVAFz6l-bt29VMI3uGiCsFYcGFuBF
+0BnkEE2rsc02npSgm-6m5KRh8kQ_oY-jprOfNW1jl_9rZT4f0WvQWVZk-SgK7uAc-3L0UlslpNdpDDt25V_mSF1ky1VnXn0znKPPt6RFVigkzR2ih_UqqBst
+Xq2NPQxryB0lK_Rz6OY_-VN0RTc1v_AVv0FAGtVQHTJVnX_hf9wvtrWbOgB-6NZaOOaOR92sDZVauIuWRerWkpoSHVNGtnCuFMpIHHm_80-d_GlQKHvAps_B
+4z-d4Pi_8smvU8qzfFENEVjQF1Vrq-wxhL-BFEJhjxqVK9S0ilVs_MEuNoRx5yVFFbtsJuOlxjyqNtv_H4W4Ntn_eGPyu_wCZzpVwUxyyD3y8XCOwszk0Xpg
+VtB-xEV7wG4M7Xs07vw_9mN-y7wO44X_uY- -duG2pxx_FW00
+}
+
+sprite $role [64x63/16z] {
+pLVRZeGW39LIUddo__zsgw901LV7sMIRJAQWv_H2AJZFGz53vWz46tc7VigWNNc7likWb_8E_Hk3tf9tw163Ff9tQCUW7yg_mpE948dzi_tMGKzn-08740eX
+2GIG50AP4WK344F0HM5QPXp1CPH8AincdxbLri6XZF0gFi8rcbRumZvoYquG0gIMWO9BG4KTg3Q4Xbu46be2RWEe4435SGoLO0b3M4TusTyIYi59BCzaXDUS
+MygEM-pCwHZGNV_Jb6tQujcoPL-cTCgVElCvVobRP4q0A9mzI3cjqYIWNg_8DJwQhMc1OOrlYwJTFFdHXfzGSPgslzf-7Dl7shuLCqMJf7arEl5hOxw97oep
+0XKUUBIVZ_nVuMK8FqgZu6MhY0P_sb6d-YduPSi_zvzslC1awT_nrCcVzlB71pvkg0tFdVffuy_hjxw-nP-edUWrcNF_mLx-KJlrqxM_1d32izwDVuqRh5dk
+ikoWsEi__Vnd1oefvY_hf_HczFq7Jqtg4Y-kWPMatVBV4rGvlvC_Jr0lsOtwsK-F8tRf5Kbdv9XvpQ8xb5pzp4Fxwyif-IdNV_pv9SksMRhshlYPK_-lptyY
+0988qOvEE_MZTMy4O8Qis6Da7LqWh3GOaILXilDlKzGK4KHhfZRBY_Br-y_y4luPmVVkdvyGp5_6lxn_FoJuW- -71mJp7-5VVZ_T9FZkzzyF
+}
+
+sprite $cm [64x63/16z] {
+xPVB3eGW34L17gKh_lzlfqpcuTI2O77XnBDgCFV6z9fQSgw27_81y0UTUjG1HNJgNWTiebFlEM0NEdND0OVGgPa37kHFz8WwWulh4NK6x2W60gY0897szCvO
+QpmLmKh0sVhHzqVKDV3Y-jg353nH-XZz2jQ_EccX76sWofjlUeRbrzBRjxwHVmFvEuW9RxhwB-Vl1_8tvfN_2ct-It_-XVAs4DVS-RC-yuFWY5WQw0Gs-My6
+Y2inF-Ut4U3v2_E_n5oT_mli_G0X0ZnJJbHm8gI92yIi_IShvSSCvksVHmpoPBro_nuqEE7-C62GJz8hxq-T1dFlVmy0
+}
+
+sprite $netpol [64x63/16z] {
+pPVRiiCW24KZ8EXJ_lzlZyReCOdNsCvqlzdEse8YcdsloYRjBsGlMgDd7MnHQ_IeWsrgZUuvs26jqJK7EwKr-kPWN-h7UNEepvTX9WGlqj8nAFmX1EhKfe1a
+ZZSwqQUqcU0DgOTGglm3HrKGL0tQECGXcZ6URjEcR6Y8bqVKAI0UuA_HXwJZRs1AV6Fwk6RHe1X08tijugOq8Xpg0RkykHUEMpG11Oq46gldYjVn_3zy9d0B
+d_Fi8SoV_QPx9rhd9Uzt_ihJ37-C4W_4mZBFcy2Z37KallCA4SxYR_UYn_gV_BRvWPkTNJkYNXJP_dEM3VeiWB1K0QNw0yti8sO-B3PqnhwOkRi3vmAGoLkH
+u-NOUuFO2I0UbM1mZX9liPj0t05l45k72tsOJoUGJEeyufsGdA1VmcaBA7M-ox7cRWqKpZ1kusVeOQ0d-Vi5qkJBwybP6zsQVENoTjVlqJzKAFegttWz-Bx9
+HmUjywFFZme__7vXADsZ4-yVbqoGAJtXrfvFBmq-z_vyOx1_c5zyVqyQVE7xOS9W_nA_-FqqQF3Pxxy_
+}
+
+sprite $ns [64x63/16z] {
+xPVX2iCW38GXJJJto_T_szbjtTPgrJGT6sC7BQ7qEuq6eYdj2W-b0y9AFjhgWAfyzAW3clBHFGSCoKVlES0a7xrnm47z20_u3BwC3ynHcGN2h94vw3EG2h_1
+8nF5E14hqpG7CWSQA0T4MXgilsW6yqzwUotFFP1fW9VzV5NHvJdiyr6wuqCRwosL_64Ol-1HyiID-GVqUSlwbJnYOm6A_KDPl4sUj5VIpVcNuzjuTF7s_WKP
+C80lVrlzLF8trOzj_RIVlh5-yA-VRwkVQUuWcZj8UEqWCWSIkjFDd5ux2BqsZdjGcLggEEhIDBJe89KE28TEwRyVF_ya9txCuBppvn63T3BlF7yR3TvmVp0O
+f3VnpllJeC6vzxyB
+}
+
+sprite $secret [64x63/16z] {
+tPVPZiCW34K1WvSd_lzlnqwLJXf8ojPACrUAX9gUQs8x17A-b3oL1oGlcgDx7QIgERhLGMurHxzpa2RDqLSEqgKv-kGWW_edlCYSmH_dHUOCJZzXKf4EADN4
+xtXmthkeW-HLJkMFeYu-183Gnn_dZqI8XBVplyaE9uiT0EyIU7qFm_Ruce380ppwBVZs_C3TF2a7oC9aYKnN_6Nug3XPM4Gr28JHbBYnipWuZz72ne3gbQBr
+WJlLxuR7X8oFEfAMKYyewtzTkQYrrikc_51KE-s8jlcJBxJrPAigl1_ZtIJ_-_gCy065OUV96g0lVx3tiV59NuV6-ZrvFl0s27syJXht14H65N-vVilulluB
+hV6BV2G0I4naI-UB2FLEKVzY0G5RyEozjx-_ABYo_fNrVvzhgkJmNF_A1v1iqUTj1Q52IBnm0x5g_vCdyJ63TVlF4OEyc9_SVtSQVE3yq66GFyHFdfyQ3TQU
+_tu0
+}
+
+sprite $quota [64x63/16z] {
+hLV9jeCW39KXWol__syVnAS7I0IHPj7MXdl9H8B7yIZxBSS7sIjPGyyoxAQieTyox5rPGuyOxaK4FCzmwHc3Sp1hmwtaX7REyvGNXOh3bWb2VCtGQC29nDUX
+RFx64qyVyIJ-kx1_tP_0kytXQxnMCFZ0EpDX4cBk4rYQ18t1du7m8HBFuQM4jaqIALy1UGAVGYYW6Fu_qbEW1xpXlSGVaj7f5oPVG582De62n-ppQQ_WnPyS
+2rsH1bxWrqfqLnwhltlul2xm7SSxRdAiO8W_YrVMOTK4eYXGuHlhVOhqIO3LTZccAIljiMxnCJi9WYIt1Ixna5s8NJpvpQSyGxOyzm4gaWgt-XaFvGQWUq1i
+GtWexwaofd6NT0GQTQXtQqznvPCIgCt3civOqRfNizVkN9ITlXWQxq2LRA9yRcnvFy3Yf5DPorBDK1M5mZSrYiPZPx8eF1YFFNpAJeJYr6J2OdcgmUWw_kli
+4ZI3cBhnDmf6poReQWTJBtO72_kjFxT72-9WRi70GEoLnrbWNVwSmTowzBHXGDc-fMTbW4Sho7aI9AKwlKRxzix6MvSItO1bLEb98_D3MMzTFrAChAjJ9cYQ
+fts186_Vl3W-mDK4VCWWyzCLRlyaKzVcmHLq4JvFSFmOVop2vmW-lhiCta0MuSluOn7-Zk2txtz_
+}
+
+sprite $rb [64x63/16z] {
+pLVRaeCW33K1Sddo__zsmwLMg2WMExDdPcS3zkHkm7NjGZUiNq0hpB7lQj13pB57DUWfvjXN6dG8S-oU1hs5ENQZGR_4l-CpYH29_MVxIuiZeU6_wOX2044G
+K080cU340n8Z-2WmnPr6mROKHohCPf-v5j9Y4tfybO6W-SI-vsi-GPE0dMgW0Jvo7S2EZmDyOUtnXGOIKFsewHwMt_k_pvysvhVySV09jgOiXHUBlLG9s8Vc
+k9GOO4dmgZvB0ELXtIJrooCbGh2V9mJLKCG5Sk3x_cdjf_uHNC0H9qYiLm8vM53Q-BKod-Ft0FwW3XBts_mthHtpR-Rni8pbWV1vQt0sOu6x3I5jc0DytcGn
+NafPCxXbWyiA8SPtvV_6jt5Hy78eyw7FXnn_hb19V2b3x8uKF_kk_xb-RYaED0YGupXvHoHxiO2tIHMHDXFOspP_zC-1_MW8Ikon_qeEeBXr5NzfuBR_hNtf
+y_qzo7zon6fVsxSUa8FvquwcTsXj_2D3IcxFdux_m_FdE7_dvyTL_rmEuFxgxldL393RvrSpW6FyiLAnND8JFkR__lmdGYHnwCJQXjYXdVg8R1U3BDXZpzgx
+G5XhiBTN9_WWL8Gu_qNYIK2so-b8UFh-iqxIlrFmtFtp6mNhm_p9-_TD1J_uVhYXOFqHV_BxQL31izz_Vm00
+}
+
+sprite $ep [64x63/16z] {
+tPVRZeKW34Mvb5xcXV__sm6yCzO3eid9x0SJecktG5CXHbMoAjwG73H6zph8gSReLWUvr1ZzoK6QD4Ph3jAbCRfoa9lw9xp8cC4RFFfAsCU3gGGgVvfPi9M2
+EW7v6UJb2tamH_ny_KJT_U0g1Qq2bDBWIjB92- -zBYfGUO4bO_JfIGvK0nMtnYKev6VQ2zr0nqbcddsN0L9AViBJDkOiPWDiyc3dGy9HDduo08ijFELoAJY3
+TzPwc3FGQl3FrDSlIn4RNp98JjQty90XNsO_HQNLod7Bz7Fbp-qcvr8Ado75DoqBGCv1e3aGUxF4P0JViW1CV5ZCi7z5tHqMUmgFLl4KJXcgKr_R1ImREGcN
+VIboT54vMxUf-QqZVUIlutyJpt6CtpTWigPb_SoEF_m0EQpA06t33E0sv8SE44-TV-8WVi_WkVFd7OFuC3zu_kuqUE7-q64GN-87xq-D1i_U_tu1
+}
+
+sprite $pvc [64x63/16z] {
+tPVRSi8m34Inxdho__zj9QT3XvGu5q4xxJum0N8sThHMujutvNVr2_87rUYp3lvKDVgeWqzLe_SS_91gz9Q3drADNZduHVqJthrcyCTvzvh1stXR50SdULCH
+LuGXTa4aOj53l2aZj8QkhRM5vxP8tEmxly8nCQGuL_Lp_74aJ0Zg26HhWvKZ0OazdN0OKNZhX5SsizdzLcmquRcXpGl63HxEwAj_6x1kMfXWku7Dt5DnoqqV
+vZ5cDUe2RSwJ4iGK9KgNLLSN8iI8WaPb02MJCUCv4n0Km1WAEzsMCSLlOdjnjdl8B8ikyNLyVit6Y2lh9L8vcx-Ib7XUfUFdUIxnKhn-h7cQ5TdshY0GNKAU
+Bk1eIeIHedc8SWL3XZSQLYPHCqQH8a9OMj2-R2oKTbjQM8h6mWHYFPYoRA2SBNGecvdeHcCnhwaNyVhpf_py_VNtdrx4hncyxltpYa5_CLzy_pvfy8Rzmmc3
+_YQ-k7ywQF3Q_Ty7
+}
+
+sprite $c_role [64x63/16z] {
+tPVPheKW34KPEZxn_tzx7JX63N20QavozujnM9ksQe6Kgj93QK9waOqUTT2YR7IlWpPbexyvQ9TiTCr1XsIZRmuwgN_2gzeCNkI5IEPvmU1zG6dpjPiC2xqg
+0BSCAe63FmagQLHueUXlYaM7Cayvy2LtPZnEg9T7byTa5L79iJWiyeMeC8_8YY60S8u0YmdK-QZatOh15Ez0mRdzCCD7KegBKFFRAF9QuyFfVKceyVekBomc
+7dpWSPu-l0ItbF_3Ko_F1nztQkUvbzyUt_D7kbxe4vJg3_rzZKiyz_Dhte7bqFe7nP76kWLmqjZmkG8NmLXdbri3Yw8MWs7yQZ21hz_EaNi3RpdpLaLeLhuz
+Up8YVvj1rQ17vk-Vht-I4PypU6xzEMEG7kQDw-z1WnVs3mC6wINUk7_gD7Xs__S7
+}
+
+sprite $cronjob [64x63/16z] {
+tPVRheGW34MXfRSd__zl3rx6KLGiCfD9pdxH6DOkq88m39UoLSC3sKvzTAk3dQgFzZfOLNtqdOEvr4TVELYJ-kZ2mTDSPPQUM7XuZ9E0d_9XDlW2Rqzv-nUy
+hrmIpE934VbuNMGF-UiY_YolJ9CuzrHeUS_VEKqYAVd2KU9IwBaXpQy1r_eF-_aV3PmySrvydE017zDh0Pybu9vFQae8uqSinc-7sJ_of4eGb_ARt6ewy6IQ
+ubOWTJxC4ptn8OTJZ7kLSxZFFos97lEVdrf4l-z18LgfTpzGtRZ22oB5THBPpVCQbEpDutKyd3McYP4DJtdGk_aVMr3aT_Tt_FK0P1E1eaWyv-aNl60hlnq_
+v8N0q3J-a3PypfgiQ-6o0WMsyR6etbpLMC_VyfzdcVP2CIbAds0__DjAnXXh2-Xs-nOuybJPW2ihuBW5kNw0LCSTFO0Y1wtdbt43ZI7ayeKa9qSunpR2b30b
+bkSdmEeHj1DlDnW-p7UUlniDld1_Q30OliHttf-S1f-z__q1
+}
+
+sprite $ds [64x63/16z] {
+rPVPaeGW34KD44BcXV__sudOqme6PMchUkwB5CMvBD4OOgoAtue3uanpTAy3gvgZMntuKdFqdGCtQOwkEN2NvkZ2WGVrtNn8sbkf_Uuxy1NS6cF0oc0oIU2a
+rql35WOwJm0orksymOq7qyWRPVqSnAs93nRr_fBlFFGZdmpufnpYhOYaWNQJ0C79SpqDzZwFeBBo1G3MKGwI3AtJmgkpV0CK7f0eHPishMrvs4RU0AbRTngl
+ZTlVa4oODe8k70toe6EImvEsu9VdN_9kWOfGZT-9h-7fvTTuxk336eYSvnu-dV-_vjTyGCJ3FDXm-N7UyPZblv7z-sF-w-HHae8763e_urwVWFT-PFsNqpRm
+zchQjlrxH9hWWra0PtZ9m7TxmAKcr_Hp85TJPUSXJo1_2VkiK2q1ilM3qLKvkV87s93_b0Bai7vVKtYm_ecJ-9Z1v-hF4OFuONwo_kuqUE3-q64G7-ALKh3p
+1ZQ93zp_VW40
+}
+
+sprite $sc [64x63/16z] {
+tLVPSeCm3Anrgo_y_zzMCg493jW4afbEzw59YLVMiPRCDEt2Vp6TWAzmZVsg1T_4DVPH2zx5DVR8WX_2DVQU1Ny9rzYD1J-9lystnFpNkloMfiBYZ11Wgn-e
+HiIYjcbWzKWHIYbeZ4X4Oam9KvWVgrY7RoIQ-wXjHACgubJ8zlbQGDJs4sRAfMZ3VtG-VCnWqmMzvoxt3iULQX3Q1E3V3toM25PoMUO0bXocNLL45dxcF-ul
+iviY73MGchkeHI3ZoiW4nlmkp3jy6FAjBU0wlpRYoof-RzHZn8Fw0VJuN0l87Wbyh61DAB5H_4o-ppSen8HK5vPoKp-ev7yGXMKgi4xWMlnHzIhVs2ygg1xg
+ZzgPIVKd3XQkzTD0wxOb3bpboGtnbGYhYieHVYbVNwN1_SaHVW__c6yufcDFuaBOpN-Ka7k7Avf5gYIBdLZaa2qOQmFcHd- -eRz5zhLjvJ6uduAX_d9ZrTmj
+-evM1QfBbLyyZhE5VRva3r1AzwF_BQUep3D4mZKPyU_3osV_R-4iIzYEy0_slvQFEknVtIN31XYTPSMtfe40K1RGjmPW98-WqL_RW3cxn39zitA9B0ZMWW3A
+K_zlvt-EMLccVvLVL1wg8DgBHEV-iKXERnFqa_UVwIBzd87ttJ_F69ZUpBzu_txHm0VU7rumC7s8V_7zwQ21zxx__G00
+}
+
+sprite $svc [64x63/16z] {
+xPVH3eCW34KjqfO-yVz_Evs60O415fF5x3uO6dEkg1SjtbSbGVw2996E7dMGedHqhuDybOvkEKYNT7JDGOQaepC7kQY7y28wWpjuMZFH66-NJBRA5sU6a0ch
+D_18tYufNdv-KdtxQ0u1d0Ei9Q0I3VSM6yF7I0RvqyKOrqYWaXSTBx_6iqq4aDRSulFWTCKevi7IHsW0et8xsUQfVl_qvx-cXPbNmEtepcfRVnIL2EjPbSCM
+tlD-6GgbeVV4Gbanu3Gcz8aDfS7Y5Wyb7cxXdPBtEZx-03CiFSzlYVZa1-WmBFCTu53Y3b0uYMvI0p6h__5A_9h1lFxpYe6Vp2lxxq636_OF0mR-9bwvV-eq
+cBl_Um40
+}
+
+sprite $deploy [64x63/16z] {
+pPVRTeGW34K50WbF_F_VrbOkLHC8udJrlCmiP_OX148m9L6nAZrGF6cDddM8hDPehKFiQeqUEKILrcZ98KvfZRuun8VwzpmH8X8DUE5Nz62jCSOw2DGpu6cm
+PZC_sZ-ifocUm5nammIFpjp5X23Xrd02ta2BxmOgdbhm3hm7r-oyXg-f0pm29bySB8vvP19UbmFkl33yUQXgS0z0I5xWam8ZtWkfphwM1hpRs3Zhl2vnNN4w
+Xd7tJHM49MIpp_mhEuEAFqT97dRbTVd-YfDyJahMvcYEBujITZNDpfz-LvJ5plnB_aceYG4khJzgSM7_rPfcZp75_YyP3CEcmDPVoSiOP-k_s7fDLxgTFzLM
+XL_Elz2Uwl3p-RlLIWn0STwWjzUFk5Y3DWKxuFdksVhVW1VRT-w_MvyVz_ykhxb__C7z9otYpmpUkty-CKWlyultxqc33xm_J1Ya3_6BxqzAWtVV_xu0
+}
+
+sprite $crd [64x63/16z] {
+rPVTRiCm28M30Hkk_FvlkwbMjxOn-8TaqivT77t7H12CQpMbFweRqZV5w5K7xIf6ppgegnWzSj0fnMZBGPSKepyST5DZlZ1dsUSv0G3ABf_X8TDWW0iUpQ3u
+0PXyQZZm7b_WJ_XEqgZfoMDxxAIonsSmHJBc9Hss0OzvPtiuACZZcTS8h_-UrnZVRHbCoJ30KefCTAQ2TX299nnASZw39Y9WXuSy4O37Sv2ds-CNzAfWc00X
+PtSiBlfT8encxjq3wOhwlPHFH1ZW7vMUqoxFd_z2XnURJyztvF1E_w7JKgz_LRFmwRp44mSWmT7qmhU5qoJH7I0aOrF-xKPD9Alpq-G85yJt3AwRFtSCwiLy
+SFvUDBZX_h1WK6_YW_UdIODhxtzV
+}
+
+sprite $hpa [64x63/16z] {
+tPVHmeOG38Phasr7tV_T_eeq8KhVoV-UbJrlB8nrhKgYrXUIH6FqKmSfQepkTP1RZT4j1-dI65rpa4SQeoyEybB_X1SPCr0ls3J5jpnC3K63dnlAUNdFIuC7
+Ows1bpmkjCSoBVYKXmCEhobseuDtlURyNxEto7ZfvQd0Y-9vOSyZkFvRtN_P-m_e-Iqmvnd1yy1RnW1q_loJRtL1o1dFPexy0Ht_xx2A_1ndiS9d82PG8_GP
+KzdOUHzaqZHik6k3QuOOqgSOb1ful313694hirCP97WlVngaU3SV3RY-GWhZBmGIlE61pka5ptc5fmPzV887WyKkRJu4qMLv4Knw_bRvFMZAyCqWyBDQlIbl
+m_g30kvQCV0pKead3DbXjCLgGXmpPEZAaudPPQeMf9XXy7l4mVC2nVspoWS7pxE5olxhsgIw_xjXxhp5wlv_RY3b5M81hBcf7_91_Hgjdzh0JQrxFAdV-Vc5
+iVLzBF3QW1hYpqw0tvq_tnYi7_E3v- -71Z-uFpmmM7_43zwVEWs-lV_z0G00
+}
+
+sprite $psp [64x63/16z] {
+vPT9beKW34M1a93KnFtljeYbNrHQyO_gJJmsDta4uOHbAKe-MXv8JfgZHoD8LdDqRmIfQevkHP0kpT6b23AaEVeIGHwgpZFpSvu3WWCaVi8pUMUjiL7EKsZn
+zyGsLRGHk1OWUN0aFcHCCKIUlqY7mDp5itvuyO_SA61oZrQDCXys7Atb1F1KCY0_1n_7gduvdJzoQmqiX0AVvazAllq_-AcZfLvU1IGK0LehYEZr6WPuumM3
+iDkDwp20xxmKUEibpXaTMTL9na25ZzcyNaNMl10dSuXNPgrQ01q3Ri_6UJ06zQsvyzB7wrsEbowU4CCClxyTvaEST4-RVFuVBl4ax6-BsVhQZaRdz6Wpefe1
+WZGzc3lUA07JllB__lqx3urDdT5DyRALxJaVfytFyLh8ELvNx1Gl_uFdPOwlTIyTVBNzQQ-VHl_aS-iNU_idDL3VFveD7CUDyopYrph0z_hF9m6Mb_d9_dim
+m1VE3mC1bY_na-UdpW3ldlz-0G00
+}
+
+sprite $vol [64x63/16z] {
+xPVHZiCW30HZR8pznF__xL5GUXTQ2CI9gaOtBv68PbN5Q0inDj4dyG2wmMRF9kXRRFPeWdQnsNi9EeJDRYNe53QxIj23tCHNjGLykQzg2xYZBn82-nNc8DBo
+Nrtsw1p0yWi0EAIKyYQWMWZa_feR0Bti-Buf5r3wFlRr1KBbl_xydeqitNb8-aXCsu-tkWxJ88ZxlWD7QLnfTeHf2Xb48fyN4S3l-L26bGH-E24_FH6MLppY
+mm8rwygOt-RVx_kBoLTsq4qWsMaKuRnHwf3I0HH6IYaL2EK6UUBoXWmoqMoF1YjxDpr5H2_26XoDkht_pV-_7p__HAD-BE2yy-UHW7YoRpn_JmPSS7-O28WN
+-SRxqs30kVU_7m00
+}
+
+sprite $rs [64x63/16z] {
+tPVRieCW34KXX90yyVz_Movjnr9G93hdJDUBgBCs2AWGun1v4nUG3tJssGJfehDd4sGNdNsK85Fex562d49dDmcoo8_u8hg0_-apkWIoI70LdwxIyxZn1zd1
+PbpseHGjPZyTWJy2XZw4H6v9g70f4qpwWFtdclI5UTKFFf5RJhwIXLU1w-dRxzJWJEebIYKqjUT2hlPriHd1dc_nk_vKXaaVSeKTSCuN1xpZ4stkDZfJndjg
+UGu-D_tVukq8tns_xnOECAZpo-GlCqhXUmWgl_J_d_ekJKNowxxTgNl6no0gdqJbGrZsNNfjc6NPF-ow0n_GgtmSVMMLVjJvpGSOZUc__WR7Fz3DEJdeusXk
+0S4Zxbp_HAM-5d3T-dCb85xiAzVV9mDks3-S28Wt-ShzqsJ0jVk_1m00
+}
+
+sprite $limits [64x63/16z] {
+vPT14eCW34KB2YGhxd_RgbEB18A6uCBshJAZx-E0Go165lmIEy0CdIrDm2ew-se2Dj7PPmbu2PtD9Q08dKqIi9CVyH5r0SDy22lGh5l-R5RSLlkYdXa_3M-D
+NVWujbgx6MX0yYVZ0VRdi47gvPN0-pP_MAFfJrRbB_ECSb-suiH7gUyTyBvt9HvE_a0ypd-5zfmSX-_nyM4-dN-fFpM-vmzyq8vFzf_7_JzFzmFTJ-3KXsDF
+ADO_stzU5N_hFNxlGwROFxF-mv7we0ry0mmigG_3m0F4gFDFLEfz0UFEdpq1SR2lF7yB0swuFmW2uas-ylvqCM3i_UyD
+}
+
+
+sprite $k8s [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000001100000000000000000000000
+00000000000000000000148BB84100000000000000000000
+000000000000000000149BCCCCB941000000000000000000
+0000000000000000159BCCCCCCCCB9510000000000000000
+00000000000000159BCCCCCCCCCCCCB95200000000000000
+000000000000259BCCCCCCCBBCCCCBCCB952000000000000
+000000000026ABCCCCCCCCB99BCCBCCCCCBA620000000000
+0000000026ABCCCCCCCCCCA55ACCCCCCCCCCCA6200000000
+00000016ABCCCCCCCCCCCCA56ACCCCCCCCCCCCCA62000000
+0000016BCCCCCCCCCCCCCCA66ACCCCCCCCCCCCCCB6100000
+0000029CCCCCCCCCCCCBBB9559BBBCCCCCCCCCCCC8300000
+000004ACCCCBBBCCCBBA85201358ABBCCCBBBCCCC9400000
+000015ACCBB88ABCBA620000000026ABCBA88BCCCB500000
+000017BCCCA636AB8311244124421048BA626ABCCC610000
+000028BCCCBA63552126AB9338BA62035436ABCBCC820000
+000039CCCCCCB820038BCB8238BCB830038BCCCCCC930000
+00005ACCCCCCB940149BBB8238BCB941049BCCCCCCA50000
+00016BCCCCCCB7211037AB8228BA7311127BCCCCCCB61000
+00018BCCCBCCA4256301586116851036515ABCCCCCC72000
+00029CCCCCCB8338B84100000000149B8338BCBCBCC93000
+0004ACCCBCCB724ACB941001100049BC9427BCCCCCCA4000
+0016BCCCCCCA625ACBB8203763028BBCA516BCCCCCCB5100
+0017BCCCCCCA625ABA85116BB72158ABA616BCCCBCCC7100
+0029CCCCCCCA62465200016AA61000256416ACCCCCCC8300
+0039CCCCBBA94100011110144101211000059ABBCCCC9400
+005ACCCB96431002357861000026876420013459BCBCB500
+007BCCCB63576227BCCB82011028BCCB72267537ABCCC600
+007BCCCBBABCA6149BCA61266216ACB9516ABBBBBCCCC700
+005ACCCCCCCCB8326AB9315AA6139BB7238BCCCCCCCCA500
+0027BCCCCCBCCB622796238BB832697226ABCCCCCCBB7200
+00038BCCCBBCCBA5124316ACCA6134215ABCCCCCCCB83000
+000049BCCCBCCCBA510027AABA7200159BCCCCCCCB940000
+000015ABCCCCCCCBA61001344320016ABCCCCCCCCA510000
+0000016ACCCCCCCCB94222111122249BCCCCCCCCB6100000
+00000027BCCCCCCCB85798766689758BCCCCCCCB72000000
+000000038BCCCCCB956ACCCCCCCCA659BCCCCCB830000000
+0000000049BCCCCB848BCCCCCCCCB848BCCCCB9400000000
+0000000015ABCCCB98ABCCCCCCCCCA89BCCCBA5100000000
+00000000016ACCCBCCCCCCCCCCCCCCCCCCCCB61000000000
+000000000027BCCCCCCCCCCCCCCCCCCCCCCB720000000000
+0000000000038BCCCCCCCCCCCCCCCCCCCCB8300000000000
+00000000000049BBBBBBBBBBBBBBBBBBBB94000000000000
+000000000000159AAAAAAAAAAAAAAAAAA951000000000000
+000000000000002444444444444444444200000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<TOOL K8S>> White
+
+
+
+hide stereotype
+sprite $docker [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000015555100000000000000000000
+00000000000000000000005A889500000000000000000000
+000000000000000000000058887500000000000000000000
+000000000000000000000058887500000000000000000000
+0000000000000006666666A9778500000000010000000000
+000000000000001B766B66797785000000001C9000000000
+000000000000001B876B8878887500000000635700000000
+000000000000001B876B8878887500000000A00920000000
+000000000008889C888B889A889B88810000A00382420000
+00000000000B445A545A55685576669300009100B768B400
+00000000000A777A876B8879887798A30000470000008200
+00000000000A777A876B8879887798A300004D0000196000
+00000002888D888C888C889B88AA88BA99BA6009A9930000
+000000055211111111111111111111111000004800000000
+00001505400200000002500000060000000110A000600000
+0005CFDCA9CFD86568BFFC8668EFFB86569EFBC89EFA3000
+0000000391111111111111111111111111111B0000001000
+00000000B000000000000000000000000000930000000000
+000000008300000001560000000000000007600000000000
+000000001B00000012430000000000000077000000000000
+0000000006B8889982000000000000000960000000000000
+00000000007500000000000000000003B400000000000000
+000000000007800000000000000002A80000000000000000
+0000000000003A61000000000027B8100000000000000000
+0000000000000049A8655679AB8400000000000000000000
+000000000000000000345431000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<DEV DOCKER>> White
+sprite $computer [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000001BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB100000
+00001EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000
+0000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+0000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0000
+00009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF90000
+00001EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000
+000001AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA100000
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<MATERIAL COMPUTER>> White
+sprite $git [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000006600000000000000000000000
+0000000000000000000001DFFC1000000000000000000000
+000000000000000000001DFFFFC100000000000000000000
+00000000000000000001DFFFFFFC10000000000000000000
+00000000000000000005FFFFFFFFC1000000000000000000
+000000000000000001005FFFFFFFFC100000000000000000
+00000000000000001D9005FFFFFFFFC10000000000000000
+0000000000000001DFF9005FFFFFFFFC1000000000000000
+000000000000001DFFFF900007FFFFFFC100000000000000
+00000000000001DFFFFFF800009FFFFFFC10000000000000
+0000000000001DFFFFFFF800005FFFFFFFC1000000000000
+000000000001DFFFFFFFFB00004FFFFFFFFC100000000000
+00000000001DFFFFFFFFFF700006FFFFFFFFC10000000000
+0000000001DFFFFFFFFFFFF106006FFFFFFFFC1000000000
+000000001DFFFFFFFFFFFFF10C9006FFFFFFFFC100000000
+00000001DFFFFFFFFFFFFFF10CF900117FFFFFFC10000000
+0000000AFFFFFFFFFFFFFFF10CFF800009FFFFFFA0000000
+0000000DFFFFFFFFFFFFFFF10CFF800005FFFFFFD0000000
+00000008FFFFFFFFFFFFFFF10CFFB00008FFFFFF90000000
+00000000BFFFFFFFFFFFFFF10CFFF7004FFFFFFB00000000
+000000000BFFFFFFFFFFFFF10CFFFFEEFFFFFFB000000000
+0000000000BFFFFFFFFFFFF10CFFFFFFFFFFFC0000000000
+00000000000BFFFFFFFFFFA007FFFFFFFFFFB00000000000
+000000000000BFFFFFFFFC0000AFFFFFFFFB000000000000
+0000000000000BFFFFFFF800006FFFFFFFB0000000000000
+00000000000000BFFFFFFA00008FFFFFFB00000000000000
+000000000000000BFFFFFF6004FFFFFFB000000000000000
+0000000000000000BFFFFFFEDFFFFFFB0000000000000000
+00000000000000000BFFFFFFFFFFFFC00000000000000000
+000000000000000000BFFFFFFFFFFC000000000000000000
+0000000000000000000BFFFFFFFFC0000000000000000000
+00000000000000000000BFFFFFFC00000000000000000000
+000000000000000000000BFFFFC000000000000000000000
+0000000000000000000000AFFB0000000000000000000000
+000000000000000000000003300000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<DEV GIT>> White
+sprite $globe [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000001000000000000000000000000
+0000000000000000010004DFF91000000000000000000000
+0000000000000007D5006FFFFFC100CA3000000000000000
+00000000000007EFB002FFFFFFFA003FFB30000000000000
+000000000003DFFF300CFFFFFFFF500AFFF8000000000000
+00000000005FFFFC004FFFFFFFFFD004FFFFC10000000000
+0000000008FFFFF600CFFFFFFFFFF400DFFFFE2000000000
+000000008FFFFFF002FFFFFFFFFFFA008FFFFFE200000000
+00000006FFFFFFB007FFFFFFFFFFFF003FFFFFFD00000000
+0000003FFFFFFF700CFFFFFFFFFFFF400EFFFFFFB0000000
+000000DFFFFFFF301FFFFFFFFFFFFF900AFFFFFFF5000000
+000007FFFFFFFF004FFFFFFFFFFFFFC007FFFFFFFE100000
+00000EFFFFFFFC007FFFFFFFFFFFFFF004FFFFFFFF700000
+00003AAAAAAAA6006AAAAAAAAAAAAAA101AAAAAAAA900000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0005AAAAAAAAA200AAAAAAAAAAAAAAA6007AAAAAAAAA0000
+000AFFFFFFFFF201FFFFFFFFFFFFFFFA00AFFFFFFFFF3000
+000DFFFFFFFFF202FFFFFFFFFFFFFFFB009FFFFFFFFF6000
+000FFFFFFFFFF103FFFFFFFFFFFFFFFB008FFFFFFFFF8000
+001FFFFFFFFFF004FFFFFFFFFFFFFFFC008FFFFFFFFF9000
+002FFFFFFFFFF005FFFFFFFFFFFFFFFD007FFFFFFFFFA000
+001FFFFFFFFFF004FFFFFFFFFFFFFFFD007FFFFFFFFFA000
+000FFFFFFFFFF003FFFFFFFFFFFFFFFC008FFFFFFFFF8000
+000FFFFFFFFFF103FFFFFFFFFFFFFFFB009FFFFFFFFF7000
+000CFFFFFFFFF202FFFFFFFFFFFFFFFA00AFFFFFFFFF4000
+0009FFFFFFFFF301FFFFFFFFFFFFFFF900AFFFFFFFFF1000
+000022222222200022222222222222210012222222220000
+000000000000000000000000000000000000000000000000
+000012222222210012222222222222200022222222200000
+00003FFFFFFFFB009FFFFFFFFFFFFFF102FFFFFFFFC00000
+00000BFFFFFFFE006FFFFFFFFFFFFFE005FFFFFFFF400000
+000002FFFFFFFF102FFFFFFFFFFFFFB008FFFFFFFB000000
+0000008FFFFFFF400EFFFFFFFFFFFF700CFFFFFFF1000000
+0000000CFFFFFF900AFFFFFFFFFFFF201FFFFFFF50000000
+00000001EFFFFFE005FFFFFFFFFFFD005FFFFFF800000000
+000000002EFFFFF300EFFFFFFFFFF700AFFFFF8000000000
+0000000002DFFFF9008FFFFFFFFFF101FFFFF80000000000
+00000000000AFFFF001FFFFFFFFF9007FFFF500000000000
+0000000000005EFF7008FFFFFFFE100EFFA1000000000000
+000000000000007EF100CFFFFFF5007FB300000000000000
+000000000000000055001CFFFF6000720000000000000000
+000000000000000000000069820000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<FA5 GLOBE>> White
+sprite $user [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<FA5 USER>> White
+sprite $hdd [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000699999999999999999999982000000000000
+00000000000CFFFFFFFFFFFFFFFFFFFFFFFF600000000000
+0000000000AFFFFFFFFFFFFFFFFFFFFFFFFFF30000000000
+0000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFD0000000000
+000000001EFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000000000
+00000000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF300000000
+00000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000000
+0000001EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000000
+000000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3000000
+000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+00001EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+0000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF30000
+000286666666666666666666666666666666666666770000
+000000000000000000000000000000000000000000000000
+000002333333333333333333333333333333333333100000
+0005EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB1000
+003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000
+00AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFABFFFFFBAFFFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFF2003FFF5001EFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFA0000BFD00008FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFA0000CFD00008FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFF3004FFF6002EFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFBBFFFFFCBFFFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF500
+00AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200
+003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+0005EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA1000
+000002333333333333333333333333333333333333000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<FA5 HDD>> White
+sprite $server [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000012222222222222222222222222222222222222200000
+000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000
+009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF100
+00CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFE64BFF948FFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000EC0009FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFF3000DA0006FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFA004FF200CFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECFFFFCEFFFFF500
+00BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF300
+004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000
+00039AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA70000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+00039AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA70000
+004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000
+00BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF300
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECFFFFCEFFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFA004FF201DFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFF3000DA0006FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000EC0009FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFE64BFF947FFFFF500
+00CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF500
+009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF100
+001BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000
+000012222222222222222222222222222222222222200000
+000000000000000000000000000000000000000000000000
+000012222222222222222222222222222222222222200000
+000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000
+009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF100
+00CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFE64BFF948FFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000EC0009FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFF3000DA0006FFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFA004FF200CFFFF500
+00DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFECFFFFCEFFFFF500
+00BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF300
+004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000
+00039AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA70000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<FA5 SERVER>> White
+sprite $tools [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000920000000000000000000038BCDC9300000000000
+000000BFF6000000000000000006EFFFFFFFD00000000000
+00000BFFFFA000000000000002CFFFFFFFFF500000000000
+0000BFFFFFFD2000000000003EFFFFFFFFF5000000000000
+000BFFFFFFFFF60000000001EFFFFFFFFF50000000000000
+009FFFFFFFFFFFA00000000CFFFFFFFFF500000000000000
+002FFFFFFFFFFFFD2000006FFFFFFFFF5000000000000000
+0006FFFFFFFFFFFFF60000EFFFFFFFF50000000000000000
+0000AFFFFFFFFFFFFF5003FFFFFFFF700000000000033000
+00000DFFFFFFFFFFFF5008FFFFFFFF8000000000004FF000
+000002FFFFFFFFFFFF500BFFFFFFFFA00000000004FFF300
+0000006FFFFFFFFFFF500CFFFFFFFFD0000000004FFFF400
+0000000AFFFFFFFFFF500BFFFFFFFFF000000004FFFFF500
+00000000DFFFFFFFFF7000CFFFFFFFF20000004FFFFFF400
+000000002FFFFFFFFFF5000CFFFFFFFC963104FFFFFFF200
+0000000006FFFFFFFFFF5000CFFFFFFFFFFFEFFFFFFFE000
+0000000000455557FFFFF5000CFFFFFFFFFFFFFFFFFF9000
+00000000000000005FFFFF6000CFFFFFFFFFFFFFFFFF2000
+000000000000000005FFFFF6000CFFFFFFFFFFFFFFFA0000
+0000000000000000005FFFFF600053247DFFFFFFFFE10000
+00000000000000000006FFFFF6000000005EFFFFFF300000
+000000000000000070006FFFFF6001100001CFFFE3000000
+0000000000000009FC0006FFFFFADFFFA2000CFA10000000
+000000000000009FFFC0006FFFFFFFFFFF60002000000000
+00000000000009FFFFFC0005FFFFFFFFFFF6000000000000
+0000000000009FFFFFFFC000AFFFFFFFFFFF600000000000
+000000000009FFFFFFFFF400DFFFFFFFFFFFF60000000000
+00000000009FFFFFFFFFF301FFFFFFFFFFFFFF6000000000
+0000000009FFFFFFFFFFF301FFFFFFFFFFFFFFF600000000
+000000009FFFFFFFFFFFF500FFFFFFFFFFFFFFFF60000000
+00000009FFFFFFFFFFFFF800AFFFFFFFFFFFFFFFF6000000
+0000009FFFFFFFFFFFFFF9002FFFFFFFFFFFFFFFFF600000
+000009FFFFFFFFFFFFFFA00006FFFFFFFFFFFFFFFFF60000
+00009FFFFFFFFFFFFFFA0000006FFFFFFFFFFFFFFFFF5000
+0008FFFFFFFFFFFFFFA000000006FFFFFFFFFFFFFFFFF100
+003FFFFFFFFFFFFFFA00000000006FFFFFFFFFFFFFFFF400
+009FFF403EFFFFFFA0000000000006FFFFFFFFFFFFFFF300
+00CFFA0008FFFFFA000000000000006FFFFFFFFFFFFFC000
+00CFFA0008FFFFA00000000000000006FFFFFFFFFFFD1000
+009FFF614FFFFA0000000000000000006FFFFFFFFFD10000
+003FFFFFFFFFA000000000000000000006FFFFFFFD100000
+0007FFFFFFFA00000000000000000000006FFFFFD1000000
+00006EFFFF70000000000000000000000005FFFC10000000
+000000354000000000000000000000000000143000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+skinparam folderBackgroundColor<<FA5 TOOLS>> White
+
+
+skinparam backgroundcolor TRANSPARENT
+
+together {
+    rectangle "<$git>\n K8s Resources /\napplications" as k8sAppOpsRepo
+    
+    rectangle "<$git>\n Cloud Infra" as infraRepo
+    
+    k8sAppOpsRepo - -[hidden]> infraRepo
+}
+
+rectangle "1 " <<Hidden>> as p3 
+rectangle "2 " <<Hidden>> as p2
+p2 -[hidden]> k8sAppOpsRepo
+
+
+cloud "Cloud" as cloud {
+    rectangle "<$k8s>\nCluster" as cluster1 {
+        rectangle "<$pod>\nPods" <<K8sResource>>  as pods
+        rectangle "<$svc>\nServices" <<K8sResource>> as svcs
+        rectangle "..." <<K8sResource>> as k8sEtc
+        pods -[hidden]> svcs
+        svcs -[hidden]> k8sEtc
+    }
+    rectangle "<$user>\nIAM" as iam
+    rectangle "<$globe>\nDNS" as dns
+    rectangle "..." as cloudEtc
+    cluster1 - -[hidden]> iam
+    iam -[hidden]> dns
+    dns -[hidden]> cloudEtc
+}
+
+skinparam rectangle<<Hidden>> {
+  textColor White
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
+
+skinparam rectangle<<NoBorder>> {
+    BorderColor transparent
+    borderColor Transparent
+    backgroundColor Transparent
+    stereotypeFontColor Transparent
+}
+
+skinparam arrow {
+    Color #23a3dd
+    FontColor #23a3dd
+}
+
+skinparam actor {
+    BackgroundColor #23a3dd
+    BorderColor #16688d
+    FontColor BLACK
+}
+
+skinparam rectangle {
+    BackgroundColor WHITE
+    BorderColor #16688d
+    FontColor #23a3dd
+}
+skinparam rectangle<<K8sResource>> {
+    BackgroundColor #23a3dd
+    BorderColor #16688d
+    FontColor WHITE
+}
+
+skinparam cloud {
+    BackgroundColor TRANSPARENT
+    BorderColor #23a3dd
+    FontColor #23a3dd
+}
+
+skinparam node {
+  BorderColor #23a3dd
+  FontColor #23a3dd
+}
+
+skinparam note {
+    BackgroundColor WHITE
+    BorderColor #16688d
+}
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 14:40:07 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#23a3dd;stroke-width:1.2050997"
+     id="hwRepo-backto-hardware"
+     d="m 219.23358,219.23023 c 12.44591,0 24.89182,0 37.33773,0 6.22297,0 12.44592,0 18.66888,0 1.55581,0 3.11148,0 4.66729,0 0.77784,0 1.55566,0 2.33349,0 0.19448,0 0.38893,0 0.58338,0" />
+  <polygon
+     id="polygon147"
+     style="fill:#23a3dd;stroke:#23a3dd;stroke-width:1"
+     points="276.99,759.5 267.99,763.5 276.99,767.5 272.99,763.5 "
+     transform="translate(-54.51391,-544.26977)" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#23a3dd;stroke-width:1.08192158"
+     id="hwRepo-backto-hardware-7"
+     d="m 202.18628,366.41764 c 10.03165,0 20.06329,0 30.09494,0 5.01584,0 10.03166,0 15.04748,0 1.25402,0 2.50792,0 3.76193,0 0.62695,0 1.25389,0 1.88084,0 0.15675,0 0.31348,0 0.47021,0" />
+  <polygon
+     id="polygon147-5"
+     style="fill:#23a3dd;stroke:#23a3dd;stroke-width:1"
+     points="276.99,759.5 267.99,763.5 276.99,767.5 272.99,763.5 "
+     transform="translate(-71.561214,-397.08235)" />
+</svg>
