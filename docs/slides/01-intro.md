@@ -39,6 +39,7 @@
 - What is GitOps?
 - How can it be used? 
 - What challenges arise?
+- Demo
 
 Note:
 

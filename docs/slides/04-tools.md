@@ -130,7 +130,7 @@ Note:
 
 <a title="ClusterAPI" href="https://github.com/kubernetes-sigs/cluster-api"><img data-src="images/capi-icon.svg" width="9%" class="floatLeft"/></a>
 <a title="Crossplane" href="https://github.com/crossplane/crossplane"><img data-src="images/crossplane-icon.svg" width="9%" class="floatLeft"/></a>
-<span style="font-size: 60px;" class="floatLeft">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+<span style="font-size: 60px;" class="floatLeft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <img title="Terraform" data-src="images/terraform-icon.svg" width="9%" class="floatLeft"/>
 <span style="font-size: 60px;" class="floatLeft">-</span>
 Cloud or Operator
