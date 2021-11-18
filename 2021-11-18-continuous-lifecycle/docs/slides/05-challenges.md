@@ -83,7 +83,7 @@ More Challenges
 
 ## How to delete resources?
 
-* "garbage collection" (Flux) / "resource pruning" (ArgoCD)   
+* `garbage collection` (Flux) / `resource pruning` (ArgoCD)   
   disabled by default
 * <i class="fas fa-thumbtack"></i> Enable from beginning ➡️ avoid manual interaction
 * Unfortunately, still often unreliable / too defensive (?) 😒

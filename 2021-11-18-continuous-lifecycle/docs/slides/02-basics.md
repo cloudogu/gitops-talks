@@ -17,6 +17,7 @@ Note:
     <a style="color: inherit" href="https://medium.com/google-cloud/ci-cd-pipeline-using-cloud-build-with-gitops-technique-68b0e9d3b53)">Technique</a>
     <a style="color: inherit" href="https://www.cncf.io/blog/2021/09/28/gitops-101-whats-it-all-about/">Framework</a>
     <a style="color: inherit" href="https://www.cncf.io/blog/2021/09/28/gitops-101-whats-it-all-about/">Standardized Workflow</a>
+    <a style="color: inherit" href="https://twitter.com/flugelit/status/1461001647719698434/">Principle</a>
     Cloud-native continuous delivery
 </tagcloud>
 
