@@ -259,7 +259,7 @@ link k8s to k8s-->
 
 ## GitOps Principles
 
-[<img data-src="images/opengitops.png" width="15%;" style="border-radius: 50%" class="floatRight"/>](https://opengitops.dev/)
+<a title="OpenGitOps" href="https://opengitops.dev/"><img data-src="images/opengitops.png" width="15%;" style="border-radius: 50%" class="floatRight"/></a>
 
 
 1. The principle of declarative desired state
