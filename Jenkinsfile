@@ -33,7 +33,7 @@ node('docker') {
             git.clean('')
         }
 
-        String conferenceName = '2021-11-18-continuous-lifecycle'
+        String conferenceName = '2021-12-09-it-tage'
         
         String pdfName = createPdfName()
 
