@@ -259,23 +259,29 @@ link k8s to k8s-->
 
 ## GitOps Principles
 
+
+The desired state of a GitOps managed system must be: 
+
 <a title="OpenGitOps" href="https://opengitops.dev/"><img data-src="images/opengitops.png" width="15%;" style="border-radius: 50%" class="floatRight"/></a>
+1. **Declarative**  
+2. **Versioned and Immutable**  
+3. **Pulled Automatically**  
+4. **Continuously Reconciled**  
 
 
-1. The principle of declarative desired state
-2. The principle of immutable desired state versions
-3. The principle of continuous state reconciliation
-4. The principle of operations through declaration
-
-
-<i class='fab fa-github'></i> [github.com/open-gitops/documents/blob/main/PRINCIPLES.md](https://github.com/open-gitops/documents/blob/v0.1.0/PRINCIPLES.md)
+<i class='fab fa-github'></i> [github.com/open-gitops/documents/blob/main/PRINCIPLES.md](https://github.com/open-gitops/documents/blob/v1.0.0/PRINCIPLES.md)
 
 Note:
+
+1. A system managed by GitOps must have its desired state expressed declaratively.
+2. Desired state is stored in a way that enforces immutability, versioning and retains a complete version history.
+3. Software agents automatically pull the desired state declarations from the source.
+4. Software agents continuously observe actual system state and attempt to apply the desired state.
+ 
 1. and 2. -> Git, but could also be a different system with theses attributes
    Fun Fact: GitOps is possible without Git  
    e.g. flux with S3 bucket: https://www.cncf.io/blog/2021/08/12/august-2021-update/
-3. Continuously! Not only when a change is triggered, also when the actual state "drifts"
-4. No more tinkering!
+4. Continuously! Not only when a change is triggered, also when the actual state "drifts"
 
 
 
