@@ -35,11 +35,10 @@ Johannes Schnatterer, Cloudogu GmbH
 
 
 🌐 [cloudogu.com/gitops](https://cloudogu.com/gitops/)
- * ℹ️ GitOps Resources (intro, our articles, etc.)
- * <i class='fab fa-github'></i> Links to GitOps Playground and Build Lib
+ * ℹ️ GitOps Resources (intro, articles, talks, videos, <i class='fab fa-github'></i> projects)
  * 💬 Discussions
- * 🧑‍🏫 Trainings / Consulting
- * 🔨 Jobs
+ * 🧑‍🏫 [Trainings](https://cloudogu.com/de/schulungen/) / [Consulting](https://cloudogu.com/de/consulting/)
+ * 🔨 [Jobs](https://cloudogu.com/karriere/stellenangebote/)
 [<img data-src="images/qr-slides.png" class="floatRight" width="30%"/>](https://cloudogu.github.io/gitops-talks/)
 
 
