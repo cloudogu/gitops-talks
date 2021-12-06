@@ -1,24 +1,31 @@
-<!-- .slide: style="text-align: center !important;"  -->
-<!-- .slide: data-background-image="images/title.svg"  -->
+<!-- .slide: style="text-align: center"  -->
+<!-- .slide: data-background-image="images/Deckblatt_16zu9_IT-Tage2021.pptx.svg"  -->
+
+<div style="text-align: right !important;">
+    <a href='https://twitter.com/jschnatterer' class="social" target="_blank">
+    <i class='fab fa-twitter'></i>
+    @jschnatterer   
+    </a>
+    &nbsp;#ittage
+</div>
+
+<br/><br/>
+
 <font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i>&nbsp;<i class="fas fa-sync"></i></font>
 <img data-src="images/k8s_logo.svg" width="5%;" />
 
-<h1  class="title">
+<div style="width: 50%;">
+
+<font size="5">Johannes Schnatterer, Cloudogu GmbH
+</font>
+<h1 class="title" style="margin: 20px 0 20px 0">
     <span class="title-accent">//</span> 
     GitOps: Hands-on<br/>Continuous Operations<br/>with Kubernetes
 </h1>
 
 
-<font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
-<p class="printOnly">
-    <a href='https://twitter.com/jschnatterer' class="social" target="_blank">
-        <i class='fab fa-twitter'></i>
-        @jschnatterer
-    </a>
-</p>
-
 <div class="title-version">
-Version: 202111251451-f73f535
+Version: 202112061724-a6af988
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
@@ -26,11 +33,7 @@ Version: 202111251451-f73f535
        <i class="far fa-file-pdf"></i>
 </a></p>
 
-<a class="state-background" href="https://cloudogu.github.io/gitops-talks/"><img data-src="images/qr-slides.png" width="15%"/></a>
-
-<br/>
-<br/>
-
+</div>
 
 
 

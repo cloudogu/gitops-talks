@@ -36,7 +36,7 @@ p2 -[hidden]> k8sAppOpsRepo
 
 cloud "Cloud" as cloud {
     rectangle "<$k8s>\nCluster" as cluster1 {
-        rectangle "<$pod>\nPods" <<K8sResource>>  as pods
+        rectangle "<$deploy>\nDeployments" <<K8sResource>>  as pods
         rectangle "<$svc>\nServices" <<K8sResource>> as svcs
         rectangle "<$crd>\nCRDs" <<K8sResource>> as crds
         rectangle "..." <<K8sResource>> as k8sEtc

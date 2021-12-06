@@ -1,27 +1,15 @@
 <!-- .slide: data-background-image="images/questionmarks.jpg"  -->
-# What is GitOps?
+<!-- .slide: style="text-align: center !important"  -->
+
+<div style="border-radius: 5px; border: 4px solid; border-color: #777; background-color: rgba(255,255,255,0.7); width: 80%">
+  <br/>
+  <h1 style="margin: 0 0 0 0; color: #5b5a5a" >What is GitOps?</h1>
+  <br/>
+</div>
+
 
 Note:
 * Source: https://pixabay.com/illustrations/question-mark-important-sign-1872665/
-
-
-
-<tagcloud large>
-    <a style="color: inherit" href="https://thenewstack.io/argocd-gets-devsecops-nod-with-cncf/">(Operating) model</a>
-    Pattern
-    Way
-    Approach
-    (good) practice
-    methodology
-    <a style="color: inherit" href="https://blog.argoproj.io/getting-started-with-applicationsets-9c961611bcf0">Philosophy</a>
-    <a style="color: inherit" href="https://medium.com/google-cloud/ci-cd-pipeline-using-cloud-build-with-gitops-technique-68b0e9d3b53)">Technique</a>
-    <a style="color: inherit" href="https://www.cncf.io/blog/2021/09/28/gitops-101-whats-it-all-about/">Framework</a>
-    <a style="color: inherit" href="https://www.cncf.io/blog/2021/09/28/gitops-101-whats-it-all-about/">Standardized Workflow</a>
-    <a style="color: inherit" href="https://twitter.com/flugelit/status/1461001647719698434/">Principle</a>
-    Cloud-native continuous delivery
-</tagcloud>
-
-Note:
 
 
 
