@@ -25,13 +25,13 @@ Note:
 
 * GitOps operators/controllers
 * Supplementary GitOps tools
-* Tools for operating cloud infra with GitOps
+* Tools for operating cloud infra
 
 
 
 ## GitOps operators/controllers
 
-<a title="Flux v2" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
+<a title="Flux" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
 <a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
 <a title="Fleet" href="https://github.com/rancher/fleet"><img data-src="images/fleet-icon.svg" width="9%"/></a>
 <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
@@ -132,7 +132,7 @@ Note:
 
 ## Tools for operating cloud infra
 
-<a title="Flux v2" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
+<a title="Flux" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
 <a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
 <a title="Fleet" href="https://github.com/rancher/fleet"><img data-src="images/fleet-icon.svg" width="9%"/></a>
 <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
@@ -169,4 +169,4 @@ Notes:
  ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools)  ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
 * General tool comparison,   
 * tips on criteria for tool selection,  
-* comparison of ArgoCD v1 and Flux v2  
+* comparison of ArgoCD and Flux  
