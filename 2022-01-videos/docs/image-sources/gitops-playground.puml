@@ -1,0 +1,94 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-full.iuml
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.2.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/docker.puml
+!includeurl ICONURL/devicons/git.puml
+!includeurl ICONURL/font-awesome-5/jenkins.puml
+!includeurl ICONURL/font-awesome-5/sync.puml
+!includeurl ICONURL/font-awesome-5/box.puml
+!includeurl ICONURL/material/computer.puml
+
+!define CLOUDOGUURL https://raw.githubusercontent.com/cloudogu/plantuml-cloudogu-sprites/master
+!includeurl CLOUDOGUURL/tools/k8s.puml
+!includeurl CLOUDOGUURL/dogus/scm.puml
+
+!define CLOUDOGU_BLUE #23a3dd
+
+skinparam backgroundcolor TRANSPARENT
+
+node "<$computer>\nYour Host" as host {
+
+    rectangle "<$docker>\nDocker Daemon" as docker
+    
+    rectangle "<$k8s>\nK3d Container" as k8s {
+        
+        together {
+            rectangle "<$scm>\nSCM-Manager" as scmm {
+                collections "<$git>\nApp Repos" as appRepo
+                collections "<$git>\nGitOps Repos" as configRepo
+            }
+            collections "<$sync>\nArgoCD" as gitops
+        }
+        
+        together {
+            rectangle "<$box>\nRegistry" as registry
+            rectangle "<$jenkins>\nJenkins" as jenkins
+        }
+        
+    }
+}
+
+docker -> k8s : run
+appRepo -[hidden]> configRepo
+appRepo <-- jenkins : pull
+configRepo <-- jenkins : push
+jenkins -> registry : push
+
+
+configRepo <- gitops : pull
+gitops -> gitops : deploy
+registry -[hidden]> gitops
+
+skinparam arrow {
+  Color BLACK
+}
+
+skinparam node {
+    BackgroundColor WHITE
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam actor {
+  BackgroundColor #23a3dd
+  BorderColor #16688d
+  FontColor #000000
+}
+
+skinparam rectangle {
+    BackgroundColor WHITE
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam collections {
+    BackgroundColor WHITE
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
+}
+
+skinparam interface {
+    BackgroundColor WHITE
+    BorderColor #16688d
+}
+
+skinparam note {
+    BackgroundColor WHITE
+    BorderColor #16688d
+}
+
+
+@enduml
