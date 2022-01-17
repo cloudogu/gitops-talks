@@ -19,7 +19,7 @@
 
 skinparam backgroundcolor TRANSPARENT
 
-node "Your Host" as host <<$computer>> #ffffff {
+node "<$computer>\nYour Host" as host {
 
     rectangle "<$docker>\nDocker Daemon" as docker
     
@@ -57,18 +57,15 @@ skinparam arrow {
 }
 
 skinparam node {
-  BorderColor CLOUDOGU_BLUE
+    BackgroundColor WHITE
+    BorderColor CLOUDOGU_BLUE
+    FontColor CLOUDOGU_BLUE
 }
 
 skinparam actor {
   BackgroundColor #23a3dd
   BorderColor #16688d
   FontColor #000000
-}
-
-skinparam actor {
-    BackgroundColor CLOUDOGU_BLUE
-    BorderColor #16688d
 }
 
 skinparam rectangle {

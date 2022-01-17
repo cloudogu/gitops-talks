@@ -17,7 +17,6 @@ node('docker') {
             ])
     ])
 
-    def introSlidePath = 'docs/slides/01-intro.md'
 
     String ghPageCredentials = 'cesmarvin'
 
@@ -33,7 +32,7 @@ node('docker') {
             git.clean('')
         }
 
-        String conferenceName = '2021-12-09-it-tage'
+        String conferenceName = '2022-01-videos'
         
         String pdfName = createPdfName()
 
@@ -44,7 +43,6 @@ node('docker') {
         def image
 
         stage('Build') {
-            writeVersionNameToIntroSlide(versionName, introSlidePath)
             image = docker.build imageName
         }
 
@@ -99,13 +97,6 @@ String createVersion() {
         versionName += '-SNAPSHOT'
     }
     return versionName
-}
-
-void writeVersionNameToIntroSlide(String versionName, String introSlidePath) {
-    def distIntro = "${introSlidePath}"
-    String filteredIntro = filterFile(distIntro, "<!--VERSION-->", "Version: $versionName")
-    sh "cp $filteredIntro $distIntro"
-    sh "mv $filteredIntro $introSlidePath"
 }
 
 void printPdfAndPackageWebapp(def image, String pdfName, String distPath) {
