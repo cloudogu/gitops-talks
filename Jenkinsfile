@@ -1,7 +1,7 @@
 #!groovy
 
 //Keep this version in sync with the one used in Maven.pom-->
-@Library('github.com/cloudogu/ces-build-lib@1.46.1')
+@Library('github.com/cloudogu/ces-build-lib@1.48.0')
 import com.cloudogu.ces.cesbuildlib.*
 
 node('docker') {
@@ -13,14 +13,18 @@ node('docker') {
             disableConcurrentBuilds(),
             parameters([
                     booleanParam(defaultValue: false, name: 'forceDeployGhPages',
-                            description: 'GH Pages are deployed on Master Branch only. If this box is checked it\'s deployed no what Branch is built.')
+                            description: 'GH Pages are deployed on main Branch only. If this box is checked it\'s deployed no what Branch is built.')
             ])
     ])
 
+    def introSlidePath = 'docs/slides/01-intro.md'
 
+    // Build image versions
+    // When updating, also update printPdf.sh
+    headlessChromeImage = 'yukinying/chrome-headless-browser:96.0.4662.6'
+
+    // Params for GitHub pages deployment
     String ghPageCredentials = 'cesmarvin'
-
-    headlessChromeVersion = 'yukinying/chrome-headless-browser:91.0.4469.4'
     
     Git git = new Git(this, ghPageCredentials)
     Docker docker = new Docker(this)
@@ -32,7 +36,7 @@ node('docker') {
             git.clean('')
         }
 
-        String conferenceName = '2022-01-videos'
+        String conferenceName = '2022-04-mastering-gitops'
         
         String pdfName = createPdfName()
 
@@ -43,6 +47,7 @@ node('docker') {
         def image
 
         stage('Build') {
+            writeVersionNameToIntroSlide(versionName, introSlidePath)
             image = docker.build imageName
         }
 
@@ -50,10 +55,10 @@ node('docker') {
             String pdfPath = "${packagePath}/${pdfName}"
             printPdfAndPackageWebapp image, pdfName, packagePath
             archiveArtifacts pdfPath
-            
+
             // Make world readable (useful when accessing from docker)
             sh "chmod og+r '${pdfPath}'"
-            
+
             // Use a constant name for the PDF for easier URLs, for deploying
             String finalPdfPath = "pdf/${createPdfName(false)}"
             sh "mkdir -p ${packagePath}/pdf/ pdf"
@@ -65,16 +70,18 @@ node('docker') {
 
         stage('Deploy GH Pages') {
 
-            if (env.BRANCH_NAME in [ 'master', 'main' ] || forceDeployGhPages) {
+            if (env.BRANCH_NAME == 'main') {
                 git.pushGitHubPagesBranch(packagePath, versionName, conferenceName)
             } else {
-                echo "Skipping deploy to GH pages, because not on default branch"
+                echo "Skipping deploy to GH pages, because not on main branch"
             }
         }
     }
 
     mailIfStatusChanged(git.commitAuthorEmail)
 }
+
+String headlessChromeImage
 
 String createPdfName(boolean includeDate = true) {
     String title = sh (returnStdout: true, script: 'grep -r \'TITLE\' Dockerfile | sed "s/.*TITLE=\'\\(.*\\)\'.*/\\1/" ').trim()
@@ -90,7 +97,7 @@ String createVersion() {
     // E.g. "201708140933-1674930"
     String versionName = "${new Date().format('yyyyMMddHHmm')}-${new Git(this).commitHashShort}"
 
-    if (env.BRANCH_NAME in [ 'master', 'main' ]) {
+    if (env.BRANCH_NAME == "main") {
         currentBuild.description = versionName
         echo "Building version $versionName on branch ${env.BRANCH_NAME}"
     } else {
@@ -99,24 +106,31 @@ String createVersion() {
     return versionName
 }
 
+void writeVersionNameToIntroSlide(String versionName, String introSlidePath) {
+    def distIntro = "${introSlidePath}"
+    String filteredIntro = filterFile(distIntro, "<!--VERSION-->", "Version: $versionName")
+    sh "cp $filteredIntro $distIntro"
+    sh "mv $filteredIntro $introSlidePath"
+}
+
 void printPdfAndPackageWebapp(def image, String pdfName, String distPath) {
     Docker docker = new Docker(this)
 
     image.withRun("-v ${WORKSPACE}:/workspace -w /workspace") { revealContainer ->
 
         // Extract rendered reveal webapp from container for further processing
-        sh "docker cp ${revealContainer.id}:/reveal '${distPath}/'"
+        sh "docker cp ${revealContainer.id}:/reveal '${distPath}'"
 
         def revealIp = docker.findIp(revealContainer)
-        
-        docker.image(headlessChromeVersion)
-                // Chromium writes to $HOME/local, so we need an entry in /etc/pwd for the current user
+
+        docker.image(headlessChromeImage)
+        // Chromium writes to $HOME/local, so we need an entry in /etc/pwd for the current user
                 .mountJenkinsUser()
-                // Try to avoid OOM for larger presentations by setting larger shared memory
+        // Try to avoid OOM for larger presentations by setting larger shared memory
                 .inside("--shm-size=4G") {
-                    // If more flags should ever be neccessary: https://peter.sh/experiments/chromium-command-line-switches
+                    // If more flags should ever be necessary: https://peter.sh/experiments/chromium-command-line-switches
                     sh "/usr/bin/google-chrome-unstable --headless --no-sandbox --disable-gpu --disable-web-security " +
-                            "--print-to-pdf='${distPath}/${pdfName}' --run-all-compositor-stages-before-draw --virtual-time-budget=100000 " +
+                            "--print-to-pdf='${distPath}/${pdfName}' --run-all-compositor-stages-before-draw --virtual-time-budget=10000 " +
                             "http://${revealIp}:8080/?print-pdf"
                 }
     }
@@ -134,5 +148,3 @@ String filterFile(String filePath, String expression, String replace) {
     sh "cat ${filePath} | sed 's/${expression}/${replace}/g' > ${filteredFilePath}"
     return filteredFilePath
 }
-
-String headlessChromeVersion

@@ -1,7 +1,7 @@
-FROM cloudogu/reveal.js:4.2.1-r1 as base
+FROM cloudogu/reveal.js:4.2.1-r3 as base
 
 FROM base as aggregator
-ENV TITLE='GitOps: Introduction to Continuous Operations with Kubernetes'
+ENV TITLE='GitOps: It this something for me'
 ENV THEME_CSS='cloudogu-black.css'
 USER root
 # Remove demo slides before templating
