@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+		<title>GitOps: Introduction to Continuous Operations with Kubernetes</title>
+	
+			<link rel="stylesheet" href="dist/reset.css">
+			<link rel="stylesheet" href="dist/reveal.css">
+			<link rel="stylesheet" href="dist/theme/cloudogu-black.css">
+	
+			<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="footer text-smaller state-background"><div style="font-size: 25px;">
+    <a href='https://twitter.com/jschnatterer' class="social" target="_blank">
+        <i class='fab fa-twitter'></i>
+        @jschnatterer
+    </a>
+</div>
+<br/>
+<br/>
+</div>
+			<div class="slides">
+				<section data-markdown="docs/slides/01-intro.md" data-separator-vertical="^\r?\n\r?\n\r?\n"></section>
+<section data-markdown="docs/slides/02-basics.md" data-separator-vertical="^\r?\n\r?\n\r?\n"></section>
+<section data-markdown="docs/slides/04-tools.md" data-separator-vertical="^\r?\n\r?\n\r?\n"></section>
+<section data-markdown="docs/slides/05-challenges.md" data-separator-vertical="^\r?\n\r?\n\r?\n"></section>
+<section data-markdown="docs/slides/06-demo.md" data-separator-vertical="^\r?\n\r?\n\r?\n"></section>
+<section data-markdown="docs/slides/07-outro.md" data-separator-vertical="^\r?\n\r?\n\r?\n"></section>
+			</div>
+		</div>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+
+		<script src="lib/fontawesome-free/js/all.min.js"></script>
+		<script src="lib/twemoji/twemoji.min.js"></script>
+
+		<!-- This already registers the plugin -->
+		<script src="plugin/reveal-twemoji/reveal-twemoji.js"></script>
+		
+		
+		<script>
+				const showNotesForPrinting = false;
+			
+				evaluateInAndExcludeLocations();
+				const showNotes = showNotesForPrinting && window.location.search.startsWith('?print-pdf') ? "separate-page" : undefined;
+				
+				// More info about initialization & config:
+				// - https://revealjs.com/initialization/
+				// - https://revealjs.com/config/
+				Reveal.initialize({
+					hash: true,
+					history: true,
+					pdfSeparateFragments : false,
+					// Use the default (h.v), because the printed version will always have this anyway
+					slideNumber: 'true',
+					// Support for presenters - press comma to toggle presenterMode mode, i.e. ⬅/➡️ keys map to
+					// prev/next slide, instead of left/right
+					keyboard: {
+						188: () => setPresenterMode(true)
+					},
+					showNotes: showNotes,
+					// Learn about plugins: https://revealjs.com/plugins/
+					plugins: [ 
+						// Interpret Markdown in <section> elements
+						RevealMarkdown, 
+						// Syntax highlight for <code> elements
+						RevealHighlight,
+						// Speaker notes
+						RevealNotes, 
+						// Zoom in and out with Ctrl+Alt+click
+						RevealZoom,
+						// Search slides  with Ctrl+Shift+f
+						RevealSearch,
+						
+					],
+					
+				});
+			
+				setPresenterMode(false);
+			
+				function setPresenterMode(toggle) {
+					const storage = localStorage;
+					const storageKey = 'presenterMode';
+					if (toggle) {
+						storage.setItem(storageKey, JSON.stringify(!JSON.parse(storage.getItem(storageKey))));
+					}
+					const presenterMode = JSON.parse(storage.getItem(storageKey));
+					if (presenterMode) {
+						Reveal.addKeyBinding({keyCode: 39}, 'next');
+						Reveal.addKeyBinding({keyCode: 37}, 'prev');
+					} else {
+						Reveal.removeKeyBinding(37);
+						Reveal.removeKeyBinding(39);
+					}
+					console.log(`Set presenter mode: ${storage.getItem(storageKey)}`);
+				}
+				
+				function relativeUrl() {
+					return window.location.pathname + window.location.search
+				}
+				
+				function evaluateInAndExcludeLocations() {
+					document.querySelectorAll('section[excludeLocation]').forEach(element => {
+						if (relativeUrl().match(new RegExp(element.getAttribute('excludeLocation'), 'gi'))) {
+							element.remove()
+						}});
+			
+					document.querySelectorAll('section[includeLocation]').forEach(element => {
+						if (!relativeUrl().match(new RegExp(element.getAttribute('includeLocation'), 'gi'))) {
+							element.remove()
+						}})
+				}
+		</script>
+		
+	</body>
+</html>
