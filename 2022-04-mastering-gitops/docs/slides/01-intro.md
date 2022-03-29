@@ -1,5 +1,5 @@
 <!-- .slide: style="text-align: center !important;"  -->
-<!-- .slide: data-background-image="images/title.svg"  -->
+<!-- .slide: data-background-image="dist/theme/images/title-black.svg"  -->
 <font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i>&nbsp;<i class="fas fa-sync"></i></font>
 <img data-src="images/k8s_logo.svg" width="5%;" />
 
@@ -18,7 +18,7 @@
 </p>
 
 <div class="title-version">
-Version: 202203231738-3f72954
+Version: 202203291047-6d4a04f
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
