@@ -162,16 +162,20 @@ Note:
 ## Supplementary GitOps tools
 
 ### Secrets
-
+q
 
 
 #### Secrets - Storing secrets
 
-* Store Secrets in Repo (encrypted/sealed)
+* Store Secrets in Repo (encrypted/sealed) 🔑
 * Store Secrets in Key Management System (KMS)
   * Different KMS
-    * Proprietary KMS: <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i>  <i title="google cloudm" class="fab fa-google"></i> ...
-    * Hashicorp Vault
+    * Proprietary KMS: 
+     [<i title="aws secrets manager or Systems Manager Parameter Store" class="fab fa-aws"></i>](https://aws.amazon.com/secrets-manager/) 
+     [<i title="azure key vault" class="fab fa-microsoft"></i>](https://docs.microsoft.com/en-us/azure/key-vault/general/overview)
+     [<i title="google cloud secret manager" class="fab fa-google"></i>](https://cloud.google.com/secret-manager/)
+      ...
+    * Hashicorp Vault [<img title="hashicorp vault" data-src="images/vault-logo.svg"  style="vertical-align: middle;" width="5%;"/>](https://github.com/hashicorp/vault)
   * Different K8s Integrations
     * Operator
     * Container Storage Interface Driver
@@ -182,32 +186,36 @@ Note:
 
 
 #### Secrets - Tools
-* <i class='fab fa-github'></i> [bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)
-* <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus)
-* <i class='fab fa-github'></i> [mozilla/sops](https://github.com/mozilla/sops) + K8s integration
+* <i class='fab fa-github'></i> [bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets) <span title="RSA+AES">🔑</span>
+* <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i>  <span title="AES only!">🔑</span> 
+* <i class='fab fa-github'></i> [mozilla/sops](https://github.com/mozilla/sops) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> <span title="PGP">🔑</span> + K8s integration 
   * <i class='fab fa-github'></i> [isindir/sops-secrets-operator](https://github.com/isindir/sops-secrets-operator)
   * <i class='fab fa-github'></i> [jkroepke/helm-secrets](https://github.com/jkroepke/helm-secrets) (plugin)
   * <i class='fab fa-github'></i> [viaduct-ai/kustomize-sops](https://github.com/viaduct-ai/kustomize-sops) (plugin)
   * <img title="flux only" data-src="images/flux-icon.svg"  style="vertical-align: middle;" width="8%;"/> flux v2 (native support)
-* <img title="flux only" data-src="images/argo-icon.svg"  style="vertical-align: middle;" width="8%;"/> [argoproj-labs/argocd-vault-plugin](https://github.com/argoproj-labs/argocd-vault-plugin) 
-* <i class='fab fa-github'></i> [hashicorp/vault-k8s](https://github.com/hashicorp/vault-k8s) - Vault Agent Sidecar Injector
+* <img title="argocd only" data-src="images/argo-icon.svg" style="vertical-align: middle;" width="7%;"/>[argoproj-labs/argocd-vault-plugin](https://github.com/argoproj-labs/argocd-vault-plugin) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i><img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/><span title="via SOPS">🔑</span>
+* <i class='fab fa-github'></i> [hashicorp/vault-k8s](https://github.com/hashicorp/vault-k8s) <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> (sidecar injector) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 
 
 #### Secrets - Operators for Key Management Systems
-* <i class='fab fa-github'></i> [external-secrets/external-secrets](https://github.com/external-secrets/external-secrets)
-* <i class='fab fa-github'></i> [ricoberger/vault-secrets-operator](https://github.com/ricoberger/vault-secrets-operator)
+
+
+<ul>
+  <li><i class='fab fa-github'></i> <a href="https://github.com/external-secrets/external-secrets">external-secrets/external-secrets</a> <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/></li>
+  <li><i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ul>
 
 
 
-#### Secrets - CSI
+#### Secrets - Container Storage Interface (CSI)
 
-* Driver: <i class='fab fa-github'></i> [kubernetes-sigs/secrets-store-csi-driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
+* Driver: <img data-src="images/k8s_logo.svg" style="vertical-align: middle;" width="4%;" /> [kubernetes-sigs/secrets-store-csi-driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
 * Providers
-  * <i class='fab fa-github'></i> [aws/secrets-store-csi-driver-provider-aws](https://github.com/aws/secrets-store-csi-driver-provider-aws)
-  * <i class='fab fa-github'></i> [Azure/secrets-store-csi-driver-provider-azure](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
-  * <i class='fab fa-github'></i> [GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp](https://github.com/GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp)
-  * <i class='fab fa-github'></i> [hashicorp/vault-csi-provider](https://github.com/hashicorp/vault-csi-provider)
+  * <i title="aws" class="fab fa-aws"></i> [aws/secrets-store-csi-driver-provider-aws](https://github.com/aws/secrets-store-csi-driver-provider-aws)
+  * <i title="azure" class="fab fa-microsoft"></i> [Azure/secrets-store-csi-driver-provider-azure](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
+  * <i title="google cloud" class="fab fa-google"></i> [GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp](https://github.com/GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp)
+  * <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> [hashicorp/vault-csi-provider](https://github.com/hashicorp/vault-csi-provider)
 
 Note:
 * History of external secrets
