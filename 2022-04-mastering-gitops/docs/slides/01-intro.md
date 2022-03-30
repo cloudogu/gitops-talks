@@ -18,7 +18,7 @@
 </p>
 
 <div class="title-version">
-Version: 202203291134-3fde343
+Version: 202203301650-c169d81
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
@@ -36,10 +36,10 @@ Version: 202203291134-3fde343
 
 ## Agenda
 
-- What is GitOps?
-- How can it be used? 
-- What challenges arise?
-- Demo
+- Basics
+- Tools
+- Challenges
+- Maturity
 
 Note:
 

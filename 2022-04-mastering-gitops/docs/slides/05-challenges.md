@@ -1,7 +1,11 @@
 <!-- .slide: data-background-image="images/challenge.jpg"  -->
-<!-- .slide: style="color: black;"  -->
+<!-- .slide: style="text-align: center !important"  -->
 
-<h1 style="color: black; text-align: right">What challenges arise with GitOps?</h1>
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8); width: 60%; margin-left: auto;margin-right: 0;">
+  <br/>
+  <h1 style="margin: 0 0 0 0; color: #5b5a5a;" >Challenges with GitOps</h1>
+  <br/>
+</div>
 <br/>
 <br/>
 <br/>
@@ -92,18 +96,11 @@ More Challenges
 
 ### Implementing stages
 
-<figure class="floatRight fragment"  data-fragment-index="2" style="width:55%">
-<img style="border-radius: 5px;" data-src="images/tec-radar-gitops.png"/>
-<figcaption style="font-size: 0.8em"><a href="https://www.thoughtworks.com/radar/techniques/gitops">🌐 thoughtworks.com/radar/techniques/gitops</a></figcaption>
-</figure>
 
 #### Idea 1: Staging Branches
 
 * Develop ➡ Staging
 * Main ➡ Production
-  <br/><br/>
-  <br/><br/>
-  <br/>
 
 <div class="fragment" data-fragment-index="1">
 <span class="floatLeft" style="font-size: 4em;">❌</span>
@@ -114,6 +111,8 @@ More Challenges
 Note:
 * Branching might lead to merge conflicts, develop and master lose sync
 * One operator per namespace necessary (flux v1)
+* Not only us that don't think this is a good idea:  
+  https://medium.com/containers-101/stop-using-branches-for-deploying-to-different-gitops-environments-7111d0632402
 
 
 
@@ -475,13 +474,3 @@ Notes:
   * A lot can go wrong. Examples
     * Git Conflicts caused by concurrency
     * Danger of inconsistencies
-* More critics:
-  * "I'm really starting to get irritated with "GitOps." Why does CI have to be reinvented for k8s. It's a simple problem. On git commit run "kubectl" Every CI system today can do this, do we have to reinvent "git clone" with ArgoCD/Flux. I question that this is the right approach."   
-    https://twitter.com/ibuildthecloud/status/1263131200484372485
-  * "My gitops workflow might be turing complete"  
-    https://twitter.com/ibuildthecloud/status/1311474999148961798
-  * GitOps: The Bad and the Ugly - Ádám Sándor
-    https://twitter.com/adamsand0r/status/1301814503672344577
-    🌐 https://blog.container-solutions.com/gitops-limitations
-  * Carlos Sanchez - GitOps: The Bad and the Ugly "Not designed for programmatic updates" totally agree, we had to do some ugly logic to work around git conflicts (more about it at https://buff.ly/3euUG29 )
-    https://mobile.twitter.com/csanchez/status/1303371275168083968

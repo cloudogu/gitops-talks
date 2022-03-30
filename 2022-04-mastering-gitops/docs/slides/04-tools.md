@@ -1,23 +1,13 @@
 <!-- .slide: data-background-image="images/tools.jpg"  -->
-<!-- .slide: style="text-align: center !important"  -->
 
-<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.9); width: 80%">
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.9); width: 80%; margin: auto;">
   <br/>
-  <h1 style="margin: 0 0 0 0; color: #5b5a5a" >How can GitOps be used?</h1>
+  <h1 style="margin: 0 0 0 0; color: #5b5a5a; text-align: center">GitOps tools</h1>
   <br/>
 </div>
 
 Note:
 * Source: https://pixabay.com/photos/tools-knives-wrenches-drills-1845426/
-* Lots of tools.
-  * Different understandings of "GitOps"
-  * Different features
-  * Different roles within the stack
-
-
-
-# What can GitOps be used for?
-<img data-src="images/gitops-tool-use-cases.svg"/>
 
 
 
@@ -31,17 +21,130 @@ Note:
 
 ## GitOps operators/controllers
 
-<a title="Flux" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
-<a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-<a title="Fleet" href="https://github.com/rancher/fleet"><img data-src="images/fleet-icon.svg" width="9%"/></a>
-<a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
-<a title="JenkinsX" href="https://github.com/jenkins-x/jx"><img data-src="images/jenkinsx-icon.svg" width="9%"/></a>
-<a title="Werf" href="https://github.com/werf/werf"><img data-src="images/werf-icon.svg" width="9%"/></a>
-<a title="GitLab K8s Agent" href="https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent"><img data-src="images/GitLab_logo.svg" width="9%"/></a>
+<style>
+/* Increase images on hover */
+.zoom2x {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom2x:hover {
+  transform: scale(2);
+}
+.zoom1-5x {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom1-5x:hover {
+  transform: scale(1.5);
+}
+
+/* tooltips */
+.tooltip-bellow .tooltip-bellow-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+
+  /* Position of text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 0;
+
+  /* Fade in */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip-bellow:hover .tooltip-bellow-text {
+  visibility: visible;
+  opacity: 1;
+} 
+
+.tooltip-right .tooltip-right-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+
+  /* Position of text */
+  position: absolute;
+  z-index: 1;
+  left: 100%;
+  top: 0;
+
+  /* Fade in */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip-right:hover .tooltip-right-text {
+  visibility: visible;
+  opacity: 1;
+} 
+
+.tooltip-left .tooltip-left-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+
+  /* Position of text */
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+  top: 0;
+
+  /* Fade in */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip-left:hover .tooltip-left-text {
+  visibility: visible;
+  opacity: 1;
+} 
+</style>
+
+<a href="https://github.com/fluxcd/flux2" class="tooltip-bellow">
+  <img data-src="images/flux-icon.svg" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text">Flux</span>
+</a>
+<a href="https://github.com/argoproj/argo-cd/" class="tooltip-bellow">
+  <img data-src="images/argo-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text">ArgoCD</span>
+</a>
+<a href="https://github.com/rancher/fleet" class="tooltip-bellow">
+  <img data-src="images/fleet-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text">Fleet</span>
+</a>
+<a href="https://github.com/pipe-cd/pipe" class="tooltip-bellow">
+  <img data-src="images/pipecd-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text">PipeCD</span>
+</a>
+<a href="https://github.com/jenkins-x/jx" class="tooltip-bellow">
+  <img data-src="images/jenkinsx-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text">JenkinsX</span>
+</a>
+<a href="https://github.com/werf/werf" class="tooltip-bellow">
+  <img data-src="images/werf-icon.svg" width="8%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text">Werf</span>
+</a>
+<a href="https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent" class="tooltip-bellow">
+  <img data-src="images/GitLab_logo.svg" width="8%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text" style="width:200px; left: -50%;">GitLab<br/> K8s Agent</span>
+</a>
 
 Note:
 * AFAIK the most well known tools. There are more of course! 
-* Flux + Argo: First tools on the market
+* Flux + Argo: First tools on the market  
+  [ArgoCD among CNCF projects with highest velocity](https://mobile.twitter.com/cra/status/1468988578357288962)
 * Fleet and PipeCD: Wider scope - multi cluster
 * JenkinsX + Werf: Wider scope - CI/Builds
 * GitLab Agent: [premium use only](https://docs.gitlab.com/ee/user/clusters/agent/), though the agent itself is OSS 
@@ -60,14 +163,61 @@ Note:
 
 ### Secrets
 
-<div style="font-size: 26px">
-<ul>
-<li><i class='fab fa-github'></i> <a href="https://github.com/bitnami-labs/sealed-secrets">bitnami-labs/sealed-secrets</a></li>
-<li><i class='fab fa-github'></i> <a href="https://github.com/Soluto/kamus">Soluto/kamus</a> </li>
-<li><i class='fab fa-github'></i> <a href="https://github.com/mozilla/sops">mozilla/sops</a> + K8s integration </li>
-<li>Operators for Key Management Systems</li>
 
-</div>
+
+#### Secrets - Storing secrets
+
+* Store Secrets in Repo (encrypted/sealed)
+* Store Secrets in Key Management System (KMS)
+  * Different KMS
+    * Proprietary KMS: <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i>  <i title="google cloudm" class="fab fa-google"></i> ...
+    * Hashicorp Vault
+  * Different K8s Integrations
+    * Operator
+    * Container Storage Interface Driver
+    * Side car (Injector)
+    * Helm/Kustomize Plugin
+    * GitOps Operator: native support or plugin
+
+
+
+#### Secrets - Tools
+* <i class='fab fa-github'></i> [bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)
+* <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus)
+* <i class='fab fa-github'></i> [mozilla/sops](https://github.com/mozilla/sops) + K8s integration
+  * <i class='fab fa-github'></i> [isindir/sops-secrets-operator](https://github.com/isindir/sops-secrets-operator)
+  * <i class='fab fa-github'></i> [jkroepke/helm-secrets](https://github.com/jkroepke/helm-secrets) (plugin)
+  * <i class='fab fa-github'></i> [viaduct-ai/kustomize-sops](https://github.com/viaduct-ai/kustomize-sops) (plugin)
+  * <img title="flux only" data-src="images/flux-icon.svg"  style="vertical-align: middle;" width="8%;"/> flux v2 (native support)
+* <img title="flux only" data-src="images/argo-icon.svg"  style="vertical-align: middle;" width="8%;"/> [argoproj-labs/argocd-vault-plugin](https://github.com/argoproj-labs/argocd-vault-plugin) 
+* <i class='fab fa-github'></i> [hashicorp/vault-k8s](https://github.com/hashicorp/vault-k8s) - Vault Agent Sidecar Injector
+
+
+
+#### Secrets - Operators for Key Management Systems
+* <i class='fab fa-github'></i> [external-secrets/external-secrets](https://github.com/external-secrets/external-secrets)
+* <i class='fab fa-github'></i> [ricoberger/vault-secrets-operator](https://github.com/ricoberger/vault-secrets-operator)
+
+
+
+#### Secrets - CSI
+
+* Driver: <i class='fab fa-github'></i> [kubernetes-sigs/secrets-store-csi-driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
+* Providers
+  * <i class='fab fa-github'></i> [aws/secrets-store-csi-driver-provider-aws](https://github.com/aws/secrets-store-csi-driver-provider-aws)
+  * <i class='fab fa-github'></i> [Azure/secrets-store-csi-driver-provider-azure](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
+  * <i class='fab fa-github'></i> [GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp](https://github.com/GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp)
+  * <i class='fab fa-github'></i> [hashicorp/vault-csi-provider](https://github.com/hashicorp/vault-csi-provider)
+
+Note:
+* History of external secrets
+  * ContainerSolutions/externalsecret-operator -> external-secrets/external-secrets
+  * godaddy/external-secrets -> external-secrets/kubernetes-external-secrets --> external-secrets/external-secrets
+* [Kubernetes Vault Integration via Sidecar Agent Injector vs. CSI Provider](https://www.hashicorp.com/blog/kubernetes-vault-integration-via-sidecar-agent-injector-vs-csi-provider)
+* [cdcon talk about secrets](https://twitter.com/gitopsweekly/status/1493897404655058947)
+* More tools
+  * [banzaicloud/bank-vaults](https://github.com/banzaicloud/bank-vaults) - operator to deploy vault instances?
+  * [3rd Party injector](https://github.com/Talend/vault-sidecar-injector)
 
 
 
@@ -76,8 +226,8 @@ Note:
 * ~~Horizontal Pod Autoscaler~~  
   🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/#leaving-room-for-imperativeness)
 * Deployment Strategies - Progressive Delivery  
-  <a title="Flagger" href="https://github.com/fluxcd/flagger"><img data-src="images/flagger-icon.svg" width="9%"/></a>
-  <a title="Argo Rollouts" href="https://github.com/argoproj/argo-rollouts/"><img data-src="images/argo-icon.svg" width="9%"/></a>
+  <a href="https://github.com/fluxcd/flagger" class="tooltip-left"><img data-src="images/flagger-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-left-text">Flagger</span></a>
+  <a href="https://github.com/argoproj/argo-rollouts/" class="tooltip-bellow"><img data-src="images/argo-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-bellow-text">Argo Rollouts</span></a>
 * ...
  
 
@@ -100,7 +250,7 @@ Notes:
 
 <u class="fragment">Operate cloud infra with GitOps</u>
 
-<strong>
+</strong>
 
 
 
@@ -132,25 +282,48 @@ Note:
 
 ## Tools for operating cloud infra
 
-<a title="Flux" href="https://github.com/fluxcd/flux2" ><img data-src="images/flux-icon.svg" /></a>
-<a title="ArgoCD" href="https://github.com/argoproj/argo-cd/"><img data-src="images/argo-icon.svg" width="9%"/></a>
-<a title="Fleet" href="https://github.com/rancher/fleet"><img data-src="images/fleet-icon.svg" width="9%"/></a>
-<a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
-<a title="JenkinsX" href="https://github.com/jenkins-x/jx"><img data-src="images/jenkinsx-icon.svg" width="9%"/></a>
-<a title="Werf" href="https://github.com/werf/werf"><img data-src="images/werf-icon.svg" width="9%"/></a>
-<a title="GitLab K8s Agent" href="https://gitlab.com/gitlab-org/cluster-integration/gitlab-agent"><img data-src="images/GitLab_logo.svg" width="9%"/></a>
+<a href="https://github.com/kubernetes-sigs/cluster-api" class="tooltip-bellow" class="tooltip-bellow">
+  <img data-src="images/capi-icon.svg" width="9%" class="zoom1-5x"/>
+  <span class="tooltip-bellow-text">Kubernetes<br/>ClusterAPI</span>
+</a>
 
-<span style="font-size: 60px;">+</span>
+<a href="https://github.com/crossplane/crossplane" class="tooltip-bellow">
+  <img data-src="images/crossplane-icon.svg" width="9%" class="zoom1-5x"/>
+  <span class="tooltip-bellow-text ">Crossplane</span>
+</a>
 
-<a title="ClusterAPI" href="https://github.com/kubernetes-sigs/cluster-api"><img data-src="images/capi-icon.svg" width="9%" class="floatLeft"/></a>
-<a title="Crossplane" href="https://github.com/crossplane/crossplane"><img data-src="images/crossplane-icon.svg" width="9%" class="floatLeft"/></a>
-<span style="font-size: 60px;" class="floatLeft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<img title="Terraform" data-src="images/terraform-icon.svg" width="9%" class="floatLeft"/>
-<span style="font-size: 60px;" class="floatLeft">-</span>
+<a href="https://github.com/pulumi/pulumi" class="tooltip-bellow">
+  <img data-src="images/pulumi.svg" width="8%" class="zoom1-5x" style="margin: 10px" />
+  <span class="tooltip-bellow-text">Pulumi</span>
+</a>
+
+<a href="https://github.com/hashicorp/terraform" class="tooltip-bellow" style="margin: 300px">
+  <img data-src="images/terraform-icon.svg" width="9%" class="zoom1-5x" />
+  <span class="tooltip-bellow-text">Terraform</span>
+</a>
+
+Note:
+Source: https://www.pulumi.com/logos/brand/avatar-on-white.svg
+
+
+
+### Terraform + GitOps
+
+<a href="https://github.com/hashicorp/terraform">
+  <img title="Terraform" data-src="images/terraform-icon.svg" width="25%" class="floatRight" />
+</a>
+
 Cloud or Operator
-* <a title="PipeCD" href="https://github.com/pipe-cd/pipe"><img data-src="images/pipecd-icon.svg" width="9%"/></a>
-* <i class='fab fa-github'></i> <a title="Terraform Controller" href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
-* <a title="Atlantis" href="https://github.com/runatlantis/atlantis"><img data-src="images/atlantis-logo.png" width="7%" /></a>
+* <a href="https://github.com/pipe-cd/pipe" class="tooltip-right">
+    <img data-src="images/pipecd-icon.svg" width="9%" class="zoom2x"/>
+    <span class="tooltip-right-text">PipeCD</span>
+  </a>
+* <i class='fab fa-github'></i> <a href="https://github.com/weaveworks/tf-controller">weaveworks/tf-controller</a>
+* <i class='fab fa-github'></i> <a href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
+* <a href="https://github.com/runatlantis/atlantis" class="tooltip-right">
+    <img data-src="images/atlantis-logo.png" width="7%" class="zoom1-5x" />
+    <span class="tooltip-right-text">Atlantis</span>
+  </a>
 
 Notes:
 * Operators use different ways to connect to target Cluster

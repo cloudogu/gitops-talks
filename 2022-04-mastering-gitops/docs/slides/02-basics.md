@@ -1,9 +1,9 @@
 <!-- .slide: data-background-image="images/questionmarks.jpg"  -->
 <!-- .slide: style="text-align: center !important"  -->
 
-<div style="border-radius: 5px; border: 4px solid; border-color: #777; background-color: rgba(255,255,255,0.7); width: 80%">
+<div style="border-radius: 5px; border: 4px solid; border-color: #777; background-color: rgba(255,255,255,0.7); width: 80%; margin: auto;">
   <br/>
-  <h1 style="margin: 0 0 0 0; color: #5b5a5a" >What is GitOps?</h1>
+  <h1 style="margin: 0 0 0 0; color: #5b5a5a" >GitOps basics</h1>
   <br/>
 </div>
 
@@ -262,14 +262,15 @@ The desired state of a GitOps managed system must be:
 Note:
 
 1. A system managed by GitOps must have its desired state expressed declaratively.
-2. Desired state is stored in a way that enforces immutability, versioning and retains a complete version history.
-3. Software agents automatically pull the desired state declarations from the source.
-4. Software agents continuously observe actual system state and attempt to apply the desired state.
+2. Desired state is stored in a way that enforces immutability, versioning and retains a complete version history.  
+   Not necessarily Git! [Flux with s3 bucket](https://www.cncf.io/blog/2021/08/12/august-2021-update/) 
+4. Software agents automatically pull the desired state declarations from the source.
+5. Software agents continuously observe actual system state and attempt to apply the desired state.
  
-1. and 2. -> Git, but could also be a different system with theses attributes
+6. and 2. -> Git, but could also be a different system with theses attributes
    Fun Fact: GitOps is possible without Git  
    e.g. flux with S3 bucket: https://www.cncf.io/blog/2021/08/12/august-2021-update/
-4. Continuously! Not only when a change is triggered, also when the actual state "drifts"
+7. Continuously! Not only when a change is triggered, also when the actual state "drifts"
 
 
 
@@ -314,3 +315,8 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 * IaC is auditable
 * Scalability - one repo many applications
 * Self-healing / Hands-off ops 
+
+
+
+# What can GitOps be used for?
+<img data-src="images/gitops-tool-use-cases.svg"/>
