@@ -36,7 +36,7 @@ configRepo <- gitops : pull
 apiServer -[hidden]> infra
 gitops -> apiServer : apply resources
 gitops -> targetClusters : apply resources
-infra -> apiServer : watch
+infra -> apiServer : watch CRs
 infra --> targetClusters : create/\nmanage
 cloudProviders -> targetClusters : create/\nmanage
 infra --> cloudProviders : create\nclusters/\nVMs/\nmetal

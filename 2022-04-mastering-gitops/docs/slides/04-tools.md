@@ -117,7 +117,7 @@ Note:
   <span class="tooltip-bellow-text">Flux</span>
 </a>
 <a href="https://github.com/argoproj/argo-cd/" class="tooltip-bellow">
-  <img data-src="images/argo-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <img data-src="images/argo-icon.svg" width="6%" class="zoom2x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">ArgoCD</span>
 </a>
 <a href="https://github.com/rancher/fleet" class="tooltip-bellow">
@@ -163,9 +163,13 @@ Note:
 
 ### Secrets
 
+Note:
+* Not necessarily a GitOps topic
+* But: 
 
 
-#### Secrets - Storing secrets
+
+#### Secrets - Ways of storing secrets
 
 * Store Secrets in Repo (encrypted/sealed) 🔑
 * Store Secrets in Key Management System (KMS)
@@ -175,47 +179,34 @@ Note:
      [<i title="azure key vault" class="fab fa-microsoft"></i>](https://docs.microsoft.com/en-us/azure/key-vault/general/overview)
      [<i title="google cloud secret manager" class="fab fa-google"></i>](https://cloud.google.com/secret-manager/)
       ...
-    * Hashicorp Vault [<img title="hashicorp vault" data-src="images/vault-logo.svg"  style="vertical-align: middle;" width="5%;"/>](https://github.com/hashicorp/vault)
+    * Hashicorp Vault [<img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="5%;"/>](https://github.com/hashicorp/vault)
   * Different K8s Integrations
     * Operator
-    * Container Storage Interface Driver
-    * Side car (Injector)
-    * Helm/Kustomize Plugin
+    * Container Storage Interface (CSI) driver
+    * Side car (injector)
+    * Helm/Kustomize plugin
     * GitOps Operator: native support or plugin
 
 
 
+<!-- .slide: style="font-size: 100%"  -->
 #### Secrets - Tools
 * <i class='fab fa-github'></i> [bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets) <span title="RSA+AES">🔑</span>
-* <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i>  <span title="AES only!">🔑</span> 
 * <i class='fab fa-github'></i> [mozilla/sops](https://github.com/mozilla/sops) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> <span title="PGP">🔑</span> + K8s integration 
   * <i class='fab fa-github'></i> [isindir/sops-secrets-operator](https://github.com/isindir/sops-secrets-operator)
   * <i class='fab fa-github'></i> [jkroepke/helm-secrets](https://github.com/jkroepke/helm-secrets) (plugin)
   * <i class='fab fa-github'></i> [viaduct-ai/kustomize-sops](https://github.com/viaduct-ai/kustomize-sops) (plugin)
-  * <img title="flux only" data-src="images/flux-icon.svg"  style="vertical-align: middle;" width="8%;"/> flux v2 (native support)
-* <img title="argocd only" data-src="images/argo-icon.svg" style="vertical-align: middle;" width="7%;"/>[argoproj-labs/argocd-vault-plugin](https://github.com/argoproj-labs/argocd-vault-plugin) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i><img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/><span title="via SOPS">🔑</span>
-* <i class='fab fa-github'></i> [hashicorp/vault-k8s](https://github.com/hashicorp/vault-k8s) <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> (sidecar injector) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-
-
-#### Secrets - Operators for Key Management Systems
-
-
-<ul>
-  <li><i class='fab fa-github'></i> <a href="https://github.com/external-secrets/external-secrets">external-secrets/external-secrets</a> <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/></li>
-  <li><i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-</ul>
-
-
-
-#### Secrets - Container Storage Interface (CSI)
-
-* Driver: <img data-src="images/k8s_logo.svg" style="vertical-align: middle;" width="4%;" /> [kubernetes-sigs/secrets-store-csi-driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
-* Providers
-  * <i title="aws" class="fab fa-aws"></i> [aws/secrets-store-csi-driver-provider-aws](https://github.com/aws/secrets-store-csi-driver-provider-aws)
-  * <i title="azure" class="fab fa-microsoft"></i> [Azure/secrets-store-csi-driver-provider-azure](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
-  * <i title="google cloud" class="fab fa-google"></i> [GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp](https://github.com/GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp)
-  * <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> [hashicorp/vault-csi-provider](https://github.com/hashicorp/vault-csi-provider)
+  * <img title="flux only" data-src="images/flux-icon.svg"  style="vertical-align: middle;" width="4%;"/> flux v2 ([native support](https://fluxcd.io/docs/guides/mozilla-sops/))
+* <img title="argocd only" data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/> [argoproj-labs/argocd-vault-plugin](https://github.com/argoproj-labs/argocd-vault-plugin) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i><img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/><span title="via SOPS">🔑</span>
+* <img data-src="images/k8s_logo.svg" style="vertical-align: middle;" width="4%;"/> [kubernetes-sigs/secrets-store-csi-driver](https://github.com/kubernetes-sigs/secrets-store-csi-driver)
+  [<i title="aws/secrets-store-csi-driver-provider-aws" class="fab fa-aws"></i>](https://github.com/aws/secrets-store-csi-driver-provider-aws)
+  [<i title="Azure/secrets-store-csi-driver-provider-azure" class="fab fa-microsoft"></i>](https://github.com/Azure/secrets-store-csi-driver-provider-azure)
+  [<i title="GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp" class="fab fa-google"></i>](https://github.com/GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp)
+  [<img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/>](https://github.com/hashicorp/vault-csi-provider)
+* <i class='fab fa-github'></i> <a href="https://github.com/external-secrets/external-secrets">external-secrets/external-secrets</a> <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/>
+* <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i>  <span title="AES only!">🔑</span> 
+* <i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+* <i class='fab fa-github'></i> [hashicorp/vault-k8s](https://github.com/hashicorp/vault-k8s) <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> (sidecar injector) &nbsp; 
 
 Note:
 * History of external secrets
@@ -231,17 +222,17 @@ Note:
 
 ### Others
 * Backup / **restore**
-* ~~Horizontal Pod Autoscaler~~  
-  🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/#leaving-room-for-imperativeness)
 * Deployment Strategies - Progressive Delivery  
   <a href="https://github.com/fluxcd/flagger" class="tooltip-left"><img data-src="images/flagger-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-left-text">Flagger</span></a>
   <a href="https://github.com/argoproj/argo-rollouts/" class="tooltip-bellow"><img data-src="images/argo-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-bellow-text">Argo Rollouts</span></a>
 * ...
- 
 
 Notes:
 * Progressive Delivery = canary releases, A/B tests, and blue/green deployments
 * ... -> e.g. Database Schema (Schema Hero)
+* More:
+  * ~~Horizontal Pod Autoscaler~~  
+    🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/#leaving-room-for-imperativeness)
 * Sources:
   * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
 
@@ -328,10 +319,6 @@ Cloud or Operator
   </a>
 * <i class='fab fa-github'></i> <a href="https://github.com/weaveworks/tf-controller">weaveworks/tf-controller</a>
 * <i class='fab fa-github'></i> <a href="https://github.com/rancher/terraform-controller">rancher/terraform-controller</a>
-* <a href="https://github.com/runatlantis/atlantis" class="tooltip-right">
-    <img data-src="images/atlantis-logo.png" width="7%" class="zoom1-5x" />
-    <span class="tooltip-right-text">Atlantis</span>
-  </a>
 
 Notes:
 * Operators use different ways to connect to target Cluster

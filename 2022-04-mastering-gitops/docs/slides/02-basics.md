@@ -264,13 +264,9 @@ Note:
 1. A system managed by GitOps must have its desired state expressed declaratively.
 2. Desired state is stored in a way that enforces immutability, versioning and retains a complete version history.  
    Not necessarily Git! [Flux with s3 bucket](https://www.cncf.io/blog/2021/08/12/august-2021-update/) 
-4. Software agents automatically pull the desired state declarations from the source.
-5. Software agents continuously observe actual system state and attempt to apply the desired state.
- 
-6. and 2. -> Git, but could also be a different system with theses attributes
-   Fun Fact: GitOps is possible without Git  
-   e.g. flux with S3 bucket: https://www.cncf.io/blog/2021/08/12/august-2021-update/
-7. Continuously! Not only when a change is triggered, also when the actual state "drifts"
+3. Software agents automatically pull the desired state declarations from the source.
+4. Software agents continuously observe actual system state and attempt to apply the desired state.
+  Not only when a change is triggered, also when the actual state "drifts"
 
 
 
@@ -278,20 +274,23 @@ Note:
 
 * DevOps is about collaboration of formerly separate groups (mindset)
 * GitOps focuses on ops (operating model)
-* GitOps can be used with or without DevOps 
+* GitOps could be used with or without DevOps and vice versa
+* Still, GitOps might be...
+
+> The right way to do DevOps  
+> [🗣](https://youtu.be/lvLqJWOixDI?t=1185) Alexis Richardson  
 
 Note:
 
 Some other opinions
 
-> "The right way to do DevOps" (Alexis Richardson)  
 
-<li>🌐 <a href="https://schlomo.schapiro.org/2021/04/the-gitops-journey.html">schlomo.schapiro.org/2021/04/the-gitops-journey.html</a></li>: 
+<li> <a href="https://schlomo.schapiro.org/2021/04/the-gitops-journey.html">schlomo.schapiro.org/2021/04/the-gitops-journey.html</a></li>: 
 <img data-src="images/gitops-map.svg" width="40%" />
 
 See also:
 <span style="font-size: 20px;"><ul>
-<li>🎥 <a href="https://youtu.be/lvLqJWOixDI">youtu.be/lvLqJWOixDI</a></li>
+<li><a href="https://youtu.be/lvLqJWOixDI">youtu.be/lvLqJWOixDI</a></li>
 </ul></span>
 
 
