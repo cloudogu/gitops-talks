@@ -48,12 +48,12 @@ There are the challenges, but
 
 * Vibrant community
   * increasing adoption
-  * several GitOps-only conferences:   
+  * several dedicated GitOps conferences:   
    GitOps Days, GitOps Con, GitOps Summit
 * Mature tools
   * very active tool development
   * ArgoCD and Flux CNCF graduation ahead
-  * Lots of new tools and integrations emerging, including platforms,  
+  * Lots of new tools and integrations emerging, including platforms  
 * I have used GitOps successfully in production for years 
 
 Note:

@@ -236,8 +236,8 @@ Note:
 
 <div class="fragment"><i class="fas fa-thumbtack"></i> Optional: GitOps operator updates image version in Git 
 <ul style="display: flow">
-<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/><a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
-<li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="5%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
+<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
+<li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
 </ul>
 </div>
 
@@ -257,7 +257,7 @@ Note:
 <div class="fragment" data-fragment-index="1" >
 GitOps tools: Put infra in separate repo! See
 
-<img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/><a href="https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices</a>
+<img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/> <a href="https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices</a>
 </div>
 
 Note:
