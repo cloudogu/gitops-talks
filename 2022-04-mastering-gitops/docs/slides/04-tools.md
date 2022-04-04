@@ -162,7 +162,7 @@ Note:
 ## Supplementary GitOps tools
 
 ### Secrets
-q
+
 
 
 #### Secrets - Storing secrets
