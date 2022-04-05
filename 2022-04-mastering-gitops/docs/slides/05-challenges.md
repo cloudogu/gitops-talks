@@ -81,7 +81,7 @@ More Challenges
 * Option 1: Deploy GitOps operator and Git server on local cluster   
   ➡ complicated
 * Option 2: Just carry on without GitOps.  
-  Easy, when IaC is stored in app repo [🧐](#extended-ci)
+  Easy, when IaC is stored in app repo <a title="see Extended role of CI server" href="#extended-ci">🧐</a>
 
 
 
@@ -89,7 +89,7 @@ More Challenges
 
 * `garbage collection` (Flux) / `resource pruning` (ArgoCD)   
   disabled by default
-* <i class="fas fa-thumbtack"></i> Enable from beginning ➡️ avoid manual interaction
+* 💡 Enable from beginning ➡️ avoid manual interaction
 * Unfortunately, still often unreliable / too defensive (?) 😒
 
 
@@ -102,17 +102,21 @@ More Challenges
 * Develop ➡ Staging
 * Main ➡ Production
 
-<div class="fragment" data-fragment-index="1">
+<div class="fragment" data-fragment-index="1" style="margin-top: 50px">
 <span class="floatLeft" style="font-size: 4em;">❌</span>
 <br/>
-<p>Logic for branching complicated and error prone (merges)</p>
+<ul class="fragment" data-fragment-index="1">
+    <li>Logic for branching complicated (merges)</li>
+    <li>Gets even more difficult with more stages</li>
+<ul/>
 </div>
 
 Note:
 * Branching might lead to merge conflicts, develop and master lose sync
 * One operator per namespace necessary (flux v1)
 * Not only us that don't think this is a good idea:  
-  https://medium.com/containers-101/stop-using-branches-for-deploying-to-different-gitops-environments-7111d0632402
+  * https://medium.com/containers-101/stop-using-branches-for-deploying-to-different-gitops-environments-7111d0632402
+  * images/tec-radar-gitops.png
 
 
 
@@ -127,7 +131,7 @@ Note:
           └── deployment.yaml
   ```
 * Process:
-  * commit to staging folder only (<i class="fas fa-thumbtack"></i> protect prod),
+  * commit to staging folder only (💡 protect prod),
   * create short lived branches and pull requests for prod
 * Duplication is tedious, but can be automized
   <br/>
@@ -234,9 +238,9 @@ Note:
     </text>
 </svg>
 
-<div class="fragment"><i class="fas fa-thumbtack"></i> Optional: GitOps operator updates image version in Git 
+<div class="fragment">💡 Optional: GitOps operator updates image version in Git 
 <ul style="display: flow">
-<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
+<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
 <li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
 </ul>
 </div>

@@ -46,14 +46,14 @@ Note more GitOps Critics
 
 There are the challenges, but
 
-* Vibrant community
-  * increasing adoption
-  * several dedicated GitOps conferences:   
-   GitOps Days, GitOps Con, GitOps Summit
 * Mature tools
   * very active tool development
   * ArgoCD and Flux CNCF graduation ahead
   * Lots of new tools and integrations emerging, including platforms  
+* Vibrant community
+  * increasing adoption
+  * several dedicated GitOps conferences:   
+   GitOps Days, GitOps Con, GitOps Summit, Mastering GitOps 🤩
 * I have used GitOps successfully in production for years 
 
 Note:

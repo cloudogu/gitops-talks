@@ -21,97 +21,6 @@ Note:
 
 ## GitOps operators/controllers
 
-<style>
-/* Increase images on hover */
-.zoom2x {
-  transition: transform .2s; /* Animation */
-}
-
-.zoom2x:hover {
-  transform: scale(2);
-}
-.zoom1-5x {
-  transition: transform .2s; /* Animation */
-}
-
-.zoom1-5x:hover {
-  transform: scale(1.5);
-}
-
-/* tooltips */
-.tooltip-bellow .tooltip-bellow-text {
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-align: center;
-  padding: 5px 5px;
-  border-radius: 5px;
-
-  /* Position of text */
-  position: absolute;
-  z-index: 1;
-  top: 125%;
-  left: 0;
-
-  /* Fade in */
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.tooltip-bellow:hover .tooltip-bellow-text {
-  visibility: visible;
-  opacity: 1;
-} 
-
-.tooltip-right .tooltip-right-text {
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-align: center;
-  padding: 5px 5px;
-  border-radius: 5px;
-
-  /* Position of text */
-  position: absolute;
-  z-index: 1;
-  left: 100%;
-  top: 0;
-
-  /* Fade in */
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.tooltip-right:hover .tooltip-right-text {
-  visibility: visible;
-  opacity: 1;
-} 
-
-.tooltip-left .tooltip-left-text {
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-align: center;
-  padding: 5px 5px;
-  border-radius: 5px;
-
-  /* Position of text */
-  position: absolute;
-  z-index: 1;
-  right: 100%;
-  top: 0;
-
-  /* Fade in */
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.tooltip-left:hover .tooltip-left-text {
-  visibility: visible;
-  opacity: 1;
-} 
-</style>
-
 <a href="https://github.com/fluxcd/flux2" class="tooltip-bellow">
   <img data-src="images/flux-icon.svg" class="zoom2x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">Flux</span>
@@ -121,7 +30,7 @@ Note:
   <span class="tooltip-bellow-text">ArgoCD</span>
 </a>
 <a href="https://github.com/rancher/fleet" class="tooltip-bellow">
-  <img data-src="images/fleet-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <img data-src="images/fleet-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">Fleet</span>
 </a>
 <a href="https://github.com/pipe-cd/pipe" class="tooltip-bellow">
@@ -143,8 +52,14 @@ Note:
 
 Note:
 * AFAIK the most well known tools. There are more of course! 
-* Flux + Argo: First tools on the market  
-  [ArgoCD among CNCF projects with highest velocity](https://mobile.twitter.com/cra/status/1468988578357288962)
+* Flux + Argo: First tools on the market
+  * Flux: Platform integrations
+    * [AWS, D2iQ, Microsoft, Red Hat, VMware](https://www.cncf.io/blog/2021/10/19/flux-trusted-by-amazon-d2iq-microsoft-red-hat-vmware-and-weaveworks/) [2](https://www.cncf.io/blog/2021/10/13/flux-celebrates-major-milestone/)
+    * [D2iq](https://twitter.com/jschnatterer/status/1448405170736541696) replaced argoCD by Flux
+    * [Azure Arc](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2)
+  * ArgoCD: [ArgoCD among CNCF projects with highest velocity](https://mobile.twitter.com/cra/status/1468988578357288962). Platform integrations:
+    * OpenShift
+    * [Harness Announces Enterprise GitOps For Its Award-Winning Software Delivery Platform - EnterpriseTalk](https://enterprisetalk.com/news/harness-announces-enterprise-gitops-for-its-award-winning-software-delivery-platform/)
 * Fleet and PipeCD: Wider scope - multi cluster
 * JenkinsX + Werf: Wider scope - CI/Builds
 * GitLab Agent: [premium use only](https://docs.gitlab.com/ee/user/clusters/agent/), though the agent itself is OSS 
@@ -204,19 +119,21 @@ Note:
   [<i title="GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp" class="fab fa-google"></i>](https://github.com/GoogleCloudPlatform/secrets-store-csi-driver-provider-gcp)
   [<img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/>](https://github.com/hashicorp/vault-csi-provider)
 * <i class='fab fa-github'></i> <a href="https://github.com/external-secrets/external-secrets">external-secrets/external-secrets</a> <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/>
-* <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i>  <span title="AES only!">🔑</span> 
-* <i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 * <i class='fab fa-github'></i> [hashicorp/vault-k8s](https://github.com/hashicorp/vault-k8s) <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> (sidecar injector) &nbsp; 
 
 Note:
 * History of external secrets
   * ContainerSolutions/externalsecret-operator -> external-secrets/external-secrets
   * godaddy/external-secrets -> external-secrets/kubernetes-external-secrets --> external-secrets/external-secrets
-* [Kubernetes Vault Integration via Sidecar Agent Injector vs. CSI Provider](https://www.hashicorp.com/blog/kubernetes-vault-integration-via-sidecar-agent-injector-vs-csi-provider)
-* [cdcon talk about secrets](https://twitter.com/gitopsweekly/status/1493897404655058947)
+* `hashicorp/vault-k8s` - mutation webhook controller that injects Vault Agent containers into pods meeting specific annotation criteria
 * More tools
+  * <i class='fab fa-github'></i> [Soluto/kamus](https://github.com/Soluto/kamus) <i title="aws" class="fab fa-aws"></i> <i title="azure" class="fab fa-microsoft"></i> <i title="google cloudm" class="fab fa-google"></i>  <span title="AES only!">🔑</span>
+  * <i class='fab fa-github'></i> <a href="https://github.com/ricoberger/vault-secrets-operator">ricoberger/vault-secrets-operator</a> <img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="4%;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
   * [banzaicloud/bank-vaults](https://github.com/banzaicloud/bank-vaults) - operator to deploy vault instances?
   * [3rd Party injector](https://github.com/Talend/vault-sidecar-injector)
+* More info
+  * [Kubernetes Vault Integration via Sidecar Agent Injector vs. CSI Provider](https://www.hashicorp.com/blog/kubernetes-vault-integration-via-sidecar-agent-injector-vs-csi-provider)
+  * [cdcon talk about secrets](https://twitter.com/gitopsweekly/status/1493897404655058947)
 
 
 
@@ -270,7 +187,7 @@ Note:
   <img data-src="images/infra-cluster-target-clusters-detail.svg" width="95%"/>
 </div>
 Note:
-* Infra operator: Depending on the setting create VMs (e.g. EC2) or clusters directly (e.g. EKS) via cloud providers.
+* Infra operator: Depending on the setting create VMs (e.g. EC2) or clusters directly (e.g. EKS) via cloud providers.  
   In case of VMs the infra operator create control plane e.g. with kubeadm 
 * gitops operator might deploy resources (apps) into target clusters
 * See also
@@ -312,7 +229,7 @@ Source: https://www.pulumi.com/logos/brand/avatar-on-white.svg
   <img title="Terraform" data-src="images/terraform-icon.svg" width="25%" class="floatRight" />
 </a>
 
-Cloud or Operator
+Terraform Cloud or K8s Operator
 * <a href="https://github.com/pipe-cd/pipe" class="tooltip-right">
     <img data-src="images/pipecd-icon.svg" width="9%" class="zoom2x"/>
     <span class="tooltip-right-text">PipeCD</span>

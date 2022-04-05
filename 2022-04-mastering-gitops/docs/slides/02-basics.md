@@ -250,7 +250,11 @@ link k8s to k8s-->
 
 The desired state of a GitOps managed system must be: 
 
-<a title="OpenGitOps" href="https://opengitops.dev/"><img data-src="images/opengitops.png" width="15%;" style="border-radius: 50%" class="floatRight"/></a>
+<a  href="https://opengitops.dev/" class="tooltip-right floatRight">
+  <img data-src="images/opengitops.png" width="70%;" style="border-radius: 50%" class="zoom1-5x" />
+  <span class="tooltip-right-text">OpenGitOps</span>
+</a>
+
 1. **Declarative**  
 2. **Versioned and Immutable**  
 3. **Pulled Automatically**  
@@ -313,7 +317,7 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 * Forces declarative description
 * IaC is auditable
 * Scalability - one repo many applications
-* Self-healing / Hands-off ops 
+* Self-healing 
 
 
 
