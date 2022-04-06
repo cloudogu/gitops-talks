@@ -111,7 +111,7 @@
 </p>
 
 <div class="title-version">
-Version: 202204051728-b4747e4
+Version: 202204061723-c43a708
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
@@ -132,11 +132,3 @@ Version: 202204051728-b4747e4
 - Basics
 - Tools
 - Challenges
-- Maturity
-
-Note:
-
-- Definitions and boundaries
-- Use Cases
-- Tools
-- challenges for dev and ops
