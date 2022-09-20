@@ -12,7 +12,8 @@ https://pixabay.com/photos/age-bacteria-bio-biology-blue-1238283/
 
 
 <figure>
-<img style="border-radius: 5px;" data-src="images/tec-radar-gitops.png"/>
+<img data-src="images/tec-radar-gitops.png" width="55%"/>
+<span class="floatRight;" style="font-size: 120px">🧐 🤔</span>
 <figcaption style="font-size: 0.8em"><a href="https://www.thoughtworks.com/radar/techniques/gitops">🌐 thoughtworks.com/radar/techniques/gitops</a></figcaption>
 </figure>
 
