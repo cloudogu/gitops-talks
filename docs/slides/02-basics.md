@@ -319,6 +319,9 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 * Scalability - one repo many applications
 * Self-healing 
 
+Note:
+* [One example of scalability to many clusters](https://www.youtube.com/watch?app=desktop&v=T7vDsswWbTQ&feature=youtu.be)
+
 
 
 # What can GitOps be used for?

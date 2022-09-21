@@ -1,6 +1,6 @@
 @startuml
 
-!includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-full.iuml
+!includeurl https://raw.githubusercontent.com/michiel/plantuml-kubernetes-sprites/master/resource/k8s-sprites-unlabeled-25pct.iuml
 
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.2.0
 !includeurl ICONURL/common.puml
@@ -17,40 +17,50 @@
 
 !define CLOUDOGU_BLUE #23a3dd
 
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
+
 skinparam backgroundcolor TRANSPARENT
+skinparam actorStyle awesome
+
 
 node "Your Host" as host <<$computer>> #ffffff {
 
-    rectangle "<$docker>\nDocker Daemon" as docker
+    actor " " as dev
     
-    rectangle "<$k8s>\nK3d Container" as k8s {
+    together {
+        rectangle "<$docker>\nDocker Daemon" as docker
         
-        together {
-            rectangle "<$scm>\nSCM-Manager" as scmm {
-                collections "<$git>\nApp Repos" as appRepo
-                collections "<$git>\nGitOps Repos" as configRepo
+        rectangle "<$k8s>\nK3d Container" as k8s {
+            
+            together {
+                rectangle "<$scm>\nSCM-Manager" as scmm {
+                    collections "<$git>\nApp Repos" as appRepo
+                    collections "<$git>\nGitOps Repos" as configRepo
+                }
+                collections "<$sync>\nArgoCD" as gitops
+                collections "<$deploy>\nStaging\n+ Production" as staging
             }
-            collections "<$sync>\nArgoCD" as gitops
-        }
-        
-        together {
+            
             rectangle "<$box>\nRegistry" as registry
             rectangle "<$jenkins>\nJenkins" as jenkins
+            
         }
-        
     }
 }
 
 docker -> k8s : run
+dev --> appRepo #line:black;text:black : push  
+dev --> configRepo : accept PR  
 appRepo -[hidden]> configRepo
 appRepo <-- jenkins : pull
-configRepo <-- jenkins : push
-jenkins -> registry : push
+configRepo <-- jenkins : push\nIaC\n + Create PR
+jenkins -> registry : push\nimage
 
 
 configRepo <- gitops : pull
-gitops -> gitops : deploy
 registry -[hidden]> gitops
+
+gitops -> staging : deploy
 
 skinparam arrow {
   Color BLACK

@@ -25,11 +25,10 @@ Source: https://unsplash.com/photos/bJhT_8nbUA0
 
 ## More Infra ...
 
-* GitOps Operator: One or more custom controllers
+* GitOps Operator: several applications
 * Helm, Kustomize Controllers
 * Operators for Supplementary tools (secrets, etc.)
 * Monitoring/Alerting systems
-* ...
 
 Note:
 * Most operators comprise multiple components. E.g. argo:  
@@ -60,8 +59,8 @@ Note:
 * Operations in prod has its challenges
   * How to realize local dev env?
   * How to delete resources?
+  * How to structure repos and folders?
   * How to realize staging?
-  * How to structure repos and how many of them?
   * Role of CI server?
   * ...
 
@@ -81,7 +80,6 @@ More Challenges
 * Option 1: Deploy GitOps operator and Git server on local cluster   
   ➡ complicated
 * Option 2: Just carry on without GitOps.  
-  Easy, when IaC is stored in app repo <a title="see Extended role of CI server" href="#extended-ci">🧐</a>
 
 
 
@@ -94,63 +92,101 @@ More Challenges
 
 
 
-### Implementing stages
+## Repo and folder structure
+
+* No standard for structures (intentionally) ➡️ Conway's law
+* Repo patterns: Monorepo vs Polyrepo (per app, team, stage) <i class="fas fa-blender"></i>
+* Within repo: folder/~~branch~~ structure for stage, team, app
+* More options:   
+  * Topology: GitOps controller (s) ↔ Cluster(s) / Namespaces
+  * GitOps controller-specific config
 
 
-#### Idea 1: Staging Branches
+Note: 
+* Conway's law applies ->️ structure will be dictated by organizational boundaries
+* Repo Patterns: Mix and match is possible
+* GitOps controller-specifics: ArgoCD has Projects and applications and the app of app pattern
 
-* Develop ➡ Staging
-* Main ➡ Production
 
-<div class="fragment" data-fragment-index="1" style="margin-top: 50px">
-<span class="floatLeft" style="font-size: 4em;">❌</span>
-<br/>
-<ul class="fragment" data-fragment-index="1">
-    <li>Logic for branching complicated (merges)</li>
-    <li>Gets even more difficult with more stages</li>
-<ul/>
+
+### 🤯 GitOps Chasm
+
+<div class="container">
+
+<div class="column">
+<img data-src="images/k8s_logo.svg" width="9%" />&nbsp;<img data-src="images/argo-icon.svg" width="7%;" /> <strong><i class="fab fa-git-alt" style="color: #F05133"></i> Infra</strong>
+  <ul>
+    <li>repos</li>
+    <li>folders</li>
+    <li>branches</li>
+    <li>clusters</li>
+    <li>namespaces</li>
+    <li>controller instances</li>
+    <li>controller-specific config</li>
+  </ul>
 </div>
 
-Note:
-* Branching might lead to merge conflicts, develop and master lose sync
-* One operator per namespace necessary (flux v1)
-* Not only us that don't think this is a good idea:  
-  * https://medium.com/containers-101/stop-using-branches-for-deploying-to-different-gitops-environments-7111d0632402
-  * images/tec-radar-gitops.png
+<div class="column container" style="justify-content: center;align-content: center;flex-flow: wrap;" >
+  <div>↔️</div>
+  <span style="width: 100%;"></span>
+
+  <div><strong>Mapping?</strong></div>
+  <span style="width: 100%;"></span>
+
+  <div>🤔</div>
+  <span style="width: 100%;"></span>
+</div>
+
+<div class="column">
+🌍 <strong>Real-world</strong><br/>
+<ul>
+  <li>company/departments</li>
+  <li>teams</li>
+  <li>projects</li>
+  <li>applications</li>
+  <li>microservices</li>
+  <li>stages/environments</li>
+  <li>customers</li>
+  <li>tenants</li>
+  <li>etc.</li>
+</ul>
+</div>
+
+</div>
+<br/>
 
 
 
-#### Idea 2: Staging folders
-* On the same branch: One folder per stage
+
+### As example: Our approach
+
+* `Trunk-based monorepo, folder per team, stage, app` pattern  
   ```text
-  ├── production
-  │   └── application
-  │       └── deployment.yaml
-  └── staging
-      └── application
-          └── deployment.yaml
+    ├── a-team
+    │   ├── staging
+    │   │   └── application
+    │   │       └── deployment.yaml
+    │   └── production
+    │       └── application
+    │           └── deployment.yaml
+    └── team-B
   ```
-* Process:
-  * commit to staging folder only (💡 protect prod),
+* Promote between stages:
+  * commit to staging folder only (💡 protect `production`),
   * create short lived branches and pull requests for prod
 * Duplication is tedious, but can be automized
   <br/>
 
-<div class="fragment" data-fragment-index="1">
-<span class="floatLeft" style="font-size: 4em;">✅</span>
-<br/>
-<ul class="fragment" data-fragment-index="1">
-    <li>Logic for branching simpler</li>
-    <li>Supports arbitrary number of stages</li>
-<ul/>
-</div>
+
 Note:
+* Might or might not be the best choice for you
 * production branch: Protect via SCM
+* Advantage: All infra in one place -> less complexity, standardized process
 * Stages as namespace: Explicit namespace in resource YAMLs
 
 
 
-### Basic role of CI server
+## Basic role of CI server
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="405"
      preserveAspectRatio="none" style="width:599px;height:405px;background:#00000000" width="599">
@@ -238,7 +274,7 @@ Note:
     </text>
 </svg>
 
-<div class="fragment">💡 Optional: GitOps operator updates image version in Git 
+<div class="fragment"> Optional: GitOps operator updates image version in Git 
 <ul style="display: flow">
 <li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
 <li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
@@ -247,26 +283,24 @@ Note:
 
 Note:
 * Image updater writes back to Git!
-* But: How to implement staging?
+* Flux also supports a simple staging mechanism:
+> For production, you may choose to manually approve app version bumps by configuring Flux to push the changes to a new branch from which you can create a pull request.
+https://fluxcd.io/flux/guides/repository-structure/
+* For more complex use cases we might use CI server to automate
 
 
 
-### Number of repositories: application vs GitOps repo
+### Application vs GitOps repo
 
 <img data-src="images/gitops-with-image.svg" width="40%"/>
 <div data-fragment-index="2" class="fragment" style="vertical-align: 5em !important; display: inline-block;height: 100%; margin-left: 5px; margin-right: 15px">➡</div>
 
 <img data-fragment-index="2" class="fragment"  data-src="images/gitops-with-app-repo-manual.svg" width="50%"/>
 
-<div class="fragment" data-fragment-index="1" >
-GitOps tools: Put infra in separate repo! See
-
-<img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/> <a href="https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices</a>
-</div>
 
 Note:
 * Good practice: Keeping everything in app repo (code, docs, infra)
-* GitOps Repo aka `config`, `infra`, `payload`, `environment`, ...
+* GitOps Repo aka `config`, `infra`
 * App Repo aka Source Code Repo
 
 
@@ -439,6 +473,7 @@ Note:
 </svg>
 
 Note:
+* ONE Option is using CI server (other would be pointing/linking to App repo from GitOps repo, e.g via ArgoCD app or GitRepo CR in flux)
 * Multiple app repos, one GitOps repo for infra
 * Depending on technology more repos for configuring operator
 * CI Server push has one disadvantage: More complexity in pipelines
