@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="995"
+     preserveAspectRatio="none" style="width:1351px;height:995px" width="1351">
+    <path fill="#FFF" style="stroke:#23a3dd;stroke-width:1" d="M16 16 26 6h1308v962l-10 10H16V16z"/>
+    <path style="stroke:#23a3dd;stroke-width:1" d="m1324 16 10-10M16 16h1308M1324 16v962"/>
+    <image height="48" width="48" x="647"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAtUlEQVR4Xu2Xyw3EIAwFaYGeaIEWKJ8WslYiS8bKkw8riA9vjnw0oygHXK5kFL/wNQyKYFAEgyJ80JyztVaOICLRuYAlSLZrrf7eTkTnmpag3ru/sR+R2oYl6PDneRCpbViC7Dm7vgPkYpCCXAxSkItBCnIxSEEuBinIxSAFuRikIBeDFORikIJcuYPSPfLHGP74fkRqG5agdIPidTcdGxdF9DJKE/Iv7p/6HAZFMCiCQRHpgn6x3znS2I7hMgAAAABJRU5ErkJggg=="
+           y="19"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" textLength="80" x="631" y="79.995">Your Host</text>
+    <rect fill="#FFF" height="670" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:1" width="1036" x="242"
+          y="252"/>
+    <image height="48" width="48" x="736"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+           y="254"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" font-weight="bold" textLength="114" x="703"
+          y="314.995">K3d Container
+    </text>
+    <rect fill="#FFF" height="183" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:1" width="286" x="936" y="514"/>
+    <image height="48" width="48" x="1055"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4ElEQVR4Xu2VTUrEQBCF597ewBt4Am/gDQRXboIrV2bjYhjwD2EQaR95pKhUOumfdMdZ9KMJlZoO9eVVdebgLkwHm/hvNaCQGlBIDSgkP9D7+dem9pIHCDTd6dx//tgfdpEHCALN/es3yLjszzXlB6JJWPu75QdyAxNMAoq4ZXfU0SIQRJMAxCvWDlhrQNokIavNtAbkhunWJu0wTwEgGWrpGk2q51MAyA2TNO8arnZfIYWBjEkEqnfuwkBuNMk4tAQkeey5e/nizCHZxx3SKCC2zDRuXgCZ2+cP5hEwxgLW9ePp5ulNXmOFLApIurYExFsSIEZt9hRXxMgThXDIXD0cce19BzYNyGARiN8qFCCBGEMUbsN+xOTgfltjVBSQm46RBG5kRTHSwAAxhq7QMLRM5mldsUCaQwMh4BsLDeAY0CQ9OjHKB2KNbvi/68YDJeU5K1365yoWiG/M2mRikrekkelBkP2hygRikuU1jQz19OkE5QDJqzMjTDJG00fTlAbEJUkCcaiBgkA9kalkIG2ATDRQMubXqwQg3SyKKAVpXBKQsYeIXGrjViUAGXsESCe3KwHIZDjR8/xGxQLNZU5cKW0CsqkSygcq3iwqH6iSGlBIDSikBhRSAwrp4oD+AGyZmNJHN/KJAAAAAElFTkSuQmCC"
+           y="516"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" font-weight="bold" textLength="110" x="1024"
+          y="576.995">SCM-Manager
+    </text>
+    <g fill="#23A3DD">
+        <circle cx="575" cy="111.5" style="stroke:#16688d;stroke-width:1.5" r="16"/>
+        <path d="M575 131.5c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8h-38c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4"
+              style="stroke:#16688d;stroke-width:1.5"/>
+    </g>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="136" x="56"
+          y="343"/>
+    <image height="48" width="48" x="66"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACWklEQVR4Xu2WQUpcQRCGvYs3yA08gTfIDXKC3GBukLULIStXs3IVEFxlI1kFwQyBIQQhk4ggEtqP/mPZU6/fq/eciQnaP4X0VPfr/l5VdT130n+mHe/412pAkRpQpAYUqQFFeo5Aq5vf8y9XZvz0K6ZoC0BAvPnwbfbxEnt7+p2ffsUUbQdINNi7Tz9eNtDh559dI19kChQMpmGgsMImALHX6+Mlp4qDsQZ4RgKxw/78K4v9RKHJQMqLgCxNI1PGU2eXNyxgmZ+715MCkVwNCNLi1+365B/FQHYYuxBw+2lA+Mtrb37MVYwBESdmYTpZXjuyGIgDeAxTv+FvOcaI1iyXjnJhxQ4cB5db4TFEK0e9G3vKHwNxsAoWUyS6KeMkG9tPFjsgTq1Wj6Kl8VMD7R0tSg8BYzG7macOBK8OwNjCxmUN2bisGyCsnnCqRWkBYztYZacpB10HUkGAxRtsbm5z4gSuc5rWgFb5u50ykFVZ3/3EX73hZfxLGZzdtVRb/ADE7mRh9+CcHDFQSM3DO/Gw3SlSgB9T4nStGLx6fyG/kmiPsJWm8OsR87hSq6eMFbqiWzeA/GHrH7g6UMp9wrs2VreEu+oFIqp9D69yqXXTPyw1C+/tqBdoILxq+X24Vak/eW9NvUApX4Hyw6S2MSu66ki51jesIaCU36x6t0eKKJbfqTEKgFJmGuhjfSKKatl+IlIMlPKLqvGX97MqOHgBJTpcXNUoIInI6xtkHU93TV9T/OKYlKCuJgCVImb6r0jX7XHBqOqRQH9PDShSA4rUgCI1oEgNKNIdd6X3L4lTCWgAAAAASUVORK5CYII="
+           y="353"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="116" x="66" y="413.995">Docker Daemon
+    </text>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="96" x="625"
+          y="597"/>
+    <image height="48" width="48" x="635"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEIUlEQVR4Xs2XUYoUMRCG94Zzg77BnMAb7A08wd5gnnwSFnzyZfHJJwdhEVlwVAQRaX/y7fxTXUm6e2ZFN4SlO51Ufan6U5m9Gp9Zu8oD/7v9HaDDz9/qefSi9iQgQdze/7h++zC8ulfXg16fSHYhECgv3nwWx2b30V2vGnwK1tlA8rT78L1GqbE07QKsM4DWoDSx9t9+ZVv9tgpIFudR0FAauQxrAUhWbt5/3b7+1EOxy4hbT9aIjMjUIlYXaA0KXXMUAHU91F/ryfNYDSBpZSWKfYiGJfXXZp/BykDQrESJ1s8C2pQkakl9DDOQqKWGen3dEbI1a9XT6/l1VyG9e/iZADKQalraaO2DV02TRR8f7VXW9apB0l0vSaCU0AQwAaLSGAgTcmAfDM4ogJYOhOm5ZCKl3KW1Gejluy9xDb61dTsgztymcqwtclH4WQ8ow9ecN1CflVpGEyCtqTdhJoSCv2hdkddX9eReBlklsrglzGJfS1KkJ0Ba1lQ0gfFK+46f6kELNn5Knc2cCBJQr7gRBgR4CPc8vQnEfOeud+1sSw2LDCegmQqkQWmLZOFD7jViVemT061BfbLOyG+SZrScZDQBqgXEg3ygVioyQT6UI6klWGQ/16UQGFojvBL7JhNbbQDtOyWRGETZXi/9MoxpTWu9T8MlGZ2AUkn0AufLE4bqZ6FTaVMWDTNnskb4vfYRiID3FnCMLfkhaHk86smptJiwhmxn7A+lPHo/J6CZHUSgIVwalg7uLXy05cmILAHFZy3MQD0BRSAFFpFGDeJJc+zYn3wISC7Tavub6S37CHRXlUQ2LRNJLuNRMXReb48XCK/EKS4ZS5GTKcKWUuEiNxoolcShyJbNUVGYti8FUJMVZB94PnnCTTn8qAo58+lQfg5oBDKY/Hd3LI+PQElAQ6lX9k3K0kkZgq4dDyvacxAWoHqWQQ4BobJHfV0AIl8MWh/xPHsQZ0AfglYIs4+Yk+Vud5ui6wlQSlnqBEM7wzemKWiHYxU2H3LEJeGJVbHZt+FGO52y5rH3yFCS6MShsOgsQWtCTFZKULRv7gnQ2PqREAM7lAwS/30pAYTHCdqEJCJeMkj8mjSYjWd+AjS2fiekZzMxn2iRL77GvUKTDCaaeOBpE6A1G3IYvIR4ELNIM5MpetoebQI0BkP1ejOxLfRBXtw9WAe7thM35paBxr7AbYiLDGm7BtL1ipx35TqbMRKTG1sDaGwJ3IYoLfNRJK09AbGlKOTY2kBjS+C2dXv8/6ZGWZzmjGd/x9YFagocc9fh/8Ze35afKPWZbQo5ti7Q2BL4PMRiHzpCjm0OaFwS+Fl96As5tgWgsS/wszqq6gk5tmWgMQj84j4v5NhWAfkS4JY4t1Mp5qXjtgqIRv29oC/qJrYzgP5Ne3ZAfwDsQIjT4mAAGwAAAABJRU5ErkJggg=="
+           y="607"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="76" x="635" y="667.995">API-Server</text>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="76" x="310"
+          y="343"/>
+    <image height="48" width="48" x="320"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAC+klEQVR4Xs2XT2oWQRDFc5fvBt4gJ/AG3sAT5AbewLULwZWrrFwFBFduxJUIGoQgEvAfQhBpH19lKjX1ut7Mlx5IircIX/d0//pVdc3kqN2zOMo/3HVsAHT+6+/D0y9P3l7mgVvFBkCg2T37CJ1+/p3HDo9RIEAYDXT88jwPHx6jQG7PViYNAUV7tjJpCCjZs4lJJdDzDz9x3EevLqoNXl/8YRphEi4jbiJGcYwfV//y8BQl0IMXn+I2TNa1xxRnOkecgNOGlWZRAoGAd9pNZFw9Udi+y+F6d3mV95uiBNJbjgje581ClEAIXmsT6Z6ugKqsmZAOLA3zvUKRJvj6+OwrT44S+WoaqMoaPBdV2fZkFZbOV9NArZc1vrQ4MVoABI74O6D5cZ2vtgiUsgYaH+ragDxG87hX6Xy1RaCYNbjt3lTZNEUXn77/Hle4WbqIA4D86JrGFPu1dyNON0cJhF1jL/YNkCnevquTN998qfS7wOoAJRSTFyPXjZCXOQ9VWDOgLorJi5GHhPwYVUtjrGsg+y7mB1z2GLB4SAgctj425lFX7AXXQJoGsml8jbW88uJd6worz4DAyJOibgfkfUuvHxvKTQ2hgKqvhd1UnuuvmAk3wBYXKUtllG9ZheXfXN3RSvoprujGQBaM5WftvqG6Eq2ri2LRB7JIWN5UFm+Ayes05kugWCigNr/nbhJW7KYgyt8z0R7vAiIWgNLtiG/yqk7B6t40qh7/vYoFIHYibmZf8jj38f6fG1joVWzBDTpN4FBAVV9Gl8tTKcDKh9mtyJoCEt0Mm1VnBUqVTVN+YB4KqHvEJJwY28Mz0OOPNY9UJ7Eogap8jUtnrQQS+cKrZ7EVcTlH5c1ClEBsPjjsH7G2b0W8jcu+FTEHbaJLJrJWArkHkSOGqNzUi5ks9o4UJZCtwhwelUlmTzfwCLwRNE0ArYmuSfpVtRhDQGySsGdlDAE1MmnQnjYOFE0at6eNA7WpY8Xv4pHYAKjtP/43oWlbAW0Y9w7oP9dmlfS8F7eOAAAAAElFTkSuQmCC"
+           y="353"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="56" x="320" y="413.995">Grafana</text>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="107" x="274.5"
+          y="597"/>
+    <image height="48" width="48" x="284.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACXElEQVR4Xs2XO0oEQRCG9y57A2/gCbyBN/AE3sAbGBsIRkZGRoJgZCJGIugiLCKCLwQRKX+2mWGoV3fVjLg/f7TTj2+rq7pmZrRmmvEf/lsTAJ0vP7dOHrZPl69fP/xZXGOBFu/f84PbYjDxx3GNBUJseqCNozv+OK5RQIc3bz1NMR8R1ygghIQBXT1/8UFB5YFkeOCds0c+Lqg80DB7JgxSEggVLlGKN48XfHRESSD1vHojeHxCs5JAe5fPkmPo9J2UBNq9eJIQkzAlgaoRKk6cXRII/UturxpMoR6XBCLtVrQcilMeyC+0NFMTEPbG7YJbmAUfaSv3ttyY43Wgk/uPflEUF3tq3deqUQpsulQFCH1guKL8l4gZgif3tlxtLBUgFgAJREGmamPxgGTaqkAUZEIO8PkDeUCysC0gWr3LyvGq/YozgYa53NsBIi2ilkHPJ3cygVDkciEfiLSgqgY6n9nJBFKXrgK1NN25+2KpAw0/boauAjU2XafWdCCrdzoLFTVGyPlg0oHUjC528pGMg1bNZ3YKAzmntn/9Isdb5pM76UDWkRXLjkaRmi/m8zvpQKyFSSOZQIBhOEGEM9T2y3S+ZScdCJKrTOhw2ZNoq9M6czGGMjRq5y3bBHK+TUfaqVNygKj5lovaf0fzgP4iSE46F3lAFL9dfOMed7KnqAJEkx6cf1hFdSAKfu5Y9t9cezUB0bg44aTQi/iKhlqBKJtPuGD9FwSmABCt6q49VAiMcyNbigEVAQv3uNVbwIHabj8jpgzQUDgO7I2EhVFE1aquaizQ5Fo7oF9Axci4om1CLwAAAABJRU5ErkJggg=="
+           y="607"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="87" x="284.5" y="667.995">Prometheus</text>
+    <rect fill="#FFF" height="116.891" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="86" x="417"
+          y="580.5"/>
+    <image height="48" width="48" x="427"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB9klEQVR4Xu2YT0oDMRTGe5e5QW/gCbyBN/AE3sAbdO1CcOWqK1eC4MqNuBJBi1BECv5DKCLxY970+XyZvEwn0Y6Qj48iycvLr5nJS+zIDUwj3bBpFaCYClBMGYCel5+H1y9n83fd0UupQKAZH91WBzfw/sVCd6+vVKDp3RvRwCDT3esrFQgPqwCZKkD1a7tzMudZ+xmse+eP2JI6u6cI0O7pg5+9t4F1uVjqOX7KAppcPflJEw0me50sID9dFtv1MwiEo8DPlcXb03s9mVAQSJbgvN46nunJhDYAZFeHAQPNXj8AAeMPFwDC48e7hQB7A9phDETTqXtLAySnRxbVwonkjpU1unU+ks/EAdwiX/MGCE3cHQJCkeRhrr4JqQAyKrIMwzqpAB8I5nVqgPDmc18ICAcIBZP8mciKG6VZBbQCYTpqXAOoEt/DmaeKPB/8czAnUFUvAEqtjG+1EZYZKN0FKOYCFHMnoC6FsaqvMugl0xB8cgt6Q2HSnYA4V2UCyaODhsi6zLVbhiFAJWkF4iENkKvPJgyGqfq1AoEVYWSqeFgAbpmsji0ZZqwQTYcvRsc56RtIqRUoi9Xpq/R/gAZ3p4bGq99Z8po2TUgW0G88NfuG72wgVz84f5v0dpf/piNALCRKtM4YUFegP1MBiqkAxTQ4oC+eGTTs7gAyNQAAAABJRU5ErkJggg=="
+           y="590.5"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="60" x="427" y="651.495">External</text>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="55" x="427" y="667.792">Secrets</text>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="66" x="427" y="684.089">Operator</text>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="68" x="467"
+          y="343"/>
+    <image height="48" width="48" x="477"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YTUoDQRCFc5e5gTfwBN7AG3gCb+ANXLsQXLnKypUguHIjrkTQIASRgH8IQWR8pIdJd1X3TFd1NcnCxyOETHfVl+nqn5lJu2Wa0B82LWOg28Xy6GaxfzHfmz7vns/wie/4Bb/TpgnZAL0vf5F15+yxOXlIGVfRBi1p51AGQMd3bzz9gNGehvBUCoQR4SlHjaFM3So9ECKiSniyTKNvlEkPhH/J04iMCDSoGujg8oUnGHCq3hGHRNYAYQ7z0Cn7M+v0/oM3uJp/+8E1QPmDBQLSF+lJGzJwYiAeMeVoibSxienfJDHQ4fUrzx01Bot2XomvW4jZXxUDpcqT20/jiwMhZn9VBoTy5IlTxkpD+6/Ehwyeff64qzKg/AJy5rvE9OmLN2u8MpIBpcINGAPn/j0+UVW8gTMiuxQyIOkdyrcSSLQkiqwcMlFRi6ws6lYy7fOtn/ZtYtIWWr8wRnfHciu3jko0ys21Ek2jO37Uo9Ec0OrRRM8nI0D1aDSH/Ho0msegejT8COArDlSDRv8oXUiD4sDcMXvZUE4zeg+GFQAV0mBQ+k1brTWQjgbD4YxSLbw3Th2Q4mzqHEYzUAeU/zBKHEYzUAekfrESRjNQEZB/0rOSGAgQzuhCTg4mkgHx04K5/oHGJJv2qRcahuqAMpfp/D1SrfXWgWRYrwdcvk/liO72G9fWAf0B+QjYxBZia1oAAAAASUVORK5CYII="
+           y="353"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="37" x="477" y="413.995">Vault</text>
+    <rect fill="none" height="20" rx="2.5" ry="2.5" style="stroke:none;stroke-width:.5" width="20" x="274" y="846"/>
+    <rect fill="none" height="20" rx="2.5" ry="2.5" style="stroke:none;stroke-width:.5" width="20" x="329" y="846"/>
+    <rect fill="none" height="20" rx="2.5" ry="2.5" style="stroke:none;stroke-width:.5" width="20" x="384" y="846"/>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="75" x="670.5"
+          y="343"/>
+    <image height="48" width="48" x="680.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB0UlEQVR4Xu2XT0oDMRTGe5fcwBt4Am/gDTxBb+ANXLsQXLnqypUguHIjrkTQIhSRQrUiFJHnxwTevMmbTmbSTJpFHt+i075kfvP+ZTqhzGzifrFvK0A+K0A+yxvoc/M3e/0+e1yl0cXT18NyIwFIAuFnc/6cXkezNwTCBQKpdk2m4+uFC3Ry8679Umq+/m0AHV7NtVNKoXbzBkJlaaeUul38NIAAqJ2SCeGwGDUQVY12cPmivccW+okZSA9GdKBeM54w/CQAtR4dp/dLvTK6kA09pknOIa5zGEps1PThdjyd8QGXDNdoe5nO8dIn08SF67Y9zyF84KFJsQ+4js23Alk5DxFlbHaH3wNk18tDeMfDzlugfiCjGiFseGLoyTRta+FeQFbYgrfD1h2eWtO7D16LeHccUAOATPW+ItOH22gfR4guH0/UI7rDgMzAGwQ8wGAgKyd9rSnAy7L06blzIJBRT48BwS2DTpT12x1FR+FARqWPqoKVl9QvTVI7AVnhlpqDqsAE7BYByApYiBYyhYmF9AXvEw0olgqQT9kDtY64lHL/BmG8aqeUshg1EO01a/J9sAai6mUFWBjEyYRScYZ+AygHK0A+K0A+K0A+yw7oH6t0WC6SDzkxAAAAAElFTkSuQmCC"
+           y="353"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="55" x="680.5" y="413.995">Mailhog</text>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="80" x="817"
+          y="814"/>
+    <image height="48" width="48" x="827"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABfklEQVR4Xu2YMU4DMRBFc5e5QW7ACbgBN8hFcoPUKZCoqLaiikRLE1GhSBAhRSkiQUBIUYTCwJq1PePsJDNR1oVHr1qvx0/+W9jb22VWPfqg69ordL/4GkyWF7dzkerls55yWb3yUQK+M3xYvW++49V8pYVGj28wnh3I9dO6ntW/eeajSdBsn1NCaP6x5S1aUAghuP3xsq4SQrilfH4LOiEkuUkJoWP7qoWaiWFRoelqw2e2oxa6ulvEi/8WFTo2LzAIQSo1KqRoahHiqUVCirzAJsRTi4QUeYFNCFhqkZCuo1GIpOaFdHmBWYik5oV0eYFZCOLUvJC6nV0oTM0JqfOCUwiFqTkhdV5wCiEIUvM7hMcaHXg6qJvgEYqPHggVyqdyFcKTJX4BHVL9n4OdEJ4p+Yd2ToqQRBGSKEISRUiiCEkUIYkiJFGEJIqQRPZCg8mSv3ROmsudE7Jcpe2Ev4id0O7v3tk33IXVkB/WXqguy3VYQZNUU1So88pO6AfRZ2ysFtxE8AAAAABJRU5ErkJggg=="
+           y="824"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="60" x="827" y="884.995">Registry</text>
+    <rect fill="#FFF" height="84.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="71" x="976.5"
+          y="814"/>
+    <image height="48" width="48" x="986.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEW0lEQVR4Xs2YS4plRRCGey93B3cHtYLaQe+gVnB34A4cOyhw5KhHjgTBkRNxJIIWQiPSYKkIjUj6mR8nzIp8nHNLsfvncDg3bj7+iIyIjMwX5T3Diyx41/i3hB7f/nn/zS+XL356+enr21c/3HzywJtvJMgffv0jd9jD8wkxH3OfPvo2HqlIK4R80zJ3nuM5hD78+ufzx9+1PD5//Xtqg+Veff8bdgpaB611HSF0hQoM+JAWs+ZGTwGzUOCrN2/z3x2OEkI/10JjoPrdZz8yWW43AS1d396WCYcIYQbG+uDLN/6ECko/bXIIclrbaZ8Q/RklHBNyVzlpC+zE2vEsTLtPCLWwDUNgbf00t7gGDIJ62Dj/sWGHkP0NY94oN3QCiEJ6HUdYuo3NWeMVIZbGzlqo1IDvvUfPYDKSUPqrBaS1seqFRyZMCcHAaVofhGIaCBI8C58Ygi7QytKKKSHNkxYoWQizz8ZdQ22HakwJmWR7YUsRQkOXOgIWehj/U0LuSr1wqFaLXYpmDXff/N+CEGx6Qr2kR8oL/Z5PA7TCF/v4KAtCMwslSY+UOTFYoqgENsNAmxKiDyFGBovdtNRNI7drEJagS2sVHF93gQojmM+uJmR24U1PHdyP3K7BLO+Ze0pl7D5oCXAFIRO0i81wUULwXvhsbC+948MjLfd1hGhtzNPH9Ihyqj4MjV1AESO1Br7OqWmqRzMQyrlVof3CPLtAJRQLq0BuWNyNCVkZlq3eKweyyxFYV/l9XWJ0gXTM/4SKQM/YamZV0ZhQqbG6DvJdtB6DMRgtrPJYK7V/mjaYEtK84cLP2LYu9bBm4oGKHmMkMuxM2ymhUmPVVOTH0Ad7xF7B3NgjHAUhHm3AQnQWrStCpTmCHdk0RFSGvLEND4Oo0qnWM9Yez6kYA7f1SJqlI0Q5YKZwhzblRNmpPPfccIiQ6TEJhzZnSjgtvE13Xqz+IUJmgTSKG1MrEW47Op9OzTv64ukL85SDhMoWMknYl9jCdEoXHlO8crkOTRs4SsjjYp9bL5PCr4dbh5bL/zU4ROihHuxnY7Eo67KkVB836KxkGGeYpssuIbo5hKOcJucp2sQ9RAJU7HjeTlT39TxjQsqt14TcYiWhQqYTUwujRxh7znKay1ae3tVqU2XikbScTiMfGBOKNbrr7lyU32/XeC6EqSVmfVlPjzJTbpUodceJYEzjDwiZdc6TY3zZqiUj2WpJuVOe6/2GydCwjyn16xjH7TIZ6QmhyPqRcGdofSuNaMyfa717Uy8YW185NQnWyF1ZCB6atxUu8FjvxXpC+niptkwBGPVQ2a5Nmz//xhNCKt1KdsGgw32AmS71IMW7tVDL4G50E/eE0JFMmmBRkYSqzmT+68re1ivKdrcZRn52ansm4RqpvdHuxCwfU7KmkubjZjs0PkxuTjIhV8065uBzqtmFCaJ48n1TT6j+NDso8dtITLOXnhDj4hP/zzMM5EzoneO9I/QXR43ZPLOxpDAAAAAASUVORK5CYII="
+           y="824"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="51" x="986.5" y="884.995">Jenkins</text>
+    <rect fill="#FFF" height="96.594" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="89" x="804.5"
+          y="592.5"/>
+    <rect fill="#FFF" height="96.594" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="89" x="800.5"
+          y="588.5"/>
+    <image height="48" width="48" x="808.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACs0lEQVR4Xu2YT4oUMRTG5y51A2/gCbyBN/AE3qBv4NqF4MpVr1wNCLNyI65E0EEYRAacUQYGkfJHvzbE9yUvSXUx0ws/PpqmKnn58v4klZzMR4YT/+C+sYKgq9vf5z9+Qf74dxVsP/98+Oo88dH2C93t1RJB7y5vN28vH7++ePDy0/T8oyPWn559Y8hA35PTr64X7e3VgCAGePb+OxNSETUyMOq9oXlGsWs5LAgpOl4n8aWThYNdmwFB2BrySo2ISDaXC3rx4VpNLybpZYml/u4SpN0OJ3VAQek824JiNdgtlhLxZTCSRrvkfdV4Q5DOIJF8Sp0DIFQTJWAkiFlqByMz861DEB3yRu0oI0HFmsLPxRWlB7rqKKuCNLrT30x0LYfQDF9ZEIHXpnCxb3LodtEWVHTPUN68ubjBndC2TMoNIoWoxYErC9Ls4UneoIlmaGosCCoWV0+F51hTkMYLz6e3nVhTkC6vRD297cSagrQKFpR6sMTHTIXsyz4xfz6K3E4P875+Ybx3/BfUwrEKYsmnYkdJTf1rrQt2ikp0W9NekG4ancxtdUJPc7gjvT1UkCvaJhg7NnLXgnTPd/v3nQq6Kn1vbbLz2ny4oNxWE7o7TbJBtQXZ6Y5uVAckCdgIqS+YJ2MT9FLj7OiuWVvQtGjbd2A+anYqfRx3CZok0kNAjZb6tLsb8U37BdX6N2Ff2WqNh8WCGBA07Uq0P28Yr5jFxpqdsiA7OagVI2kef2uTGbre5AxOMlVBtcDntNs7rFNx/JJnuKTZK07HsqBpt8CgSZ8fyMA3hkjQvMsD/fhfzDjQhoYgAxFpBiImoSzWlKIqSPtvFh1x9MYzRlVQ7QzUvCAzYpAJ1IwE2AvSayX1kIPd3tktAhGxGwVydiv3fEPYC2IqGEoccvK62As6HhydoD+shTEjmtuP+QAAAABJRU5ErkJggg=="
+           y="596.5"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="50" x="808.5" y="657.495">GitOps</text>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="73" x="808.5" y="673.792">Operators</text>
+    <rect fill="#FFF" height="80.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="95" x="1110.5"
+          y="601"/>
+    <rect fill="#FFF" height="80.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="95" x="1106.5"
+          y="597"/>
+    <image height="48" width="48" x="1114.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
+           y="605"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="79" x="1114.5" y="665.995">App Repos</text>
+    <rect fill="#FFF" height="80.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="115" x="956.5"
+          y="601"/>
+    <rect fill="#FFF" height="80.297" rx="2.5" ry="2.5" style="stroke:#23a3dd;stroke-width:.5" width="115" x="952.5"
+          y="597"/>
+    <image height="48" width="48" x="960.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB4klEQVR4Xu3VQUpEMQwG4LlLb+ANPIE38AaewBt4A9cuBFeuZuVKEFy5EVciqAiDyICKCLOQGCiWmKRt0nZwkPeTzTwy7TdvXvNmsGGZ8Qt/nQlUywSq5Z+Cjm/fsfjVpvSC3lZf26eP4egOa2f+hB95hzNdIKoZZWoHSc0QUzto/vAhNf2mFlDabB0mNyj+U/uXL/HjcJMPRJ+bNZkcIPkUJ1PM4c1rv8kKkppYB1dL2oZE2eMymUA5jQTl/j67qQ4qaLB2zxa0+WLxKXtcpgqorImFjw79Cr7UZE8si6kEsmhixW3S+7XHlAXZNeEHhJulc9ds0kEuTSCgQGYBXsTyzgIdtHf+LFcpFAUFcfTUWYBb0J4UHeS6PaEGUmcBbkF7UnQQriiXKBQDsVmgrsamfIoOwuCicpVcMVAgs0CdTExMkwWBxyRBWFsn91iyuaCBMgjMJhWkFvbwPX6nAgKDKZ0X9YTTKt+bmDoIiib2iwvzwqIBIwjyJnbCcwPaqAE7CDImNt/UE27XgAsEGVN6p3pPuBofCDImPN7qcPdqoAEEGZOs6glX0wICg6lNA80gKJqaNdADgoypRwOdIBCmTg30g4BM54YzJTMAhLlerrD41aaMAQ3MBKplAtWycaBvBkseTJBfuGoAAAAASUVORK5CYII="
+           y="605"/>
+    <text fill="#23A3DD" font-family="sans-serif" font-size="14" textLength="99" x="960.5" y="665.995">GitOps Repos
+    </text>
+    <path d="M192.163 385H241.883" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1" d="m241.883 385-9-4 4 4-4 4 9-4z"/>
+    <text font-family="sans-serif" font-size="13" textLength="21" x="210.32" y="378.067">run</text>
+    <path d="M546.263 132.335C515.209 139.992 466.015 156.231 435 187c-41.914 41.582-65.223 106.824-76.931 150.714"
+          fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m356.767 342.691 6.148-7.694-4.882 2.857-2.857-4.882 1.591 9.719z"/>
+    <text font-family="sans-serif" font-size="13" textLength="82" x="436" y="200.067">view metrics</text>
+    <path d="M549.055 157.214C542.553 166.305 536.231 176.618 532 187c-19.986 49.041-27.156 109.807-29.69 150.78"
+          fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m502.01 342.926 4.518-8.752-4.227 3.76-3.76-4.226 3.469 9.218z"/>
+    <text font-family="sans-serif" font-size="13" textLength="85" x="533" y="200.067">create secret</text>
+    <path d="M601.81 157.073c7.397 9.253 15.065 19.686 21.19 29.927 29.305 48.997 53.988 109.939 69.079 150.96"
+          fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m693.872 342.862.666-9.826-2.383 5.13-5.13-2.383 6.847 7.079z"/>
+    <text font-family="sans-serif" font-size="13" textLength="60" x="632" y="200.067">read mail</text>
+    <path d="M603.545 127.509C697.299 131.413 993.571 148.632 1060 212c105.96 101.075 106.67 292.138 100.64 379.857"
+          fill="none" style="stroke:#000;stroke-width:1"/>
+    <path style="stroke:#000;stroke-width:1" d="m1160.27 596.975 4.635-8.69-4.276 3.703-3.703-4.277 3.344 9.264z"/>
+    <text font-family="sans-serif" font-size="13" textLength="31" x="1156" y="389.567">push</text>
+    <path d="M603.9 126.131c59.433.849 196.222 11.338 273.1 85.869 107.319 104.043 129.57 292.764 134.01 379.779"
+          fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m1011.25 596.857 3.561-9.182-3.802 4.188-4.188-3.803 4.429 8.797z"/>
+    <text font-family="sans-serif" font-size="13" textLength="64" x="987" y="389.567">accept PR</text>
+    <path d="M1146.41 686.235c-7.84 29.94-21.17 68.631-42.41 97.765-14.86 20.377-37.14 37.783-56.06 50.26" fill="none"
+          style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m1147.72 681.13-6.1 7.733 4.865-2.888 2.887 4.864-1.652-9.709z"/>
+    <text font-family="sans-serif" font-size="13" textLength="22" x="1129" y="765.067">pull</text>
+    <path d="M1012 686.218V813.94" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1" d="m1012 681.2-4 9 4-4 4 4-4-9z"/>
+    <text font-family="sans-serif" font-size="13" textLength="31" x="1038.5" y="750.067">push</text>
+    <text font-family="sans-serif" font-size="13" textLength="20" x="1044" y="765.2">IaC</text>
+    <text font-family="sans-serif" font-size="13" textLength="78" x="1017" y="780.332">+ Create PR</text>
+    <path d="M976.371 856h-73.794" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1" d="m897.32 856 9 4-4-4 4-4-9 4z"/>
+    <text font-family="sans-serif" font-size="13" textLength="31" x="921.25" y="834.067">push</text>
+    <text font-family="sans-serif" font-size="13" textLength="40" x="916.75" y="849.2">image</text>
+    <path d="M947.36 639h-53.519" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1" d="m952.362 639-9-4 4 4-4 4 9-4z"/>
+    <text font-family="sans-serif" font-size="13" textLength="22" x="912" y="632.067">pull</text>
+    <path d="m493.512 432.023-24.08 148.007" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m494.321 427.049-5.393 8.241 4.59-3.306 3.306 4.59-2.503-9.525z"/>
+    <text font-family="sans-serif" font-size="13" textLength="73" x="490" y="470.067">read secret</text>
+    <path d="M800.352 639h-74.05" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1" d="m721.007 639 9 4-4-4 4-4-9 4z"/>
+    <text font-family="sans-serif" font-size="13" textLength="43" x="739.25" y="632.067">deploy</text>
+    <path d="M619.53 639H503.104" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1" d="m624.759 639-9-4 4 4-4 4 9-4z"/>
+    <text font-family="sans-serif" font-size="13" textLength="85" x="521.5" y="632.067">create secret</text>
+    <path d="M731.662 431.4c10.001 15.428 22.933 31.543 38.338 42.6 10.168 7.298 18.053-.752 27 8 28.566 27.941 40.837 72.202 46.095 106.452"
+          fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m728.919 427.072 1.437 9.743 1.239-5.52 5.52 1.24-8.196-5.463z"/>
+    <text font-family="sans-serif" font-size="13" textLength="64" x="771" y="470.067">send alert</text>
+    <path d="m344.742 427.049-13.085 164.872" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m331.256 596.969 4.7-8.655-4.304 3.67-3.671-4.303 3.275 9.288z"/>
+    <text font-family="sans-serif" font-size="13" textLength="72" x="344" y="470.067">send query</text>
+    <path d="m319.568 681.2-32.679 159.685" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m285.853 845.944 5.722-8.016-4.72 3.117-3.118-4.72 2.116 9.619z"/>
+    <path d="m330.108 681.2 8.17 159.685" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m338.537 845.944 3.535-9.193-3.79 4.2-4.2-3.79 4.455 8.783z"/>
+    <path d="m340.647 681.2 49.02 159.685" fill="none" style="stroke:#181818;stroke-width:1"/>
+    <path fill="#181818" style="stroke:#181818;stroke-width:1"
+          d="m391.22 845.944 1.18-9.778-2.648 4.998-4.999-2.648 6.467 7.428z"/>
+    <text font-family="sans-serif" font-size="13" textLength="96" x="372" y="765.067">Scrape metrics</text>
+</svg>

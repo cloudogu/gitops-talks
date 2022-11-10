@@ -316,8 +316,8 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
   (neither cluster access nor for apps)
 * Forces declarative description
 * IaC is auditable
-* Scalability - one repo many applications
 * Self-healing 
+* Scalability - one repo many applications
 
 Note:
 * [One example of scalability to many clusters](https://www.youtube.com/watch?app=desktop&v=T7vDsswWbTQ&feature=youtu.be)

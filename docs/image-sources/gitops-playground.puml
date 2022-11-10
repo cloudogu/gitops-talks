@@ -38,7 +38,7 @@ node "Your Host" as host <<$computer>> #ffffff {
                     collections "<$git>\nGitOps Repos" as configRepo
                 }
                 collections "<$sync>\nArgoCD" as gitops
-                collections "<$deploy>\nStaging\n+ Production" as staging
+                collections "<$deploy>\nStaging (6.)\n+ Production (7.)" as staging
             }
             
             rectangle "<$box>\nRegistry" as registry
@@ -49,15 +49,16 @@ node "Your Host" as host <<$computer>> #ffffff {
 }
 
 docker -> k8s : run
-dev --> appRepo #line:black;text:black : push  
-dev --> configRepo : accept PR  
+dev --> appRepo #line:black;text:black : 1. push  
+dev --> staging : 7. review  
+dev --> configRepo : 8. accept PR  
 appRepo -[hidden]> configRepo
-appRepo <-- jenkins : pull
-configRepo <-- jenkins : push\nIaC\n + Create PR
-jenkins -> registry : push\nimage
+appRepo <-- jenkins : 2. pull
+configRepo <-- jenkins : 4. push\nIaC\n + Create PR
+jenkins -> registry : 3. push\nimage
 
 
-configRepo <- gitops : pull
+configRepo <- gitops : 5. pull
 registry -[hidden]> gitops
 
 gitops -> staging : deploy

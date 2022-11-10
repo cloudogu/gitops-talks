@@ -189,7 +189,9 @@ Terraform:
 
 ## See also
 
- ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools)  ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
-* General tool comparison,   
-* tips on criteria for tool selection,  
-* comparison of ArgoCD and Flux  
+* ☁️ [cloudogu.com/blog/gitops-tools](https://cloudogu.com/de/blog/gitops-tools)  ([iX 4/2021](https://www.heise.de/select/ix/2021/4/2100807514188955838))
+  * General tool comparison,   
+  * tips on criteria for tool selection,  
+  * comparison of ArgoCD and Flux  
+* ☁ [community.cloudogu.com/t/flux-or-argocd-the-great-controversy](https://community.cloudogu.com/t/flux-or-argocd-the-great-controversy/967)
+  ArgoCD vs Flux (10/2022)

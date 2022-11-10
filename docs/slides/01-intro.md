@@ -9,11 +9,10 @@
 </h1>
 
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
-<p class="printOnly">
-    <a href='https://twitter.com/jschnatterer' class="social" target="_blank">
-        <i class='fab fa-twitter'></i>
-        @jschnatterer
-    </a>
+<p>
+    <a href='https://floss.social/@schnatterer' target="_blank" style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
+    <br/>
+    <a href='https://twitter.com/jschnatterer'  target="_blank" style="font-size:80%"><i class='fab fa-twitter'></i> @jschnatterer</a>
 </p>
 
 <div class="title-version">
@@ -25,7 +24,7 @@
        <i class="far fa-file-pdf"></i>
 </a></p>
 
-<a class="state-background" href="https://community.cloudogu.com/t/gitops-is-this-something-for-me-talk-on-2022-09-27/903"><img data-src="images/qr-slides.svg" width="15%"/></a>
+<a class="state-background" href="https://cloudogu.github.io/gitops-talks"><img data-src="images/qr-slides.png" width="15%"/></a>
 
 <br/>
 <br/>

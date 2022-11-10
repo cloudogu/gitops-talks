@@ -30,16 +30,19 @@ rectangle "<$k8s>\nK8s Cluster" as k8s {
 }
 rectangle "<$docker>\nOCI Registry" as registry
 
-user -> appRepo :  push\napp\n+infra\ncode
+user -> appRepo : push\napp\n+infra\ncode
 appRepo -[hidden]> configRepo
+appRepo <- configRepo : refer to 
 appRepo <-- ciServer : pull
-configRepo <-- ciServer : push\ninfra\ncode\n+create PR
 ciServer -> registry : push
 k8s --> registry : pull
 configRepo <- k8s : pull
+appRepo <- k8s : pull
 k8s -> k8s : deploy
 
+
 skinparam arrow {
+    ' TODO color seems to be ignored now in 2022 version of plantUML
     Color COLOR_ABOVE_TRANSPARENT_BACKGROUND
     FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 }
