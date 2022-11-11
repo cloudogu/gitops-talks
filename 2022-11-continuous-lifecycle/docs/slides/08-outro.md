@@ -8,7 +8,7 @@
 </span>
 
 <br/>
-<a href="https://community.cloudogu.com/t/gitops-is-this-something-for-me-talk-on-2022-09-27/903" /><img title="Slides" data-src="images/qr-slides.svg" class="floatRight" width="20%"/></a>
+<a href="https://community.cloudogu.com/t/gitops-is-this-something-for-me-talk-on-2022-09-27/903" /><img title="Slides" data-src="images/qr-slides.png" class="floatRight" width="20%"/></a>
 <img title="Slides" style="margin-top: 20px" data-src="images/begin_your.png" class="floatLeft" width="30%"/>
 <ul style="margin-left: 80px">
   <li>GitOps Resources 

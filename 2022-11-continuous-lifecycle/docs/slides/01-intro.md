@@ -17,7 +17,7 @@
 </p>
 
 <div class="title-version">
-Version: 202211111412-9d3c206
+Version: 202211111414-4a5cd5f
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
@@ -25,7 +25,7 @@ Version: 202211111412-9d3c206
        <i class="far fa-file-pdf"></i>
 </a></p>
 
-<a class="state-background" href="https://community.cloudogu.com/t/gitops-is-this-something-for-me-talk-on-2022-09-27/903"><img data-src="images/qr-slides.svg" width="15%"/></a>
+<a class="state-background" href="https://community.cloudogu.com/t/gitops-is-this-something-for-me-talk-on-2022-09-27/903"><img data-src="images/qr-slides.png" width="15%"/></a>
 
 <br/>
 <br/>
