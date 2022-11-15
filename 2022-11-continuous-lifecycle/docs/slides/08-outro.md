@@ -29,7 +29,7 @@ image source: https://pixabay.com/illustrations/question-mark-question-response-
   <li><a href="https://cloudogu.com/gitops/" class="non-blue-link">GitOps Resources</a></li>
   <li><a href="https://community.cloudogu.com/c/gitops/23" class="non-blue-link">Community</a></li>
   <li><a href="https://cloudogu.com/de/schulungen/kubernetes/gitops-continuous-operations/" class="non-blue-link">Trainings</a></li> 
-  <li><a href="https://cloudogu.com/consulting/" class="non-blue-link">Consulting</a></li>
+  <li><a href="https://cloudogu.com/de/consulting-gitops/" class="non-blue-link">Consulting</a></li>
 </ul>
 
 > 💪 Join my team: <a href="https://cloudogu.com/join/infra" class="non-blue-link"> cloudogu.com/join/cloud-engineer</a> 
