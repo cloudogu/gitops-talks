@@ -96,7 +96,7 @@ Note:
 
 ### How to delete resources?
 
-* `garbage collection` (Flux) / `resource pruning` (ArgoCD)   
+* <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> `garbage collection` / <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  `resource pruning`  
   disabled by default
 * 💡 Enable from beginning ➡️ avoid manual interaction
 * Unfortunately, still often unreliable / too defensive (?) 😒

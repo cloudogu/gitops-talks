@@ -15,7 +15,7 @@ Note:
 
 * GitOps operators/controllers
 * Supplementary GitOps tools
-* Tools for operating cloud infra
+* (Tools for operating cloud infra)
 
 
 
@@ -97,7 +97,7 @@ Notes:
   * side car: official solution for vault
   * Helm/Kustomize: Helm Secrets plugin, Kustomize SOPS plugin
   * GitOps: Flux native support SOPS; ArgoCD Plugin
-* Secrest complex, separate talk; not necessarily a GitOps topic but cloesely related
+* Secrets complex, separate talk; not necessarily a GitOps topic but cloesely related
 * Progressive Delivery = canary releases, A/B tests, and blue/green deployments
 * ... -> e.g. Database Schema (Schema Hero)
 * More:
@@ -105,85 +105,6 @@ Notes:
     🌐 [argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices](https://argo-cd.readthedocs.io/en/release-2.0/user-guide/best_practices/#leaving-room-for-imperativeness)
 * Sources:
   * https://raw.githubusercontent.com/fluxcd/flagger/main/docs/logo/flagger-icon-color.svg
-
-
-
-<strong style="font-size: 150%">
-➡ GitOps ♥ operators
-
-<span class="fragment">+</span>
-
-<span class="fragment">Infra Operator</span>
-
-<span class="fragment">=</span>
-
-<u class="fragment">Operate cloud infra with GitOps</u>
-
-</strong>
-
-
-
-## Operate Kubernetes with Kubernetes
-
-<div class="fragment" style="text-align: center !important;">
-  <img data-src="images/infra-cluster-target-clusters.svg" width="70%"/>
-</div>
-
-Note:
-* Deployment also possible without dedicated cluster:  https://www.cncf.io/blog/2021/08/12/august-2021-update/
-* Management Cluster, aka Infrastructure Cluster, Controller Cluster
-* Target Cluster, aka Workload Cluster, Downstream Cluster
-
-
-
-<div style="text-align: center !important;">
-  <img data-src="images/infra-cluster-target-clusters-detail.svg" width="95%"/>
-</div>
-Note:
-* Infra operator: Depending on the setting create VMs (e.g. EC2) or clusters directly (e.g. EKS) via cloud providers.  
-  In case of VMs the infra operator create control plane e.g. with kubeadm 
-* gitops operator might deploy resources (apps) into target clusters
-* See also
-  * https://cluster-api.sigs.k8s.io/user/concepts.html
-  * https://www.weave.works/blog/manage-thousands-of-clusters-with-gitops-and-the-cluster-api
-
-
-
-## Tools for operating cloud infra
-
-<a href="https://github.com/kubernetes-sigs/cluster-api" class="tooltip-bellow" class="tooltip-bellow">
-  <img data-src="images/capi-icon.svg" width="9%" class="zoom1-5x"/>
-  <span class="tooltip-bellow-text">Kubernetes<br/>ClusterAPI</span>
-</a>
-
-<a href="https://github.com/crossplane/crossplane" class="tooltip-bellow">
-  <img data-src="images/crossplane-icon.svg" width="9%" class="zoom1-5x"/>
-  <span class="tooltip-bellow-text ">Crossplane</span>
-</a>
-
-<a href="https://github.com/pulumi/pulumi" class="tooltip-bellow">
-  <img data-src="images/pulumi.svg" width="8%" class="zoom1-5x" style="margin: 10px" />
-  <span class="tooltip-bellow-text">Pulumi</span>
-</a>
-
-<a href="https://github.com/hashicorp/terraform" class="tooltip-bellow" style="margin: 300px">
-  <img data-src="images/terraform-icon.svg" width="9%" class="zoom1-5x" />
-  <span class="tooltip-bellow-text">Terraform</span>
-</a>
-
-Note:
-Terraform:
-* Different scopes - CAPI lower level, Crossplane high level abstractions for cloud vendors
-* TF 
-  * TF Cloud (proprietary SAAS), non k8s 
-  * <a href="https://github.com/weaveworks/tf-controller">weaveworks/tf-controller</a>
-  * <a href="https://github.com/pipe-cd/pipe" class="tooltip-right">pipecd</a>
-* Sources
-  * https://raw.githubusercontent.com/kubernetes-sigs/cluster-api/master/logos/kubernetes-cluster-logos_final-02.svg
-  * https://raw.githubusercontent.com/crossplane/crossplane/master/docs/media/logo.svg
-  * https://www.terraform.io/assets/images/product-icons/terraform-icon-color-7fbc9ecc.svg
-  * https://www.pulumi.com/logos/brand/avatar-on-white.svg
-
 
 
 

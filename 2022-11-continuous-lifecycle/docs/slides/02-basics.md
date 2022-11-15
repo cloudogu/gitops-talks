@@ -321,8 +321,3 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 
 Note:
 * [One example of scalability to many clusters](https://www.youtube.com/watch?app=desktop&v=T7vDsswWbTQ&feature=youtu.be)
-
-
-
-# What can GitOps be used for?
-<img data-src="images/gitops-tool-use-cases.svg"/>
