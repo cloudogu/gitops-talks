@@ -21,7 +21,7 @@ image source: https://pixabay.com/illustrations/question-mark-question-response-
 
 <span style="text-align: center !important;">
   <p>Johannes Schnatterer, Cloudogu GmbH</p>
-  <p>🌐 <a href="https://cloudogu.com/gitops/"  class="non-blue-link">cloudogu.com/gitops</a></p>
+  <p>☁ <a href="https://cloudogu.com/gitops/"  class="non-blue-link">cloudogu.com/gitops</a></p>
 </span>
 <br/>
 <a href="https://cloudogu.github.io/gitops-talks"><img title="Slides" data-src="images/qr-slides.png" class="floatRight" width="20%"/></a>

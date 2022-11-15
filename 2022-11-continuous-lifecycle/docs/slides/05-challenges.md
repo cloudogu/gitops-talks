@@ -107,7 +107,8 @@ Note:
 
 * No standard for structures (intentionally) ➡️ Conway's law
 * Repo patterns: Monorepo vs Polyrepo (per app, team, stage) <i class="fas fa-blender"></i>
-* Within repo: folder/~~branch~~ structure for stage, team, app
+* Within repo: folder/~~branch~~ structure for stage, team, app  
+  <span style="font-size: 70%">☁ [community.cloudogu.com/t/gitops-patterns-for-repository-and-folder-directory-structure](https://community.cloudogu.com/t/gitops-patterns-for-repository-and-folder-directory-structure/900)</span>
 * More options:   
   * Topology: GitOps controller (s) ↔ Cluster(s) / Namespaces
   * GitOps controller-specific config
@@ -433,7 +434,7 @@ Note:
 * Single repo for development: higher efficiency
 * Shift left: static code analysis + policy check on CI server,  
   e.g. yamlint, kubeval, helm lint, conftest
-* Automated staging (e.g. PR creation, namespaces)
+* Automated staging (e.g. PR creation, namespaces) [🕒](#ci-2)
 * Simplify review by adding info to PRs
 
 <div class="fragment" style="margin-top: 20px">
@@ -470,7 +471,7 @@ Notes:
 <!-- src: gitops-with-app-repo-pointer.puml-->
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-     preserveAspectRatio="none" viewBox="0 0 787 491" width="90%">
+     preserveAspectRatio="none" viewBox="0 0 787 491" width="80%">
     <rect fill="#23A3DD" height="283" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:1" width="223" x="492"
           y="47.566"/>
     <image height="48" width="48" x="579.5"
@@ -563,6 +564,11 @@ Notes:
 </text>
 </svg>
 
+<span class="fragment" data-fragment-index="1">e.g. 
+    <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/>
+    <a href="https://fluxcd.io/flux/guides/repository-structure/#repo-per-app">fluxcd.io/flux/guides/repository-structure</a>
+</span>
+
 Note:
 * There's always a downside. If avoiding redundancy is important, this would be an alternative
 * Reference ("pointer") could be realized using ArgoCD's application CR or Flux GitRepository CR
@@ -575,7 +581,7 @@ Note:
 * "GitOps - Operations by Pull Request"
 * Repo structure: Use folders not branches
 * But: create *short-lived* branches and PR
-* Merge is promotion
+* Merge is promotion/deployment
 
 
 
@@ -963,10 +969,12 @@ stroke:#181818 with #fff
 
 
 
+<!-- .slide: style="font-size: 90%"  -->
 ## As example: Our approach
 
 * Repo pattern:  
    <code style="font-size:90%">Trunk-based repo per team, folder per stage+app</code>  
+  (mixed with `repo per app`) 
   ```text
   ├── staging
   │   └── application
@@ -975,12 +983,12 @@ stroke:#181818 with #fff
       └── application
           └── deployment.yaml
   ```
-* Promotion between stages:
-  * commit to staging folder only (💡 protect `production`),
-  * create short lived branches and pull requests for prod
 * IaC either 
   * lives in app repo and is pushed by CI-Server or 
   * in GitOps repo (3rd party apps).
+* Promotion between stages:
+  * commit to staging folder only (💡 protect `production`),
+  * create short lived branches and pull requests for prod
 
 Note:
 * Might or might not be the best choice for you
