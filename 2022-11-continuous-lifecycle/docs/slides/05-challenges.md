@@ -26,13 +26,13 @@ Source: https://unsplash.com/photos/bJhT_8nbUA0
 ## Downsides
 
 * More infra necessary
-* Steep Learning curve
+* Steep learning curve
 
 
 
 ### GitOps infra
 
-* GitOps Operator comprises several applications;  
+* GitOps Operator comprises several applications
 * Cause ops efforts: maintenance, alerts
 <br/><br/>
 
@@ -52,8 +52,9 @@ Source: https://unsplash.com/photos/bJhT_8nbUA0
 </div>
 
 Note:
-* Source Controller, UI Server (ArgoCD/Weave GitOps), Notification Controller,
-  Image Updater, ArgoCD: ApplicationSet Controller, Redis, Dex (AuthN), etc.
+* ArgoCD: API(UI), Repo Svc, App Controller. Plus not on image: redis, optionally: dex (AuthN), Notification Controller,
+  Image Updater, ApplicationSet Controller
+* Flux: Source Helm, Kustomize Controllers. Plus not on image:  Notification Controller, Image Updater, TF controller, weave GitOps
 * operators cause alerts (OOM errors, on Git/API server down, etc.)
 
 
@@ -79,7 +80,7 @@ Note:
 * How to realize local dev env?
 * How to delete resources?
 * How to structure repos and folders?
-* How to realize staging?
+* How to realize different stages/environments?
 * Role of CI server?
 * ...
 
@@ -119,7 +120,7 @@ Note:
 
 
 
-#### 🤯 GitOps Chasm
+#### 🤯 GitOps Chasm 
 
 <div class="container">
 
@@ -168,11 +169,10 @@ Note:
 Note:
 Transition to next slide:
 * We'll shed some light onto theses things in the following
-* 
 
 
 
-#### App vs GitOps repo
+#### App repo vs GitOps repo
 
 <div class="container">
 <div class="column">
@@ -572,19 +572,31 @@ Note:
 
 ### Stage promotion
 
-How to update bump version in GitOps repo and promote through stages?
+* "GitOps - Operations by Pull Request"
+* Repo structure: Use folders not branches
+* But: create *short-lived* branches and PR
+* Merge is promotion
 
-* **Manual**: Push to short-lived branches, create PRs manually
-* **Image Updater**: Operator pushes branches, create PRs manually
-* **CI Server**: Build job pushes branches, creates PRs
-* **Renovate Bot**: Bot watches registry pushes branches, create PRs
 
-Note: Depending 
+
+#### Implementing stage promotion
+
+Who bumps versions in GitOps repo, creates branch and PR?
+
+* **Manual**: Human pushes branch and create PR 
+* **Image Updater**: Operator pushes branch, create PR manually
+* **CI Server**: Build job pushes branch, creates PR
+* **Renovate Bot**: Bot pushes branch, creates PR
+
+Note:
+* In general: GitOps "operations by PullRequest"
+* Depends on repo structure 
 
 
 
 #### Image updater
 
+<!-- src: gitops-with-image-updater.puml -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="405"
      preserveAspectRatio="none" style="width:599px;height:405px;background:#00000000" width="599">
     <defs>
@@ -837,30 +849,142 @@ Note: Looks simple but technically challenging: Git protocol vs SCM-specific API
 
 
 #### Stage promotion using renovate bot
+<!-- src: gitops-with-renovate.puml -->
+<!-- replace: 
+<path fill="#181818" with #fff
+stroke:#181818 with #fff
+<text font-family="sans-serif" with <text  fill="#FFF" font-family="sans-serif"
+-->
 
-<i class='fab fa-github'></i> [github.com/renovatebot/renovate](https://github.com/renovatebot/renovate)
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="491"
+     preserveAspectRatio="none" style="width:797px;height:491px" width="797" viewBox="0 0 797 491">
+    <rect fill="#23A3DD" height="283" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:1" width="223" x="470"
+          y="47.566"/>
+    <image height="48" width="48" x="557.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg=="
+           y="49.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" font-weight="bold" textLength="91" x="536" y="110.561">K8s
+        Cluster
+    </text>
+    <rect fill="#23A3DD" height="100.594" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="82" x="587"
+          y="205.566"/>
+    <image height="48" width="48" x="597"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACtUlEQVR4Xu2YT4oVMRDG5y7vBHMDb+AJvMHcwBN4g7d3Ia5czcqVILhypStBdBAGkQH/IQwixB+dN02sr1JJupuZt7D4eDy6U1Vf6k/Sycnu8fujwok+ultsQOj06Yd7zy4Af/Sti7MXny9+/J7x5uoa9fxqCaH755/2b7++vPz17fpPEsH6k3ffcRnwO//402gxPr8aIISDR6+vmJCxFQiOYa+mYGxGDhOCijHRL8TS0CLAZswAIWwNRaUmkNiA0MNXX4zmGqG8cmFpvLsIqdp6oQ9oKJ1nm1DMBrtuK5FfnFE0VqEQdNV4g5DOYBbqaVYOAFEtlEAiQszSDr8RZqbjA5Ad6sZa8SQi5PYUcXZXlB7oqqNSJaTZTTeVqJ760UyfT4jE24GTLI5NCd0uSvEJueEZqpsHzy8JJ8hbJu0GoELW4sT5hLR6eKJeAzRTUxOHkNtcPR1eYktCmi8iry5jbElIl1eyri5jbElIu2BBqwdLfCxzI9u2n6HO+lHa6UGpaxfGO8d/Qi0cKyGWfDp2FPSUWmwin6JmmK3pQEg3jU5Rf03oaY5wzG/XEjJN2wS+rYl/jdw2Id3zzf59q4ROve+tfXFe260npF4D6O6UZINqE8qnO9ToDkARsBHSX6AsxibQsqanU7YZ1iaUFm37BszHGp1EP467CCXJ9BBgo62eprsRHdxLKFX0m8hf2dbW9PXnNsQAoTS1aH/d4M+t4iw1Oz6hfHIon5RCmcff2lSGrjelBCeZKqFa4kvJt3dYp+P4pc4ISVMrLkefUJoWGDjp85USxKZNaDfVgX78L5Y40V2EMshIMxGxkEq3pxRVQqq/X3TE0RvPGFVCtTNQ84IsCwaZQM1IgAMhvVbSCBnk27t8i0BG8o0CNXsm93xDOBBiKhiaMRTkbXEgdDw4OkJ/ASj6cUZi0uR0AAAAAElFTkSuQmCC"
+           y="215.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="47" x="597" y="276.561">GitOps
+    </text>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="62" x="597" y="292.858">operator
+    </text>
+    <circle cx="43" cy="234.066" fill="#23A3DD" style="stroke:#16688d;stroke-width:1.5" r="16"/>
+    <path d="M43 254.066c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8H24c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4"
+          fill="#23A3DD" style="stroke:#16688d;stroke-width:1.5"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="74" x="6" y="292.561">Developer
+    </text>
+    <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="81" x="147.5"
+          y="214.066"/>
+    <image height="48" width="48" x="157.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg=="
+           y="224.066"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="61" x="157.5" y="285.061">Git Repo
+    </text>
+    <g class="fragment" data-fragment-index="1">
+        <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="115" x="327.5"
+        y="214.066"/>
+        <image fill-opacity="0.2" height="48" width="48" x="337.5"
+        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABmklEQVR4Xu2YT0oDMRTGe5c5gTfwBp7AG3gDT+AN3LsQV666ciUIrrrSlSBahCJSsFWEIgX9cCSm3wvJvOfEiZCP36Yz6cxvMvnz2lFzdFsUI3loWH6E9i+fruar6ct7Jo5vllsnd9IgLASbj/yBljQIC6Fv+Nt5sjN+kBIBIbjzV/Nk92wmJaqQFyeEURt8fYMJtR8xdrdPpwUJIYvV2ncaXgi5mL2VJYS4TipFyB3/FkKnUYtMcT1Bx/fOHzeEIEgtcsQfK3SKhQBWBex/4/vXTGDhcffqJPTHVKEoKIzKEsLtScjtawMIYUZjuyAhd/a3Qm3hixt0hDzaBLYOAxgHfdWZfh1iF+prcT+YzP3LGoX6WtnJpjELHV4/87WVweuOVYxasBX4V8doxbN2AZMAcz7yA60fITyubGPj/wuhoIGNXFEw6ahct6EWkiouOBUZHB3RCSVnOxU9BnRCclOkyHVFSxVKUYVSVKEUVShFFUqhE8J+zgqbSf6nmUQn1ESLV5Qlsr0WtVDz1U94d0SwQDZgEcpKcUKf8kQvEoTiGVIAAAAASUVORK5CYII="
+        y="224.066"></image>
+        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="95" x="337.5" y="285.061">Renovate bot
+        </text>
+    </g>
+    <g class="fragment" data-fragment-index="2">
+        <path d="M233.93 256.066h93.5" fill="none" style="stroke:#fff;stroke-width:1"/>
+        <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m228.82 256.066 9 4-4-4 4-4-9 4z"/>
+        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="62" x="247" y="249.133">create PR
+        </text>
+        <path d="M385 298.236v98.14" fill="none" style="stroke:#fff;stroke-width:1"/>
+        <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m385 401.516 4-9-4 4-4-4 4 9z"/>
+        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="39" x="386" y="367.633">watch
+        </text>
+        <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+        dur="2.0s" repeatCount="indefinite"/>
+        <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+        dur="2.0s" repeatCount="indefinite"/>
+    </g>
+    <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="85" x="170.5"
+          y="401.566"/>
+    <image height="48" width="48" x="180.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEUklEQVR4Xs2YQYpcNxCGfRedYG4wN8gJcoPcYE6QG2TvRZNVVr3yKmDIKqvJyhCSJmBCMLidEDAh0PnQRxeyStJ7PQmxh5/Hm2qp9FepqlR6z8rzHz8pPMuij4t/S+ju658evvvt8Ordy9d/Pr55f/r9L568I0F+/80pT1nj6YRYj7UvzZ9UpBVC3hmZp8/wFEJffv/m/P7vlsfnL153Y/DcF9/+ip+C1k5v3UYIW6ECA16kxap5WAuYhQGfHX/JAzrsJYR97oXOwPTjz3+wWB45BCPd3+zLDrsI4QZ0ffXDW/+FCkbnYZuQ09pP24SYj5YITMjdFKQt8BN7Bxau3SaEWfgGFXjbOM1j9gMlmIeP809ig5DzTWOeGDcMAohCep1HeLrNzdngFSG2xsl6qNSEz9FjZLAYRSgrCUBaH2teRGSHKSEYuEwbg1DsFEECLGJiCKZAK8vLgpDu6Tao8xBun+ldQ2uHZkwJWWSzsKUIoWFI7QEbPcz/KSFPpSwcmtVik6JVw9M3/zolBJtMKEsyurqQz3wGYBWxmPOjLAjNPJRHdugqJw7rKCqBzTDRpoSYQ4pRweI0LfXQyCMD4QmmtF4h8A0XqKDBenYzIasLT2Ya4L7kkYFZ3bP2lMrYc9AW4AZCFmg3G3XRQvBcxGwcLznw4dFt922EGG3OM8fyiHGaPkyNTUARJ7UOvi2oGWpEowjjPKqwfuGeTWAShoVXIDds7saE7AzLtd8rO6rLHthX+X5bYXSDDMz/hIrAzjhqZl3RmFCpubpO8k20EYMz0BZeuaudWp5SFoR0b4TwE46tQ72sWXigYsSYiaidWTslVGquXmop8mUYgxlxVrA2/ohAQUhEm7AQnWXrilBprmB7Dg0RnSFPfANQokmX2s/YezylYww81itplmdEO2Cl8IS25ETbqTzPFbsIWR474dDnLAmnRbQZzovd30XIKtBp8WDKgz12DD6DmmfMJdIX7ik7CZVrynTC3GILyylTgCVeuVyHrg3sJeR1MdfWw6Txy/Do0HP518AuQvf1Yj/Txaas25JSY9yks5NBz7BMl01CTFOFWi6T+xRj4jtEB6g48Xy9UT3U+4wFKY9fEfKIlYQGWU4sLWiPNPae5TKHa3t6rN2mxsSfpOV0GcXAmFDs0TF9c1H+cP2M50ZYWmLVl/X2KDPldolSV08kY6d/QMiqc55c48u1WzKT7ZaUu+S5ft+wGJr2saRxHXo8LjsnfUAoqn4U3Bna2Oo0mvPn2u+e6gfGNlYuTYE1c1cegofubYUL3NXvYpmQMV6qL7sEjH6oXD+btr+WjpBGdyPWQOnwHGClQ71I8Ww91DI4jr7EfUBoTyXtYFPRCTWdxfzVnX2snyjb02aY+X1QO7MTrtGNN9tdmO1jSfZU0rycrpfG+8mXk56Qu2YfsxOXWl1YIJonn6d6Q/Vfq4MS383EbULoJSb+HwwTuSf00fHJEfoHjfLJHnH3AbMAAAAASUVORK5CYII="
+           y="411.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="65" x="180.5" y="472.561">CI Server
+    </text>
+    <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="107" x="331.5"
+          y="401.566"/>
+    <image height="48" width="48" x="341.5"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACUUlEQVR4Xu2WS0oEMRCGvUufYG7gDTyBN/AGnsAbzN6FuHLlypUguHKlK0F0EAaRAV8IgwjjR34oY1e6kxnHBxr5kXR1JflSVamelWb74ldpxZt+VhUopwqUUwXKqQLl9BeBBruXG4c3Jh69T7mWAATE/tXT8OwO7Zw/8Oh9yrUcINGgrZPJ/wbaPL71Il9kChQEUz9QtsLmAGKto/Ezu4qDsQZYCoFY4XQyxdm/Ms0NpLwIyNJUmDJmre1f44Cbfyt9KxDJ1YAgre6NvENTAmSbsQoBt0cDwh5fe7OjVsUYEHHiLUzrB+MWWR6IDZiG1G/4H48R0RqG0lEurNiBY+N4KSyGaOWos7Gm7HkgNlbBIkXCp4ydbGyPOLeA2DVZPYqWxt8NNHp8iS0EDGdWM0saCF5tgFjCxnEN2TiuGyCsnjCqRcmBsW2sstOrFnQaSAUBFif4vFqLEydw/abSB6BB+G43AciqrOt+Yk/e8Dj+sQzO7lrS+R2I1cnCbDYjRwwUUrNwJibbnSIFs/CnxOlaMbifvsquJNoUltIr7JpillappVOGh67o0gWQ324QpTUN1IQ+4Y2flC9hr04goto1eRBKzae/X2oW3t5SJ1BPeNXyu3CTUn/ydq9OoCZcgfjDpLYxjLpqoVqtr199QE04WfJuF4ooxt+pEmWAmsDU08e6RBTVsv2rfuWBmnBQNf74fiYFBwdQorPOSRUBSURe3yDreLpr+ppiF8dcCfKaAygWMdOvIl23xYKR1IJAX6cKlFMFyqkC5VSBcqpAOb0BXdqrKyPxUdcAAAAASUVORK5CYII="
+           y="411.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="87" x="341.5" y="472.561">OCI Registry
+    </text>
+    <path d="M80.34 256.066h62.13" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m147.48 256.066-9-4 4 4-4 4 9-4z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="249.133">push
+    </text>
+    <path d="M194.24 303.376c4.06 30.14 9.31 69.1 13.23 98.14" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#fff" style="stroke:#fff;stroke-width:1"
+          d="m193.55 298.236-2.756 9.455 3.427-4.5 4.5 3.427-5.171-8.382z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="204" y="367.633">pull
+    </text>
+    <path d="M255.52 443.566h70.53" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m331.25 443.566-9-4 4 4-4 4 9-4z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="278" y="436.633">push
+    </text>
+    <path d="m469.956 317.06-.228.919c-2.45 9.806-5.623 19.66-9.728 28.587-8.24 17.92-20.42 35.52-32.59 50.65"
+          fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#fff" style="stroke:#fff;stroke-width:1"
+          d="m423.99 401.426 8.788-4.447-5.628.572-.572-5.628-2.588 9.503z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="456" y="367.633">pull
+    </text>
+    <path d="M203.66 208.966c17.85-45.2 51.83-110.83 106.34-140.4 58.6-31.78 100.66-44.83 150 0a83.257 83.257 0 0 1 7.8 8.114 85.537 85.537 0 0 1 1.754 2.16"
+          fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#fff" style="stroke:#fff;stroke-width:1"
+          d="m201.78 213.826 6.994-6.934-5.179 2.275-2.275-5.18.46 9.839z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="341" y="19.633">pull
+    </text>
+    <path d="M699 255.446c11.87-25.88 35.08-25.67 35.08.62 0 26.29-23.21 26.5-35.08.62" fill="none"
+          style="stroke:#fff;stroke-width:1"/>
+    <path fill="#fff" style="stroke:#fff;stroke-width:1"
+          d="m699 256.686.116 9.848 1.969-5.303 5.303 1.968-7.388-6.513z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="44" x="740.08" y="260.633">deploy
+    </text>
+</svg>
+
+<div class="fragment" data-fragment-index="1">
+    <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
+</div>
 
 
 
-### As example: Our approach
+## As example: Our approach
 
-* Repo pattern: `Trunk-based monorepo, folder per stage, app`  
+* Repo pattern:  
+   <code style="font-size:90%">Trunk-based repo per team, folder per stage+app</code>  
   ```text
-  ├── production
+  ├── staging
   │   └── application
   │       └── deployment.yaml
-  └── staging
+  └── production
       └── application
           └── deployment.yaml
   ```
 * Promotion between stages:
   * commit to staging folder only (💡 protect `production`),
   * create short lived branches and pull requests for prod
-* TODO Duplication is tedious, but can be automized
-* TODO CI
+* IaC either 
+  * lives in app repo and is pushed by CI-Server or 
+  * in GitOps repo (3rd party apps).
 
 Note:
 * Might or might not be the best choice for you
 * production branch: Protect via SCM
 * Advantage: All infra in one place -> less complexity, standardized process
+* 3rd-Party: Dont need CI job for simple apps
 * Stages as namespace: Explicit namespace in resource YAMLs
