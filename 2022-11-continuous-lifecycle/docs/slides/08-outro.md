@@ -32,7 +32,7 @@ image source: https://pixabay.com/illustrations/question-mark-question-response-
   <li><a href="https://cloudogu.com/de/consulting-gitops/" class="non-blue-link">Consulting</a></li>
 </ul>
 
-> 💪 Join my team: <a href="https://cloudogu.com/join/infra" class="non-blue-link"> cloudogu.com/join/cloud-engineer</a> 
+> 💪 Join my team: <a href="https://cloudogu.com/join/cloud-engineer" class="non-blue-link"> cloudogu.com/join/cloud-engineer</a> 
 
 <a href='https://floss.social/@schnatterer' target="_blank" style="font-size:80%" class="non-blue-link"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
 <a href='https://twitter.com/jschnatterer'  target="_blank" style="font-size:80%" class="non-blue-link floatRight"><i class='fab fa-twitter'></i> @jschnatterer</a>
