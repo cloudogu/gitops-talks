@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: team-1
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.xyz: team1-channel
+spec:
+  description: AppProject for all applications from team CES
+  destinations:
+    - namespace: team1
+      server: https://kubernetes.default.svc
+    - namespace: team1-staging
+      server: https://kubernetes.default.svc
+  sourceRepos:
+    - 'ssh://repo'
+
+  # allow to only see application resources from the specified namespace
+  sourceNamespaces:
+    - 'team1'
+
+  # Allow all namespaced-scoped resources to be created
+  namespaceResourceWhitelist:
+    - group: '*'
+      kind: '*'
+
+  # Deny all cluster-scoped resources from being created. Least privilege.
+  clusterResourceWhitelist:

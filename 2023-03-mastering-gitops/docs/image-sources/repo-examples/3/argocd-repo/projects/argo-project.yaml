@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: argo-project
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.googlechat: Infra_Alerts
+spec:
+  description: AppProject for argo specific applications.
+  destinations:
+    - namespace: '*'
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  # must be able to get all repos because of the team-*-control-app Applications
+  sourceRepos:
+    - 'ssh://repo'
+  # allow to only see application resources from the specified namespace
+  sourceNamespaces:
+    - 'argocd'

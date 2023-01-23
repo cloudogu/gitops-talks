@@ -1,0 +1,11 @@
+{
+  "appName": "app1",
+  "userGivenName": "app1",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/app1/overlays/proj1",
+  "srcRepoURL": "https://repo,
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
