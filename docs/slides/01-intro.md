@@ -3,7 +3,7 @@
 <font size="100"><i class="fab fa-git-alt" style="color: #F05133"></i>&nbsp;<i class="fas fa-sync"></i></font>
 <img data-src="images/k8s_logo.svg" width="5%;" />
 
-<h1  class="title">
+<h1  class="title" style="margin: 0">
     <span class="title-accent">//</span> 
     GitOps - <br/>is this something for me?
 </h1>

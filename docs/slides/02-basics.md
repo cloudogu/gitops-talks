@@ -318,6 +318,7 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 * IaC is auditable
 * Self-healing 
 * Scalability - one repo many applications
+* Features provided by tools
 
 Note:
 * [One example of scalability to many clusters](https://www.youtube.com/watch?app=desktop&v=T7vDsswWbTQ&feature=youtu.be)

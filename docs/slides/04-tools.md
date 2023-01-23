@@ -79,12 +79,13 @@ Note:
      [<i title="google cloud secret manager" class="fab fa-google"></i>](https://cloud.google.com/secret-manager/)
      [<img title="hashicorp vault" data-src="images/vault-logo.svg" style="vertical-align: middle;" width="5%;"/>](https://github.com/hashicorp/vault)
      ...
-  * \+ K8s Integration
+  * \+ (K8s) Integration
     * Operator
     * Container Storage Interface (CSI) driver
     * Side car (injector)
     * Helm/Kustomize plugin
     * GitOps Operator: native support or plugin
+    * From application via SDK
 * Backup / **restore**
 * Deployment Strategies - Progressive Delivery  
   <a href="https://github.com/fluxcd/flagger" class="tooltip-left"><img data-src="images/flagger-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-left-text">Flagger</span></a>

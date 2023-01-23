@@ -450,7 +450,7 @@ Note:
 ➡ Recommendation: Use a plugin or library<span class="fragment">, e.g. <br/>
 <i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-build-lib">cloudogu/gitops-build-lib</a> <i class="fab fa-jenkins"></i></span>
 </div>
-* Redundant code <!-- .element: class="fragment"  -->
+* Redundant IaC (app repo + gitops repo) <!-- .element: class="fragment"  -->
 
 Notes:
 * Shift left (Fail Early) Validation - OPA Gatekeeper, Image Signature, etc
@@ -973,15 +973,16 @@ stroke:#181818 with #fff
 ## As example: Our approach
 
 * Repo pattern:  
-   <code style="font-size:90%">Trunk-based repo per team, folder per stage+app</code>  
+   <code style="font-size:90%">Trunk-based repo per team, folder per app+stage</code>  
   (mixed with `repo per app`) 
   ```text
-  ├── staging
-  │   └── application
-  │       └── deployment.yaml
-  └── production
-      └── application
-          └── deployment.yaml
+    ├── app1
+    │   ├── production
+    │   │   └── deployment.yaml
+    │   └── staging
+    │       └── deployment.yaml
+    └── app2
+        └── deployment.yaml
   ```
 * IaC either 
   * lives in app repo and is pushed by CI-Server or 
