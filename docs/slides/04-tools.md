@@ -70,7 +70,7 @@ Note:
 
 
 
-<!-- .slide: style="font-size: 90%"  -->
+<!-- .slide: style="font-size: 85%"  -->
 ## Supplementary GitOps tools
 * Secrets
   * KMS, e.g. 

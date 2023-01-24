@@ -91,6 +91,9 @@ Note:
 * Option 1: Deploy GitOps operator and Git server on local cluster   
   ➡ complicated
 * Option 2: Just carry on without GitOps.  
+* Option 3: <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/> Weave GitOps Run
+    * 🔥 Auto-reloading
+    * 🌐 [docs.gitops.weave.works/docs/gitops-run/overview](https://docs.gitops.weave.works/docs/gitops-run/overview/)
 
 
 
@@ -592,7 +595,7 @@ Who bumps versions in GitOps repo, creates branch and PR?
 * **Manual**: Human pushes branch and create PR 
 * **Image Updater**: Operator pushes branch, create PR manually
 * **CI Server**: Build job pushes branch, creates PR
-* **Renovate Bot**: Bot pushes branch, creates PR
+* **Dependency Bot**: Bot pushes branch, creates PR
 
 Note:
 * In general: GitOps "operations by PullRequest"
@@ -854,7 +857,7 @@ Note: Looks simple but technically challenging: Git protocol vs SCM-specific API
 
 
 
-#### Stage promotion using renovate bot
+#### Stage promotion using dependency bot
 <!-- src: gitops-with-renovate.puml -->
 <!-- replace: 
 <path fill="#181818" with #fff
@@ -964,7 +967,7 @@ stroke:#181818 with #fff
 </svg>
 
 <div class="fragment" data-fragment-index="1">
-    <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
+    e.g.  <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
 </div>
 
 
