@@ -13,11 +13,12 @@ Note:
 
 
 
-Origin: blog post by Weaveworks, August 2017
 
-> Use developer tooling to drive operations  
+**August 2017: GitOps - Operations by Pull Request**  
+
 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
 
+> Use developer tooling to drive operations  
 
 
 

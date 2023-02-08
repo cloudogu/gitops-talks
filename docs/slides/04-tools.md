@@ -47,7 +47,7 @@ Note:
 * Flux + Argo: First tools on the market
   * Flux: Leightweight, but not GUI (weave-gitops); Lots of innovations, e.g. a VSCode Plugin, Support for OCI instead of Git, build in SOPS Support, TF Op., Subsystem for ArgoCD.
   * ArgoCD: GUI
-  * Flux: Platform integrations
+  * [Flux: Platform integrations](https://fluxcd.io/ecosystem/#complete-list)
     * [AWS, VMware, D2iQ](https://www.cncf.io/blog/2021/10/19/flux-trusted-by-amazon-d2iq-microsoft-red-hat-vmware-and-weaveworks/), [2](https://www.cncf.io/blog/2021/10/13/flux-celebrates-major-milestone/),
     * [Microsoft Azure Arc](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/conceptual-gitops-flux2)
     * [D2iq](https://twitter.com/jschnatterer/status/1448405170736541696) replaced argoCD by Flux
