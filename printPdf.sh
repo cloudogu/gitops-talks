@@ -2,12 +2,16 @@
 
 set -o errexit -o nounset -o pipefail
 
+BASEDIR="$(dirname "$0")"
+ABSOLUTE_BASEDIR="$( cd "$BASEDIR" && pwd )"
+  
 # When updating, also update in Jenkinsfile. Or use this script in Jenkins
-HEADLESS_CHROME_IMAGE='yukinying/chrome-headless-browser:96.0.4662.6'
+PRINTING_IMAGE='arachnysdocker/athenapdf:2.16.0'
 
-docker build -t reveal .
+# Printing from NGINX based non-dev image would be easier to script (and faster on CI) but results in
+# cloudogu/reveal.js-docker#8. So use dev image 🤷‍♂️
+container=$("$ABSOLUTE_BASEDIR/startPresentation.sh" internal)
 
-container=$(docker run --rm -d reveal)
 address=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "${container}")
 pdf=$(mktemp --suffix=.pdf)
 
@@ -15,13 +19,18 @@ sleep 1
 
 rm "${pdf}" || true
 
-set -x
-docker run -v /tmp:/tmp -u "$(id -u)" --entrypoint= -it --shm-size=4G ${HEADLESS_CHROME_IMAGE} \
-  /usr/bin/google-chrome-unstable --headless --no-sandbox --disable-gpu --print-to-pdf="${pdf}" --run-all-compositor-stages-before-draw  --virtual-time-budget=10000 \
-  "http://${address}:8080/?print-pdf" 
+# When images are not printed, increase --delay
+docker run --shm-size=4G ${PRINTING_IMAGE} \
+  athenapdf --delay 1000 --stdout "http://${address}:8000/?print-pdf" \
+  > "${pdf}"
 
-ls -lah "${pdf}"
+if [ -t 1 ] ; then
+  # When running in terminal
+  ls -lah "${pdf}"
+  xdg-open "${pdf}"
+else
+  # For headless use only output path to PDF
+  echo "${pdf}"
+fi
 
-xdg-open "${pdf}"
-
-docker rm -f "${container}"
+docker rm -f "${container}" > /dev/null
