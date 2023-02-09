@@ -33,7 +33,7 @@
 </div>
 
 <p class="state-background" style="font-size: 0.9em">
-    <a href="pdf/GitOps: It this something for me.pdf">
+    <a href="pdf/The perfect GitOps process: repos%2C folders%2C stages%2C patterns.pdf.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 
