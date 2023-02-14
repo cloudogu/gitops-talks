@@ -54,7 +54,7 @@ node('docker') {
 
         stage('Print PDF & Package WebApp') {
             String pdfPath = "${packagePath}/${pdfName}"
-            printPdfAndPackageWebapp pdfPath
+            printPdf pdfPath
             // Avoid "ERROR: No artifacts found that match the file pattern " by using *.
             // Has the risk of archiving other PDFs that might be there
             archiveArtifacts "${packagePath}/*.pdf"
@@ -114,8 +114,8 @@ void writeVersionNameToIntroSlide(String versionName, String introSlidePath) {
     sh "mv $filteredIntro $introSlidePath"
 }
 
-void printPdfAndPackageWebapp(String pdfPath) {
-    sh (returnStdout: true, script: "./printPdf.sh | xargs -I{} mv {} '${pdfPath}'").trim()
+void printPdf(String pdfPath) {
+    sh (returnStdout: true, script: "COMPRESS=true ./printPdf.sh | xargs -I{} mv {} '${pdfPath}'").trim()
 }
 
 /**
