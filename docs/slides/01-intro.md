@@ -1,5 +1,6 @@
 <!-- .slide: style="text-align: center !important;"  -->
 <!-- .slide: data-background-image="dist/theme/images/title-black.svg"  -->
+
 <svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1010 1010" style="enable-background:new 0 0 1010 1010;" xml:space="preserve" width="10%">
 <style type="text/css">
 	.st0{fill:#23A3DD;}
@@ -20,25 +21,29 @@
     <span class="title-accent">//</span> 
     The perfect GitOps process: <br/>repos, folders, stages, patterns
 </h1>
+<br/>
+
+<a class="state-background" href="https://cloudogu.github.io/gitops-talks"><img style="margin-right: 280px" class="floatRight" data-src="images/qr-slides.png" width="15%"/></a>
 
 <font size="5">Johannes Schnatterer, Cloudogu GmbH</font>
+
 <p>
     <a href='https://floss.social/@schnatterer' target="_blank" style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
     <br/>
     <a href='https://twitter.com/jschnatterer'  target="_blank" style="font-size:80%"><i class='fab fa-twitter'></i> @jschnatterer</a>
 </p>
 
+
 <div class="title-version">
 <!--VERSION-->
 </div>
 
-<p class="state-background" style="font-size: 0.9em">
+<p class="state-background" style="font-size: 70%">
     <a href="pdf/The perfect GitOps process: repos%2C folders%2C stages%2C patterns.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 
-<a class="state-background" href="https://cloudogu.github.io/gitops-talks"><img data-src="images/qr-slides.png" width="15%"/></a>
-
+<br/>
 <br/>
 <br/>
 
