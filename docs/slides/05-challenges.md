@@ -1,108 +1,14 @@
 <!-- .slide: data-background-image="images/challenge.jpg"  -->
 <!-- .slide: style="text-align: center !important"  -->
 
-<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8); width: 60%; margin-left: auto;margin-right: 0;">
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8);">
   <br/>
-  <h1 style="margin: 0 0 0 0; color: #5b5a5a;" >Challenges with GitOps</h1>
+  <h1 style="margin: 0 0 0 0; color: #5b5a5a;" >Repos, folders, stages, patterns, strategies, ...</h1>
   <br/>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 Note:
 Source: https://unsplash.com/photos/bJhT_8nbUA0
-
-
-
-## Downsides
-
-* More infra necessary
-* Steep learning curve
-
-
-
-### GitOps infra
-
-* GitOps Operator comprises several applications
-* Cause ops efforts: maintenance, alerts
-<br/><br/>
-
-<div class="container">
-    <div class="column">
-        <figure>
-            <img data-src="images/argocd_architecture.png" width="67%" style="border-radius: 1%"/>
-            <figcaption style="font-size: 30%">🌐 <a href="https://argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png">argo-cd.readthedocs.io/en/stable/assets/argocd_architecture.png</a></figcaption>
-        </figure>
-    </div>
-    <div class="column">
-        <figure>
-            <img data-src="images/gitops-toolkit.png" style="border-radius: 1%"/>
-            <figcaption style="font-size: 30%">🌐 <a href="https://fluxcd.io/img/diagrams/gitops-toolkit.png">fluxcd.io/img/diagrams/gitops-toolkit.png</a></figcaption>
-        </figure>
-    </div>
-</div>
-
-Note:
-* ArgoCD: API(UI), Repo Svc, App Controller. Plus not on image: redis, optionally: dex (AuthN), Notification Controller,
-  Image Updater, ApplicationSet Controller
-* Flux: Source Helm, Kustomize Controllers. Plus not on image:  Notification Controller, Image Updater, TF controller, weave GitOps
-* operators cause alerts (OOM errors, on Git/API server down, etc.)
-
-
-
-### Learning curve
-
-* New concepts and tools for developers and platform teams
-* Adapt deployment process
-* Migrate applications
-* Adapt error handling and alerting
-  * avoid failing late and silently
-  * accustom to new notification mechanism
-  * still, reason might be difficult to pinpoint
-
-Note:
-* Migrate applications: CI/CD, if applicable adapt apps, e.g. Helm deployment, secrets mgmt
-* Challenge: Using a template engine that is incompatible with GitOps
-
-
-
-## Day two questions
-
-* How to realize local dev env?
-* How to delete resources?
-* How to structure repos and folders?
-* How to realize different stages/environments?
-* Role of CI server?
-* ...
-
-
-
-### Local development
-
-* Option 1: Deploy GitOps operator and Git server on local cluster   
-  ➡ complicated
-* Option 2: Just carry on without GitOps.  
-* Option 3: <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/> Weave GitOps Run
-    * 🔥 Auto-reloading
-    * 🌐 [docs.gitops.weave.works/docs/gitops-run/overview](https://docs.gitops.weave.works/docs/gitops-run/overview/)
-
-
-
-### How to delete resources?
-
-* <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> `garbage collection` / <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  `resource pruning`  
-  disabled by default
-* 💡 Enable from beginning ➡️ avoid manual interaction
-* Unfortunately, still often unreliable / too defensive (?) 😒
 
 
 
@@ -129,7 +35,7 @@ Note:
 <div class="container">
 
 <div class="column">
-<img data-src="images/k8s_logo.svg" width="9%" />&nbsp;<img data-src="images/argo-icon.svg" width="7%;" /> <strong><i class="fab fa-git-alt" style="color: #F05133"></i> Infra</strong>
+<img data-src="images/k8s_logo.svg" width="9%" />&nbsp;<img data-src="images/argo-icon.svg" width="7%;" /> <img data-src="images/flux-icon.svg" width="6%;" /> <strong><i class="fab fa-git-alt" style="color: #F05133"></i> Infra</strong>
   <ul>
     <li>repos</li>
     <li>folders</li>
@@ -160,15 +66,14 @@ Note:
   <li>projects</li>
   <li>applications</li>
   <li>microservices</li>
-  <li>stages/environments</li>
   <li>customers</li>
   <li>tenants</li>
+  <li><strong>stages/environments</strong></li>
   <li>etc.</li>
 </ul>
 </div>
 
 </div>
-<br/>
 
 Note:
 Transition to next slide:
@@ -176,86 +81,80 @@ Transition to next slide:
 
 
 
-#### App repo vs GitOps repo
+#### App repo vs GitOps repo <!-- .element style="margin-top: 0px"-->
+<div class="floatRight fragment" style="font-size: 900%; margin-right: 200px" data-fragment-index="4">🤔</div>
 
-<div class="container">
-<div class="column">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  preserveAspectRatio="none" 
-    viewBox="0 0 731 527" width="125%">
-        <defs>
-            <filter height="300%" id="a" width="300%" x="-1" y="-1">
-                <feGaussianBlur result="blurOut" stdDeviation="2"/>
-                <feColorMatrix in="blurOut" result="blurOut2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
-                <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
-                <feBlend in="SourceGraphic" in2="blurOut3"/>
-            </filter>
-        </defs>
-        <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M436 77.566h223v283H436z"/>
-        <image height="48" width="48" x="523.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg==" y="79.566"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" font-weight="bold" textLength="91" x="502" y="140.561">K8s Cluster</text>
-        <circle cx="43" cy="264.066" fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" r="16"/>
-        <path d="M43 284.066c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8H24c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4" fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="74" x="6" y="322.561">Developer</text>
-        <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M147.5 244.066h89v84.297h-89z"/>
-        <image height="48" width="48" x="157.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg==" y="254.066"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="69" x="157.5" y="315.061">App Repo</text>
-        <g class="fragment" data-fragment-index="2">
-            <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M272 244.066h108v84.297H272z"/>
-            <image height="48" width="48" x="282" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg==" y="254.066"/>
-            <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="88" x="282" y="315.061">GitOps Repo</text>
-            <path d="M385.29 286.066h50.591" fill="none" style="stroke:#fff;stroke-width:1"/>
-            <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m380.16 286.066 9.011 3.974-4.011-3.988 3.988-4.012-8.988 4.026z"/>
-            <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="399.82" y="302.133">pull</text>
-        </g>
-        <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M230.5 431.566h85v84.297h-85z"/>
-        <image height="48" width="48" x="240.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEUklEQVR4Xs2YQYpcNxCGfRedYG4wN8gJcoPcYE6QG2TvRZNVVr3yKmDIKqvJyhCSJmBCMLidEDAh0PnQRxeyStJ7PQmxh5/Hm2qp9FepqlR6z8rzHz8pPMuij4t/S+ju658evvvt8Ordy9d/Pr55f/r9L568I0F+/80pT1nj6YRYj7UvzZ9UpBVC3hmZp8/wFEJffv/m/P7vlsfnL153Y/DcF9/+ip+C1k5v3UYIW6ECA16kxap5WAuYhQGfHX/JAzrsJYR97oXOwPTjz3+wWB45BCPd3+zLDrsI4QZ0ffXDW/+FCkbnYZuQ09pP24SYj5YITMjdFKQt8BN7Bxau3SaEWfgGFXjbOM1j9gMlmIeP809ig5DzTWOeGDcMAohCep1HeLrNzdngFSG2xsl6qNSEz9FjZLAYRSgrCUBaH2teRGSHKSEYuEwbg1DsFEECLGJiCKZAK8vLgpDu6Tao8xBun+ldQ2uHZkwJWWSzsKUIoWFI7QEbPcz/KSFPpSwcmtVik6JVw9M3/zolBJtMKEsyurqQz3wGYBWxmPOjLAjNPJRHdugqJw7rKCqBzTDRpoSYQ4pRweI0LfXQyCMD4QmmtF4h8A0XqKDBenYzIasLT2Ya4L7kkYFZ3bP2lMrYc9AW4AZCFmg3G3XRQvBcxGwcLznw4dFt922EGG3OM8fyiHGaPkyNTUARJ7UOvi2oGWpEowjjPKqwfuGeTWAShoVXIDds7saE7AzLtd8rO6rLHthX+X5bYXSDDMz/hIrAzjhqZl3RmFCpubpO8k20EYMz0BZeuaudWp5SFoR0b4TwE46tQ72sWXigYsSYiaidWTslVGquXmop8mUYgxlxVrA2/ohAQUhEm7AQnWXrilBprmB7Dg0RnSFPfANQokmX2s/YezylYww81itplmdEO2Cl8IS25ETbqTzPFbsIWR474dDnLAmnRbQZzovd30XIKtBp8WDKgz12DD6DmmfMJdIX7ik7CZVrynTC3GILyylTgCVeuVyHrg3sJeR1MdfWw6Txy/Do0HP518AuQvf1Yj/Txaas25JSY9yks5NBz7BMl01CTFOFWi6T+xRj4jtEB6g48Xy9UT3U+4wFKY9fEfKIlYQGWU4sLWiPNPae5TKHa3t6rN2mxsSfpOV0GcXAmFDs0TF9c1H+cP2M50ZYWmLVl/X2KDPldolSV08kY6d/QMiqc55c48u1WzKT7ZaUu+S5ft+wGJr2saRxHXo8LjsnfUAoqn4U3Bna2Oo0mvPn2u+e6gfGNlYuTYE1c1cegofubYUL3NXvYpmQMV6qL7sEjH6oXD+btr+WjpBGdyPWQOnwHGClQ71I8Ww91DI4jr7EfUBoTyXtYFPRCTWdxfzVnX2snyjb02aY+X1QO7MTrtGNN9tdmO1jSfZU0rycrpfG+8mXk56Qu2YfsxOXWl1YIJonn6d6Q/Vfq4MS383EbULoJSb+HwwTuSf00fHJEfoHjfLJHnH3AbMAAAAASUVORK5CYII=" y="441.566"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="65" x="240.5" y="502.561">CI Server</text>
-        <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M553 235.566h82V336.16h-82z"/>
-        <image height="48" width="48" x="563" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACuElEQVR4Xu2YT0olMRCHvcs7gTeYG3iCuYE38ARzA/cuZFazcuVKGHA1q5mVICoDMgyCfwZBRMh8dJ5NrF9SSfo1z7ew+CHSL6l8SVUlnd5aHJxvlLb00ftqBqDtrxefvl0h/tFfs9o9+XP18Dzq580T3eNPU4B2jn5/+XHz/frx7ukliOH98OyeIR0+Gphee6d/408dQAwABxMyvhw7uvwHvbqaAQgU46LdWEuDtf/r1rTpAMJX16qUDIjRp06vFYh2pucqRnrFxFK3TUA6j9WNOqCgpgD5NPglMT8fX5tSIr64Jmlsh8Toq84rQDqD0Vh2Slq7GAGqmeuYB8QsbfNXY2ba3hHRYQLWS848oGxNsc7ZHaVFuuuoFYE0uuE1E3WkdlXDlwci8LbhYJPXJhW7tvWbWB4ouzxdeUPdsZwoHpmUGwKFqPmBywNp9vBER3VUDU3JMkDZ4mqp8FRzAmm8WHkd0tecQLq9EnUd0tecQJp0E0qdEBsnjTYWst2HqPwoHaxdo5NGpX0t0LvrA6imTQViy6diezXWapcoqNSJOZqWQHpoNJqpkRbpbY7lGH9dN1D2gEqdrBtIt19zfq8VaDv3vrWf3NcWqwPpqI50eYIcUHWgeLujG+FHJCAHFvWF0mSsisbW9eDcNKsDhUnHvhHz0eIKb+srqgkoSKS7VKLhhUcbtwKF4duK9q8qvmVbX4NlC6IDKAzvkLrIJTFeNoujlV6O80Dx5pA+SS3eprPziyL3HZTg3mSKQKXApxa/3uGdiuMveUZYq70cmiJQGDYYmPT5iubTVIAWQx7oy/9kK+VNB1AUEakGwjdm5eRcqiKQ9idFJmCRZ+2FuXCASncglr0liDhkAiUnjpZA+llJV8gofr1jVAqN4opfFMhZf0eoagnEVHA0apbvL9O0BNocbRzQf+3wcitjETgyAAAAAElFTkSuQmCC" y="245.566"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="47" x="563" y="306.561">GitOps</text>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="62" x="563" y="322.858">operator</text>
-        <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M411.5 431.566h107v84.297h-107z"/>
-        <image height="48" width="48" x="421.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACUUlEQVR4Xu2WS0oEMRCGvUufYG7gDTyBN/AGnsAbzN6FuHLlypUguHKlK0F0EAaRAV8IgwjjR34oY1e6kxnHBxr5kXR1JflSVamelWb74ldpxZt+VhUopwqUUwXKqQLl9BeBBruXG4c3Jh69T7mWAATE/tXT8OwO7Zw/8Oh9yrUcINGgrZPJ/wbaPL71Il9kChQEUz9QtsLmAGKto/Ezu4qDsQZYCoFY4XQyxdm/Ms0NpLwIyNJUmDJmre1f44Cbfyt9KxDJ1YAgre6NvENTAmSbsQoBt0cDwh5fe7OjVsUYEHHiLUzrB+MWWR6IDZiG1G/4H48R0RqG0lEurNiBY+N4KSyGaOWos7Gm7HkgNlbBIkXCp4ydbGyPOLeA2DVZPYqWxt8NNHp8iS0EDGdWM0saCF5tgFjCxnEN2TiuGyCsnjCqRcmBsW2sstOrFnQaSAUBFif4vFqLEydw/abSB6BB+G43AciqrOt+Yk/e8Dj+sQzO7lrS+R2I1cnCbDYjRwwUUrNwJibbnSIFs/CnxOlaMbifvsquJNoUltIr7JpillappVOGh67o0gWQ324QpTUN1IQ+4Y2flC9hr04goto1eRBKzae/X2oW3t5SJ1BPeNXyu3CTUn/ydq9OoCZcgfjDpLYxjLpqoVqtr199QE04WfJuF4ooxt+pEmWAmsDU08e6RBTVsv2rfuWBmnBQNf74fiYFBwdQorPOSRUBSURe3yDreLpr+ppiF8dcCfKaAygWMdOvIl23xYKR1IJAX6cKlFMFyqkC5VSBcqpAOb0BXdqrKyPxUdcAAAAASUVORK5CYII=" y="441.566"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="87" x="421.5" y="502.561">OCI Registry</text>
-        <path d="M80.21 286.066h62.01" fill="none" style="stroke:#fff;stroke-width:1"/>
-        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m147.3 286.066-9-4 4 4-4 4 9-4z"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="249.133">push</text>
-        <g class="fragment" data-fragment-index="3">
-            <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="101.75" y="264.266">app</text>
-            <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="279.398">code</text>
-            <path d="M46.21 246.166c6.44-50.48 25.79-135.54 83.79-174.6 45.71-30.79 79.26-32.18 124 0 52.72 37.92 67.38 116.32 71.14 167.1" fill="none" style="stroke:#fff;stroke-width:1"/>
-            <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m325.49 243.796 3.373-9.253-3.716 4.265-4.265-3.716 4.608 8.704z"/>
-            <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="160.5" y="19.633">push</text>
-            <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="30" x="161" y="34.766">infra</text>
-            <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="160.5" y="49.898">code</text>
-            <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-            dur="2.0s" repeatCount="indefinite"/>
-            <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-            dur="2.0s" repeatCount="indefinite"/>
-        </g>
-        <path d="M212.06 332.996c13.18 30.2 30.28 69.36 43.01 98.52" fill="none" style="stroke:#fff;stroke-width:1"/>
-        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m209.98 328.236-.069 9.849 2.068-5.266 5.265 2.067-7.264-6.65z"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="241" y="397.633">pull</text>
-        <path d="M315.61 473.566h90.54" fill="none" style="stroke:#fff;stroke-width:1"/>
-        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m411.16 473.566-9-4 4 4-4 4 9-4z"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="348" y="466.633">push</text>
-        <path d="m452.361 360.926.159 1.405.32 2.82.641 5.674 1.293 11.42 4.956 43.81" fill="none" style="stroke:#fff;stroke-width:1"/>
-        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m460.31 431.156 2.973-9.39-3.53 4.421-4.42-3.53 4.977 8.499z"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="457" y="397.633">pull</text>
-        <path d="M633 285.446c11.87-25.88 35.08-25.67 35.08.62 0 26.29-23.21 26.5-35.08.62" fill="none" style="stroke:#fff;stroke-width:1"/>
-        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m633 286.686.116 9.848 1.969-5.303 5.303 1.968-7.388-6.513z"/>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="44" x="674.08" y="290.633">deploy</text>
-    </svg>
-</div>
-<div class="column fragment" style="font-size: 900%; text-align: right" data-fragment-index="4">
-🤔
-</div>
-</div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  preserveAspectRatio="none" 
+viewBox="0 0 731 527" width="48%">
+    <defs>
+        <filter height="300%" id="a" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2"/>
+            <feColorMatrix in="blurOut" result="blurOut2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3"/>
+        </filter>
+    </defs>
+    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M436 77.566h223v283H436z"/>
+    <image height="48" width="48" x="523.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg==" y="79.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" font-weight="bold" textLength="91" x="502" y="140.561">K8s Cluster</text>
+    <circle cx="43" cy="264.066" fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" r="16"/>
+    <path d="M43 284.066c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8H24c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4" fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="74" x="6" y="322.561">Developer</text>
+    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M147.5 244.066h89v84.297h-89z"/>
+    <image height="48" width="48" x="157.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg==" y="254.066"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="69" x="157.5" y="315.061">App Repo</text>
+    <g class="fragment" data-fragment-index="2">
+        <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M272 244.066h108v84.297H272z"/>
+        <image height="48" width="48" x="282" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg==" y="254.066"/>
+        <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="88" x="282" y="315.061">GitOps Repo</text>
+        <path d="M385.29 286.066h50.591" fill="none" style="stroke:#fff;stroke-width:1"/>
+        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m380.16 286.066 9.011 3.974-4.011-3.988 3.988-4.012-8.988 4.026z"/>
+        <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="399.82" y="302.133">pull</text>
+    </g>
+    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M230.5 431.566h85v84.297h-85z"/>
+    <image height="48" width="48" x="240.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEUklEQVR4Xs2YQYpcNxCGfRedYG4wN8gJcoPcYE6QG2TvRZNVVr3yKmDIKqvJyhCSJmBCMLidEDAh0PnQRxeyStJ7PQmxh5/Hm2qp9FepqlR6z8rzHz8pPMuij4t/S+ju658evvvt8Ordy9d/Pr55f/r9L568I0F+/80pT1nj6YRYj7UvzZ9UpBVC3hmZp8/wFEJffv/m/P7vlsfnL153Y/DcF9/+ip+C1k5v3UYIW6ECA16kxap5WAuYhQGfHX/JAzrsJYR97oXOwPTjz3+wWB45BCPd3+zLDrsI4QZ0ffXDW/+FCkbnYZuQ09pP24SYj5YITMjdFKQt8BN7Bxau3SaEWfgGFXjbOM1j9gMlmIeP809ig5DzTWOeGDcMAohCep1HeLrNzdngFSG2xsl6qNSEz9FjZLAYRSgrCUBaH2teRGSHKSEYuEwbg1DsFEECLGJiCKZAK8vLgpDu6Tao8xBun+ldQ2uHZkwJWWSzsKUIoWFI7QEbPcz/KSFPpSwcmtVik6JVw9M3/zolBJtMKEsyurqQz3wGYBWxmPOjLAjNPJRHdugqJw7rKCqBzTDRpoSYQ4pRweI0LfXQyCMD4QmmtF4h8A0XqKDBenYzIasLT2Ya4L7kkYFZ3bP2lMrYc9AW4AZCFmg3G3XRQvBcxGwcLznw4dFt922EGG3OM8fyiHGaPkyNTUARJ7UOvi2oGWpEowjjPKqwfuGeTWAShoVXIDds7saE7AzLtd8rO6rLHthX+X5bYXSDDMz/hIrAzjhqZl3RmFCpubpO8k20EYMz0BZeuaudWp5SFoR0b4TwE46tQ72sWXigYsSYiaidWTslVGquXmop8mUYgxlxVrA2/ohAQUhEm7AQnWXrilBprmB7Dg0RnSFPfANQokmX2s/YezylYww81itplmdEO2Cl8IS25ETbqTzPFbsIWR474dDnLAmnRbQZzovd30XIKtBp8WDKgz12DD6DmmfMJdIX7ik7CZVrynTC3GILyylTgCVeuVyHrg3sJeR1MdfWw6Txy/Do0HP518AuQvf1Yj/Txaas25JSY9yks5NBz7BMl01CTFOFWi6T+xRj4jtEB6g48Xy9UT3U+4wFKY9fEfKIlYQGWU4sLWiPNPae5TKHa3t6rN2mxsSfpOV0GcXAmFDs0TF9c1H+cP2M50ZYWmLVl/X2KDPldolSV08kY6d/QMiqc55c48u1WzKT7ZaUu+S5ft+wGJr2saRxHXo8LjsnfUAoqn4U3Bna2Oo0mvPn2u+e6gfGNlYuTYE1c1cegofubYUL3NXvYpmQMV6qL7sEjH6oXD+btr+WjpBGdyPWQOnwHGClQ71I8Ww91DI4jr7EfUBoTyXtYFPRCTWdxfzVnX2snyjb02aY+X1QO7MTrtGNN9tdmO1jSfZU0rycrpfG+8mXk56Qu2YfsxOXWl1YIJonn6d6Q/Vfq4MS383EbULoJSb+HwwTuSf00fHJEfoHjfLJHnH3AbMAAAAASUVORK5CYII=" y="441.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="65" x="240.5" y="502.561">CI Server</text>
+    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M553 235.566h82V336.16h-82z"/>
+    <image height="48" width="48" x="563" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACuElEQVR4Xu2YT0olMRCHvcs7gTeYG3iCuYE38ARzA/cuZFazcuVKGHA1q5mVICoDMgyCfwZBRMh8dJ5NrF9SSfo1z7ew+CHSL6l8SVUlnd5aHJxvlLb00ftqBqDtrxefvl0h/tFfs9o9+XP18Dzq580T3eNPU4B2jn5/+XHz/frx7ukliOH98OyeIR0+Gphee6d/408dQAwABxMyvhw7uvwHvbqaAQgU46LdWEuDtf/r1rTpAMJX16qUDIjRp06vFYh2pucqRnrFxFK3TUA6j9WNOqCgpgD5NPglMT8fX5tSIr64Jmlsh8Toq84rQDqD0Vh2Slq7GAGqmeuYB8QsbfNXY2ba3hHRYQLWS848oGxNsc7ZHaVFuuuoFYE0uuE1E3WkdlXDlwci8LbhYJPXJhW7tvWbWB4ouzxdeUPdsZwoHpmUGwKFqPmBywNp9vBER3VUDU3JMkDZ4mqp8FRzAmm8WHkd0tecQLq9EnUd0tecQJp0E0qdEBsnjTYWst2HqPwoHaxdo5NGpX0t0LvrA6imTQViy6diezXWapcoqNSJOZqWQHpoNJqpkRbpbY7lGH9dN1D2gEqdrBtIt19zfq8VaDv3vrWf3NcWqwPpqI50eYIcUHWgeLujG+FHJCAHFvWF0mSsisbW9eDcNKsDhUnHvhHz0eIKb+srqgkoSKS7VKLhhUcbtwKF4duK9q8qvmVbX4NlC6IDKAzvkLrIJTFeNoujlV6O80Dx5pA+SS3eprPziyL3HZTg3mSKQKXApxa/3uGdiuMveUZYq70cmiJQGDYYmPT5iubTVIAWQx7oy/9kK+VNB1AUEakGwjdm5eRcqiKQ9idFJmCRZ+2FuXCASncglr0liDhkAiUnjpZA+llJV8gofr1jVAqN4opfFMhZf0eoagnEVHA0apbvL9O0BNocbRzQf+3wcitjETgyAAAAAElFTkSuQmCC" y="245.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="47" x="563" y="306.561">GitOps</text>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="62" x="563" y="322.858">operator</text>
+    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M411.5 431.566h107v84.297h-107z"/>
+    <image height="48" width="48" x="421.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACUUlEQVR4Xu2WS0oEMRCGvUufYG7gDTyBN/AGnsAbzN6FuHLlypUguHKlK0F0EAaRAV8IgwjjR34oY1e6kxnHBxr5kXR1JflSVamelWb74ldpxZt+VhUopwqUUwXKqQLl9BeBBruXG4c3Jh69T7mWAATE/tXT8OwO7Zw/8Oh9yrUcINGgrZPJ/wbaPL71Il9kChQEUz9QtsLmAGKto/Ezu4qDsQZYCoFY4XQyxdm/Ms0NpLwIyNJUmDJmre1f44Cbfyt9KxDJ1YAgre6NvENTAmSbsQoBt0cDwh5fe7OjVsUYEHHiLUzrB+MWWR6IDZiG1G/4H48R0RqG0lEurNiBY+N4KSyGaOWos7Gm7HkgNlbBIkXCp4ydbGyPOLeA2DVZPYqWxt8NNHp8iS0EDGdWM0saCF5tgFjCxnEN2TiuGyCsnjCqRcmBsW2sstOrFnQaSAUBFif4vFqLEydw/abSB6BB+G43AciqrOt+Yk/e8Dj+sQzO7lrS+R2I1cnCbDYjRwwUUrNwJibbnSIFs/CnxOlaMbifvsquJNoUltIr7JpillappVOGh67o0gWQ324QpTUN1IQ+4Y2flC9hr04goto1eRBKzae/X2oW3t5SJ1BPeNXyu3CTUn/ydq9OoCZcgfjDpLYxjLpqoVqtr199QE04WfJuF4ooxt+pEmWAmsDU08e6RBTVsv2rfuWBmnBQNf74fiYFBwdQorPOSRUBSURe3yDreLpr+ppiF8dcCfKaAygWMdOvIl23xYKR1IJAX6cKlFMFyqkC5VSBcqpAOb0BXdqrKyPxUdcAAAAASUVORK5CYII=" y="441.566"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="14" textLength="87" x="421.5" y="502.561">OCI Registry</text>
+    <path d="M80.21 286.066h62.01" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m147.3 286.066-9-4 4 4-4 4 9-4z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="249.133">push</text>
+    <g class="fragment" data-fragment-index="3">
+        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="101.75" y="264.266">app</text>
+        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="279.398">code</text>
+        <path d="M46.21 246.166c6.44-50.48 25.79-135.54 83.79-174.6 45.71-30.79 79.26-32.18 124 0 52.72 37.92 67.38 116.32 71.14 167.1" fill="none" style="stroke:#fff;stroke-width:1"/>
+        <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m325.49 243.796 3.373-9.253-3.716 4.265-4.265-3.716 4.608 8.704z"/>
+        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="160.5" y="19.633">push</text>
+        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="30" x="161" y="34.766">infra</text>
+        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="160.5" y="49.898">code</text>
+        <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+        dur="2.0s" repeatCount="indefinite"/>
+        <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+        dur="2.0s" repeatCount="indefinite"/>
+    </g>
+    <path d="M212.06 332.996c13.18 30.2 30.28 69.36 43.01 98.52" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m209.98 328.236-.069 9.849 2.068-5.266 5.265 2.067-7.264-6.65z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="241" y="397.633">pull</text>
+    <path d="M315.61 473.566h90.54" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m411.16 473.566-9-4 4 4-4 4 9-4z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="348" y="466.633">push</text>
+    <path d="m452.361 360.926.159 1.405.32 2.82.641 5.674 1.293 11.42 4.956 43.81" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m460.31 431.156 2.973-9.39-3.53 4.421-4.42-3.53 4.977 8.499z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="457" y="397.633">pull</text>
+    <path d="M633 285.446c11.87-25.88 35.08-25.67 35.08.62 0 26.29-23.21 26.5-35.08.62" fill="none" style="stroke:#fff;stroke-width:1"/>
+    <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m633 286.686.116 9.848 1.969-5.303 5.303 1.968-7.388-6.513z"/>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="44" x="674.08" y="290.633">deploy</text>
+</svg>
 
-<div class="fragment" data-fragment-index="2" >
+<div class="fragment" data-fragment-index="2" style="font-size: 80%" >
 GitOps tools: Put infra in separate repo! See
 
-<img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/><a href="https://argo-cd.readthedocs.io/en/release-2.5/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.5/user-guide/best_practices</a>
+<img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://argo-cd.readthedocs.io/en/release-2.5/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.5/user-guide/best_practices</a>
 </div>
 
 Note:
@@ -279,11 +178,12 @@ Note:
 
 
 <!-- .slide: id="ci-1" -->
-#### Using CI-Server with GitOps part 1
+#### Using CI-Server with GitOps part 1 <!-- .element style="margin-top: 0px"-->
+
 <!-- src: gitops-with-app-repo-ci.puml -->
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css"
-     version="1.1" viewBox="0 0 741 420">
+     version="1.1" viewBox="0 0 741 420" width="80%">
     <defs id="defs843">
         <filter height="300%" id="f1mqeku6gmnp3v" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2" id="feGaussianBlur834"/>
@@ -469,12 +369,12 @@ Notes:
 
 
 
-#### Alternative: Refer to app repo
+#### Alternative: Refer to app repo <!-- .element style="margin-top: 0px"-->
 
 <!-- src: gitops-with-app-repo-pointer.puml-->
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-     preserveAspectRatio="none" viewBox="0 0 787 491" width="80%">
+     preserveAspectRatio="none" viewBox="0 0 787 491" width="63%">
     <rect fill="#23A3DD" height="283" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:1" width="223" x="492"
           y="47.566"/>
     <image height="48" width="48" x="579.5"
@@ -603,11 +503,10 @@ Note:
 
 
 
-#### Image updater
+#### Image updater  <!-- .element style="margin-top: 0px"-->
 
 <!-- src: gitops-with-image-updater.puml -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="405"
-     preserveAspectRatio="none" style="width:599px;height:405px;background:#00000000" width="599">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599 399" width="50%">
     <defs>
         <filter height="300%" id="a" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2"/>
@@ -692,10 +591,10 @@ Note:
     </text>
 </svg>
 
-<div class="fragment" data-fragment-index="1">GitOps operator can update image version in Git  
+<div class="fragment" data-fragment-index="1" style="font-size: 90%">GitOps operator can update image version in Git  
 <ul style="display: flow">
-<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
-<li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
+<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
+<li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
 </ul>
 </div>
 
@@ -709,11 +608,12 @@ https://fluxcd.io/flux/guides/repository-structure/
 
 
 <!-- .slide: id="ci-2" -->
-#### Using CI-Server with GitOps part 2
+#### Using CI-Server with GitOps part 2 <!-- .element style="margin-top: 0px"-->
+
 <!-- src: gitops-with-app-repo-ci.puml -->
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css"
-     version="1.1" viewBox="0 0 741 420">
+     version="1.1" viewBox="0 0 741 420" width="80%">
     <defs id="defs843">
         <filter height="300%" id="f1mqeku6gmnp3v" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2" id="feGaussianBlur834"/>
@@ -969,34 +869,3 @@ stroke:#181818 with #fff
 <div class="fragment" data-fragment-index="1">
     e.g.  <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
 </div>
-
-
-
-<!-- .slide: style="font-size: 90%"  -->
-## As example: Our approach
-
-* Repo pattern:  
-   <code style="font-size:90%">Trunk-based repo per team, folder per app+stage</code>  
-  (mixed with `repo per app`) 
-  ```text
-    ├── app1
-    │   ├── production
-    │   │   └── deployment.yaml
-    │   └── staging
-    │       └── deployment.yaml
-    └── app2
-        └── deployment.yaml
-  ```
-* IaC either 
-  * lives in app repo and is pushed by CI-Server or 
-  * in GitOps repo (3rd party apps).
-* Promotion between stages:
-  * commit to staging folder only (💡 protect `production`),
-  * create short lived branches and pull requests for prod
-
-Note:
-* Might or might not be the best choice for you
-* production branch: Protect via SCM
-* Advantage: All infra in one place -> less complexity, standardized process
-* 3rd-Party: Dont need CI job for simple apps
-* Stages as namespace: Explicit namespace in resource YAMLs

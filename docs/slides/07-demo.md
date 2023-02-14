@@ -1,7 +1,7 @@
-# 🚀 Demo
+# 🚀 Demo <!-- .element style="margin-top: 0px"-->
 <!-- .slide: id="demo" -->
 <!-- src gitops-playground.puml -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1062 856" width="57%">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1062 856" width="48%">
     <path fill="#FFF" style="stroke:#23a3dd;stroke-width:1" d="M16 16 26 6h1019v823l-10 10H16V16z"/>
     <path style="stroke:#23a3dd;stroke-width:1" d="m1035 16 10-10M16 16h1019M1035 16v823"/>
     <image height="48" width="48" x="502.5"
@@ -183,4 +183,4 @@ Image sources:
 
 **BTW: More Features to explore**
 <!-- src: https://www.plantuml.com/plantuml/proxy?fmt=svg&src=https://raw.githubusercontent.com/cloudogu/gitops-playground/c5053900bb8de87fd560e71c4a2a4b235dd87833/docs/plantuml-src/gitops-playground-features.puml -->
-<img src="images/gitops-playground-features.svg" width="85%">
+<img src="images/gitops-playground-features.svg" width="63%">

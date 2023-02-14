@@ -323,12 +323,10 @@ li::before {content: "•"; color:#23A3DD;
 
 .floatLeft {
   float: left;
-  margin-right: 20px
 }
 
 .floatRight {
   float: right;
-  margin-right: 20px
 }
 
 .centered {
