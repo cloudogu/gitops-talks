@@ -50,7 +50,6 @@
 
 ## Agenda
 
-- Basics
-- Tools
-- Challenges
-- Demo
+1. Design basics
+2. Example + demo
+3. More examples

@@ -21,7 +21,7 @@ rm "${pdf}" || true
 
 # When images are not printed, increase --delay
 docker run --rm --shm-size=4G ${PRINTING_IMAGE} \
-  athenapdf --delay 1000 --stdout "http://${address}:8080/?print-pdf" \
+  athenapdf --delay 2000 --stdout "http://${address}:8080/?print-pdf" \
   > "${pdf}"
 
 if [[ $COMPRESS == "true" ]]; then

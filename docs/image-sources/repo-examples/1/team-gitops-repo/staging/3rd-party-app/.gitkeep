@@ -1,0 +1,336 @@
+---
+# Source: springboot/charts/podinfo/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-petclinic-helm-podinfo
+  labels:
+    helm.sh/chart: podinfo-5.2.0
+    app.kubernetes.io/name: spring-petclinic-helm-podinfo
+    app.kubernetes.io/version: "5.2.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 9898
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: 9999
+      targetPort: grpc
+      protocol: TCP
+      name: grpc
+  selector:
+    app.kubernetes.io/name: spring-petclinic-helm-podinfo
+---
+# Source: springboot/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-petclinic-helm-springboot
+  labels:
+    app.kubernetes.io/name: springboot
+    helm.sh/chart: springboot-0.3.0
+    app.kubernetes.io/instance: spring-petclinic-helm
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+      nodePort: 30022
+  selector:
+    app.kubernetes.io/name: springboot
+    app.kubernetes.io/instance: spring-petclinic-helm
+---
+# Source: springboot/charts/podinfo/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-petclinic-helm-podinfo
+  labels:
+    helm.sh/chart: podinfo-5.2.0
+    app.kubernetes.io/name: spring-petclinic-helm-podinfo
+    app.kubernetes.io/version: "5.2.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: spring-petclinic-helm-podinfo
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: spring-petclinic-helm-podinfo
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9898"
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: podinfo
+          image: "ghcr.io/stefanprodan/podinfo:5.2.0"
+          imagePullPolicy: IfNotPresent
+          command:
+            - ./podinfo
+            - --port=9898
+            - --cert-path=/data/cert
+            - --port-metrics=9797
+            - --grpc-port=9999
+            - --grpc-service-name=podinfo
+            - --level=info
+            - --random-delay=false
+            - --random-error=false
+          env:
+          - name: PODINFO_UI_COLOR
+            value: "#456456"
+          ports:
+            - name: http
+              containerPort: 9898
+              protocol: TCP
+            - name: http-metrics
+              containerPort: 9797
+              protocol: TCP
+            - name: grpc
+              containerPort: 9999
+              protocol: TCP
+          livenessProbe:
+            exec:
+              command:
+              - podcli
+              - check
+              - http
+              - localhost:9898/healthz
+            initialDelaySeconds: 1
+            timeoutSeconds: 5
+          readinessProbe:
+            exec:
+              command:
+              - podcli
+              - check
+              - http
+              - localhost:9898/readyz
+            initialDelaySeconds: 1
+            timeoutSeconds: 5
+          volumeMounts:
+          - name: data
+            mountPath: /data
+          resources:
+            requests:
+              cpu: 1m
+              memory: 16Mi
+      volumes:
+      - name: data
+        emptyDir: {}
+---
+# Source: springboot/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-petclinic-helm-springboot
+  labels:
+    app.kubernetes.io/name: springboot
+    helm.sh/chart: springboot-0.3.0
+    app.kubernetes.io/instance: spring-petclinic-helm
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 100%
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: springboot
+      app.kubernetes.io/instance: spring-petclinic-helm
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: springboot
+        app.kubernetes.io/instance: spring-petclinic-helm
+      annotations:
+        # For some reason the default profile that works well with docker is explicitly disabled in k8s.
+        # We use it by default and only disable it, in case of problems (which are unlikely)
+        seccomp.security.alpha.kubernetes.io/pod: runtime/default
+        # Make prometheus collect the metrics of the pods
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '9080'
+        prometheus.io/path: '/actuator/prometheus'
+    spec:
+      containers:
+        - name: spring-petclinic-helm-springboot
+          image: "eu.gcr.io/itzbund-presentation-project/spring-petclinic-helm:202301261317-9f52b78-main"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 9080
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 9080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          resources:
+            limits:
+              memory: 750Mi
+            requests:
+              memory: 750Mi
+          securityContext:
+            # Those settings mitigate a lot of vulnerabilities
+            readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            runAsUser: 100000
+            runAsGroup: 100000
+            capabilities:
+              drop:
+                - ALL
+          volumeMounts:
+            - name: tmp
+              # Tmp folder used by spring to write data. We need to mount this because of "readOnlyRootFilesystem" (see above)
+              mountPath: /tmp/
+          env:
+            - name: SERVER_PORT
+              value: '8080'
+            - name: MANAGEMENT_SERVER_PORT
+              value: '9080'
+            - name: TZ
+              value: Europe/Berlin
+          envFrom:
+      # Don't mount all kubernetes services and ports into the env. This behavior corresponds to the "docker links",
+      # which is deprecated and not used in our services. It
+      # - pollutes the env with lots of entries,
+      # - imposes the risk that applications might mistake the service env as a config parameter
+      #   (e.g. POSTGRES_SERVICE_PORT in keycloak) and
+      # - provides a convenient overview of new target for potential attackers
+      enableServiceLinks: false
+      # Don't mount k8s service account token into pod. This can be used to authenticate to the API server.
+      # It's not used by our services but might be used by potential attackers. There still is the authorization layer,
+      # but one more vulnerability or misconfiguration and the attacker might get access to the API server.
+      automountServiceAccountToken: false
+      volumes:
+        - name: tmp
+          emptyDir: {}
+---
+# Source: springboot/charts/podinfo/templates/tests/grpc.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-petclinic-helm-podinfo-grpc-test-vl6sn
+  labels:
+    helm.sh/chart: podinfo-5.2.0
+    app.kubernetes.io/name: spring-petclinic-helm-podinfo
+    app.kubernetes.io/version: "5.2.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test-success
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    sidecar.istio.io/inject: "false"
+    linkerd.io/inject: disabled
+    appmesh.k8s.aws/sidecarInjectorWebhook: disabled
+spec:
+  containers:
+    - name: grpc-health-probe
+      image: stefanprodan/grpc_health_probe:v0.3.0
+      command: ['grpc_health_probe']
+      args:  ['-addr=spring-petclinic-helm-podinfo.default:9999']
+  restartPolicy: Never
+---
+# Source: springboot/charts/podinfo/templates/tests/jwt.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-petclinic-helm-podinfo-jwt-test-nx5er
+  labels:
+    helm.sh/chart: podinfo-5.2.0
+    app.kubernetes.io/name: spring-petclinic-helm-podinfo
+    app.kubernetes.io/version: "5.2.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test-success
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    sidecar.istio.io/inject: "false"
+    linkerd.io/inject: disabled
+    appmesh.k8s.aws/sidecarInjectorWebhook: disabled
+spec:
+  containers:
+    - name: tools
+      image: giantswarm/tiny-tools
+      command:
+        - sh
+        - -c
+        - |
+          TOKEN=$(curl -sd 'test' ${PODINFO_SVC}/token | jq -r .token) &&
+          curl -sH "Authorization: Bearer ${TOKEN}" ${PODINFO_SVC}/token/validate | grep test
+      env:
+      - name: PODINFO_SVC
+        value: "spring-petclinic-helm-podinfo.default:9898"
+  restartPolicy: Never
+---
+# Source: springboot/charts/podinfo/templates/tests/service.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring-petclinic-helm-podinfo-service-test-ykl4y
+  labels:
+    helm.sh/chart: podinfo-5.2.0
+    app.kubernetes.io/name: spring-petclinic-helm-podinfo
+    app.kubernetes.io/version: "5.2.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test-success
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    sidecar.istio.io/inject: "false"
+    linkerd.io/inject: disabled
+    appmesh.k8s.aws/sidecarInjectorWebhook: disabled
+spec:
+  containers:
+    - name: curl
+      image: curlimages/curl:7.69.0
+      command:
+        - sh
+        - -c
+        - |
+          curl -s ${PODINFO_SVC}/api/info | grep version
+      env:
+        - name: PODINFO_SVC
+          value: "spring-petclinic-helm-podinfo.default:9898"
+  restartPolicy: Never
+---
+# Source: springboot/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "spring-petclinic-helm-springboot-test-connection"
+  labels:
+    helm.sh/chart: springboot-0.3.0
+    app.kubernetes.io/name: springboot
+    app.kubernetes.io/instance: spring-petclinic-helm
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['spring-petclinic-helm-springboot:80']
+  restartPolicy: Never

@@ -1,49 +1,69 @@
-<!-- .slide: data-background-image="images/challenge.jpg"  -->
+<!-- .slide: data-background-image="images/basics.jpg"  -->
 <!-- .slide: style="text-align: center !important"  -->
 
-<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8);">
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.65); margin-right: 200px; margin-left: 200px">
   <br/>
-  <h1 style="margin: 0 0 0 0; color: #5b5a5a;" >Repos, folders, stages, patterns, strategies, ...</h1>
+  <h1 style="margin: 0 0 0 0; color: #5b5a5a;" >GitOps process design basics</h1>
   <br/>
 </div>
 
+
+
+<!-- .slide: id="ex2" data-visibility="hidden" -->
+## Design decisions
+<!-- .slide: style="font-size: 95%"  -->
+
+* How many repos?
+* How to structure repos and folders? Or use branches?
+* How to realize different stages/environments, release promotion?
+* How many GitOps operator instances, clusters, namespaces?
+* How to make best use of operator-specifics  
+  (e.g. <img data-src="images/flux-icon.svg" style="height: 1.1em; vertical-align: middle;" /> `Kustomization`s; <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`s, `ApplicationSet`s)?
+* Role of CI server?
+* Are there any standards, patterns, strategies, models, approaches, best practices?
+
 Note:
-Source: https://unsplash.com/photos/bJhT_8nbUA0
+* How to operate them (e.g. self-hosted vs. managed; manage operator GitOps)?
 
 
 
-### Repo and folder structure
+## Preamble
 
-* No standard for structures (intentionally) ➡️ Conway's law
-* Repo patterns: Monorepo vs Polyrepo (per app, team, stage) <i class="fas fa-blender"></i>
-* Within repo: folder/~~branch~~ structure for stage, team, app  
-  <span style="font-size: 70%">☁ [community.cloudogu.com/t/gitops-patterns-for-repository-and-folder-directory-structure](https://community.cloudogu.com/t/gitops-patterns-for-repository-and-folder-directory-structure/900)</span>
-* More options:   
-  * Topology: GitOps controller (s) ↔ Cluster(s) / Namespaces
-  * GitOps controller-specific config
+* **Chronology**: 
+  * Step 1: Chose an operator
+  * Step 2: **Design process/repos** ⬅️ focus of this talk
+* **Use case**: 
+  * Deploying infra 
+  * **Deploying apps** ⬅️ focus of this talk
+* **Responsibility**: platform/infra teams, cluster admins   
+  ↔️ app teams
+* **Conway's law**: No standard for structures (intentionally)
+  
+
+Note:
+* Melvin E. Conway: "Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure."
+* Conway's law applies ->️ structure will be dictated by organization's communications structure (e.g. teams) and
+  **boundaries** (e.g. security, operations, regulatory concerns, no access to prod for devs)
+* Who designs the process (responsibility) also depends on organization:  
+  My opinion in general: Devs should not have to care too much about GitOps -> **Developer Experience**
 
 
-Note: 
-* Conway's law applies ->️ structure will be dictated by organizational boundaries
-* Repo Patterns: Mix and match is possible
-* GitOps controller-specifics: ArgoCD has Projects and applications and the app of app pattern
 
-
-
-#### 🤯 GitOps Chasm 
+## 🤯 GitOps Chasm <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="chasm" -->
 
 <div class="container">
 
 <div class="column">
-<img data-src="images/k8s_logo.svg" width="9%" />&nbsp;<img data-src="images/argo-icon.svg" width="7%;" /> <img data-src="images/flux-icon.svg" width="6%;" /> <strong><i class="fab fa-git-alt" style="color: #F05133"></i> Infra</strong>
+<img data-src="images/k8s_logo.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>&nbsp;<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />&nbsp;<img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> <strong><i class="fab fa-git-alt" style="color: #F05133"></i> Infra</strong>
   <ul>
     <li>repos</li>
     <li>folders</li>
-    <li>branches</li>
+    <li style="text-decoration:line-through;">branches</li>
     <li>clusters</li>
     <li>namespaces</li>
-    <li>controller instances</li>
-    <li>controller-specific config</li>
+    <li>operator instances</li>
+    <li>operator-specific config</li>
   </ul>
 </div>
 
@@ -77,15 +97,111 @@ Note:
 
 Note:
 Transition to next slide:
-* We'll shed some light onto theses things in the following
+* We'll shed some light onto these things in the following
 
 
 
-#### App repo vs GitOps repo <!-- .element style="margin-top: 0px"-->
-<div class="floatRight fragment" style="font-size: 900%; margin-right: 200px" data-fragment-index="4">🤔</div>
+## No standard but emerging patterns
+
+AKA strategies, models, approaches, best practices
+
+* [Operator deployment](#deployment-patterns): GitOps operators ↔ Clusters/Namespaces
+* [Repository structure](#repo-patterns): How many repos?
+* [Release promotion](#release-promotion): How to model environments/stages?
+* [Wiring](#wiring): Bootstrapping operator, linking repos and folders 
+
+Note: 
+* Patterns in different areas
+* Chronologically
+* Wiring: very GitOps operator-specific config
+
+
+
+## GitOps Operator deployment patterns
+<!-- .slide: id="deployment-patterns" -->
+How many GitOps operators to deploy, relating to Kubernetes clusters?
+
+<div class="floatRight" style="margin-right: 50px">
+    <div>
+        <img src="images/deployment-standalone.svg"/>
+    </div>
+    <div>
+        <img src="images/deployment-hub-and-spoke.svg"/>
+    </div>
+    <div>
+        <img src="images/deployment-namespaced.svg"/>
+    </div>
+</div>
+
+* *Standalone*: 1 Controller : 1 Cluster
+* *Hub and Spoke*: 1 Controller : n Clusters
+* Namespaced: n Controllers : 1 Cluster
+
+Note:
+* Standalone: Obvious choice for simple set ups, isolated, easy to set up
+* Hub and Spoke: Easy to managed for multiple clusters. BUT: remote access necessary, scalability, SPF
+* Namespaced: No name for this pattern, yet.  
+  * Why: Cheap multi-tenancy, Load Balancing, reliability.
+* There are others - but those are the most common ones
+Sources
+* [standalone](https://codefresh.io/blog/a-comprehensive-overview-of-argo-cd-architectures-2023/)
+  /[many-to-many](https://developers.redhat.com/articles/2022/09/07/how-set-your-gitops-directory-structure#conway_s_law_and_gitops)
+  /[1:1/repo-to-single cluster](https://github.com/christianh814/example-kubernetes-go-repo),
+* [Hub and Spoke](https://codefresh.io/blog/a-comprehensive-overview-of-argo-cd-architectures-2023/)
+  /[hub-and-spoke](https://developers.redhat.com/articles/2022/09/07/how-set-your-gitops-directory-structure#conway_s_law_and_gitops)
+  /one-to-many
+* Namespaced: operators/many-to-one
+* Others - don't sound too common
+  * [Split-Instance](https://codefresh.io/blog/a-comprehensive-overview-of-argo-cd-architectures-2023/)
+  * [Control Plane](https://codefresh.io/blog/a-comprehensive-overview-of-argo-cd-architectures-2023/)
+
+
+
+## Repository patterns
+<!-- .slide: id="repo-patterns" -->
+
+How many GitOps repos?
+
+* *Monorepo* (opposite polyrepo)
+* *Repo per Team* (Tenant)
+* *Repo per App*
+  * [Config replication](#config-replication)
+  * [Repo pointer](#repo-pointer)
+* *Repo per stage/environment* [🕒](#release-promotion)
+
+Can be mixed <i class="fas fa-blender"></i>
+
+Note:
+* Monorepo: [Scaling issues](https://argo-cd.readthedocs.io/en/release-2.6/operator-manual/high_availability/#monorepo-scaling-considerations), authorization difficult
+* In general focus on GitOps repos
+* Examples for monorepo, repo per team, and app later
+* Per team is sometimes generalized to "tenant" -> Multi-tenancy
+* Special case repo per app: Two strategies how to handle relation between gitops and app repo -> Next slide
+* Config replication = IaC replication
+* Repo per env -> release promotion
+
+
+
+## Repository types <!-- .element style="margin-top: 0px; text-align: center "-->
+<!-- .slide: id="repo-types" -->
+
+|                                                       | GitOps repo                                                           | App repo                                                                                        |
+|-------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Content                                               | IaC/Manifests/YAMLs                                                   | Application source code                                                                         |
+| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>Payload repo</li></ul> | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
+| Example  <!-- .element style="vertical-align: top"--> | <img data-src="images/gitops-repo-example.svg" width=100%/>           | <img data-src="images/app-repo-example.svg" width=100%/>                                        |
+
+Note:
+* GitOps repos (config repos) - terms might mean something different
+* Some people consider the GitOps repo to be the one with the operator-related stuff
+
+
+
+### Separating GitOps repo from app repo <!-- .element style="margin-top: 0px"-->
+<div class="floatRight fragment" style="font-size: 800%; margin-right: 200px" data-fragment-index="4">🤔</div>
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  preserveAspectRatio="none" 
-viewBox="0 0 731 527" width="48%">
+viewBox="0 0 731 527" width="45%">
     <defs>
         <filter height="300%" id="a" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2"/>
@@ -154,7 +270,7 @@ viewBox="0 0 731 527" width="48%">
 <div class="fragment" data-fragment-index="2" style="font-size: 80%" >
 GitOps tools: Put infra in separate repo! See
 
-<img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="4%;"/> <a href="https://argo-cd.readthedocs.io/en/release-2.5/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.5/user-guide/best_practices</a>
+<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <a href="https://argo-cd.readthedocs.io/en/release-2.6/user-guide/best_practices/">argo-cd.readthedocs.io/en/release-2.6/user-guide/best_practices</a>
 </div>
 
 Note:
@@ -168,7 +284,7 @@ Note:
 * Separated maintenance & versioning of app and infra code
 * Review spans across multiple repos
 * Local dev more difficult
-* Static code analysis for IaC code not possible
+* No static code analysis on GitOps repo
   <br/><br/>
 
 <div class="fragment" data-fragment-index="1">
@@ -177,8 +293,8 @@ Note:
 
 
 
-<!-- .slide: id="ci-1" -->
-#### Using CI-Server with GitOps part 1 <!-- .element style="margin-top: 0px"-->
+### Config replication <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="config-replication" -->
 
 <!-- src: gitops-with-app-repo-ci.puml -->
 <svg xmlns="http://www.w3.org/2000/svg"
@@ -337,7 +453,7 @@ Note:
 * Single repo for development: higher efficiency
 * Shift left: static code analysis + policy check on CI server,  
   e.g. yamlint, kubeval, helm lint, conftest
-* Automated staging (e.g. PR creation, namespaces) [🕒](#ci-2)
+* Automated staging (e.g. PR creation) [🕒](#promotion-via-ci)
 * Simplify review by adding info to PRs
 
 <div class="fragment" style="margin-top: 20px">
@@ -353,7 +469,7 @@ Note:
 ➡ Recommendation: Use a plugin or library<span class="fragment">, e.g. <br/>
 <i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-build-lib">cloudogu/gitops-build-lib</a> <i class="fab fa-jenkins"></i></span>
 </div>
-* Redundant IaC (app repo + gitops repo) <!-- .element: class="fragment"  -->
+* Redundant config (app repo + GitOps repo) <!-- .element: class="fragment"  -->
 
 Notes:
 * Shift left (Fail Early) Validation - OPA Gatekeeper, Image Signature, etc
@@ -369,7 +485,8 @@ Notes:
 
 
 
-#### Alternative: Refer to app repo <!-- .element style="margin-top: 0px"-->
+### Alternative: Repo pointer <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="repo-pointer" -->
 
 <!-- src: gitops-with-app-repo-pointer.puml-->
 
@@ -427,7 +544,7 @@ Notes:
     <g class="fragment" data-fragment-index="1">
         <path d="M251.91 256.066h79" fill="none" style="stroke:#fff;stroke-width:1"></path>
         <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m246.77 256.066 9 4-4-4 4-4-9 4z"></path>
-        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="48" x="264.75" y="249.133">refer to</text>
+        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="48" x="264.75" y="249.133">point to</text>
         <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
         dur="2.0s" repeatCount="indefinite"/>
         <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
@@ -467,8 +584,8 @@ Notes:
 </text>
 </svg>
 
-<span class="fragment" data-fragment-index="1">e.g. 
-    <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/>
+<span class="fragment" data-fragment-index="1">e.g.
+    <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>
     <a href="https://fluxcd.io/flux/guides/repository-structure/#repo-per-app">fluxcd.io/flux/guides/repository-structure</a>
 </span>
 
@@ -479,20 +596,128 @@ Note:
 
 
 
-### Stage promotion
+## Release promotion patterns
+<!-- .slide: id="release-promotion" -->
 
-* "GitOps - Operations by Pull Request"
-* Repo structure: Use folders not branches
-* But: create *short-lived* branches and PR
-* Merge is promotion/deployment
+How to model environments AKA stages?
+
+* [*Folder per environment*](#folder-per-env)
+* [*Branch per environment*](#branch-per-env) (antipattern)
+* [*Repo per environment*](#repo-per-env) (edge case)
+* 🔥 [*Preview environments*](#preview-envs)
+
+AKA Env per (folder | branch | repo) 
+
+Note:
+Exclusion principle -> Why not branches, repos but folders
 
 
 
-#### Implementing stage promotion
+### Why not use branches for environments? <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="branch-per-env" -->
+<!-- .slide: style="font-size: 90%"  -->
 
+Idea:
+* Develop ➡ Staging
+* Main ➡ Production
+  <br/><br/>
+
+<div class="fragment" data-fragment-index="1">
+<span style="font-size: 530%;float: left; margin-right: 50px;">❌</span>
+<ul>
+  <li>Drifts/conflicts because of merge direction<br/>develop ➡ main (unidrectional)</li>
+  <li>Promoting specific changes only: Copy vs cherry pick</li>
+  <li>DRY - resources shared by multiple environments,  e.g. <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> 
+            <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> </li>
+  <li>Scalability: More envs, more chaos</li>
+</ul>
+
+➡ Branches more complicated than folders. Don't.
+</div>
+
+Note:
+* Branching might lead to merge conflicts, develop and master lose sync
+* DRY - dont repeat yourself
+* Helm/kustomize: Most options are the same on every stage -> base/shared.yaml => Small stage specific YAMLs/overlays
+* Scalability: Example later with variants (e.g. regions) -> 13 Stages
+* [Concise lighning talk](https://www.youtube.com/watch?v=CvMevMHExHk&list=PLj6h78yzYM2MbKazKesjAx4jq56pnz1XE&index=23)
+
+
+
+### Repo per environment
+<!-- .slide: id="repo-per-env" -->
+Why would you want to use one repo per env?
+
+* Access to folders more difficult to constrain than repos
+* Organizational constraints, e.g. 
+  * "devs are not allowed to acces prod"
+  * security team needs to approve releases
+
+➡ Repos more complicated than folders. Use only when really necessary.
+
+Note:
+* No public examples found
+* Theoretical ideas:
+  * https://fluxcd.io/flux/guides/repository-structure/#repo-per-environment
+  * https://youtu.be/vLNZA_2Na_s?t=1346
+
+
+
+### Folder per environment
+<!-- .slide: id="folder-per-env" -->
+
+> GitOps - Operations by Pull Request  
+🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
+
+* Create *short-lived* branches and PRs
+* 💡 Use folders to design envs (instead of *long-lived* branches per env)
+* Merge promotes release, triggers deployment
+
+
+
+### Implementing release promotion
+
+#### Tools for separating config
+
+* Kustomize
+    * plain `kustomize.yaml`
+    * ≠ Flux CRD <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `Kustomization`
+* Helm
+    * CRD (️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`, ️<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `HelmRelease`)
+    * ️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />  *Umbrella Chart*
+
+Note:
+* `kustomize.yaml` is operator-agnostic!
+* Kustomize **and**/or helm!
+* See examples later 
+
+
+
+#### Global envs vs. env per app
+
+  <div class="container">
+    <div class="column">
+        <img data-src="images/global-environments.svg" width="90%"/>
+        <p></p>
+    </div>
+    <div class="column">
+        <img data-src="images/environment-per-app.svg" width="90%"/>
+        e.g. <a href="#preview-envs">Preview Envs</a>
+    </div>
+  </div>
+Note:
+* Most examples have global stages
+* Our experience: 
+  * Some apps dont need stages
+  * More recently: with preview envs, only one persistent stage is necessary
+
+
+
+
+#### Branch and PR creation
 Who bumps versions in GitOps repo, creates branch and PR?
 
-* **Manual**: Human pushes branch and create PR 
+* **Manual**: Human pushes branch and create PR 🥵
 * **Image Updater**: Operator pushes branch, create PR manually
 * **CI Server**: Build job pushes branch, creates PR
 * **Dependency Bot**: Bot pushes branch, creates PR
@@ -503,7 +728,7 @@ Note:
 
 
 
-#### Image updater  <!-- .element style="margin-top: 0px"-->
+##### Image updater  <!-- .element style="margin-top: 0px"-->
 
 <!-- src: gitops-with-image-updater.puml -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599 399" width="50%">
@@ -593,8 +818,8 @@ Note:
 
 <div class="fragment" data-fragment-index="1" style="font-size: 90%">GitOps operator can update image version in Git  
 <ul style="display: flow">
-<li><img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3%;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
-<li><img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3%;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
+<li><img data-src="images/argo-icon.svg" title="argocd" style="height: 1.1em; vertical-align: middle;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
+<li><img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
 </ul>
 </div>
 
@@ -607,8 +832,8 @@ https://fluxcd.io/flux/guides/repository-structure/
 
 
 
-<!-- .slide: id="ci-2" -->
-#### Using CI-Server with GitOps part 2 <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="promotion-via-ci" -->
+##### Promotion via CI Server <!-- .element style="margin-top: 0px"-->
 
 <!-- src: gitops-with-app-repo-ci.puml -->
 <svg xmlns="http://www.w3.org/2000/svg"
@@ -757,7 +982,7 @@ Note: Looks simple but technically challenging: Git protocol vs SCM-specific API
 
 
 
-#### Stage promotion using dependency bot
+#### Promotion via dependency bot <!-- .element style="margin-top: 0px"-->
 <!-- src: gitops-with-renovate.puml -->
 <!-- replace: 
 <path fill="#181818" with #fff
@@ -765,8 +990,7 @@ stroke:#181818 with #fff
 <text font-family="sans-serif" with <text  fill="#FFF" font-family="sans-serif"
 -->
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="491"
-     preserveAspectRatio="none" style="width:797px;height:491px" width="797" viewBox="0 0 797 491">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70%" viewBox="0 0 797 491">
     <rect fill="#23A3DD" height="283" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:1" width="223" x="470"
           y="47.566"/>
     <image height="48" width="48" x="557.5"
@@ -869,3 +1093,51 @@ stroke:#181818 with #fff
 <div class="fragment" data-fragment-index="1">
     e.g.  <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
 </div>
+
+
+
+### 🔥 Preview environments
+<!-- .slide: id="preview-envs" -->
+AKA (ephemeral | dynamic | pull request | test | temporary) environments
+
+* An environment that is created with a pull request
+* and deleted on merge/close
+
+<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSet`, using the `PullRequest` generator
+
+<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> ❓️
+
+
+Note:
+* Means something different for everyone. 
+* Provides a lot of new options: Do we need multiple "persistent" stages (prod *plus* staging *plus* qa, etc?) Or is Prod and preview envs enough?
+* Makes testing easier
+
+Sources: 
+* [10/2020 📽️ Environments Based On Pull Requests (PRs): Using Argo CD To Apply GitOps Principles On Previews](https://www.youtube.com/watch?v=cpAaI8p4R60) by Viktor Farcic (before AppSets)
+* [11/2020 Creating Temporary Preview Environments Based On Pull Requests With Argo CD And Codefresh](https://codefresh.io/blog/creating-temporary-preview-environments-based-pull-requests-argo-cd-codefresh/) by Codefresh (before AppSets)
+* [05/2022 📽️ GitOps Con Europe - Implementing Preview Environments with GitOps in Kubernetes - François Le Pape, Remazing ](https://www.youtube.com/watch?v=QNAiIJRIVWA&t=202s) without AppSets
+* [10/2022 Preview Environments with ArgoCD - Brandon Phillips, Codefresh](https://www.youtube.com/watch?v=7ahiwZuiCBM) - [example repo](https://github.com/brandonphillips/preview-environments-example)
+
+
+
+## Wiring <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="wiring" -->
+Wiring up operator, repos, folders, envs, etc.
+
+* Bootstrapping: `kubectl`, operator-specific CLI
+* Linking/Grouping:
+  * Operator-specific CRDs
+    * <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> `Kustomization`
+    * <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`
+  * Nesting: ️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> *App of Apps*  
+    (same principle with <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> `Kustomization`)
+  * Templating: <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSets` - folders, lists, config files
+
+Note:
+* Bootstrapping: Always an imperative part
+* Linking folders and also across repos
+CRDs
+* Generic `Kustomization.v1beta1.kustomize.config.k8s.io`
+* Flux `kustomize.toolkit.fluxcd.io/v1beta2/kustomizations`
+* ArgoCD `argoproj.io/v1alpha1/applications`

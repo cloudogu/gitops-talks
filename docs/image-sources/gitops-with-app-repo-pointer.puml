@@ -32,7 +32,7 @@ rectangle "<$docker>\nOCI Registry" as registry
 
 user -> appRepo : push\napp\n+infra\ncode
 appRepo -[hidden]> configRepo
-appRepo <- configRepo : refer to 
+appRepo <- configRepo : point to 
 appRepo <-- ciServer : pull
 ciServer -> registry : push
 k8s --> registry : pull

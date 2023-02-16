@@ -1,3 +1,25 @@
+<!-- .slide: style="color: #5b5a5a" class="floatRight"-->
+<!-- .slide: data-background-image="images/question-mark-g8640ed2c2_1920.jpg" data-background-size="45%" data-background-color="white" data-background-position="left" -->
+# The perfect GitOps process? <!-- .element: style="color: #5b5a5a; font-size: 130%"  class="floatRight" -->
+
+
+
+## No such thing as the perfect GitOps process 
+
+* Patterns exist - for different aspects, inconsistent naming
+* Examples exist - different scopes (bootstrapping, apps only, etc.)
+* Not very much examples on automation (e.g. CI)
+* <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> operator-agnostic choice for promotion <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> 
+
+➡️ Use as inspiration, no silver bullet
+
+Note:
+* Patterns for Operator deployment, repos, promotion
+* plain kustomize is operator-agnostic
+* Silver bullet: each organization has different environment and requirements
+
+
+
 <!-- .slide: data-background-image="images/trainings_16_9.png"  -->
 <!-- .slide: data-background-color="#165D84"  -->
 <!-- .slide: id="last" -->
@@ -30,9 +52,18 @@ articles, videos, projects, eBook
 
 
 # Image sources
+<!-- .slide: style="font-size: 80%; " -->
 
-* Challenges:  
-  https://unsplash.com/photos/bJhT_8nbUA0
+* coloured-parchment-paper background by brgfx on Freepik  
+  https://www.freepik.com/free-vector/coloured-parchment-paper-designs_1078492.htm
+* Basics:  
+  https://pixabay.com/illustrations/blackboard-board-school-chalkboard-5639925/
+* Example:  
+  https://unsplash.com/photos/X2PWhiKDQww
+* More examples   
+  https://unsplash.com/photos/XZc4f2XZc84
+* Perfect?  
+  https://pixabay.com/illustrations/question-mark-question-response-1020165/
 
 <style >  
 a.non-blue-link:link {
