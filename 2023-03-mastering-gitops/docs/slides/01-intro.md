@@ -35,7 +35,7 @@
 
 
 <div class="title-version">
-Version: 202302281634-ca16fe3
+Version: 202303021327-a4b0478
 </div>
 
 <p class="state-background" style="font-size: 70%">
@@ -50,6 +50,6 @@ Version: 202302281634-ca16fe3
 
 ## Agenda
 
-1. Design basics
+1. GitOps process design basics
 2. Example + demo
 3. More examples
