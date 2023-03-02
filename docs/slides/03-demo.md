@@ -146,6 +146,7 @@
 </div>
 
 Note: 
+* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/1)
 * Repo pattern:  
   <code style="font-size:90%">Trunk-based repo per team, folder per app+stage</code>  
   (mixed with `repo per app`)
@@ -155,7 +156,7 @@ Note:
     -> Dont need CI job for simple apps
   * Advantage: All infra in one place -> less complexity, standardized process
 * Promotion between stages:
-  * commit to staging folder only (💡 protect `production` folder via SCM),
+  * commit to staging folder only ( protect `production` folder via SCM),
   * create short lived branches and pull requests for prod
 
 

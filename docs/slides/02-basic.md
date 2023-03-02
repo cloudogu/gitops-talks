@@ -133,9 +133,9 @@ How many GitOps operators to deploy, relating to Kubernetes clusters?
     </div>
 </div>
 
-* *Standalone*: 1 Controller : 1 Cluster
-* *Hub and Spoke*: 1 Controller : n Clusters
-* Namespaced: n Controllers : 1 Cluster
+* *Standalone*: 1 Operator : 1 Cluster
+* *Hub and Spoke*: 1 Operator : n Clusters
+* Namespaced: n Operators : 1 Cluster
 
 Note:
 * Standalone: Obvious choice for simple set ups, isolated, easy to set up
@@ -452,7 +452,7 @@ Note:
 
 * Single repo for development: higher efficiency
 * Shift left: static code analysis + policy check on CI server,  
-  e.g. yamlint, kubeval, helm lint, conftest
+  e.g. yamlint, kubeval, helm lint, conftest, security scanners
 * Automated staging (e.g. PR creation) [🕒](#promotion-via-ci)
 * Simplify review by adding info to PRs
 
@@ -601,8 +601,8 @@ Note:
 
 How to model environments AKA stages?
 
-* [*Folder per environment*](#folder-per-env)
-* [*Branch per environment*](#branch-per-env) (antipattern)
+* [*Folder/Directory per environment*](#folder-per-env)
+* [*Branch per environment*](#branch-per-env) (anti-pattern)
 * [*Repo per environment*](#repo-per-env) (edge case)
 * 🔥 [*Preview environments*](#preview-envs)
 
@@ -675,16 +675,19 @@ Note:
 
 
 
-### Implementing release promotion
+### Implementing release promotion <!-- .element style="margin-top: 0px"-->
 
 #### Tools for separating config
 
+AKA Templating, Patching, Overlay, Rendering?
+
 * Kustomize
-    * plain `kustomize.yaml`
+    * plain <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> `kustomize.yaml`
     * ≠ Flux CRD <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `Kustomization`
 * Helm
     * CRD (️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`, ️<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `HelmRelease`)
-    * ️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />  *Umbrella Chart*
+    * ️<img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" />  *Umbrella Chart* <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
+    * `helm template` via CI server <i class="fab fa-jenkins"></i>
 
 Note:
 * `kustomize.yaml` is operator-agnostic!
@@ -1105,7 +1108,7 @@ AKA (ephemeral | dynamic | pull request | test | temporary) environments
 
 <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSet`, using the `PullRequest` generator
 
-<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> ❓️
+<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> GitOpsSets❓️
 
 
 Note:
@@ -1114,9 +1117,9 @@ Note:
 * Makes testing easier
 
 Sources: 
-* [10/2020 📽️ Environments Based On Pull Requests (PRs): Using Argo CD To Apply GitOps Principles On Previews](https://www.youtube.com/watch?v=cpAaI8p4R60) by Viktor Farcic (before AppSets)
+* [10/2020 Environments Based On Pull Requests (PRs): Using Argo CD To Apply GitOps Principles On Previews](https://www.youtube.com/watch?v=cpAaI8p4R60) by Viktor Farcic (before AppSets)
 * [11/2020 Creating Temporary Preview Environments Based On Pull Requests With Argo CD And Codefresh](https://codefresh.io/blog/creating-temporary-preview-environments-based-pull-requests-argo-cd-codefresh/) by Codefresh (before AppSets)
-* [05/2022 📽️ GitOps Con Europe - Implementing Preview Environments with GitOps in Kubernetes - François Le Pape, Remazing ](https://www.youtube.com/watch?v=QNAiIJRIVWA&t=202s) without AppSets
+* [05/2022 GitOps Con Europe - Implementing Preview Environments with GitOps in Kubernetes - François Le Pape, Remazing ](https://www.youtube.com/watch?v=QNAiIJRIVWA&t=202s) without AppSets
 * [10/2022 Preview Environments with ArgoCD - Brandon Phillips, Codefresh](https://www.youtube.com/watch?v=7ahiwZuiCBM) - [example repo](https://github.com/brandonphillips/preview-environments-example)
 
 

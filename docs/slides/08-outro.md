@@ -7,16 +7,16 @@
 ## No such thing as the perfect GitOps process 
 
 * Patterns exist - for different aspects, inconsistent naming
-* Examples exist - different scopes (bootstrapping, apps only, etc.)
-* Not very much examples on automation (e.g. CI)
-* <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> operator-agnostic choice for promotion <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> 
+* Examples exist - different operators + scopes (bootstrapping vs. apps only)
 
-➡️ Use as inspiration, no silver bullet
+➡️ Use as inspiration
 
 Note:
 * Patterns for Operator deployment, repos, promotion
 * plain kustomize is operator-agnostic
 * Silver bullet: each organization has different environment and requirements
+* Not very much examples on automation (e.g. CI)
+* <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> operator-agnostic choice for promotion <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>
 
 
 

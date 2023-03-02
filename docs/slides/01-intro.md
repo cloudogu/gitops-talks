@@ -50,6 +50,6 @@
 
 ## Agenda
 
-1. Design basics
+1. GitOps process design basics
 2. Example + demo
 3. More examples

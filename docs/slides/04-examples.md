@@ -24,10 +24,6 @@ Note:
             <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> 
             <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> 
           </li>
-          <li><strong>Templating/Overlay:</strong>
-            <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> 
-            <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> 
-          </li>
           <li><strong>Features</strong>:<br/> Individual stages per app</li> 
           <li><strong>Source:</strong> Cloudogu internal,<br/> GitOps Playground in the future</li>
         </ul>
@@ -45,6 +41,7 @@ Note:
 </div>
 
 Note:
+* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/1-1)
 * Could be used in monorepo, repo per app, repo per team
 * Should also work in Flux
 
@@ -64,7 +61,7 @@ Note:
           </li>
           <li><strong>Boostrapping:</strong> <code>Helm</code>, <code>kubectl</code></li>
           <li><strong>Linking:</strong> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code>Application</code></li>
-          <li><strong>Features:</strong> Apps with individual envs, operate ArgoCD with GitOps</li>
+          <li><strong>Features:</strong> Env per app, operate ArgoCD with GitOps</li>
           <li><strong>Source:</strong> Cloudogu internal,<br/> GitOps Playground in the future</li>
         </ul>
         <br/><br/>
@@ -97,7 +94,7 @@ Note:
         <circle cx="85" cy="180" fill="#d79b00" pointer-events="all" r="3"/>
         <path d="m53.76 135-8 4 2-4-2-4z" fill="#d79b00" stroke-miterlimit="10" pointer-events="all"/>
     </g>
-    <g data-fragment-index="5" class="fragment" stroke="#a50040" stroke-width="2">
+    <g data-fragment-index="6" class="fragment" stroke="#a50040" stroke-width="2">
         <path d="m210 167.23 45.49 50.64" fill="none" stroke-miterlimit="10" pointer-events="stroke"/>
         <circle cx="208" cy="165" fill="#a50040" pointer-events="all" r="3"/>
         <path d="m259.5 222.33-8.32-3.28 4.31-1.18 1.64-4.16z" fill="#a50040" stroke-miterlimit="10" pointer-events="all"/>
@@ -110,7 +107,7 @@ Note:
         <circle cx="84" cy="211" fill="#d79b00" pointer-events="all" r="3"/>
         <path d="m51.76 222.2-8 4 2-4-2-4z" fill="#d79b00" stroke-miterlimit="10" pointer-events="all"/>
     </g>
-    <g data-fragment-index="6" class="fragment" stroke="#b09500" stroke-width="2">
+    <g data-fragment-index="7" class="fragment" stroke="#b09500" stroke-width="2">
         <path d="M438 239h41v-60h-80.76" fill="none" stroke-miterlimit="10" pointer-events="stroke"/>
         <circle cx="435" cy="239" fill="#b09500" pointer-events="all" r="3"/>
         <path d="m392.24 179 8-4-2 4 2 4z" fill="#b09500" stroke-miterlimit="10" pointer-events="all"/>
@@ -194,12 +191,45 @@ Note:
             <text x="74" y="88" fill="#b3b3b3" font-family="Helvetica" font-size="11" text-anchor="middle" font-weight="bold">Platform admin</text>
         </switch>
     </g>
+        <g class="fragment" data-fragment-index="5">
+        <image x="498.5" y="325.5" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNiI+PHBhdGggZD0iTTE4IDBDOC4wNTkgMCAwIDguMDU5IDAgMThzOC4wNTkgMTggMTggMTggMTgtOC4wNTkgMTgtMThTMjcuOTQxIDAgMTggMHpNMi4wNSAxOWgzLjk4M2MuMDkyIDIuNTA2LjUyMiA0Ljg3MSAxLjIyOSA3SDQuMTU4Yy0xLjIwNy0yLjA4My0xLjk1LTQuNDU5LTIuMTA4LTd6TTE5IDhWMi4wODFjMi43NDcuNDM2IDUuMTYyIDIuNjU1IDYuNzk5IDUuOTE5SDE5em03LjY1MSAyYy43NTQgMi4wODMgMS4yMTkgNC40NiAxLjMxNyA3SDE5di03aDcuNjUxek0xNyAyLjA4MVY4aC02Ljc5OUMxMS44MzcgNC43MzYgMTQuMjUzIDIuNTE3IDE3IDIuMDgxek0xNyAxMHY3SDguMDMyYy4wOTgtMi41NC41NjMtNC45MTcgMS4zMTctN0gxN3pNNi4wMzQgMTdIMi4wNWMuMTU4LTIuNTQuOTAxLTQuOTE3IDIuMTA3LTdoMy4xMDRjLS43MDUgMi4xMjktMS4xMzUgNC40OTUtMS4yMjcgN3ptMS45OTggMkgxN3Y3SDkuMzQ5Yy0uNzU0LTIuMDgzLTEuMjE5LTQuNDU5LTEuMzE3LTd6TTE3IDI4djUuOTE5Yy0yLjc0Ny0uNDM3LTUuMTYzLTIuNjU1LTYuNzk5LTUuOTE5SDE3em0yIDUuOTE5VjI4aDYuOGMtMS42MzcgMy4yNjQtNC4wNTMgNS40ODItNi44IDUuOTE5ek0xOSAyNnYtN2g4Ljk2OWMtLjA5OSAyLjU0MS0uNTYzIDQuOTE3LTEuMzE3IDdIMTl6bTEwLjk2Ny03aDMuOTgyYy0uMTU3IDIuNTQxLS45IDQuOTE3LTIuMTA3IDdoLTMuMTA0Yy43MDYtMi4xMjkgMS4xMzYtNC40OTQgMS4yMjktN3ptMC0yYy0uMDkzLTIuNTA1LS41MjMtNC44NzEtMS4yMjktN2gzLjEwNGMxLjIwNyAyLjA4MyAxLjk1IDQuNDYgMi4xMDcgN2gtMy45ODJ6bS41MTItOWgtMi41MDNjLS43MTctMS42MDQtMS42MDYtMy4wMTUtMi42MTktNC4xOTlDMjcuMzQ2IDQuODMzIDI5LjA4OSA2LjI2NyAzMC40NzkgOHpNMTAuNjQzIDMuODAxQzkuNjI5IDQuOTg1IDguNzQgNi4zOTYgOC4wMjMgOEg1LjUyMWMxLjM5LTEuNzMzIDMuMTMzLTMuMTY2IDUuMTIyLTQuMTk5ek01LjUyMSAyOGgyLjUwM2MuNzE2IDEuNjA0IDEuNjA1IDMuMDE1IDIuNjE5IDQuMTk4QzguNjU0IDMxLjE2NiA2LjkxMSAyOS43MzMgNS41MjEgMjh6bTE5LjgzNiA0LjE5OGMxLjAxNC0xLjE4NCAxLjkwMi0yLjU5NCAyLjYxOS00LjE5OGgyLjUwM2MtMS4zOSAxLjczMy0zLjEzMyAzLjE2Ni01LjEyMiA0LjE5OHoiIGZpbGw9IiMzQjg4QzMiLz48L3N2Zz4=" preserveAspectRatio="none" pointer-events="none"/>
+        <rect x="184" y="344" width="332" height="24" rx="3.6" ry="3.6" fill="#1ba1e2" stroke="#006eaf" stroke-width="2" pointer-events="none"/>
+        <switch transform="translate(-.5 -.5)">
+            <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow:visible;text-align:left">
+                <xhtml:div style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:324px;height:1px;padding-top:350px;margin-left:187px">
+                    <xhtml:div data-drawio-colors="color: #FFFFFF;" style="box-sizing:border-box;font-size:0;text-align:left">
+                        <xhtml:div style="display:inline-block;font-size:9px;font-family:Helvetica;color:#fff;line-height:1.2;pointer-events:none;white-space:normal;overflow-wrap:normal">
+                            <xhtml:b>
+                                https://github.com/argoproj/argo-helm/releases/download/argo-cd-5.23.5...
+                            </xhtml:b>
+                        </xhtml:div>
+                    </xhtml:div>
+                </xhtml:div>
+            </foreignObject>
+            <text x="187" y="359" fill="#fff" font-family="Helvetica" font-size="9">https://github.com/argoproj/argo-helm/releases/download/argo-cd-5.23.5...</text>
+        </switch>
+        <path d="m173.84 284.76 165.6 55.62" fill="none" stroke="#d79b00" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <circle cx="171" cy="283.8" fill="#d79b00" stroke="#d79b00" stroke-width="2" pointer-events="none" r="3"/>
+        <path d="m345.13 342.29-8.86 1.24 3.17-3.15-.62-4.43z" fill="#d79b00" stroke="#d79b00" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <switch transform="translate(-.5 -.5)">
+            <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow:visible;text-align:left">
+                <xhtml:div style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:1px;height:1px;padding-top:322px;margin-left:336px">
+                    <xhtml:div data-drawio-colors="color: #D79B00;" style="box-sizing:border-box;font-size:0;text-align:center">
+                        <xhtml:div style="display:inline-block;font-size:11px;font-family:Helvetica;color:#d79b00;line-height:1.2;pointer-events:none;font-weight:700;white-space:nowrap">
+                            dependencies
+                        </xhtml:div>
+                    </xhtml:div>
+                </xhtml:div>
+            </foreignObject>
+            <text x="336" y="325" fill="#d79b00" font-family="Helvetica" font-size="11" text-anchor="middle" font-weight="bold">dependencies</text>
+        </switch>
+    </g>
 </svg>
     </div>
 </div>
 
 Note:
-* Cluster com
+* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/2)
 * control-app: Bootstrap manually (kubectl or argocd cli)
 * app of apps pattern
 * stages could be resolved using appset
@@ -229,7 +259,7 @@ Note:
           <li><strong>Features:</strong> 
             <ul>
               <li>Operate ArgoCD with GitOps</li>
-              <li>In the future: a lot more automation<br/>and YAML creation</li>
+              <li>Opinionated structure and YAML creation via CLI</li>
             </ul>
           <li><strong>Source:</strong> <span style="font-size:95%"><i class='fab fa-github'></i> <a href="https://github.com/argoproj-labs/argocd-autopilot/releases/tag/v0.4.10">argoproj-labs/argocd-autopilot</a></span></li>
         </ul>
@@ -365,6 +395,7 @@ Note:
 </div>
 
 Note: 
+* * [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/3)
 * Alternative for argocd-repo in Ex 3
 * Opinionated structure (standard) saves effort, good practices for free.
 * But 
@@ -384,8 +415,8 @@ Note:
 <!-- .slide: id="ex4"  -->
 
 <div class="container">
-    <div class="column" style="color: #5b5a5a; font-size:80%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain;">
-        <ul style="margin-left: 85px; margin-top: 40px; margin-right: 55px;">
+    <div class="column" style="color: #5b5a5a; font-size:75%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain;">
+        <ul style="margin-left: 85px; margin-top: 5px; margin-right: 55px;">
           <li><strong>Repo pattern:</strong> Monorepo</li>
           <li><strong>Operator pattern:</strong> Standalone</li>
           <li><strong>Operator:</strong>
@@ -394,7 +425,11 @@ Note:
           </li>
           <li><strong>Boostrapping:</strong> <code>flux</code></li>
           <li><strong>Linking:</strong> <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code>Kustomization</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
-          <li><strong>Features:</strong> cross-cutting infra</li>
+          <li><strong>Features:</strong>
+            <ul>
+              <li>Cross-cutting infra</li>
+              <li>Operate Flux with GitOps</li>
+            </ul>
         <li><strong>Source:</strong><br/><span style="font-size:80%"><i class='fab fa-github'></i> <a href="https://github.com/fluxcd/flux2-kustomize-helm-example/issues/16">fluxcd/flux2-kustomize-helm-example#16<br/></a>
           <a href="https://fluxcd.io/flux/guides/repository-structure/">🌐 fluxcd.io/flux/guides/repository-structure</a></span></li>
         </ul>
@@ -462,6 +497,7 @@ Note:
 
 Note:
 
+* * [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/4)
 * Officially only one app, discussion about multiple apps in [issue](https://github.com/fluxcd/flux2-kustomize-helm-example/issues/16)
 * `clusters` - One operator per cluster
 * `infrstructure` - cross-cutting infra
@@ -477,7 +513,7 @@ Note:
 
 <div class="container">
     <div class="column" style="color: #5b5a5a; font-size:80%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
-        <ul style="margin-left: 90px; margin-top: 40px; margin-right: 65px">
+        <ul style="margin-left: 90px; margin-top: 80px; margin-right: 65px">
           <li><strong>Repo pattern:</strong> Repo per team</li>
           <li><strong>Operator pattern:</strong> Standalone</li>
           <li><strong>Operator:</strong>
@@ -486,10 +522,6 @@ Note:
           </li>
           <li><strong>Boostrapping:</strong> <code>flux</code></li>
           <li><strong>Linking:</strong> <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code>Kustomization</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
-          <li><strong>Templating/Overlay:</strong>
-            <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> 
-            <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> 
-          </li>
           <li><strong>Features:</strong> Ex 5 with repo for team</li>
 <li><strong>Source:</strong><br/><span style="font-size:80%"><i class='fab fa-github'></i> <a href="https://github.com/fluxcd/flux2-multi-tenancy">fluxcd/flux2-multi-tenancy<br/></a>
           <a href="https://fluxcd.io/flux/guides/repository-structure/">🌐 fluxcd.io/flux/guides/repository-structure</a></span></li>
@@ -610,7 +642,7 @@ Note:
                         <div data-drawio-colors="color: #82B366; "
                              style="box-sizing: border-box; font-size: 0px; text-align: center;">
                             <div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(130, 179, 102); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap;">
-                                Example 5
+                                Example 4
                             </div>
                         </div>
                     </div>
@@ -654,6 +686,7 @@ Note:
 </div>
 
 Note:
+* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/5)
 * Same as for app(s) in monorepo: Does this work with multiple tenants?
 
 
@@ -694,15 +727,17 @@ Note:
     </div>
 </div>
 
+Note:
+* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/6)
 
 
-## Example 7: Environment variants  <!-- .element style="margin-top: 0px"-->
+
+## Example 7: Environment variations  <!-- .element style="margin-top: 0px"-->
 <!-- .slide: id="ex7"  -->
 
 <div class="container">
     <div class="column" style="color: #5b5a5a; font-size:80%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
         <ul style="margin-left: 90px; margin-top: 75px; margin-right: 65px">
-          <li><strong>Repo pattern:</strong> *</li>
           <li><strong>Operator:</strong>
             <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> 
             (<img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>) 
@@ -773,6 +808,7 @@ Note:
 </div>
 
 Note:
+* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/7)
 * Characteristics
   * Could be used in monorepo, repo per app, repo per team
   * Should also work in Flux
