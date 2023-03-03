@@ -32,7 +32,7 @@ node('docker') {
             git.clean('')
         }
 
-        String conferenceName = '2023-03-mastering-gitops'
+        String conferenceName = ''
         
         String pdfName = createPdfName()
 
@@ -71,7 +71,7 @@ node('docker') {
 
         stage('Deploy GH Pages') {
 
-            if (env.BRANCH_NAME == 'main') {
+            if (env.BRANCH_NAME == 'main' && conferenceName) {
                 git.pushGitHubPagesBranch(packagePath, versionName, conferenceName)
             } else {
                 echo "Skipping deploy to GH pages, because not on main branch"

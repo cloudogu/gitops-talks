@@ -183,13 +183,14 @@ Note:
 
 
 ## Repository types <!-- .element style="margin-top: 0px; text-align: center "-->
+<!-- .slide: style="font-size: 95%"  -->
 <!-- .slide: id="repo-types" -->
 
-|                                                       | GitOps repo                                                           | App repo                                                                                        |
-|-------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Content                                               | IaC/Manifests/YAMLs                                                   | Application source code                                                                         |
-| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>Payload repo</li></ul> | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
-| Example  <!-- .element style="vertical-align: top"--> | <img data-src="images/gitops-repo-example.svg" width=100%/>           | <img data-src="images/app-repo-example.svg" width=100%/>                                        |
+|                                                       | GitOps repo                                                                                    | App repo                                                                                        |
+|-------------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Content                                               | IaC/Manifests/YAMLs                                                                            | Application source code                                                                         |
+| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>environment repo</li><li>Payload repo</li></ul> | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
+| Example  <!-- .element style="vertical-align: top"--> | <img data-src="images/gitops-repo-example.svg" width=100%/>                                    | <img data-src="images/app-repo-example.svg" width=100%/>                                        |
 
 Note:
 * GitOps repos (config repos) - terms might mean something different
