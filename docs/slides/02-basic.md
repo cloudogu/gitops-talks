@@ -15,7 +15,7 @@
 
 * How many repos?
 * How to structure repos and folders? Or use branches?
-* How to realize different stages/environments, release promotion?
+* How to realize different stages/environments, promotion?
 * How many GitOps operator instances, clusters, namespaces?
 * How to make best use of operator-specifics  
   (e.g. <img data-src="images/flux-icon.svg" style="height: 1.1em; vertical-align: middle;" /> `Kustomization`s; <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`s, `ApplicationSet`s)?
@@ -58,10 +58,8 @@ Note:
 <img data-src="images/k8s_logo.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>&nbsp;<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />&nbsp;<img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> <strong><i class="fab fa-git-alt" style="color: #F05133"></i> Infra</strong>
   <ul>
     <li>repos</li>
-    <li>folders</li>
-    <li style="text-decoration:line-through;">branches</li>
-    <li>clusters</li>
-    <li>namespaces</li>
+    <li>folders/branches</li>
+    <li>clusters/namespaces</li>
     <li>operator instances</li>
     <li>operator-specific config</li>
   </ul>
@@ -82,13 +80,10 @@ Note:
 🌍 <strong>Real-world</strong><br/>
 <ul>
   <li>company/departments</li>
-  <li>teams</li>
-  <li>projects</li>
-  <li>applications</li>
-  <li>microservices</li>
-  <li>customers</li>
-  <li>tenants</li>
+  <li>teams/projects</li>
+  <li>applications/services</li>
   <li><strong>stages/environments</strong></li>
+  <li>customers/tenants</li>
   <li>etc.</li>
 </ul>
 </div>
@@ -106,8 +101,8 @@ Transition to next slide:
 AKA strategies, models, approaches, best practices
 
 * [Operator deployment](#deployment-patterns): GitOps operators ↔ Clusters/Namespaces
-* [Repository structure](#repo-patterns): How many repos?
-* [Release promotion](#release-promotion): How to model environments/stages?
+* [Repository](#repo-patterns): How many repos?
+* [Promotion](#release-promotion): How to model environments/stages?
 * [Wiring](#wiring): Bootstrapping operator, linking repos and folders 
 
 Note: 
@@ -178,7 +173,7 @@ Note:
 * Per team is sometimes generalized to "tenant" -> Multi-tenancy
 * Special case repo per app: Two strategies how to handle relation between gitops and app repo -> Next slide
 * Config replication = IaC replication
-* Repo per env -> release promotion
+* Repo per env ->  promotion
 
 
 
@@ -189,7 +184,7 @@ Note:
 |                                                       | GitOps repo                                                                                    | App repo                                                                                        |
 |-------------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Content                                               | IaC/Manifests/YAMLs                                                                            | Application source code                                                                         |
-| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>environment repo</li><li>Payload repo</li></ul> | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
+| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>Environment repo</li><li>Payload repo</li></ul> | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
 | Example  <!-- .element style="vertical-align: top"--> | <img data-src="images/gitops-repo-example.svg" width=100%/>                                    | <img data-src="images/app-repo-example.svg" width=100%/>                                        |
 
 Note:
@@ -242,13 +237,11 @@ viewBox="0 0 731 527" width="45%">
     <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m147.3 286.066-9-4 4 4-4 4 9-4z"/>
     <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="249.133">push</text>
     <g class="fragment" data-fragment-index="3">
-        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="101.75" y="264.266">app</text>
-        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="279.398">code</text>
+        <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="101.75" y="264.266">code</text>
         <path d="M46.21 246.166c6.44-50.48 25.79-135.54 83.79-174.6 45.71-30.79 79.26-32.18 124 0 52.72 37.92 67.38 116.32 71.14 167.1" fill="none" style="stroke:#fff;stroke-width:1"/>
         <path fill="#FFF" style="stroke:#fff;stroke-width:1" d="m325.49 243.796 3.373-9.253-3.716 4.265-4.265-3.716 4.608 8.704z"/>
-        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="160.5" y="19.633">push</text>
-        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="30" x="161" y="34.766">infra</text>
-        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="160.5" y="49.898">code</text>
+        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="33" x="160.5" y="19.633">push</text>
+        <text font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" textLength="42" x="161" y="34.766">config</text>
         <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
         dur="2.0s" repeatCount="indefinite"/>
         <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
@@ -374,16 +367,13 @@ Note:
         <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="103.25"
               y="96.5669" id="text892">push
         </text>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="106.75"
-              y="111.6997" id="text894">app
+        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="106.75"
+              y="111.6997" id="text894">code
         </text>
-        <text class="fragment" data-fragment-index="1" font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="98.25"
-              y="126.8325" id="text896">+infra
+        <text class="fragment" data-fragment-index="1" font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="98.25"
+              y="126.8325" id="text896">+config
             <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
             dur="2.0s" repeatCount="indefinite"/>
-        </text>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="103.25"
-              y="141.9653" id="text898">code
         </text>
         <path d="M225.07 195.1c19.25 38.07 46.45 91.85 65.06 128.65" fill="none" id="appRepo-backto-ciServer"
               style="stroke:#fff;stroke-width:1"/>
@@ -403,10 +393,7 @@ Note:
                   lengthAdjust="spacing" textLength="31" x="326" y="260.0669" id="text908">push
             </text>
             <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13"
-                  lengthAdjust="spacing" textLength="30" x="326.5" y="275.1997" id="text910">infra
-            </text>
-            <text font-weight="bolder"  fill="#FFF" font-family="sans-serif" font-size="13"
-                  lengthAdjust="spacing" textLength="31" x="326" y="290.3325" id="text912">code
+                  lengthAdjust="spacing" textLength="43" x="326.5" y="275.1997" id="text910">config
             </text>
             <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
             dur="2.0s" repeatCount="indefinite"/>
@@ -453,7 +440,7 @@ Note:
 
 * Single repo for development: higher efficiency
 * Shift left: static code analysis + policy check on CI server,  
-  e.g. yamlint, kubeval, helm lint, conftest, security scanners
+  e.g. yamlint, kubeconform, helm lint, conftest, security scanners
 * Automated staging (e.g. PR creation) [🕒](#promotion-via-ci)
 * Simplify review by adding info to PRs
 
@@ -539,9 +526,8 @@ Notes:
     <path d="M80.28 256.066h71.84" fill="none" style="stroke:#fff;stroke-width:1"/>
     <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m157.32 256.066-9-4 4 4-4 4 9-4z"/>
     <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="103.25" y="204.133">push</text>
-    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="24" x="106.75" y="219.266">app</text>
-    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="41" x="98.25" y="234.398">+infra</text>
-    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="103.25" y="249.531">code</text>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="31" x="106.75" y="219.266">code</text>
+    <text fill="#FFF" font-family="sans-serif" font-size="13" textLength="45" x="98.25" y="234.398">+config</text>
     <g class="fragment" data-fragment-index="1">
         <path d="M251.91 256.066h79" fill="none" style="stroke:#fff;stroke-width:1"></path>
         <path fill="#fff" style="stroke:#fff;stroke-width:1" d="m246.77 256.066 9 4-4-4 4-4-9 4z"></path>
@@ -592,13 +578,16 @@ Notes:
 
 Note:
 * There's always a downside. If avoiding redundancy is important, this would be an alternative
-* Reference ("pointer") could be realized using ArgoCD's application CR or Flux GitRepository CR
+* Reference ("pointer") could be realized using ArgoCD's application CR or Flux GitRepository CR or even a git submodule (uncommon)
 * However, in the end the GitOps repo wouldn't include much actual code
 
 
 
-## Release promotion patterns
+## Promotion patterns <!-- .element style="margin-top: 0px"-->
 <!-- .slide: id="release-promotion" -->
+
+> GitOps - Operations by Pull Request  
+🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
 
 How to model environments AKA stages?
 
@@ -642,6 +631,7 @@ Note:
 * Helm/kustomize: Most options are the same on every stage -> base/shared.yaml => Small stage specific YAMLs/overlays
 * Scalability: Example later with variants (e.g. regions) -> 13 Stages
 * [Concise lighning talk](https://www.youtube.com/watch?v=CvMevMHExHk&list=PLj6h78yzYM2MbKazKesjAx4jq56pnz1XE&index=23)
+* Branches can work: [One (seldom) example by Florian Heubeck](https://medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351)
 
 
 
@@ -667,20 +657,42 @@ Note:
 ### Folder per environment
 <!-- .slide: id="folder-per-env" -->
 
-> GitOps - Operations by Pull Request  
-🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
-
 * Create *short-lived* branches and PRs
 * 💡 Use folders to design envs (instead of *long-lived* branches per env)
 * Merge promotes release, triggers deployment
 
 
 
-### Implementing release promotion <!-- .element style="margin-top: 0px"-->
+### 🔥 Preview environments
+<!-- .slide: id="preview-envs" -->
+AKA (ephemeral | dynamic | pull request | test | temporary) environments
 
-#### Tools for separating config
+* An environment that is created with a pull request
+* and deleted on merge/close
 
-AKA Templating, Patching, Overlay, Rendering?
+<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSet`, using the `PullRequest` generator
+
+<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> GitOpsSets❓️
+
+
+Note:
+* Means something different for everyone.
+* Provides a lot of new options: Do we need multiple "persistent" stages (prod *plus* staging *plus* qa, etc?) Or is Prod and preview envs enough?
+* Makes testing easier
+
+Sources:
+* [10/2020 Environments Based On Pull Requests (PRs): Using Argo CD To Apply GitOps Principles On Previews](https://www.youtube.com/watch?v=cpAaI8p4R60) by Viktor Farcic (before AppSets)
+* [11/2020 Creating Temporary Preview Environments Based On Pull Requests With Argo CD And Codefresh](https://codefresh.io/blog/creating-temporary-preview-environments-based-pull-requests-argo-cd-codefresh/) by Codefresh (before AppSets)
+* [05/2022 GitOps Con Europe - Implementing Preview Environments with GitOps in Kubernetes - François Le Pape, Remazing ](https://www.youtube.com/watch?v=QNAiIJRIVWA&t=202s) without AppSets
+* [10/2022 Preview Environments with ArgoCD - Brandon Phillips, Codefresh](https://www.youtube.com/watch?v=7ahiwZuiCBM) - [example repo](https://github.com/brandonphillips/preview-environments-example)
+
+
+
+### Implementing promotion <!-- .element style="margin-top: 0px"-->
+
+#### Configuration Management
+AKA Templating, Patching, Overlaying, Rendering  
+➡️ Tools for separating config of envs, keeping them DRY
 
 * Kustomize
     * plain <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> `kustomize.yaml`
@@ -718,8 +730,9 @@ Note:
 
 
 
-#### Branch and PR creation
-Who bumps versions in GitOps repo, creates branch and PR?
+#### Config update
+
+Who updates image version in GitOps repo, creates branch and PR?
 
 * **Manual**: Human pushes branch and create PR 🥵
 * **Image Updater**: Operator pushes branch, create PR manually
@@ -916,14 +929,11 @@ https://fluxcd.io/flux/guides/repository-structure/
         <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="103.25"
               y="96.5669" id="text892">push
         </text>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="106.75"
-              y="111.6997" id="text894">app
+        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="106.75"
+              y="111.6997" id="text894">code
         </text>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="98.25"
-              y="126.8325" id="text896">+infra
-        </text>
-        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="103.25"
-              y="141.9653" id="text898">code
+        <text fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="98.25"
+              y="126.8325" id="text896">+config
         </text>
         <path d="M225.07 195.1c19.25 38.07 46.45 91.85 65.06 128.65" fill="none" id="appRepo-backto-ciServer"
               style="stroke:#fff;stroke-width:1"/>
@@ -943,13 +953,9 @@ https://fluxcd.io/flux/guides/repository-structure/
                   lengthAdjust="spacing" textLength="31" x="326" y="260.0669" id="text908">push
             </text>
             <text fill="#FFF" font-family="sans-serif" font-size="13"
-                  lengthAdjust="spacing" textLength="30" x="326.5" y="275.1997" id="text910">infra
+                  lengthAdjust="spacing" textLength="43" x="326.5" y="275.1997" id="text910">config
             </text>
-            <text fill="#FFF" font-family="sans-serif" font-size="13"
-                  lengthAdjust="spacing" textLength="31" x="326" y="290.3325" id="text912">code
-            </text>
-            <text class="fragment" data-fragment-index="2" font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="326"
-            y="305.4653">+create PR
+            <text class="fragment" data-fragment-index="2" font-weight="bolder" fill="#FFF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="326" y="290.3325">+create PR
                 <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
                 dur="2.0s" repeatCount="indefinite"/>
             </text>
@@ -1097,31 +1103,6 @@ stroke:#181818 with #fff
 <div class="fragment" data-fragment-index="1">
     e.g.  <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
 </div>
-
-
-
-### 🔥 Preview environments
-<!-- .slide: id="preview-envs" -->
-AKA (ephemeral | dynamic | pull request | test | temporary) environments
-
-* An environment that is created with a pull request
-* and deleted on merge/close
-
-<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSet`, using the `PullRequest` generator
-
-<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> GitOpsSets❓️
-
-
-Note:
-* Means something different for everyone. 
-* Provides a lot of new options: Do we need multiple "persistent" stages (prod *plus* staging *plus* qa, etc?) Or is Prod and preview envs enough?
-* Makes testing easier
-
-Sources: 
-* [10/2020 Environments Based On Pull Requests (PRs): Using Argo CD To Apply GitOps Principles On Previews](https://www.youtube.com/watch?v=cpAaI8p4R60) by Viktor Farcic (before AppSets)
-* [11/2020 Creating Temporary Preview Environments Based On Pull Requests With Argo CD And Codefresh](https://codefresh.io/blog/creating-temporary-preview-environments-based-pull-requests-argo-cd-codefresh/) by Codefresh (before AppSets)
-* [05/2022 GitOps Con Europe - Implementing Preview Environments with GitOps in Kubernetes - François Le Pape, Remazing ](https://www.youtube.com/watch?v=QNAiIJRIVWA&t=202s) without AppSets
-* [10/2022 Preview Environments with ArgoCD - Brandon Phillips, Codefresh](https://www.youtube.com/watch?v=7ahiwZuiCBM) - [example repo](https://github.com/brandonphillips/preview-environments-example)
 
 
 

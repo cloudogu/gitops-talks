@@ -49,6 +49,8 @@ Note:
 Note:
 articles, videos, projects, eBook
 
+Cloudogu cloud: ️<i class="fas fa-cloud fa-sm" style="color: #23A3DD;"></i>
+
 
 
 # Image sources

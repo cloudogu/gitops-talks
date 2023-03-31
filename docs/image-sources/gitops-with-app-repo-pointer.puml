@@ -30,7 +30,7 @@ rectangle "<$k8s>\nK8s Cluster" as k8s {
 }
 rectangle "<$docker>\nOCI Registry" as registry
 
-user -> appRepo : push\napp\n+infra\ncode
+user -> appRepo : push\ncode\n+config
 appRepo -[hidden]> configRepo
 appRepo <- configRepo : point to 
 appRepo <-- ciServer : pull
