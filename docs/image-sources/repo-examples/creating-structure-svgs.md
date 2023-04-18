@@ -1,15 +1,18 @@
 ## Via SVG![flux-monorepo.svg](03-flux-mono%2Fflux-monorepo.svg)
 ```shell
+# TODO use * https://github.com/solidiquis/erdtree for nice visuals?
 FOLDER="xyz" # Will be the root folder in the tree
 # -A Prints Q instead of NBSP (which html2svg cant handle)
 # Note: tree -H would print as HTML. Clickable but not with bold folders
 # Some errors in tree, no transparency, size too big
 # tree v2.0.2
-# If you want to modify the order pipe tree to vipe (sudo apt-get install moreutils) 
+# If you want to modify the order, pipe tree to vipe (sudo apt-get install moreutils) 
 unalias tree
+# Images for bright mode:     sed 's|head>|head>\n<style>body {color: #777}</style>|' | \
+LINE_COLOR=White # black or #777 in bright mode
 tree -C -A --noreport --dirsfirst "$FOLDER" | \
     aha | \
-    sed 's|head>|head>\n<style>body {color: white}</style>|' | \
+    sed "s|head>|head>\n<style>body {color: $LINE_COLOR}</style>|" | \
     sed 's|color:blue|color:#23A3DD|' \
     > "$FOLDER.html"
 docker run --rm -v$(pwd):/in fathyb/html2svg:1.0.0 "file:///in/$FOLDER.html" |\
@@ -61,3 +64,20 @@ tree -C --noreport $FOLDER| \
 * Remove width and heigh in `<svg>`, depending on the size `class="floatRight" looks better
 * Add `class="fragment" fragment-index=n` without doing too much formatting (the tree structure easily breaks)
 * Is there an option to add classes to draw.io in a way that they are also rendered to the SVG?
+
+## Transform to light colors
+
+Tree structures: Recreate with `LINE_COLOR=White # black or #777 in bright mode` (see above)
+
+On Slides: `(<text fill="#000")(?=.|\n*?)` - replace only the ones on white background with `<text fill="#fff"` 
+
+Draw.io
+```bash
+for FILE in deployment-hub-and-spoke deployment-namespaced deployment-standalone; do
+  drawio -x -f xml -o $FILE.drawio $FILE.svg
+  sed -i 's/background="#[0-9a-fA-F]*"/background=""/' $FILE.drawio
+  sed -i 's/strokeColor=#FFFFFF;/strokeColor=#777;/' $FILE.drawio
+  drawio -x -f svg --embed-diagram -o $FILE.svg $FILE.drawio
+  rm $FILE.drawio
+done
+```

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="180" width="250" style="background-color: rgb(68, 68, 68);">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="180" width="250" >
 	<defs>
 		<g id="group_0">
 			<text fill="#23A3DD" font-size="13" font-weight="600" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="25">
-					Environment per app
+				Environment per app
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="40">
-					├── 
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="40">
+				├── 
 			</text>
 			<text fill="#23A3DD" font-size="13" font-weight="600" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="39.3125" y="40">
-					app1
+				app1
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="55">
-					│   ├── 
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="55">
+				│   ├── 
 			</text>
 			<text fill="#23A3DD" font-size="13" font-weight="600" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="70.625" y="55">
-					production
+				production
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="70">
-					│   │   └── deployment.yaml
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="70">
+				│   │   └── deployment.yaml
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="85">
-					│   └── 
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="85">
+				│   └── 
 			</text>
 			<text fill="#23A3DD" font-size="13" font-weight="600" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="70.625" y="85">
-					staging
+				staging
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="100">
-					│       └── deployment.yaml
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="100">
+				│       └── deployment.yaml
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="115">
-					└── 
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="115">
+				└── 
 			</text>
 			<text fill="#23A3DD" font-size="13" font-weight="600" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="39.3125" y="115">
-					app2
+				app2
 			</text>
-			<text fill="white" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="130">
-					    └── deployment.yaml
+			<text fill="#777" font-size="13" font-family="'DejaVu Sans Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'" x="8" y="130">
+				    └── deployment.yaml
 			</text>
 		</g>
 	</defs>

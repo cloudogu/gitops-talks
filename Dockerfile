@@ -2,7 +2,8 @@ FROM cloudogu/reveal.js:4.4.0-r4 as base
 
 FROM base as aggregator
 ENV TITLE='The perfect GitOps process: repos, folders, stages, patterns'
-ENV THEME_CSS='cloudogu-black.css'
+ENV THEME_CSS='cloudogu.css'
+#ENV THEME_CSS='cloudogu-black.css'
 ENV WIDTH='1280'
 USER root
 # Remove demo slides before templating
