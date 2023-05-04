@@ -1,8 +1,10 @@
-## Via SVG![flux-monorepo.svg](03-flux-mono%2Fflux-monorepo.svg)
+## Via SVG
+
+### Plain tree
+
 ```shell
-# TODO use * https://github.com/solidiquis/erdtree for nice visuals?
 FOLDER="xyz" # Will be the root folder in the tree
-# -A Prints Q instead of NBSP (which html2svg cant handle)
+# -A Prints @ instead of NBSP (which html2svg cant handle)
 # Note: tree -H would print as HTML. Clickable but not with bold folders
 # Some errors in tree, no transparency, size too big
 # tree v2.0.2
@@ -24,6 +26,45 @@ rm "$FOLDER.html"
 # Removes huge <rect fill="white" width="1919" height="1079"/>
 ```
 
+### Erdtree
+
+Alternative: [Erdtree](https://github.com/solidiquis/erdtree ) - provides more color and icons. Tested with version 2.0
+
+TODO render nerd fonts instead of replacing icons?
+```shell
+FOLDER="xyz"
+LINE_COLOR=White # black or #777 in bright mode
+# Replace all spaces with @ because html2svg seems not to be able these
+# Include Twemoji to render emojis as SVGs
+# Include Font-Awesome, so the FA glyphs are rendered as SVGs
+# Add Git icon for root of the tree
+erd --force-color --suppress-size --icons --dirs-first --inverted --sort=name --hidden "$FOLDER" | \
+    head -n -1 | \
+    aha | \
+    sed '/\.gitkeep/d' | \
+    sed 's|color:blue|color:#23A3DD|g' | \
+    sed "s|color:purple|color:$LINE_COLOR|g" |
+    sed -e '/<pre>/,/<\/pre>/ s/ /@/g' |\
+    sed 's||⚙<fe0f>|g' |\
+    sed 's||📁|g' |\
+    sed 's||<i class="fas fa-unlock"></i>|g' |\
+    sed 's||<i class="fas fa-file"></i>|g' |\
+    sed 's||{}|g' |\
+    sed 's|span@style|span style|g' | \
+    sed 's/<\/title>/<\/title><script src="https:\/\/unpkg.com\/twemoji@latest\/dist\/twemoji.min.js" crossorigin="anonymous"><\/script>/g' | \
+    sed 's/<body>/<style type="text\/css">img.emoji { height: 1em; width: 1em; margin: 0 .05em 0 .1em; vertical-align: -0.1em;}<\/style><body>/g' | \
+    sed 's/<\/body>/<script src="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/5.15.4\/js\/all.min.js"><\/script>\n<\/body><script>twemoji.parse(document.body, { folder: \x27svg\x27, ext: \x27.svg\x27 } )<\/script>/g' | \
+    sed 's/<head>/<head><link rel="stylesheet" href="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/5.15.4\/css\/all.min.css"\/>/g' | \
+    sed '/<pre>/,/<\/pre>/ s/@<span style="font-weight:bold;color:#23A3DD;">📁/@<span style="font-weight:bold;color:#23A3DD;"><i class="fab fa-git-alt fa-lg"><\/i>/g' \
+    > "$FOLDER.html"
+docker run --rm -v$(pwd):/in fathyb/html2svg:1.0.0 "file:///in/$FOLDER.html" |\
+  sed '/<rect fill="white".*/d' |\
+  sed 's/@/\xC2\xA0/g' \
+  > "$FOLDER.svg"
+rm "$FOLDER.html"
+```
+
+Then:
 * Set draw.io to appearance | dark (otherwise the white objects will be imported in red!? 🤷‍♂️)
 * import into draw.io (tested with 20.8.16)  
   Remove svg width, adapt height empirically to be minimal before importing to draw.io

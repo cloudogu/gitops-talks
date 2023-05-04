@@ -9,51 +9,19 @@
 
 Note:
 * Source:  https://unsplash.com/photos/ZI_GICTqBSY
-* Different scope in examples: Some include tool bootstrapping, others focus on folder structure
+* Different scopes in examples: Some include tool bootstrapping, others focus on folder structure
 
 
 
-<!-- .slide: id="ex1-1" data-visibility="hidden" -->
-## Example 1-1: Stage per app  <!-- .element style="margin-top: 0px"--> 
+## Example 2: GitOps playground <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="ex1"  -->
 
-<div class="container">
-    <div class="column" style="color: #5b5a5a; font-size:90%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
-        <ul style="margin-left: 90px; margin-top: 65px; margin-right: 60px">
-          <li><strong>Repo pattern: *</strong></li>
-          <li><strong>Operator:</strong>
-            <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> 
-            <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> 
-          </li>
-          <li><strong>Features</strong>:<br/> Individual stages per app</li> 
-          <li><strong>Source:</strong> Cloudogu internal,<br/> GitOps Playground in the future</li>
-        </ul>
-        <br/><br/><br/><br/>
-    </div>
-    <div class="column">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="120%" viewBox="-0.5 -0.5 301 201">
-            <g>
-                <image x="-0.5" y="-0.5" width="300" height="200"
-                       xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiPiYjeGE7CTxkZWZzPiYjeGE7CQk8ZyBpZD0iZ3JvdXBfMCI+JiN4YTsJCQk8dGV4dCB5PSIyNSIgeD0iOCIgZm9udC1mYW1pbHk9IidEZWphVnUgU2FucyBNb25vJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYsICdBcHBsZSBDb2xvciBFbW9qaScsICdTZWdvZSBVSSBFbW9qaScsICdTZWdvZSBVSSBTeW1ib2wnIiBmb250LXdlaWdodD0iNjAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMjNBM0REIj4mI3hhOwkJCQkJdGVhbS1naXRvcHMtcmVwbyYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iNDAiIHg9IjgiIGZvbnQtZmFtaWx5PSInRGVqYVZ1IFNhbnMgTW9ubycsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmLCAnQXBwbGUgQ29sb3IgRW1vamknLCAnU2Vnb2UgVUkgRW1vamknLCAnU2Vnb2UgVUkgU3ltYm9sJyIgZm9udC1zaXplPSIxMyIgZmlsbD0id2hpdGUiPiYjeGE7CQkJCQnilJzilIDilIDCoCYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iNDAiIHg9IjM5LjMxMjUiIGZvbnQtZmFtaWx5PSInRGVqYVZ1IFNhbnMgTW9ubycsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmLCAnQXBwbGUgQ29sb3IgRW1vamknLCAnU2Vnb2UgVUkgRW1vamknLCAnU2Vnb2UgVUkgU3ltYm9sJyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzIzQTNERCI+JiN4YTsJCQkJCWFwcDEmI3hhOwkJCTwvdGV4dD4mI3hhOwkJCTx0ZXh0IHk9IjU1IiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJ4pSCwqDCoMKg4pSc4pSA4pSAwqAmI3hhOwkJCTwvdGV4dD4mI3hhOwkJCTx0ZXh0IHk9IjU1IiB4PSI3MC42MjUiIGZvbnQtZmFtaWx5PSInRGVqYVZ1IFNhbnMgTW9ubycsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmLCAnQXBwbGUgQ29sb3IgRW1vamknLCAnU2Vnb2UgVUkgRW1vamknLCAnU2Vnb2UgVUkgU3ltYm9sJyIgZm9udC13ZWlnaHQ9IjYwMCIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzIzQTNERCI+JiN4YTsJCQkJCXByb2R1Y3Rpb24mI3hhOwkJCTwvdGV4dD4mI3hhOwkJCTx0ZXh0IHk9IjcwIiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJ4pSCwqDCoMKg4pSCwqDCoMKg4pSc4pSA4pSAwqBkZXBsb3ltZW50LnlhbWwmI3hhOwkJCTwvdGV4dD4mI3hhOwkJCTx0ZXh0IHk9Ijg1IiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJ4pSCwqDCoMKg4pSCwqDCoMKg4pSU4pSA4pSAwqBzZXJ2aWNlLnlhbWwmI3hhOwkJCTwvdGV4dD4mI3hhOwkJCTx0ZXh0IHk9IjEwMCIgeD0iOCIgZm9udC1mYW1pbHk9IidEZWphVnUgU2FucyBNb25vJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYsICdBcHBsZSBDb2xvciBFbW9qaScsICdTZWdvZSBVSSBFbW9qaScsICdTZWdvZSBVSSBTeW1ib2wnIiBmb250LXNpemU9IjEzIiBmaWxsPSJ3aGl0ZSI+JiN4YTsJCQkJCeKUgsKgwqDCoOKUlOKUgOKUgMKgJiN4YTsJCQk8L3RleHQ+JiN4YTsJCQk8dGV4dCB5PSIxMDAiIHg9IjcwLjYyNSIgZm9udC1mYW1pbHk9IidEZWphVnUgU2FucyBNb25vJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYsICdBcHBsZSBDb2xvciBFbW9qaScsICdTZWdvZSBVSSBFbW9qaScsICdTZWdvZSBVSSBTeW1ib2wnIiBmb250LXdlaWdodD0iNjAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMjNBM0REIj4mI3hhOwkJCQkJc3RhZ2luZyYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iMTE1IiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJ4pSCwqDCoMKgwqDCoMKgwqDilJzilIDilIDCoGRlcGxveW1lbnQueWFtbCYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iMTMwIiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJ4pSCwqDCoMKgwqDCoMKgwqDilJTilIDilIDCoHNlcnZpY2UueWFtbCYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iMTQ1IiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJ4pSU4pSA4pSAwqAmI3hhOwkJCTwvdGV4dD4mI3hhOwkJCTx0ZXh0IHk9IjE0NSIgeD0iMzkuMzEyNSIgZm9udC1mYW1pbHk9IidEZWphVnUgU2FucyBNb25vJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBSb2JvdG8sIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYsICdBcHBsZSBDb2xvciBFbW9qaScsICdTZWdvZSBVSSBFbW9qaScsICdTZWdvZSBVSSBTeW1ib2wnIiBmb250LXdlaWdodD0iNjAwIiBmb250LXNpemU9IjEzIiBmaWxsPSIjMjNBM0REIj4mI3hhOwkJCQkJYXBwMiYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iMTYwIiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJwqDCoMKgwqDilJzilIDilIDCoGRlcGxveW1lbnQueWFtbCYjeGE7CQkJPC90ZXh0PiYjeGE7CQkJPHRleHQgeT0iMTc1IiB4PSI4IiBmb250LWZhbWlseT0iJ0RlamFWdSBTYW5zIE1vbm8nLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiwgJ0FwcGxlIENvbG9yIEVtb2ppJywgJ1NlZ29lIFVJIEVtb2ppJywgJ1NlZ29lIFVJIFN5bWJvbCciIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IndoaXRlIj4mI3hhOwkJCQkJwqDCoMKgwqDilJTilIDilIDCoHNlcnZpY2UueWFtbCYjeGE7CQkJPC90ZXh0PiYjeGE7CQk8L2c+JiN4YTsJPC9kZWZzPiYjeGE7CTx1c2UgaHJlZj0iI2dyb3VwXzAiLz4mI3hhOzwvc3ZnPg=="
-                       preserveAspectRatio="none"/>
-            </g>
-        </svg>
-    </div>
-</div>
-
-Note:
-* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/1-1)
-* Could be used in monorepo, repo per app, repo per team
-* Should also work in Flux
-
-
-
-## Example 2: Ex 1 with operator <!-- .element style="margin-top: 0px"-->
-<!-- .slide: id="ex2"  -->
+TODO re-number examples, update SVGs for bright mode
 
 <div class="container">
-    <div class="column" style="color: #5b5a5a; font-size:85%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
+    <div class="column" style="color: #5b5a5a; font-size:70%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
         <ul style="margin-left: 90px; margin-top: 25px; margin-right: 60px">
-          <li><strong>Repo pattern:</strong><br/> Per team/monorepo<i class="fas fa-blender"></i>per app</li>
+          <li><strong>Repo pattern:</strong> Per team <i class="fas fa-blender"></i> per app</li>
           <li><strong>Operator pattern:</strong> Hub and Spoke</li>
           <li><strong>Operator:</strong>
             <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> 
@@ -61,8 +29,17 @@ Note:
           </li>
           <li><strong>Boostrapping:</strong> <code>Helm</code>, <code>kubectl</code></li>
           <li><strong>Linking:</strong> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code>Application</code></li>
-          <li><strong>Features:</strong> Env per app, operate ArgoCD with GitOps</li>
-          <li><strong>Source:</strong> Cloudogu internal,<br/> GitOps Playground in the future</li>
+          <li><strong>Features:</strong>
+            <ul>
+              <li>Env per app</li>
+              <li>Operate ArgoCD with GitOps</li>
+              <li>Automation via CI server</li>
+              <li>Mixed repo patterns</li>
+              <li>Cross-cutting resources</li>
+              <li>ArgoCD <strong>and</strong> Flux examples</li>
+            </ul>
+          </li>
+          <li><strong>Source:</strong> <span style="font-size:100%"><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-playground">cloudogu/gitops-playground</a></span></li>
         </ul>
         <br/><br/>
     </div>
@@ -230,15 +207,14 @@ Note:
 
 Note:
 * [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/2)
-* control-app: Bootstrap manually (kubectl or argocd cli)
+* Config update + promotion via CI server
 * app of apps pattern
 * stages could be resolved using appset
 * misc = cross cutting concerns, netpols, rbac, SAs, svcs, etc.
 * argocd-repo maintained by platform team
-* like in ex1, deployment YAMLs could be deployed manually or via CI
+* like in recap, deployment YAMLs could be deployed manually or via CI
 * team repo maintained by app team
 * Advanced:
-  * How to maintain cluster components (e.g. ingress controler) -> platform-team repo 🐕️-fooding
   * How to manage multiple clusters? Configure in `values.yaml`
 
 
@@ -427,7 +403,7 @@ Note:
           <li><strong>Linking:</strong> <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code>Kustomization</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
           <li><strong>Features:</strong>
             <ul>
-              <li>Cross-cutting infra</li>
+              <li>Cross-cutting resources</li>
               <li>Operate Flux with GitOps</li>
             </ul>
         <li><strong>Source:</strong><br/><span style="font-size:80%"><i class='fab fa-github'></i> <a href="https://github.com/fluxcd/flux2-kustomize-helm-example/issues/16">fluxcd/flux2-kustomize-helm-example#16<br/></a>
@@ -500,7 +476,7 @@ Note:
 * * [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/4)
 * Officially only one app, discussion about multiple apps in [issue](https://github.com/fluxcd/flux2-kustomize-helm-example/issues/16)
 * `clusters` - One operator per cluster
-* `infrstructure` - cross-cutting infra
+* `infrstructure` - cross-cutting resources
   * controllers: e.g. ingress controller, cert-manager,
   * `config`: such netpols, rbac, namespaces
 * Boostrapping via CLI: Pushes manifests to repo, applies Kustomization to cluster imperatively (only once) -> GitOps
@@ -707,7 +683,7 @@ Note:
           <li><strong>Linking:</strong> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code>Application</code>, <code>ApplicationSet</code> / <br/><img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" />&nbsp;<code>Kustomization</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
           <li><strong>Features:</strong>
             <ul>
-                <li>Cross-cutting infra and app(s)</li>
+                <li>Cross-cutting resources</li>
                 <li>ArgoCD <strong>and</strong> Flux examples</li>
             </ul>
             </li>
