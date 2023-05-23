@@ -19,7 +19,7 @@ spec:
   project: default
   source:
     path: bootstrap/argo-cd
-    repoURL: https://repo
+    repoURL: https://github.com/schnatterer/argocd-autopilot-example.git
   syncPolicy:
     automated:
       allowEmpty: true

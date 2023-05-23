@@ -6,7 +6,7 @@ configMapGenerator:
     repository.credentials=- passwordSecret:
         key: git_token
         name: autopilot-secret
-      url: https://repo/
+      url: https://github.com/
       usernameSecret:
         key: git_username
         name: autopilot-secret

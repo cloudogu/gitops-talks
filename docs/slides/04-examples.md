@@ -22,7 +22,7 @@ TODO re-number examples, update SVGs for bright mode
     <div class="column" style="color: #5b5a5a; font-size:70%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
         <ul style="margin-left: 90px; margin-top: 25px; margin-right: 60px">
           <li><strong>Repo pattern:</strong> Per team <i class="fas fa-blender"></i> per app</li>
-          <li><strong>Operator pattern:</strong> Hub and Spoke</li>
+          <li><strong>Operator pattern:</strong> Standalone (Hub and Spoke)</li>
           <li><strong>Operator:</strong>
             <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> 
             (<img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>) 
@@ -35,7 +35,7 @@ TODO re-number examples, update SVGs for bright mode
               <li>Operate ArgoCD with GitOps</li>
               <li>Automation via CI server</li>
               <li>Mixed repo patterns</li>
-              <li>Cross-cutting resources</li>
+              <li>Solution for cluster resources</li>
               <li>ArgoCD <strong>and</strong> Flux examples</li>
             </ul>
           </li>
@@ -235,6 +235,7 @@ Note:
           <li><strong>Features:</strong> 
             <ul>
               <li>Operate ArgoCD with GitOps</li>
+              <li>Solution for cluster resources</li>
               <li>Opinionated structure and YAML creation via CLI</li>
             </ul>
           <li><strong>Source:</strong> <span style="font-size:95%"><i class='fab fa-github'></i> <a href="https://github.com/argoproj-labs/argocd-autopilot/releases/tag/v0.4.10">argoproj-labs/argocd-autopilot</a></span></li>

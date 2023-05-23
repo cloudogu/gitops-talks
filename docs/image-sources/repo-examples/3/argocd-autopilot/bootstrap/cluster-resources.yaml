@@ -11,7 +11,7 @@ spec:
   - git:
       files:
       - path: bootstrap/cluster-resources/*.json
-      repoURL: https://repo
+      repoURL: https://github.com/schnatterer/argocd-autopilot-example.git
       requeueAfterSeconds: 20
       revision: ""
       template:
@@ -41,7 +41,7 @@ spec:
       project: default
       source:
         path: bootstrap/cluster-resources/{{name}}
-        repoURL:  https://repo
+        repoURL: https://github.com/schnatterer/argocd-autopilot-example.git
       syncPolicy:
         automated:
           allowEmpty: true

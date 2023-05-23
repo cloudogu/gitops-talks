@@ -6,13 +6,13 @@ metadata:
     argocd.argoproj.io/sync-options: PruneLast=true
     argocd.argoproj.io/sync-wave: "-2"
   creationTimestamp: null
-  name: proj1
+  name: production
   namespace: argocd
 spec:
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
-  description: proj1 project
+  description: production project
   destinations:
   - namespace: '*'
     server: '*'
@@ -30,14 +30,14 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
   creationTimestamp: null
-  name: proj1
+  name: production
   namespace: argocd
 spec:
   generators:
   - git:
       files:
-      - path: apps/**/proj1/config.json
-      repoURL: https://repo.git
+      - path: apps/**/production/config.json
+      repoURL: https://github.com/schnatterer/argocd-autopilot-example.git
       requeueAfterSeconds: 20
       revision: ""
       template:
@@ -49,8 +49,8 @@ spec:
             repoURL: ""
   - git:
       files:
-      - path: apps/**/proj1/config.json
-      repoURL: https://repo.git
+      - path: apps/**/production/config_dir.json
+      repoURL: https://github.com/schnatterer/argocd-autopilot-example.git
       requeueAfterSeconds: 20
       revision: ""
       template:
@@ -71,7 +71,7 @@ spec:
       labels:
         app.kubernetes.io/managed-by: argocd-autopilot
         app.kubernetes.io/name: '{{ appName }}'
-      name: proj1-{{ userGivenName }}
+      name: production-{{ userGivenName }}
       namespace: argocd
     spec:
       destination:
@@ -82,7 +82,7 @@ spec:
         jsonPointers:
         - /status
         kind: Application
-      project: proj1
+      project: production
       source:
         path: '{{ srcPath }}'
         repoURL: '{{ srcRepoURL }}'

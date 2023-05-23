@@ -30,7 +30,6 @@ rm "$FOLDER.html"
 
 Alternative: [Erdtree](https://github.com/solidiquis/erdtree ) - provides more color and icons. Tested with version 2.0
 
-TODO render nerd fonts instead of replacing icons?
 ```shell
 FOLDER="xyz"
 LINE_COLOR=White # black or #777 in bright mode
@@ -45,16 +44,17 @@ erd --force-color --suppress-size --icons --dirs-first --inverted --sort=name --
     sed 's|color:blue|color:#23A3DD|g' | \
     sed "s|color:purple|color:$LINE_COLOR|g" |
     sed -e '/<pre>/,/<\/pre>/ s/ /@/g' |\
-    sed 's||⚙<fe0f>|g' |\
+    sed 's||⚙|g' |\
     sed 's||📁|g' |\
     sed 's||<i class="fas fa-unlock"></i>|g' |\
     sed 's||<i class="fas fa-file"></i>|g' |\
     sed 's||{}|g' |\
     sed 's|span@style|span style|g' | \
-    sed 's/<\/title>/<\/title><script src="https:\/\/unpkg.com\/twemoji@latest\/dist\/twemoji.min.js" crossorigin="anonymous"><\/script>/g' | \
-    sed 's/<body>/<style type="text\/css">img.emoji { height: 1em; width: 1em; margin: 0 .05em 0 .1em; vertical-align: -0.1em;}<\/style><body>/g' | \
-    sed 's/<\/body>/<script src="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/5.15.4\/js\/all.min.js"><\/script>\n<\/body><script>twemoji.parse(document.body, { folder: \x27svg\x27, ext: \x27.svg\x27 } )<\/script>/g' | \
-    sed 's/<head>/<head><link rel="stylesheet" href="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/5.15.4\/css\/all.min.css"\/>/g' | \
+    sed -e "s/<head>/<head><style type=\"text\/css\">body { color: $LINE_COLOR }<\/style>\n/g" | \
+    sed 's/<\/body>/<script src="https:\/\/unpkg.com\/twemoji@latest\/dist\/twemoji.min.js" crossorigin="anonymous"><\/script>\n<script>twemoji.parse(document.body, { folder: \x27svg\x27, ext: \x27.svg\x27 } )<\/script>\n<\/body>/g' | \
+    sed 's/<head>/<head><style type="text\/css">img.emoji { height: 1em; width: 1em; margin: 0 .05em 0 .1em; vertical-align: -0.1em;}<\/style>\n/g' | \
+    sed 's/<\/body>/<script src="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/5.15.4\/js\/all.min.js"><\/script>\n<\/body>/g' | \
+    sed 's/<head>/<head><link rel="stylesheet" href="https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/5.15.4\/css\/all.min.css"\/>\n/g' | \
     sed '/<pre>/,/<\/pre>/ s/@<span style="font-weight:bold;color:#23A3DD;">📁/@<span style="font-weight:bold;color:#23A3DD;"><i class="fab fa-git-alt fa-lg"><\/i>/g' \
     > "$FOLDER.html"
 docker run --rm -v$(pwd):/in fathyb/html2svg:1.0.0 "file:///in/$FOLDER.html" |\
