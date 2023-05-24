@@ -404,7 +404,7 @@ Note:
           <li><strong>Linking:</strong> <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code>Kustomization</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
           <li><strong>Features:</strong>
             <ul>
-              <li>Cross-cutting resources</li>
+              <li>Solution for cluster resources</li>
               <li>Operate Flux with GitOps</li>
             </ul>
         <li><strong>Source:</strong><br/><span style="font-size:80%"><i class='fab fa-github'></i> <a href="https://github.com/fluxcd/flux2-kustomize-helm-example/issues/16">fluxcd/flux2-kustomize-helm-example#16<br/></a>
