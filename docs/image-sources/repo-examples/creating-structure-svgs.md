@@ -30,6 +30,9 @@ rm "$FOLDER.html"
 
 Alternative: [Erdtree](https://github.com/solidiquis/erdtree ) - provides more color and icons. Tested with version 2.0
 
+TODO adopt to ver 3.0
+https://github.com/solidiquis/erdtree/pull/147/files
+
 ```shell
 FOLDER="xyz"
 LINE_COLOR=White # black or #777 in bright mode
@@ -48,6 +51,8 @@ erd --force-color --suppress-size --icons --dirs-first --inverted --sort=name --
     sed 's||📁|g' |\
     sed 's||<i class="fas fa-unlock"></i>|g' |\
     sed 's||<i class="fas fa-file"></i>|g' |\
+    sed 's|謹|<i class="fas fa-code"></i>|g' |\
+    sed 's||🐋|g' |\
     sed 's||{}|g' |\
     sed 's|span@style|span style|g' | \
     sed -e "s/<head>/<head><style type=\"text\/css\">body { color: $LINE_COLOR }<\/style>\n/g" | \
