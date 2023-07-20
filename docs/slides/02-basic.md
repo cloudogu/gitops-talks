@@ -114,23 +114,23 @@ Note:
 
 ## GitOps Operator deployment patterns
 <!-- .slide: id="deployment-patterns" -->
-How many GitOps operators to deploy, relating to Kubernetes clusters?
+How many GitOps operators per cluster?
 
 <div class="floatRight" style="margin-right: 50px">
     <div>
-        <img src="images/deployment-standalone.svg"/>
+        <img src="images/deployment-instance-per-cluster.svg"/>
     </div>
     <div>
         <img src="images/deployment-hub-and-spoke.svg"/>
     </div>
     <div>
-        <img src="images/deployment-namespaced.svg"/>
+        <img src="images/deployment-instance-per-namespace.svg"/>
     </div>
 </div>
 
-* *Standalone*: 1 Operator : 1 Cluster
-* *Hub and Spoke*: 1 Operator : n Clusters
-* Namespaced: n Operators : 1 Cluster
+* Instance per Cluster: 1 Operator : 1 Cluster
+* Hub and Spoke: 1 Operator : n Clusters
+* Instance per Namespace: n Operators : 1 Cluster
 
 Note:
 * Standalone: Obvious choice for simple set ups, isolated, easy to set up
