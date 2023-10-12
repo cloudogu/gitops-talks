@@ -16,12 +16,13 @@
 !includeurl CLOUDOGUURL/dogus/scm.puml
 
 !define CLOUDOGU_BLUE #23a3dd
-
-!define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND #777
 
 skinparam backgroundcolor TRANSPARENT
-skinparam actorStyle awesome
+skinparam DefaultFontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+skinparam sequenceArrowColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 
+skinparam actorStyle awesome
 
 node "Your Host" as host <<$computer>> #ffffff {
 
@@ -49,7 +50,7 @@ node "Your Host" as host <<$computer>> #ffffff {
 }
 
 docker -> k8s : run
-dev --> appRepo #line:black;text:black : 1. push  
+dev --> appRepo  : 1. push  
 dev --> staging : 7. review  
 dev --> configRepo : 8. accept PR  
 appRepo -[hidden]> configRepo
@@ -63,18 +64,9 @@ registry -[hidden]> gitops
 
 gitops -> staging : deploy
 
-skinparam arrow {
-  Color BLACK
-}
 
 skinparam node {
   BorderColor CLOUDOGU_BLUE
-}
-
-skinparam actor {
-  BackgroundColor #23a3dd
-  BorderColor #16688d
-  FontColor #000000
 }
 
 skinparam actor {
@@ -93,16 +85,5 @@ skinparam collections {
     BorderColor CLOUDOGU_BLUE
     FontColor CLOUDOGU_BLUE
 }
-
-skinparam interface {
-    BackgroundColor WHITE
-    BorderColor #16688d
-}
-
-skinparam note {
-    BackgroundColor WHITE
-    BorderColor #16688d
-}
-
 
 @enduml

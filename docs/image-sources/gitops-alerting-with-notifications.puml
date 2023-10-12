@@ -5,11 +5,11 @@
 !define CLOUDOGU_GREEN #b8cd08
 !define CLOUDOGU_TURQOUISE #67c1be
 
-!define COLOR_ABOVE_TRANSPARENT_BACKGROUND BLACK
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND #777
 
-skinparam backgroundcolor WHITE
-'skinparam backgroundcolor TRANSPARENT
-
+skinparam backgroundcolor TRANSPARENT
+skinparam DefaultFontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+skinparam sequenceArrowColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 
 rectangle "ArgoCD/Flux" as argocd
 
@@ -25,46 +25,12 @@ controller --> msg : send alert
 
 
 
-skinparam arrow {
-    Color COLOR_ABOVE_TRANSPARENT_BACKGROUND
-    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
-}
-
-skinparam actor {
-    BackgroundColor CLOUDOGU_BLUE
-    BorderColor #16688d
-    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
-}
-
 skinparam rectangle {
     BackgroundColor CLOUDOGU_BLUE
     BorderColor #16688d
     FontColor WHITE
+    backgroundColor<<node>> WHITE
+    FontColor<<node>> CLOUDOGU_BLUE
 }
-
-skinparam rectangle<<Git>> {
-    BackgroundColor CLOUDOGU_GREEN
-    BorderColor CLOUDOGU_GRAY
-    FontColor WHITE
-    stereotypeFontColor Transparent
-}
-
-skinparam interface {
-    BackgroundColor WHITE
-    BorderColor #16688d
-}
-
-skinparam note {
-    BackgroundColor TRANSPARENT
-    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
-    BorderColor #16688d
-    BorderThickness 2
-}
-
-skinparam legend {
-    BackgroundColor WHITE
-    BorderColor #16688d
-}
-
 @enduml
 

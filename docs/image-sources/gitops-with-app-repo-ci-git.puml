@@ -13,10 +13,13 @@
 !includeurl CLOUDOGUURL/tools/k8s.puml
 
 !define CLOUDOGU_BLUE #23a3dd
-!define COLOR_ABOVE_TRANSPARENT_BACKGROUND WHITE
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND #777
+
+skinparam backgroundcolor TRANSPARENT
+skinparam DefaultFontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+skinparam sequenceArrowColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 
 skinparam actorStyle awesome
-skinparam backgroundcolor TRANSPARENT
 
 together {
     actor Developer as user
@@ -39,15 +42,9 @@ k8s --> registry : pull image
 configRepo <- k8s : pull\nconfig
 k8s -> k8s : deploy
 
-skinparam arrow {
-    Color COLOR_ABOVE_TRANSPARENT_BACKGROUND
-    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
-}
-
 skinparam actor {
     BackgroundColor CLOUDOGU_BLUE
     BorderColor #16688d
-    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 }
 
 skinparam rectangle {
@@ -56,16 +53,6 @@ skinparam rectangle {
     FontColor WHITE
     backgroundColor<<node>> WHITE
     FontColor<<node>> CLOUDOGU_BLUE
-}
-
-skinparam interface {
-    BackgroundColor WHITE
-    BorderColor #16688d
-}
-
-skinparam note {
-    BackgroundColor WHITE
-    BorderColor #16688d
 }
 
 @enduml

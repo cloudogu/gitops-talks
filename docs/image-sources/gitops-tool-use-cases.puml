@@ -17,9 +17,12 @@
 !includeurl ICONURL/font-awesome-5/tools.puml
 
 !define CLOUDOGU_BLUE #23a3dd
-!define COLOR_ABOVE_TRANSPARENT_BACKGROUND BLACK
+!define COLOR_ABOVE_TRANSPARENT_BACKGROUND #777
 
 skinparam backgroundcolor TRANSPARENT
+skinparam DefaultFontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+skinparam sequenceArrowColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
+
 
 together {
     rectangle "<$git>\n K8s Resources /\napplications" as k8sAppOpsRepo
@@ -69,17 +72,6 @@ skinparam rectangle<<NoBorder>> {
     borderColor Transparent
     backgroundColor Transparent
     stereotypeFontColor Transparent
-}
-
-skinparam arrow {
-    Color CLOUDOGU_BLUE
-    FontColor CLOUDOGU_BLUE
-}
-
-skinparam actor {
-    BackgroundColor CLOUDOGU_BLUE
-    BorderColor #16688d
-    FontColor COLOR_ABOVE_TRANSPARENT_BACKGROUND
 }
 
 skinparam rectangle {
