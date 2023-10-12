@@ -23,7 +23,7 @@ skinparam actorStyle awesome
 together {
     actor Developer as user
     rectangle "<$git>\nApp Repo" as appRepo
-    rectangle "<$git>\nGitOps Repo" as configRepo
+    rectangle "<$git>\nConfig Repo" as configRepo
     rectangle "<$jenkins>\nCI Server" as ciServer
 }
 

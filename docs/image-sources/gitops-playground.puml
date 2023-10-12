@@ -36,7 +36,7 @@ node "Your Host" as host <<$computer>> #ffffff {
             together {
                 rectangle "<$scm>\nSCM-Manager" as scmm {
                     collections "<$git>\nApp Repos" as appRepo
-                    collections "<$git>\nGitOps Repos" as configRepo
+                    collections "<$git>\nConfig Repos" as configRepo
                 }
                 collections "<$sync>\nArgoCD" as gitops
                 collections "<$deploy>\nStaging (6.)\n+ Production (7.)" as staging
