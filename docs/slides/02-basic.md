@@ -118,13 +118,13 @@ How many GitOps operators per cluster?
 
 <div class="floatRight" style="margin-right: 50px">
     <div>
-        <img src="images/deployment-instance-per-cluster.svg"/>
+        <img src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/deployment-instance-per-cluster.svg"/>
     </div>
     <div>
-        <img src="images/deployment-hub-and-spoke.svg"/>
+        <img src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/deployment-hub-and-spoke.svg"/>
     </div>
     <div>
-        <img src="images/deployment-instance-per-namespace.svg"/>
+        <img src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/deployment-instance-per-namespace.svg"/>
     </div>
 </div>
 
@@ -181,11 +181,11 @@ Note:
 <!-- .slide: style="font-size: 95%"  -->
 <!-- .slide: id="repo-types" -->
 
-|                                                       | GitOps repo                                                                                    | App repo                                                                                        |
-|-------------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Content                                               | IaC/Manifests/YAMLs                                                                            | Application source code                                                                         |
-| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>Environment repo</li><li>Payload repo</li></ul> | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
-| Example  <!-- .element style="vertical-align: top"--> | <img data-src="images/gitops-repo-example.svg" width=100%/>                                    | <img data-src="images/app-repo-example.svg" width=100%/>                                        |
+|                                                       | GitOps repo                                                                                                                 | App repo                                                                                        |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Content                                               | IaC/Manifests/YAMLs                                                                                                         | Application source code                                                                         |
+| Synonyms <!-- .element style="vertical-align: top"--> | <ul><li>Config repo</li><li>Infra repo</li><li>Environment repo</li><li>Payload repo</li></ul>                              | <!-- .element style="vertical-align: top"-->  <ul><li>Source code repo</li><li>Source repo</li> |
+| Example  <!-- .element style="vertical-align: top"--> | <img data-src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/config-repo-example.svg" width=100%/> | <img data-src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/app-repo-example.svg" width=100%/>                                        |
 
 Note:
 * GitOps repos (config repos) - terms might mean something different
@@ -713,11 +713,11 @@ Note:
 
   <div class="container">
     <div class="column">
-        <img data-src="images/global-environments.svg" width="90%"/>
+        <img data-src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/global-environments.svg" width="90%"/>
         <p></p>
     </div>
     <div class="column">
-        <img data-src="images/environment-per-app.svg" width="90%"/>
+        <img data-src="https://raw.githubusercontent.com/cloudogu/gitops-patterns/0224a4d/src/svg/environment-per-app.svg" width="90%"/>
         e.g. <a href="#preview-envs">Preview Envs</a>
     </div>
   </div>
