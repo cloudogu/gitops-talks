@@ -511,7 +511,7 @@ Johannes Schnatterer, Cloudogu GmbH
 
 
 <div class="title-version">
-Version: 202311081800-ad019bf
+Version: 202311091811-b0d424a
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">

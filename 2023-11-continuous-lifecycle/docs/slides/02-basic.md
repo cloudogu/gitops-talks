@@ -747,14 +747,14 @@ Note:
         </g><!--link user to appRepo-->
         <g id="link_user_appRepo">
             <path d="M61.84,285.3135 C83.12,285.3135 106.41,285.3135 130.38,285.3135 " fill="none" id="user-to-appRepo"
-                  style="stroke:#777777;stroke-width:1.0;"/>
-            <polygon fill="#777777"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
                      points="136.38,285.3135,127.38,281.3135,131.38,285.3135,127.38,289.3135,136.38,285.3135"
-                     style="stroke:#777777;stroke-width:1.0;"/>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="84"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="84"
                   y="242.2271">push
             </text>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="84.5"
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="84.5"
                   y="259.9542">code
             </text>
     <text class="fragment" data-fragment-index="1" font-weight="bolder" fill="#FF0000"  font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="80"
@@ -795,24 +795,24 @@ Note:
         </g><!--reverse link appRepo to ciServer-->
         <g id="link_appRepo_ciServer">
             <path d="M201.9442,334.3785 C219.2442,370.6285 241.38,416.9935 258.67,453.2235 " fill="none"
-                  id="appRepo-backto-ciServer" style="stroke:#777777;stroke-width:1.0;"/>
-            <polygon fill="#777777"
+                  id="appRepo-backto-ciServer" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
                      points="199.36,328.9635,199.6264,338.8088,201.5135,333.476,206.8463,335.3631,199.36,328.9635"
-                     style="stroke:#777777;stroke-width:1.0;"/>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="245"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="245"
                   y="410.2271">pull
             </text>
         </g><!--link ciServer to registry-->
         <g id="link_ciServer_registry">
             <path d="M319.68,496.8135 C350.88,496.8135 388.17,496.8135 421.91,496.8135 " fill="none"
-                  id="ciServer-to-registry" style="stroke:#777777;stroke-width:1.0;"/>
-            <polygon fill="#777777"
+                  id="ciServer-to-registry" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
                      points="427.91,496.8135,418.91,492.8135,422.91,496.8135,418.91,500.8135,427.91,496.8135"
-                     style="stroke:#777777;stroke-width:1.0;"/>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30"
                   x="358.75" y="471.7271">push
             </text>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
                   x="355.25" y="489.4542">image
             </text>
         </g><!--link k8s to appRepo-->
@@ -835,37 +835,37 @@ Note:
         </g><!--link k8s to registry-->
         <g id="link_k8s_registry">
             <path d="M483.1775,362.7015 C483.1709,362.9761 483.1644,363.2509 483.1578,363.526 C483.1447,364.0762 483.1315,364.6275 483.1183,365.1798 C483.092,366.2844 483.0655,367.3931 483.0389,368.5053 C482.9858,370.7298 482.9324,372.9686 482.8787,375.2174 C482.664,384.2123 482.4455,393.3669 482.2297,402.4075 C481.7981,420.4885 481.5207,432.1153 481.1632,447.0953 "
-                  fill="none" id="k8s-to-registry" style="stroke:#777777;stroke-width:1.0;"/>
-            <polygon fill="#777777"
+                  fill="none" id="k8s-to-registry" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
                      points="481.02,453.0935,485.2336,444.1915,481.1393,448.095,477.2359,444.0007,481.02,453.0935"
-                     style="stroke:#777777;stroke-width:1.0;"/>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
                   x="490.5" y="401.2271">pull
             </text>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="483"
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="483"
                   y="418.9542">image
             </text>
         </g><!--link k8s to configRepo-->
         <g id="link_k8s_configRepo">
             <path d="M476.8654,285.3135 C476.7964,285.3135 476.7269,285.3135 476.6571,285.3135 C476.5175,285.3135 476.3764,285.3135 476.2338,285.3135 C475.9485,285.3135 475.6573,285.3135 475.3602,285.3135 C470.6066,285.3135 464.3556,285.3135 457.2062,285.3135 C442.9075,285.3135 431.015,285.3135 414.32,285.3135 "
-                  fill="none" id="k8s-to-configRepo" style="stroke:#777777;stroke-width:1.0;"/>
-            <polygon fill="#777777"
+                  fill="none" id="k8s-to-configRepo" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
                      points="408.32,285.3135,417.32,289.3135,413.32,285.3135,417.32,281.3135,408.32,285.3135"
-                     style="stroke:#777777;stroke-width:1.0;"/>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
                   x="435.32" y="260.2271">pull
             </text>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
                   x="429.32" y="277.9542">config
             </text>
         </g><!--link k8s to k8s-->
         <g id="link_k8s_k8s">
             <path d="M681,284.9735 C692.83,255.8135 716.22,255.9335 716.22,285.3135 C716.22,314.6935 695.0856,320.3734 683.2556,291.2134 "
-                  fill="none" id="k8s-to-k8s" style="stroke:#777777;stroke-width:1.0;"/>
-            <polygon fill="#777777"
+                  fill="none" id="k8s-to-k8s" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
                      points="681,285.6535,680.6768,295.4971,682.8797,290.2868,688.09,292.4896,681,285.6535"
-                     style="stroke:#777777;stroke-width:1.0;"/>
-            <text fill="#777777" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41"
                   x="722.22" y="290.7271">deploy
             </text>
         </g><!--SRC=[fLHRRzem57xtht3BtgQGhbLRX10IqAwhYiX4o_PG9cJiGyXmxCmNAZJrly-va4jNDAJ1G-9plk-SxroSaqXGRXbOnV7Qc4HtVL-HbtOOcRLTMWsAIc50c3QLiHz7T1q1znDEXB4nzpPs2Kg00UtfH4NkwST46r2-0Ysjek1lEgNFiuAJ9N1WtlbbGaqxSZ4GEc6mYWJW-r4mcKt7H-WmDY5CNLGw8kVrLWvHojYUjy_QP-YaLbyHttSHOYdQIPhyFJ-3RHfF-qpI3QWZW4xbOLGcYxouViJWNVe_GMmYeO_6wvsWERXir6WSp6w2kzbnpQ9SMYP3MtLhRtapiuQQMWxVICbrEiW3EXR3yUmMjyulo0LZbJSO1zF5O1XykrqyJGUJnw-3wUtaQJ4SZ1xkfi5iSeDRrzVN26dNZuGe4kCbePjGIIiObLmgNAFLK3Um8fQRpwx6KGRxTwOQMyCl2uB2G2dvSZI_5e1G8zMZsN70nPGGCZ84imQ5VoFiVXa4dxe_qJYTHsPLG0qHeUETzZwuMVNdOf0aU0g9p80aITBtGzYH5AiehE0qEx_FA9OiPTtZHr1RK3adoW_e5Q46mGtNWHyw6e-uJPSXWpjhKL43dAwaGzz59aZqNCW45745PvJzmMLeSFAxv5Y1KpI5CD96xJA6AWu8fPt2Nd_V2Dp5YTNhkQ2ImLpqifteAc3zZtHDb2dmpord-j6lzSCHQ-0q1bu3Z_6MS0iQEuKOn1RjqtZFwuWn48qOfRVdUMNRCaMSe_BinExbbsgZc8I0qjQLqgg26heuRrIL5vKHtyPDaRMuRuhD_OLjZqWVNSmWuN9NAoQNTBXPCX866_dNmXTxC2nlQ75rwf-0724L0vLxMv-khZeTbcvR5QvQY_y9cTghBy3tB_TFENRPZDRh2RSy_NuDKR9ANpFZA_e3]-->
@@ -1677,29 +1677,29 @@ Exclusion principle -> Why not branches, repos but folders
 |-----------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | envs            | permanent branches                                                                                                     | trunk-based folders                                                                                              |
 | mapping example | <i class="fas fa-code-branch"></i> `develop` ➡️ staging<br/> <i class="fas fa-code-branch"></i> `master` ➡️ production | <i class="fas fa-folder"></i> `staging` ➡️ Staging<br/> <i class="fas fa-folder"></i> `production` ➡️ Production |
-| promotion       | merge                                                                                                                  | copy (+merge)                                                                                                    |
+| promotion       | merge                                                                                                                  | copy<br/> (+merge short-lived branches)                                                                          |
 
 
 
 <div class="container">
   <div class="column">
       <p style="font-weight: bold">Branch per env</p>
-      <img data-src="images/branch-per-env.drawio.svg" width=60%/>
+      <img data-src="images/branch-per-env.drawio.svg" width=55%/>
       <p></p>
   </div>
   <div class="column">
       <p style="font-weight: bold">Folder per env</p>
-    <img data-src="images/folder-per-env.drawio.svg" width=60%/>
+    <img data-src="images/folder-per-env.drawio.svg" width=55%/>
   </div>
 </div>
 
 
 
-|                                                                                                                                                                                                                                                                                               | Branch per env                                                                                                                                                                                                                                      | Folder per env                                                                                                                                                                                                                                                                                                                
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| pros <!-- .element style="vertical-align: top"-->                                                                                                                                                                                                                                             | <!-- .element style="vertical-align: top"--> <ul><li>Forces PRs</li><li>Feels natural for devs</li></ul>                                                                                                      | <ul><li>Avoids conflicts/drift</li><li>Copy vs cherry pick</li><li>Scales with envs</li> |
-| <!-- .element style="vertical-align: top"--> CM tool support (DRY) <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li></ul> |  <!-- .element style="vertical-align: top"--><span style="font-size:300%">❓️</span> | <img src="images/kustomize-example.svg"/> |
-| references                                                                                                                                                                                                                                                                                    | [1](https://medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351">medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351) | [1](https://fluxcd.io/flux/guides/repository-structure/), [2](https://www.thoughtworks.com/radar/techniques/gitops), [3](https://codefresh.io/blog/stop-using-branches-deploying-different-gitops-environments/), [4](https://developers.redhat.com/articles/2022/07/20/git-workflows-best-practices-gitops-deployments), ... |
+|                                                                                                                                                                                                                                                                                               | Branch per env                                                                                                                                                                                                                                      | Folder per env                                                                                                                                                                                                                                                                                                                                             
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pros <!-- .element style="vertical-align: top"-->                                                                                                                                                                                                                                             | <!-- .element style="vertical-align: top"--> <ul><li>Forces PRs</li><li>Feels natural for devs</li></ul>                                                                                                                                            | <ul><li>Avoids conflicts/drift</li><li>Copy vs cherry pick</li><li>Scales with envs</li>                                                                                                                                                                                                                                                                   |
+| <!-- .element style="vertical-align: top"--> CM tool support (DRY) <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li></ul> | <!-- .element style="vertical-align: top"--><span style="font-size:250%">❓️</span>                                                                                                                                                                  | <span style="vertical-align: top;font-size:250%">✅</span><img src="images/kustomize-example.svg" width=60%/>                                                                                                                                                                                                                                               |
+| references                                                                                                                                                                                                                                                                                    | [1](https://medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351">medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351) | [1](https://fluxcd.io/flux/guides/repository-structure/), [2](https://www.thoughtworks.com/radar/techniques/gitops), [3](https://codefresh.io/blog/stop-using-branches-deploying-different-gitops-environments/), [4](https://developers.redhat.com/articles/2022/07/20/git-workflows-best-practices-gitops-deployments), ...<br/> Branches = `anti-pattern` |
 
 
 
@@ -1730,9 +1730,19 @@ AKA (ephemeral | dynamic | pull request | test | temporary) environments
 * An environment that is created with a pull request
 * and deleted on merge/close
 
-<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSet`, using the `PullRequest` generator
 
-<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> GitOpsSets❓️
+<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> [`ApplicationSet`](https://argo-cd.readthedocs.io/en/release-2.8/operator-manual/applicationset/), using the `PullRequest` generator
+
+<img data-src="images/weave-logo.png" title="Weave GitOps" style="height: 1.1em; vertical-align: middle;" /> [`GitOpsSets`](https://github.com/weaveworks/weave-gitops/blob/main/website/versioned_docs/version-0.29.0/gitopssets/gitopssets-intro.mdx)  ≈ <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> 
+
+
+
+**Challenges with preview envs**
+
+* Resource consumption ➡️ cluster autoscaler
+* Dependent systems
+* Test data
+* Dynamic namespaces: Authorization; SealedSecrets
 
 
 Note:
@@ -1748,23 +1758,21 @@ Sources:
 
 
 
-### Implementing promotion <!-- .element style="margin-top: 0px"-->
-
-#### Pull Requests
-
-> GitOps - Operations by Pull Request  
-> 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
-
+<!-- .slide: style="text-align: center !important"  -->
+<!-- .slide: data-background-image="images/implementation.jpg" -->
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.95);margin-left: 540px; margin-right: 150px; ;margin-top: 85px">
+  <h3 style="margin: 0 0 0 0;margin-top: 25px; margin-bottom: 25px;">Implementing promotion</h3>
+</div>
 
 
 
-<!-- .slide: style="font-size:90%" -->
-#### Configuration Management
-AKA Templating, Patching, Overlaying, Rendering  
-➡️ Tools for separating config of envs, keeping them DRY
+
+##### Configuration Management tools <!-- .element style="margin-top: 0px;margin-bottom: 0px"-->
+
+Tools for separating config of envs, keeping them DRY
 
 * Kustomize
-    * plain <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> `kustomize.yaml`
+    * plain <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> `kustomization.yaml` <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> ➡️ "agnostic"
     * ≠ Flux CRD <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `Kustomization`
     * `kustomize build` / `kubectl kustomize` via CI server <i class="fab fa-jenkins"></i>
 * Helm
@@ -1773,7 +1781,7 @@ AKA Templating, Patching, Overlaying, Rendering
     * `helm template` via CI server <i class="fab fa-jenkins"></i>
 
 Note:
-* `kustomize.yaml` is operator-agnostic!
+* AKA Templating, Patching, Overlaying, Rendering
 * Kustomize **and**/or helm!
 * See examples later 
 
@@ -1802,11 +1810,11 @@ Note:
 
 #### Config update
 
-Who updates image version in config repo, creates branch and PR?
+> Who updates image version in config repo, creates branch and PR?
 
 * **Manual**: Human pushes branch and create PR 🥵
-* **Image Updater**: Operator pushes branch, create PR manually
 * **CI Server**: Build job pushes branch, creates PR
+* **Image Updater**: Operator pushes branch, create PR manually
 * **Dependency Bot**: Bot pushes branch, creates PR
 
 Note:
@@ -1815,368 +1823,561 @@ Note:
 
 
 
-##### Image updater  <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="promotion-via-ci" -->
+##### Promotion via CI Server <!-- .element style="margin-top: 0px;margin-bottom:0px;z-index:1;position: absolute" -->
 
-<!-- src: gitops-with-image-updater.puml -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599 399" width="50%">
-    <defs>
-        <filter height="300%" id="a" width="300%" x="-1" y="-1">
-            <feGaussianBlur result="blurOut" stdDeviation="2"/>
-            <feColorMatrix in="blurOut" result="blurOut2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
-            <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3"/>
-            <feBlend in="SourceGraphic" in2="blurOut3"/>
-        </filter>
-    </defs>
-    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M304 7h223v216H304z"/>
-    <image height="48" width="48" x="391.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg=="
-           y="9"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold" textLength="91" x="370" y="69.995">K8s
-        Cluster
-    </text>
-    <circle cx="43" cy="126.5" fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" r="16"/>
-    <path d="M43 146.5c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8H24c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4"
-          fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="74" x="6" y="184.995">Developer
-    </text>
-    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M147.5 106.5h81v84.297h-81z"/>
-    <image height="48" width="48" x="157.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg=="
-           y="116.5"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="61" x="157.5" y="177.495">Git Repo
-    </text>
-    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M125.5 309h85v84.297h-85z"/>
-    <image height="48" width="48" x="135.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEUklEQVR4Xs2YQYpcNxCGfRedYG4wN8gJcoPcYE6QG2TvRZNVVr3yKmDIKqvJyhCSJmBCMLidEDAh0PnQRxeyStJ7PQmxh5/Hm2qp9FepqlR6z8rzHz8pPMuij4t/S+ju658evvvt8Ordy9d/Pr55f/r9L568I0F+/80pT1nj6YRYj7UvzZ9UpBVC3hmZp8/wFEJffv/m/P7vlsfnL153Y/DcF9/+ip+C1k5v3UYIW6ECA16kxap5WAuYhQGfHX/JAzrsJYR97oXOwPTjz3+wWB45BCPd3+zLDrsI4QZ0ffXDW/+FCkbnYZuQ09pP24SYj5YITMjdFKQt8BN7Bxau3SaEWfgGFXjbOM1j9gMlmIeP809ig5DzTWOeGDcMAohCep1HeLrNzdngFSG2xsl6qNSEz9FjZLAYRSgrCUBaH2teRGSHKSEYuEwbg1DsFEECLGJiCKZAK8vLgpDu6Tao8xBun+ldQ2uHZkwJWWSzsKUIoWFI7QEbPcz/KSFPpSwcmtVik6JVw9M3/zolBJtMKEsyurqQz3wGYBWxmPOjLAjNPJRHdugqJw7rKCqBzTDRpoSYQ4pRweI0LfXQyCMD4QmmtF4h8A0XqKDBenYzIasLT2Ya4L7kkYFZ3bP2lMrYc9AW4AZCFmg3G3XRQvBcxGwcLznw4dFt922EGG3OM8fyiHGaPkyNTUARJ7UOvi2oGWpEowjjPKqwfuGeTWAShoVXIDds7saE7AzLtd8rO6rLHthX+X5bYXSDDMz/hIrAzjhqZl3RmFCpubpO8k20EYMz0BZeuaudWp5SFoR0b4TwE46tQ72sWXigYsSYiaidWTslVGquXmop8mUYgxlxVrA2/ohAQUhEm7AQnWXrilBprmB7Dg0RnSFPfANQokmX2s/YezylYww81itplmdEO2Cl8IS25ETbqTzPFbsIWR474dDnLAmnRbQZzovd30XIKtBp8WDKgz12DD6DmmfMJdIX7ik7CZVrynTC3GILyylTgCVeuVyHrg3sJeR1MdfWw6Txy/Do0HP518AuQvf1Yj/Txaas25JSY9yks5NBz7BMl01CTFOFWi6T+xRj4jtEB6g48Xy9UT3U+4wFKY9fEfKIlYQGWU4sLWiPNPae5TKHa3t6rN2mxsSfpOV0GcXAmFDs0TF9c1H+cP2M50ZYWmLVl/X2KDPldolSV08kY6d/QMiqc55c48u1WzKT7ZaUu+S5ft+wGJr2saRxHXo8LjsnfUAoqn4U3Bna2Oo0mvPn2u+e6gfGNlYuTYE1c1cegofubYUL3NXvYpmQMV6qL7sEjH6oXD+btr+WjpBGdyPWQOnwHGClQ71I8Ww91DI4jr7EfUBoTyXtYFPRCTWdxfzVnX2snyjb02aY+X1QO7MTrtGNN9tdmO1jSfZU0rycrpfG+8mXk56Qu2YfsxOXWl1YIJonn6d6Q/Vfq4MS383EbULoJSb+HwwTuSf00fHJEfoHjfLJHnH3AbMAAAAASUVORK5CYII="
-           y="319"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="65" x="135.5" y="379.995">CI Server
-    </text>
-    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M421 98h82v100.594h-82z"/>
-    <image height="48" width="48" x="431"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACuElEQVR4Xu2YT0olMRCHvcs7gTeYG3iCuYE38ARzA/cuZFazcuVKGHA1q5mVICoDMgyCfwZBRMh8dJ5NrF9SSfo1z7ew+CHSL6l8SVUlnd5aHJxvlLb00ftqBqDtrxefvl0h/tFfs9o9+XP18Dzq580T3eNPU4B2jn5/+XHz/frx7ukliOH98OyeIR0+Gphee6d/408dQAwABxMyvhw7uvwHvbqaAQgU46LdWEuDtf/r1rTpAMJX16qUDIjRp06vFYh2pucqRnrFxFK3TUA6j9WNOqCgpgD5NPglMT8fX5tSIr64Jmlsh8Toq84rQDqD0Vh2Slq7GAGqmeuYB8QsbfNXY2ba3hHRYQLWS848oGxNsc7ZHaVFuuuoFYE0uuE1E3WkdlXDlwci8LbhYJPXJhW7tvWbWB4ouzxdeUPdsZwoHpmUGwKFqPmBywNp9vBER3VUDU3JMkDZ4mqp8FRzAmm8WHkd0tecQLq9EnUd0tecQJp0E0qdEBsnjTYWst2HqPwoHaxdo5NGpX0t0LvrA6imTQViy6diezXWapcoqNSJOZqWQHpoNJqpkRbpbY7lGH9dN1D2gEqdrBtIt19zfq8VaDv3vrWf3NcWqwPpqI50eYIcUHWgeLujG+FHJCAHFvWF0mSsisbW9eDcNKsDhUnHvhHz0eIKb+srqgkoSKS7VKLhhUcbtwKF4duK9q8qvmVbX4NlC6IDKAzvkLrIJTFeNoujlV6O80Dx5pA+SS3eprPziyL3HZTg3mSKQKXApxa/3uGdiuMveUZYq70cmiJQGDYYmPT5iubTVIAWQx7oy/9kK+VNB1AUEakGwjdm5eRcqiKQ9idFJmCRZ+2FuXCASncglr0liDhkAiUnjpZA+llJV8gofr1jVAqN4opfFMhZf0eoagnEVHA0apbvL9O0BNocbRzQf+3wcitjETgyAAAAAElFTkSuQmCC"
-           y="108"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="47" x="431" y="168.995">GitOps
-    </text>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="62" x="431" y="185.292">operator
-    </text>
-    <path fill="#23A3DD" filter="url(#a)" style="stroke:#16688d;stroke-width:1.5" d="M278.5 309h107v84.297h-107z"/>
-    <image height="48" width="48" x="288.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACUUlEQVR4Xu2WS0oEMRCGvUufYG7gDTyBN/AGnsAbzN6FuHLlypUguHKlK0F0EAaRAV8IgwjjR34oY1e6kxnHBxr5kXR1JflSVamelWb74ldpxZt+VhUopwqUUwXKqQLl9BeBBruXG4c3Jh69T7mWAATE/tXT8OwO7Zw/8Oh9yrUcINGgrZPJ/wbaPL71Il9kChQEUz9QtsLmAGKto/Ezu4qDsQZYCoFY4XQyxdm/Ms0NpLwIyNJUmDJmre1f44Cbfyt9KxDJ1YAgre6NvENTAmSbsQoBt0cDwh5fe7OjVsUYEHHiLUzrB+MWWR6IDZiG1G/4H48R0RqG0lEurNiBY+N4KSyGaOWos7Gm7HkgNlbBIkXCp4ydbGyPOLeA2DVZPYqWxt8NNHp8iS0EDGdWM0saCF5tgFjCxnEN2TiuGyCsnjCqRcmBsW2sstOrFnQaSAUBFif4vFqLEydw/abSB6BB+G43AciqrOt+Yk/e8Dj+sQzO7lrS+R2I1cnCbDYjRwwUUrNwJibbnSIFs/CnxOlaMbifvsquJNoUltIr7JpillappVOGh67o0gWQ324QpTUN1IQ+4Y2flC9hr04goto1eRBKzae/X2oW3t5SJ1BPeNXyu3CTUn/ydq9OoCZcgfjDpLYxjLpqoVqtr199QE04WfJuF4ooxt+pEmWAmsDU08e6RBTVsv2rfuWBmnBQNf74fiYFBwdQorPOSRUBSURe3yDreLpr+ppiF8dcCfKaAygWMdOvIl23xYKR1IJAX6cKlFMFyqkC5VSBcqpAOb0BXdqrKyPxUdcAAAAASUVORK5CYII="
-           y="319"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="87" x="288.5" y="379.995">OCI Registry
-    </text>
-    <path d="M80.34 148.5h62.13" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m147.48 148.5-9-4 4 4-4 4 9-4z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="141.567">push
-    </text>
-    <path d="M183.37 195.94c-3.41 34.18-8.01 80.23-11.28 113.06" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m183.9 190.56-4.88 8.554 4.38-3.58 3.58 4.381-3.08-9.355z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="24" x="179" y="267.567">pull
-    </text>
-    <path d="M210.66 351h62.53" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m278.39 351-9-4 4 4-4 4 9-4z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="31" x="229" y="344.067">push
-    </text>
-    <path d="m319.386 223.533.077.766.615 6.171 2.508 25.147 4.774 47.873" fill="none"
-          style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m327.87 308.64 3.08-9.355-3.58 4.38-4.38-3.58 4.88 8.555z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="24" x="340" y="260.067">pull
-    </text>
-    <text class="fragment" data-fragment-index="1" font-weight="bolder" fill="#FFF" font-family="sans-serif"
-          font-size="13" textLength="54" x="325" y="275.2">+ watch
-        <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-                 dur="2.0s" repeatCount="indefinite"/>
-    </text>
-    <path d="M233.84 148.5h69.993" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m228.6 148.5 9 4-4-4 4-4-9 4z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="24" x="258.07" y="164.567">pull
-    </text>
-    <text class="fragment" data-fragment-index="1" font-weight="bolder" fill="#FFF" font-family="sans-serif"
-          font-size="13" textLength="46" x="247.07" y="179.7">+ push
-        <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-                 dur="2.0s" repeatCount="indefinite"/>
-    </text>
-    <path d="M501 148.17c11.83-28.17 35.22-28.06 35.22.33 0 28.39-23.39 28.5-35.22.33" fill="none"
-          style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m501 148.83-.203 9.847 2.139-5.237 5.237 2.14-7.173-6.75z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="44" x="542.22" y="153.067">deploy
-    </text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width=91% viewBox="0 0 746 415">
+    <defs/>
+    <g><!--cluster k8s-->
+        <g id="cluster_k8s">
+            <rect fill="#23A3DD" height="224" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:1.0;" width="216"
+                  x="431" y="7"/>
+            <image height="48" width="48" x="515"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEPElEQVR4XtWXMaoVQRBF/15cgTtwB0aG7sAduAJ3YG4gmhj9yEgQjIw0EkRFEJEPIiKYPTkfLtx3q3qm578xeMHlzVR3V91bXdU97+LWk48X54xiODcUw564/ezTPZD2PVEMpwLC919+Ozx+//Pw+tufa/CM7X+IKYabQsSffvh1Tfrd1d8jYGNsbyHFsBWQefDq+5B4QkJYs4eQYpjFVuIJF3LnxZfn6X8WxbAGgs0SVw909r2EFMMIOH/45sfh8vPvllRCxFLoaC12fBNji5BiSGwlLjCfrAKec3wJW4QUg0CN34S4k4C8fOT4DGaEFIOTvwnxDH6KAAAHfIxOrGIAKKZ209ka1LTemN7wQq5bAxfh3cuvh+Q5FMBl02VtREI21hDMTxQyR3BsjKkkRz7SDnQBJs9WgM53FyDHEHASGpupVaE7FFy8PkFSHJzSFygGBDx6e1WciCTZdALaXn24QZBs6ZPB33lWLfv3kicgxQmjPigCcDLKgotQfYtUBmfbmQc6osSSH8RkYhRT8fHR7XARgKOlBlbW3ZmTzDmjMW/KnNNBCUm+RUDWf0LZVVORff8KFZYEaL2XU97YCTh1fXD0MnP+M0aPqHREAqLYvTeY4yXJGHO8Z1R+Xd9l3K4PioBuK/0dEmpI3bTaWtbruFQwJQUbYy4Yu2za+YztUOKGAhicqf9sTn5n/6hkyXX+PGkuqOuDI+fdBeYOvHx8Lvasa5FNUVnvWjdTRtr9VoC2es2BjkFvdtYom35EQshLzPtBcdScM/EZ8zIsAmYykAKYz6/XuJPxXfMe8bXql05AvuOrFbBW/ymArVQTZmOJDPOdoM/xQ0ClpzUZ16GeKQIwdgKURRx3dS7CDtmY6/P51U6kD4AgYmh3MvvA76AjAd0FhgMWKEs6v7UGMthYy9b68ZnkmMsYc9Qbal7NYR3+sEuMRPgvY0VAV/+8qwlFUiXUnRo8eyN7pr2Bfb76QwJ5J5YOAe2G82LetACVj8a8pvNI9DERkmBsXuPaXT+BvHQczgnAtQjoSqiDskyGRFKBddFASP5clPpMxJT9vMSWgL+2hLqSSOL+nKWkXklCnWDmZul0pZLxXXQRAEaZyK3kWZlQuXiTe6mA3AU1r+9Uxkx4IpzzkQCQde0O8t1F5E6qfDQvMyfyXawE43l8DgVszYpn130o09qZJD9TNkKXqKGADJDOEp4d1bTKw+Fjo13uwJxM0KoAoFJYC6La1D0BMb+sBGxqXuZ2vZZgPEsvUQyOUVN7AJ3lszumklurfyUmmzZRDIml7VYQ5iwJ3brGyzL5JIohsdTUCgSRbnwE5qqkcg3vS02bKIYOo6bO4HsAn0tNmyiGEWab+hTge61pE8WwhLWmPgXqjbWmTRTDGryp98Rs0yaKYQ3+CaDPhVOho3i27h3FMAvdqHtgS80niuHcUAznhn+RalH51y+k3gAAAABJRU5ErkJggg=="
+                   y="9"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="77" x="500.5" y="71.9659">K8s Cluster
+            </text>
+        </g><!--entity operator-->
+        <g id="elem_operator">
+            <rect fill="#23A3DD" height="106.1358" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="78"
+                  x="545" y="101"/>
+            <image height="48" width="48" x="555"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC5UlEQVR4XtWZT2oVQRDGcxdP4A2ycO8JvIE38AJ6A/cuxJWrrLISAm50pStBNAghSMBoCAQRRn5CNW11V3dVT7/Hmw8+XtEz/eerrqrpmXd078Xnoy2zaNgai4ZZvP/qy4Pj1+dPIba+7uHjN5fL+a/f//HD1d3CmHJP0WmED0++vXv2/mo5u7hdru/+LBaY/OWnnwsL84ji3hqevP2+yD1FJy9ZAIvGK6M4+XqzIF6PLdyZABY+E+xcTcjzjz/0rf8wLIBJ1ni8Bxacz2c5akgAnfYB8kTyw5ozLMDyxK5AIaDSTBHgXTyTknSPTi+qFYbwY2Li3QPGs+Z2C7A8kIMtpyzqvi0i0EpQD1wC8JjuqIGHdL8ICRMcEIVLQKvasL21sjdKq95b6AqwYg9Iguk+axkJqaYA4lN3yDHT85o8mT1oCmh5f03MU53YPSiHMioSZOGEkTeUmgKs2Kdd3xthJER6MAW0Kk+0VGruRYAVPmy7XlCUexFgPSWJTb2gKPciwEqiGWWTEJyFvBIWE0FKqVBfW8t87BHq8YoJtsaiYWssGrbGomFrTAaPekrdWuYlbg2pNHrs2lEmGdYRYgS1ahGl9X0JR+f3JeOQBLSONHrsZBySAOuBWjtQJuNQBNBXjycgD/T9yZgpQE8SoeV9UDvSJMMjQD46MRBxCkkqzjlUH6iTLEL6WmBufT9MhkcAmHEyrRGnWJUHWI5JhlcAqMXiGvYWzzFf9xEmIyIA8B6rBxuhvCu30CoKyYgKAExsbW2PLKqVsILeq2wyagLkK0IP8nmx5Skhie9ZOKgdHTS7AnrxqSF/IzE5VYlfcoaQi4zjWXxXAOAaIqzru4B38W4BkPCwXvpnohfzmm4BQsIiEgpe4BxPDml2BViDEtczhJAzo5UMJsMSUDt/5GTLo6HFXDigN7aHybD+aLB2oEb5G4nFUYmoPPLhlsT0ltoIk4E3mCDnLj+lz2LRsDUWDVvjX+CEVdW3rXt3AAAAAElFTkSuQmCC"
+                   y="111"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="555"
+                  y="173.9659">GitOps
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="555"
+                  y="193.0339">operator
+            </text>
+        </g><!--entity user-->
+        <g id="elem_user">
+            <ellipse cx="33" cy="140" fill="#23A3DD" rx="16" ry="16" style="stroke:#16688D;stroke-width:1.5;"/>
+            <path d="M33,160 C37,160 40,160 44,156 C52,156 60,164 60,172 L60,176 C60,180 56,184 52,184 L14,184 C10,184 6,180 6,176 L6,172 C6,164 14,156 22,156 C26,160 29,160 33,160 "
+                  fill="#23A3DD" style="stroke:#16688D;stroke-width:1.5;"/>
+        </g><!--entity appRepo-->
+        <g id="elem_appRepo">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="85"
+                  x="142.5" y="110.5"/>
+            <image height="48" width="48" x="152.5"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACD0lEQVR4XtWWzUkEQRCFzcUIzMG7EZiBGRiBGXj3IAawJ0+C4EVPehJERVhEFvxDWERYeUIvRb3u6r/alX7wXT6bnXrDWDMbm0d3GyNDYjRIjAaJ0SAxGiRGg8RokPBk/+JlAbT3hIQHWyf3248f34uQ69l8AafPeUCiFz38qkuQ6CE1fMgqSpDoYe/sWc9M8S5BogU50LpLkKglPDbHt+/LbbPOEiRq0M/8f5QgUYoePkSWCBxczfSxZXpLkCghNXzI4c0rlUCxVHpKkMiRGx6JFcg9Uq0lSFiUDI+cT7+owO7pVB+jtJQgkaJ0+BA89/o38F2US20JEjFqhw8Jg8gPOu8SJDStwyNhCAwkt5NnCRKSnuERWQCRJfA30LtiSUgmD5/6N6uiCyCxDWWtWMygz0tISHruPlJawFqxmEGfl5CQ4GI9iRWIrVjrOrE3u4SEBhdsTawAIles9X6IldWQiNFaIlUAeZv//JFKyfCARIqWElYBKzivr5+ChEVNCbk9rFWpU3rnAyRylJSI3cGSlVw7PCBRQq5EbFXm3r4twwMSpVglYi8fa1W2Dg9I1GCVkB9wvavSgkQtVgmsSett3js8INGCVSKV2D96CyRaqSnhNTwg0UNJCc/hAYlerBLewwMSHsRKrGJ4QMIL+eb12DYpSHiyM3m6BNp7QmI0SIwGidEgMRokRoPEaPwCtEzAQRTl7q0AAAAASUVORK5CYII="
+                   y="120.5"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65"
+                  x="152.5" y="183.4659">App Repo
+            </text>
+        </g><!--entity configRepo-->
+        <g id="elem_configRepo">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="102"
+                  x="263" y="110.5"/>
+            <image height="48" width="48" x="273"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACD0lEQVR4XtWWzUkEQRCFzcUIzMG7EZiBGRiBGXj3IAawJ0+C4EVPehJERVhEFvxDWERYeUIvRb3u6r/alX7wXT6bnXrDWDMbm0d3GyNDYjRIjAaJ0SAxGiRGg8RokPBk/+JlAbT3hIQHWyf3248f34uQ69l8AafPeUCiFz38qkuQ6CE1fMgqSpDoYe/sWc9M8S5BogU50LpLkKglPDbHt+/LbbPOEiRq0M/8f5QgUYoePkSWCBxczfSxZXpLkCghNXzI4c0rlUCxVHpKkMiRGx6JFcg9Uq0lSFiUDI+cT7+owO7pVB+jtJQgkaJ0+BA89/o38F2US20JEjFqhw8Jg8gPOu8SJDStwyNhCAwkt5NnCRKSnuERWQCRJfA30LtiSUgmD5/6N6uiCyCxDWWtWMygz0tISHruPlJawFqxmEGfl5CQ4GI9iRWIrVjrOrE3u4SEBhdsTawAIles9X6IldWQiNFaIlUAeZv//JFKyfCARIqWElYBKzivr5+ChEVNCbk9rFWpU3rnAyRylJSI3cGSlVw7PCBRQq5EbFXm3r4twwMSpVglYi8fa1W2Dg9I1GCVkB9wvavSgkQtVgmsSett3js8INGCVSKV2D96CyRaqSnhNTwg0UNJCc/hAYlerBLewwMSHsRKrGJ4QMIL+eb12DYpSHiyM3m6BNp7QmI0SIwGidEgMRokRoPEaPwCtEzAQRTl7q0AAAAASUVORK5CYII="
+                   y="120.5"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="273"
+                  y="183.4659">Config Repo
+            </text>
+        </g><!--entity ciServer-->
+        <g id="elem_ciServer">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="81"
+                  x="223.5" y="322"/>
+            <image height="48" width="48" x="233.5"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEc0lEQVR4XtWYS4oUQRCG5y6ewBu4cO8JvIE38AJ6A/cuxJWrWbkSBDe60pUgOgiDyIAvhEGElm/gkzAiMyura4TphJ+q/rMqMl4ZGdVH1x6+OzpkFOLQUIjLwPXH72/effF59+jtt93z05+712fnu5Pvvy6u/IZn/saTk3v53bUoxBagFErmoeIaEge/eS/LmkUh9sH9V2e7r+e//1EMZW8/PW0qRoTuPPt0EQkHhuwTkUKsAZ5DcZTlXkNQLj/bA8ZEB9w6/vgyPzNCIWaAp0wHvYw3jz/82KFQfn4GvGf69SLXQiGWgHcZD958+bsIiuPF/Ow+0IjZSBRiBIQiPG46DNqyCTOIBOkEZqJZiBHwDp5HMGF2I+bntgLZDCKb5zIK0YNCLYNc8dIoXzEQg2erCxHO1Wzp3UK0QIo4jAA8ed/LfXMZhTgD8nwLGGxkdVTcay0UIgNlVSRvLAxrLYDCYCaHR0AGhmQ+ohAZer+VKq0IEPKlRWeh80aOKESGp2XmncuGYUDmtoBUzJGPKESGPUzmnRt5J2ONYZZmG788LwqRgfI9A3p8D62S2+tKeRbnsMdymkYUImMpApkboXXoEZWWYfIo3yoUohAZCKECcajExo25mYMGRA8jI3ucTW+eozhyPWc2G2A954owN7X3+fkWlg4n6z73zNlb2anubYCnr/nIQrH95TqzMWPr0dv0KN1KyU0G8DKDe4QwTAG9mXN6X2AYUchR3bSJedENzAJ4yf4Gj854fw1wDA6KHseg0QdSISL84uLe1OH+shWP8HvD35sOMlPFTfc/FRc4LbYiS98FhchA2Gy5XIOc63iZdaLHUdwM6KEQGYY0btbL6HcwgKpjzUdxc92qxZpLzitECwhhsIj3o43VQ2wbUBJPx/xmjg1spcPApSpXiB6s/YxWvZ5B/OLiiucBsnUMA+/bSudDL6MQSyAK+xgQO1dLsY2itT5+7Tmf5WQUYgkeaJkHo3CjGEbM7B0370yaFmIJltaWcPuYzAtbE4aRtIWI8tjgM94HhZiBFSTzoPedLDwQkQE81Z3XyFE0IwoxA//g6p2QKDarQISthBHK8y0UYgksElvsPC9IjXxYjUAKWZls2ZE/OoVBIXpAkIIVzhilC8/HP4BbQHFlYYBRJYJyo1JaiBZs6lRYr1i7reUsHsug/+uoCAZZLnlXmXlosEYweulaiIiYLizYCqfzLObmNhWs5XEwDzTGeb/ANFz5sXK11i9KC+s9yoxSAKiIpdDvBudVDFnAg8syGhVzI0f59mOtKBRl4nEfT88l5D3SWswSinyuRCn2R4L342+rXkuXoghKM0afcSOwCNHoGeDG5rfnQX4ufg8AjOxVvELoxcyvAQu2TmqBMqzjxs4RyMqSZj2HFmLtSdiCbXHmgd5EIZ9zwLc+oEaltBBAYZlfg9b7lk4VJKVQjHTTYO4xwhRkPqdURCGAaWS/vg8YRBMF4reEV56JnKVX3t9Wrazj0AAWJYevClrVZ2jAIaEQh4Y/sY0pxpwp2icAAAAASUVORK5CYII="
+                   y="332"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61"
+                  x="233.5" y="394.9659">CI Server
+            </text>
+        </g><!--entity registry-->
+        <g id="elem_registry">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="104"
+                  x="381" y="322"/>
+            <image height="48" width="48" x="391"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACkUlEQVR4Xu2XTWpVQRCFs5eswB1k4NwVuIPsIBvQHTh3II4cZeRIEJzoKI4CQYMQJAT8QwgiPPkeHCnr9O3b9/0ECnzwkdun+3ZXdVVX3xwcPr04qIwJ1TChGiZUw4RqmFANE6phQjVMqIYJ1TChGibsinvPP9w/fvV5FUHL47bFhF2Bwacff6yevP+y5tn5t7UTedy2mLArMFbGw+N3N/8daGHCEk7eXK+mIH1IGwwHnBh1YMlZMWEUFnl99XNtnIymrWf0TRxg3rOb2/W7ua+FCaPIAaWHHIgps0kKMc+D009vGcs7uT9jwij7coDU0zNROHpx+SiPiZjQIxrE5IQ6atEB+nMZjf3QyvXoAJFgHE48fHnVdMaM7IEBTASq8/zNbSAiLK52PCuAQxiY10CPjsVzpk1iPfWbkT0wUIcStMNTKYQxsR013m05gHG93FdE1LYBPe7Kgcvvv8wBosK7rBN1MzKCpzIAmDi28xmI7ZzzGBzPBH26KzSWdjRQ50hjWg6b0RHlL46wA/sirwtEAkeznjGBCVXudEDV16oCEfp7pTKHPxMditWo9+4/DRYnDfiRLjwrhFFnZ5gwVhtSQD+lkioOz19vf//tV2rFOVhDY+jXHFFvnRvzKMJglbW7BAeyLYL+YQegN9k+mDqsU5iQIYxzE7IrSoXctwSV46z3MCEzElJd9XOO9tA9kfU5TGiRLykdLl1Kc9VpjtYFNYoJU7A7vRK5CUQsf9ssxYQeODFyucxBxHQr576lmDAHu6YrP5e0HhjNBigVl7zbw4RRCLu+VeKlpGqkDzf6ZfQ2qTKFCZtCZPR/gSrSrna5hwnVMKEaJlTDhGqYUA0TqmFCNUyohgnVMKEaJlTjDwRvCz2Vnh1SAAAAAElFTkSuQmCC"
+                   y="332"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="391"
+                  y="394.9659">OCI Registry
+            </text>
+        </g><!--link user to appRepo-->
+        <g id="link_user_appRepo">
+            <path d="M61.59,154 C84.38,154 110.64,154 136.46,154 " fill="none" id="user-to-appRepo"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="142.46,154,133.46,150,137.46,154,133.46,158,142.46,154"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="87"
+                  y="110.9136">push
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="87.5"
+                  y="128.6407">code
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="80"
+                  y="146.3678">+config
+            </text>
+        </g><!--link appRepo to configRepo--><!--reverse link appRepo to ciServer-->
+        <g id="link_appRepo_ciServer">
+            <path d="M193.2025,203.6583 C198.6025,231.2483 206.18,261.63 219,292 C223.26,302.1 228.82,312.42 234.57,321.99 "
+                  fill="none" id="appRepo-backto-ciServer" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="192.05,197.77,189.8532,207.3707,193.0104,202.6769,197.7042,205.8341,192.05,197.77"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="220"
+                  y="278.9136">pull
+            </text>
+        </g><!--reverse link configRepo to ciServer-->
+        <g id="link_configRepo_ciServer">
+            <path d="M278.908,202.5651 C268.058,219.5351 260.52,234.78 255,255 C249.12,276.53 250.5,301.25 253.72,321.75 "
+                  fill="none" id="configRepo-backto-ciServer" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="282.14,197.51,273.9219,202.9379,279.4466,201.7226,280.662,207.2473,282.14,197.51"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30"
+                  x="259.5" y="269.9136">push
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="256"
+                  y="287.6407">config
+            </text>
+        </g><!--reverse link configRepo to ciServer-->
+        <g id="link_configRepo_ciServer" class="fragment">
+            <path d="M312.1587,203.6472 C310.3687,231.0372 306.79,261.14 298,292 C295.18,301.89 291.15,312.13 286.85,321.67 "
+                  fill="none" id="configRepo-backto-ciServer-1" style="stroke:#FF0000;stroke-width:1.0;"/>
+            <polygon fill="#FF0000"
+                     points="312.55,197.66,307.9716,206.38,312.2239,202.6494,315.9546,206.9017,312.55,197.66"
+                     style="stroke:#FF0000;stroke-width:1.0;"/>
+            <text  font-weight="bolder" fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="308"
+                  y="278.9136">create PR
+            </text>
+            <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+            <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+        </g><!--link ciServer to registry-->
+        <g id="link_ciServer_registry">
+            <path d="M304.91,365.5 C327.77,365.5 350.49,365.5 374.94,365.5 " fill="none" id="ciServer-to-registry"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="380.94,365.5,371.94,361.5,375.94,365.5,371.94,369.5,380.94,365.5"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30"
+                  x="327.75" y="340.4136">push
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
+                  x="324.25" y="358.1407">image
+            </text>
+        </g><!--link k8s to registry-->
+        <g id="link_k8s_registry">
+            <path d="M436.8129,231.388 C436.805,231.6625 436.7972,231.9374 436.7893,232.2124 C436.7735,232.7626 436.7577,233.3139 436.7418,233.8662 C436.7102,234.9708 436.6784,236.0795 436.6465,237.1918 C436.5827,239.4163 436.5185,241.6551 436.454,243.9038 C436.1961,252.8988 435.9335,262.0534 435.6742,271.0939 C435.1556,289.175 434.8222,300.8025 434.3922,315.7825 "
+                  fill="none" id="k8s-to-registry" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="434.22,321.78,438.4766,312.8985,434.3635,316.7821,430.4799,312.6689,434.22,321.78"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="437"
+                  y="278.9136">pull image
+            </text>
+        </g><!--reverse link configRepo to k8s-->
+        <g id="link_configRepo_k8s">
+            <path d="M371.2,154 C387.385,154 398.6125,154 412.3488,154 C419.2169,154 425.2122,154 429.768,154 C430.0527,154 430.3318,154 430.6052,154 C430.6735,154 430.7415,154 430.8091,154 "
+                  fill="none" id="configRepo-backto-k8s" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="365.2,154,374.2,158,370.2,154,374.2,150,365.2,154"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
+                  x="390.82" y="128.9136">pull
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
+                  x="383.32" y="146.6407">config
+            </text>
+        </g><!--link k8s to k8s-->
+        <g id="link_k8s_k8s">
+            <path d="M651.5,153.66 C663.33,124.5 686.72,124.62 686.72,154 C686.72,183.38 665.5856,189.0599 653.7556,159.8999 "
+                  fill="none" id="k8s-to-k8s" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="651.5,154.34,651.1768,164.1836,653.3797,158.9732,658.59,161.1761,651.5,154.34"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41"
+                  x="692.72" y="159.4136">deploy
+            </text>
+        </g><!--SRC=[fPDRRzem5CVV_IdSihSff6lL5bK82MZNLKMaIilsK2fax0DaEBRdIoiqxRlFII2NNZIamGFO_z-v7nyaWdB7m6cELzOgSn66choqbubTkRapeAaK5eHjKvc6QK9N2V1GSIAiItcmTdFG0YoOm2YT-Dym9SQ23ZKOwJI5SDqfjS09JkR0WGN7fuhQTk9z87J0O948m3V3Q3o9HtlaOPqYJ9zKUIHU3HQUADDuFcuVjO_GGQs-hV_GUqYbQAii-7iwW-VCdmcPf6lGUu0-ou-fF2toulkHGd0Q_WInJeJPcpSRGGkuRDHm54qke-l9VisYN3ecbwxgrkxcrSmQsTHYX5PARh91Vf37R32QNE7MyGavOQnIer4Kp_g3wFlLx27kZ-_l-l7L-64sw0zlh-DeChx4hVFpSuICxuSYcgHuJkXwgQKJZ4ekDQwPrQXBM137xLTVup37_XsfPctWbmD1eQ-rVDdRlkQ0K2lrlTrmmDif8PJVuKF_9GPd0q0Qg2LYwQ73xYS_cDvKz9N2CIYPGqIfxFzxt52AHRAiK9gVtzBRJSeiRl0zw6VG1PyK1zJ4_VmyUjinUCXTDkySzhVuDyB-qu2phVFqTM8ZPQP2Aj34bvYRx0xeJpD0yLoyLUJpYM6P6AitkONU7X3AUeE3tgvyV86nScOr5LGoc8hFHQre9mUFguGn44-zUXTsQZS8ocAz9-KuHnNsLYxYv06Qs6DB0tkgmzry0I_yTOzg81RmNOnAtHUmAwbqdAHa2IXhP_1QvXmNQYDgtlf2BjFApNjRXO7YSlDczRRZ6fHlPRl4zSTO458pq8NQ-d9srkamFxAQksfw_-Cokw_UuezlDmy5EszwwtQ57t6lLoDAgr9hHlJ9_WK0]-->
+    </g>
 </svg>
 
-<div class="fragment" data-fragment-index="1" style="font-size: 90%">GitOps operator can update image version in Git  
-<ul style="display: flow">
-<li><img data-src="images/argo-icon.svg" title="argocd" style="height: 1.1em; vertical-align: middle;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a></li>
-<li><img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a></li>
-</ul>
+Note: 
+* Looks simple but technically challenging: Git protocol vs SCM-specific API
+* Would also work without app repo, CI job on Config repo
+
+
+
+##### Image updater  <!-- .element style="margin-top: 0px;margin-bottom:0px;z-index:1;position: absolute" -->
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  width=60% viewBox="0 0 617 415">
+    <defs/>
+    <g><!--cluster k8s-->
+        <g id="cluster_k8s">
+            <rect fill="#23A3DD" height="224" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:1.0;" width="216"
+                  x="318" y="7"/>
+            <image height="48" width="48" x="402"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEPElEQVR4XtWXMaoVQRBF/15cgTtwB0aG7sAduAJ3YG4gmhj9yEgQjIw0EkRFEJEPIiKYPTkfLtx3q3qm578xeMHlzVR3V91bXdU97+LWk48X54xiODcUw564/ezTPZD2PVEMpwLC919+Ozx+//Pw+tufa/CM7X+IKYabQsSffvh1Tfrd1d8jYGNsbyHFsBWQefDq+5B4QkJYs4eQYpjFVuIJF3LnxZfn6X8WxbAGgs0SVw909r2EFMMIOH/45sfh8vPvllRCxFLoaC12fBNji5BiSGwlLjCfrAKec3wJW4QUg0CN34S4k4C8fOT4DGaEFIOTvwnxDH6KAAAHfIxOrGIAKKZ209ka1LTemN7wQq5bAxfh3cuvh+Q5FMBl02VtREI21hDMTxQyR3BsjKkkRz7SDnQBJs9WgM53FyDHEHASGpupVaE7FFy8PkFSHJzSFygGBDx6e1WciCTZdALaXn24QZBs6ZPB33lWLfv3kicgxQmjPigCcDLKgotQfYtUBmfbmQc6osSSH8RkYhRT8fHR7XARgKOlBlbW3ZmTzDmjMW/KnNNBCUm+RUDWf0LZVVORff8KFZYEaL2XU97YCTh1fXD0MnP+M0aPqHREAqLYvTeY4yXJGHO8Z1R+Xd9l3K4PioBuK/0dEmpI3bTaWtbruFQwJQUbYy4Yu2za+YztUOKGAhicqf9sTn5n/6hkyXX+PGkuqOuDI+fdBeYOvHx8Lvasa5FNUVnvWjdTRtr9VoC2es2BjkFvdtYom35EQshLzPtBcdScM/EZ8zIsAmYykAKYz6/XuJPxXfMe8bXql05AvuOrFbBW/ymArVQTZmOJDPOdoM/xQ0ClpzUZ16GeKQIwdgKURRx3dS7CDtmY6/P51U6kD4AgYmh3MvvA76AjAd0FhgMWKEs6v7UGMthYy9b68ZnkmMsYc9Qbal7NYR3+sEuMRPgvY0VAV/+8qwlFUiXUnRo8eyN7pr2Bfb76QwJ5J5YOAe2G82LetACVj8a8pvNI9DERkmBsXuPaXT+BvHQczgnAtQjoSqiDskyGRFKBddFASP5clPpMxJT9vMSWgL+2hLqSSOL+nKWkXklCnWDmZul0pZLxXXQRAEaZyK3kWZlQuXiTe6mA3AU1r+9Uxkx4IpzzkQCQde0O8t1F5E6qfDQvMyfyXawE43l8DgVszYpn130o09qZJD9TNkKXqKGADJDOEp4d1bTKw+Fjo13uwJxM0KoAoFJYC6La1D0BMb+sBGxqXuZ2vZZgPEsvUQyOUVN7AJ3lszumklurfyUmmzZRDIml7VYQ5iwJ3brGyzL5JIohsdTUCgSRbnwE5qqkcg3vS02bKIYOo6bO4HsAn0tNmyiGEWab+hTge61pE8WwhLWmPgXqjbWmTRTDGryp98Rs0yaKYQ3+CaDPhVOho3i27h3FMAvdqHtgS80niuHcUAznhn+RalH51y+k3gAAAABJRU5ErkJggg=="
+                   y="9"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="77" x="387.5" y="71.9659">K8s Cluster
+            </text>
+        </g><!--entity operator-->
+        <g id="elem_operator">
+            <rect fill="#23A3DD" height="106.1358" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="78"
+                  x="432" y="101"/>
+            <image height="48" width="48" x="442"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC5UlEQVR4XtWZT2oVQRDGcxdP4A2ycO8JvIE38AJ6A/cuxJWrrLISAm50pStBNAghSMBoCAQRRn5CNW11V3dVT7/Hmw8+XtEz/eerrqrpmXd078Xnoy2zaNgai4ZZvP/qy4Pj1+dPIba+7uHjN5fL+a/f//HD1d3CmHJP0WmED0++vXv2/mo5u7hdru/+LBaY/OWnnwsL84ji3hqevP2+yD1FJy9ZAIvGK6M4+XqzIF6PLdyZABY+E+xcTcjzjz/0rf8wLIBJ1ni8Bxacz2c5akgAnfYB8kTyw5ozLMDyxK5AIaDSTBHgXTyTknSPTi+qFYbwY2Li3QPGs+Z2C7A8kIMtpyzqvi0i0EpQD1wC8JjuqIGHdL8ICRMcEIVLQKvasL21sjdKq95b6AqwYg9Iguk+axkJqaYA4lN3yDHT85o8mT1oCmh5f03MU53YPSiHMioSZOGEkTeUmgKs2Kdd3xthJER6MAW0Kk+0VGruRYAVPmy7XlCUexFgPSWJTb2gKPciwEqiGWWTEJyFvBIWE0FKqVBfW8t87BHq8YoJtsaiYWssGrbGomFrTAaPekrdWuYlbg2pNHrs2lEmGdYRYgS1ahGl9X0JR+f3JeOQBLSONHrsZBySAOuBWjtQJuNQBNBXjycgD/T9yZgpQE8SoeV9UDvSJMMjQD46MRBxCkkqzjlUH6iTLEL6WmBufT9MhkcAmHEyrRGnWJUHWI5JhlcAqMXiGvYWzzFf9xEmIyIA8B6rBxuhvCu30CoKyYgKAExsbW2PLKqVsILeq2wyagLkK0IP8nmx5Skhie9ZOKgdHTS7AnrxqSF/IzE5VYlfcoaQi4zjWXxXAOAaIqzru4B38W4BkPCwXvpnohfzmm4BQsIiEgpe4BxPDml2BViDEtczhJAzo5UMJsMSUDt/5GTLo6HFXDigN7aHybD+aLB2oEb5G4nFUYmoPPLhlsT0ltoIk4E3mCDnLj+lz2LRsDUWDVvjX+CEVdW3rXt3AAAAAElFTkSuQmCC"
+                   y="111"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="442"
+                  y="173.9659">GitOps
+            </text>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="442"
+                  y="193.0339">operator
+            </text>
+        </g><!--entity user-->
+        <g id="elem_user">
+            <ellipse cx="33" cy="140" fill="#23A3DD" rx="16" ry="16" style="stroke:#16688D;stroke-width:1.5;"/>
+            <path d="M33,160 C37,160 40,160 44,156 C52,156 60,164 60,172 L60,176 C60,180 56,184 52,184 L14,184 C10,184 6,180 6,176 L6,172 C6,164 14,156 22,156 C26,160 29,160 33,160 "
+                  fill="#23A3DD" style="stroke:#16688D;stroke-width:1.5;"/>
+        </g><!--entity gitRepo-->
+        <g id="elem_gitRepo">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="77"
+                  x="128.5" y="110.5"/>
+            <image height="48" width="48" x="138.5"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACD0lEQVR4XtWWzUkEQRCFzcUIzMG7EZiBGRiBGXj3IAawJ0+C4EVPehJERVhEFvxDWERYeUIvRb3u6r/alX7wXT6bnXrDWDMbm0d3GyNDYjRIjAaJ0SAxGiRGg8RokPBk/+JlAbT3hIQHWyf3248f34uQ69l8AafPeUCiFz38qkuQ6CE1fMgqSpDoYe/sWc9M8S5BogU50LpLkKglPDbHt+/LbbPOEiRq0M/8f5QgUYoePkSWCBxczfSxZXpLkCghNXzI4c0rlUCxVHpKkMiRGx6JFcg9Uq0lSFiUDI+cT7+owO7pVB+jtJQgkaJ0+BA89/o38F2US20JEjFqhw8Jg8gPOu8SJDStwyNhCAwkt5NnCRKSnuERWQCRJfA30LtiSUgmD5/6N6uiCyCxDWWtWMygz0tISHruPlJawFqxmEGfl5CQ4GI9iRWIrVjrOrE3u4SEBhdsTawAIles9X6IldWQiNFaIlUAeZv//JFKyfCARIqWElYBKzivr5+ChEVNCbk9rFWpU3rnAyRylJSI3cGSlVw7PCBRQq5EbFXm3r4twwMSpVglYi8fa1W2Dg9I1GCVkB9wvavSgkQtVgmsSett3js8INGCVSKV2D96CyRaqSnhNTwg0UNJCc/hAYlerBLewwMSHsRKrGJ4QMIL+eb12DYpSHiyM3m6BNp7QmI0SIwGidEgMRokRoPEaPwCtEzAQRTl7q0AAAAASUVORK5CYII="
+                   y="120.5"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57"
+                  x="138.5" y="183.4659">Git Repo
+            </text>
+        </g><!--entity ciServer-->
+        <g id="elem_ciServer">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="81"
+                  x="124.5" y="322"/>
+            <image height="48" width="48" x="134.5"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEc0lEQVR4XtWYS4oUQRCG5y6ewBu4cO8JvIE38AJ6A/cuxJWrWbkSBDe60pUgOgiDyIAvhEGElm/gkzAiMyura4TphJ+q/rMqMl4ZGdVH1x6+OzpkFOLQUIjLwPXH72/effF59+jtt93z05+712fnu5Pvvy6u/IZn/saTk3v53bUoxBagFErmoeIaEge/eS/LmkUh9sH9V2e7r+e//1EMZW8/PW0qRoTuPPt0EQkHhuwTkUKsAZ5DcZTlXkNQLj/bA8ZEB9w6/vgyPzNCIWaAp0wHvYw3jz/82KFQfn4GvGf69SLXQiGWgHcZD958+bsIiuPF/Ow+0IjZSBRiBIQiPG46DNqyCTOIBOkEZqJZiBHwDp5HMGF2I+bntgLZDCKb5zIK0YNCLYNc8dIoXzEQg2erCxHO1Wzp3UK0QIo4jAA8ed/LfXMZhTgD8nwLGGxkdVTcay0UIgNlVSRvLAxrLYDCYCaHR0AGhmQ+ohAZer+VKq0IEPKlRWeh80aOKESGp2XmncuGYUDmtoBUzJGPKESGPUzmnRt5J2ONYZZmG788LwqRgfI9A3p8D62S2+tKeRbnsMdymkYUImMpApkboXXoEZWWYfIo3yoUohAZCKECcajExo25mYMGRA8jI3ucTW+eozhyPWc2G2A954owN7X3+fkWlg4n6z73zNlb2anubYCnr/nIQrH95TqzMWPr0dv0KN1KyU0G8DKDe4QwTAG9mXN6X2AYUchR3bSJedENzAJ4yf4Gj854fw1wDA6KHseg0QdSISL84uLe1OH+shWP8HvD35sOMlPFTfc/FRc4LbYiS98FhchA2Gy5XIOc63iZdaLHUdwM6KEQGYY0btbL6HcwgKpjzUdxc92qxZpLzitECwhhsIj3o43VQ2wbUBJPx/xmjg1spcPApSpXiB6s/YxWvZ5B/OLiiucBsnUMA+/bSudDL6MQSyAK+xgQO1dLsY2itT5+7Tmf5WQUYgkeaJkHo3CjGEbM7B0370yaFmIJltaWcPuYzAtbE4aRtIWI8tjgM94HhZiBFSTzoPedLDwQkQE81Z3XyFE0IwoxA//g6p2QKDarQISthBHK8y0UYgksElvsPC9IjXxYjUAKWZls2ZE/OoVBIXpAkIIVzhilC8/HP4BbQHFlYYBRJYJyo1JaiBZs6lRYr1i7reUsHsug/+uoCAZZLnlXmXlosEYweulaiIiYLizYCqfzLObmNhWs5XEwDzTGeb/ANFz5sXK11i9KC+s9yoxSAKiIpdDvBudVDFnAg8syGhVzI0f59mOtKBRl4nEfT88l5D3SWswSinyuRCn2R4L342+rXkuXoghKM0afcSOwCNHoGeDG5rfnQX4ufg8AjOxVvELoxcyvAQu2TmqBMqzjxs4RyMqSZj2HFmLtSdiCbXHmgd5EIZ9zwLc+oEaltBBAYZlfg9b7lk4VJKVQjHTTYO4xwhRkPqdURCGAaWS/vg8YRBMF4reEV56JnKVX3t9Wrazj0AAWJYevClrVZ2jAIaEQh4Y/sY0pxpwp2icAAAAASUVORK5CYII="
+                   y="332"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61"
+                  x="134.5" y="394.9659">CI Server
+            </text>
+        </g><!--entity registry-->
+        <g id="elem_registry">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="104"
+                  x="279" y="322"/>
+            <image height="48" width="48" x="289"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACkUlEQVR4Xu2XTWpVQRCFs5eswB1k4NwVuIPsIBvQHTh3II4cZeRIEJzoKI4CQYMQJAT8QwgiPPkeHCnr9O3b9/0ECnzwkdun+3ZXdVVX3xwcPr04qIwJ1TChGiZUw4RqmFANE6phQjVMqIYJ1TChGibsinvPP9w/fvV5FUHL47bFhF2Bwacff6yevP+y5tn5t7UTedy2mLArMFbGw+N3N/8daGHCEk7eXK+mIH1IGwwHnBh1YMlZMWEUFnl99XNtnIymrWf0TRxg3rOb2/W7ua+FCaPIAaWHHIgps0kKMc+D009vGcs7uT9jwij7coDU0zNROHpx+SiPiZjQIxrE5IQ6atEB+nMZjf3QyvXoAJFgHE48fHnVdMaM7IEBTASq8/zNbSAiLK52PCuAQxiY10CPjsVzpk1iPfWbkT0wUIcStMNTKYQxsR013m05gHG93FdE1LYBPe7Kgcvvv8wBosK7rBN1MzKCpzIAmDi28xmI7ZzzGBzPBH26KzSWdjRQ50hjWg6b0RHlL46wA/sirwtEAkeznjGBCVXudEDV16oCEfp7pTKHPxMditWo9+4/DRYnDfiRLjwrhFFnZ5gwVhtSQD+lkioOz19vf//tV2rFOVhDY+jXHFFvnRvzKMJglbW7BAeyLYL+YQegN9k+mDqsU5iQIYxzE7IrSoXctwSV46z3MCEzElJd9XOO9tA9kfU5TGiRLykdLl1Kc9VpjtYFNYoJU7A7vRK5CUQsf9ssxYQeODFyucxBxHQr576lmDAHu6YrP5e0HhjNBigVl7zbw4RRCLu+VeKlpGqkDzf6ZfQ2qTKFCZtCZPR/gSrSrna5hwnVMKEaJlTDhGqYUA0TqmFCNUyohgnVMKEaJlTjDwRvCz2Vnh1SAAAAAElFTkSuQmCC"
+                   y="332"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="289"
+                  y="394.9659">OCI Registry
+            </text>
+        </g><!--link user to gitRepo-->
+        <g id="link_user_gitRepo">
+            <path d="M61.75,154 C81.2,154 101.13,154 122.38,154 " fill="none" id="user-to-gitRepo"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="128.38,154,119.38,150,123.38,154,119.38,158,128.38,154"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="80"
+                  y="146.9136">push
+            </text>
+        </g><!--reverse link gitRepo to ciServer-->
+        <g id="link_gitRepo_ciServer">
+            <path d="M166.5337,203.6497 C166.1937,239.8997 165.75,285.68 165.41,321.91 " fill="none"
+                  id="gitRepo-backto-ciServer" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="166.59,197.65,162.5058,206.6121,166.5431,202.6498,170.5054,206.6871,166.59,197.65"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="167"
+                  y="278.9136">pull
+            </text>
+        </g><!--link ciServer to registry-->
+        <g id="link_ciServer_registry">
+            <path d="M205.61,365.5 C227.68,365.5 249.23,365.5 272.88,365.5 " fill="none" id="ciServer-to-registry"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="278.88,365.5,269.88,361.5,273.88,365.5,269.88,369.5,278.88,365.5"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30"
+                  x="227.25" y="340.4136">push
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
+                  x="223.75" y="358.1407">image
+            </text>
+        </g><!--link k8s to registry-->
+        <g id="link_k8s_registry">
+            <path d="M317.9262,167.484 C317.6294,167.9752 317.327,168.4791 317.0194,168.9953 C312.0981,177.255 305.8625,188.6762 300.1925,201.9 C288.8525,228.3475 279.775,262.005 288,292 C290.79,302.16 292.5033,307.0911 297.7033,316.4811 "
+                  fill="none" id="k8s-to-registry" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="300.61,321.73,299.7492,311.9188,298.1877,317.3559,292.7506,315.7945,300.61,321.73"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
+                  x="296.5" y="269.9136">pull
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="289"
+                  y="287.6407">image
+            </text>
+        </g><!--link k8s to registry-->
+        <g id="link_k8s_registry" class="fragment" data-fragment-index="1">
+            <path d="M330.2011,231.1157 C330.2153,231.4662 330.2294,231.8167 330.2434,232.1673 C330.2715,232.8683 330.2991,233.5694 330.3264,234.2703 C330.3809,235.672 330.4338,237.0728 330.4849,238.4709 C330.6894,244.0634 330.865,249.6125 331,255 C331.55,277.05 331.6326,295.5901 331.5226,315.8501 "
+                  fill="none" id="k8s-to-registry-1" style="stroke:#FF0000;stroke-width:1.0;"/>
+            <polygon fill="#FF0000"
+                     points="331.49,321.85,335.5388,312.8719,331.5171,316.8501,327.5389,312.8284,331.49,321.85"
+                     style="stroke:#FF0000;stroke-width:1.0;"/>
+            <text font-weight="bolder" fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="332"
+                  y="278.9136">watch
+            </text>
+            <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+            <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+        </g><!--link k8s to gitRepo-->
+        <g id="link_k8s_gitRepo">
+            <path d="M317.976,162.5733 C317.9039,162.6414 317.8315,162.7096 317.7586,162.778 C317.1759,163.3249 316.5686,163.8811 315.9388,164.4413 C310.9,168.9225 304.42,173.66 297.57,176 C267.55,186.26 237.6421,180.9574 211.2121,172.1474 "
+                  fill="none" id="k8s-to-gitRepo" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="205.52,170.25,212.7932,176.8908,210.2634,171.8311,215.3231,169.3013,205.52,170.25"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62"
+                  x="234.57" y="171.9136">pull config
+            </text>
+        </g><!--link k8s to gitRepo-->
+        <g id="link_k8s_gitRepo" class="fragment" data-fragment-index="2">
+            <path d="M317.7809,154 C317.5903,154 317.3968,154 317.2003,154 C316.8074,154 316.403,154 315.9873,154 C314.3245,154 312.4817,154 310.48,154 C302.4731,154 291.9225,154 280.1675,154 C256.6575,154 234.33,154 211.9,154 "
+                  fill="none" id="k8s-to-gitRepo-1" style="stroke:#FF0000;stroke-width:1.0;"/>
+            <polygon fill="#FF0000" points="205.9,154,214.9,158,210.9,154,214.9,150,205.9,154"
+                     style="stroke:#FF0000;stroke-width:1.0;"/>
+            <text font-weight="bolder" fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58"
+                  x="236.57" y="128.9136">push new
+            </text>
+            <text font-weight="bolder" fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84"
+                  x="223.57" y="146.6407">image version
+            </text>
+            <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+            <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+        </g><!--link k8s to k8s-->
+        <g id="link_k8s_k8s">
+            <path d="M522,153.66 C533.83,124.5 557.22,124.62 557.22,154 C557.22,183.38 536.0856,189.0599 524.2556,159.8999 "
+                  fill="none" id="k8s-to-k8s" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000" points="522,154.34,521.6768,164.1836,523.8797,158.9732,529.09,161.1761,522,154.34"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41"
+                  x="563.22" y="159.4136">deploy
+            </text>
+        </g><!--SRC=[fLFRRXen47ttLpYXhykcYP8WX920f6aKn5Oaj0-bGiOU5XUllVKb25NvztelBBj9eo8L7i0pvvmvuncVS4c5O-2qm6jhKzCDGqssxPZRjLiw0vegQK7QDbL9c72wvY32L11fNIA2ZLk2bc3112RLtF-62J4MTAZ1AASfX9jEbGkS56G90bXmVfbIs-PU0w4J1Yik0T-FeibiEZx2XtKfOVhYu8FxRB3oYCh6ytdxh7s6JchzbVgXLqYKRATPyR_b6JndUYPaYcv07m7qBjz7vRR8rjz70i5b-1FaXajpDDxi92t0rKMDnj7i9hgR7NTPL2Z7LEmEjxMFl9fPmqsjHcYL4YORv3i-5iFnx1QtpY_81ME7R3IEfel1CFfwktYQ3YQFNmRJsydJOZWOFTnDezda1hUkhwyHClu-Kg99WfU4RcAjd6HK2QLnZLP3tS2AE64_-Hv7EUpVbMfi0xySI0e3hTNsQ7vDW52hzAFT2S3bb12oAWQx1er_8-m_EGIV-YynE9j77jL0BP6nvvtsFlXPzUVoZbiyXLJbG1_A_h_5bYlZyQDx_0Zw6NHEeBmue1U46WG_AWz-w1Wy4YuRRGxtqT9V0vmjM64bIirSgXGqyVPpolxWApGunSlmhCWxcaBCZTMxdA7B0q9PtpZexzl2NPmwiqRxOoy8gWRod12eEdlQNgZapILFI0meQo9udHQYJECY_xsbWVreedhvIdLzehybbguBPDEU4DY_d1MFwp9rI4qaCuKbREUo5YnC-0uCLt9V8VlfOWQfKBitYrHEP5XjVhcIzQTL89Hce8jiw-FLLQV3ihaVv0u3-X_9B7vuMTy-tpyLs6LJhTUJYa6_NqDKh2hNhFY2_W00]-->
+    </g>
+</svg>
+
+<div class="fragment" data-fragment-index="3" style="font-size: 90%">  
+
+<img data-src="images/argo-icon.svg" title="argocd" style="height: 1.1em; vertical-align: middle;"/> <a href="https://github.com/argoproj-labs/argocd-image-updater">github.com/argoproj-labs/argocd-image-updater</a>
+
+<img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> <a href="https://fluxcd.io/docs/guides/image-update/">fluxcd.io/docs/guides/image-update</a>
 </div>
 
 Note:
-* Image updater writes back to Git!
-* Flux also supports a simple staging mechanism:
-> For production, you may choose to manually approve app version bumps by configuring Flux to push the changes to a new branch from which you can create a pull request.
-https://fluxcd.io/flux/guides/repository-structure/
+* Image updaters writes back to Git!
+* Both support only branches, not PRs -> Hope for the future as AppSet Controller can communicate with PRs
 * For more complex use cases we might use CI server to automate
+* Argo CD image updater is external and not stable, yet
 
 
 
-<!-- .slide: id="promotion-via-ci" -->
-##### Promotion via CI Server <!-- .element style="margin-top: 0px"-->
+#### Dependency bot <!-- .element style="margin-top: 0px;margin-bottom:0px;z-index:1;position: absolute" -->
 
-<!-- src: gitops-with-app-repo-ci.puml -->
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css"
-     version="1.1" viewBox="0 0 741 420" width="80%">
-    <defs id="defs843">
-        <filter height="300%" id="f1mqeku6gmnp3v" width="300%" x="-1" y="-1">
-            <feGaussianBlur result="blurOut" stdDeviation="2" id="feGaussianBlur834"/>
-            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
-                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" id="feColorMatrix836"/>
-            <feOffset dx="4" dy="4" in="blurOut2" result="blurOut3" id="feOffset838"/>
-            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal" id="feBlend840"/>
-        </filter>
-    </defs>
-    <g id="g934">
-        <path fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="rect845"
-              d="M446 7h223v216H446z"/>
-        <image height="48" width="48" x="533.5"
-               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg=="
-               y="9" id="image847"/>
-        <text fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
-              textLength="91" x="512" y="69.9951" id="text849">K8s Cluster
-        </text>
-        <circle cx="43" cy="126.5" fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5"
-                id="ellipse851" r="16"/>
-        <path d="M43 146.5c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8H24c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4"
-              fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="path853"/>
-        <text fill="#000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="6"
-              y="184.9951" id="text855">Developer
-        </text>
-        <path fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="rect857"
-              d="M157.5 106.5h89v84.2969h-89z"/>
-        <image height="48" width="48" x="167.5"
-               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg=="
-               y="116.5" id="image859"/>
-        <text fill="#fff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="167.5"
-              y="177.4951" id="text861">App Repo
-        </text>
-        <path fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="rect863"
-              d="M282 106.5h108v84.2969H282z"/>
-        <image height="48" width="48" x="292"
-               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg=="
-               y="116.5" id="image865"/>
-        <text fill="#fff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="292"
-              y="177.4951" id="text867">GitOps Repo
-        </text>
-        <path fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="rect869"
-              d="M268.5 324h85v84.2969h-85z"/>
-        <image height="48" width="48" x="278.5"
-               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEUklEQVR4Xs2YQYpcNxCGfRedYG4wN8gJcoPcYE6QG2TvRZNVVr3yKmDIKqvJyhCSJmBCMLidEDAh0PnQRxeyStJ7PQmxh5/Hm2qp9FepqlR6z8rzHz8pPMuij4t/S+ju658evvvt8Ordy9d/Pr55f/r9L568I0F+/80pT1nj6YRYj7UvzZ9UpBVC3hmZp8/wFEJffv/m/P7vlsfnL153Y/DcF9/+ip+C1k5v3UYIW6ECA16kxap5WAuYhQGfHX/JAzrsJYR97oXOwPTjz3+wWB45BCPd3+zLDrsI4QZ0ffXDW/+FCkbnYZuQ09pP24SYj5YITMjdFKQt8BN7Bxau3SaEWfgGFXjbOM1j9gMlmIeP809ig5DzTWOeGDcMAohCep1HeLrNzdngFSG2xsl6qNSEz9FjZLAYRSgrCUBaH2teRGSHKSEYuEwbg1DsFEECLGJiCKZAK8vLgpDu6Tao8xBun+ldQ2uHZkwJWWSzsKUIoWFI7QEbPcz/KSFPpSwcmtVik6JVw9M3/zolBJtMKEsyurqQz3wGYBWxmPOjLAjNPJRHdugqJw7rKCqBzTDRpoSYQ4pRweI0LfXQyCMD4QmmtF4h8A0XqKDBenYzIasLT2Ya4L7kkYFZ3bP2lMrYc9AW4AZCFmg3G3XRQvBcxGwcLznw4dFt922EGG3OM8fyiHGaPkyNTUARJ7UOvi2oGWpEowjjPKqwfuGeTWAShoVXIDds7saE7AzLtd8rO6rLHthX+X5bYXSDDMz/hIrAzjhqZl3RmFCpubpO8k20EYMz0BZeuaudWp5SFoR0b4TwE46tQ72sWXigYsSYiaidWTslVGquXmop8mUYgxlxVrA2/ohAQUhEm7AQnWXrilBprmB7Dg0RnSFPfANQokmX2s/YezylYww81itplmdEO2Cl8IS25ETbqTzPFbsIWR474dDnLAmnRbQZzovd30XIKtBp8WDKgz12DD6DmmfMJdIX7ik7CZVrynTC3GILyylTgCVeuVyHrg3sJeR1MdfWw6Txy/Do0HP518AuQvf1Yj/Txaas25JSY9yks5NBz7BMl01CTFOFWi6T+xRj4jtEB6g48Xy9UT3U+4wFKY9fEfKIlYQGWU4sLWiPNPae5TKHa3t6rN2mxsSfpOV0GcXAmFDs0TF9c1H+cP2M50ZYWmLVl/X2KDPldolSV08kY6d/QMiqc55c48u1WzKT7ZaUu+S5ft+wGJr2saRxHXo8LjsnfUAoqn4U3Bna2Oo0mvPn2u+e6gfGNlYuTYE1c1cegofubYUL3NXvYpmQMV6qL7sEjH6oXD+btr+WjpBGdyPWQOnwHGClQ71I8Ww91DI4jr7EfUBoTyXtYFPRCTWdxfzVnX2snyjb02aY+X1QO7MTrtGNN9tdmO1jSfZU0rycrpfG+8mXk56Qu2YfsxOXWl1YIJonn6d6Q/Vfq4MS383EbULoJSb+HwwTuSf00fHJEfoHjfLJHnH3AbMAAAAASUVORK5CYII="
-               y="334" id="image871"/>
-        <text fill="#fff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="278.5"
-              y="394.9951" id="text873">CI Server
-        </text>
-        <path fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="rect875"
-              d="M563 98h82v100.5938h-82z"/>
-        <image height="48" width="48" x="573"
-               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACuElEQVR4Xu2YT0olMRCHvcs7gTeYG3iCuYE38ARzA/cuZFazcuVKGHA1q5mVICoDMgyCfwZBRMh8dJ5NrF9SSfo1z7ew+CHSL6l8SVUlnd5aHJxvlLb00ftqBqDtrxefvl0h/tFfs9o9+XP18Dzq580T3eNPU4B2jn5/+XHz/frx7ukliOH98OyeIR0+Gphee6d/408dQAwABxMyvhw7uvwHvbqaAQgU46LdWEuDtf/r1rTpAMJX16qUDIjRp06vFYh2pucqRnrFxFK3TUA6j9WNOqCgpgD5NPglMT8fX5tSIr64Jmlsh8Toq84rQDqD0Vh2Slq7GAGqmeuYB8QsbfNXY2ba3hHRYQLWS848oGxNsc7ZHaVFuuuoFYE0uuE1E3WkdlXDlwci8LbhYJPXJhW7tvWbWB4ouzxdeUPdsZwoHpmUGwKFqPmBywNp9vBER3VUDU3JMkDZ4mqp8FRzAmm8WHkd0tecQLq9EnUd0tecQJp0E0qdEBsnjTYWst2HqPwoHaxdo5NGpX0t0LvrA6imTQViy6diezXWapcoqNSJOZqWQHpoNJqpkRbpbY7lGH9dN1D2gEqdrBtIt19zfq8VaDv3vrWf3NcWqwPpqI50eYIcUHWgeLujG+FHJCAHFvWF0mSsisbW9eDcNKsDhUnHvhHz0eIKb+srqgkoSKS7VKLhhUcbtwKF4duK9q8qvmVbX4NlC6IDKAzvkLrIJTFeNoujlV6O80Dx5pA+SS3eprPziyL3HZTg3mSKQKXApxa/3uGdiuMveUZYq70cmiJQGDYYmPT5iubTVIAWQx7oy/9kK+VNB1AUEakGwjdm5eRcqiKQ9idFJmCRZ+2FuXCASncglr0liDhkAiUnjpZA+llJV8gofr1jVAqN4opfFMhZf0eoagnEVHA0apbvL9O0BNocbRzQf+3wcitjETgyAAAAAElFTkSuQmCC"
-               y="108" id="image877"/>
-        <text fill="#fff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="573"
-              y="168.9951" id="text879">GitOps
-        </text>
-        <text fill="#fff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="573"
-              y="185.292" id="text881">operator
-        </text>
-        <path fill="#23A3DD" filter="url(#f1mqeku6gmnp3v)" style="stroke:#16688d;stroke-width:1.5" id="rect883"
-              d="M421.5 324h107v84.2969h-107z"/>
-        <image height="48" width="48" x="431.5"
-               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACUUlEQVR4Xu2WS0oEMRCGvUufYG7gDTyBN/AGnsAbzN6FuHLlypUguHKlK0F0EAaRAV8IgwjjR34oY1e6kxnHBxr5kXR1JflSVamelWb74ldpxZt+VhUopwqUUwXKqQLl9BeBBruXG4c3Jh69T7mWAATE/tXT8OwO7Zw/8Oh9yrUcINGgrZPJ/wbaPL71Il9kChQEUz9QtsLmAGKto/Ezu4qDsQZYCoFY4XQyxdm/Ms0NpLwIyNJUmDJmre1f44Cbfyt9KxDJ1YAgre6NvENTAmSbsQoBt0cDwh5fe7OjVsUYEHHiLUzrB+MWWR6IDZiG1G/4H48R0RqG0lEurNiBY+N4KSyGaOWos7Gm7HkgNlbBIkXCp4ydbGyPOLeA2DVZPYqWxt8NNHp8iS0EDGdWM0saCF5tgFjCxnEN2TiuGyCsnjCqRcmBsW2sstOrFnQaSAUBFif4vFqLEydw/abSB6BB+G43AciqrOt+Yk/e8Dj+sQzO7lrS+R2I1cnCbDYjRwwUUrNwJibbnSIFs/CnxOlaMbifvsquJNoUltIr7JpillappVOGh67o0gWQ324QpTUN1IQ+4Y2flC9hr04goto1eRBKzae/X2oW3t5SJ1BPeNXyu3CTUn/ydq9OoCZcgfjDpLYxjLpqoVqtr199QE04WfJuF4ooxt+pEmWAmsDU08e6RBTVsv2rfuWBmnBQNf74fiYFBwdQorPOSRUBSURe3yDreLpr+ppiF8dcCfKaAygWMdOvIl23xYKR1IJAX6cKlFMFyqkC5VSBcqpAOb0BXdqrKyPxUdcAAAAASUVORK5CYII="
-               y="334" id="image885"/>
-        <text fill="#fff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="431.5"
-              y="394.9951" id="text887">OCI Registry
-        </text>
-        <path d="M80.28 148.5h71.84" fill="none" id="user-to-appRepo" style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon890" d="m157.32 148.5-9-4 4 4-4 4 9-4z"/>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="103.25"
-              y="96.5669" id="text892">push
-        </text>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="106.75"
-              y="111.6997" id="text894">code
-        </text>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="98.25"
-              y="126.8325" id="text896">+config
-        </text>
-        <path d="M225.07 195.1c19.25 38.07 46.45 91.85 65.06 128.65" fill="none" id="appRepo-backto-ciServer"
-              style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon901"
-              d="m222.76 190.54.4849 9.8369 1.7683-5.3734 5.3733 1.7684-7.6265-6.2319z"/>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="274"
-              y="275.0669" id="text903">pull
-        </text>
-        <g>
-            <path d="M330.66 195.57c-4.42 38.03-10.62 91.53-14.87 128.18"
-                  fill="none" id="configRepo-backto-ciServer" style="stroke:#000;stroke-width:1">
-            </path>
-            <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon906"
-                  d="m331.24 190.54-5.0016 8.4844 4.4306-3.5171 3.5171 4.4306-2.9461-9.3979z">
-            </path>
-            <text fill="#000" font-family="sans-serif" font-size="13"
-                  lengthAdjust="spacing" textLength="31" x="326" y="260.0669" id="text908">push
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+  width=65% viewBox="0 0 770 528">
+    <defs/>
+    <g><!--cluster k8s-->
+        <g id="cluster_k8s">
+            <rect fill="#23A3DD" height="294" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:1.0;" width="216"
+                  x="455" y="50.3135"/>
+            <image height="48" width="48" x="539"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEPElEQVR4XtWXMaoVQRBF/15cgTtwB0aG7sAduAJ3YG4gmhj9yEgQjIw0EkRFEJEPIiKYPTkfLtx3q3qm578xeMHlzVR3V91bXdU97+LWk48X54xiODcUw564/ezTPZD2PVEMpwLC919+Ozx+//Pw+tufa/CM7X+IKYabQsSffvh1Tfrd1d8jYGNsbyHFsBWQefDq+5B4QkJYs4eQYpjFVuIJF3LnxZfn6X8WxbAGgs0SVw909r2EFMMIOH/45sfh8vPvllRCxFLoaC12fBNji5BiSGwlLjCfrAKec3wJW4QUg0CN34S4k4C8fOT4DGaEFIOTvwnxDH6KAAAHfIxOrGIAKKZ209ka1LTemN7wQq5bAxfh3cuvh+Q5FMBl02VtREI21hDMTxQyR3BsjKkkRz7SDnQBJs9WgM53FyDHEHASGpupVaE7FFy8PkFSHJzSFygGBDx6e1WciCTZdALaXn24QZBs6ZPB33lWLfv3kicgxQmjPigCcDLKgotQfYtUBmfbmQc6osSSH8RkYhRT8fHR7XARgKOlBlbW3ZmTzDmjMW/KnNNBCUm+RUDWf0LZVVORff8KFZYEaL2XU97YCTh1fXD0MnP+M0aPqHREAqLYvTeY4yXJGHO8Z1R+Xd9l3K4PioBuK/0dEmpI3bTaWtbruFQwJQUbYy4Yu2za+YztUOKGAhicqf9sTn5n/6hkyXX+PGkuqOuDI+fdBeYOvHx8Lvasa5FNUVnvWjdTRtr9VoC2es2BjkFvdtYom35EQshLzPtBcdScM/EZ8zIsAmYykAKYz6/XuJPxXfMe8bXql05AvuOrFbBW/ymArVQTZmOJDPOdoM/xQ0ClpzUZ16GeKQIwdgKURRx3dS7CDtmY6/P51U6kD4AgYmh3MvvA76AjAd0FhgMWKEs6v7UGMthYy9b68ZnkmMsYc9Qbal7NYR3+sEuMRPgvY0VAV/+8qwlFUiXUnRo8eyN7pr2Bfb76QwJ5J5YOAe2G82LetACVj8a8pvNI9DERkmBsXuPaXT+BvHQczgnAtQjoSqiDskyGRFKBddFASP5clPpMxJT9vMSWgL+2hLqSSOL+nKWkXklCnWDmZul0pZLxXXQRAEaZyK3kWZlQuXiTe6mA3AU1r+9Uxkx4IpzzkQCQde0O8t1F5E6qfDQvMyfyXawE43l8DgVszYpn130o09qZJD9TNkKXqKGADJDOEp4d1bTKw+Fjo13uwJxM0KoAoFJYC6La1D0BMb+sBGxqXuZ2vZZgPEsvUQyOUVN7AJ3lszumklurfyUmmzZRDIml7VYQ5iwJ3brGyzL5JIohsdTUCgSRbnwE5qqkcg3vS02bKIYOo6bO4HsAn0tNmyiGEWab+hTge61pE8WwhLWmPgXqjbWmTRTDGryp98Rs0yaKYQ3+CaDPhVOho3i27h3FMAvdqHtgS80niuHcUAznhn+RalH51y+k3gAAAABJRU5ErkJggg=="
+                   y="52.3135"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing"
+                  textLength="77" x="524.5" y="115.2795">K8s Cluster
             </text>
-            <text fill="#000" font-family="sans-serif" font-size="13"
-                  lengthAdjust="spacing" textLength="43" x="326.5" y="275.1997" id="text910">config
+        </g><!--entity operator-->
+        <g id="elem_operator">
+            <rect fill="#23A3DD" height="106.1358" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="78"
+                  x="569" y="214.3135"/>
+            <image height="48" width="48" x="579"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC5UlEQVR4XtWZT4oVMRDG5y6ewBu4cO8JvIE38AJ6A/cuxJWrWbkSBDe60pUgOgiDyID/EAYRWn4DFWIlX7qqu99j+oOPV6Q7lXyVSr1098mNxx9O9symYW9sGrbizacfb996dvYAYvvrEd578WU6+/nnP769uJzwafc0nZbwzunn14/efZtenv+evl/+nRQY/Mn7HxMTi4g6/fTLu7gC/e2eplOUTODhm4urqCwFE0S8921EbA+rBTDxLcHK9YSwqj0sFsAgayI+ByZ8MAH3X331fg4C9ontD7XSaQHK0aFAIaDSqKClBEQnz6CjCkP6MSHyPQL8qbHDAlQEarAnaocRIlDldwQhAUTMd/QgQr5fhqQJOZ9FSMCo2rC8vbK3lKreK8wKULkHbIP5PmuZSamhAPLTd6ixZeQ91dHBYyhgFP01OX/3+fnV6kE7lFGRIBMnjaKpNBSgcp92f2+GmRSZgxQwqjzZUul5FAEqfVh2P6EsjyJA/UuSm35CWR5FgKoCW5TNyL96FHUlbAaijNb019fS+8/S+2sG2Bubhr2xadgbm4a9sRj81VPq1pJq4wdZQntVU7N3lCmGOkIsgR9kCdX7JQJd31eMLQX0yl2GTFLB+y7GdRKgTqW9A2UxrosA+np/BvaBv78YWwrwg2SojjOgd6QpRkSAvXTCEVUCkq8crqg+0G+yDPGjwEHT3w+LEREAtjiZ9khQ/Fg11KNsMaICQC8X15DJq7IJSCvfx1iMjAAwcpqhPSsrcG1UFIqRFQDoszTnmdRowxrm/BejJ8DeIsyBzR19ZiaXVZ336B0dPIuhBMzlp4d9RmJwqhK/7BminfET3WdDAYBriFDXD4FI5FMCIDmrHvq3RDQV0wKMpEUmFaIgxUbVRnFWgHJKjm4B9YEvymIoAb3zR83MVxcDYxGAOd8RFkN9aFAr0KN9RrIXtaSFvbhlY5LfGX8RFoNoMEDNNUt7LDYNe2PTsDf+AwK5VHkDkw9+AAAAAElFTkSuQmCC"
+                   y="224.3135"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="579"
+                  y="287.2795">GitOps
             </text>
-            <text class="fragment" data-fragment-index="2" font-weight="bolder" fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="326" y="290.3325">+create PR
-                <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-                dur="2.0s" repeatCount="indefinite"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="579"
+                  y="306.3474">operator
             </text>
-        </g>
-        <path d="M353.66 366h62.53" fill="none" id="ciServer-to-registry" style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon915" d="m421.39 366-9-4 4 4-4 4 9-4z"/>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="372"
-              y="359.0669" id="text917">push
-        </text>
-        <path d="M461.1867 223.2268c.0269.2753.0537.5509.0806.8268.0538.5519.1077 1.1051.1617 1.6595.4321 4.435.8718 8.9483 1.3159 13.5058.8881 9.115 1.7935 18.4073 2.6896 27.6056 1.7924 18.3968 3.548 36.418 5.0555 51.8955"
-              fill="none" id="k8s-to-registry" style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon920"
-              d="m470.99 323.84 3.1085-9.3454-3.5933 4.369-4.369-3.5933 4.8538 8.5697z"/>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="468"
-              y="275.0669" id="text922">pull
-        </text>
-        <path d="M395.29 148.5H445.8809" fill="none" id="configRepo-backto-k8s" style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon925"
-              d="m390.16 148.5 9.0114 3.9743-4.0114-3.9886 3.9885-4.0114L390.16 148.5z"/>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="409.82"
-              y="164.5669" id="text927">pull
-        </text>
-        <path d="M643 148.14c11.83-30.14 35.22-30.02 35.22.36s-23.39 30.5-35.22.36" fill="none" id="k8s-to-k8s"
-              style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" id="polygon930"
-              d="m643 148.86-.4352 9.8392 2.262-5.1849 5.1849 2.262L643 148.86z"/>
-        <text fill="#000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="684.22"
-              y="153.0669" id="text932">deploy
-        </text>
+        </g><!--entity user-->
+        <g id="elem_user">
+            <ellipse cx="33" cy="253.3135" fill="#23A3DD" rx="16" ry="16" style="stroke:#16688D;stroke-width:1.5;"/>
+            <path d="M33,273.3135 C37,273.3135 40,273.3135 44,269.3135 C52,269.3135 60,277.3135 60,285.3135 L60,289.3135 C60,293.3135 56,297.3135 52,297.3135 L14,297.3135 C10,297.3135 6,293.3135 6,289.3135 L6,285.3135 C6,277.3135 14,269.3135 22,269.3135 C26,273.3135 29,273.3135 33,273.3135 "
+                  fill="#23A3DD" style="stroke:#16688D;stroke-width:1.5;"/>
+        </g><!--entity gitRepo-->
+        <g id="elem_gitRepo">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="77"
+                  x="128.5" y="223.8135"/>
+            <image height="48" width="48" x="138.5"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACD0lEQVR4XtWWzUkEQRCFzcUIzMG7EZiBGRiBGXj3IAawJ0+C4EVPehJERVhEFvxDWERYeUIvRb3u6r/alX7wXT6bnXrDWDMbm0d3GyNDYjRIjAaJ0SAxGiRGg8RokPBk/+JlAbT3hIQHWyf3248f34uQ69l8AafPeUCiFz38qkuQ6CE1fMgqSpDoYe/sWc9M8S5BogU50LpLkKglPDbHt+/LbbPOEiRq0M/8f5QgUYoePkSWCBxczfSxZXpLkCghNXzI4c0rlUCxVHpKkMiRGx6JFcg9Uq0lSFiUDI+cT7+owO7pVB+jtJQgkaJ0+BA89/o38F2US20JEjFqhw8Jg8gPOu8SJDStwyNhCAwkt5NnCRKSnuERWQCRJfA30LtiSUgmD5/6N6uiCyCxDWWtWMygz0tISHruPlJawFqxmEGfl5CQ4GI9iRWIrVjrOrE3u4SEBhdsTawAIles9X6IldWQiNFaIlUAeZv//JFKyfCARIqWElYBKzivr5+ChEVNCbk9rFWpU3rnAyRylJSI3cGSlVw7PCBRQq5EbFXm3r4twwMSpVglYi8fa1W2Dg9I1GCVkB9wvavSgkQtVgmsSett3js8INGCVSKV2D96CyRaqSnhNTwg0UNJCc/hAYlerBLewwMSHsRKrGJ4QMIL+eb12DYpSHiyM3m6BNp7QmI0SIwGidEgMRokRoPEaPwCtEzAQRTl7q0AAAAASUVORK5CYII="
+                   y="233.8135"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57"
+                  x="138.5" y="296.7795">Git Repo
+            </text>
+        </g><!--entity bot-->
+        <g id="elem_bot">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="130"
+                  x="298" y="223.8135"/>
+            <image height="48" width="48" x="308"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABzElEQVR4Xu2ZTUrEQBCF5y6ewBu4cO8JvIE38AJ6A/cuxJWrWbkSBDe60pUgOgiDyIB/CIMIkbeY0KnX3aQ6Facb+sEHMy8JqZd0OtUzk43jh0nJkFEanS/7V6/N7WLZzD5/1sLJ/Uezefq4LYuM0Sk+ByGILDJG+wFXPhftTJ+vZaEh2g9Inot2z+e970INMIbcAHg2Y0Mq+wArD8/o1tnsoNgA0Pvyl0IUFQC6nH93no/iAkDuXSgygLu9DYBbk4vcKyy3QXsXLxwAqXKQHONyO+QNADDfoqGaPn2tBcz5bj3qADkii4dqgP8CawNZPFRMABTqk9sb0UG5gFkRrYNP7n50oAWrpSkKSCEmOc3SyYeAMTv2yk621lTEEMZ+mx/eLOg9QUWkMvab3Fc8ICOVo7s3eU4TYUjKYeNCRipoBaTwQOLKacEkgCm0z29EZKTiC4CrJ/ezhoxUig2A3h3Fh+ZvzExyHWsJGVpChbvCPn3GcwpkaNBMnb5e3wIyNISaLZ9C8/hQyNBQAxhAhoYawAAyNNQABpChoQYwgAwNNYABZGhAlykLDUnzx50GMrT0WUqi3ZbHWUFGCrgTGE4+YutZC8goDTJK4w8YT8PaxNGRbQAAAABJRU5ErkJggg=="
+                   y="233.8135"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="308"
+                  y="296.7795">Dependency bot
+            </text>
+        </g><!--entity ciServer-->
+        <g id="elem_ciServer">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="81"
+                  x="149.5" y="435.3135"/>
+            <image height="48" width="48" x="159.5"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEc0lEQVR4XtWYS4oUQRCG5y6ewBu4cO8JvIE38AJ6A/cuxJWrWbkSBDe60pUgOgiDyIAvhEGElm/gkzAiMyura4TphJ+q/rMqMl4ZGdVH1x6+OzpkFOLQUIjLwPXH72/effF59+jtt93z05+712fnu5Pvvy6u/IZn/saTk3v53bUoxBagFErmoeIaEge/eS/LmkUh9sH9V2e7r+e//1EMZW8/PW0qRoTuPPt0EQkHhuwTkUKsAZ5DcZTlXkNQLj/bA8ZEB9w6/vgyPzNCIWaAp0wHvYw3jz/82KFQfn4GvGf69SLXQiGWgHcZD958+bsIiuPF/Ow+0IjZSBRiBIQiPG46DNqyCTOIBOkEZqJZiBHwDp5HMGF2I+bntgLZDCKb5zIK0YNCLYNc8dIoXzEQg2erCxHO1Wzp3UK0QIo4jAA8ed/LfXMZhTgD8nwLGGxkdVTcay0UIgNlVSRvLAxrLYDCYCaHR0AGhmQ+ohAZer+VKq0IEPKlRWeh80aOKESGp2XmncuGYUDmtoBUzJGPKESGPUzmnRt5J2ONYZZmG788LwqRgfI9A3p8D62S2+tKeRbnsMdymkYUImMpApkboXXoEZWWYfIo3yoUohAZCKECcajExo25mYMGRA8jI3ucTW+eozhyPWc2G2A954owN7X3+fkWlg4n6z73zNlb2anubYCnr/nIQrH95TqzMWPr0dv0KN1KyU0G8DKDe4QwTAG9mXN6X2AYUchR3bSJedENzAJ4yf4Gj854fw1wDA6KHseg0QdSISL84uLe1OH+shWP8HvD35sOMlPFTfc/FRc4LbYiS98FhchA2Gy5XIOc63iZdaLHUdwM6KEQGYY0btbL6HcwgKpjzUdxc92qxZpLzitECwhhsIj3o43VQ2wbUBJPx/xmjg1spcPApSpXiB6s/YxWvZ5B/OLiiucBsnUMA+/bSudDL6MQSyAK+xgQO1dLsY2itT5+7Tmf5WQUYgkeaJkHo3CjGEbM7B0370yaFmIJltaWcPuYzAtbE4aRtIWI8tjgM94HhZiBFSTzoPedLDwQkQE81Z3XyFE0IwoxA//g6p2QKDarQISthBHK8y0UYgksElvsPC9IjXxYjUAKWZls2ZE/OoVBIXpAkIIVzhilC8/HP4BbQHFlYYBRJYJyo1JaiBZs6lRYr1i7reUsHsug/+uoCAZZLnlXmXlosEYweulaiIiYLizYCqfzLObmNhWs5XEwDzTGeb/ANFz5sXK11i9KC+s9yoxSAKiIpdDvBudVDFnAg8syGhVzI0f59mOtKBRl4nEfT88l5D3SWswSinyuRCn2R4L342+rXkuXoghKM0afcSOwCNHoGeDG5rfnQX4ufg8AjOxVvELoxcyvAQu2TmqBMqzjxs4RyMqSZj2HFmLtSdiCbXHmgd5EIZ9zwLc+oEaltBBAYZlfg9b7lk4VJKVQjHTTYO4xwhRkPqdURCGAaWS/vg8YRBMF4reEV56JnKVX3t9Wrazj0AAWJYevClrVZ2jAIaEQh4Y/sY0pxpwp2icAAAAASUVORK5CYII="
+                   y="445.3135"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61"
+                  x="159.5" y="508.2795">CI Server
+            </text>
+        </g><!--entity registry-->
+        <g id="elem_registry">
+            <rect fill="#23A3DD" height="87.0679" rx="2.5" ry="2.5" style="stroke:#16688D;stroke-width:0.5;" width="104"
+                  x="311" y="435.3135"/>
+            <image height="48" width="48" x="321"
+                   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACkUlEQVR4Xu2XTWpVQRCFs5eswB1k4NwVuIPsIBvQHTh3II4cZeRIEJzoKI4CQYMQJAT8QwgiPPkeHCnr9O3b9/0ECnzwkdun+3ZXdVVX3xwcPr04qIwJ1TChGiZUw4RqmFANE6phQjVMqIYJ1TChGibsinvPP9w/fvV5FUHL47bFhF2Bwacff6yevP+y5tn5t7UTedy2mLArMFbGw+N3N/8daGHCEk7eXK+mIH1IGwwHnBh1YMlZMWEUFnl99XNtnIymrWf0TRxg3rOb2/W7ua+FCaPIAaWHHIgps0kKMc+D009vGcs7uT9jwij7coDU0zNROHpx+SiPiZjQIxrE5IQ6atEB+nMZjf3QyvXoAJFgHE48fHnVdMaM7IEBTASq8/zNbSAiLK52PCuAQxiY10CPjsVzpk1iPfWbkT0wUIcStMNTKYQxsR013m05gHG93FdE1LYBPe7Kgcvvv8wBosK7rBN1MzKCpzIAmDi28xmI7ZzzGBzPBH26KzSWdjRQ50hjWg6b0RHlL46wA/sirwtEAkeznjGBCVXudEDV16oCEfp7pTKHPxMditWo9+4/DRYnDfiRLjwrhFFnZ5gwVhtSQD+lkioOz19vf//tV2rFOVhDY+jXHFFvnRvzKMJglbW7BAeyLYL+YQegN9k+mDqsU5iQIYxzE7IrSoXctwSV46z3MCEzElJd9XOO9tA9kfU5TGiRLykdLl1Kc9VpjtYFNYoJU7A7vRK5CUQsf9ssxYQeODFyucxBxHQr576lmDAHu6YrP5e0HhjNBigVl7zbw4RRCLu+VeKlpGqkDzf6ZfQ2qTKFCZtCZPR/gSrSrna5hwnVMKEaJlTDhGqYUA0TqmFCNUyohgnVMKEaJlTjDwRvCz2Vnh1SAAAAAElFTkSuQmCC"
+                   y="445.3135"/>
+            <text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="321"
+                  y="508.2795">OCI Registry
+            </text>
+        </g><!--link user to gitRepo-->
+        <g id="link_user_gitRepo">
+            <path d="M61.75,267.3135 C81.2,267.3135 101.13,267.3135 122.38,267.3135 " fill="none" id="user-to-gitRepo"
+                  style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="128.38,267.3135,119.38,263.3135,123.38,267.3135,119.38,271.3135,128.38,267.3135"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="80"
+                  y="260.2271">push
+            </text>
+        </g><!--reverse link gitRepo to ciServer-->
+        <g id="link_gitRepo_ciServer">
+            <path d="M172.3348,316.9277 C176.3148,353.1777 181.35,398.9935 185.32,435.2235 " fill="none"
+                  id="gitRepo-backto-ciServer" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="171.68,310.9635,168.6861,320.3463,172.2257,315.9337,176.6383,319.4732,171.68,310.9635"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="183"
+                  y="392.2271">pull
+            </text>
+        </g><!--link ciServer to registry-->
+        <g id="link_ciServer_registry">
+            <path d="M230.56,478.8135 C254.53,478.8135 279.13,478.8135 304.87,478.8135 " fill="none"
+                  id="ciServer-to-registry" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="310.87,478.8135,301.87,474.8135,305.87,478.8135,301.87,482.8135,310.87,478.8135"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30"
+                  x="255.75" y="453.7271">push
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37"
+                  x="252.25" y="471.4542">image
+            </text>
+        </g><!--link bot to registry-->
+        <g id="link_bot_registry" class="fragment" data-fragment-index="1">
+            <path d="M363,310.9635 C363,347.2135 363,392.9935 363,429.2235 " fill="none" id="bot-to-registry"
+                  style="stroke:#FF0000;stroke-width:1.0;"/>
+            <polygon fill="#FF0000" points="363,435.2235,367,426.2235,363,430.2235,359,426.2235,363,435.2235"
+                     style="stroke:#FF0000;stroke-width:1.0;"/>
+            <text font-weight="bolder" fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="364"
+                  y="392.2271">watch
+            </text>
+            <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+            <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+        </g><!--link k8s to registry-->
+        <g id="link_k8s_registry">
+            <path d="M454.9135,332.1717 C454.8762,332.3296 454.8387,332.4875 454.8011,332.6455 C454.6506,333.2772 454.4973,333.909 454.3412,334.5406 C454.029,335.8039 453.7056,337.0665 453.3706,338.3265 C452.7006,340.8465 451.9841,343.3562 451.218,345.8402 C449.6858,350.8082 447.955,355.6735 446,360.3135 C434.7,387.1235 420.186,409.1392 403.696,430.3192 "
+                  fill="none" id="k8s-to-registry" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="400.01,435.0535,408.6952,430.4094,403.0816,431.1083,402.3827,425.4948,400.01,435.0535"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22"
+                  x="449.5" y="383.2271">pull
+            </text>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="442"
+                  y="400.9542">image
+            </text>
+        </g><!--reverse link gitRepo to bot-->
+        <g id="link_gitRepo_bot" class="fragment" data-fragment-index="2">
+            <path d="M211.72,267.3135 C237.94,267.3135 267.22,267.3135 297.73,267.3135 " fill="none"
+                  id="gitRepo-backto-bot" style="stroke:#FF0000;stroke-width:1.0;"/>
+            <polygon fill="#FF0000"
+                     points="205.72,267.3135,214.72,271.3135,210.72,267.3135,214.72,263.3135,205.72,267.3135"
+                     style="stroke:#FF0000;stroke-width:1.0;"/>
+            <text font-weight="bolder" fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56"
+                  x="223.75" y="260.2271">create PR
+            </text>
+            <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+            <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
+                     dur="2.0s" repeatCount="indefinite"/>
+        </g><!--reverse link gitRepo to k8s-->
+        <g id="link_gitRepo_k8s">
+            <path d="M180.1508,217.8302 C194.9008,170.9502 223.89,104.6435 280,72.3135 C343.92,35.4735 391.61,22.4635 446,72.3135 C447.9416,74.0932 449.7812,75.9439 451.5232,77.8596 C452.3942,78.8174 453.2408,79.7915 454.0635,80.7811 C454.2692,81.0285 454.4734,81.2769 454.6762,81.5262 "
+                  fill="none" id="gitRepo-backto-k8s" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="178.35,223.5535,184.8667,216.169,179.8506,218.784,177.2356,213.7679,178.35,223.5535"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="303"
+                  y="22.2271">pull config
+            </text>
+        </g><!--link k8s to k8s-->
+        <g id="link_k8s_k8s">
+            <path d="M675.5,266.9735 C687.33,237.8135 710.72,237.9335 710.72,267.3135 C710.72,296.6935 689.5856,302.3734 677.7556,273.2134 "
+                  fill="none" id="k8s-to-k8s" style="stroke:#000000;stroke-width:1.0;"/>
+            <polygon fill="#000000"
+                     points="675.5,267.6535,675.1768,277.4971,677.3797,272.2868,682.59,274.4896,675.5,267.6535"
+                     style="stroke:#000000;stroke-width:1.0;"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41"
+                  x="716.72" y="272.7271">deploy
+            </text>
+        </g><!--SRC=[fLFRRXen57ptLpYXhyksIPkW225nITCeY8qseNreAcJi0xXuxQqlGQZglzTxONS9JOjKU02VCpCUZuzFkAJ2CN1Qu9MrgRaAGqqsxIMtApTt1ZHLqeAqRQgICE5qnK64gI3IkaG4QpS7BS622KogkVyD4s8iw523KKvJ2DUTgXSuASWS1B3Wx4DARPjx3OHE62ou17mxZ2RJU7o43-jImlHvxOFxRh3mYCh6yrdxVVijEccShzGFlKAYP3lDDlzJdy5pfcT2fkWQz150x_9rL6wBR7mU2GGVmfHmQMTQ2V4twHSaivNqQF1ta6ikJO6lqXsEe-aekfaUbp0LoZ6rT7N4kygBYzuprDWZj4e9azt-ApvcW_7q6hVEpiavOtKt6aVnh3-8Fb_F7kF-vE6-7rzF7cU3_l3k9ewcan5kNLvU8cJy4LEYIOBdXAwNMZd9g19AumQjWHh1WZXXF_ep3dFOltTgi0tyS20fzBLMcwFv3G52hT8FTYi0bnU54FQVl8vF_PSOd5r2NjL0BP5B3pxjll4Nr7kIDzpY65AL0tqf-t-8RGwN9uqW1ScyyIsUAvjJ_UyXhPmOpnZUuWVGpw1pCEN5uf1HF0rFY3mZXYKtLczpZYuN2EqH_21uz5t7uA5msU3aO5_5Fm_Lit4lpXobvacg53JnEUMKtGBzGYWB30UzNHxu2gVEhD1ksGs2wWXvJmXKhJrjPxNaFKcUa2KW7n4ElhOqi6zxc6u-NrU-tjiGIrSeSn-yr15YfrFRACIoxFTbg0PY0T_73MoUII64_OjSy6MnJwziC4Y5sXxCLXdZe7eCvPGsNrk1K9g1BhgjTnSNdGxBegpbwflu7yciNZ-sBvzk7mliV5-jsvMAGQ_NG5IighU_epVx6m00]-->
     </g>
 </svg>
 
-Note: Looks simple but technically challenging: Git protocol vs SCM-specific API
-
-
-
-#### Promotion via dependency bot <!-- .element style="margin-top: 0px"-->
-<!-- src: gitops-with-renovate.puml -->
-<!-- replace: 
-<path fill="#181818" with #fff
-stroke:#181818 with #fff
-<text font-family="sans-serif" with <text  fill="#FFF" font-family="sans-serif"
--->
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70%" viewBox="0 0 797 491">
-    <rect fill="#23A3DD" height="283" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:1" width="223" x="470"
-          y="47.566"/>
-    <image height="48" width="48" x="557.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEEklEQVR4Xs2XTYoUQRCFvUudoG/QN5gTzA3mBp7AG8zehbhy1StXQoErV+1KEBVhEBkQEcGlj/ym30RH/lR1j6gQDFVZmRFfRryM7Hk0PX3/X9mjeujf2p8B2jz/IKvHz7AHAQni8uXN9dtv881PmR70+kCyM4FAefbuuzj2t79setXgQ7BOBlKkq1dfapQaS9POwDoBaA1KE2v74lPtrWergORxjIKG0sh5WAtA8vL49dfdxx89FIeMuPVkjciJXC1idYHWoGCaowTI9FB/rSePsRpA0spKFMcQDUvqr00bYGUgaFaiRO8nAe1LEbWkPoYZSNRSQ72+NoRszVr1WD2/NjXSi93nBSD1tLTROgavmiaPPj7aq7zrVYOUu16SQGmhIyA6jYFwoQCOweBAAVg6EKbnkomUCpfWZqAnb27jGmJr6w5AnrlNFVhb5KLwsx5Qhq85b6A+K7WMjoC0pt6EmRAK8aJ3ZV5fZSm8HLJKZHFLuMW/lqRMHwFpWVPRJMYrHTt+qgct2PgpGZvpAvWaG2lAgJtwz2NNIOa7dr1rZ1d6WBto0IE0KG1RLGIovEasKn1yuTWoT9YZ9U3SjJ6TjI6AagHxoBiolY5MkjflSGoJHtnPdWkEhtYIr+S+ycRWG0DbTkskB1G210u/DGNZ01rv03BJRvdAqSV6gevlCXP1s9CltCuLhpmDqpH+DETCews4xpb8HLQ8HfTkUlpMeEO2A/9zaY/ezz3QYAcRaA6XhqVDeAsfbXkyIktA8VkLM1BPQBFIiUWkUYNE0hwH9icfAorLtNr//viWvQO6qFoim5aLJBcgbLxeHi4QXslTXDKVJidXpC2Vwk3uHii1xLnIls3RUZi2LQ1Qk5VkH/gYdVuuFH1CVciZT5vyc0AjkMHkv1eH9ngHlAQ0l37l2JQsnZQ56Nr5sKI9B2EBqmc55BCQKkfU1wUg6sWg9RHPswcJBvQmaIU0+4i5WDaH2xddHwGlkiUjGdoZsXFNQ9scurD5kCMhSU/sik3bhRvt/pQ1j71H5lJEFw6FxWAJWhNisVKBon9zHwFNrR8JMbFzqSD535YWQHpcoH0oIuKlguSvSYPbeOaPgKbW74T0bKaYV+rF17hXaJLDRBMPfANozYacBi8hH+Qs0gwqhaXtNYCio3q9mdgW+qAuNg/Wya79xI11gaa+wO2IiwxpuwdiekXOV+U6GziJxV0AmloCtyNayziLlLUnILYUhbwMNLUEbl+Xh/9vapTFaa54HXEBqClw3F2H/xt7tis/Ueoz2xTyKqCpJfAxxKLNHSFHGwFNSwI/yea+kKMtAE19gZ9kqKon5GjLQFMQ+Nk2FnK0VUC+BLglTjU6xVg6tlVAGP33DFvUTbQTgP6O/XdAvwHpMBmWTVfqJgAAAABJRU5ErkJggg=="
-           y="49.566"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold" textLength="91" x="536" y="110.561">K8s
-        Cluster
-    </text>
-    <rect fill="#23A3DD" height="100.594" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="82" x="587"
-          y="205.566"/>
-    <image height="48" width="48" x="597"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACtUlEQVR4Xu2YT4oVMRDG5y7vBHMDb+AJvMHcwBN4g7d3Ia5czcqVILhypStBdBAGkQH/IQwixB+dN02sr1JJupuZt7D4eDy6U1Vf6k/Sycnu8fujwok+ultsQOj06Yd7zy4Af/Sti7MXny9+/J7x5uoa9fxqCaH755/2b7++vPz17fpPEsH6k3ffcRnwO//402gxPr8aIISDR6+vmJCxFQiOYa+mYGxGDhOCijHRL8TS0CLAZswAIWwNRaUmkNiA0MNXX4zmGqG8cmFpvLsIqdp6oQ9oKJ1nm1DMBrtuK5FfnFE0VqEQdNV4g5DOYBbqaVYOAFEtlEAiQszSDr8RZqbjA5Ad6sZa8SQi5PYUcXZXlB7oqqNSJaTZTTeVqJ760UyfT4jE24GTLI5NCd0uSvEJueEZqpsHzy8JJ8hbJu0GoELW4sT5hLR6eKJeAzRTUxOHkNtcPR1eYktCmi8iry5jbElIl1eyri5jbElIu2BBqwdLfCxzI9u2n6HO+lHa6UGpaxfGO8d/Qi0cKyGWfDp2FPSUWmwin6JmmK3pQEg3jU5Rf03oaY5wzG/XEjJN2wS+rYl/jdw2Id3zzf59q4ROve+tfXFe260npF4D6O6UZINqE8qnO9ToDkARsBHSX6AsxibQsqanU7YZ1iaUFm37BszHGp1EP467CCXJ9BBgo62eprsRHdxLKFX0m8hf2dbW9PXnNsQAoTS1aH/d4M+t4iw1Oz6hfHIon5RCmcff2lSGrjelBCeZKqFa4kvJt3dYp+P4pc4ISVMrLkefUJoWGDjp85USxKZNaDfVgX78L5Y40V2EMshIMxGxkEq3pxRVQqq/X3TE0RvPGFVCtTNQ84IsCwaZQM1IgAMhvVbSCBnk27t8i0BG8o0CNXsm93xDOBBiKhiaMRTkbXEgdDw4OkJ/ASj6cUZi0uR0AAAAAElFTkSuQmCC"
-           y="215.566"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="47" x="597" y="276.561">GitOps
-    </text>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="62" x="597" y="292.858">operator
-    </text>
-    <circle cx="43" cy="234.066" fill="#23A3DD" style="stroke:#16688d;stroke-width:1.5" r="16"/>
-    <path d="M43 254.066c4 0 7 0 11-4 8 0 16 8 16 16v4c0 4-4 8-8 8H24c-4 0-8-4-8-8v-4c0-8 8-16 16-16 4 4 7 4 11 4"
-          fill="#23A3DD" style="stroke:#16688d;stroke-width:1.5"/>
-    <text fill="#000" font-family="sans-serif" font-size="14" textLength="74" x="6" y="292.561">Developer
-    </text>
-    <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="81" x="147.5"
-          y="214.066"/>
-    <image height="48" width="48" x="157.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAB50lEQVR4Xu3VQUpDMRAG4N5lTuBJPIE38AaewBu4dyEeoCtXguDKla4EURGKSMGqCEWEOBheGGYmyUzyikXe8G/6miZf2zfzZnB8t1WZyUt/mwlUywSq5Z+CDi5fMPJ6Q3pBO6f3j+9f4beul2t8Kde40gWimrFM7SCpGcXUDto/f+aWoXpMLaB02CZMblD8p05u3+LL0U0+EL1vNmRygORdnEwxh1dL+m4sr8kKkppYRzevdBkS+QqnyQTKaYIA5f4+u6kOKmiwLhafdPHe2YKvGMpoqoDKmlh469CP4EONrxjKYiqBLJpY8Zj0fO0xZUF2TRhAeFjqu2aTDnJpAgEFMgvwIsY7C3TQ/OGD71EsCgqi9dRZgEfIcyEHcv08oQZSZwEeIc+FHAh35BsUi4HYLFB3Y1M+RQdhcFO+R74YKJBZoE4mJqbJgsBjkiCs1fobQ6/EKmigDAKzSQWphWvkKTQVEBhMqV/UDqdV/m1i6iAomtg3LswLiwaMIMibWIfnBrRRA3YQZExsvqkdbteACwQZU3qmejtcjQ8EGRO2tzrcvRpoAEHGJKva4WpaQGAwtWmgGQRFU7MGekCQMfVooBMEwtSpgX4QkOnc0FMyI4Awu/MnjLzekHFAI2YC1TKBatk60A/PNIQd+V6mZAAAAABJRU5ErkJggg=="
-           y="224.066"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="61" x="157.5" y="285.061">Git Repo
-    </text>
-    <g class="fragment" data-fragment-index="1">
-        <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="115" x="327.5"
-        y="214.066"/>
-        <image fill-opacity="0.2" height="48" width="48" x="337.5"
-        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABmklEQVR4Xu2YT0oDMRTGe5c5gTfwBp7AG3gDT+AN3LsQV666ciUIrrrSlSBahCJSsFWEIgX9cCSm3wvJvOfEiZCP36Yz6cxvMvnz2lFzdFsUI3loWH6E9i+fruar6ct7Jo5vllsnd9IgLASbj/yBljQIC6Fv+Nt5sjN+kBIBIbjzV/Nk92wmJaqQFyeEURt8fYMJtR8xdrdPpwUJIYvV2ncaXgi5mL2VJYS4TipFyB3/FkKnUYtMcT1Bx/fOHzeEIEgtcsQfK3SKhQBWBex/4/vXTGDhcffqJPTHVKEoKIzKEsLtScjtawMIYUZjuyAhd/a3Qm3hixt0hDzaBLYOAxgHfdWZfh1iF+prcT+YzP3LGoX6WtnJpjELHV4/87WVweuOVYxasBX4V8doxbN2AZMAcz7yA60fITyubGPj/wuhoIGNXFEw6ahct6EWkiouOBUZHB3RCSVnOxU9BnRCclOkyHVFSxVKUYVSVKEUVShFFUqhE8J+zgqbSf6nmUQn1ESLV5Qlsr0WtVDz1U94d0SwQDZgEcpKcUKf8kQvEoTiGVIAAAAASUVORK5CYII="
-        y="224.066"></image>
-        <text fill="#fff" font-family="sans-serif" font-size="14" textLength="95" x="337.5" y="285.061">Renovate bot
-        </text>
-    </g>
-    <g class="fragment" data-fragment-index="2">
-        <path d="M233.93 256.066h93.5" fill="none" style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" d="m228.82 256.066 9 4-4-4 4-4-9 4z"/>
-        <text font-weight="bolder"  fill="#000" font-family="sans-serif" font-size="13" textLength="62" x="247" y="249.133">create PR
-        </text>
-        <path d="M385 298.236v98.14" fill="none" style="stroke:#000;stroke-width:1"/>
-        <path fill="#000" style="stroke:#000;stroke-width:1" d="m385 401.516 4-9-4 4-4-4 4 9z"/>
-        <text font-weight="bolder"  fill="#000" font-family="sans-serif" font-size="13" textLength="39" x="386" y="367.633">watch
-        </text>
-        <animate attributeType="XML" attributeName="stroke-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-        dur="2.0s" repeatCount="indefinite"/>
-        <animate attributeType="XML" attributeName="fill-opacity" values="1.0;0.8;0.6;0.4;0.2;0;0.2;0.4;0.6;0.8;"
-        dur="2.0s" repeatCount="indefinite"/>
-    </g>
-    <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="85" x="170.5"
-          y="401.566"/>
-    <image height="48" width="48" x="180.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAEUklEQVR4Xs2YQYpcNxCGfRedYG4wN8gJcoPcYE6QG2TvRZNVVr3yKmDIKqvJyhCSJmBCMLidEDAh0PnQRxeyStJ7PQmxh5/Hm2qp9FepqlR6z8rzHz8pPMuij4t/S+ju658evvvt8Ordy9d/Pr55f/r9L568I0F+/80pT1nj6YRYj7UvzZ9UpBVC3hmZp8/wFEJffv/m/P7vlsfnL153Y/DcF9/+ip+C1k5v3UYIW6ECA16kxap5WAuYhQGfHX/JAzrsJYR97oXOwPTjz3+wWB45BCPd3+zLDrsI4QZ0ffXDW/+FCkbnYZuQ09pP24SYj5YITMjdFKQt8BN7Bxau3SaEWfgGFXjbOM1j9gMlmIeP809ig5DzTWOeGDcMAohCep1HeLrNzdngFSG2xsl6qNSEz9FjZLAYRSgrCUBaH2teRGSHKSEYuEwbg1DsFEECLGJiCKZAK8vLgpDu6Tao8xBun+ldQ2uHZkwJWWSzsKUIoWFI7QEbPcz/KSFPpSwcmtVik6JVw9M3/zolBJtMKEsyurqQz3wGYBWxmPOjLAjNPJRHdugqJw7rKCqBzTDRpoSYQ4pRweI0LfXQyCMD4QmmtF4h8A0XqKDBenYzIasLT2Ya4L7kkYFZ3bP2lMrYc9AW4AZCFmg3G3XRQvBcxGwcLznw4dFt922EGG3OM8fyiHGaPkyNTUARJ7UOvi2oGWpEowjjPKqwfuGeTWAShoVXIDds7saE7AzLtd8rO6rLHthX+X5bYXSDDMz/hIrAzjhqZl3RmFCpubpO8k20EYMz0BZeuaudWp5SFoR0b4TwE46tQ72sWXigYsSYiaidWTslVGquXmop8mUYgxlxVrA2/ohAQUhEm7AQnWXrilBprmB7Dg0RnSFPfANQokmX2s/YezylYww81itplmdEO2Cl8IS25ETbqTzPFbsIWR474dDnLAmnRbQZzovd30XIKtBp8WDKgz12DD6DmmfMJdIX7ik7CZVrynTC3GILyylTgCVeuVyHrg3sJeR1MdfWw6Txy/Do0HP518AuQvf1Yj/Txaas25JSY9yks5NBz7BMl01CTFOFWi6T+xRj4jtEB6g48Xy9UT3U+4wFKY9fEfKIlYQGWU4sLWiPNPae5TKHa3t6rN2mxsSfpOV0GcXAmFDs0TF9c1H+cP2M50ZYWmLVl/X2KDPldolSV08kY6d/QMiqc55c48u1WzKT7ZaUu+S5ft+wGJr2saRxHXo8LjsnfUAoqn4U3Bna2Oo0mvPn2u+e6gfGNlYuTYE1c1cegofubYUL3NXvYpmQMV6qL7sEjH6oXD+btr+WjpBGdyPWQOnwHGClQ71I8Ww91DI4jr7EfUBoTyXtYFPRCTWdxfzVnX2snyjb02aY+X1QO7MTrtGNN9tdmO1jSfZU0rycrpfG+8mXk56Qu2YfsxOXWl1YIJonn6d6Q/Vfq4MS383EbULoJSb+HwwTuSf00fHJEfoHjfLJHnH3AbMAAAAASUVORK5CYII="
-           y="411.566"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="65" x="180.5" y="472.561">CI Server
-    </text>
-    <rect fill="#23A3DD" height="84.297" rx="2.5" ry="2.5" style="stroke:#16688d;stroke-width:.5" width="107" x="331.5"
-          y="401.566"/>
-    <image height="48" width="48" x="341.5"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACUUlEQVR4Xu2WS0oEMRCGvUufYG7gDTyBN/AGnsAbzN6FuHLlypUguHKlK0F0EAaRAV8IgwjjR34oY1e6kxnHBxr5kXR1JflSVamelWb74ldpxZt+VhUopwqUUwXKqQLl9BeBBruXG4c3Jh69T7mWAATE/tXT8OwO7Zw/8Oh9yrUcINGgrZPJ/wbaPL71Il9kChQEUz9QtsLmAGKto/Ezu4qDsQZYCoFY4XQyxdm/Ms0NpLwIyNJUmDJmre1f44Cbfyt9KxDJ1YAgre6NvENTAmSbsQoBt0cDwh5fe7OjVsUYEHHiLUzrB+MWWR6IDZiG1G/4H48R0RqG0lEurNiBY+N4KSyGaOWos7Gm7HkgNlbBIkXCp4ydbGyPOLeA2DVZPYqWxt8NNHp8iS0EDGdWM0saCF5tgFjCxnEN2TiuGyCsnjCqRcmBsW2sstOrFnQaSAUBFif4vFqLEydw/abSB6BB+G43AciqrOt+Yk/e8Dj+sQzO7lrS+R2I1cnCbDYjRwwUUrNwJibbnSIFs/CnxOlaMbifvsquJNoUltIr7JpillappVOGh67o0gWQ324QpTUN1IQ+4Y2flC9hr04goto1eRBKzae/X2oW3t5SJ1BPeNXyu3CTUn/ydq9OoCZcgfjDpLYxjLpqoVqtr199QE04WfJuF4ooxt+pEmWAmsDU08e6RBTVsv2rfuWBmnBQNf74fiYFBwdQorPOSRUBSURe3yDreLpr+ppiF8dcCfKaAygWMdOvIl23xYKR1IJAX6cKlFMFyqkC5VSBcqpAOb0BXdqrKyPxUdcAAAAASUVORK5CYII="
-           y="411.566"/>
-    <text fill="#fff" font-family="sans-serif" font-size="14" textLength="87" x="341.5" y="472.561">OCI Registry
-    </text>
-    <path d="M80.34 256.066h62.13" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m147.48 256.066-9-4 4 4-4 4 9-4z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="31" x="98.25" y="249.133">push
-    </text>
-    <path d="M194.24 303.376c4.06 30.14 9.31 69.1 13.23 98.14" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1"
-          d="m193.55 298.236-2.756 9.455 3.427-4.5 4.5 3.427-5.171-8.382z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="24" x="204" y="367.633">pull
-    </text>
-    <path d="M255.52 443.566h70.53" fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1" d="m331.25 443.566-9-4 4 4-4 4 9-4z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="31" x="278" y="436.633">push
-    </text>
-    <path d="m469.956 317.06-.228.919c-2.45 9.806-5.623 19.66-9.728 28.587-8.24 17.92-20.42 35.52-32.59 50.65"
-          fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1"
-          d="m423.99 401.426 8.788-4.447-5.628.572-.572-5.628-2.588 9.503z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="24" x="456" y="367.633">pull
-    </text>
-    <path d="M203.66 208.966c17.85-45.2 51.83-110.83 106.34-140.4 58.6-31.78 100.66-44.83 150 0a83.257 83.257 0 0 1 7.8 8.114 85.537 85.537 0 0 1 1.754 2.16"
-          fill="none" style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1"
-          d="m201.78 213.826 6.994-6.934-5.179 2.275-2.275-5.18.46 9.839z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="24" x="341" y="19.633">pull
-    </text>
-    <path d="M699 255.446c11.87-25.88 35.08-25.67 35.08.62 0 26.29-23.21 26.5-35.08.62" fill="none"
-          style="stroke:#000;stroke-width:1"/>
-    <path fill="#000" style="stroke:#000;stroke-width:1"
-          d="m699 256.686.116 9.848 1.969-5.303 5.303 1.968-7.388-6.513z"/>
-    <text fill="#000" font-family="sans-serif" font-size="13" textLength="44" x="740.08" y="260.633">deploy
-    </text>
-</svg>
-
-<div class="fragment" data-fragment-index="1">
+<div class="fragment" data-fragment-index="3">
     e.g.  <i class='fab fa-github'></i> <a href="https://github.com/renovatebot/renovate">github.com/renovatebot/renovate</a>
 </div>
 
+Note:
+* 
 
 
-## Wiring <!-- .element style="margin-top: 0px"-->
+
+#### Pull Requests
+
+> GitOps - Operations by Pull Request  
+> 🌐 [weave.works/blog/gitops-operations-by-pull-request](https://weave.works/blog/gitops-operations-by-pull-request)
+
+But: avoid cargo cult
+
+<a  href="https://opengitops.dev/" class="tooltip-left floatRight">
+  <img data-src="images/opengitops.png" width="70%;" style="border-radius: 50%" class="zoom1-5x" />
+  <span class="tooltip-left-text">OpenGitOps</span>
+</a> 
+
+ℹ️ PRs not mentioned in [principles](https://opengitops.dev/#principles)
+
+Note:
+* e.g. upgrading 3rd party apps with only two stages in paring programming -> Why create PR?
+* manual creation of PRs might cause a lot of work, use automation
+
+
+
+## Wiring patterns <!-- .element style="margin-top: 0px"-->
 <!-- .slide: id="wiring" -->
 Wiring up operator, repos, folders, envs, etc.
 
