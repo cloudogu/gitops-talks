@@ -523,9 +523,6 @@ Cloudogu cloud: ️<i class="fas fa-cloud fa-sm" style="color: #ffffff;"></i>
 Wir entwickeln einen open source GitOps-Stack für K8s
 
 ### Sag uns wie wir GitOps für dich leichter machen können
-<div style="position: absolute; left: 0; z-index: 1; width: 20%;">
-    <a href="https://dpunkt.de/produkt/gitops/"><img src="images/Cubukcuoglu_GitOps.png" /></a>
-</div>
 <a href="https://survey.lamapoll.de/46FGD6-GitOps-Bedarfe">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="25%" viewBox="0 0 1076.25 1255.625"><g transform="scale(44.84375)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
