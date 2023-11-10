@@ -1,23 +1,3 @@
-<!-- .slide: class="floatRight"-->
-<!-- .slide: data-background-image="images/question-mark-g8640ed2c2_1920.jpg" data-background-size="45%"  data-background-position="left" -->
-# How to get started? <!-- .element: style="font-size: 130%"  class="floatRight" -->
-
-
-
-* Chronology:
-  * Step 1: Chose an operator
-  * Step 2: Design process/repos/promotion 
-  * Step 3: Wire everything 
-* Keep in mind:
-  * **Conway's law**: no standard, find the structure for *your* org
-  * **Responsibility**: platform/infra teams, cluster admins 
-    ↔️ app teams
-  * **Use case**: deploying apps vs infra
-
- ➡️ Use **Patterns/examples** as inspiration
-
-
-
 <!-- .slide: data-background-image="images/trainings_16_9.png"  -->
 <!-- .slide: data-background-color="#165D84"  -->
 <!-- .slide: id="last" -->
@@ -30,7 +10,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="15%" viewBox="0 0 990 1155"><g transform="scale(41.25)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
     <g transform="translate(0,165)" fill="#ffffff">
 <g transform="translate(291,99) scale(4.12)"><rect width="6" height="6"/></g>
-        <g transform="translate(315,99) scale(4.12)"><rect width="6" height="6"/></g>
+        <g transform="translate(315,99) scale(4.12s)"><rect width="6" height="6"/></g>
         <g transform="translate(387,99) scale(4.12)"><rect width="6" height="6"/></g>
         <g transform="translate(459,99) scale(4.12)"><rect width="6" height="6"/></g>
         <g transform="translate(507,99) scale(4.12)"><rect width="6" height="6"/></g>
@@ -523,6 +503,7 @@ Cloudogu cloud: ️<i class="fas fa-cloud fa-sm" style="color: #ffffff;"></i>
 Wir entwickeln einen open source GitOps-Stack für K8s
 
 ### Sag uns wie wir GitOps für dich leichter machen können
+
 <a href="https://survey.lamapoll.de/46FGD6-GitOps-Bedarfe">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="25%" viewBox="0 0 1076.25 1255.625"><g transform="scale(44.84375)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>

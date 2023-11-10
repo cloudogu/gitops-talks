@@ -27,9 +27,7 @@
     <span class="title-accent">//</span> 
     GitOps Repo structures and patterns
 </h1>
-Johannes Schnatterer, Cloudogu GmbH 
-<br/>
-<br/>
+<p>Johannes Schnatterer, Cloudogu GmbH</p> 
 <a class="state-background" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="15%" viewBox="0 0 990 1155"><g transform="scale(41.25)" fill="#23a3dd"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
         <g transform="translate(0,165)" fill="#23a3dd">
@@ -511,7 +509,7 @@ Johannes Schnatterer, Cloudogu GmbH
 
 
 <div class="title-version">
-Version: 202311091814-b1f6084
+Version: 202311101745-3c94417
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
