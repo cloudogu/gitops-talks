@@ -1,6 +1,5 @@
 ## Categories of patterns
 
-AKA strategies, models, approaches, best practices
 
 * [**Operator deployment**](#deployment-patterns): GitOps operators ↔ Clusters/Namespaces
 * [**Repository**](#repo-patterns): How many repos?
@@ -8,6 +7,7 @@ AKA strategies, models, approaches, best practices
 * [**Wiring**](#wiring): Bootstrapping operator, linking repos and folders 
 
 Note: 
+* AKA strategies, models, approaches, best practices
 * Patterns in different areas
 * Chronologically
 * Wiring: very GitOps operator-specific config
@@ -668,9 +668,9 @@ Note:
 <!-- .slide: id="config-split" -->
 ### Middle ground: Config Split <!-- .element style="margin-top: 0px;margin-bottom: 0px"-->
 <div class="floatRight" style="font-size: 100%">
-  <p class="fragment" data-fragment-index="5" style="margin-right: 200px;">👈️ <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> example</p>
+  <p class="fragment" data-fragment-index="0" style="margin-right: 200px;">👈️ <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> example</p>
 <br/>
-  <p class="fragment" data-fragment-index="6">💡 Also works with <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></p>
+  <p class="fragment" data-fragment-index="1">💡 Also works with <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></p>
 </div>
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1656,28 +1656,33 @@ Note:
 ## Promotion patterns <!-- .element style="margin-top: 0px;"-->
 <!-- .slide: id="release-promotion" -->
 
-How to model environments AKA stages?
+How to model environments/stages?
 
 * [**Branch per environment**](#branch-vs-folder-per-env)
 * [**Folder/Directory per environment**](#branch-vs-folder-per-env)
 * [**Repo per environment**](#repo-per-env) (edge case)
 * 🔥 [**Preview environments**](#preview-envs)
 
-AKA Env per (folder | branch | repo) 
 
 Note:
-Exclusion principle -> Why not branches, repos but folders
+AKA
+  * Release
+  * Application 
+  * Environment 
+  * Workload
+  * Change Promotion.
+* Patterns AKA Env per (folder | branch | repo)
 
 
 
 <!-- .slide: id="branch-vs-folder-per-env"  style="font-size: 90%"-->
 <h3 style="margin-top: 0px;margin-bottom: 0px;text-align: center"> Branch vs folder per Environment</h3>
 
-|                 | Branch per env                                                                                                         | Folder per env                                                                                                   |
-|-----------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| envs            | permanent branches                                                                                                     | trunk-based folders                                                                                              |
-| mapping example | <i class="fas fa-code-branch"></i> `develop` ➡️ staging<br/> <i class="fas fa-code-branch"></i> `master` ➡️ production | <i class="fas fa-folder"></i> `staging` ➡️ Staging<br/> <i class="fas fa-folder"></i> `production` ➡️ Production |
-| promotion       | merge                                                                                                                  | copy<br/> (+merge short-lived branches)                                                                          |
+|                 | Branch per env                                                                                                      | Folder per env                                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| envs            | permanent branches                                                                                                  | trunk-based folders                                                                                              |
+| mapping example | <i class="fas fa-code-branch"></i> `develop` ➡️ staging<br/> <i class="fas fa-code-branch"></i> `main` ➡️ production | <i class="fas fa-folder"></i> `staging` ➡️ Staging<br/> <i class="fas fa-folder"></i> `production` ➡️ Production |
+| promotion       | merge                                                                                                               | copy<br/> (+merge short-lived branches)                                                                          |
 
 
 
@@ -1695,11 +1700,11 @@ Exclusion principle -> Why not branches, repos but folders
 
 
 
-|                                                                                                                                                                                                                                                                                               | Branch per env                                                                                                                                                                                                                                      | Folder per env                                                                                                                                                                                                                                                                                                                                             
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| pros <!-- .element style="vertical-align: top"-->                                                                                                                                                                                                                                             | <!-- .element style="vertical-align: top"--> <ul><li>Forces PRs</li><li>Feels natural for devs</li></ul>                                                                                                                                            | <ul><li>Avoids conflicts/drift</li><li>Copy vs cherry pick</li><li>Scales with envs</li>                                                                                                                                                                                                                                                                   |
-| <!-- .element style="vertical-align: top"--> CM tool support (DRY) <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li></ul> | <!-- .element style="vertical-align: top"--><span style="font-size:250%">❓️</span>                                                                                                                                                                  | <span style="vertical-align: top;font-size:250%">✅</span><img src="images/kustomize-example.svg" width=60%/>                                                                                                                                                                                                                                               |
-| references                                                                                                                                                                                                                                                                                    | [1](https://medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351">medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351) | [1](https://fluxcd.io/flux/guides/repository-structure/), [2](https://www.thoughtworks.com/radar/techniques/gitops), [3](https://codefresh.io/blog/stop-using-branches-deploying-different-gitops-environments/), [4](https://developers.redhat.com/articles/2022/07/20/git-workflows-best-practices-gitops-deployments), ...<br/> Branches = `anti-pattern` |
+|                                                                                                                                                                                                                                                                                               | Branch per env                                                                                                                                                                                                                                     | Folder per env                                                                                                                                                                                                                                                                                                                                             
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pros <!-- .element style="vertical-align: top"-->                                                                                                                                                                                                                                             | <!-- .element style="vertical-align: top"--> <ul><li>Forces PRs</li><li>Feels natural for devs</li></ul>                                                                                                                                           | <ul><li>Avoids conflicts/drift</li><li>Copy vs cherry pick</li><li>Scales with envs</li>                                                                                                                                                                                                                                                                   |
+| <!-- .element style="vertical-align: top"--> CM tool support (DRY) <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li></ul> | <!-- .element style="vertical-align: top"--><span style="font-size:250%">❓️</span>                                                                                                                                                                 | <span style="vertical-align: top;font-size:250%">✅</span><img src="images/kustomize-example.svg" width=60%/>                                                                                                                                                                                                                                               |
+| references                                                                                                                                                                                                                                                                                    | [1](https://medium.com/mediamarktsaturn-tech-blog/monitoring-and-hardening-the-gitops-delivery-pipeline-with-flux-a226bdef0351) | [1](https://fluxcd.io/flux/guides/repository-structure/), [2](https://www.thoughtworks.com/radar/techniques/gitops), [3](https://codefresh.io/blog/stop-using-branches-deploying-different-gitops-environments/), [4](https://developers.redhat.com/articles/2022/07/20/git-workflows-best-practices-gitops-deployments), ...<br/> Branches = `anti-pattern` |
 
 
 
@@ -1725,7 +1730,7 @@ Note:
 
 ### 🔥 Preview environments
 <!-- .slide: id="preview-envs" -->
-AKA (ephemeral | dynamic | pull request | test | temporary) environments
+
 
 * An environment that is created with a pull request
 * and deleted on merge/close
@@ -1735,26 +1740,9 @@ AKA (ephemeral | dynamic | pull request | test | temporary) environments
 
 <img data-src="images/weave-logo.png" title="Weave GitOps" style="height: 1.1em; vertical-align: middle;" /> [`GitOpsSets`](https://github.com/weaveworks/weave-gitops/blob/main/website/versioned_docs/version-0.29.0/gitopssets/gitopssets-intro.mdx)  ≈ <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> 
 
-
-
-**Challenges with preview envs**
-
-* Resource consumption ➡️ cluster autoscaler
-* Dependent systems
-* Test data
-* Dynamic namespaces: Authorization; SealedSecrets
-
-
 Note:
-* Means something different for everyone.
-* Provides a lot of new options: Do we need multiple "persistent" stages (prod *plus* staging *plus* qa, etc?) Or is Prod and preview envs enough?
-* Makes testing easier
+AKA (ephemeral | dynamic | pull request | test | temporary) environments
 
-Sources:
-* [10/2020 Environments Based On Pull Requests (PRs): Using Argo CD To Apply GitOps Principles On Previews](https://www.youtube.com/watch?v=cpAaI8p4R60) by Viktor Farcic (before AppSets)
-* [11/2020 Creating Temporary Preview Environments Based On Pull Requests With Argo CD And Codefresh](https://codefresh.io/blog/creating-temporary-preview-environments-based-pull-requests-argo-cd-codefresh/) by Codefresh (before AppSets)
-* [05/2022 GitOps Con Europe - Implementing Preview Environments with GitOps in Kubernetes - François Le Pape, Remazing ](https://www.youtube.com/watch?v=QNAiIJRIVWA&t=202s) without AppSets
-* [10/2022 Preview Environments with ArgoCD - Brandon Phillips, Codefresh](https://www.youtube.com/watch?v=7ahiwZuiCBM) - [example repo](https://github.com/brandonphillips/preview-environments-example)
 
 
 
@@ -1777,7 +1765,7 @@ Tools for separating config of envs, keeping them DRY
     * `kustomize build` / `kubectl kustomize` via CI server <i class="fab fa-jenkins"></i>
 * Helm
     * CRD (️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`, ️<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `HelmRelease`)
-    * ️<img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" />  *Umbrella Chart* <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
+    * ️<img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" />  Umbrella Chart <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
     * `helm template` via CI server <i class="fab fa-jenkins"></i>
 
 Note:
@@ -2381,14 +2369,14 @@ Note:
 <!-- .slide: id="wiring" -->
 Wiring up operator, repos, folders, envs, etc.
 
-* Bootstrapping: `kubectl`, operator-specific CLI
-* Linking/Grouping:
+* **Bootstrapping**: `kubectl`, operator-specific CLI
+* **Linking/Grouping**:
   * Operator-specific CRDs
     * <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> `Kustomization`
     * <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`
-  * Nesting: ️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> *App of Apps*  
-    (same principle with <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> `Kustomization`)
-  * Templating: <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSets` - folders, lists, config files
+  * **Nesting**: ️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> App of Apps  
+    (same pattern with <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/> `Kustomization`)
+  * **Templating**: <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `ApplicationSets` - folders, lists, config files, PRs
 
 Note:
 * Bootstrapping: Always an imperative part
