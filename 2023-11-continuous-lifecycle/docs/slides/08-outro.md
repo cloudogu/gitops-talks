@@ -1,4 +1,4 @@
-<!-- .slide: data-background-image="images/trainings_16_9.png"  -->
+<!-- .slide: data-background-image="images/cloudogu-background.jpg"  -->
 <!-- .slide: data-background-color="#165D84"  -->
 <!-- .slide: id="last" -->
 <!-- .slide: style="text-align: center !important;"  -->
@@ -7,7 +7,8 @@
 
 <a href="https://cloudogu.github.io/gitops-talks">
     <!-- Created with https://qrgenerator.org/, with text added manually at the emd -->
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="15%" viewBox="0 0 990 1155"><g transform="scale(41.25)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="20%" viewBox="0 0 990 1155" style="margin-left: 400px">
+<g transform="scale(41.25)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
     <g transform="translate(0,165)" fill="#ffffff">
 <g transform="translate(291,99) scale(4.12)"><rect width="6" height="6"/></g>
         <g transform="translate(315,99) scale(4.12s)"><rect width="6" height="6"/></g>
@@ -479,6 +480,8 @@
 </svg>
 </a>
 
+<br/>
+
 💪 Join my team: <a href="https://cloudogu.com/join/cloud-engineer" class="non-blue-link"> cloudogu.com/join/cloud-engineer</a> 
 
 <br/>
@@ -496,7 +499,7 @@ Cloudogu cloud: ️<i class="fas fa-cloud fa-sm" style="color: #ffffff;"></i>
 
 
 
-<!-- .slide: data-background-image="images/trainings_16_9.png"  -->
+<!-- .slide: data-background-image="images/cloudogu-background.jpg"  -->
 <!-- .slide: data-background-color="#165D84"  -->
 <!-- .slide: style="text-align: center !important;"  -->
 
@@ -506,7 +509,7 @@ Wir entwickeln einen open source GitOps-Stack für K8s
 
 <a href="https://survey.lamapoll.de/46FGD6-GitOps-Bedarfe">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="25%" viewBox="0 0 1076.25 1255.625"><g transform="scale(44.84375)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
+  style="margin-left: 400px"width="25%" viewBox="0 0 1076.25 1255.625"><g transform="scale(44.84375)" fill="#ffffff"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
     <g transform="translate(0,179.375)" fill="#ffffff">
 <g transform="translate(275.625,107.625) scale(3.605)"><rect width="6" height="6"/></g>
         <g transform="translate(359.625,107.625) scale(3.605)"><rect width="6" height="6"/></g>
