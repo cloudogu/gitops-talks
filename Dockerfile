@@ -1,4 +1,4 @@
-FROM cloudogu/reveal.js:4.4.0-r4 as base
+FROM cloudogu/reveal.js:4.4.0-r5 as base
 
 FROM base as aggregator
 ENV TITLE='GitOps Repo structures and patterns'

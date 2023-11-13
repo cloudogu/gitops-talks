@@ -48,7 +48,7 @@ Note:
 
 How many config repos?
 
-* **Monorepo** (opposite: polyrepo)
+* **Monorepo**
 * **Repo per Team** / Tenant
 * **Repo per App**
   * [Repo Separation](#repo-separation)
@@ -443,7 +443,6 @@ Note:
 
 * Single repo for development: higher efficiency
 * Shift left: static code analysis + policy check on CI server,  
-  e.g. yamlint, kubeconform, helm lint, conftest, security scanners
 * Automate config update (image tag + PR creation) [🕒](#promotion-via-ci)
 * Simplify review by adding info to PRs
 
@@ -875,7 +874,7 @@ Note:
 
 
 <!-- .slide: data-auto-animate -->
-<div style="position: absolute; right: 0; z-index: 1;">
+<div style="position: absolute; right: 0; z-index: 1; margin-top: 50px">
   <strong>Alternative: Helm repo</strong>
 </div>
 
@@ -1099,8 +1098,8 @@ Note:
 
 
 <!-- .slide: data-auto-animate -->
-<div style="position: absolute; right: 0; z-index: 1;">
-  <spa>💡 Same pattern for<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3rd-party apps</spa>
+<div style="position: absolute; right: 0; z-index: 1; margin-top: 50px">
+  💡 Same pattern for<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3rd-party apps
 </div>
 
 <svg data-id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width=50% viewBox="0 0 724 712">
@@ -1245,7 +1244,7 @@ Note:
 
 
 
-**Alternative 2: Helm in OCI** <!-- .element: style="position: absolute; right: 0; z-index: 1;" -->
+**Alternative 2: Helm in OCI** <!-- .element: style="position: absolute; right: 0; z-index: 1; margin-top: 50px" -->
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
    width=65% viewBox="0 0 727 531">
@@ -1676,7 +1675,6 @@ AKA
 
 
 <!-- .slide: id="branch-vs-folder-per-env"  style="font-size: 90%"-->
-<h3 style="margin-top: 0px;margin-bottom: 0px;text-align: center"> Branch vs folder per Environment</h3>
 
 |                 | Branch per env                                                                                                      | Folder per env                                                                                                   |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
