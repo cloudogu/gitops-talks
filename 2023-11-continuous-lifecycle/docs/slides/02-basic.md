@@ -1676,7 +1676,6 @@ AKA
 
 
 <!-- .slide: id="branch-vs-folder-per-env"  style="font-size: 90%"-->
-<h3 style="margin-top: 0px;margin-bottom: 0px;text-align: center"> Branch vs folder per Environment</h3>
 
 |                 | Branch per env                                                                                                      | Folder per env                                                                                                   |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
