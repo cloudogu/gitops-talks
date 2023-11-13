@@ -49,7 +49,7 @@ Note:
 ```bash
 COMMIT='8e21bd4' 
 bash <(curl -s \
-  "https://raw.githubusercontent.com/cloudogu/gitops-playground/$COMMIT/scripts/init-cluster.sh)" \
+  "https://raw.githubusercontent.com/cloudogu/gitops-playground/$COMMIT/scripts/init-cluster.sh") \
   --bind-ingress-port=80  \
   && sleep 2 && docker run --rm -it --pull=always -u $(id -u) \
     -v ~/.config/k3d/kubeconfig-gitops-playground.yaml:/home/.kube/config \
@@ -57,6 +57,9 @@ bash <(curl -s \
     ghcr.io/cloudogu/gitops-playground:$COMMIT --yes --argocd --base-url=http://local.gd
 # Other interesting options --monitoring --vault=dev 
 ```
+Note:
+* Preparation for demo: Remove resource limits of demo app (petclinic-plain) so it starts faster
+* accept PR for petclinic-plain production on example-apps repo, so is is already running for demo
 
 
 
