@@ -48,7 +48,7 @@ Note:
 
 How many config repos?
 
-* **Monorepo** (opposite: polyrepo)
+* **Monorepo**
 * **Repo per Team** / Tenant
 * **Repo per App**
   * [Repo Separation](#repo-separation)
@@ -443,7 +443,6 @@ Note:
 
 * Single repo for development: higher efficiency
 * Shift left: static code analysis + policy check on CI server,  
-  e.g. yamlint, kubeconform, helm lint, conftest, security scanners
 * Automate config update (image tag + PR creation) [🕒](#promotion-via-ci)
 * Simplify review by adding info to PRs
 
