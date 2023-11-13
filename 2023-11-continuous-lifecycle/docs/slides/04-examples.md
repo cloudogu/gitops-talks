@@ -39,7 +39,7 @@ Note:
 
 
 
-<img data-src="images/gitops-playground.drawio.svg" width="60%"/>
+<img data-src="images/gitops-playground.drawio.svg" width="50%"/>
 
 
 
@@ -57,9 +57,19 @@ bash <(curl -s \
     ghcr.io/cloudogu/gitops-playground:$COMMIT --yes --argocd --base-url=http://local.gd
 # Other interesting options --monitoring --vault=dev 
 ```
+
 Note:
 * Preparation for demo: Remove resource limits of demo app (petclinic-plain) so it starts faster
-* accept PR for petclinic-plain production on example-apps repo, so is is already running for demo
+* accept PR for petclinic-plain production on example-apps repo, so it is already running for demo
+```shell
+git clone http://scmm.local.gd/scm/repo/argocd/petclinic-plain
+cd petclinic-plain
+ sed -i '/limits:/,+2d' k8s/staging/deployment.yaml
+ sed -i '/limits:/,+2d' k8s/production/deployment.yaml
+git add .
+git commit -m 'Remove limits for faster demo'
+git push
+```
 
 
 
@@ -1171,13 +1181,11 @@ server
 </div>
 
 Note:
-* [Examplary folder Structure](https://github.com/cloudogu/gitops-talks/tree/ca16fe/docs/image-sources/repo-examples/2)
 * Config update + promotion via CI server
 * app of apps pattern
 * stages could be resolved using appset
 * misc = cross cutting concerns, netpols, rbac, SAs, svcs, etc.
 * argocd-repo maintained by platform team
-* like in recap, deployment YAMLs could be deployed manually or via CI
 * team repo maintained by app team
 * Advanced:
   * How to manage multiple clusters? Configure in `values.yaml`

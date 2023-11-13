@@ -1285,9 +1285,9 @@ Wir entwickeln einen open source GitOps-Stack für K8s
 # Image sources
 <!-- .slide: style="font-size: 80%; " -->
 
-* implementation  
+* Implementation  
   https://unsplash.com/photos/selective-focus-photography-blue-and-black-makita-power-drill-Klby0nxseY8
-* Demo
+* Demo  
   https://unsplash.com/photos/assorted-color-hot-air-balloons-during-daytime-DuBNA1QMpPA
 * coloured-parchment-paper background by brgfx on Freepik  
   https://www.freepik.com/free-vector/coloured-parchment-paper-designs_1078492.htm
