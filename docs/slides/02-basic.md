@@ -652,11 +652,6 @@ Notes:
     </g>
 </svg>
 
-<span class="fragment" data-fragment-index="1">e.g.
-    <img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>
-    <a href="https://fluxcd.io/flux/guides/repository-structure/#repo-per-app">fluxcd.io/flux/guides/repository-structure</a>
-</span>
-
 Note:
 * There's always a downside. If avoiding redundancy is important, this would be an alternative
 * Reference ("pointer") could be realized using ArgoCD's application CR or Flux GitRepository CR or even a git submodule (uncommon)
@@ -1674,7 +1669,7 @@ AKA
 
 
 
-<!-- .slide: id="branch-vs-folder-per-env"  style="font-size: 90%"-->
+<!-- .slide: id="branch-vs-folder-per-env"  style="font-size: 85%"-->
 
 |                 | Branch per env                                                                                                      | Folder per env                                                                                                   |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -1761,9 +1756,9 @@ Tools for separating config of envs, keeping them DRY
     * plain <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> `kustomization.yaml` <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> ➡️ "agnostic"
     * ≠ Flux CRD <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `Kustomization`
     * `kustomize build` / `kubectl kustomize` via CI server <i class="fab fa-jenkins"></i>
-* Helm
+* Helm 
     * CRD (️<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> `Application`, ️<img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> `HelmRelease`)
-    * ️<img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" />  Umbrella Chart <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
+    * ️<img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" />  Umbrella Chart <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <img src="images/umbrella-chart.svg" class="fragment floatRight" width=30%>
     * `helm template` via CI server <i class="fab fa-jenkins"></i>
 
 Note:
