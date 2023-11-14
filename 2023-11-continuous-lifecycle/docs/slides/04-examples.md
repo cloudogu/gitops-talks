@@ -28,8 +28,8 @@ Note:
           <li>Operate ArgoCD with GitOps</li>
           <li>Solution for cluster resources</li>
           <li>Config update + replication via CI</li>
-          <li>Mixed repo patterns</li>
           <li>Env per app pattern</li>
+          <li>Mixed repo patterns</li>
         </ul>
       </li>
       <li><strong>Source:</strong> <span style="font-size:100%"><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-playground">cloudogu/gitops-playground</a></span></li>
