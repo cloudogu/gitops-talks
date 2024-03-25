@@ -2,12 +2,21 @@
   .reveal {
     font-size: 40px !important; 
   }
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  /* Save some space on the slides */
+  margin: 0 0 20px 0;
+}
 </style>
 
-<!-- .slide: style="text-align: center !important;font-size: 85%;"  -->
+<!-- .slide: style="text-align: center !important;font-size: 80%;"  -->
 <!-- .slide: data-background-image="dist/theme/images/title-white.svg"  -->
 
-<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1010 1010" style="enable-background:new 0 0 1010 1010;" xml:space="preserve" width="10%">
+<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1010 1010" style="enable-background:new 0 0 1010 1010;" xml:space="preserve" width="9%">
     <style type="text/css">
         .st0{fill:#23A3DD;}
     </style>
@@ -23,12 +32,12 @@
     </path>
 </svg>
 
-<h1  class="title" style="margin: 0">
+<h1 class="title" style="margin: 0; font-size: 170%">
     <span class="title-accent">//</span> 
-    GitOps Repo structures and patterns
+    GitOps: is this something for me<br/>– or not?
 </h1>
-<p>Johannes Schnatterer, Cloudogu GmbH</p> 
-<a class="state-background" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
+<p style="margin-top: 0">Johannes Schnatterer, Cloudogu GmbH</p> 
+<a style="margin: 0" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="15%" viewBox="0 0 990 1155"><g transform="scale(41.25)" fill="#23a3dd"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
         <g transform="translate(0,165)" fill="#23a3dd">
     <g transform="translate(291,99) scale(4.12)"><rect width="6" height="6"/></g>
@@ -495,26 +504,30 @@
                 y="150"
                 alignment-baseline="middle"
                 text-anchor="middle"
-                style="font-size:120px;fill:#;font-weight:bold;">
+                style="font-size:120px;font-weight:bold;">
         <tspan>Slides</tspan>
       </text>
     </svg>
 </a>
-
+<div>
 <a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
-<span style="margin: 50px">
-<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
-<span style="margin: 50px">
-<a href='https://twitter.com/jschnatterer' style="font-size:80%"><i class='fab fa-twitter'></i> @jschnatterer</a>
-
+<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
 <div class="title-version">
 <!--VERSION-->
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
-    <a href="pdf/GitOps Repo structures and patterns.pdf">
+    <a href="pdf/GitOps is this something for me - or not.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
-  
 
+
+
+<!-- .slide: style="font-size: 190%;"  -->
+## Agenda
+
+- Basics
+- Tools
+- Challenges
+- 🍕 💬 🍻
