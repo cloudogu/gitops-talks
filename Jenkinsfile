@@ -32,7 +32,7 @@ node('docker') {
             git.clean('')
         }
 
-        String conferenceName = '2023-11-continuous-lifecycle'
+        String conferenceName = '2024-05-h2c'
         
         String pdfName = createPdfName()
 
@@ -85,8 +85,12 @@ node('docker') {
 String headlessChromeImage
 
 String createPdfName(boolean includeDate = true) {
-    String title = sh (returnStdout: true, script: 'grep -r \'TITLE\' Dockerfile | sed "s/.*TITLE=\'\\(.*\\)\'.*/\\1/" ').trim()
-    String pdfName = '';
+  String forbiddenChars = "[\\\\/:*?\"<>|]"
+  String title = sh (returnStdout: true, script: 'grep -r \'TITLE\' Dockerfile | sed "s/.*TITLE=\'\\(.*\\)\'.*/\\1/" ')
+    .trim()
+    .replaceAll(forbiddenChars, '')
+  
+    String pdfName = ''
     if (includeDate) {
         pdfName = "${new Date().format('yyyy-MM-dd')}-"
     }

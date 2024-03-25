@@ -30,7 +30,7 @@ if [[ $COMPRESS == "true" ]]; then
   # Other dPDFSETTINGS: printer > default > ebook > screen
   # https://askubuntu.com/a/256449/
   docker run --rm -v /tmp:/tmp $GHOSTSCRIPT_IMAGE \
-    -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH \
+    -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dEmbedAllFonts=true -dBATCH \
     -sOutputFile=- "${pdf}" \
     > "${pdfCompressed}"
 fi 
