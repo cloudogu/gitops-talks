@@ -148,8 +148,8 @@ How to model environments/stages?
 <ul>
   <li>GitOps Repository Structures and Patterns
     <ul>
-      <li><img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
       <li><i class="fas fa-microphone"></i> <a href="https://cloudogu.github.io/gitops-talks/2023-11-continuous-lifecycle/#/">Slides (Continuous Lifecycle 23)</a></li>
+      <li><img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
       <li><a href="https://dpunkt.de/produkt/gitops/">GitOps book</a></li></li>
     </ul>
   </li>
