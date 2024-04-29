@@ -1,22 +1,16 @@
 <!-- .slide: data-background-image="images/challenge.jpg"  -->
-<!-- .slide: style="text-align: center !important"  -->
+<!-- .slide: style="text-align: center !important; font-size: 190%"  -->
 
-<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8); width: 60%; margin-left: auto;margin-right: 0;">
-  <br/>
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8); padding-top: 20px; padding-bottom: 20px; margin-bottom: 250px">
   <h1 style="margin: 0 0 0 0; color: #5b5a5a;" >Challenges with GitOps</h1>
-  <br/>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 Note:
 Source: https://unsplash.com/photos/bJhT_8nbUA0
 
 
 
+<!-- .slide: style="font-size: 200%"  -->
 ## Downsides
 
 * More infra necessary
@@ -54,9 +48,10 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 120%"  -->
 ### Learning curve
 
-* New concepts and tools for developers and platform teams
+* New concepts + tools for devs and platform teams
 * Adapt deployment process
 * Migrate applications
 * Adapt error handling and alerting
@@ -70,6 +65,7 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 120%"  -->
 ## Day two questions
 
 * How to realize local dev env?
@@ -81,13 +77,14 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 120%"  -->
 ### Local development
 
 * App development: Just carry on without GitOps.  
   Setting up GitOps operator, SCM, etc. complicated  
 * 💡 Integration: Run GitOps+k8s-based ops platform locally  
   
-  <a href="https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234"><img data-src="images/CloudLand.jpeg" class="floatRight" style="border-radius: 15px;" width="30%;"/></a>
+  <a href="https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234"><img data-src="images/CL_2024_Shared Pics_Schnatterer.jpg" class="floatRight" style="border-radius: 15px;" width="37%;"/></a>
   
   * <i class='fab fa-github'></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
   * [2024-06-20 Workshop at CloudLand](https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234)
@@ -98,6 +95,7 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 120%"  -->
 ### How to delete resources?
 
 * <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="4%;"/> `garbage collection` / <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  `resource pruning`  
@@ -107,6 +105,7 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 115%"  -->
 ### Repo and folder structure
 
 * No standard for structures (intentionally) ➡️ Conway's law
@@ -122,31 +121,42 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 140%"  -->
 ### Promotion
 
 How to model environments/stages?
 
+
 * ⚡️ User branches or folders?
 * "Operations by Pull Request": (How to) use PRs?
-* How to integrate CM tools? <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/> <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /> <img title="jsonnet" data-src="images/jsonnet-icon.svg" style="height: 1.1em; vertical-align: middle;"/> <img title="cuelang" data-src="images/cue-icon.svg" style="height: 1.1em; vertical-align: middle;"/> <img title="timoni" data-src="images/timoni-icon.svg" style="height: 1.1em; vertical-align: middle;"/>
+* How to integrate CM tools?
+  <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+  <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x" />
+  <img title="jsonnet" data-src="images/jsonnet-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+  <img title="cuelang" data-src="images/cue-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+  <img title="timoni" data-src="images/timoni-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
 * How to automate?
 * 🔥 (How to) use preview environments?
 
 
 
-## Further reading
-<!-- .slide: style="font-size: 85%;"  -->
+<!-- .slide: style="font-size: 110%"  -->
+<a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" class="floatRight" width="40%;" style="margin-top: 5%"/></a>
 
-<a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" class="floatRight" style="border-radius: 15px;" width="35%;"/></a>
-
-* GitOps Repository Structures and Patterns
-  * <img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> [Blog post series (Cloudogu Blog)](https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction); [Book](https://dpunkt.de/produkt/gitops/)
-  * <i class="fas fa-microphone"></i> [Slides (Continuous Lifecycle 23)](https://cloudogu.github.io/gitops-talks/2023-11-continuous-lifecycle/#/)
-* <i class='fab fa-github'></i> [cloudogu/gitops-patterns](https://github.com/cloudogu/gitops-patterns)
-* <i class='fab fa-github'></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
-
-<a href="https://github.com/cloudogu/gitops-playground"><img data-src="images/gitops-playground-features.drawio.svg" width="33%;"/></a>
-
+<span style="position: absolute; top: 15%">
+<h2 id="further-reading">Further reading</h2>
+<ul>
+  <li>GitOps Repository Structures and Patterns
+    <ul>
+      <li><img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
+      <li><i class="fas fa-microphone"></i> <a href="https://cloudogu.github.io/gitops-talks/2023-11-continuous-lifecycle/#/">Slides (Continuous Lifecycle 23)</a></li>
+      <li><a href="https://dpunkt.de/produkt/gitops/">GitOps book</a></li></li>
+    </ul>
+  </li>
+  <li><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-patterns">cloudogu/gitops-patterns</a></li>
+  <li><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-playground">cloudogu/gitops-playground</a></li>
+</ul>
+</span>
 
 Note:
 * Patterns repos for future maintenance and discussion

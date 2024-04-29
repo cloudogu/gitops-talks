@@ -1,10 +1,9 @@
-<!-- .slide: data-background-image="images/questionmarks.jpg"  -->
-<!-- .slide: style="text-align: center !important"  -->
 
-<div style="border-radius: 5px; border: 4px solid; border-color: #777; background-color: rgba(255,255,255,0.7); width: 80%; margin: auto;">
-  <br/>
+<!-- .slide: data-background-image="images/questionmarks.jpg"  -->
+<!-- .slide: style="text-align: center !important; font-size: 300%"  -->
+
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8);padding-top: 20px; padding-bottom: 20px; margin: auto">
   <h1 style="margin: 0 0 0 0; color: #5b5a5a" >GitOps basics</h1>
-  <br/>
 </div>
 
 
@@ -14,12 +13,52 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 130%"  -->
 **August 2017: GitOps - Operations by Pull Request**  
 
 
 🌐 ~~[weave.works/blog/gitops-operations-by-pull-request](https://web.archive.org/web/20240202145840/https://www.weave.works/blog/gitops-operations-by-pull-request)~~ 
 
 > Use developer tooling to drive operations  
+
+
+
+<!-- .slide: style="font-size: 130%"  -->
+## GitOps Principles
+
+
+The desired state of a GitOps managed system must be:
+
+<a  href="https://opengitops.dev/" class="tooltip-bellow floatRight">
+  <img data-src="images/opengitops.png" width="70%;" style="border-radius: 50%" class="zoom1-5x" />
+  <span class="tooltip-bellow-text">OpenGitOps</span>
+</a>
+
+1. **Declarative**
+2. **Versioned and Immutable**
+3. **Pulled Automatically**
+4. **Continuously Reconciled**
+
+
+<i class='fab fa-github'></i> [github.com/open-gitops/documents/blob/main/PRINCIPLES.md](https://github.com/open-gitops/documents/blob/v1.0.0/PRINCIPLES.md) <!-- .element: style="font-size: 80%"-->
+
+Note:
+
+1. A system managed by GitOps must have its desired state expressed declaratively.
+2. Desired state is stored in a way that enforces immutability, versioning and retains a complete version history.  
+   Not necessarily Git! [Flux with s3 bucket](https://www.cncf.io/blog/2021/08/12/august-2021-update/)
+3. Software agents automatically pull the desired state declarations from the source.
+4. Software agents continuously observe actual system state and attempt to apply the desired state.
+   Not only when a change is triggered, also when the actual state "drifts"
+
+**(Almost) nothing new?!**
+* Declarative, versioned we hopefully did be before (partially)  
+  We might argue at what point it is declarative, e.g. helm values vs rendered
+* Pulled automatically we already had before, e.g. terraform cloud or atlantis
+* continuously reconciled: the most new part.
+  We might argue that running a CI job in Cron mode does this?
+
+https://gitopsconeu2023.sched.com/event/1UnjU/gitops-101-demystifying-gitops-niklas-metje-fond-of-gmbh
 
 
 
@@ -255,35 +294,6 @@ Note:
 
 
 
-## GitOps Principles
-
-
-The desired state of a GitOps managed system must be: 
-
-<a  href="https://opengitops.dev/" class="tooltip-bellow floatRight">
-  <img data-src="images/opengitops.png" width="70%;" style="border-radius: 50%" class="zoom1-5x" />
-  <span class="tooltip-bellow-text">OpenGitOps</span>
-</a>
-
-1. **Declarative**  
-2. **Versioned and Immutable**  
-3. **Pulled Automatically**  
-4. **Continuously Reconciled**  
-
-
-<i class='fab fa-github'></i> [github.com/open-gitops/documents/blob/main/PRINCIPLES.md](https://github.com/open-gitops/documents/blob/v1.0.0/PRINCIPLES.md)
-
-Note:
-
-1. A system managed by GitOps must have its desired state expressed declaratively.
-2. Desired state is stored in a way that enforces immutability, versioning and retains a complete version history.  
-   Not necessarily Git! [Flux with s3 bucket](https://www.cncf.io/blog/2021/08/12/august-2021-update/) 
-3. Software agents automatically pull the desired state declarations from the source.
-4. Software agents continuously observe actual system state and attempt to apply the desired state.
-  Not only when a change is triggered, also when the actual state "drifts"
-
-
-
 <!-- .slide: data-visibility="hidden" -->
 ## GitOps vs DevOps
 
@@ -310,9 +320,10 @@ See also:
 
 
 
-## Advantages of GitOps
+<!-- .slide: style="font-size: 120%"  -->
 
-<img class="floatRight" data-src="images/gitops-simple.svg" width="35%"/>
+
+<img class="floatRight" style="margin-top: 150px" data-src="images/gitops-simple.svg" width="45%"/>
 
 <!-- With more time: More info on hands-off ops
 <img class="floatRight" style="clear: right;" data-src="images/gitops-map.svg" width="30%" />
@@ -321,13 +332,19 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 </div>
 -->
 
-* No access to cluster from outside   
-* No credentials on CI server  
-* Forces declarative description
-* Config is auditable
-* Self-healing 
-* Scalability - one repo many applications
-* Innovations provided by tools  
+<span style="position: absolute; top: 10%">
+  <h2>Advantages of GitOps</h2> 
+  <ul>
+  <li>No access to cluster from outside   </li>
+  <li>No credentials on CI server  </li>
+  <li>Forces declarative description</li>
+  <li>Config is auditable</li>
+  <li>Self-healing </li>
+  <li>Scalability - one repo many applications</li>
+  <li>Innovations provided by tools  </li>
+  </ul>
+</span>
+
 
 Note:
 * No access to cluster from outside   

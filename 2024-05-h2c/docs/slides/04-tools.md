@@ -1,9 +1,8 @@
+<!-- .slide: style="text-align: center !important; font-size: 290%"  -->
 <!-- .slide: data-background-image="images/tools.jpg"  -->
 
-<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.9); width: 80%; margin: auto;">
-  <br/>
+<div style="border-radius: 5px; border: 4px solid #777;background-color: rgba(255,255,255,0.8); width: 80%; padding-top: 20px; padding-bottom: 20px; margin: auto">
   <h1 style="margin: 0 0 0 0; color: #5b5a5a; text-align: center">GitOps tools</h1>
-  <br/>
 </div>
 
 Note:
@@ -11,26 +10,27 @@ Note:
 
 
 
+<!-- .slide: style="font-size: 180%"  -->
 ## GitOps operators/controllers
 
 <a style="margin-left: 25px" href="https://github.com/fluxcd/flux2" class="tooltip-bellow">
-  <img data-src="images/flux-icon.svg" class="zoom2x" style="margin: 15px"/>
+  <img data-src="images/flux-icon.svg" width="7%" class="zoom2x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">Flux</span>
 </a>
 <a style="margin-left: 25px" href="https://github.com/argoproj/argo-cd/" class="tooltip-bellow">
-  <img data-src="images/argo-icon.svg" width="6%" class="zoom2x" style="margin: 15px"/>
+  <img data-src="images/argo-icon.svg" width="8%" class="zoom2x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">ArgoCD</span>
 </a>
 <a style="margin-left: 25px" href="https://github.com/pipe-cd/pipecd" class="tooltip-bellow">
-  <img data-src="images/pipecd-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
-  <span class="tooltip-bellow-text" style="width:200px; left: -50%;">PipeCD</span>
+  <img data-src="images/pipecd-icon.svg" width="11%" class="zoom2x" style="margin: 15px"/>
+  <span class="tooltip-bellow-text"> PipeCD </span>
 </a>
 <a style="margin-left: 25px" href="https://github.com/rancher/fleet" class="tooltip-bellow">
-  <img data-src="images/fleet-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/>
+  <img data-src="images/fleet-icon.svg" width="12%" class="zoom1-5x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">Fleet</span>
 </a>
 <a style="margin-left: 25px"  href="https://github.com/jenkins-x/jx" class="tooltip-bellow">
-  <img data-src="images/jenkinsx-icon.svg" width="9%" class="zoom2x" style="margin: 15px"/>
+  <img data-src="images/jenkinsx-icon.svg" width="13%" class="zoom2x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">JenkinsX</span>
 </a>
 
@@ -62,7 +62,7 @@ Note:
 
 
 
-<!-- .slide: style="font-size: 85%"  -->
+<!-- .slide: style="font-size: 120%"  -->
 ## Supplementary GitOps tools
 * Secrets Management
 * Backup + Restore
@@ -75,23 +75,18 @@ Note:
 <span class="fragment"  style="margin-left:50px">
 <a href="https://github.com/kubernetes-sigs/cluster-api" class="tooltip-bellow" class="tooltip-bellow">
   <img data-src="images/capi-icon.svg" width="4%" class="zoom1-5x"/>
-  <span class="tooltip-bellow-text">Kubernetes<br/>ClusterAPI</span>
 </a> 
 <a href="https://github.com/crossplane/crossplane" class="tooltip-bellow">
   <img data-src="images/crossplane-icon.svg" width="4%" class="zoom1-5x"/>
-  <span class="tooltip-bellow-text ">Crossplane</span>
 </a>
 <a href="https://github.com/pulumi/pulumi" class="tooltip-bellow">
   <img data-src="images/pulumi.svg" width="4%" class="zoom1-5x" style="margin: 10px" />
-  <span class="tooltip-bellow-text">Pulumi</span>
 </a>
 <a href="https://github.com/hashicorp/terraform" class="tooltip-bellow">
   <img data-src="images/open-tofu.svg" width="4%" class="zoom1-5x" />
-  <span class="tooltip-bellow-text">OpenTofu</span>
 </a>
 <a href="https://github.com/hashicorp/terraform" class="tooltip-bellow">
   <img data-src="images/terraform-icon.svg" width="4%" class="zoom1-5x" />
-  <span class="tooltip-bellow-text">Terraform</span>
 </a>
 <span>
 

@@ -516,7 +516,7 @@
 </div>
 
 <div class="title-version">
-Version: 202403251621-b8d185c
+Version: 202404291506-c754357
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
@@ -526,7 +526,7 @@ Version: 202403251621-b8d185c
 
 
 
-
+<!-- .slide: style="font-size: 190%;"  -->
 ## Agenda
 
 - Basics
