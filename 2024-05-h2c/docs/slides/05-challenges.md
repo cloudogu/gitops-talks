@@ -127,8 +127,8 @@ Note:
 How to model environments/stages?
 
 
-* ⚡️ User branches or folders?
-* "Operations by Pull Request": (How to) use PRs?
+* ⚡️ Use branches or folders?
+* `Operations by Pull Request`: (How to) use PRs?
 * How to integrate CM tools?
   <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
   <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x" />
