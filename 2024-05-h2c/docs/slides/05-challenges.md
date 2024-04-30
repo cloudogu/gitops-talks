@@ -48,16 +48,12 @@ Note:
 
 
 
-<!-- .slide: style="font-size: 120%"  -->
+<!-- .slide: style="font-size: 135%"  -->
 ### Learning curve
 
 * New concepts + tools for devs and platform teams
-* Adapt deployment process
+* Adapt deployment process + error handling
 * Migrate applications
-* Adapt error handling and alerting
-  * avoid failing late and silently
-  * accustom to new notification mechanism
-  * still, reason might be difficult to pinpoint
 
 Note:
 * Migrate applications: CI/CD, if applicable adapt apps, e.g. Helm deployment, secrets mgmt
@@ -65,13 +61,14 @@ Note:
 
 
 
-<!-- .slide: style="font-size: 120%"  -->
+<!-- .slide: style="font-size: 130%"  -->
 ## Day two questions
 
 * How to realize local dev env?
 * How to delete resources?
 * How to structure repos and folders?
 * How to realize different stages/environments?
+* How to do monitoring and alerting?
 * Role of CI server?
 * ...
 
@@ -80,14 +77,14 @@ Note:
 <!-- .slide: style="font-size: 120%"  -->
 ### Local development
 
-* App development: Just carry on without GitOps.  
+* App development: Carry on without GitOps.  
   Setting up GitOps operator, SCM, etc. complicated  
 * 💡 Integration: Run GitOps+k8s-based ops platform locally  
   
-  <a href="https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234"><img data-src="images/CL_2024_Shared Pics_Schnatterer.jpg" class="floatRight" style="border-radius: 15px;" width="37%;"/></a>
+  <a class="fragment" data-fragment-index="2" href="https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234"><img data-src="images/CL_2024_Shared Pics_Schnatterer.jpg" class="floatRight" style="border-radius: 15px;" width="37%;"/></a>
   
-  * <i class='fab fa-github'></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
-  * [2024-06-20 Workshop at CloudLand](https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234)
+  * <!-- .element: class="fragment" data-fragment-index="1" --> <i class='fab fa-github'></i>  <a href="https://github.com/cloudogu/gitops-playground">cloudogu/gitops-playground</a> 
+  * <!-- .element: class="fragment" data-fragment-index="2" --> <a href="https://meine.doag.org/events/cloudland/2024/agenda/#eventDay.1718834400#agendaId.4234">2024-06-20 Workshop at CloudLand</a>
 
 
 Note:
@@ -95,6 +92,7 @@ Note:
 
 
 
+<!-- .slide: data-visibility="hidden" -->
 <!-- .slide: style="font-size: 120%"  -->
 ### How to delete resources?
 
@@ -106,14 +104,15 @@ Note:
 
 
 <!-- .slide: style="font-size: 115%"  -->
-### Repo and folder structure
+### Structuring repos
 
 * No standard for structures (intentionally) ➡️ Conway's law
 * How many repos?
 * Within repo: folder/branch structure for stage, team, app  
-* More options:   
+* More considerations:
   * Topology: GitOps controller (s) ↔ Cluster(s) / Namespaces
-  * GitOps controller-specific config
+  * GitOps controller-specific config / CRDs
+  * ➡️ Multi-tenancy
 
 Note: 
 * Conway's law applies ->️ structure will be dictated by organizational boundaries
@@ -128,33 +127,44 @@ How to model environments/stages?
 
 
 * ⚡️ Use branches or folders?
-* `Operations by Pull Request`: (How to) use PRs?
+* `Operations by Pull Request`:  
+   (How to) use PRs? 
 * How to integrate CM tools?
-  <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
-  <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x" />
-  <img title="jsonnet" data-src="images/jsonnet-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
-  <img title="cuelang" data-src="images/cue-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
-  <img title="timoni" data-src="images/timoni-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+  <a href="https://kustomize.io/" class="tooltip-bellow">
+    <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <span class="tooltip-bellow-text" style="top: -130%">Kustomize</span>
+  </a>
+  <a href="https://helm.sh" class="tooltip-bellow">
+    <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x" />
+    <span class="tooltip-bellow-text" style="top: -130%">Helm</span>
+  </a>
+  <a href="https://jsonnet.org/" class="tooltip-bellow">
+    <img title="jsonnet" data-src="images/jsonnet-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <span class="tooltip-bellow-text" style="top: -130%">Jsonnet</span>
+  </a>
+  <a href="https://cuelang.org/" class="tooltip-bellow">
+    <img title="cuelang" data-src="images/cue-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <span class="tooltip-bellow-text" style="top: -130%">CUE</span>
+  </a>
+  <a href="https://timoni.sh/" class="tooltip-bellow">
+    <img title="timoni" data-src="images/timoni-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <span class="tooltip-bellow-text" style="top: -130%">timoni</span>
+  </a>
 * How to automate?
 * 🔥 (How to) use preview environments?
 
 
 
-<!-- .slide: style="font-size: 110%"  -->
+<!-- .slide: style="font-size: 130%"  -->
 <a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" class="floatRight" width="40%;" style="margin-top: 5%"/></a>
 
 <span style="position: absolute; top: 15%">
 <h2 id="further-reading">Further reading</h2>
 <ul>
-  <li>GitOps Repository Structures and Patterns
-    <ul>
-      <li><i class="fas fa-microphone"></i> <a href="https://cloudogu.github.io/gitops-talks/2023-11-continuous-lifecycle/#/">Slides (Continuous Lifecycle 23)</a></li>
-      <li><img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
-      <li>📘 <a href="https://dpunkt.de/produkt/gitops/">GitOps book</a></li>
-    </ul>
-  </li>
+  <li><i class="fas fa-microphone"></i> <a href="https://cloudogu.github.io/gitops-talks/2023-11-continuous-lifecycle/#/">Slides (Continuous Lifecycle 23)</a></li>
+  <li><img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
+  <li>📘 <a href="https://dpunkt.de/produkt/gitops/">GitOps book</a></li>
   <li><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-patterns">cloudogu/gitops-patterns</a></li>
-  <li><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-playground">cloudogu/gitops-playground</a></li>
 </ul>
 </span>
 

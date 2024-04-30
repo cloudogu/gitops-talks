@@ -26,12 +26,12 @@ Note:
 <!-- .slide: style="font-size: 130%"  -->
 ## GitOps Principles
 
-
+ 
 The desired state of a GitOps managed system must be:
 
 <a  href="https://opengitops.dev/" class="tooltip-bellow floatRight">
   <img data-src="images/opengitops.png" width="70%;" style="border-radius: 50%" class="zoom1-5x" />
-  <span class="tooltip-bellow-text">OpenGitOps</span>
+  <span class="tooltip-bellow-text" style="left: -50%">OpenGitOps</span>
 </a>
 
 1. **Declarative**

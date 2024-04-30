@@ -13,10 +13,10 @@
 }
 </style>
 
-<!-- .slide: style="text-align: center !important;font-size: 75%;"  -->
+<!-- .slide: style="text-align: center !important;font-size: 80%;"  -->
 <!-- .slide: data-background-image="dist/theme/images/title-white.svg"  -->
 
-<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1010 1010" style="enable-background:new 0 0 1010 1010;" xml:space="preserve" width="10%">
+<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1010 1010" style="enable-background:new 0 0 1010 1010;" xml:space="preserve" width="9%">
     <style type="text/css">
         .st0{fill:#23A3DD;}
     </style>
@@ -32,7 +32,7 @@
     </path>
 </svg>
 
-<h1 class="title" style="margin: 0">
+<h1 class="title" style="margin: 0; font-size: 170%">
     <span class="title-accent">//</span> 
     GitOps: is this something for me<br/>– or not?
 </h1>
@@ -510,13 +510,12 @@
     </svg>
 </a>
 <div>
-<a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a> 
-<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
-<a href='https://twitter.com/jschnatterer' style="font-size:80%; margin: 50px"><i class='fab fa-twitter'></i> @jschnatterer</a>
+<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
+<a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
 </div>
 
 <div class="title-version">
-Version: 202404291700-4f4f101
+Version: 202404301240-2284f7e
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
