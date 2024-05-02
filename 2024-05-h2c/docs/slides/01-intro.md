@@ -510,12 +510,11 @@
     </svg>
 </a>
 <div>
-<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 <a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
-</div>
+<a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
 <div class="title-version">
-Version: 202405021403-7fffa14
+Version: 202405021417-9527258
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
