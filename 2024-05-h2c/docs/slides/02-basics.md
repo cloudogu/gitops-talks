@@ -14,8 +14,9 @@ Note:
 
 
 <!-- .slide: style="font-size: 130%"  -->
-**August 2017: GitOps - Operations by Pull Request**  
+# 2017: The term GitOps 
 
+**GitOps - Operations by Pull Request**
 
 🌐 ~~[weave.works/blog/gitops-operations-by-pull-request](https://web.archive.org/web/20240202145840/https://www.weave.works/blog/gitops-operations-by-pull-request)~~ 
 
@@ -24,7 +25,7 @@ Note:
 
 
 <!-- .slide: style="font-size: 130%"  -->
-## GitOps Principles
+## 2021: GitOps Principles
 
  
 The desired state of a GitOps managed system must be:
@@ -333,7 +334,7 @@ https://schlomo.schapiro.org/2021/04/the-gitops-journey.html
 -->
 
 <span style="position: absolute; top: 10%">
-  <h2>Advantages of GitOps</h2> 
+  <h2>2024: Advantages of GitOps</h2> 
   <ul>
   <li>No access to cluster from outside   </li>
   <li>No credentials on CI server  </li>
