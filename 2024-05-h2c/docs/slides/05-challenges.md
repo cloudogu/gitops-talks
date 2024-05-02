@@ -66,7 +66,7 @@ Note:
 
 * How to realize local dev env?
 * How to delete resources?
-* How to structure repos and folders?
+* How to structure repos, folders, branches?
 * How to realize different stages/environments?
 * How to do monitoring and alerting?
 * Role of CI server?
@@ -106,7 +106,6 @@ Note:
 <!-- .slide: style="font-size: 115%"  -->
 ### Structuring repos
 
-* No standard for structures (intentionally) ➡️ Conway's law
 * How many repos?
 * Within repo: folder/branch structure for stage, team, app  
 * More considerations:
