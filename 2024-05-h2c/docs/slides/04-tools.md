@@ -26,7 +26,7 @@ Note:
   <span class="tooltip-bellow-text"> PipeCD </span>
 </a>
 <a style="margin-left: 25px" href="https://github.com/rancher/fleet" class="tooltip-bellow">
-  <img data-src="images/fleet-icon.svg" width="12%" class="zoom1-5x" style="margin: 15px"/>
+  <img data-src="images/fleet-icon.svg" width="12%" class="zoom2x" style="margin: 15px"/>
   <span class="tooltip-bellow-text">Fleet</span>
 </a>
 <a style="margin-left: 25px"  href="https://github.com/jenkins-x/jx" class="tooltip-bellow">
@@ -66,27 +66,27 @@ Note:
 ## Supplementary GitOps tools
 * Secrets Management
 * Backup + Restore
-* Deployment Strategies - Progressive Delivery
-  <a href="https://github.com/fluxcd/flagger" class="tooltip-bellow"><img data-src="images/flagger-icon.svg" width="5%" class="zoom1-5x" style="margin-left: 15px"/><span class="tooltip-bellow-text">Flagger</span></a>
-  <a href="https://github.com/argoproj/argo-rollouts/" class="tooltip-bellow"><img data-src="images/argo-icon.svg" width="5%" class="zoom1-5x" style="margin-left: 15px"/><span class="tooltip-bellow-text">Argo Rollouts</span></a>
+* Progressive Delivery
+  <a href="https://github.com/fluxcd/flagger" class="tooltip-bellow"><img data-src="images/flagger-icon.svg" width="6%" class="zoom2x" style="margin-left: 15px"/><span class="tooltip-bellow-text">Flagger</span></a>
+  <a href="https://github.com/argoproj/argo-rollouts/" class="tooltip-bellow"><img data-src="images/argo-icon.svg" width="6%" class="zoom2x" style="margin-left: 15px"/><span class="tooltip-bellow-text" style="left:-50%">Argo Rollouts</span></a>
 * Infra <a href="https://github.com/kubernetes-sigs/cluster-api" class="tooltip-bellow" class="tooltip-bellow">
   <img data-src="images/capi-icon.svg" width="4%" class="zoom2x" style="margin-left: 20px; margin-top: 10px"/>
   <span class="tooltip-bellow-text">Cluster-API</span>
 </a> 
 <a href="https://github.com/crossplane/crossplane" class="tooltip-bellow">
-  <img data-src="images/crossplane-icon.svg" width="4%" class="zoom1-5x"/>
+  <img data-src="images/crossplane-icon.svg" width="6%" class="zoom2x"/>
   <span class="tooltip-bellow-text">Crossplane</span>
 </a>
 <a href="https://github.com/pulumi/pulumi" class="tooltip-bellow">
-  <img data-src="images/pulumi.svg" width="4%" class="zoom2x" style="margin-left: 20px" />
+  <img data-src="images/pulumi.svg" width="6%" class="zoom2x" style="margin-left: 20px" />
   <span class="tooltip-bellow-text">Pulumi</span>
 </a>
 <a href="https://github.com/hashicorp/terraform" class="tooltip-bellow">
-  <img data-src="images/open-tofu.svg" width="4%" class="zoom2x" style="margin-left: 20px"/>
+  <img data-src="images/open-tofu.svg" width="6%" class="zoom2x" style="margin-left: 20px"/>
   <span class="tooltip-bellow-text">OpenTofu</span>
 </a>
 <a href="https://github.com/hashicorp/terraform" class="tooltip-bellow" style="margin-left: 20px">
-  <img data-src="images/terraform-icon.svg" width="4%" class="zoom2x" />
+  <img data-src="images/terraform-icon.svg" width="6 %" class="zoom2x" />
   <span class="tooltip-bellow-text">Terraform</span>
 </a>
 <span>
