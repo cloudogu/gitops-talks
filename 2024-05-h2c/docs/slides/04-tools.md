@@ -86,7 +86,7 @@ Note:
   <span class="tooltip-bellow-text">OpenTofu</span>
 </a>
 <a href="https://github.com/hashicorp/terraform" class="tooltip-bellow" style="margin-left: 20px">
-  <img data-src="images/terraform-icon.svg" width="6 %" class="zoom2x" />
+  <img data-src="images/terraform-icon.svg" width="6%" class="zoom2x" />
   <span class="tooltip-bellow-text">Terraform</span>
 </a>
 <span>
