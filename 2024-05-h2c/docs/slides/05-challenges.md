@@ -130,23 +130,23 @@ How to model environments/stages?
    (How to) use PRs? 
 * How to integrate CM tools?
   <a href="https://kustomize.io/" class="tooltip-bellow">
-    <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <img data-src="images/kustomize-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
     <span class="tooltip-bellow-text" style="top: -130%">Kustomize</span>
   </a>
   <a href="https://helm.sh" class="tooltip-bellow">
-    <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x" />
+    <img data-src="images/helm-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x" />
     <span class="tooltip-bellow-text" style="top: -130%">Helm</span>
   </a>
   <a href="https://jsonnet.org/" class="tooltip-bellow">
-    <img title="jsonnet" data-src="images/jsonnet-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <img data-src="images/jsonnet-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
     <span class="tooltip-bellow-text" style="top: -130%">Jsonnet</span>
   </a>
   <a href="https://cuelang.org/" class="tooltip-bellow">
-    <img title="cuelang" data-src="images/cue-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <img data-src="images/cue-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
     <span class="tooltip-bellow-text" style="top: -130%">CUE</span>
   </a>
   <a href="https://timoni.sh/" class="tooltip-bellow">
-    <img title="timoni" data-src="images/timoni-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
+    <img data-src="images/timoni-icon.svg" style="height: 1.1em; margin-left: 20px; vertical-align: middle;" class="zoom1-5x"/>
     <span class="tooltip-bellow-text" style="top: -130%">timoni</span>
   </a>
 * How to automate?
@@ -161,7 +161,7 @@ How to model environments/stages?
 <h2 id="further-reading">Further reading</h2>
 <ul>
   <li><i class="fas fa-microphone"></i> <a href="https://cloudogu.github.io/gitops-talks/2023-11-continuous-lifecycle/#/">Slides (Continuous Lifecycle 23)</a></li>
-  <li><img data-src="images/gitops-patterns-series.png" title="Helm" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
+  <li><img data-src="images/gitops-patterns-series.png" style="vertical-align: middle;" width=5%> <a href="https://cloudogu.com/en/blog/gitops-repository-patterns-part-1-introduction">Blog post series (Cloudogu Blog)</a>
   <li>📘 <a href="https://dpunkt.de/produkt/gitops/">GitOps book</a></li>
   <li><i class='fab fa-github'></i> <a href="https://github.com/cloudogu/gitops-patterns">cloudogu/gitops-patterns</a></li>
 </ul>

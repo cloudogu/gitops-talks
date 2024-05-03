@@ -514,7 +514,7 @@
 <a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
 <div class="title-version">
-Version: 202405031133-a730049
+Version: 202405031657-fd63f70
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
