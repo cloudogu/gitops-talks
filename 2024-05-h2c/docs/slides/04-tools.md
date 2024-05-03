@@ -62,38 +62,37 @@ Note:
 
 
 
-<!-- .slide: style="font-size: 120%"  -->
+<!-- .slide: style="font-size: 130%"  -->
 ## Supplementary GitOps tools
 * Secrets Management
 * Backup + Restore
-* Deployment Strategies - Progressive Delivery  
-  <a href="https://github.com/fluxcd/flagger" class="tooltip-bellow"><img data-src="images/flagger-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-bellow-text">Flagger</span></a>
-  <a href="https://github.com/argoproj/argo-rollouts/" class="tooltip-right"><img data-src="images/argo-icon.svg" width="9%" class="zoom1-5x" style="margin: 15px"/><span class="tooltip-right-text">Argo Rollouts</span></a>
-* ...
-
-<strong class="fragment" style="font-size: 150%">➡ GitOps ♥ operators</strong>
-<span class="fragment"  style="margin-left:50px">
-<a href="https://github.com/kubernetes-sigs/cluster-api" class="tooltip-bellow" class="tooltip-bellow">
-  <img data-src="images/capi-icon.svg" width="4%" class="zoom2x"/>
-  <span class="tooltip-bellow-text" style="top: -300%">Cluster-API</span>
+* Deployment Strategies - Progressive Delivery
+  <a href="https://github.com/fluxcd/flagger" class="tooltip-bellow"><img data-src="images/flagger-icon.svg" width="5%" class="zoom1-5x" style="margin-left: 15px"/><span class="tooltip-bellow-text">Flagger</span></a>
+  <a href="https://github.com/argoproj/argo-rollouts/" class="tooltip-bellow"><img data-src="images/argo-icon.svg" width="5%" class="zoom1-5x" style="margin-left: 15px"/><span class="tooltip-bellow-text">Argo Rollouts</span></a>
+* Infra <a href="https://github.com/kubernetes-sigs/cluster-api" class="tooltip-bellow" class="tooltip-bellow">
+  <img data-src="images/capi-icon.svg" width="4%" class="zoom2x" style="margin-left: 20px; margin-top: 10px"/>
+  <span class="tooltip-bellow-text">Cluster-API</span>
 </a> 
 <a href="https://github.com/crossplane/crossplane" class="tooltip-bellow">
   <img data-src="images/crossplane-icon.svg" width="4%" class="zoom1-5x"/>
-  <span class="tooltip-bellow-text" style="top: -200%">Crossplane</span>
+  <span class="tooltip-bellow-text">Crossplane</span>
 </a>
 <a href="https://github.com/pulumi/pulumi" class="tooltip-bellow">
-  <img data-src="images/pulumi.svg" width="4%" class="zoom2x" style="margin: 10px" />
-  <span class="tooltip-bellow-text" style="top: -200%">Pulumi</span>
+  <img data-src="images/pulumi.svg" width="4%" class="zoom2x" style="margin-left: 20px" />
+  <span class="tooltip-bellow-text">Pulumi</span>
 </a>
 <a href="https://github.com/hashicorp/terraform" class="tooltip-bellow">
-  <img data-src="images/open-tofu.svg" width="4%" class="zoom2x" />
-  <span class="tooltip-bellow-text" style="top: -200%">OpenTofu</span>
+  <img data-src="images/open-tofu.svg" width="4%" class="zoom2x" style="margin-left: 20px"/>
+  <span class="tooltip-bellow-text">OpenTofu</span>
 </a>
-<a href="https://github.com/hashicorp/terraform" class="tooltip-bellow" style="margin-left: 10px">
+<a href="https://github.com/hashicorp/terraform" class="tooltip-bellow" style="margin-left: 20px">
   <img data-src="images/terraform-icon.svg" width="4%" class="zoom2x" />
-  <span class="tooltip-bellow-text" style="top: -200%; left: -50%">Terraform</span>
+  <span class="tooltip-bellow-text">Terraform</span>
 </a>
 <span>
+* ... 
+<strong class="fragment" style="font-size: 150%">➡ GitOps ♥ operators</strong>
+
 
 Notes:
 * Secrets
