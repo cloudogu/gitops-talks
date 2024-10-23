@@ -1,7 +1,7 @@
-FROM cloudogu/reveal.js:4.4.0-r5 as base
+FROM cloudogu/reveal.js:5.1.0-r1 as base
 
 FROM base as aggregator
-ENV TITLE='GitOps: is this something for me - or not?'
+ENV TITLE='GitOps by Example – Repos, Patterns, Promotion, Processes'
 ENV THEME_CSS='cloudogu.css'
 #ENV THEME_CSS='cloudogu-black.css'
 ENV WIDTH='1280'

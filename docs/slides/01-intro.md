@@ -34,7 +34,7 @@
 
 <h1 class="title" style="margin: 0; font-size: 170%">
     <span class="title-accent">//</span> 
-    GitOps: is this something for me<br/>– or not?
+    GitOps by Example – <br/>Repos, Patterns, Promotion, Processes
 </h1>
 <p style="margin-top: 0">Johannes Schnatterer, Cloudogu GmbH</p> 
 <a style="margin: 0" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
@@ -509,6 +509,7 @@
       </text>
     </svg>
 </a>
+
 <div>
 <a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
 <a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
@@ -518,16 +519,7 @@
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
-    <a href="pdf/GitOps is this something for me - or not.pdf">
+    <a href="pdf/GitOps by Example – Repos, Patterns, Promotion, Processes.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
-
-
-
-<!-- .slide: style="font-size: 190%;"  -->
-## Agenda
-
-- Basics
-- Tools
-- Challenges
-- 🍕 💬 🍻
+</div>
