@@ -64,7 +64,7 @@ git push
 
 <div class="container">
     <div style="color: #5b5a5a; 
-      font-size:65%; 
+      font-size:52%; 
       background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
         <ul style="margin-left: 90px; margin-top: 25px; margin-right: 60px; margin-bottom: 200px">
           <li><strong>Repo pattern:</strong> Per team <i class="fas fa-blender"></i> per app</li>
@@ -87,7 +87,7 @@ git push
         </ul>
     </div>
     <div class="column">
-<svg width="105%"
+<svg width="94%"
    viewBox="-0.5 -0.5 621 494"xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <sodipodi:namedview
      id="namedview215"
@@ -1084,23 +1084,22 @@ git push
      id="g2556"
      class="fragment"
      data-fragment-index="11">
-<path
-   d="m 602,287.8 h -15.55 v 45.99 h -42.98"
-   fill="none"
-   stroke="#d33833"
-   stroke-width="2"
-   stroke-miterlimit="10"
-   pointer-events="stroke"
-   id="path181" />
-<path
-   d="m 542,334 4,-2 -1,2 1,2 z"
-   fill="#d33833"
-   stroke="#d33833"
-   stroke-width="2"
-   stroke-miterlimit="10"
-   pointer-events="all"
-   id="path185" />
-
+    <path
+       d="m 602,287.8 h -15.55 v 45.99 h -42.98"
+       fill="none"
+       stroke="#d33833"
+       stroke-width="2"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path181" />
+    <path
+       d="m 542,334 4,-2 -1,2 1,2 z"
+       fill="#d33833"
+       stroke="#d33833"
+       stroke-width="2"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path185" />
     <g
        transform="translate(-0.5,-0.5)"
        id="g191">
