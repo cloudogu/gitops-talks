@@ -1,13 +1,11 @@
-<!-- .slide: style="color: #5b5a5a; font-size: 110%" class="floatRight"-->
-<!-- .slide: data-background-image="images/question-mark-g8640ed2c2_1920.jpg" data-background-size="45%" data-background-color="white" data-background-position="left" -->
-
-
-<div class="floatRight" >
-<h2 style="color: #5b5a5a; font-size: 130%">Is GitOps something for me<br/> – or not? </h2>
-
-<p class="fragment"><i class="fas fa-plus"></i> Has advantages, once established </p>
-<p class="fragment"><i class="fas fa-minus"></i> Don't underestimate learning curve <br/>and migrations </p>
+<h1 style="margin-top: 0px">More patterns + further reading </h1>
+<div style="position: absolute; right:15%; width: 45%;">
+    <a href="https://dpunkt.de/produkt/gitops/"><img src="images/Cubukcuoglu_GitOps.png" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/></a>
 </div>
+
+<a href="https://github.com/cloudogu/gitops-patterns"><img src="images/gitops-patterns.png" width="28%" /></a>
+
+<i class='fab fa-github'></i> [cloudogu/gitops-patterns](https://github.com/cloudogu/gitops-patterns)
 
 
 
@@ -502,11 +500,9 @@
 # Image sources
 <!-- .slide: style="font-size: 80%; " -->
 
-* Basics:  
-  https://pixabay.com/illustrations/question-mark-important-sign-1872665/
-* Tools:  
-  https://pixabay.com/photos/tools-knives-wrenches-drills-1845426/
-* Challenges:  
-  https://unsplash.com/photos/bJhT_8nbUA0
-* Is GitOps something for me?  
-  https://pixabay.com/illustrations/question-mark-question-response-1020165/
+* Live Example:  
+  https://unsplash.com/photos/assorted-color-hot-air-balloons-during-daytime-DuBNA1QMpPA
+* More examples:  
+  https://unsplash.com/photos/XZc4f2XZc84
+* coloured-parchment-paper background by brgfx on Freepik:  
+  https://www.freepik.com/free-vector/coloured-parchment-paper-designs_1078492.htm
