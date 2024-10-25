@@ -1,9 +1,9 @@
 <h1 style="margin-top: 0px">More patterns + further reading </h1>
 <div style="position: absolute; right:15%; width: 45%;">
-    <a href="https://dpunkt.de/produkt/gitops/"><img src="images/Cubukcuoglu_GitOps.png" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/></a>
+    <a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/></a>
 </div>
 
-<a href="https://github.com/cloudogu/gitops-patterns"><img src="images/gitops-patterns.png" width="28%" /></a>
+<a href="https://github.com/cloudogu/gitops-patterns"><img data-src="images/gitops-patterns.png" width="28%" /></a>
 
 <i class='fab fa-github'></i> [cloudogu/gitops-patterns](https://github.com/cloudogu/gitops-patterns)
 
