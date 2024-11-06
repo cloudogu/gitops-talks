@@ -30,7 +30,11 @@ Note:
             </a>
           </li>
           <li><strong>Bootstrapping:</strong> <code>argocd-autopilot</code></li>
-          <li><strong>Linking:</strong> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code>Application</code>,<br/> <code>ApplicationSet</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
+          <li><strong>Linking:</strong> <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code>Application</code>,<br/> <code>ApplicationSet</code>, 
+            <a href="https://kustomize.io/" class="tooltip-bellow">
+              <img class="zoom2x" style="height: 1.4em;vertical-align: middle;" data-src="images/kustomize-icon.svg">
+              <span class="tooltip-bellow-text" style=" ">Kustomize</span>
+            </a></li>
           <li><strong>Features:</strong> 
             <ul>
               <li>Operate ArgoCD with GitOps</li>
@@ -84,7 +88,10 @@ Note:
             </a>
           </li>
           <li><strong>Bootstrapping:</strong> <code>flux</code></li>
-          <li><strong>Linking:</strong> <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code>Kustomization</code>, <img data-src="images/kustomize-icon.svg" title="Kustomize" style="height: 1.1em; vertical-align: middle;"/></li>
+          <li><strong>Linking:</strong> <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code>Kustomization</code>,    <a href="https://kustomize.io/" class="tooltip-bellow">
+              <img class="zoom2x" style="height: 1.4em;vertical-align: middle;" data-src="images/kustomize-icon.svg">
+              <span class="tooltip-bellow-text" style=" ">Kustomize</span>
+            </a></li>
           <li><strong>Features:</strong>
             <ul>
               <li>Operate Flux with GitOps</li>
