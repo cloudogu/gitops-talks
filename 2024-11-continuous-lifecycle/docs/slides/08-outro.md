@@ -9,7 +9,7 @@
 
 
 
-<!-- .slide: data-background-image="images/cloudogu-background.jpg"  -->
+<!-- .slide: data-background-image="dist/theme/images/title-white.svg"  -->
 <!-- .slide: id="last" -->
 <!-- .slide: style="text-align: center !important;"  -->
 
@@ -18,12 +18,8 @@
 <a href='https://floss.social/@schnatterer' style="font-size:80%"><i class='fab fa-mastodon'></i> @schnatterer@floss.social</a>
 <a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
-<i class='fab fa-github'></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground) <!-- .element: style="font-size: 80%" -->
-
-<a href="https://github.com/cloudogu/gitops-playground"><img data-src="images/gitops-playground-features.drawio.svg" width="55%;" class="floatLeft"/></a>
-
-<a class="floatRight" style="margin-top: 75px" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100%" viewBox="0 0 990 1155"><g transform="scale(41.25)" fill="#23a3dd"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
+<a style="margin-top: 75px" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="20%" viewBox="0 0 990 1155"><g transform="scale(41.25)" fill="#23a3dd"><path d="M1.3,28L22.6,28c0.7,0,1.3-0.6,1.3-1.3L24,1.4c0-0.7-0.6-1.3-1.3-1.3L1.4,0C0.7,0,0.1,0.6,0,1.3L0,26.6 C-0.1,27.4,0.5,28,1.3,28z M1,6c0-0.6,0.5-1,1-1L22,5c0.6,0,1,0.5,1,1L23,26c0,0.6-0.5,1-1,1L2,27c-0.6,0-1-0.5-1-1L1,6z"/></g>
         <g transform="translate(0,165)" fill="#23a3dd">
     <g transform="translate(291,99) scale(4.12)"><rect width="6" height="6"/></g>
             <g transform="translate(315,99) scale(4.12)"><rect width="6" height="6"/></g>
@@ -494,6 +490,8 @@
       </text>
     </svg>
 </a>
+
+<p>💪 Join my team: <a href="https://cloudogu.com/join/cloud-engineer" class="non-blue-link"> cloudogu.com/join/cloud-engineer</a></p>
 
 
 

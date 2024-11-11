@@ -19,8 +19,8 @@ Note:
 <!-- .slide: id="ex2"  -->
 
 <div class="container">
-    <div style="color: #5b5a5a; font-size:60%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: 100% 100%;">
-        <ul style="margin-left: 70px; margin-top: 30px; margin-right: 50px;">
+    <div style="color: #5b5a5a; font-size:55%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat;">
+        <ul style="margin-left: 70px; margin-top: 10px; margin-right: 50px;">
           <li><strong>Repo pattern:</strong> <a title="Monorepo pattern" href="https://github.com/cloudogu/gitops-patterns/blob/a70a1477/README.md#monorepo">Monorepo</a></li>
           <li><strong>Operator pattern:</strong><br/> Instance per Cluster / Hub and Spoke</li>
           <li><strong>Operator:</strong>
@@ -40,11 +40,11 @@ Note:
               <li>Operate ArgoCD with GitOps</li>
               <li>Solution for cluster resources</li>
               <li>Create structure and YAML via CLI</li>
+              <li>Env per app Pattern</li>
             </ul>
           <li><strong>Source:</strong><br/> <span style="font-size:95%"><i class='fab fa-github'></i> <a href="https://github.com/argoproj-labs/argocd-autopilot/releases/tag/v0.4.12">argoproj-labs/argocd-autopilot</a><br/>
             <i class='fab fa-gitlab'></i> <a href="https://gitlab.com/gitops-book/argocd-autopilot-example">gitops-book/argocd-autopilot-example</a>
             </span>
-<br/><br/><br/>
           </li>
         </ul>
     </div>
@@ -1426,7 +1426,7 @@ Note:
         <br/><br/><br/><br/>
     </div>
     <div class="column">
-      <img data-src="images/example-alternative.svg" width="63%"/>
+      <img data-src="images/example-alternative.svg" width="50%"/>
     </div>
 </div>
 
@@ -1435,12 +1435,12 @@ Note:
 
 
 
-## Example 6: Environment variations <!-- .element style="margin-top: 0px"-->
+## Example 6: Env variations single app <!-- .element style="margin-top: 0px"-->
 <!-- .slide: id="ex6"  -->
 
 <div class="container">
-    <div class="column" style="color: #5b5a5a; font-size:70%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
-        <ul style="margin-left: 75px; margin-top: 50px;">
+    <div style="color: #5b5a5a; font-size:65%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
+        <ul style="margin-left: 75px; margin-top: 50px; margin-right: 40px">
           <li><strong>Operator:</strong>
             <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> 
             (<img data-src="images/flux-icon.svg" title="flux" style="height: 1.1em; vertical-align: middle;"/>) 
@@ -1450,6 +1450,7 @@ Note:
             <ul>
                 <li>Env variants for a single app</li>
                 <li>Promotion "via <code>cp</code>"</li>
+                <li>Env per app Pattern</li>
             </ul>
         <li><strong>Source:</strong><br/>
                 <span style="font-size:70%">
@@ -1457,10 +1458,9 @@ Note:
                 </span>
             </li>
         </ul>
-<br/><br/><br/><br/><br/><br/><br/>
     </div>
     <div class="column">
-      <img data-src="images/example-variants.svg" width="75%"/>
+      <img data-src="images/example-variants.svg" width="65%"/>
     </div>
 </div>
 
@@ -1484,3 +1484,42 @@ Note:
     * If it works, copy to prod-eu
     * Finally move to eu.
     * Analogy: Gradual database refactoring pattern
+
+
+
+## Example 7: Env variations multiple apps <!-- .element style="margin-top: 0px"-->
+<!-- .slide: id="ex7"  -->
+
+<div class="container">
+    <div style="color: #5b5a5a; font-size:65%; background-image: url(images/parchment-paper.svg);background-repeat: no-repeat; background-size: contain; ">
+        <ul style="margin-left: 75px; margin-top: 30px; margin-right: 30px">
+          <li><strong>Operator:</strong>
+            <a href="https://github.com/argoproj/argo-cd/" class="tooltip-right">
+              <img class="zoom2x" style="height: 1.4em;vertical-align: middle;" data-src="images/argo-icon.svg">
+              <span class="tooltip-right-text" style="margin-left: 20px">ArgoCD</span>
+            </a>
+          </li>
+          <li><strong>Linking:</strong> 
+            <a href="https://kustomize.io/" class="tooltip-bellow">
+              <img class="zoom2x" style="height: 1.4em;vertical-align: middle;" data-src="images/kustomize-icon.svg">
+              <span class="tooltip-bellow-text" style=" ">Kustomize</span>
+            </a>,
+            <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code>ApplicationSet</code>,<br/> (<code>Application</code>)</li>
+          <li><strong>Features:</strong> 
+            <ul>
+                <li>Env variants for multiple apps<br/> with few appSets</li>
+                <li>Promotion "via <code>cp</code>"</li>
+                <li>Env per app Pattern</li>
+            </ul>
+        <li><strong>Source:</strong><br/>
+                <span style="font-size:70%">
+                    <i class='fab fa-github'></i> <a href="https://github.com/kostis-codefresh/many-appsets-demo">kostis-codefresh/many-appsets-demo</a>
+                </span>
+            </li>
+        </ul>
+<br/><br/><br/><br/><br/><br/>
+    </div>
+    <div class="column">
+      <img data-src="images/example-appsets.svg" width="90%"/>
+    </div>
+</div>
