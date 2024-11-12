@@ -927,9 +927,9 @@ Note:
             <ul>
               <li>Operate ArgoCD with GitOps</li>
               <li>Solution for cluster resources</li>
+              <li><a title="Environment per application pattern" href="https://github.com/cloudogu/gitops-patterns/blob/a70a1477#global-vs-env-per-app">Env per app</a></li>
               <li>CI: <a href="https://github.com/cloudogu/gitops-patterns/blob/a70a1477#config-update">Config update</a> + <a title="Config replication" href="https://github.com/cloudogu/gitops-patterns/blob/a70a1477#config-replication">replication</a>,<br/>
                 <a href="">rendered Manifest</a> <img data-src="images/helm-icon.svg" title="Helm" style="height: 1.1em; vertical-align: middle;" /></li>
-              <li><a title="Environment per application pattern" href="https://github.com/cloudogu/gitops-patterns/blob/a70a1477#global-vs-env-per-app">Env per app</a></li>
               <li>Multi-tenancy: N tenants on 1 cluster<br/>(namespace envs)<br/></li>
             </ul>
           </li>

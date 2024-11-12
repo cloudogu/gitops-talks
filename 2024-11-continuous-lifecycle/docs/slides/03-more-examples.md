@@ -39,8 +39,8 @@ Note:
             <ul>
               <li>Operate ArgoCD with GitOps</li>
               <li>Solution for cluster resources</li>
-              <li>Create structure and YAML via CLI</li>
               <li>Env per app Pattern</li>
+              <li>Create structure and YAML via CLI</li>
             </ul>
           <li><strong>Source:</strong><br/> <span style="font-size:95%"><i class='fab fa-github'></i> <a href="https://github.com/argoproj-labs/argocd-autopilot/releases/tag/v0.4.12">argoproj-labs/argocd-autopilot</a><br/>
             <i class='fab fa-gitlab'></i> <a href="https://gitlab.com/gitops-book/argocd-autopilot-example">gitops-book/argocd-autopilot-example</a>
@@ -142,7 +142,7 @@ Note:
             <ul>
               <li>Operate Flux with GitOps</li>
               <li>Solution for cluster resources</li>
-              <li>Multi-tenancy: N tenants on 1 cluster<br/>(cluster envs)</li>
+              <li>Multi-tenancy: N tenants on 1 cluster<br/> per env (cluster envs)</li>
             </ul>
         </li>
 <li><strong>Source:</strong><br/><span style="font-size:80%"><i class='fab fa-github'></i> <a href="https://github.com/fluxcd/flux2-multi-tenancy">fluxcd/flux2-multi-tenancy<br/></a>
@@ -1423,10 +1423,9 @@ Note:
           <li><strong>Source:</strong><br/><span style="font-size:80%"><i class='fab fa-github'></i> <a href="https://github.com/christianh814/example-kubernetes-go-repo">christianh814/example-kubernetes-go-repo<br/></a>
           📘 C. Hernandez - The Path to GitOps</span></li>
         </ul>
-        <br/><br/><br/><br/>
     </div>
     <div class="column">
-      <img data-src="images/example-alternative.svg" width="50%"/>
+      <img data-src="images/example-alternative.svg" width="60%"/>
     </div>
 </div>
 

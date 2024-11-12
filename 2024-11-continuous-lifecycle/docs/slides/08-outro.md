@@ -1,3 +1,20 @@
+<!-- .slide: data-background-image="images/takeaways.jpg" data-background-color="black"  -->
+<!-- .slide: style="margin-left: 8%;"-->
+
+# Key Takeaways
+
+* Repo: Monorepo or polyrepo?
+* Bootstrapping: The only imperative step before GitOps
+* Linking: <img class="zoom2x" style="height: 1.4em;vertical-align: middle;" data-src="images/kustomize-icon.svg">
+  * <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code style="color: grey">Kustomization</code> 
+  * <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code  style="color: grey">Application</code>, <code  style="color: grey">ApplicationSet</code>
+* Multi-tenancy: Repos, operators, clusters, namespaces
+
+➡️ Examples + patterns provide guidance, templates, ideas  
+➡️ Find the structure that matches your use case
+
+
+
 <h1 style="margin-top: 0px">More patterns + further reading </h1>
 <div style="position: absolute; right:15%; width: 45%;">
     <a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/></a>
