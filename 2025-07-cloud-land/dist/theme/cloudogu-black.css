@@ -1,0 +1,482 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+@import url("https://use.typekit.net/jng0mxf.css");
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+:root {
+  --background-color: #2b2b2b;
+  --main-font: Lato, sans-serif;
+  --main-font-size: 40px;
+  --main-color: #eee;
+  --block-margin: 20px;
+  --heading-margin: 0 0 20px 0;
+  --heading-font: League Gothic, Impact, sans-serif;
+  --heading-color: #eee;
+  --heading-line-height: 1.2;
+  --heading-letter-spacing: normal;
+  --heading-text-transform: uppercase;
+  --heading-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  --heading-font-weight: normal;
+  --heading1-text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+  --heading1-size: 3.77em;
+  --heading2-size: 2.11em;
+  --heading3-size: 1.55em;
+  --heading4-size: 1em;
+  --code-font: monospace;
+  --link-color: #13DAEC;
+  --link-color-hover: #71e9f4;
+  --selection-background-color: #FF5E99;
+  --selection-color: #fff; }
+
+.reveal-viewport {
+  background: #444;
+}
+
+.reveal {
+  font-family: "neo-sans", "Droid Sans", sans-serif;
+  font-size: 31px;
+  font-weight: normal;
+  color: white; }
+
+.reveal ::selection {
+  color: #fff;
+  background: #1B7DAA;
+  text-shadow: none; }
+
+.reveal ::-moz-selection {
+  color: #fff;
+  background: #23A3DD;
+  text-shadow: none; }
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.5;
+  font-weight: inherit;
+  text-align: left;}
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 50px 0 20px 0;
+  color: white;
+  font-family: "neo-sans", "Droid Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-shadow: none;
+  word-wrap: break-word; }
+
+.reveal h1 {
+  font-size: 1.5em; }
+
+.reveal h2 {
+  font-size: 1.3em; }
+
+.reveal h3 {
+  font-size: 1.1em; }
+
+.reveal h4 {
+  font-size: 0.9em; }
+
+.reveal h1 {
+  text-shadow: none; }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3; }
+
+
+/* Remove trailing margins after titles */
+.reveal h1:last-child,
+.reveal h2:last-child,
+.reveal h3:last-child,
+.reveal h4:last-child,
+.reveal h5:last-child,
+.reveal h6:last-child {
+  margin-bottom: 0; }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong,
+.reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em; }
+
+.reveal ol { list-style: none; counter-reset: li }
+li::before {content: counter(li); color: #23A3DD;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+li {counter-increment: li}
+.reveal ol li::before {content: counter(li); color: #23A3DD;
+  display: inline-block; width: 1em; margin-left: -1.5em;
+  margin-right: 0.5em; text-align: right; direction: rtl}
+.reveal ul {
+  list-style-type: none; }
+li::before {content: "•"; color:#23A3DD;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+.reveal ul ul {
+  list-style-type: none; }
+
+.reveal ul ul ul {
+  list-style-type: none; }
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  list-style-type: none;
+  display: block;
+  margin-left: 40px; }
+
+.reveal ol ul li::before {content: "•"; color:#23A3DD;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal blockquote {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #1B7DAA;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace;
+  text-transform: none;
+}
+
+.reveal code:not(.hljs):not(.hljs-attr) {
+  background: #808080;
+  border-radius: 5px;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #23A3DD;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:hover {
+  color: #00426B;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #1a53a1; }
+
+/*********************************************
+ * Frame helper
+ *********************************************/
+.reveal .r-frame {
+  border: 4px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal a .r-frame {
+  transition: all .15s linear; }
+
+.reveal a:hover .r-frame {
+  border-color: #13DAEC;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+  color: #23A3DD; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: #23A3DD; }
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: #2b2b2b; } }
+
+/*********************************************
+ * CLOUDOGU EXTENSIONS
+ *********************************************/
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+.reveal .header-right {
+  position: absolute;
+  right: 1em;
+}
+
+.reveal .header-left {
+  position: absolute;
+  left: 1em;
+}
+
+.reveal section img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 20px
+}
+
+.floatRight {
+  float: right;
+  margin-right: 20px
+}
+
+.centered {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important
+}
+
+/* Avoid title being printed into Cloudogu logo in background */
+html.print-pdf h1.title {
+  font-size: 1.3em;
+}
+
+html.print-pdf .printOnly {
+  display: block !important;
+}
+
+.printOnly {
+  display: none !important;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center !important;
+}
+
+.title-accent {
+  color: #b8cd08;
+}
+
+.title-version {
+  font-size: small !important;
+}
+
+.text-smaller {
+  font-size: 18px !important;
+}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+/* Increase images on hover */
+.zoom2x {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom2x:hover {
+  transform: scale(2);
+}
+.zoom1-5x {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom1-5x:hover {
+  transform: scale(1.5);
+}
+
+/* tooltips */
+.tooltip-bellow .tooltip-bellow-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+
+  /* Position of text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 0;
+
+  /* Fade in */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip-bellow:hover .tooltip-bellow-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-right .tooltip-right-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+
+  /* Position of text */
+  position: absolute;
+  z-index: 1;
+  left: 100%;
+  top: 0;
+
+  /* Fade in */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip-right:hover .tooltip-right-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-left .tooltip-left-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+
+  /* Position of text */
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+  top: 0;
+
+  /* Fade in */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip-left:hover .tooltip-left-text {
+  visibility: visible;
+  opacity: 1;
+}
