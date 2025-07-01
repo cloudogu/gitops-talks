@@ -1,7 +1,7 @@
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  -->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/2-ng.svg" width="60%">
+<img data-src="images/basic-repo-structure.svg" width="60%">
 
 
 
@@ -13,7 +13,9 @@
 
 ```bash
 # The only imperative commands you'll ever need
-helm template ..
+helm template argocd argo/argo-cd --version .. --namespace argocd --values .. \
+  | kubectl apply -f-
+
 kubectl apply ..
 ```
 
@@ -51,7 +53,7 @@ bash <(curl -s \
 
 Try new repo structure with GOP:
 
-<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/a74173/src/repo-examples/2-ng](https://github.com/cloudogu/gitops-talks/tree/a74173/src/repo-examples/2-ng)
+<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/basic-repo-structure](https://github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/basic-repo-structure)
 
 
 
@@ -60,7 +62,7 @@ Try new repo structure with GOP:
 # Multi-Tenancy  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="multi-tenancy"  style="text-align: center !important"  -->
 
-<img data-src="images/2-ng-with-tenant.svg" width="100%">
+<img data-src="images/basic-repo-structure-with-tenant.svg" width="100%">
 
 
 
@@ -95,29 +97,31 @@ Try new repo structure with GOP:
 
 
 ## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="IDPaaS" data-auto-animate" -->
+<!-- .slide: id="IDPaaS" data-auto-animate -->
 <img data-src="images/IDPaaS.svg" width="60%">
 
 
 
 
 ## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: data-auto-animate" -->
+<!-- .slide: data-auto-animate -->
 <img data-src="images/IDPaaS-one-tenant.svg" width="60%">
 
 
 
 ## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: data-auto-animate" -->
+<!-- .slide: data-auto-animate -->
 <img data-src="images/IDPaaS-full.svg" width="60%">
 
 
 
 
-### TODO
+<img data-src="images/IDPaaS-Repos.svg" width="100%">
 
-* Repo Structure
-* Try it with GOP
+
+Try with GOP:
+
+<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/centralized-management-repo](https://github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/basic-repo-structure)
 
 
 
@@ -125,7 +129,7 @@ Try new repo structure with GOP:
 <!-- .slide: id="developers"  style="text-align: center !important"  -->
 
 
-<img data-src="images/2-ng-with-tenant-ci.svg" width="60%">
+<img data-src="images/basic-repo-structure-with-tenant-ci.svg" width="60%">
 
 
 
