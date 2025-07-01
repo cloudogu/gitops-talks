@@ -34,7 +34,7 @@
 
 <h1 class="title" style="margin: 0; font-size: 170%">
     <span class="title-accent">//</span> 
-    GitOps by Example – <br/>Repos, Patterns, Promotion, Processes
+    GitOps Adventure: <br/>Repo structures
 </h1>
 <p style="margin-top: 0">Johannes Schnatterer, Cloudogu GmbH</p> 
 <a style="margin: 0" title="Link to slides" href="https://cloudogu.github.io/gitops-talks">
@@ -519,7 +519,50 @@
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
-    <a href="pdf/GitOps by Example – Repos, Patterns, Promotion, Processes.pdf">
+    <a href="pdf/GitOps Adventure Repo structures.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 </div>
+
+
+
+# Agenda
+<!-- .slide: id="agenda" --> 
+ <img data-src="images/argo-icon.svg" title="ArgoCD" class="floatRight zoom2x" width="15%" style="margin-right: 150px"/>
+
+* Basic repo structure
+* Bootstrapping
+* Multi-Tenancy
+* Managing dedicated tenant instances
+* Developers
+* More examples
+
+Notes:
+A lot of demos involved!
+
+
+
+<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
+# 🙋 What is your profession?
+
+
+
+<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
+# 🙋 What is your profession?
+
+🤓 Software Engineer / Developer
+
+
+
+<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
+# 🙋 What is your profession?
+
+🛠️ Platform Engineer / Ops person
+
+
+
+<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
+# 🙋 What is your profession?
+
+🤷 None of the above
+
