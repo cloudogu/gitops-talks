@@ -49,7 +49,9 @@ bash <(curl -s \
 # More features for developers: --jenkins --registry --content-examples
 ```
 
-TODO Try new repo structure
+Try new repo structure with GOP:
+
+<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/a74173/src/repo-examples/2-ng](https://github.com/cloudogu/gitops-talks/tree/a74173/src/repo-examples/2-ng)
 
 
 
@@ -62,17 +64,18 @@ TODO Try new repo structure
 
 
 
-## Options for multi-tenancy
 
+<!-- .slide: id="multi-tenancy-options" -->
 <div class="floatRight" style="margin-right: 100px; width: 25%;">
+    <div style="margin-bottom: 50px">
+        <img src="images/instance-per-namespace.svg" width="100%"/>
+    </div>
     <div>
         <img src="images/instance-per-cluster.svg" width="100%"/>
     </div>
-    <div>
-        <img src="images/instance-per-namespace.svg" width="100%"/>
-    </div>
 </div>
 
+## Options for multi-tenancy
 
 * Shared
 * Dedicated
@@ -95,6 +98,12 @@ TODO Try new repo structure
 <!-- .slide: id="IDPaaS" data-auto-animate" -->
 <img data-src="images/IDPaaS.svg" width="60%">
 
+
+
+
+## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: data-auto-animate" -->
+<img data-src="images/IDPaaS-one-tenant.svg" width="60%">
 
 
 
