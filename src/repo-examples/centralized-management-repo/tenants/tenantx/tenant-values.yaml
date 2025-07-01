@@ -1,0 +1,16 @@
+name: tenantx
+apiServerUrl: https://x.x.x.x:6443
+baseHost: localhost
+
+config:
+  # yaml-language-server: $schema=https://raw.githubusercontent.com/cloudogu/gitops-playground/refs/heads/main/docs/configuration.schema.json
+  content:
+    examples: true
+  registry:
+    active: true
+#    internalPort: 30011 # replace last char by tenant index in init-tenant.sh
+#  jenkins:
+#    active: true
+#  features:
+#    monitoring:
+#      active: true

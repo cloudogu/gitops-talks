@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: argocd
+  sources:
+    - repoURL: https://argoproj.github.io/argo-helm
+      targetRevision: 6.0.14
+      chart: argo-cd
+      helm:
+        valueFiles:
+          - $clusterResources/apps/argocd/values.yaml
+    - repoURL: http://scmm.scm-manager.svc.cluster.local/scm/repo/argocd/cluster-resources
+      ref: clusterResources # Used as a reference for valuesFiles
+      path: apps/argocd # Deploys the bootstrap app
+      directory:
+        recurse: false
+        include: 'bootstrap.yaml'
+      targetRevision: main
+  syncPolicy:
+    automated:
+      prune: false # is set to false to prevent projects to be deleted by accident
+      selfHeal: true

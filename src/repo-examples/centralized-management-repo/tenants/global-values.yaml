@@ -1,0 +1,43 @@
+# Used in appset only, defined per tenant
+# name: tenantx
+# apiServerUrl: https://x.x.x.x:6443
+#baseHost: localhost
+
+# Helm values
+image:
+  tag: "cec82a7"
+logLevel: trace
+
+# GOP config 
+config:
+  # yaml-language-server: $schema=https://raw.githubusercontent.com/cloudogu/gitops-playground/refs/heads/main/docs/configuration.schema.json
+  features:
+    argocd:
+      active: true
+    ingressNginx:
+      active: true
+    #monitoring:
+    #  active: true
+
+
+
+
+  # Central management of all tenants (Hub and spoke)
+  #multiTenant:
+  #  centralMgmtRepo: "http://172.21.0.3:47150/scm"
+
+#  registry:
+#    url: "localhost:30000"
+
+# Uncomment to make tenants use cetral jenkins - not implemented, yet
+#  jenkins:
+#    url: "http://172.18.0.2:35888"
+#    username: "admin"
+#    password: "admin"
+
+# Make tenants use central SCMM instance. Remove to deploy separate instances into tenant
+  scmm:
+    url: "http://172.22.0.4:44575/scm"
+    username: "admin"
+    password: "admin"
+    skipPlugins: true # Faster installation for demo purposes

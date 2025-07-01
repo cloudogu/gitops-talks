@@ -1,0 +1,57 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: extra-app
+  namespace: argocd
+spec:
+  goTemplate: true
+  goTemplateOptions:
+    - missingkey=error
+  generators:
+    - git:
+        repoURL: http://scmm.scm-manager.svc.cluster.local/scm/repo/argocd/tenants
+        revision: HEAD
+        files:
+          - path: "*/tenant-values.yaml"
+  template:
+    metadata:
+      name: extra-app-{{.name}}
+      labels:
+        tenant: '{{.name}}'
+    spec:
+      project: argocd
+      sources:
+        - repoURL: 'https://stefanprodan.github.io/podinfo'
+          targetRevision: 6.9.0
+          chart: podinfo
+          helm:
+            # Option 1: template values from tenant-values indirectly
+            valuesObject:
+              ui:
+                message: Welcome to Tenant {{.name}}
+              ingress:
+                enabled: true
+                hosts:
+                  - host: extra.{{ regexReplaceAll ":.*$" .baseHost "" }} # Remove port, not needed for hostname
+                    paths:
+                      - path: /
+                        pathType: ImplementationSpecific
+            valueFiles:
+              #- $valuesRef/global-values.yaml 
+              # Option 2: Set values in tenant-values that are picked up by this chart
+              - $valuesRef/{{ .path.path }}/tenant-values.yaml # We need this to set apiServerUrl
+              # Option 3: Use separate file per tenant
+              #- $valuesRef/{{ .path.path }}/extra-app-values.yaml
+        - repoURL: http://scmm.scm-manager.svc.cluster.local/scm/repo/argocd/tenants
+          targetRevision: HEAD
+          ref: valuesRef
+      destination:
+        server: '{{.apiServerUrl }}'
+        namespace: extra-app
+      syncPolicy:
+        syncOptions:
+          - CreateNamespace=true
+        automated:
+          selfHeal: true
+          prune: true
+
