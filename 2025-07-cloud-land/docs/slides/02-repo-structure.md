@@ -1,6 +1,48 @@
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
+<img data-src="images/basic-repo-structure1.svg" width="60%">
+
+
+
+# Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+
+<img data-src="images/basic-repo-structure2.svg" width="60%">
+
+
+
+# Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+
+<img data-src="images/basic-repo-structure3.svg" width="60%">
+
+
+
+# Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+
+<img data-src="images/basic-repo-structure3.svg" width="60%">
+
+
+
+# Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+
+<img data-src="images/basic-repo-structure4.svg" width="60%">
+
+
+
+# Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+
+<img data-src="images/basic-repo-structure5.svg" width="60%">
+
+
+
+# Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+
 <img data-src="images/basic-repo-structure.svg" width="60%">
 
 
@@ -53,7 +95,7 @@ bash <(curl -s \
 
 Try new repo structure with GOP:
 
-<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/basic-repo-structure](https://github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/basic-repo-structure)
+<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/772d0c79/src/repo-examples/basic-repo-structure](https://github.com/cloudogu/gitops-talks/tree/772d0c79/src/repo-examples/basic-repo-structure)
 
 
 
@@ -86,7 +128,7 @@ Try new repo structure with GOP:
 
 
 
-## Managing dedicated instances
+## Managing dedicated tenant instances
 
 <img src="images/hub-and-spoke.svg" class="floatRight" width="30%" style="margin-right: 100px;"/>
 
@@ -115,19 +157,49 @@ Try new repo structure with GOP:
 
 
 
+<!-- .slide: data-auto-animate -->
+<img data-src="images/IDPaaS-Repos-1.svg" width="100%">
+<div style="visibility: hidden;">blocker</div>
 
-<img data-src="images/IDPaaS-Repos.svg" width="100%">
+<p style="visibility: hidden;">blocker</p>
 
 
+
+<!-- .slide: data-auto-animate -->
+<img data-src="images/IDPaaS-Repos-3.svg" width="100%">
+<div style="visibility: hidden;">blocker</div>
+
+<p style="visibility: hidden;">blocker</p>
+
+
+
+<!-- .slide: data-auto-animate -->
+<img data-src="images/IDPaaS-Repos-full.svg" width="100%">
+<div style="visibility: hidden;">blocker</div>
+
+<p style="visibility: hidden;">blocker</p>
+
+
+
+<!-- .slide: data-auto-animate -->
+<img data-src="images/IDPaaS-Repos-full.svg" width="100%">
 Try with GOP:
 
-<i class="fab fa-github"></i> [github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/centralized-management-repo](https://github.com/cloudogu/gitops-talks/tree/4b91d711/src/repo-examples/basic-repo-structure)
+<i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-multi-cluster-example](https://github.com/cloudogu/gop-multi-tenant-multi-cluster-example)
 
 
 
 # Developers
-<!-- .slide: id="developers"  style="text-align: center !important"  -->
+<!-- .slide: id="developers"  style="text-align: center !important" -->
+<!-- .slide: data-auto-animate -->
 
+<img data-src="images/basic-repo-structure-with-tenant-ci-1.svg" width="60%" >
+
+
+
+# Developers
+<!-- .slide:  style="text-align: center !important"  data-auto-animate-->
+<!-- .slide: data-auto-animate -->
 
 <img data-src="images/basic-repo-structure-with-tenant-ci.svg" width="60%">
 
@@ -151,4 +223,4 @@ Try with GOP:
   ➖ Not stable, not for flux  
 * **[akuity/kargo](https://github.com/akuity/kargo)** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
   ➕ Declarative Stage promotions, provides UI   
-  ➖ Yet another tool  
+  ➖ Yet another tool, not for flux  

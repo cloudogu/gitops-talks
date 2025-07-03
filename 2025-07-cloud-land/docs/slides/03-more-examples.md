@@ -24,7 +24,7 @@ Note:
 
 
 
-## Example 1: GOP  <!-- .element style="margin-bottom: 0px"-->
+## Example 1: GOP (old repo structure)  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="ex1"  -->
 
 <div style="position: absolute; top: 50px; left: 55%; margin: 0 0 0 0; font-size: 65%;font-weight: bold" >
