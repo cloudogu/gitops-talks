@@ -8,8 +8,8 @@
   * <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code style="color: grey">Kustomization</code> 
   * <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code  style="color: grey">Application</code>, <code  style="color: grey">ApplicationSet</code>
 * Multi-Tenancy: 
-  * Shared: Less effort but be careful with RBAC
-  * Dedicated: Keep calm and use AppSets 🙂
+  * Shared: Less effort but weaker isolation
+  * Dedicated: Keep calm and build your own IDPaaS using AppSets 🙂
 
 ➡️ Use examples as inspiration to solving your use case
 

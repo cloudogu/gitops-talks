@@ -6,42 +6,42 @@
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+<!-- .slide:  style="text-align: center !important"  data-auto-animate -->
 
 <img src="images/basic-repo-structure2.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+<!-- .slide:  style="text-align: center !important"  data-auto-animate -->
 
 <img src="images/basic-repo-structure3.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+<!-- .slide:  style="text-align: center !important"  data-auto-animate -->
 
 <img src="images/basic-repo-structure3.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+<!-- .slide:  style="text-align: center !important"  data-auto-animate -->
 
 <img src="images/basic-repo-structure4.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+<!-- .slide:  style="text-align: center !important"  data-auto-animate -->
 
 <img src="images/basic-repo-structure5.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
-<!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
+<!-- .slide:  style="text-align: center !important"  data-auto-animate -->
 
 <img src="images/basic-repo-structure.svg" width="60%">
 
@@ -192,7 +192,7 @@ Try with GOP:
 
 
 
-# Developers
+# Developers  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="developers"  style="text-align: center !important" -->
 <!-- .slide: data-auto-animate -->
 
@@ -200,11 +200,22 @@ Try with GOP:
 
 
 
-# Developers
-<!-- .slide:  style="text-align: center !important"  data-auto-animate-->
+# Developers  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide:  style="text-align: center !important" -->
 <!-- .slide: data-auto-animate -->
 
 <img src="images/basic-repo-structure-with-tenant-ci.svg" width="60%">
+
+
+
+# Developers  <!-- .element style="margin-bottom: 0px"-->
+<!-- .slide:  style="text-align: center !important" -->
+<!-- .slide: data-auto-animate -->
+
+<img src="images/basic-repo-structure-with-tenant-ci.svg" width="60%">
+<div style="position: absolute; top: 80%; left: 5%">
+<i class="fab fa-github"></i> <a href="https://github.com/cloudogu/gitops-build-lib">cloudogu/gitops-build-lib</a>
+</div>
 
 
 
@@ -218,7 +229,7 @@ Try with GOP:
 * **Renovate** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
   ➕ Generic solution  
   ➖ Less specific K8s or GitOps-related options  
-* **Image Updaters** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
+* **Image Updaters** [<img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>](https://github.com/argoproj-labs/argocd-image-updater) [<img src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>](https://fluxcd.io/flux/guides/image-update/)  
   ➕ Good integration to GitOps operator  
   ➖ No PRs (so far)  
 * **[argoproj-labs/gitops-promoter](https://github.com/argoproj-labs/gitops-promoter)** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
