@@ -515,7 +515,7 @@
 <a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
 <div class="title-version">
-Version: 202507031304-be12382
+Version: 202507031557-7fb8250
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
@@ -523,6 +523,26 @@ Version: 202507031304-be12382
        <i class="far fa-file-pdf"></i>
 </a></p>
 </div>
+
+
+
+# Agenda
+<!-- .slide: id="agenda" --> 
+
+* Basic repo structure
+* Bootstrapping
+* Multi-Tenancy
+* Managing dedicated tenant instances
+* Developers
+* More examples
+
+Notes:
+A lot of demos involved!
+
+
+
+<!-- .slide: data-auto-animate style="text-align: center; font-size: 140%;" -->
+# 🙋 What is your profession?
 
 
 
@@ -545,16 +565,3 @@ Version: 202507031304-be12382
 
 🤷 None of the above
 
-
-
-# Agenda
-<!-- .slide: id="agenda" --> 
-
-* Basic repo structure
-* Bootstrapping
-* Multi Tenancy
-* Managing dedicated tenant instances
-* Developers
-* More examples
-
-<!-- A lot of demos involved! -->

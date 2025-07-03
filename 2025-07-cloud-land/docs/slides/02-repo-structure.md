@@ -205,9 +205,9 @@ Try with GOP:
 
 
 
-## Alternatives for promotion
+## Alternatives for promotion <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="promotion"  style="text-align: center !important"  -->
-<!-- .slide: style="font-size:60%"  -->
+<!-- .slide: style="font-size:67%"  -->
 
 * **CI** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
   ➕ Can provide lots of features (PRs, hydration, validation, etc.)  
@@ -222,5 +222,5 @@ Try with GOP:
   ➕ First Party Argo CD solution (also does hydration)  
   ➖ Not stable, not for flux  
 * **[akuity/kargo](https://github.com/akuity/kargo)** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
-  ➕ Declarative Stage promotions, provides UI   
+  ➕ Declarative promotions, UI   
   ➖ Yet another tool, not for flux  
