@@ -1,49 +1,52 @@
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure1.svg" width="60%">
+<img src="images/basic-repo-structure1.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure2.svg" width="60%">
+<img src="images/basic-repo-structure2.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure3.svg" width="60%">
+<img src="images/basic-repo-structure3.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure3.svg" width="60%">
+<img src="images/basic-repo-structure3.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure4.svg" width="60%">
+<img src="images/basic-repo-structure4.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure5.svg" width="60%">
+<img src="images/basic-repo-structure5.svg" width="60%">
 
 
 
 # Basic repo structure  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="basic-structure" style="text-align: center !important"  data-auto-animate -->
 
-<img data-src="images/basic-repo-structure.svg" width="60%">
+<img src="images/basic-repo-structure.svg" width="60%">
+
+Notes: Demo Argo CD Upgrade
+`kubectl --context k3d-repo-structure -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d`
 
 
 
@@ -104,7 +107,7 @@ Try new repo structure with GOP:
 # Multi-Tenancy  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="multi-tenancy"  style="text-align: center !important"  -->
 
-<img data-src="images/basic-repo-structure-with-tenant.svg" width="100%">
+<img src="images/basic-repo-structure-with-tenant.svg" width="100%">
 
 
 
@@ -140,25 +143,25 @@ Try new repo structure with GOP:
 
 ## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: id="IDPaaS" data-auto-animate -->
-<img data-src="images/IDPaaS.svg" width="60%">
+<img src="images/IDPaaS.svg" width="60%">
 
 
 
 
 ## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: data-auto-animate -->
-<img data-src="images/IDPaaS-one-tenant.svg" width="60%">
+<img src="images/IDPaaS-one-tenant.svg" width="60%">
 
 
 
 ## IDP as a Service using Argo CD AppSets  <!-- .element style="margin-bottom: 0px"-->
 <!-- .slide: data-auto-animate -->
-<img data-src="images/IDPaaS-full.svg" width="60%">
+<img src="images/IDPaaS-full.svg" width="60%">
 
 
 
 <!-- .slide: data-auto-animate -->
-<img data-src="images/IDPaaS-Repos-1.svg" width="100%">
+<img src="images/IDPaaS-Repos-1.svg" width="100%">
 <div style="visibility: hidden;">blocker</div>
 
 <p style="visibility: hidden;">blocker</p>
@@ -166,7 +169,7 @@ Try new repo structure with GOP:
 
 
 <!-- .slide: data-auto-animate -->
-<img data-src="images/IDPaaS-Repos-3.svg" width="100%">
+<img src="images/IDPaaS-Repos-3.svg" width="100%">
 <div style="visibility: hidden;">blocker</div>
 
 <p style="visibility: hidden;">blocker</p>
@@ -174,7 +177,7 @@ Try new repo structure with GOP:
 
 
 <!-- .slide: data-auto-animate -->
-<img data-src="images/IDPaaS-Repos-full.svg" width="100%">
+<img src="images/IDPaaS-Repos-full.svg" width="100%">
 <div style="visibility: hidden;">blocker</div>
 
 <p style="visibility: hidden;">blocker</p>
@@ -182,7 +185,7 @@ Try new repo structure with GOP:
 
 
 <!-- .slide: data-auto-animate -->
-<img data-src="images/IDPaaS-Repos-full.svg" width="100%">
+<img src="images/IDPaaS-Repos-full.svg" width="100%">
 Try with GOP:
 
 <i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-multi-cluster-example](https://github.com/cloudogu/gop-multi-tenant-multi-cluster-example)
@@ -193,7 +196,7 @@ Try with GOP:
 <!-- .slide: id="developers"  style="text-align: center !important" -->
 <!-- .slide: data-auto-animate -->
 
-<img data-src="images/basic-repo-structure-with-tenant-ci-1.svg" width="60%" >
+<img src="images/basic-repo-structure-with-tenant-ci-1.svg" width="60%" >
 
 
 
@@ -201,7 +204,7 @@ Try with GOP:
 <!-- .slide:  style="text-align: center !important"  data-auto-animate-->
 <!-- .slide: data-auto-animate -->
 
-<img data-src="images/basic-repo-structure-with-tenant-ci.svg" width="60%">
+<img src="images/basic-repo-structure-with-tenant-ci.svg" width="60%">
 
 
 
@@ -209,18 +212,18 @@ Try with GOP:
 <!-- .slide: id="promotion"  style="text-align: center !important"  -->
 <!-- .slide: style="font-size:67%"  -->
 
-* **CI** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
+* **CI** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
   ➕ Can provide lots of features (PRs, hydration, validation, etc.)  
   ➖ Depends on CI and SCM  
-* **Renovate** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
+* **Renovate** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
   ➕ Generic solution  
   ➖ Less specific K8s or GitOps-related options  
-* **Image Updaters** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img data-src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
+* **Image Updaters** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/> <img src="images/flux-icon.svg" style="vertical-align: middle;" width="3.5%;"/>  
   ➕ Good integration to GitOps operator  
   ➖ No PRs (so far)  
-* **[argoproj-labs/gitops-promoter](https://github.com/argoproj-labs/gitops-promoter)** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
+* **[argoproj-labs/gitops-promoter](https://github.com/argoproj-labs/gitops-promoter)** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
   ➕ First Party Argo CD solution (also does hydration)  
   ➖ Not stable, not for flux  
-* **[akuity/kargo](https://github.com/akuity/kargo)** <img data-src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
+* **[akuity/kargo](https://github.com/akuity/kargo)** <img src="images/argo-icon.svg" style="vertical-align: middle;" width="5%;"/>  
   ➕ Declarative promotions, UI   
   ➖ Yet another tool, not for flux  
