@@ -515,7 +515,7 @@
 <a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
 <div class="title-version">
-Version: 202507040052-c8a5955
+Version: 202507040901-d49081a
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
@@ -528,6 +528,7 @@ Version: 202507040052-c8a5955
 
 # Agenda
 <!-- .slide: id="agenda" --> 
+ <img data-src="images/argo-icon.svg" title="ArgoCD" class="floatRight zoom2x" width="15%" style="margin-right: 150px"/>
 
 * Basic repo structure
 * Bootstrapping
