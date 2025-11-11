@@ -1,17 +1,62 @@
+# My key experiences: IDPs and tenants <!-- .element style="text-align: center !important"-->
 <!-- .slide: data-background-image="images/takeaways.jpg" data-background-color="black"  -->
-<!-- .slide: style="margin-left: 8%;"-->
+<!-- .slide: style="font-size=70%; position: absolute; left:5%; width: 93%;" -->
+* **Shared Instance**: 👍️ for small settings. Lots of authz in tools.
+* **Dedicated instances**: 🔒️ Better isolation+UX but more effort 
+  * per Namespace: Less infra, but lots of RBAC, NetPols, etc.  <img data-src="images/helm-icon.svg" class="floatRight" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
+  * per Cluster: More infra+complexity, but authz easier.
+  * IDPaaS using AppSets <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> great to have but hard to get.
+* No silver bullet: Number of tenants/namespaces/clusters depends on requirements,  
+  e.g. envs, security, regulation, onPrem/public cloud, etc.
 
-# Key Takeaways
+Note:
+* Instance per Namespace: Demo almost ready
+* Instance per Cluster: 
 
-* Bootstrapping: The only imperative step before GitOps
-* Linking: <img class="zoom2x" style="height: 1.4em;vertical-align: middle;" data-src="images/kustomize-icon.svg">
-  * <img data-src="images/flux-icon.svg" title="Flux" style="height: 1.1em; vertical-align: middle;" /> <code style="color: grey">Kustomization</code> 
-  * <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <code  style="color: grey">Application</code>, <code  style="color: grey">ApplicationSet</code>
-* Multi-Tenancy: 
-  * Shared: Less effort but weaker isolation
-  * Dedicated: Keep calm and build your own IDPaaS using AppSets 🙂
 
-➡️ Use examples as inspiration to solving your use case
+
+<h1 style="margin-top: 0px">Further reading </h1>
+<div style="position: absolute; right:15%; width: 45%;">
+    <a href="https://dpunkt.de/produkt/gitops/"><img data-src="images/Cubukcuoglu_GitOps.png" style="mask-image: linear-gradient(to bottom, black 90%, transparent 100%);"/></a>
+</div>
+
+<a href="https://github.com/cloudogu/gitops-patterns"><img data-src="images/gitops-patterns.png" width="28%" /></a>
+
+<i class='fab fa-github'></i> [cloudogu/gitops-patterns](https://github.com/cloudogu/gitops-patterns)
+
+
+
+## IDP Bootstrapping made simple: GOP <!-- .element style="font-size: 200%" -->
+<!-- .slide: id="gop" style="font-size:70%"  -->
+
+Creates a complete GitOps-based operational stack / IDP on your Kubernetes clusters
+
+<i class="fab fa-github"></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
+
+Also runs locally
+
+<span style="font-size: 200%">
+<i class="fab fa-linux" style="color: #FFD133;"></i> 
+<i class="fab fa-windows" style="color: #2279D1;"></i> 
+<i class="fab fa-apple" style="color: black;"></i>
+<span style="margin: 0 30px">➕</span>
+<i class="fab fa-docker" style="color: #1D63ED;"></i></span>
+
+```bash
+VERSION='0.12.1' 
+bash <(curl -s \
+  "https://raw.githubusercontent.com/cloudogu/gitops-playground/$VERSION/scripts/init-cluster.sh") \
+   && docker run --rm -t -u $(id -u) \
+    -v ~/.config/k3d/kubeconfig-gitops-playground.yaml:/home/.kube/config \
+    --net=host \
+    ghcr.io/cloudogu/gitops-playground:$VERSION --yes --argocd --ingress-nginx --base-url=http://localhost
+# More IDP-features: --monitoring --vault=dev --cert-manager --mailhog
+# More features for developers: --jenkins --registry --content-examples
+```
+
+<!-- .element style=""--> Try with GOP:
+* <i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-shared-example](https://github.com/cloudogu/gop-multi-tenant-shared-example)
+* <i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-multi-cluster-example](https://github.com/cloudogu/gop-multi-tenant-multi-cluster-example)
 
 
 
@@ -1265,8 +1310,6 @@
 
 </a>
 </div>
-
-<i class="fab fa-github"></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
 
 
 

@@ -1,7 +1,7 @@
 FROM cloudogu/reveal.js:5.1.0-r1 as base
 
 FROM base as aggregator
-ENV TITLE='GitOps Adventure: Repo structures'
+ENV TITLE='IDP as a Service: Managing tenants efficiently using GitOps'
 ENV THEME_CSS='cloudogu.css'
 #ENV THEME_CSS='cloudogu-black.css'
 ENV WIDTH='1280'
