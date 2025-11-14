@@ -515,11 +515,11 @@
 <a href='https://www.linkedin.com/in/jschnatterer' target="_blank" style="font-size:80%; margin-left: 50px"><i class='fab fa-linkedin'></i> in/jschnatterer</a>
 
 <div class="title-version">
-Version: 202511111539-3f1067e
+Version: 202511141156-5ae57ae
 </div>
 
 <p id="pdf" class="state-background" style="font-size: 70%">
-    <a href="pdf/GitOps Adventure Repo structures.pdf">
+    <a href="pdf/IDP as a Service Managing tenants efficiently using GitOps.pdf">
        <i class="far fa-file-pdf"></i>
 </a></p>
 </div>

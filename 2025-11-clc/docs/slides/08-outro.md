@@ -1,13 +1,17 @@
+# My key experiences IDPs and tenants
 <!-- .slide: data-background-image="images/takeaways.jpg" data-background-color="black"  -->
-<!-- .slide: style="margin-left: 8%;"-->
+<!-- .slide: style="font-size=75%; position: absolute; left:6%; width: 90%;" -->
+* **Shared Instance**: 👍️ for small settings. Lots of authz in tools.
+* **Dedicated instances**: 🔒️ Better isolation+UX but more effort 
+  * per Namespace: Less infra, but lots of RBAC, NetPols, etc.  <img data-src="images/helm-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
+  * per Cluster: More infra+complexity, but authz easier.
+  * IDPaaS using AppSets <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> great to have but hard to get.
+* No silver bullet: Number of tenants/namespaces/clusters depends on requirements,  
+  e.g. envs, security, regulation, onPrem/public cloud, etc.
 
-# Key Takeaways IDPs and tenants
-
-* **Shared Instance**: Works in small settings
-* **Dedicated instances**: Higher isolation but more effort  
-  Minimize efforts implementing IDPaaS using AppSets <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
-* Number of namespaces/clusters depends on requirements,  
-  e.g. envs
+Note:
+* Instance per Namespace: Demo almost ready
+* Instance per Cluster: 
 
 
 
@@ -24,7 +28,6 @@
 
 ## IDP Bootstrapping made simple: GOP <!-- .element style="font-size: 200%" -->
 <!-- .slide: id="gop" style="font-size:70%"  -->
-TODO Shared
 
 Creates a complete GitOps-based operational stack / IDP on your Kubernetes clusters
 
@@ -32,7 +35,7 @@ Creates a complete GitOps-based operational stack / IDP on your Kubernetes clust
 
 Also runs locally
 
-<span style="font-size: 250%">
+<span style="font-size: 200%">
 <i class="fab fa-linux" style="color: #FFD133;"></i> 
 <i class="fab fa-windows" style="color: #2279D1;"></i> 
 <i class="fab fa-apple" style="color: black;"></i>
@@ -40,7 +43,7 @@ Also runs locally
 <i class="fab fa-docker" style="color: #1D63ED;"></i></span>
 
 ```bash
-VERSION='0.12.0' 
+VERSION='0.12.1' 
 bash <(curl -s \
   "https://raw.githubusercontent.com/cloudogu/gitops-playground/$VERSION/scripts/init-cluster.sh") \
    && docker run --rm -t -u $(id -u) \
@@ -51,9 +54,9 @@ bash <(curl -s \
 # More features for developers: --jenkins --registry --content-examples
 ```
 
-
-Try with GOP:
-<i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-multi-cluster-example](https://github.com/cloudogu/gop-multi-tenant-multi-cluster-example)
+<!-- .element style=""--> Try with GOP:
+* <i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-shared-example](https://github.com/cloudogu/gop-multi-tenant-shared-example)
+* <i class="fab fa-github"></i> [cloudogu/gop-multi-tenant-multi-cluster-example](https://github.com/cloudogu/gop-multi-tenant-multi-cluster-example)
 
 
 
@@ -1307,8 +1310,6 @@ Try with GOP:
 
 </a>
 </div>
-
-<i class="fab fa-github"></i> [cloudogu/gitops-playground](https://github.com/cloudogu/gitops-playground)
 
 
 
