@@ -1,9 +1,9 @@
-# My key experiences IDPs and tenants
+# My key experiences: IDPs and tenants <!-- .element style="text-align: center !important"-->
 <!-- .slide: data-background-image="images/takeaways.jpg" data-background-color="black"  -->
-<!-- .slide: style="font-size=75%; position: absolute; left:6%; width: 90%;" -->
+<!-- .slide: style="font-size=70%; position: absolute; left:5%; width: 93%;" -->
 * **Shared Instance**: 👍️ for small settings. Lots of authz in tools.
 * **Dedicated instances**: 🔒️ Better isolation+UX but more effort 
-  * per Namespace: Less infra, but lots of RBAC, NetPols, etc.  <img data-src="images/helm-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
+  * per Namespace: Less infra, but lots of RBAC, NetPols, etc.  <img data-src="images/helm-icon.svg" class="floatRight" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" />
   * per Cluster: More infra+complexity, but authz easier.
   * IDPaaS using AppSets <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> great to have but hard to get.
 * No silver bullet: Number of tenants/namespaces/clusters depends on requirements,  

@@ -28,8 +28,52 @@ Note:
 
 
 
+# Don't forget to authz
 
-# Shared vs Dedicated Instance <!-- .element style="margin-bottom: 0px;text-align: center !important""-->
+<div class="container">
+  <div class="column" style="font-size: 45%">
+    <div style="text-align: center">
+      <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 3em" />
+    </div>
+<pre><code class="yaml">policy.csv: |
+  # groups: Mapping from groups to RBAC roles
+  g, tenant1, role:role-tenant1
+  # policies:
+  g, tenant1, role:role-tenant1
+  p, role:role-tenant1, applications, get, role-tenant1/*, allow
+  p, role:role-tenant1, applications, sync, role-tenant1/*, allow
+  p, role:role-tenant1, applications, get, argo-project/role-tenant1-control-app, allow
+  p, role:role-tenant1, applications, sync, argo-project/role-tenant1-control-app, allow
+  p, role:role-tenant1, projects, get, role-tenant1, allow
+  p, role:role-tenant1, clusters, get, "https://kubernetes.default.svc", allow
+  p, role:role-tenant1, repositories, get, "ssh://...tenant1/gitops", allow
+</code></pre>
+  <img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /> <a href="https://github.com/argoproj/argo-cd/blob/v3.2.0/docs/operator-manual/rbac.md">github.com/argoproj/argo-cd/blob/v3.2.0/docs/operator-manual/rbac.md</a>
+  </div>
+  <div class="column" style="font-size: 40%"> 
+    <div style="text-align: center">
+      <img data-src="images/kubernetes.svg" title="Kubernetes" style="height: 3em" />
+    </div>
+<pre><code class="yaml">apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  # Allows users read-only access to all resources
+  name: viewers
+  namespace: tenant1
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: view
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: Group
+    name: tenant1</code></pre>
+  </div>
+</div>
+
+
+
+# Shared vs Dedicated Instance <!-- .element style="text-align: center !important""-->
 
 <div class="container">
   <div class="column">
@@ -41,7 +85,7 @@ Note:
   <div class="column">
     <ul>
       <li>Higher isolation</li>
-      <li>Easier to configure (RBAC)<img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /></li>
+      <li>Easier to configure</li>
     </ul>
 <p style="font-size: 40%;"><img data-src="images/argo-icon.svg" title="ArgoCD" style="height: 1.1em; vertical-align: middle;" /><a href="https://blog.argoproj.io/best-practices-for-multi-tenancy-in-argo-cd-273e25a047b0">blog.argoproj.io/best-practices-for-multi-tenancy-in-argo-cd-273e25a047b0</a></p>
   </div>
@@ -49,9 +93,10 @@ Note:
 
 
 Note:
-* Higher isolation: Shared Metrics, Domains, etc
-Not recommended by Argo CD: https://blog.argoproj.io/best-practices-for-multi-tenancy-in-argo-cd-273e25a047b0
-* Easier to configure: Argo Projects, Apps in any namespace. Projects could be used to separate envs.
+* Higher isolation: Instead of authz in tools, each tenant has its own tool.   
+  No shared Metrics, Domains, etc
+  Works well in argo cd, Argo Projects, Apps in any namespace, RBAC but still not recommended (see link)
+* Easier to configure: Projects could be used to separate envs.
 
 
 
@@ -68,14 +113,14 @@ Not recommended by Argo CD: https://blog.argoproj.io/best-practices-for-multi-te
 </div>
 
 ## Dedicated instances: Options
-
 **Topology**:
 * Instance per Namespace
 * Instance per Cluster
 
 **Management**:
-* Standalone
-* Hub and Spoke (IDP as a Service)  
+* Standalone (decentralized, autonomous)
+* Hub and Spoke (centralized, platform)  
+  **IDP as a Service**  
   💡 Argo CD AppSets
 
 Note:
