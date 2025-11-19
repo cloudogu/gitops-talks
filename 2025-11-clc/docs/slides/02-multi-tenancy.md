@@ -71,6 +71,15 @@ subjects:
   </div>
 </div>
 
+And all other tools (if necessary and supported)
+<img data-src="images/grafana.svg" title="Grafana" style="height: 1.1em; vertical-align: middle;" />
+<img data-src="images/prometheus.svg" title="Prometheus" style="height: 1.1em; vertical-align: middle;" />
+<img data-src="images/cert-manager.svg" title="Cert-Manager" style="height: 1.1em; vertical-align: middle;" />
+<img data-src="images/nginx.svg" title="Nginx" style="height: 1.1em; vertical-align: middle;" />
+<img data-src="images/velero.svg" title="Velero" style="height: 1.1em; vertical-align: middle;" />
+<img data-src="images/eso-icon.svg" title="Velero" style="height: 1.1em; vertical-align: middle;" />
+⋯
+
 
 
 # Shared vs Dedicated Instance <!-- .element style="text-align: center !important""-->
@@ -94,7 +103,7 @@ subjects:
 
 Note:
 * Higher isolation: Instead of authz in tools, each tenant has its own tool.   
-  No shared Metrics, Domains, etc
+  No shared CPU/RAM, Metrics, Domains, etc
   Works well in argo cd, Argo Projects, Apps in any namespace, RBAC but still not recommended (see link)
 * Easier to configure: Projects could be used to separate envs.
 
@@ -175,7 +184,7 @@ Note:
 
 
 
-# Instance per Namespace vs per Cluster <!-- .element style="margin-bottom: 0px;text-align: center !important""-->
+# Instance per Namespace vs per Cluster <!-- .element style="text-align: center !important""-->
 
 <div class="container">
   <div class="column">
